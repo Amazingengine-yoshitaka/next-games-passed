@@ -1,0 +1,11 @@
+---
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+---
+<div class="cta" id="follow">
+  <h2>{t("cta.heading")}</h2>
+  <p>{t("cta.body")}</p>
+  <a class="btn" href="#">{t("cta.follow")}</a>
+</div>

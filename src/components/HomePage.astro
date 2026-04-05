@@ -1,0 +1,470 @@
+---
+import Base from "../layouts/Base.astro";
+import BitOz from "./BitOz.astro";
+import { picks, lineageName, quizSignature, QUIZ_AXES, quizAxisWeights } from "../data/picks";
+import { representativeName } from "../lib/jsonld";
+import { SITE } from "../data/site";
+import { siteJsonLd } from "../lib/jsonld";
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const brand = isJa ? SITE.name : SITE.nameEn;
+
+// 埋もれ過ぎ順(buried_most) の重み: deep(レビュー僅少で西無名) を最も埋もれてると見なす。
+// 同 obscurity 内はレビュー帯が小さいほど上。established(none)は最後。presentation 専用の序列。
+const OBSCURITY_RANK = { deep: 0, wall: 1, none: 2 } as const;
+// レビュー帯: 小さいほど埋もれてる。unknown(レビュー数が事実として不明)は断定せず最後尾(埋もれてない側)に倒す。
+const REVIEW_RANK = { hundreds: 0, around_1k: 1, unknown: 2 } as const;
+
+// ノード = 1 発掘記事。脳(picks)から体(伏せ札/フィルタ)が読むデータだけを組み立てる。
+// SSR で全文(title/desc/repName)を必ず DOM に持つ -> SEO/AEO と JS-off の双方を満たす。
+const nodes = Object.keys(picks).map(function (s, i) {
+  const pick = picks[s];
+  const pcx = pick[lang];
+  const m = pick.meta;
+  const repName = representativeName(pick, lang);
+  const lead = pick.games[pick.leadIndex];
+  const leadTag = isJa ? lead.tag_ja : lead.tag_en;
+  const lin = lineageName(m.lineage, lang);
+  const obsRank = (OBSCURITY_RANK as Record<string, number>)[m.obscurity ?? "none"] ?? OBSCURITY_RANK.none;
+  const revRank = m.reviewBand ? ((REVIEW_RANK as Record<string, number>)[m.reviewBand] ?? REVIEW_RANK.unknown) : REVIEW_RANK.unknown;
+  // 埋もれ過ぎスコア: obscurity 優先、次にレビュー帯。小さいほど埋もれてる(昇順で先頭)。
+  const buriedScore = obsRank * 10 + revRank;
+  // 案E 問診シグネチャ: この find が各軸でどの選択肢に一致するか(脳で算出・体は照合だけ)。
+  // hub は結果対象外なので空(null)。JS は SSR 出力の data 属性だけで答え合わせできる。
+  const sig = pick.kind === "find" ? quizSignature(s) : { read: null, build: null };
+  return {
+    slug: s,
+    num: String(i + 1).padStart(2, "0"),
+    href: getRelativeLocaleUrl(lang, "/picks/" + s + "/"),
+    title: pcx.title,
+    desc: pcx.description,
+    repName: repName,
+    leadTag: leadTag,
+    genre: m.genre,
+    lineage: m.lineage,
+    lineageName: lin,
+    obscurity: m.obscurity ?? "none",
+    obscurityRank: obsRank,
+    published: pick.published,
+    buriedScore: buriedScore,
+    isFind: pick.kind === "find",
+    sigRead: sig.read,
+    sigBuild: sig.build,
+  };
+});
+
+// フィルタ選択肢を data から導出(facet)。重複排除し、出現順を保つ。捏造しない。
+function distinct(vals: string[]): string[] {
+  const out: string[] = [];
+  for (const v of vals) { if (v && out.indexOf(v) === -1) out.push(v); }
+  return out;
+}
+const genreFacet = distinct(nodes.map(function (n) { return n.genre; }));
+const lineageFacet = distinct(nodes.map(function (n) { return n.lineage; }));
+const obscurityFacet = distinct(nodes.map(function (n) { return n.obscurity; })).filter(function (o) { return o !== "none"; });
+
+const jsonld = siteJsonLd(lang);
+
+// 案E 問診: 体(JS)へ渡す軸の順序と重み(SSOT は picks.ts・JS にマジックナンバーを書かない)。
+const quizAxes = QUIZ_AXES;
+const quizWeights = quizAxisWeights();
+
+const title = brand + (isJa ? " — 埋もれた良作を発掘し、日本の外へ輸出して応援する" : " — buried gems dug up and carried out of Japan");
+const desc = isJa
+  ? "埋もれた良作を発掘して、特に日本の名作を日本の外へ。あなたの最初の合格が、原石を輝かせる。"
+  : "We dig up buried gems and bring hidden ones out of Japan to the world. Your first pass makes a rough gem shine.";
+const h1a = isJa ? "あなたの" : "Your ";
+const h1flip = isJa ? "次の一本" : "next game";
+const h1b = isJa ? "は、まだ埋もれている。" : " is still buried.";
+const lede = isJa
+  ? "タグでもアルゴでもなく、味と系譜で選ぶ目利き。人気に埋もれた良作に、あなたが最初の合格をあげる場所。"
+  : "Not tags, not algorithms. Curated by taste and lineage. The place where you give a buried game its first pass.";
+const s1 = isJa ? "ここは何の場所か" : "What this is";
+const m1 = isJa
+  ? "毎年2万本のゲームが流れ込み、その半分はレビュー10件未満で埋もれて消える。おすすめを尋ねても、返ってくるのは有名作ばかり。"
+  : "Over 20,000 games flood Steam every year, and half of them vanish with fewer than 10 reviews. Ask for a recommendation and you only ever get the famous ones.";
+const m2 = isJa
+  ? "だからここでは、埋もれた良作を一本ずつ『発掘』として、なぜ刺さるかを言葉にして並べる。とりわけ、日本の埋もれた名作を日本の外へ届ける。"
+  : "So this is where each buried gem becomes a Find: one game at a time, with words for why it will hit you. We dig up the overlooked, and above all we bring hidden gems out of Japan to the world.";
+const m3 = isJa
+  ? "気になる一本を見つけたら、Steam で確かめて、あなたの最初の合格を。その前のめりな一押しが、埋もれた原石を輝かせる。"
+  : "Find one that grabs you, check it on Steam, and give it your first pass. A forward-leaning push from you is what makes a rough gem shine.";
+const s2 = isJa ? "発掘" : "Finds";
+const s3 = isJa ? "なぜ我々がこれを作るか" : "Why we build this";
+const foot = isJa ? brand + " — 埋もれた良作を発掘し、日本の外へ。あなたの合格で輝かせる。" : brand + " — buried gems dug up and carried out of Japan. You make them shine.";
+---
+<Base title={title} description={desc} jsonld={jsonld}>
+  <main class="wrap">
+
+    <section class="hero">
+      <span class="kicker"><span class="dot"></span> {t("kicker")}</span>
+      <h1>{h1a}<span class="flip">{h1flip}</span>{h1b}</h1>
+      <p class="lede">{lede}</p>
+    </section>
+
+    <h2><span class="num">›</span>{s1}</h2>
+    <div class="manifesto">
+      <p>{m1}</p>
+      <p>{m2}</p>
+      <p>{m3}</p>
+    </div>
+
+    <h2 id="finds"><span class="num">›</span>{s2}</h2>
+
+    <!-- 案E 味の問診: 二択を数問。回答に応じて刺さる1本を指し示し、そこから系譜(案B)へ繋ぐ。
+         操作系なので .js のときだけ意味を持つ(.no-js では完全に隠す)。問診なしでも下の全 find に
+         到達できる(全ノードは常時 SSR 出力)。偽カウンター無し・実数に紐づく結果(quizResult)のみ。 -->
+    <section class="quiz" data-quiz hidden>
+      <p class="quiz-h">{t("quiz.heading")}</p>
+      <p class="quiz-lede">{t("quiz.lede")}</p>
+
+      <div class="quiz-step" data-quiz-step data-axis="read">
+        <p class="quiz-q">{t("quiz.q.read.prompt")}</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" data-axis="read" data-opt="a">{t("quiz.q.read.a")}</button>
+          <button class="quiz-opt" data-axis="read" data-opt="b">{t("quiz.q.read.b")}</button>
+        </div>
+      </div>
+
+      <div class="quiz-step" data-quiz-step data-axis="build" hidden>
+        <p class="quiz-q">{t("quiz.q.build.prompt")}</p>
+        <div class="quiz-opts">
+          <button class="quiz-opt" data-axis="build" data-opt="a">{t("quiz.q.build.a")}</button>
+          <button class="quiz-opt" data-axis="build" data-opt="b">{t("quiz.q.build.b")}</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" data-quiz-result hidden aria-live="polite">
+        <p class="quiz-result-lede">{t("quiz.resultLede")}</p>
+        <a class="quiz-result-card" data-quiz-result-link href="#finds">
+          <span class="quiz-result-tag" data-quiz-result-tag></span>
+          <span class="quiz-result-title" data-quiz-result-title></span>
+          <span class="quiz-result-cue">{t("quiz.toResult")}</span>
+        </a>
+        <button class="quiz-again" data-quiz-again>{t("quiz.again")}</button>
+      </div>
+
+      <a class="quiz-skip" href="#findlist">{t("quiz.skip")}</a>
+    </section>
+
+    <!-- フィルタ/ソート: 操作系は JS でだけ意味を持つため .js のときのみ表示(.no-js では隠す)。
+         全ノードは下に常時 SSR 出力されるので JS-off でも全件読める。 -->
+    <div class="filterbar" data-filterbar>
+      <div class="facet" data-facet="genre">
+        <span class="flabel">{t("facet.genre")}</span>
+        <button class="chip on" data-val="">{t("filter.all")}</button>
+        {genreFacet.map((g) => (
+          <button class="chip" data-val={g}>{t(("genre." + g) as any)}</button>
+        ))}
+      </div>
+      <div class="facet" data-facet="lineage">
+        <span class="flabel">{t("facet.lineage")}</span>
+        <button class="chip on" data-val="">{t("filter.all")}</button>
+        {lineageFacet.map((lid) => {
+          const ln = lineageName(lid, lang);
+          return ln ? (<button class="chip" data-val={lid}>{ln}</button>) : null;
+        })}
+      </div>
+      <div class="facet" data-facet="obscurity">
+        <span class="flabel">{t("facet.obscurity")}</span>
+        <button class="chip on" data-val="">{t("filter.all")}</button>
+        {obscurityFacet.map((o) => (
+          <button class="chip" data-val={o}>{t(("obscurity." + o) as any)}</button>
+        ))}
+      </div>
+      <div class="facet sortf">
+        <span class="flabel">{t("sort.label")}</span>
+        <select class="sortsel" data-sort>
+          <option value="default">{t("sort.default")}</option>
+          <option value="buried">{t("sort.buried")}</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="flipstatus" data-flipstatus aria-live="polite"></p>
+    <p class="emptymsg" data-empty hidden>{t("filter.empty")}</p>
+
+    <ul class="nodelist" id="findlist" data-nodelist>
+      {nodes.map((n, i) => (
+        <li
+          class="node-li"
+          data-node
+          data-genre={n.genre}
+          data-lineage={n.lineage}
+          data-obscurity={n.obscurity}
+          data-published={n.published}
+          data-buried={String(n.buriedScore)}
+          data-slug={n.slug}
+          data-first={i === 0 ? "1" : "0"}
+          data-find={n.isFind ? "1" : "0"}
+          data-obsrank={String(n.obscurityRank)}
+          data-sig-read={n.sigRead ?? ""}
+          data-sig-build={n.sigBuild ?? ""}
+        >
+          <a class="node" href={n.href}>
+            <span class="nid">{n.num}</span>
+            <!-- 伏せ面: .js .node[data-state=unflipped|flipping] のときだけ見える presentation 層 -->
+            <span class="veil" aria-hidden="true">
+              <span class="veil-taste">{t(("genre." + n.genre) as any)}{n.lineageName ? (<span class="veil-lin"> · {t("filter.lineagePrefix")}{n.lineageName}</span>) : null}</span>
+              <span class="veil-gem">{"❖   ❖   ❖"}</span>
+              <span class="veil-cue">{t("flip.hint")}</span>
+            </span>
+            <!-- 発見面 + 本文: SSR で常に DOM 保持(SEO/AEO/JS-off)。.js では discovered で立ち上がる -->
+            <span class="reveal">
+              <span class="rtag">{n.leadTag}</span>
+              <span class="nt">{n.title}</span>
+              <p class="nd">{n.desc}</p>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <h2><span class="num">›</span>{s3}</h2>
+    <BitOz />
+
+    <footer>{foot}</footer>
+  </main>
+
+  <script
+    is:inline
+    define:vars={{
+      txtRemaining: t("flip.remaining"),
+      txtAllFound: t("flip.allFound"),
+      txtFirstShown: t("flip.firstShown"),
+      storeKey: "uncut.discovered." + lang,
+      quizAxes: quizAxes,
+      quizWeights: quizWeights,
+    }}
+  >
+    // ===== 体(presentation 層) =====
+    // ロジックは「状態」を計算して data 属性 / class に反映するだけ。見た目の値は CSS が持つ。
+    // FSM: 各ノードは unflipped -> flipping -> discovered の 3 状態を排他で持つ(setState 経由)。
+    (function () {
+      var list = document.querySelector("[data-nodelist]");
+      if (!list) return;
+      // flipping アニメ尺は CSS の --flip-ms を唯一の真実源にする(JS にベタ書きしない)。
+      var rawMs = getComputedStyle(document.documentElement).getPropertyValue("--flip-ms");
+      var FLIP_MS = parseInt(rawMs, 10) || 0;
+      var nodes = Array.prototype.slice.call(list.querySelectorAll("[data-node]"));
+      var statusEl = document.querySelector("[data-flipstatus]");
+      var emptyEl = document.querySelector("[data-empty]");
+
+      // --- localStorage で発見済み slug を永続化(個人の記録のみ・社会的カウンター無し) ---
+      function loadDiscovered() {
+        try {
+          var raw = localStorage.getItem(storeKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (e) { return {}; }
+      }
+      function saveDiscovered(map) {
+        try { localStorage.setItem(storeKey, JSON.stringify(map)); } catch (e) {}
+      }
+      var discovered = loadDiscovered();
+
+      // --- FSM: 状態遷移は必ずここを通す。遷移時にタイマーをクリーンアップ(割り込み防止) ---
+      function setState(node, next) {
+        var prev = node.getAttribute("data-state");
+        if (prev === next) return;
+        if (node._flipTimer) { clearTimeout(node._flipTimer); node._flipTimer = null; }
+        node.setAttribute("data-state", next);
+      }
+
+      function markDiscovered(node) {
+        var slug = node.getAttribute("data-slug");
+        if (!discovered[slug]) { discovered[slug] = 1; saveDiscovered(discovered); }
+        setState(node, "discovered");
+        updateStatus();
+      }
+
+      // 残数表示(個人の localStorage 由来のみ・実数に紐づく)。全部めくったら別文言。
+      function updateStatus() {
+        if (!statusEl) return;
+        var total = nodes.length;
+        var found = 0;
+        for (var i = 0; i < nodes.length; i++) {
+          if (nodes[i].getAttribute("data-state") === "discovered") found++;
+        }
+        var remaining = total - found;
+        statusEl.textContent = remaining <= 0 ? txtAllFound : (remaining + " / " + total + " " + txtRemaining);
+      }
+
+      // 初期化: 1 枚目(data-first=1)と既発見は最初から discovered、残りは伏せる。
+      nodes.forEach(function (node) {
+        var slug = node.getAttribute("data-slug");
+        var first = node.getAttribute("data-first") === "1";
+        if (first || discovered[slug]) {
+          if (first && !discovered[slug]) node.setAttribute("data-firstshown", "1");
+          discovered[slug] = 1;
+          setState(node, "discovered");
+        } else {
+          setState(node, "unflipped");
+        }
+      });
+      saveDiscovered(discovered);
+      updateStatus();
+
+      // めくる操作: 伏せ面クリックで flipping -> 尺後 discovered。リンク本来の遷移は奪わない
+      // (発見済みノードは通常リンクとして機能する)。
+      list.addEventListener("click", function (ev) {
+        var node = ev.target.closest ? ev.target.closest("[data-node]") : null;
+        if (!node) return;
+        if (node.getAttribute("data-state") !== "unflipped") return;
+        // 伏せ状態のクリックはページ遷移でなく「めくる」を優先する。
+        ev.preventDefault();
+        setState(node, "flipping");
+        node._flipTimer = setTimeout(function () { markDiscovered(node); }, FLIP_MS);
+      });
+
+      // ===== フィルタ / ソート(体) =====
+      var bar = document.querySelector("[data-filterbar]");
+      if (!bar) return;
+      var active = { genre: "", lineage: "", obscurity: "" };
+      var sortMode = "default";
+
+      function applyFilters() {
+        var visible = [];
+        nodes.forEach(function (node) {
+          var ok = true;
+          if (active.genre && node.getAttribute("data-genre") !== active.genre) ok = false;
+          if (active.lineage && node.getAttribute("data-lineage") !== active.lineage) ok = false;
+          if (active.obscurity && node.getAttribute("data-obscurity") !== active.obscurity) ok = false;
+          node.hidden = !ok;
+          if (ok) visible.push(node);
+        });
+        if (emptyEl) emptyEl.hidden = visible.length !== 0;
+        sortVisible(visible);
+      }
+
+      function sortVisible(visible) {
+        var arr = visible.slice();
+        if (sortMode === "buried") {
+          // 埋もれ過ぎ順: buriedScore 昇順(小さいほど埋もれてる)。同値は元の順を保つ。
+          arr.sort(function (a, b) {
+            return parseFloat(a.getAttribute("data-buried")) - parseFloat(b.getAttribute("data-buried"));
+          });
+        } else {
+          // 新しい発掘順: published 降順。
+          arr.sort(function (a, b) {
+            return a.getAttribute("data-published") < b.getAttribute("data-published") ? 1 : -1;
+          });
+        }
+        arr.forEach(function (node) { list.appendChild(node); });
+      }
+
+      bar.addEventListener("click", function (ev) {
+        var chip = ev.target.closest ? ev.target.closest(".chip") : null;
+        if (!chip) return;
+        var facet = chip.parentNode.getAttribute("data-facet");
+        if (!facet) return;
+        active[facet] = chip.getAttribute("data-val");
+        var sibs = chip.parentNode.querySelectorAll(".chip");
+        for (var i = 0; i < sibs.length; i++) sibs[i].classList.remove("on");
+        chip.classList.add("on");
+        applyFilters();
+      });
+
+      var sel = bar.querySelector("[data-sort]");
+      if (sel) sel.addEventListener("change", function () { sortMode = sel.value; applyFilters(); });
+    })();
+
+    // ===== 案E 味の問診(体・独立 presentation 層) =====
+    // 脳(picks.ts quizResult)を再実装せず、各 find ノードの data-sig-* と SSR 由来の重み
+    // (quizWeights)で同じ重み付き照合をするだけ。軸の意味/重みの真実源は data 層(SSOT)。
+    // FSM: 各設問は asked(回答済み非表示) / open(回答待ち) を排他で持つ。result は実数(一致 find)にだけ出る。
+    (function () {
+      var quiz = document.querySelector("[data-quiz]");
+      if (!quiz) return;
+      // .js のときだけ問診を出す(.no-js では hidden 維持 = 問診なしで全 find 到達)。
+      quiz.hidden = false;
+
+      var steps = Array.prototype.slice.call(quiz.querySelectorAll("[data-quiz-step]"));
+      var resultBox = quiz.querySelector("[data-quiz-result]");
+      var resultLink = quiz.querySelector("[data-quiz-result-link]");
+      var resultTag = quiz.querySelector("[data-quiz-result-tag]");
+      var resultTitle = quiz.querySelector("[data-quiz-result-title]");
+      var againBtn = quiz.querySelector("[data-quiz-again]");
+      var findNodes = Array.prototype.slice.call(
+        document.querySelectorAll('[data-node][data-find="1"]')
+      );
+
+      var answers = {}; // axis -> "a"|"b"。部分回答でも quizResult と同じく動く。
+
+      // 体の照合: 脳 quizResult と同じ式。重み付き一致スコア最大、同点は obsrank 小(より埋もれ)優先。
+      function pickResult() {
+        var best = null, bestScore = 0, bestObs = 99;
+        findNodes.forEach(function (node) {
+          var score = 0;
+          for (var i = 0; i < quizAxes.length; i++) {
+            var axis = quizAxes[i];
+            var opt = answers[axis];
+            if (!opt) continue;
+            if (node.getAttribute("data-sig-" + axis) === opt) score += (quizWeights[axis] || 0);
+          }
+          var obs = parseInt(node.getAttribute("data-obsrank"), 10);
+          if (isNaN(obs)) obs = 99;
+          if (score > bestScore || (score === bestScore && score > 0 && obs < bestObs)) {
+            best = node; bestScore = score; bestObs = obs;
+          }
+        });
+        return bestScore > 0 ? best : null; // 一致 0 なら指し示さない(沈黙・煽らない)
+      }
+
+      // 結果を出す: 既存 find ノード(SSR)の中身をそのまま結果カードに反映 = 文言の二重定義なし。
+      function showResult() {
+        var node = pickResult();
+        if (!node || !resultBox) return;
+        var tag = node.querySelector(".rtag");
+        var title = node.querySelector(".nt");
+        if (resultTag && tag) resultTag.textContent = tag.textContent;
+        if (resultTitle && title) resultTitle.textContent = title.textContent;
+        // 結果クリック先 = その find の pick ページ(系譜=案B への入口)。href の捏造はしない。
+        var link = node.querySelector("a.node");
+        if (resultLink && link) resultLink.setAttribute("href", link.getAttribute("href"));
+        // 体: 該当 find を一覧側でも一度だけ灯す(emitEvent 経由・見た目は CSS が持つ)。
+        findNodes.forEach(function (n) { n.removeAttribute("data-quizhit"); });
+        node.setAttribute("data-quizhit", "1");
+        steps.forEach(function (s) { s.hidden = true; });
+        resultBox.hidden = false;
+      }
+
+      // 次の未回答 step を開く。全軸回答済みなら結果へ。
+      function advance() {
+        var opened = false;
+        steps.forEach(function (step) {
+          var axis = step.getAttribute("data-axis");
+          if (answers[axis]) { step.hidden = true; return; }
+          if (!opened) { step.hidden = false; opened = true; } else { step.hidden = true; }
+        });
+        if (!opened) showResult();
+      }
+
+      function reset() {
+        answers = {};
+        if (resultBox) resultBox.hidden = true;
+        findNodes.forEach(function (n) { n.removeAttribute("data-quizhit"); });
+        advance();
+      }
+
+      quiz.addEventListener("click", function (ev) {
+        var opt = ev.target.closest ? ev.target.closest(".quiz-opt") : null;
+        if (opt) {
+          answers[opt.getAttribute("data-axis")] = opt.getAttribute("data-opt");
+          advance();
+          return;
+        }
+        if (againBtn && (ev.target === againBtn || (ev.target.closest && ev.target.closest("[data-quiz-again]")))) {
+          ev.preventDefault();
+          reset();
+        }
+      });
+
+      advance(); // 初期表示: 最初の未回答 step を開く
+    })();
+  </script>
+</Base>

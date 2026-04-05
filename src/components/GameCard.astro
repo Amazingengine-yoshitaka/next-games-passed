@@ -1,0 +1,18 @@
+---
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+interface Props {
+  name: string;
+  tag?: string;
+  desc: string;
+  steam: string;
+}
+const { name, tag, desc, steam } = Astro.props;
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+---
+<div class="game">
+  <p class="name">{name} <span class="tag">{tag}</span></p>
+  <p>{desc}</p>
+  <a class="store" href={steam} target="_blank" rel="noopener">{t("cta.pass")}</a>
+</div>

@@ -1,0 +1,173 @@
+---
+import Base from "../layouts/Base.astro";
+import GameCard from "./GameCard.astro";
+import { picks, relatedPicks, rarityStamps } from "../data/picks";
+import { pickJsonLd, representativeName } from "../lib/jsonld";
+import { useTranslations, tn, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+
+interface Props {
+  slug: string;
+}
+const { slug } = Astro.props;
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const pick = picks[slug];
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const c = pick[lang];
+const t = useTranslations(lang);
+const jsonld = pickJsonLd(slug, lang, pageUrl, t("nav.home"));
+const isJa = lang === "ja";
+const g0 = pick.games[0];
+const g1 = pick.games[1];
+const pubLine = (isJa ? "公開 " : "Published ") + pick.published;
+const goodLabel = isJa ? "刺さる" : "For you";
+const badLabel = isJa ? "合わない" : "Not for you";
+const backHref = isJa ? "/ja/" : "/";
+const g0tag = isJa ? g0.tag_ja : g0.tag_en;
+const g0desc = isJa ? g0.desc_ja : g0.desc_en;
+const g1tag = isJa ? g1.tag_ja : g1.tag_en;
+const g1desc = isJa ? g1.desc_ja : g1.desc_en;
+const g0name = isJa ? (g0.name_ja || g0.name_en) : (g0.name_en || g0.name_ja);
+const g1name = isJa ? (g1.name_ja || g1.name_en) : (g1.name_en || g1.name_ja);
+const repName = representativeName(pick, lang);
+
+// 【案C 希少性スタンプ】data 由来の事実キーを i18n ラベルへ変換(捏造しない・煽らない)。
+// lead が hidden gem の find ページでだけ立つ。established/hub では空(沈黙)。
+function rarityLabel(kind: string, value: number | boolean): string {
+  if (kind === "positivePct") return tn(lang, "rarity.positivePct", value as number);
+  if (kind === "reviews") return tn(lang, "rarity.reviews", value as number);
+  return t(("rarity." + kind) as any);
+}
+const rarity = rarityStamps(slug).map(function (s) { return rarityLabel(s.kind, s.value); });
+
+// 【案B 系譜を辿れる地図】同原点(sibling)を優先し、別の味(branch)を1本足してループを閉じない。
+const related = relatedPicks(slug).map(function (r) {
+  return {
+    href: (isJa ? "/ja/picks/" : "/picks/") + r.slug + "/",
+    name: representativeName(picks[r.slug], lang),
+    relation: r.relation,
+    relLabel: r.relation === "sibling" ? t("related.sibling") : t("related.branch"),
+  };
+});
+const siblings = related.filter(function (r) { return r.relation === "sibling"; });
+const branches = related.filter(function (r) { return r.relation === "branch"; });
+---
+<Base title={c.title} description={c.description} jsonld={jsonld}>
+  <main class="wrap" style="padding-top:48px;padding-bottom:0">
+
+    <nav aria-label="breadcrumb" style="font-size:13px;color:var(--muted);margin-bottom:6px"><a href={backHref}>{t("nav.home")}</a> / {repName}</nav>
+
+    <span class="kicker"><span class="dot"></span> {t("kicker")}</span>
+    <h1>{c.h1a}<span class="flip">{c.h1flip}</span>{c.h1b}</h1>
+    <p class="lede">{c.lede}</p>
+    <p style="color:var(--muted);font-size:13px">{pubLine}</p>
+
+    <h2><span class="num">01</span>{c.s1}</h2>
+    <ul class="feel">
+      <li>{c.feeling[0]}</li>
+      <li>{c.feeling[1]}</li>
+      <li>{c.feeling[2]}</li>
+    </ul>
+
+    <h2><span class="num">02</span>{c.s2}</h2>
+    <div class="cols">
+      <div class="col good">
+        <h3>{goodLabel}</h3>
+        <ul>
+          <li>{c.good[0]}</li>
+          <li>{c.good[1]}</li>
+          <li>{c.good[2]}</li>
+        </ul>
+      </div>
+      <div class="col bad">
+        <h3>{badLabel}</h3>
+        <ul>
+          <li>{c.bad[0]}</li>
+          <li>{c.bad[1]}</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2><span class="num">03</span>{c.s3}</h2>
+    {rarity.length > 0 && (
+      <!-- 案C 希少性スタンプ: 静かな対比。数字は picks.ts のデータ由来(捏造なし・煽り語なし) -->
+      <p class="rarity" aria-label={t("rarity.label")}>
+        {rarity.map((r, i) => (
+          <span class="rstamp">{i > 0 ? <span class="rsep" aria-hidden="true">·</span> : null}{r}</span>
+        ))}
+        <span class="ryet"> — {t("rarity.yet")}</span>
+      </p>
+    )}
+    <GameCard name={g0name} tag={g0tag} desc={g0desc} steam={g0.steam} />
+    <GameCard name={g1name} tag={g1tag} desc={g1desc} steam={g1.steam} />
+
+    <h2><span class="num">04</span>{t("cta.passHeading")}</h2>
+    <p class="lede">{t("cta.passBody")}</p>
+    <!-- 案D 合格 push juice: 押下で原石が一段輝く(hidden -> surfaced)。Steam 遷移は妨げない
+         (target=_blank で別タブ遷移は必ず起きる)。装飾は presentation 層が emitEvent 受信で発火。 -->
+    <div class="passzone" data-passzone>
+      <span class="gemglint" data-gemglint aria-hidden="true"></span>
+      <a class="btn" data-passcta href={g0.steam} target="_blank" rel="noopener">{t("store.see")}</a>
+      <p class="passecho" data-passecho aria-live="polite" hidden>{t("juice.pressed")}</p>
+    </div>
+
+    <h2><span class="num">05</span>{t("related.fromRoot")}</h2>
+    <!-- 案B 系譜の地図: 同原点(枝分かれの兄弟)を先に。尽きたら別の味を1本でループを閉じない -->
+    {siblings.length > 0 && (
+      <ul class="feel lineage-map">
+        {siblings.map((r) => (
+          <li><a href={r.href}>{r.name}</a> <span class="relflag sib">{r.relLabel}</span></li>
+        ))}
+      </ul>
+    )}
+    {branches.length > 0 && (
+      <div class="branchout">
+        <p class="branchlede">{t("related.anotherTaste")}</p>
+        <ul class="feel lineage-map">
+          {branches.map((r) => (
+            <li><a href={r.href}>{r.name}</a> <span class="relflag br">{r.relLabel}</span></li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    <footer><a href={backHref}>{t("home.back")}</a></footer>
+  </main>
+
+  <!-- 案D 体(presentation 層): emitEvent 経由でだけ装飾を発火。ロジックは見た目を知らない。
+       押下イベント "uncut:pass" を dispatch -> リスナが gemglint/surfaced を立てる。
+       偽カウンター無し(個人 localStorage の記録のみ)。Steam 遷移(別タブ)は奪わない。 -->
+  <script
+    is:inline
+    define:vars={{ passSlug: slug, storeKey: "uncut.passed." + slug }}
+  >
+    (function () {
+      var zone = document.querySelector("[data-passzone]");
+      if (!zone) return;
+      var cta = zone.querySelector("[data-passcta]");
+      var echo = zone.querySelector("[data-passecho]");
+      if (!cta) return;
+
+      // emitEvent: ロジックは「押された」事実だけを発行。装飾は受信側が決める(脳と体の分離)。
+      function emitPass() {
+        zone.dispatchEvent(
+          new CustomEvent("uncut:pass", { bubbles: true, detail: { slug: passSlug } })
+        );
+      }
+
+      // 受信側(体): hidden -> surfaced。data-surfaced を立てるだけ、見た目は CSS が持つ。
+      zone.addEventListener("uncut:pass", function () {
+        zone.setAttribute("data-surfaced", "1");
+        if (echo) echo.hidden = false;
+        // 個人の記録のみ(社会的カウンターは作らない)。次回訪問でも surfaced を保つ。
+        try { localStorage.setItem(storeKey, "1"); } catch (e) {}
+      });
+
+      // 既に一度合格させていれば、最初から surfaced(個人記録の復元・偽数値ではない)。
+      try { if (localStorage.getItem(storeKey) === "1") zone.setAttribute("data-surfaced", "1"); } catch (e) {}
+
+      // 押下で発火。リンク本来の遷移(別タブ)は preventDefault しない = Steam を妨げない。
+      cta.addEventListener("click", function () { emitPass(); });
+    })();
+  </script>
+</Base>

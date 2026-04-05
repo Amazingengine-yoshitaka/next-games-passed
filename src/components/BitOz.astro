@@ -1,0 +1,25 @@
+---
+import { BITOZ, bitozDevYears } from "../data/site";
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const years = bitozDevYears();
+const own = isJa
+  ? "我々も、この味の難民だ。だから自分で作った。"
+  : "We are refugees of this taste too. So we built our own.";
+const desc = isJa
+  ? "新感覚シューティング x ローグライト。自分で狙う。ただし撃とうとすると動線が出る。撃つ前に弾がどう通ってどこに当たるかの未来が見える(Aim Mode で時間が止まり、ビリヤードのように狙う)。だから当てるだけのゲームじゃない。その先の状況を読んで、次の一手をリアルタイムで組む。そして技カードや反射壁で、その動線そのものが化けて盤面が一変する。"
+  : "A new kind of shooter x roguelite. You aim it yourself, but the moment you go to fire, an aim line appears. You see how the shot travels and where it lands before you commit (Aim Mode slows time so you line it up like a billiards shot). So it is not about landing the hit. You read the situation it creates and rebuild your next move in real time, while skill cards and reflective walls warp that very line and flip the whole board.";
+const pull = isJa
+  ? years + "年分の一本も、あなたの最初の合格を待ってる。"
+  : years + " years in the making, still waiting for its first pass.";
+---
+<div class="bitoz">
+  <p class="own">{own}</p>
+  <h3>{BITOZ.name}</h3>
+  <p>{desc}</p>
+  <div class="pull">{pull}</div>
+  <a class="btn" href={BITOZ.steam} target="_blank" rel="noopener" style="margin-top:8px">{t("cta.pass")}</a>
+</div>

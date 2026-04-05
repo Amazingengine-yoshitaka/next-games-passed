@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+import { SITE } from "../data/site";
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  title: string;
+  description?: string;
+  jsonld?: any;
+}
+const { title, description = "", jsonld } = Astro.props;
+const jsonldStr = jsonld ? JSON.stringify(jsonld) : "";
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const other = isJa ? "en" : "ja";
+const otherLabel = isJa ? "English" : "日本語";
+// ロゴは SITE のブランド名から導出 (SSOT)。末尾1文字をアクセント色にする。
+const brandName = isJa ? SITE.name : SITE.nameEn;
+const w1 = brandName.slice(0, -1);
+const w2 = brandName.slice(-1);
+const home = getRelativeLocaleUrl(lang, "/");
+const findsHref = home + "#finds";
+const otherHome = getRelativeLocaleUrl(other, "/");
+---
+<!DOCTYPE html>
+<html lang={lang} class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script is:inline>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <script type="application/ld+json" set:html={jsonldStr} is:inline></script>
+  <script async src={"https://www.googletagmanager.com/gtag/js?id=" + SITE.ga4Id} is:inline></script>
+  <script is:inline define:vars={{ ga4Id: SITE.ga4Id }}>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", ga4Id);
+  </script>
+  <meta name="google-adsense-account" content={SITE.adsenseId} />
+  <script async src={"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + SITE.adsenseId} crossorigin="anonymous" is:inline></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <span class="brand"><a href={home} style="color:#fff">{w1}<span class="b-accent">{w2}</span></a></span>
+      <nav>
+        <a href={home}>{t("nav.home")}</a>
+        <a href={findsHref}>{t("nav.picks")}</a>
+        <a href={otherHome}>{otherLabel}</a>
+      </nav>
+    </div>
+  </header>
+  <slot />
+</body>
+</html>

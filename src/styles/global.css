@@ -1,0 +1,225 @@
+/* ============================================================
+   系譜目利き — 共有デザインシステム (SSOT)
+   色: 電気シアン = 動線 / マゼンタ = 化ける・一変
+   全ページがこの1ファイルを参照する。look を変えるならここだけ。
+   ============================================================ */
+:root{
+  --bg:#0d0f14; --bg2:#12151c; --card:#161a23;
+  --text:#e9ecf1; --muted:#959cab; --line:#252b37;
+  --accent:#46d6e6;   /* 動線 */
+  --accent2:#ff5d8f;  /* 化ける/一変 */
+  --good:#52d39a; --bad:#ff7a6b;
+  --maxw:730px;
+  --flip-ms:420; /* 単位なしのミリ秒値(SSOT)。CSS は calc で ms 化、JS は parseInt で読む。minify 耐性のため単位を持たせない */
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; color:var(--text);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(70,214,230,.07), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(255,93,143,.06), transparent 55%),
+    var(--bg);
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.9; font-size:17px; letter-spacing:.01em;
+}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+/* --- site header (全ページ共通の細いヘッダ) --- */
+.topbar{border-bottom:1px solid var(--line);background:rgba(13,15,20,.72);backdrop-filter:blur(8px);position:sticky;top:0;z-index:8}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px}
+.brand{font-weight:800;font-size:15px;letter-spacing:.02em;color:#fff}
+.brand .b-accent{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.topbar nav a{color:var(--muted);font-size:13.5px;margin-left:18px}
+.topbar nav a:hover{color:var(--accent)}
+
+/* --- 共通パーツ --- */
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(70,214,230,.35);padding:6px 12px;border-radius:999px;margin-bottom:26px;background:rgba(70,214,230,.06)}
+.kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.flip{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+strong{color:#fff;font-weight:700}
+.lede{color:var(--muted);font-size:18px}
+
+h1{font-size:clamp(30px,5.4vw,44px);line-height:1.28;margin:0 0 18px;font-weight:800;letter-spacing:.005em}
+h2{font-size:23px;margin:64px 0 18px;font-weight:800;line-height:1.4;padding-top:18px;border-top:1px solid var(--line)}
+h2 .num{color:var(--accent);font-variant-numeric:tabular-nums;margin-right:10px;font-size:18px;opacity:.9}
+p{margin:0 0 18px}
+
+ul.feel{list-style:none;margin:0 0 18px;padding:0}
+ul.feel li{position:relative;padding:10px 0 10px 30px;border-bottom:1px dashed var(--line)}
+ul.feel li:last-child{border-bottom:0}
+ul.feel li::before{content:"\203A";position:absolute;left:6px;top:9px;color:var(--accent);font-size:20px;font-weight:700}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0}
+@media(max-width:560px){.cols{grid-template-columns:1fr}}
+.col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 6px}
+.col h3{margin:0 0 12px;font-size:15px;letter-spacing:.04em}
+.col.good h3{color:var(--good)} .col.bad h3{color:var(--bad)}
+.col ul{list-style:none;margin:0 0 12px;padding:0}
+.col li{padding:6px 0 6px 22px;position:relative;font-size:15.5px;color:#dfe3ea}
+.col.good li::before{content:"\2713";position:absolute;left:0;color:var(--good);font-weight:800}
+.col.bad li::before{content:"\2715";position:absolute;left:0;color:var(--bad);font-weight:800}
+
+.game{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 14px}
+.game .name{font-weight:800;font-size:17px;margin:0 0 6px;color:#fff}
+.game .name .tag{font-size:11px;color:var(--accent);border:1px solid rgba(70,214,230,.3);border-radius:6px;padding:2px 7px;margin-left:8px;letter-spacing:.06em;vertical-align:middle}
+.game p{margin:0;color:#cfd5df;font-size:15.5px;line-height:1.8}
+.store{display:inline-flex;align-items:center;gap:5px;margin-top:11px;font-size:14px;font-weight:800;color:var(--accent);letter-spacing:.02em;text-decoration:none}
+.store::after{content:"\2197"}
+.store:hover{color:#7af0d0}
+
+.bitoz{margin-top:18px;border-radius:18px;padding:26px 24px 24px;background:linear-gradient(180deg, rgba(70,214,230,.07), rgba(255,93,143,.05)),var(--bg2);border:1px solid rgba(70,214,230,.35);box-shadow:0 20px 50px -30px rgba(70,214,230,.4)}
+.bitoz .own{font-size:13px;letter-spacing:.1em;color:var(--accent2);text-transform:uppercase;margin:0 0 10px;font-weight:700}
+.bitoz h3{margin:0 0 14px;font-size:26px;font-weight:800}
+.bitoz p{color:#dde2ea;font-size:16px}
+.pull{border-left:3px solid var(--accent);background:rgba(70,214,230,.05);margin:18px 0 6px;padding:14px 18px;border-radius:0 10px 10px 0;font-size:16px;color:#eaf6f8;font-style:italic;line-height:1.7}
+
+.cta{margin-top:56px;text-align:center;border-radius:18px;padding:36px 24px;background:var(--card);border:1px solid var(--line)}
+.cta h2{border:0;padding:0;margin:0 0 10px;font-size:24px}
+.cta p{color:var(--muted);margin:0 0 22px}
+.btn{display:inline-block;font-weight:800;font-size:16px;color:#06222a;background:linear-gradient(90deg,var(--accent),#7af0d0);padding:14px 30px;border-radius:999px;text-decoration:none;box-shadow:0 12px 30px -12px rgba(70,214,230,.6)}
+
+footer{margin-top:50px;color:#5c6373;font-size:13px;border-top:1px solid var(--line);padding-top:18px;padding-bottom:90px}
+
+/* --- homepage 専用 --- */
+.hero{padding:72px 0 8px}
+.manifesto{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 24px 8px;margin:6px 0}
+.manifesto p{color:#d7dce4;font-size:16px}
+.nodelist{margin:0;padding:0;list-style:none}
+.node-li{list-style:none;margin:0;padding:0}
+.node{display:block;position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 12px;transition:border-color .15s,transform .15s}
+a.node:hover{border-color:rgba(70,214,230,.5);transform:translateY(-1px)}
+.node .nid{font-size:12px;letter-spacing:.12em;color:var(--accent);font-variant-numeric:tabular-nums}
+.node .nt{display:block;color:#fff;font-weight:800;font-size:18px;margin:4px 0 4px;line-height:1.4}
+.node .nd{color:var(--muted);font-size:14.5px;margin:0}
+.node .rtag{display:inline-block;font-size:11px;color:var(--accent2);border:1px solid rgba(255,93,143,.35);border-radius:6px;padding:2px 8px;letter-spacing:.06em;margin-bottom:8px}
+
+/* === 伏せ面(veil) === 既定(no-js / 発見済み)では存在しない。.js の伏せ状態だけ出す === */
+.node .veil{display:none}
+.node .veil-taste{display:block;color:#cfd5df;font-weight:700;font-size:15.5px;margin:4px 0 0}
+.node .veil-lin{color:var(--muted);font-weight:400}
+.node .veil-gem{display:block;color:var(--accent);opacity:.5;letter-spacing:.5em;font-size:18px;margin:10px 0 8px;filter:blur(1px)}
+.node .veil-cue{display:block;color:var(--muted);font-size:13px;letter-spacing:.04em}
+
+/* ============================================================
+   JS-off フォールバック: .no-js では伏せ機構を一切出さず全文表示。
+   操作系(フィルタ/ソート/残数)は JS でしか意味を持たないので隠す。
+   ============================================================ */
+html.no-js .filterbar,
+html.no-js .flipstatus,
+html.no-js .emptymsg,
+html.no-js .quiz{display:none}
+html.no-js .node .veil{display:none}
+html.no-js .node .reveal{display:block}
+
+/* ============================================================
+   .js: FSM data-state で veil/reveal を出し分ける(presentation のみ)。
+   本文 reveal は SSR で常に DOM にある。見せ方だけを state が決める。
+   ============================================================ */
+html.js .node-li[data-state="unflipped"] .veil,
+html.js .node-li[data-state="flipping"] .veil{display:block}
+html.js .node-li[data-state="unflipped"] .reveal,
+html.js .node-li[data-state="flipping"] .reveal{display:none}
+html.js .node-li[data-state="discovered"] .veil{display:none}
+html.js .node-li[data-state="discovered"] .reveal{display:block}
+/* 伏せ状態のノードは「めくる」誘導。静かな対比でホバー時だけ縁が灯る */
+html.js .node-li[data-state="unflipped"] .node{cursor:pointer;border-style:dashed}
+html.js .node-li[data-state="unflipped"] .node:hover{border-color:rgba(255,93,143,.45)}
+/* flipping: 一瞬の立ち上がり(派手すぎない・煽らない) */
+html.js .node-li[data-state="flipping"] .node{animation:flipUp calc(var(--flip-ms) * 1ms) ease both}
+@keyframes flipUp{0%{opacity:.65;transform:scale(.995)}55%{opacity:.4}100%{opacity:1;transform:scale(1)}}
+/* discovered: 発見の余韻として縁を一度だけ灯す */
+html.js .node-li[data-state="discovered"] .node{animation:settle .5s ease both}
+@keyframes settle{0%{border-color:rgba(255,93,143,.5)}100%{border-color:var(--line)}}
+/* 1 枚目(最初からめくれた読み方ガイド)は控えめに区別 */
+html.js .node-li[data-firstshown="1"] .node{border-color:rgba(70,214,230,.3)}
+@media(prefers-reduced-motion:reduce){
+  html.js .node-li[data-state="flipping"] .node,
+  html.js .node-li[data-state="discovered"] .node{animation:none}
+}
+
+/* === フィルタ / ソート バー(静かな UI・煽らない) === */
+.filterbar{display:flex;flex-wrap:wrap;gap:14px 22px;margin:0 0 16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.filterbar .facet{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.filterbar .flabel{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.filterbar .chip{font:inherit;font-size:13px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;transition:color .12s,border-color .12s,background .12s}
+.filterbar .chip:hover{color:var(--text);border-color:rgba(70,214,230,.4)}
+.filterbar .chip.on{color:#06222a;background:linear-gradient(90deg,var(--accent),#7af0d0);border-color:transparent;font-weight:800}
+.filterbar .sortsel{font:inherit;font-size:13px;color:var(--text);background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}
+.flipstatus{color:var(--muted);font-size:13px;letter-spacing:.04em;margin:0 0 14px;min-height:1em}
+.emptymsg{color:var(--muted);font-size:14.5px;margin:0 0 14px}
+
+/* ============================================================
+   pick ページ専用 (案B 系譜の地図 / 案C 希少性スタンプ / 案D 合格 push juice)
+   静かな対比で品位を保つ: 感嘆符/赤字/煽り無し。マゼンタ=化ける はブランドの一変色。
+   ============================================================ */
+
+/* --- 案C 希少性スタンプ: 無名さと裏腹の事実を静かに対比 --- */
+.rarity{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:0 0 14px;font-size:14px;color:#cfd5df}
+.rarity .rstamp{display:inline-flex;align-items:baseline;gap:8px;color:#fff;font-weight:700;font-variant-numeric:tabular-nums}
+.rarity .rsep{color:var(--line);font-weight:400}
+.rarity .ryet{color:var(--muted);font-weight:400}
+
+/* --- 案B 系譜の地図: 同原点(sibling)と別の味(branch)を区別。枝分かれの relflag --- */
+.lineage-map li{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.relflag{font-size:11px;letter-spacing:.06em;border-radius:6px;padding:2px 8px;border:1px solid var(--line)}
+.relflag.sib{color:var(--accent);border-color:rgba(70,214,230,.3)}
+.relflag.br{color:var(--accent2);border-color:rgba(255,93,143,.3)}
+.branchout{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line)}
+.branchlede{color:var(--muted);font-size:13.5px;letter-spacing:.04em;margin:0 0 8px}
+
+/* --- 案D 合格 push juice: 押下で原石が一段輝く(hidden -> surfaced) --- */
+.passzone{position:relative;display:inline-block}
+/* gemglint: 既定は不可視。surfaced で一度だけ光がよぎる(タメから反応・派手すぎない) */
+.passzone .gemglint{position:absolute;inset:-6px;border-radius:999px;pointer-events:none;opacity:0;
+  background:radial-gradient(120px 60px at 50% 50%, rgba(255,93,143,.35), transparent 70%)}
+.passzone .passecho{display:block;margin:12px 0 0;font-size:13.5px;color:var(--accent2);letter-spacing:.02em}
+/* surfaced: ボタンが一段沈み込んでから(タメ)輝きを増す。一度だけ。 */
+html.js .passzone[data-surfaced="1"] .btn{
+  animation:passSettle .6s ease both;
+  box-shadow:0 14px 34px -10px rgba(255,93,143,.55),0 0 0 1px rgba(255,93,143,.25) inset}
+html.js .passzone[data-surfaced="1"] .gemglint{animation:passGlint .7s ease both}
+@keyframes passSettle{0%{transform:scale(.97)}45%{transform:scale(.97)}70%{transform:scale(1.03)}100%{transform:scale(1)}}
+@keyframes passGlint{0%{opacity:0}20%{opacity:0}55%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){
+  html.js .passzone[data-surfaced="1"] .btn{animation:none}
+  html.js .passzone[data-surfaced="1"] .gemglint{animation:none;opacity:0}
+}
+
+/* ============================================================
+   案E 味の問診: トップで二択を数問(文言は i18n が SSOT)。回答で刺さる1本を指す。
+   静かな対比のトーン(感嘆符/赤字/煽り無し)。.no-js では非表示 = 問診なしで全 find 到達。
+   ============================================================ */
+.quiz{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px;margin:0 0 22px}
+.quiz-h{margin:0 0 6px;font-size:18px;font-weight:800;color:#fff;letter-spacing:.01em}
+.quiz-lede{margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.7}
+.quiz-step{margin:0 0 14px}
+.quiz-q{margin:0 0 10px;font-size:15px;color:#dfe3ea;font-weight:700}
+.quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.quiz-opts{grid-template-columns:1fr}}
+.quiz-opt{font:inherit;text-align:left;font-size:14.5px;line-height:1.6;color:#dfe3ea;background:var(--bg2);
+  border:1px solid var(--line);border-radius:12px;padding:13px 15px;cursor:pointer;
+  transition:color .12s,border-color .12s,background .12s,transform .12s}
+.quiz-opt:hover{color:#fff;border-color:rgba(70,214,230,.5);background:rgba(70,214,230,.06);transform:translateY(-1px)}
+/* 結果: 化ける色(マゼンタ)で一段立ち上げる。一致 find の中身をそのまま映す(文言の二重定義なし) */
+.quiz-result{border-top:1px dashed var(--line);margin-top:4px;padding-top:16px;animation:quizReveal .45s ease both}
+@keyframes quizReveal{0%{opacity:0;transform:translateY(4px)}100%{opacity:1;transform:translateY(0)}}
+.quiz-result-lede{margin:0 0 10px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent2)}
+.quiz-result-card{display:block;background:linear-gradient(180deg,rgba(255,93,143,.08),rgba(70,214,230,.04)),var(--bg2);
+  border:1px solid rgba(255,93,143,.35);border-radius:14px;padding:16px 18px;text-decoration:none;
+  box-shadow:0 16px 40px -26px rgba(255,93,143,.5);transition:transform .15s,border-color .15s}
+.quiz-result-card:hover{transform:translateY(-1px);border-color:rgba(255,93,143,.55)}
+.quiz-result-tag{display:inline-block;font-size:11px;color:var(--accent2);border:1px solid rgba(255,93,143,.4);
+  border-radius:6px;padding:2px 8px;letter-spacing:.06em;margin-bottom:8px}
+.quiz-result-title{display:block;color:#fff;font-weight:800;font-size:16.5px;line-height:1.4;margin:0 0 8px}
+.quiz-result-cue{display:inline-flex;align-items:center;gap:5px;color:var(--accent);font-size:13.5px;font-weight:800;letter-spacing:.02em}
+.quiz-result-cue::after{content:"\2197"}
+.quiz-again{display:inline-block;margin-top:12px;font:inherit;font-size:13px;color:var(--muted);background:transparent;
+  border:0;border-bottom:1px dashed var(--line);padding:2px 0;cursor:pointer}
+.quiz-again:hover{color:var(--accent)}
+.quiz-skip{display:inline-block;margin-top:14px;color:var(--muted);font-size:13px;border-bottom:1px dashed transparent}
+.quiz-skip:hover{color:var(--accent);border-bottom-color:rgba(70,214,230,.4)}
+/* 問診で当たった find を一覧側でも一度だけ静かに灯す(emitEvent 由来の data-quizhit) */
+html.js .node-li[data-quizhit="1"] .node{border-color:rgba(255,93,143,.5);box-shadow:0 0 0 1px rgba(255,93,143,.15) inset}
+@media(prefers-reduced-motion:reduce){.quiz-result{animation:none}}
