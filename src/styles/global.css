@@ -223,3 +223,8 @@ html.js .passzone[data-surfaced="1"] .gemglint{animation:passGlint .7s ease both
 /* 問診で当たった find を一覧側でも一度だけ静かに灯す(emitEvent 由来の data-quizhit) */
 html.js .node-li[data-quizhit="1"] .node{border-color:rgba(255,93,143,.5);box-shadow:0 0 0 1px rgba(255,93,143,.15) inset}
 @media(prefers-reduced-motion:reduce){.quiz-result{animation:none}}
+
+/* === 未来の投稿を予約: coming-soon 面 === SSR では常に hidden。.js の time-gate が未公開時だけ出す。
+   hidden 属性(display:none)を尊重するため display は指定しない(可視時のレイアウトだけ整える)。 */
+.soon{padding:64px 0 8px}
+.soon .soon-on{margin-top:14px;color:var(--accent);font-size:15px;font-weight:800;letter-spacing:.02em}

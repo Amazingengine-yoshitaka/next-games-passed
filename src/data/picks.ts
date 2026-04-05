@@ -379,6 +379,41 @@ export const picks = {
   },
 };
 
+// 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
+//   形式: "YYYY-MM-DD"(JST 前提)。published と同形式で一貫させる。境界は「その日の JST 00:00:00」。
+//   後方互換: publishAt 無し(undefined)の既存 pick は即公開扱い(常に表示)。
+//   方式: Cloudflare cron / 定期リビルドは使わない。全 pick を従来通り build/deploy し HTML に出力する。
+//   client(体)が now(JST) と publishAt を比較して出し分け、期日が来たら再ビルド無しで自動表示される。
+//
+// JST_OFFSET_MIN = JST(UTC+9) の分オフセット。これが TZ 判定の唯一の真実源(SSOT)。
+//   JS にベタ書きせず SSR からこの値を体へ渡す(脳と体の分離・マジックナンバー散乱の防止)。
+export const JST_OFFSET_MIN = 9 * 60;
+
+// publishAt("YYYY-MM-DD" JST) を UTC epoch(ms)に解く。JST 00:00:00 を UTC へ正規化する。
+//   "YYYY-MM-DD" を素朴に Date.parse すると UTC 00:00 と解釈され JST 始点と 9h ずれる。
+//   そのずれを JST_OFFSET_MIN で明示的に引いて補正する(UTC ずれ対策・捏造しない)。
+//   形式不正(parse 不能)なら null(判定不能 = 後方互換で公開側に倒さず呼び出し側が判断)。
+export function publishAtToUtcMs(publishAt: string): number | null {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(publishAt);
+  if (!m) return null;
+  const y = parseInt(m[1], 10);
+  const mo = parseInt(m[2], 10);
+  const d = parseInt(m[3], 10);
+  // その日の 00:00:00 を UTC として作り、JST オフセット分だけ前へ戻す = JST 00:00 の UTC 時刻。
+  const utcMidnight = Date.UTC(y, mo - 1, d);
+  return utcMidnight - JST_OFFSET_MIN * 60 * 1000;
+}
+
+// 公開済みか判定(計算だけ・副作用なし)。publishAt 無し = 即公開(後方互換)。
+//   nowMs は UTC epoch(ms)。境界(JST 00:00:00)を含めて以降を公開とする(now >= 境界)。
+//   形式不正な publishAt は判定不能 = 安全側(未公開)に倒さず公開扱い(既存挙動の後方互換維持)。
+export function isPublished(publishAt: string | undefined, nowMs: number): boolean {
+  if (!publishAt) return true;
+  const at = publishAtToUtcMs(publishAt);
+  if (at === null) return true;
+  return nowMs >= at;
+}
+
 // lineage id -> 原点ゲームの Steam app 識別子。原点名そのものは picks 内の games[] に
 // established として既出 = SSOT。ここでは「どの established が原点か」だけを app id で同定する。
 const LINEAGE_ANCHOR_STEAM = {

@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import GameCard from "./GameCard.astro";
-import { picks, relatedPicks, rarityStamps } from "../data/picks";
+import { picks, relatedPicks, rarityStamps, JST_OFFSET_MIN } from "../data/picks";
 import { pickJsonLd, representativeName } from "../lib/jsonld";
 import { useTranslations, tn, defaultLang } from "../i18n/ui";
 import type { Lang } from "../i18n/ui";
@@ -30,6 +30,11 @@ const g1desc = isJa ? g1.desc_ja : g1.desc_en;
 const g0name = isJa ? (g0.name_ja || g0.name_en) : (g0.name_en || g0.name_ja);
 const g1name = isJa ? (g1.name_ja || g1.name_en) : (g1.name_en || g1.name_ja);
 const repName = representativeName(pick, lang);
+// 【未来の投稿を予約】このページの公開予定日(JST)。無ければ即公開(後方互換)。
+// SSR は本文を必ず出力(cron 無し方式・AEO)。client JS が now(JST) < publishAt のとき
+// 本文を隠し coming-soon に差し替える(脳と体の分離・判定 TZ は picks.ts が真実源)。
+const publishAt = pick.publishAt ?? "";
+const soonOn = publishAt ? tn(lang, "soon.on", publishAt) : "";
 
 // 【案C 希少性スタンプ】data 由来の事実キーを i18n ラベルへ変換(捏造しない・煽らない)。
 // lead が hidden gem の find ページでだけ立つ。established/hub では空(沈黙)。
@@ -47,13 +52,30 @@ const related = relatedPicks(slug).map(function (r) {
     name: representativeName(picks[r.slug], lang),
     relation: r.relation,
     relLabel: r.relation === "sibling" ? t("related.sibling") : t("related.branch"),
+    // 未来の投稿を予約: 相互リンク先が未公開なら client 側で隠す(一覧と整合)。
+    publishAt: picks[r.slug].publishAt ?? "",
   };
 });
 const siblings = related.filter(function (r) { return r.relation === "sibling"; });
 const branches = related.filter(function (r) { return r.relation === "branch"; });
 ---
 <Base title={c.title} description={c.description} jsonld={jsonld}>
-  <main class="wrap" style="padding-top:48px;padding-bottom:0">
+  <main class="wrap" style="padding-top:48px;padding-bottom:0" data-pickgate data-publish-at={publishAt}>
+
+    <!-- 公開予定面: now(JST) < publishAt のときだけ client JS が表示する。SSR では常に hidden
+         (= 期日後/JS-off は本文をそのまま読める)。本文は下に必ず deploy 済み(cron 無し方式)。 -->
+    {publishAt && (
+      <section class="soon" data-soon hidden>
+        <span class="kicker"><span class="dot"></span> {t("soon.kicker")}</span>
+        <h1>{t("soon.heading")}</h1>
+        <p class="lede">{t("soon.body")}</p>
+        <p class="soon-on" data-soon-on aria-live="polite">{soonOn}</p>
+        <p><a href={backHref}>{t("soon.back")}</a></p>
+      </section>
+    )}
+
+    <!-- 本文: SSR で常に出力(AEO/JS-off)。now(JST) < publishAt のとき client JS が hidden にする。 -->
+    <div data-pickbody>
 
     <nav aria-label="breadcrumb" style="font-size:13px;color:var(--muted);margin-bottom:6px"><a href={backHref}>{t("nav.home")}</a> / {repName}</nav>
 
@@ -116,7 +138,7 @@ const branches = related.filter(function (r) { return r.relation === "branch"; }
     {siblings.length > 0 && (
       <ul class="feel lineage-map">
         {siblings.map((r) => (
-          <li><a href={r.href}>{r.name}</a> <span class="relflag sib">{r.relLabel}</span></li>
+          <li data-related data-publish-at={r.publishAt}><a href={r.href}>{r.name}</a> <span class="relflag sib">{r.relLabel}</span></li>
         ))}
       </ul>
     )}
@@ -125,13 +147,15 @@ const branches = related.filter(function (r) { return r.relation === "branch"; }
         <p class="branchlede">{t("related.anotherTaste")}</p>
         <ul class="feel lineage-map">
           {branches.map((r) => (
-            <li><a href={r.href}>{r.name}</a> <span class="relflag br">{r.relLabel}</span></li>
+            <li data-related data-publish-at={r.publishAt}><a href={r.href}>{r.name}</a> <span class="relflag br">{r.relLabel}</span></li>
           ))}
         </ul>
       </div>
     )}
 
     <footer><a href={backHref}>{t("home.back")}</a></footer>
+
+    </div>
   </main>
 
   <!-- 案D 体(presentation 層): emitEvent 経由でだけ装飾を発火。ロジックは見た目を知らない。
@@ -168,6 +192,48 @@ const branches = related.filter(function (r) { return r.relation === "branch"; }
 
       // 押下で発火。リンク本来の遷移(別タブ)は preventDefault しない = Steam を妨げない。
       cta.addEventListener("click", function () { emitPass(); });
+    })();
+  </script>
+
+  <!-- 体(time-gate): 脳(picks.ts)と同じ式で now(JST) と publishAt を比較し、未公開なら本文を
+       隠して coming-soon を見せる。判定の TZ(jstOffsetMin)は SSR 由来 = SSOT(JS にベタ書きしない)。
+       期日が来たら再ビルド無しで次回訪問時に自動表示される(Cloudflare cron 無し方式)。 -->
+  <script
+    is:inline
+    define:vars={{ jstOffsetMin: JST_OFFSET_MIN }}
+  >
+    (function () {
+      var gate = document.querySelector("[data-pickgate]");
+      if (!gate) return;
+      var nowMs = Date.now(); // UTC epoch(ms)。端末 TZ に依存しない絶対時刻。
+
+      // publishAt("YYYY-MM-DD" JST)を UTC epoch(ms)へ。脳 publishAtToUtcMs と同一式(SSOT)。
+      // 無し/不正 = null(判定不能 = 呼び出し側が公開扱い・後方互換)。
+      function publishAtUtcMs(s) {
+        var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || "");
+        if (!m) return null;
+        return Date.UTC(parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10))
+          - jstOffsetMin * 60 * 1000;
+      }
+      function isPublished(s) {
+        var at = publishAtUtcMs(s);
+        return at === null ? true : nowMs >= at;
+      }
+
+      // (1) このページ本文の gate: 未公開なら本文を隠し coming-soon を見せる。
+      //     見た目は CSS が持つ(ここは可視性だけ切替)。期日後/JS-off は本文そのまま。
+      if (!isPublished(gate.getAttribute("data-publish-at"))) {
+        var body = gate.querySelector("[data-pickbody]");
+        var soon = gate.querySelector("[data-soon]");
+        if (body) body.hidden = true;
+        if (soon) soon.hidden = false;
+      }
+
+      // (2) 相互リンク(related)の gate: 公開ページでも未公開先は隠す(一覧と整合)。
+      var rels = gate.querySelectorAll("[data-related]");
+      for (var i = 0; i < rels.length; i++) {
+        if (!isPublished(rels[i].getAttribute("data-publish-at"))) rels[i].hidden = true;
+      }
     })();
   </script>
 </Base>

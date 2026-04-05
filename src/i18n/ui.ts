@@ -63,6 +63,11 @@ export const ui = {
     "quiz.again": "Read it differently",
     "quiz.skip": "Or just browse every find below",
     "quiz.toResult": "See this find",
+    "soon.kicker": "Scheduled find",
+    "soon.heading": "This gem surfaces soon",
+    "soon.body": "We have it ready, but it is not unsealed yet. Come back when it opens.",
+    "soon.on": "Opens on {n} (JST)",
+    "soon.back": "Back to home",
   },
   ja: {
     "nav.home": "入口",
@@ -122,6 +127,11 @@ export const ui = {
     "quiz.again": "別の読み方で、もう一度",
     "quiz.skip": "または、下の発掘をぜんぶ眺める",
     "quiz.toResult": "この発掘を見る",
+    "soon.kicker": "公開予定の発掘",
+    "soon.heading": "この原石は、まもなく浮かび上がる",
+    "soon.body": "用意はできている。でも、まだ封は解かれていない。開く日に、また来てほしい。",
+    "soon.on": "公開予定: {n}(JST)",
+    "soon.back": "入口へ戻る",
   },
 } as const;
 
