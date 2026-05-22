@@ -336,7 +336,7 @@ export const picks = {
         name_en: "Return of the Obra Dinn",
         name_ja: "Return of the Obra Dinn",
         status: "established",
-        steam: "https://store.steampowered.com/app/1066700/",
+        steam: "https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/",
         wikidata: "https://www.wikidata.org/wiki/Q57008108",
         tag_en: "The origin",
         tag_ja: "原点",
@@ -651,7 +651,7 @@ export const picks = {
         name_en: "Return of the Obra Dinn",
         name_ja: "Return of the Obra Dinn",
         status: "established",
-        steam: "https://store.steampowered.com/app/1066700/",
+        steam: "https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/",
         wikidata: "https://www.wikidata.org/wiki/Q57008108",
         tag_en: "The origin",
         tag_ja: "原点",
@@ -710,6 +710,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "murder-mystery-paradox": {
+    published: "2026-06-07",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "puzzle", lineage: "obra-dinn", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 266, positivePct: 86, noEnglish: true } },
+    games: [
+      {
+        name_en: "Murder Mystery Paradox: Fifteen Years of Summer",
+        name_ja: "マーダーミステリーパラドクス このひと夏の十五年",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2203040/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A murder-mystery adventure where you are not shown the culprit. On a small island of a few hundred people, you cross testimony against testimony, then accuse by pure deduction. Very Positive in Japan at 266 reviews and 86 percent, but it has no English support, so the West cannot read it yet (only 2 English reviews).",
+        desc_ja: "犯人を渡されないマーダーミステリーADV。人口数百人の離島で、証言と証言を突き合わせ、論理だけで告発する。266レビュー86%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは2件)。",
+      },
+      {
+        name_en: "Return of the Obra Dinn",
+        name_ja: "Return of the Obra Dinn",
+        status: "established",
+        steam: "https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/",
+        wikidata: "https://www.wikidata.org/wiki/Q57008108",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of deduction from fragments: piece together names and fates from scattered evidence by pure logic, until it clicks on its own. This gem moves that reasoning into a murder mystery, where you reach the same naming of the culprit through conversation, accusation and a vote.",
+        desc_ja: "断片から自力で推理して名指すデダクションの原点。散らばった証拠を論理だけで組み上げ、ひとりでに繋がる。この未発掘の名作はその推理をマーダーミステリーへ移し、会話と告発と投票で同じく犯人を名指す体験にする。",
+      },
+    ],
+    en: {
+      title: "Murder Mystery Paradox - a buried deduction-adventure where you name the culprit, walled off by language",
+      description: "A murder-mystery adventure where you reason out the culprit yourself, not one you watch unfold. Very Positive in Japan at 266 reviews and 86 percent, but with no English support, so the West has barely found it (only 2 English reviews).",
+      h1a: "Name the culprit, ",
+      h1flip: "by pure deduction",
+      h1b: ".",
+      lede: "Not a mystery you watch unfold. One you reason out. On a tiny island of a few hundred people, you cross testimony against testimony, then accuse. Loved in Japan at 266 reviews and 86 percent, but it has no English yet, so the West cannot read it (only 2 English reviews).",
+      s1: "First, the one feeling",
+      feeling: [
+        "The testimonies give you fragments, never the answer. Who the culprit is stays withheld at first.",
+        "But you do not guess. You cross testimony against testimony, and one contradiction forces a single truth into the open.",
+        "Then you accuse with conviction. When the recurring riddle finally closes by logic alone, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Return of the Obra Dinn joy of reaching the truth yourself and naming it",
+        "You like a conversational murder-mystery of cross-examining testimony and accusing",
+        "You want a Japanese doujin project the West has not read, buried under only 2 English reviews",
+      ],
+      bad: [
+        "You need a finished, English-first release right now (no English yet, the wall is language only)",
+        "You want action or fast puzzles, not a story-driven mystery you read and reason through at your own pace",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "マーダーミステリーパラドクス このひと夏の十五年 - 犯人を名指す推理ADV、言語の壁で埋もれた一本",
+      description: "観るだけのミステリーじゃない。自分で推理して名指すミステリーだ。266レビュー86%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは2件)。",
+      h1a: "犯人を、",
+      h1flip: "論理で名指す",
+      h1b: "。",
+      lede: "観るだけのミステリーじゃない。自分で推理して名指すミステリーだ。人口数百人の離島で、証言と証言を突き合わせ、告発する。日本では266レビュー86%で非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは2件)。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "証言は断片しかくれない。答えは渡されない。誰が犯人かは最初は伏せられている。",
+        "でも当てずっぽうはしない。証言と証言を突き合わせ、一つの矛盾が一つの真実を炙り出す。",
+        "そして確信して告発する。繰り返す怪事件の輪が論理だけで閉じた瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Return of the Obra Dinn の、自力で真相に至って名指す快感が好きな人",
+        "証言を突き合わせて告発する、会話型のマーダーミステリーが好きな人",
+        "英語レビュー2件で西がまだ読めていない、日本の同人企画を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "アクションや速い謎解きが欲しい人(本作は読んで推理する物語主導のミステリー)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -754,7 +833,7 @@ export function isPublished(publishAt: string | undefined, nowMs: number): boole
 // どちらか一方を持つ。両方持つ場合は steam を優先する(後方互換)。
 const LINEAGE_ANCHOR = {
   "slay-the-spire": { steam: "646570" },
-  "obra-dinn": { steam: "1066700" },
+  "obra-dinn": { steam: "653530" },
   "two-point-hospital": { steam: "535930" },
   "archero": { wikidata: "https://www.wikidata.org/wiki/Q116031886" },
 } as const;
