@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import BitOz from "./BitOz.astro";
-import { picks, lineageName, quizSignature, QUIZ_AXES, quizAxisWeights, JST_OFFSET_MIN } from "../data/picks";
+import { picks, lineageName, lineageIds, quizSignature, QUIZ_AXES, quizAxisWeights, JST_OFFSET_MIN } from "../data/picks";
 import { representativeName } from "../lib/jsonld";
 import { SITE } from "../data/site";
 import { siteJsonLd } from "../lib/jsonld";
@@ -29,7 +29,10 @@ const nodes = Object.keys(picks).map(function (s, i) {
   const repName = representativeName(pick, lang);
   const lead = pick.games[pick.leadIndex];
   const leadTag = isJa ? lead.tag_ja : lead.tag_en;
-  const lin = lineageName(m.lineage, lang);
+  // 代表 lineage = 先頭1本(多親 hub は配列。facet/filter/veil の single 前提を維持)。
+  // 多親の家系表現は系譜ページ(/lineage)と pick の系譜ツリー(案1)が担う。
+  const repLineage = lineageIds(m)[0] ?? "";
+  const lin = repLineage ? lineageName(repLineage, lang) : null;
   const obsRank = (OBSCURITY_RANK as Record<string, number>)[m.obscurity ?? "none"] ?? OBSCURITY_RANK.none;
   const revRank = m.reviewBand ? ((REVIEW_RANK as Record<string, number>)[m.reviewBand] ?? REVIEW_RANK.unknown) : REVIEW_RANK.unknown;
   // 埋もれ過ぎスコア: obscurity 優先、次にレビュー帯。小さいほど埋もれてる(昇順で先頭)。
@@ -46,7 +49,7 @@ const nodes = Object.keys(picks).map(function (s, i) {
     repName: repName,
     leadTag: leadTag,
     genre: m.genre,
-    lineage: m.lineage,
+    lineage: repLineage,
     lineageName: lin,
     obscurity: m.obscurity ?? "none",
     obscurityRank: obsRank,

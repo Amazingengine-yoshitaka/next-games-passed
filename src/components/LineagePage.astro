@@ -1,0 +1,193 @@
+---
+// 案2 家系図ページ(/lineage)。全 picks を 1 枚の家系図に: 原点(root) -> 枝(find/hub)。
+// 脳(picks.ts lineageForest)と体(この astro)を分離。名前解決は jsonld.representativeName(SSOT)。
+// 伏せ札 FSM は HomePage と同じ localStorage key("uncut.discovered.<lang>")と --flip-ms を流用。
+// 北極星: 達成画面を出さない。全部めくっても各 root に伏せたプレースホルダ枠が常設で残る(未完維持)。
+import Base from "../layouts/Base.astro";
+import { picks, lineageForest, JST_OFFSET_MIN } from "../data/picks";
+import { representativeName, siteJsonLd } from "../lib/jsonld";
+import { SITE } from "../data/site";
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const brand = isJa ? SITE.name : SITE.nameEn;
+
+// 家系図データ(脳)。各 child の表示名/leadTag/genre は体がここで一度だけ束ねる(SSR 全文出力)。
+const forest = lineageForest(lang).map(function (root) {
+  return {
+    rootId: root.rootId,
+    rootName: root.rootName,
+    children: root.children.map(function (ch) {
+      const pick = picks[ch.slug];
+      const pcx = pick[lang];
+      const lead = pick.games[pick.leadIndex];
+      return {
+        slug: ch.slug,
+        kind: ch.kind,
+        publishAt: ch.publishAt,
+        obscurity: ch.obscurity,
+        // hub(自社の故郷)は伏せない。find(未発見の発掘)だけが伏せ札になる。
+        isFind: ch.kind === "find",
+        href: getRelativeLocaleUrl(lang, "/picks/" + ch.slug + "/"),
+        repName: representativeName(pick, lang),
+        leadTag: isJa ? lead.tag_ja : lead.tag_en,
+        genre: pick.meta.genre,
+      };
+    }),
+  };
+});
+
+// /lineage は CollectionPage 相当に留め、特定 VideoGame を #lead 化しない(AEO 不破壊・siteJsonLd を流用)。
+const jsonld = siteJsonLd(lang);
+
+const title = brand + " — " + t("lineage.page.title");
+const desc = t("lineage.page.desc");
+---
+<Base title={title} description={desc} jsonld={jsonld}>
+  <main class="wrap">
+
+    <section class="hero">
+      <span class="kicker"><span class="dot"></span> {t("lineage.page.kicker")}</span>
+      <h1>{t("lineage.page.h1a")}<span class="flip">{t("lineage.page.h1flip")}</span>{t("lineage.page.h1b")}</h1>
+      <p class="lede">{t("lineage.page.lede")}</p>
+    </section>
+
+    <!-- 1 枚の家系図: 幹(root) -> 枝(children)。CSS グリッド + 擬似要素罫線(SVG なし)。
+         find の枝は伏せ札(veil/reveal の二層)を SSR で全文出力。JS-off では reveal 全開(全文表示)。
+         未公開先は client が data-related で隠す(HomePage と同方式)。 -->
+    <section class="lineage-forest" data-forest aria-label={t("lineage.page.title")}>
+      {forest.map((root) => (
+        <div class="forest-root" data-forest-root>
+          <p class="forest-root-name"><span class="forest-root-flag">{t("lineage.role.root")}</span>{root.rootName}</p>
+          <ul class="forest-branches">
+            {root.children.map((ch) => (
+              <li
+                class="branch-li"
+                data-branch
+                data-related
+                data-publish-at={ch.publishAt}
+                data-slug={ch.slug}
+                data-find={ch.isFind ? "1" : "0"}
+              >
+                <a class="branch" href={ch.href}>
+                  {ch.isFind && (
+                    <!-- 伏せ面: .js の伏せ状態だけ見える(味/ジャンルだけ見せ、発掘名は伏せる) -->
+                    <span class="branch-veil" aria-hidden="true">
+                      <span class="branch-veil-taste">{t(("genre." + ch.genre) as any)}</span>
+                      <span class="branch-veil-gem">{"❖ ❖ ❖"}</span>
+                      <span class="branch-veil-cue">{t("flip.hint")}</span>
+                    </span>
+                  )}
+                  <!-- 発見面 + 名前: SSR で常に DOM 保持(SEO/AEO/JS-off)。.js では discovered で立つ -->
+                  <span class="branch-reveal">
+                    <span class="branch-tag">{ch.leadTag}</span>
+                    <span class="branch-name">{ch.repName}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+            <!-- 北極星: 未完維持。各 root に伏せたプレースホルダ枠を常設(めくれない・終端を作らない) -->
+            <li class="branch-li branch-placeholder" data-placeholder aria-hidden="true">
+              <span class="branch placeholder">
+                <span class="branch-veil-gem">{"❖ ❖ ❖"}</span>
+                <span class="branch-placeholder-note">{t("lineage.placeholder")}</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <footer>{brand + " — " + t("lineage.page.title")}</footer>
+  </main>
+
+  <!-- 体(presentation 層): 伏せ札 FSM。HomePage と同じ localStorage key / --flip-ms を流用。
+       ホームでめくった find は /lineage でも discovered で開く(記録の一貫性)。
+       達成画面は出さない(全部めくってもプレースホルダ枠が常に伏せて残る = 未完維持)。 -->
+  <script
+    is:inline
+    define:vars={{
+      storeKey: "uncut.discovered." + lang,
+      jstOffsetMin: JST_OFFSET_MIN,
+    }}
+  >
+    (function () {
+      var forest = document.querySelector("[data-forest]");
+      if (!forest) return;
+
+      // flipping アニメ尺は CSS の --flip-ms を唯一の真実源にする(JS にベタ書きしない)。
+      var rawMs = getComputedStyle(document.documentElement).getPropertyValue("--flip-ms");
+      var FLIP_MS = parseInt(rawMs, 10) || 0;
+
+      // --- 未来の投稿を予約(time-gate): now(JST) < publishAt の枝を家系図から外す ---
+      // 脳(picks.ts publishAtToUtcMs)と同一式で UTC ms を作る(SSOT・JS に TZ をベタ書きしない)。
+      function publishAtUtcMs(s) {
+        var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || "");
+        if (!m) return null;
+        return Date.UTC(parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10))
+          - jstOffsetMin * 60 * 1000;
+      }
+      var nowMs = Date.now();
+      var rels = forest.querySelectorAll("[data-related]");
+      for (var i = 0; i < rels.length; i++) {
+        var at = publishAtUtcMs(rels[i].getAttribute("data-publish-at"));
+        if (at !== null && nowMs < at) {
+          rels[i].parentNode && rels[i].parentNode.removeChild(rels[i]);
+        }
+      }
+
+      // --- localStorage で発見済み slug を永続化(HomePage と共有 key・社会的カウンター無し) ---
+      function loadDiscovered() {
+        try {
+          var raw = localStorage.getItem(storeKey);
+          return raw ? JSON.parse(raw) : {};
+        } catch (e) { return {}; }
+      }
+      function saveDiscovered(map) {
+        try { localStorage.setItem(storeKey, JSON.stringify(map)); } catch (e) {}
+      }
+      var discovered = loadDiscovered();
+
+      // 伏せ札になるのは find の枝だけ(hub/established は伏せない)。
+      var flippable = Array.prototype.slice.call(
+        forest.querySelectorAll('[data-branch][data-find="1"]')
+      );
+
+      // --- FSM: 状態遷移は必ずここを通す。遷移時にタイマーをクリーンアップ(割り込み防止) ---
+      function setState(node, next) {
+        var prev = node.getAttribute("data-state");
+        if (prev === next) return;
+        if (node._flipTimer) { clearTimeout(node._flipTimer); node._flipTimer = null; }
+        node.setAttribute("data-state", next);
+      }
+
+      function markDiscovered(node) {
+        var slug = node.getAttribute("data-slug");
+        if (slug && !discovered[slug]) { discovered[slug] = 1; saveDiscovered(discovered); }
+        setState(node, "discovered");
+      }
+
+      // 初期化: ホームで既にめくった find は discovered で開く、未発見は伏せる。
+      flippable.forEach(function (node) {
+        var slug = node.getAttribute("data-slug");
+        if (discovered[slug]) setState(node, "discovered");
+        else setState(node, "unflipped");
+      });
+
+      // めくる操作: 伏せ面クリックで flipping -> 尺後 discovered。リンク本来の遷移は奪わない
+      // (発見済みは通常リンクとして機能する)。プレースホルダはめくれない(未完維持)。
+      forest.addEventListener("click", function (ev) {
+        var node = ev.target.closest ? ev.target.closest('[data-branch][data-find="1"]') : null;
+        if (!node) return;
+        if (node.getAttribute("data-state") !== "unflipped") return;
+        ev.preventDefault();
+        setState(node, "flipping");
+        node._flipTimer = setTimeout(function () { markDiscovered(node); }, FLIP_MS);
+      });
+    })();
+  </script>
+</Base>

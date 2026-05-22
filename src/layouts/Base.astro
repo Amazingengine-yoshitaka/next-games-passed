@@ -23,6 +23,7 @@ const w1 = brandName.slice(0, -1);
 const w2 = brandName.slice(-1);
 const home = getRelativeLocaleUrl(lang, "/");
 const findsHref = home + "#finds";
+const lineageHref = getRelativeLocaleUrl(lang, "/lineage/");
 const otherHome = getRelativeLocaleUrl(other, "/");
 ---
 <!DOCTYPE html>
@@ -51,6 +52,7 @@ const otherHome = getRelativeLocaleUrl(other, "/");
       <nav>
         <a href={home}>{t("nav.home")}</a>
         <a href={findsHref}>{t("nav.picks")}</a>
+        <a href={lineageHref}>{t("nav.lineage")}</a>
         <a href={otherHome}>{otherLabel}</a>
       </nav>
     </div>

@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import GameCard from "./GameCard.astro";
-import { picks, relatedPicks, rarityStamps, JST_OFFSET_MIN } from "../data/picks";
+import { picks, relatedPicks, rarityStamps, lineageIds, lineageName, JST_OFFSET_MIN } from "../data/picks";
 import { pickJsonLd, representativeName } from "../lib/jsonld";
 import { useTranslations, tn, defaultLang } from "../i18n/ui";
 import type { Lang } from "../i18n/ui";
@@ -51,13 +51,19 @@ const related = relatedPicks(slug).map(function (r) {
     href: (isJa ? "/ja/picks/" : "/picks/") + r.slug + "/",
     name: representativeName(picks[r.slug], lang),
     relation: r.relation,
-    relLabel: r.relation === "sibling" ? t("related.sibling") : t("related.branch"),
     // 未来の投稿を予約: 相互リンク先が未公開なら client 側で隠す(一覧と整合)。
     publishAt: picks[r.slug].publishAt ?? "",
   };
 });
 const siblings = related.filter(function (r) { return r.relation === "sibling"; });
 const branches = related.filter(function (r) { return r.relation === "branch"; });
+
+// 【案1 縦血統ライン】原点(root)を多親対応で解決。lineageIds で配列化し各 root 名を逆引き(SSOT)。
+// null(同定不能)は捏造せず出さない。多親(Bit Oz hub)は root が複数行で並ぶ(二親の視覚化)。
+const roots = lineageIds(pick.meta)
+  .map(function (id) { return lineageName(id, lang); })
+  .filter(function (n): n is string { return n !== null; });
+const multiRoot = roots.length > 1;
 ---
 <Base title={c.title} description={c.description} jsonld={jsonld}>
   <main class="wrap" style="padding-top:48px;padding-bottom:0" data-pickgate data-publish-at={publishAt}>
@@ -133,25 +139,43 @@ const branches = related.filter(function (r) { return r.relation === "branch"; }
       <p class="passecho" data-passecho aria-live="polite" hidden>{t("juice.pressed")}</p>
     </div>
 
-    <h2><span class="num">05</span>{t("related.fromRoot")}</h2>
-    <!-- 案B 系譜の地図: 同原点(枝分かれの兄弟)を先に。尽きたら別の味を1本でループを閉じない -->
-    {siblings.length > 0 && (
-      <ul class="feel lineage-map">
-        {siblings.map((r) => (
-          <li data-related data-publish-at={r.publishAt}><a href={r.href}>{r.name}</a> <span class="relflag sib">{r.relLabel}</span></li>
-        ))}
-      </ul>
-    )}
-    {branches.length > 0 && (
-      <div class="branchout">
-        <p class="branchlede">{t("related.anotherTaste")}</p>
-        <ul class="feel lineage-map">
-          {branches.map((r) => (
-            <li data-related data-publish-at={r.publishAt}><a href={r.href}>{r.name}</a> <span class="relflag br">{r.relLabel}</span></li>
-          ))}
-        </ul>
-      </div>
-    )}
+    <h2><span class="num">05</span>{t("lineage.tree.heading")}</h2>
+    <!-- 案1 縦血統ライン: 原点(root) -> 現在地(self) -> 兄弟(sibling) -> 別の味(branch)。
+         nested ul/li + CSS 擬似要素罫線(SVG なし・role=tree なし・aria-label のみ)。
+         JS-off でも入れ子リストが全文 SSR されて読める。未公開先は client が data-related で隠す。 -->
+    <ul class="lineage-tree" aria-label={t("lineage.tree.aria")}>
+      <!-- 原点(root): 多親なら複数行で横並び(二親の視覚化)。null(同定不能)は出さない -->
+      {roots.map((rootName) => (
+        <li class="lin-node lin-root" data-lin-role="root">
+          <span class="lin-name">{rootName}</span>
+          <span class="lin-role-flag root">{t("lineage.role.root")}</span>
+        </li>
+      ))}
+      {multiRoot && (
+        <li class="lin-cross" data-lin-role="cross"><span class="lin-cross-note">{t("lineage.crossroot")}</span></li>
+      )}
+      <!-- 現在地(self): このページ自身。data-self で強調。配下に兄弟と別の味をぶら下げる -->
+      <li class="lin-node lin-self" data-lin-role="self">
+        <span class="lin-name">{repName}</span>
+        <span class="lin-role-flag here">{t("lineage.role.here")}</span>
+        {(siblings.length > 0 || branches.length > 0) && (
+          <ul class="lineage-children">
+            {siblings.map((r) => (
+              <li class="lin-node lin-sibling" data-related data-publish-at={r.publishAt} data-lin-role="sibling">
+                <a href={r.href}>{r.name}</a>
+                <span class="lin-role-flag sib">{t("lineage.role.sibling")}</span>
+              </li>
+            ))}
+            {branches.map((r) => (
+              <li class="lin-node lin-branch" data-related data-publish-at={r.publishAt} data-lin-role="branch">
+                <a href={r.href}>{r.name}</a>
+                <span class="lin-role-flag br">{t("lineage.role.branch")}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    </ul>
 
     <footer><a href={backHref}>{t("home.back")}</a></footer>
 

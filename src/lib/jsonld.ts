@@ -19,11 +19,27 @@ export function representativeName(pick, lang) {
   return gameName(pick.games[pick.leadIndex], isJa);
 }
 
-// 各ゲームの外部実体アンカー (Steam 必須、Wikidata があれば追加) → AI の entity 確定。
+// 各ゲームの外部実体アンカー (存在する identifier だけを積む) → AI の entity 確定。
+//   Steam 版が無い established(例 Archero はモバイル専用)もあるので steam は任意。
+//   steam / wikidata / appstore / homepage を、持っているものだけ push する(捏造しない)。
+//   established は必ず 1 件以上の anchor を持つ(空配列は返らない)。
 function gameSameAs(g) {
-  const out = [g.steam];
+  const out = [];
+  if (g.steam) out.push(g.steam);
   if (g.wikidata) out.push(g.wikidata);
+  if (g.appstore) out.push(g.appstore);
+  if (g.homepage) out.push(g.homepage);
   return out;
+}
+
+// VideoGame の正準 URL: Steam があればそれ、無ければ公式(homepage)へフォールバック(url 必須回避)。
+function gameUrl(g) {
+  return g.steam || g.homepage;
+}
+
+// プラットフォーム: Steam 版があれば "PC"、無ければモバイル専用(Archero)の事実を出す(捏造しない)。
+function gamePlatform(g) {
+  return g.steam ? "PC" : "iOS, Android";
 }
 
 // pick ページ用: CollectionPage(roundup の正準パターン) + ItemList(VideoGame) の @graph。
@@ -39,8 +55,8 @@ export function pickJsonLd(slug, lang, pageUrl, homeLabel) {
       "@type": "VideoGame",
       name: gameName(g, isJa),
       description: isJa ? g.desc_ja : g.desc_en,
-      url: g.steam,
-      gamePlatform: "PC",
+      url: gameUrl(g),
+      gamePlatform: gamePlatform(g),
       sameAs: gameSameAs(g),
     };
     if (i === leadIdx) item["@id"] = pageUrl + "#lead";

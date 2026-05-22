@@ -11,6 +11,15 @@
   --good:#52d39a; --bad:#ff7a6b;
   --maxw:730px;
   --flip-ms:420; /* 単位なしのミリ秒値(SSOT)。CSS は calc で ms 化、JS は parseInt で読む。minify 耐性のため単位を持たせない */
+  /* --- 案1/案2 系譜の家系図(罫線・インデント・強調色を集約・マジックナンバー排除) --- */
+  --lineage-rail:var(--line);         /* 罫線色 */
+  --lineage-rail-w:2px;               /* 罫線太さ */
+  --lineage-indent:22px;              /* 入れ子インデント */
+  --lineage-node-gap:14px;            /* 行間 */
+  --lineage-node-pad:9px;             /* ノードの上下余白 */
+  --lineage-self-accent:var(--accent);   /* 現在地の強調(動線色) */
+  --lineage-root-accent:var(--accent2);  /* 原点の強調(化ける色) */
+  --lineage-forest-gap:18px;          /* 家系図の root 間ギャップ(/lineage) */
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -161,13 +170,85 @@ html.js .node-li[data-firstshown="1"] .node{border-color:rgba(70,214,230,.3)}
 .rarity .rsep{color:var(--line);font-weight:400}
 .rarity .ryet{color:var(--muted);font-weight:400}
 
-/* --- 案B 系譜の地図: 同原点(sibling)と別の味(branch)を区別。枝分かれの relflag --- */
-.lineage-map li{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.relflag{font-size:11px;letter-spacing:.06em;border-radius:6px;padding:2px 8px;border:1px solid var(--line)}
-.relflag.sib{color:var(--accent);border-color:rgba(70,214,230,.3)}
-.relflag.br{color:var(--accent2);border-color:rgba(255,93,143,.3)}
-.branchout{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line)}
-.branchlede{color:var(--muted);font-size:13.5px;letter-spacing:.04em;margin:0 0 8px}
+/* ============================================================
+   案1 縦血統ライン: nested ul/li を CSS 擬似要素の罫線で家系図化(SVG なし)。
+   原点(root) -> 現在地(self) -> 兄弟/別の味(children) を縦の幹で繋ぐ。
+   罫線太さ/インデント/強調色は :root の --lineage-* が唯一の真実源(SSOT)。
+   ============================================================ */
+.lineage-tree{list-style:none;margin:0 0 18px;padding:0}
+.lineage-tree .lin-node{position:relative;padding:var(--lineage-node-pad) 0 var(--lineage-node-pad) calc(var(--lineage-indent) + 8px);
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+/* 縦の幹: 各ノードの左に縦罫線を引く(最初のノードは上半分だけ・最後は下半分だけ) */
+.lineage-tree .lin-node::before{content:"";position:absolute;left:8px;top:0;bottom:0;
+  border-left:var(--lineage-rail-w) solid var(--lineage-rail)}
+.lineage-tree > .lin-node:first-child::before{top:50%}
+/* 横の継ぎ手: 幹からノードへ伸びる短い横線 */
+.lineage-tree .lin-node::after{content:"";position:absolute;left:8px;top:50%;width:var(--lineage-indent);
+  border-top:var(--lineage-rail-w) solid var(--lineage-rail)}
+.lineage-tree .lin-name{font-weight:800;color:#fff;font-size:16px}
+.lineage-tree a{color:var(--accent);font-weight:700}
+.lin-role-flag{font-size:11px;letter-spacing:.06em;border-radius:6px;padding:2px 8px;border:1px solid var(--line);color:var(--muted)}
+.lin-role-flag.root{color:var(--lineage-root-accent);border-color:rgba(255,93,143,.35)}
+.lin-role-flag.here{color:var(--lineage-self-accent);border-color:rgba(70,214,230,.45);background:rgba(70,214,230,.08)}
+.lin-role-flag.sib{color:var(--accent);border-color:rgba(70,214,230,.3)}
+.lin-role-flag.br{color:var(--accent2);border-color:rgba(255,93,143,.3)}
+/* 原点(root)は化ける色で、現在地(self)は動線色+太字で強調 */
+.lin-root .lin-name{color:var(--lineage-root-accent)}
+.lin-self{font-weight:800}
+.lin-self .lin-name{color:var(--lineage-self-accent)}
+/* 二親の交点メモ: root 群と self の間に静かに置く */
+.lin-cross{position:relative;padding:2px 0 2px calc(var(--lineage-indent) + 8px)}
+.lin-cross::before{content:"";position:absolute;left:8px;top:0;bottom:0;border-left:var(--lineage-rail-w) solid var(--lineage-rail)}
+.lin-cross-note{font-size:12px;color:var(--muted);letter-spacing:.06em}
+/* 子(兄弟/別の味)は一段インデントを深め、自前の幹を持つ */
+.lineage-children{list-style:none;margin:0;padding:0 0 0 var(--lineage-indent);position:relative;width:100%}
+.lineage-children .lin-node{padding-left:calc(var(--lineage-indent) + 8px)}
+
+/* ============================================================
+   案2 家系図ページ(/lineage): 幹(root) -> 枝(children) を CSS グリッド + 罫線で(SVG なし)。
+   find の枝は伏せ札(.branch-veil / .branch-reveal)。HomePage と同じ FSM data-state で出し分け。
+   北極星: 達成画面なし。各 root にプレースホルダ枠を常設し終端を作らない(未完維持)。
+   ============================================================ */
+.lineage-forest{display:grid;gap:var(--lineage-forest-gap);margin:18px 0 0}
+.forest-root{position:relative;border:1px solid var(--line);border-radius:16px;padding:18px 20px;background:var(--card)}
+.forest-root-name{margin:0 0 12px;font-size:18px;font-weight:800;color:var(--lineage-root-accent);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.forest-root-flag{font-size:11px;letter-spacing:.06em;border-radius:6px;padding:2px 8px;border:1px solid rgba(255,93,143,.35);color:var(--lineage-root-accent)}
+/* 枝: root の左に縦罫線を持たせ、枝ごとに横の継ぎ手を引く(幹から枝が伸びる視覚) */
+.forest-branches{list-style:none;margin:0;padding:0 0 0 calc(var(--lineage-indent) + 4px);position:relative}
+.forest-branches::before{content:"";position:absolute;left:6px;top:0;bottom:18px;border-left:var(--lineage-rail-w) solid var(--lineage-rail)}
+.branch-li{position:relative;margin:0 0 var(--lineage-node-gap)}
+.branch-li::before{content:"";position:absolute;left:calc(-1 * var(--lineage-indent) + 2px);top:24px;width:var(--lineage-indent);border-top:var(--lineage-rail-w) solid var(--lineage-rail)}
+.branch{display:block;position:relative;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:13px 16px;text-decoration:none;transition:border-color .15s,transform .15s}
+a.branch:hover{border-color:rgba(70,214,230,.5);transform:translateY(-1px)}
+.branch-tag{display:inline-block;font-size:11px;color:var(--accent2);border:1px solid rgba(255,93,143,.35);border-radius:6px;padding:2px 8px;letter-spacing:.06em;margin-bottom:6px}
+.branch-name{display:block;color:#fff;font-weight:800;font-size:16px;line-height:1.4}
+/* 伏せ面(既定は出さない・.js の伏せ状態でだけ出す) */
+.branch-veil{display:none}
+.branch-veil-taste{display:block;color:#cfd5df;font-weight:700;font-size:15px}
+.branch-veil-gem{display:block;color:var(--accent);opacity:.5;letter-spacing:.4em;font-size:16px;margin:8px 0 6px;filter:blur(1px)}
+.branch-veil-cue{display:block;color:var(--muted);font-size:12.5px;letter-spacing:.04em}
+/* プレースホルダ枠(常設・めくれない・終端を作らない) */
+.branch-placeholder .placeholder{border-style:dashed;opacity:.7;cursor:default}
+.branch-placeholder-note{display:block;color:var(--muted);font-size:13px;letter-spacing:.04em}
+
+/* JS-off フォールバック: 伏せ機構を出さず発見面を全開(全文表示) */
+html.no-js .lineage-forest .branch-veil{display:none}
+html.no-js .lineage-forest .branch-reveal{display:block}
+/* .js: FSM data-state で伏せ面/発見面を出し分け(presentation のみ) */
+html.js .branch-li[data-state="unflipped"] .branch-veil,
+html.js .branch-li[data-state="flipping"] .branch-veil{display:block}
+html.js .branch-li[data-state="unflipped"] .branch-reveal,
+html.js .branch-li[data-state="flipping"] .branch-reveal{display:none}
+html.js .branch-li[data-state="discovered"] .branch-veil{display:none}
+html.js .branch-li[data-state="discovered"] .branch-reveal{display:block}
+html.js .branch-li[data-state="unflipped"] .branch{cursor:pointer;border-style:dashed}
+html.js .branch-li[data-state="unflipped"] .branch:hover{border-color:rgba(255,93,143,.45)}
+html.js .branch-li[data-state="flipping"] .branch{animation:flipUp calc(var(--flip-ms) * 1ms) ease both}
+html.js .branch-li[data-state="discovered"] .branch{animation:settle .5s ease both}
+@media(prefers-reduced-motion:reduce){
+  html.js .branch-li[data-state="flipping"] .branch,
+  html.js .branch-li[data-state="discovered"] .branch{animation:none}
+}
 
 /* --- 案D 合格 push juice: 押下で原石が一段輝く(hidden -> surfaced) --- */
 .passzone{position:relative;display:inline-block}

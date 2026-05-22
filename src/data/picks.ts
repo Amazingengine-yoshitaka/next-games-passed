@@ -50,7 +50,10 @@ export const picks = {
     // ゆえに有名作も自社作も正準エンティティに祭り上げない設計は壊れない(AEO 不破壊)。
     leadIndex: 0,
     topic: { en: "Read-and-build games", ja: "状況を読んで組むゲーム" },
-    meta: { genre: "deckbuilder", lineage: "slay-the-spire", obscurity: "none" },
+    // 多親: この味は二つの原点を持つ。組む系の原点 Slay the Spire と、狙う系の原点 Archero。
+    //   lineage は single string も配列も受ける(lineageIds で正規化・後方互換)。
+    //   Bit Oz は根でなく交点の子(中立)。HomePage の facet/filter は代表 = 先頭1本(lineageIds[0])で読む。
+    meta: { genre: "deckbuilder", lineage: ["slay-the-spire", "archero"], obscurity: "none" },
     games: [
       {
         // 主役: 自社作 Bit Oz(この味の故郷)。name/steam は BITOZ 参照(直書き禁止・SSOT)。
@@ -87,6 +90,21 @@ export const picks = {
         tag_ja: "未来が見える",
         desc_en: "The enemy next move is shown in advance, and you read its outcome to stop it. The most cerebral way to feel one move flipping the whole situation.",
         desc_ja: "敵の次の一手が先に見えている状態で、その結末を読んで防ぐ。一手で状況が一変するを最も知的に味わえる。",
+      },
+      {
+        // 二親のもう一方の原点: 狙う系(アーチャー・ローグライト)の原点 Archero。
+        // Steam 版が無い初の established。Steam URL は積まない(appid 1806970 は無関係作・絶対使用禁止)。
+        // url(JSON-LD)は公式、sameAs は Wikidata + App Store + 公式で実体を確定する(捏造なし)。
+        name_en: "Archero",
+        name_ja: "Archero",
+        status: "established",
+        homepage: "https://habby.com/",
+        wikidata: "https://www.wikidata.org/wiki/Q116031886",
+        appstore: "https://apps.apple.com/app/id1453651052",
+        tag_en: "The aim origin",
+        tag_ja: "狙う系の原点",
+        desc_en: "The origin of the archer-roguelite: when you stop moving you auto-aim and fire, so you read the board by choosing when to stand still. Habby, 2019, mobile only (no official Steam release).",
+        desc_ja: "アーチャー・ローグライトの原点。動きを止めると自動で照準して撃つ——だから止まる瞬間を選んで盤面を読む。Habby・2019・モバイル専用(公式 Steam 版なし)。",
       },
     ],
     en: {
@@ -571,47 +589,77 @@ export function isPublished(publishAt: string | undefined, nowMs: number): boole
   return nowMs >= at;
 }
 
-// lineage id -> 原点ゲームの Steam app 識別子。原点名そのものは picks 内の games[] に
-// established として既出 = SSOT。ここでは「どの established が原点か」だけを app id で同定する。
-const LINEAGE_ANCHOR_STEAM = {
-  "slay-the-spire": "646570",
-  "obra-dinn": "1066700",
-  "two-point-hospital": "535930",
+// lineage id -> 原点 established を同定する識別子(多態)。原点名そのものは picks 内の games[] に
+// established として既出 = SSOT。ここでは「どの established が原点か」だけを同定する。
+//   steam   : Steam app id(後方互換・PC 作品の原点)。
+//   wikidata: Wikidata QID URL(Steam 版が無い原点。例 Archero はモバイル専用で Steam 版なし)。
+// どちらか一方を持つ。両方持つ場合は steam を優先する(後方互換)。
+const LINEAGE_ANCHOR = {
+  "slay-the-spire": { steam: "646570" },
+  "obra-dinn": { steam: "1066700" },
+  "two-point-hospital": { steam: "535930" },
+  "archero": { wikidata: "https://www.wikidata.org/wiki/Q116031886" },
 } as const;
 
-export type LineageId = keyof typeof LINEAGE_ANCHOR_STEAM;
+export type LineageId = keyof typeof LINEAGE_ANCHOR;
 
 // lineage id を原点ゲーム名(表示言語)に解決する。picks 内の established game を逆引きし、
 // ゲーム名の二重定義を避ける(SSOT)。見つからなければ null(捏造しない)。
+//   同定は多態: anchor.steam があれば Steam URL で、anchor.wikidata があれば wikidata で逆引きする。
 export function lineageName(id: string, lang: "en" | "ja"): string | null {
-  const appId = (LINEAGE_ANCHOR_STEAM as Record<string, string>)[id];
-  if (!appId) return null;
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string }>)[id];
+  if (!anchor) return null;
   const isJa = lang === "ja";
   for (const key of Object.keys(picks)) {
     for (const g of picks[key].games) {
       if (g.status !== "established") continue;
-      if (g.steam.indexOf("/app/" + appId + "/") === -1) continue;
-      return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      // Steam 同定(後方互換): app id を含む Steam URL を持つ established。
+      if (anchor.steam) {
+        if (!g.steam) continue;
+        if (g.steam.indexOf("/app/" + anchor.steam + "/") === -1) continue;
+        return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      }
+      // Wikidata 同定(Steam 版が無い原点): g.wikidata の完全一致で逆引き。
+      if (anchor.wikidata) {
+        if (g.wikidata !== anchor.wikidata) continue;
+        return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      }
     }
   }
   return null;
+}
+
+// meta.lineage を常に配列へ正規化する(計算だけ・副作用なし)。
+//   後方互換: single string("slay-the-spire")も配列(["slay-the-spire","archero"])も受ける。
+//   無し/不正は空配列。多親(複数原点を持つ Bit Oz hub 等)を全箇所で一様に扱う唯一の入口(SSOT)。
+export function lineageIds(meta: { lineage?: string | string[] } | undefined): string[] {
+  const l = meta && meta.lineage;
+  if (!l) return [];
+  return Array.isArray(l) ? l : [l];
+}
+
+// 2 つの lineage 集合に共通の原点があるか(計算だけ・副作用なし)。多親同士でも sibling 判定が壊れない。
+function shareLineage(a: string[], b: string[]): boolean {
+  for (const x of a) { if (b.indexOf(x) !== -1) return true; }
+  return false;
 }
 
 // 【案B 系譜を辿れる地図】末尾 related を「同じ原点から枝分かれした原石」として並べる。
 //   1. 同原点(同 lineage)共有を優先表示(枝分かれの兄弟)
 //   2. 尽きたら別の味(別 lineage)を1本だけ混ぜてループを閉じない(別の枝への入口)
 // 系譜キーは meta.lineage(established game 由来・データ駆動)。計算だけ。状態は変えない(副作用なし)。
+//   多親対応: lineageIds の積集合が空でなければ sibling(後方互換: single 同士は従来通り)。
 //   relation: "sibling"=同原点の枝分かれ / "branch"=別の味への入口。表示文言は presentation+i18n が持つ。
 export function relatedPicks(currentSlug: string): { slug: string; relation: "sibling" | "branch" }[] {
   const cur = picks[currentSlug];
   if (!cur) return [];
-  const curLineage = cur.meta && cur.meta.lineage;
+  const curLineage = lineageIds(cur.meta);
   const siblings: { slug: string; relation: "sibling" | "branch" }[] = [];
   const others: { slug: string; relation: "sibling" | "branch" }[] = [];
   for (const slug of Object.keys(picks)) {
     if (slug === currentSlug) continue;
     const m = picks[slug].meta;
-    if (curLineage && m && m.lineage === curLineage) {
+    if (curLineage.length > 0 && shareLineage(curLineage, lineageIds(m))) {
       siblings.push({ slug: slug, relation: "sibling" });
     } else {
       others.push({ slug: slug, relation: "branch" });
@@ -621,6 +669,49 @@ export function relatedPicks(currentSlug: string): { slug: string; relation: "si
   const out = siblings.slice();
   if (others.length > 0) out.push(others[0]);
   return out;
+}
+
+// 【案2 家系図(/lineage)】全 picks を原点(root)ごとにまとめた家系図データ(計算だけ・副作用なし)。
+//   root = lineageName で解決できる原点(established 由来=SSOT・捏造しない)。
+//   children = その root を lineageIds に含む pick。多親(Bit Oz hub)は複数 root にぶら下がる(二親表現)。
+//   並びは picks の出現順に root を distinct(安定)。null 名の root は出さない。
+//   Bit Oz は根でなく交点の子(中立・中心化しない)。established 原点だけが root に立つ。
+//   名前(原点名/ゲーム名)はここでは持たせず slug/kind 等の事実だけを返す。代表名の解決は
+//   体(LineagePage)が lib/jsonld.representativeName 経由で行う(SSOT・循環 import 回避)。
+export function lineageForest(lang: "en" | "ja"): {
+  rootId: string;
+  rootName: string;
+  children: { slug: string; kind: string; publishAt: string; obscurity: string }[];
+}[] {
+  // root id を全 picks の lineageIds から distinct 抽出(出現順を保つ)。
+  const rootIds: string[] = [];
+  for (const slug of Object.keys(picks)) {
+    for (const id of lineageIds(picks[slug].meta)) {
+      if (rootIds.indexOf(id) === -1) rootIds.push(id);
+    }
+  }
+  const forest: {
+    rootId: string;
+    rootName: string;
+    children: { slug: string; kind: string; publishAt: string; obscurity: string }[];
+  }[] = [];
+  for (const rootId of rootIds) {
+    const rootName = lineageName(rootId, lang);
+    if (rootName === null) continue; // 同定不能な root は出さない(捏造しない)。
+    const children: { slug: string; kind: string; publishAt: string; obscurity: string }[] = [];
+    for (const slug of Object.keys(picks)) {
+      const pick = picks[slug];
+      if (lineageIds(pick.meta).indexOf(rootId) === -1) continue;
+      children.push({
+        slug: slug,
+        kind: pick.kind,
+        publishAt: pick.publishAt ?? "",
+        obscurity: (pick.meta && pick.meta.obscurity) || "none",
+      });
+    }
+    forest.push({ rootId: rootId, rootName: rootName, children: children });
+  }
+  return forest;
 }
 
 // 【案E 味の問診】既存の構造化 meta(lineage / genre / obscurity)を二択軸へマップして
@@ -691,7 +782,9 @@ export function quizResult(answers: Partial<Record<QuizAxis, QuizOption>>): stri
       const opt = answers[axis];
       if (!opt) continue;
       const def = QUIZ_AXIS_MAP[axis];
-      if (def.options[opt].indexOf(m[def.field]) !== -1) score += def.weight;
+      // lineage は多親で配列になり得る。値を配列に正規化し、いずれかが選択肢に一致すれば加点(後方互換)。
+      const vals = def.field === "lineage" ? lineageIds(m) : [m[def.field]];
+      if (vals.some(function (v) { return def.options[opt].indexOf(v) !== -1; })) score += def.weight;
     }
     const obs = QUIZ_OBSCURITY_PRIORITY[m.obscurity ?? "none"] ?? 2;
     // 重み付き一致スコアが高い方を優先。同点はより埋もれた方(obscurity が小さい)を優先。
@@ -714,8 +807,10 @@ export function quizSignature(slug: string): Record<QuizAxis, QuizOption | null>
   if (!m) return sig;
   for (const axis of QUIZ_AXES) {
     const def = QUIZ_AXIS_MAP[axis];
+    // lineage は多親で配列になり得る。値を配列に正規化し、いずれかが一致する選択肢を採る(後方互換)。
+    const vals = def.field === "lineage" ? lineageIds(m) : [m[def.field]];
     for (const opt of ["a", "b"] as QuizOption[]) {
-      if (def.options[opt].indexOf(m[def.field]) !== -1) { sig[axis] = opt; break; }
+      if (vals.some(function (v) { return def.options[opt].indexOf(v) !== -1; })) { sig[axis] = opt; break; }
     }
   }
   return sig;
