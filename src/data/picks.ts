@@ -456,6 +456,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "oyabu-deathcare-clinic": {
+    published: "2026-06-06",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "simulation", lineage: "two-point-hospital", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 235, positivePct: 94, noEnglish: false } },
+    games: [
+      {
+        name_en: "Oyabu Clinic Deathcare Corporation",
+        name_ja: "医療無法人おおやぶ死科クリニック",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2227450/Oyabu_Clinic_Deathcare_Corporation/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A pitch-black turn-based management sim from a Japanese doujin circle. You do not heal patients, you read their wallet and pick the malpractice that pays most, milking the health-insurance system. Very Positive in Japan at 235 reviews, but only 18 English reviews, so the West has not found it.",
+        desc_ja: "日本の同人サークルが作った真っ黒なターン制経営SLG。患者を治すのではなく財布を読み、一番儲かる不正処置を選んで健康保険から金を錬金していく。235レビューで非常に好評なのに英語レビューは18件で、西はまだ見つけていない。",
+      },
+      {
+        name_en: "Two Point Hospital",
+        name_ja: "Two Point Hospital",
+        status: "established",
+        steam: "https://store.steampowered.com/app/535930/Two_Point_Hospital/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the hospital-management taste: read each illness, assign the right treatment, and optimize the clinic to run at its best. This gem flips that good optimization into its dark mirror: you optimize for insurance money, not for the cure.",
+        desc_ja: "病院経営SLGの味の原点。病気を読み、正しい処置を割り当て、病院を最適化して効率を最大化していく。この未発掘の名作はその善の最適化を反転させ、治すためでなく保険金のために最適化させる。",
+      },
+    ],
+    en: {
+      title: "Oyabu Clinic Deathcare Corporation - the buried dark-comedy management sim where you optimize the wrong way",
+      description: "A pitch-black turn-based management sim from a Japanese doujin circle. Very Positive in Japan at 235 reviews, but only 18 English reviews, so the West has not found it.",
+      h1a: "Optimize the clinic, ",
+      h1flip: "the wrong way",
+      h1b: ".",
+      lede: "Not run a hospital to heal. Run one to drain insurance. You read each patient and pick the malpractice that pays most. Loved in Japan at 235 reviews, almost unseen in the West.",
+      s1: "First, the one feeling",
+      feeling: [
+        "A patient walks in, and you do not read what cures them, you read what their wallet and insurance can be milked for.",
+        "So you pick the treatment by profit, not by care, and the clinic ledger tilts with every cold choice.",
+        "When a chain of malpractice lands and the money pours in past the line you should never cross, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love management sims like Two Point Hospital but want a pitch-black, satirical twist",
+        "You like reading each case and optimizing the most profitable route, turn by turn",
+        "You want a Japanese doujin gem the West has not noticed, buried under 18 English reviews",
+      ],
+      bad: [
+        "You want a wholesome, build-a-pretty-hospital sim (this is gleefully unethical dark comedy)",
+        "You need a big-budget, marketed release rather than a small doujin circle's work",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "医療無法人おおやぶ死科クリニック - 最適化の矛先がズレた、埋もれた経営SLG",
+      description: "日本の同人サークルが作った真っ黒なターン制経営SLG。235レビューで非常に好評なのに英語レビューは18件で、西はまだ見つけていない。",
+      h1a: "クリニックを最適化する、",
+      h1flip: "間違った方向に",
+      h1b: "。",
+      lede: "治すための病院運営じゃない。保険金を絞り取るための運営だ。患者ごとに読んで、一番儲かる不正処置を選ぶ。日本では235レビューで愛され、西ではほぼ見られていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "患者が来る。何が治るかは読まない。財布と保険からいくら搾れるかを読む。",
+        "だから治療を「思いやり」でなく「利益」で選び、その冷たい選択ごとに帳簿が傾く。",
+        "不正処置が連鎖して、越えてはいけない一線の向こうへ金が流れ込んだ瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Two Point Hospital のような経営SLGが好きで、真っ黒で風刺の効いたひねりが欲しい人",
+        "症例ごとに読んで、一番儲かるルートをターン毎に最適化するのが好きな人",
+        "英語レビュー18件で埋もれた、西がまだ気づいてない日本の同人原石を掘りたい人",
+      ],
+      bad: [
+        "綺麗な病院を建てる健全な経営シムが欲しい人(本作は不謹慎を楽しむダークコメディ)",
+        "小さな同人サークルの作でなく、大作級の宣伝された一本が欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -498,6 +576,7 @@ export function isPublished(publishAt: string | undefined, nowMs: number): boole
 const LINEAGE_ANCHOR_STEAM = {
   "slay-the-spire": "646570",
   "obra-dinn": "1066700",
+  "two-point-hospital": "535930",
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR_STEAM;
