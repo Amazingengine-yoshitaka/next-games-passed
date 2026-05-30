@@ -867,6 +867,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "one-armed-crayfish": {
+    published: "2026-06-08",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "to-the-moon", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 166, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "One-Armed Crayfish",
+        name_ja: "片腕のザリガニ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3509770/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A short Japanese doujin visual novel where a boy who only ever goes with the flow meets a girl who does the opposite of everything, and is forced to face what he actually wants. 100 percent positive across 166 reviews in Japan, but it has no English support, so the West has barely found it (only 5 English reviews).",
+        desc_ja: "順張りしかしてこなかった少年が、何にでも逆張りする少女と出会い、自分が本当は何を望むのかと向き合わされる日本の同人短編ノベル。166レビュー100%好評なのに英語非対応で、西はまだほぼ見つけていない(英語レビューは5件)。",
+      },
+      {
+        name_en: "To the Moon",
+        name_ja: "To the Moon",
+        status: "established",
+        steam: "https://store.steampowered.com/app/206440/To_the_Moon/",
+        wikidata: "https://www.wikidata.org/wiki/Q1711379",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the short, gut-punch narrative: in one sitting it walks you through a life of regret and what someone truly wanted, and the ache stays long after it ends. This gem distills that into one thing, a boy facing his real feelings through conversation with a girl who refuses every easy answer.",
+        desc_ja: "短い尺で心を抉る一本道ナラティブの原点。ひと続きで、後悔だらけの人生と、その人が本当に望んだものを辿らせ、終わった後も長く余韻が残る。この未発掘の名作はそれを一点に凝縮する——どんな簡単な答えも拒む少女との対話を通じて、少年が自分の本当の気持ちと向き合う。",
+      },
+    ],
+    en: {
+      title: "One-Armed Crayfish - a buried 100-percent-positive emotional visual novel, walled off by language",
+      description: "A short Japanese visual novel where a boy who only goes with the flow meets a girl who does the opposite of everything, and is forced to face what he actually wants. 100 percent positive across 166 reviews in Japan, but no English support, so the West has barely found it.",
+      h1a: "Go against the flow, ",
+      h1flip: "and face yourself",
+      h1b: ".",
+      lede: "A boy who has only ever gone with the crowd meets a girl who does the opposite of everything. In one or two hours she pulls his real feelings into the open. 100 percent positive in Japan across 166 reviews, but it has no English yet, so only 5 English reviews exist.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You have always picked the safe, agreeable answer, the one everyone else picks, and called it living.",
+        "Then someone who refuses every easy answer keeps asking you what you actually want, and you have no reply ready.",
+        "When the last line lands and you realize the question was never about her, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love a short, story-driven game that hits like a film in one or two hours, no padding",
+        "You want a quiet, character-driven piece that asks how you actually want to live",
+        "You do not mind that it has no English yet: the gem is the writing, and language is the only wall",
+      ],
+      bad: [
+        "You need a fully English-first, voiced release right now (no English yet, the wall is language only)",
+        "You want branching choices or gameplay systems, not a single authored narrative",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "片腕のザリガニ - 100%好評なのに言語の壁で埋もれた感情ノベル",
+      description: "順張りしかしてこなかった少年が、何にでも逆張りする少女と出会い、自分が本当は何を望むのかと向き合わされる短編ノベル。日本では166レビュー100%好評なのに英語非対応で、西はまだほぼ見つけていない。",
+      h1a: "逆張りして、",
+      h1flip: "自分と向き合う",
+      h1b: "。",
+      lede: "周りに合わせてばかり生きてきた少年が、何にでも逆張りする少女と出会う。1〜2時間で、彼の本当の気持ちが引きずり出される。日本では166レビュー100%好評なのに、まだ英語が無く、英語レビューはわずか5件。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ずっと、無難でみんなと同じ答えを選んできた。それを生きることだと思っていた。",
+        "でも、どんな簡単な答えも拒む相手に、お前は本当はどうしたいのかと問われ続け、用意した返事が何もない。",
+        "最後の一行が落ちて、この問いは最初から彼女の話ではなかったと気づいた瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "1〜2時間で映画みたいに刺さる、水増しのない物語体験が好きな人",
+        "どう生きたいかを静かに問う、キャラクター主導の一本が欲しい人",
+        "まだ公式英語が無くても気にしない人——原石は文章で、言語だけが唯一の壁だから",
+      ],
+      bad: [
+        "今すぐ英語ファースト・フルボイスの完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "分岐やゲームシステムが欲しい人(本作は分岐なしの一本道ナラティブ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -915,6 +994,7 @@ const LINEAGE_ANCHOR = {
   "two-point-hospital": { steam: "535930" },
   "archero": { wikidata: "https://www.wikidata.org/wiki/Q116031886" },
   "her-story": { steam: "368370" },
+  "to-the-moon": { steam: "206440" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
