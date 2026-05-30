@@ -4,17 +4,27 @@ import { SITE } from "../data/site";
 import { useTranslations, defaultLang } from "../i18n/ui";
 import type { Lang } from "../i18n/ui";
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { OG_META, ogUrlPath } from "../../scripts/og-card.config.mjs";
 
 interface Props {
   title: string;
   description?: string;
   jsonld?: any;
+  // pick ページが渡す pick 固有の OG カード絶対 URL。未指定なら既定カードに保険で落ちる。
+  ogImage?: string;
 }
-const { title, description = "", jsonld } = Astro.props;
+const { title, description = "", jsonld, ogImage } = Astro.props;
 const jsonldStr = jsonld ? JSON.stringify(jsonld) : "";
 const lang = (Astro.currentLocale ?? defaultLang) as Lang;
 const t = useTranslations(lang);
 const isJa = lang === "ja";
+// OG 画像は絶対 URL 必須(クローラ/Twitter が相対を解決しない)。SITE.url 由来 = SSOT。
+// props 未指定ページ(保険)は既定カードに落ちる(og:image が空にならない)。
+const ogImageUrl = ogImage ?? SITE.url + ogUrlPath("default", isJa);
+// このページの正準絶対 URL(og:url)。Astro.site(=SITE.url) 由来 = SSOT。
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const brand = isJa ? SITE.name : SITE.nameEn;
+const ogLocale = isJa ? OG_META.localeJa : OG_META.localeEn;
 const other = isJa ? "en" : "ja";
 const otherLabel = isJa ? "English" : "日本語";
 // ロゴは SITE のブランド名から導出 (SSOT)。末尾1文字をアクセント色にする。
@@ -34,6 +44,20 @@ const otherHome = getRelativeLocaleUrl(other, "/");
   <script is:inline>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
   <title>{title}</title>
   <meta name="description" content={description} />
+  <!-- OG/Twitter カード: シェア時に pick 固有の画像を出す(値は SSOT 由来・絶対 URL)。 -->
+  <meta property="og:type" content={OG_META.type} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:site_name" content={brand} />
+  <meta property="og:locale" content={ogLocale} />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:width" content={OG_META.imageWidth} />
+  <meta property="og:image:height" content={OG_META.imageHeight} />
+  <meta name="twitter:card" content={OG_META.twitterCard} />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageUrl} />
   <script type="application/ld+json" set:html={jsonldStr} is:inline></script>
   <script async src={"https://www.googletagmanager.com/gtag/js?id=" + SITE.ga4Id} is:inline></script>
   <script is:inline define:vars={{ ga4Id: SITE.ga4Id }}>

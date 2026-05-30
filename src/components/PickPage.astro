@@ -2,6 +2,8 @@
 import Base from "../layouts/Base.astro";
 import GameCard from "./GameCard.astro";
 import { picks, relatedPicks, rarityStamps, lineageIds, lineageName, JST_OFFSET_MIN } from "../data/picks";
+import { SITE } from "../data/site";
+import { ogUrlPath } from "../../scripts/og-card.config.mjs";
 import { pickJsonLd, representativeName } from "../lib/jsonld";
 import { useTranslations, tn, defaultLang } from "../i18n/ui";
 import type { Lang } from "../i18n/ui";
@@ -64,8 +66,11 @@ const roots = lineageIds(pick.meta)
   .map(function (id) { return lineageName(id, lang); })
   .filter(function (n): n is string { return n !== null; });
 const multiRoot = roots.length > 1;
+// この pick 固有の OG カード絶対 URL(ビルド前に public/og/<slug>(.ja).png を生成済み)。
+// SITE.url 由来 = SSOT。命名規約は ogUrlPath に一元化(gen-og-cards と同一規約・ズレ防止)。
+const ogImage = SITE.url + ogUrlPath(slug, isJa);
 ---
-<Base title={c.title} description={c.description} jsonld={jsonld}>
+<Base title={c.title} description={c.description} jsonld={jsonld} ogImage={ogImage}>
   <main class="wrap" style="padding-top:48px;padding-bottom:0" data-pickgate data-publish-at={publishAt}>
 
     <!-- 公開予定面: now(JST) < publishAt のときだけ client JS が表示する。SSR では常に hidden

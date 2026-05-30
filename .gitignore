@@ -3,3 +3,8 @@ dist/
 .astro/
 .direnv/
 .DS_Store
+
+# OG カード生成物はビルド時に作る(public/og/*.png)。repo に重い画像を溜めない。
+public/og/*.png
+# Steam ヘッダー取得物は git キャッシュとして管理する(CF Pages ビルドの毎回 fetch を避ける冪等キャッシュ)。
+# -> 取得物(og-src/*.jpg)は ignore せず commit する。生成物(og/*.png)だけ ignore。

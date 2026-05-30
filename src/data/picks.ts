@@ -983,6 +983,15 @@ export function isPublished(publishAt: string | undefined, nowMs: number): boole
   return nowMs >= at;
 }
 
+// steam URL から Steam appid を抽出(計算だけ・副作用なし)。形式 .../app/<digits>/... のみ受ける。
+//   steam 無し/不正は null(捏造しない・フォールバックは呼び出し側)。OG カード生成と将来の
+//   appid 参照を一様に扱う唯一の入口(SSOT)。lineageName の部分一致は後方互換のため今は触らない。
+export function steamAppId(steamUrl: string | undefined): string | null {
+  if (!steamUrl) return null;
+  const m = /\/app\/(\d+)\//.exec(steamUrl);
+  return m ? m[1] : null;
+}
+
 // lineage id -> 原点 established を同定する識別子(多態)。原点名そのものは picks 内の games[] に
 // established として既出 = SSOT。ここでは「どの established が原点か」だけを同定する。
 //   steam   : Steam app id(後方互換・PC 作品の原点)。

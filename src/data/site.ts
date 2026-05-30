@@ -7,6 +7,7 @@ export const SITE = {
   domain: "next.games.passed.jp",
   url: "https://next.games.passed.jp",
   tagline: "埋もれた一本に、最初の合格を。",
+  taglineEn: "A buried gem, its first pass.",
   ga4Id: "G-YVLQEZPN7G",
   adsenseId: "ca-pub-7523814645434890",
 } as const;
