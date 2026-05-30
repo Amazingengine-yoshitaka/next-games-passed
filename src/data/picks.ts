@@ -789,6 +789,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "inverted-angel": {
+    published: "2026-06-08",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "adventure", lineage: "her-story", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 567, positivePct: 91, noEnglish: true } },
+    games: [
+      {
+        name_en: "Inverted Angel",
+        name_ja: "Inverted Angel",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2894960/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese indie mystery where a girl shows up claiming to be your girlfriend, and you type your own words to branch the story and uncover who she really is. Very Positive in Japan at 567 reviews and 91 percent, but it has no English support, so the West has barely found it (only 5 English reviews). Note: this is not generative AI; your input is matched against the creator's hand-written patterns.",
+        desc_ja: "自称彼女として現れた少女の正体を、自分の言葉を打ち込んで物語を分岐させながら暴く日本のインディーミステリー。567レビュー91%で日本では非常に好評なのに英語非対応で、西はまだほぼ見つけていない(英語レビューは5件)。注記：生成AIではなく、入力は開発者が手書きした正解パターンとの照合で判定される。",
+      },
+      {
+        name_en: "Her Story",
+        name_ja: "Her Story",
+        status: "established",
+        steam: "https://store.steampowered.com/app/368370/Her_Story/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of typing your own words to dig out the truth: you search a database of clips, piece together fragments, and reason out a woman's true identity yourself. A BAFTA and IGF Grand Prize winner. This gem keeps that core but lets your own words branch the story itself.",
+        desc_ja: "自分の言葉を打ち込んで真相を掘り出すデダクションの原点。映像断片を検索語で集め、女性の正体を自力で推理する。BAFTA・IGF Grand Prize 受賞作。この未発掘の名作はその核を保ちつつ、自分の言葉で物語そのものを分岐させる。",
+      },
+    ],
+    en: {
+      title: "Inverted Angel - a buried type-it-yourself mystery, walled off by language",
+      description: "A Japanese indie mystery where a girl shows up claiming to be your girlfriend, and you type your own words to branch the story and uncover who she really is. Very Positive in Japan at 567 reviews and 91 percent, but no English support, so the West has barely found it (only 5 English reviews).",
+      h1a: "Type your own words, ",
+      h1flip: "and find out who she is",
+      h1b: ".",
+      lede: "Not a story you only read. A mystery you type your way into. A girl appears claiming to be your girlfriend, and you answer in your own words to branch the story and corner her true identity. Loved in Japan at 91 percent, but it has no English yet, so the West cannot read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "She knows too much to be a stalker, and she will not explain. The screen waits for your words, not a menu choice.",
+        "So you type what you would actually say, and the story bends down the path your own words opened.",
+        "When a line you typed yourself cracks her story open and her real identity surfaces, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You loved the Her Story joy of typing your own way to the truth, no menu hand-holding",
+        "You want a mystery that bends to your own words, with multiple endings to chase",
+        "You want a Japanese indie gem the West has barely read, with only 5 English reviews",
+      ],
+      bad: [
+        "You need a fully localized, English-first release right now (no English yet, the wall is language only)",
+        "You want this to be a true AI chat (it is not generative AI: inputs are matched to the creator's hand-written patterns)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Inverted Angel - 自分の言葉を打ち込んで正体を暴く、言語の壁で埋もれたミステリー",
+      description: "自称彼女として現れた少女の正体を、自分の言葉を打ち込んで物語を分岐させながら暴く日本のインディーミステリー。567レビュー91%で日本では非常に好評なのに英語非対応で、西はまだほぼ見つけていない(英語レビューは5件)。",
+      h1a: "自分の言葉を打ち込んで、",
+      h1flip: "正体を暴く",
+      h1b: "。",
+      lede: "読むだけの物語じゃない。打ち込んで分け入るミステリーだ。自称彼女として現れた少女に、選択肢でなく自分の言葉で答え、物語を分岐させながら正体を追い詰める。日本では91%で愛されながら英語非対応で、西はまだ読めない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ストーカーにしては知りすぎている。彼女は説明しない。画面は選択肢でなく、あなたの言葉を待っている。",
+        "だから実際に言うであろう言葉を打ち込む。物語は、自分の言葉が開いた道へ折れていく。",
+        "自分で打った一言が彼女の話を綻ばせ、本当の正体が浮かんだ瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Her Story の、選択肢に頼らず自分の言葉で真相へ辿り着く快感が好きな人",
+        "自分の言葉で物語が曲がり、複数の結末を追える推理が欲しい人",
+        "英語レビュー5件で西がまだほぼ読めていない、日本のインディーの原石を掘りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(壁は言語だけ・英語は未対応)",
+        "本物のAI会話を期待する人(生成AIではない・入力は開発者が手書きした正解パターンとの照合)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -836,6 +914,7 @@ const LINEAGE_ANCHOR = {
   "obra-dinn": { steam: "653530" },
   "two-point-hospital": { steam: "535930" },
   "archero": { wikidata: "https://www.wikidata.org/wiki/Q116031886" },
+  "her-story": { steam: "368370" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;

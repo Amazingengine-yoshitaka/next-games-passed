@@ -1,0 +1,13 @@
+---
+// 紹介ページ(pick) の動的ルート(JA)。
+// 経路 /ja/picks/<slug>/ を picks.ts の全 slug から自動生成する(手書きルート廃止・SSOT)。
+// lang は PickPage が Astro.currentLocale で判定(この階層に置けば ja として render される)。
+// 【URL 不変】出力は directory format(/ja/picks/<slug>/index.html)。手書き時代と完全同一。
+import PickPage from "../../../components/PickPage.astro";
+import { picks } from "../../../data/picks";
+export function getStaticPaths() {
+  return Object.keys(picks).map((slug) => ({ params: { slug } }));
+}
+const { slug } = Astro.params;
+---
+<PickPage slug={slug} />
