@@ -1340,6 +1340,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "happy-neet": {
+    published: "2026-06-11",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "simulation", lineage: "princess-maker-2", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 201, positivePct: 90, noEnglish: false } },
+    games: [
+      {
+        name_en: "Raising a Happy NEET",
+        name_ja: "幸せなニートの育て方",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4321500/Raising_a_Happy_NEET/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese doujin cohabitation sim where you take in a shy, shut-in distant relative and teach her how to live: the books and meals you choose become life knowledge, and it comes back as chores done and growth. Very Positive in Japan at 201 reviews and 90 percent, but only 29 English reviews, so the West has barely found it.",
+        desc_ja: "人見知りで引きこもりの遠縁の少女を家に迎え、生活の知識を一つずつ教えて一緒に暮らす日本の同人育成シム。選んだ本と食事が生活の知識になり、家事や成長になって返ってくる。201件90%で非常に好評なのに英語レビューは29件で、西はまだほぼ見つけていない。",
+      },
+      {
+        name_en: "Princess Maker 2 Refine",
+        name_ja: "プリンセスメーカー2",
+        status: "established",
+        steam: "https://store.steampowered.com/app/523000/Princess_Maker_2_Refine/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the raising sim: Gainax, 1993. You schedule eight years of education and work, raising a daughter to be a princess, a queen, someone proper (the Refine edition is the one on Steam). This gem flips that objective: not raise her proper, but raise her happy, teaching life one piece at a time until she finds her own dream.",
+        desc_ja: "育成シミュレーションの原点。ガイナックス・1993年。8年間の教育と仕事の予定を組み、娘を王女へ、女王へ、立派な誰かへ育て上げる(Steam 版は Refine 版)。この未発掘の名作はその目的関数を反転させる——立派にでなく、幸せに。矯正せず、生活の知識を一つずつ教えて、本人の夢を見つけさせる。",
+      },
+    ],
+    en: {
+      title: "Raising a Happy NEET - a buried Japanese life sim that raises her happy, not proper, almost unread in the West",
+      description: "A Japanese doujin cohabitation sim where you take in a shut-in relative and teach her how to live, one day at a time. Very Positive in Japan at 201 reviews and 90 percent, but only 29 English reviews, so the West has barely found it.",
+      h1a: "Don't raise her proper, ",
+      h1flip: "raise her happy",
+      h1b: ".",
+      lede: "Not a prodigy you mold into a queen. A shut-in you help live. You take in a distant relative, teach her life one piece at a time, and stay beside her until she finds her own dream. Very Positive at 201 reviews and 90 percent, but with only 29 English reviews the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "She barely speaks. A shy, withdrawn NEET moves in, and at first even small talk falls flat.",
+        "So you work, shop, and teach: each book and meal you choose becomes life knowledge, and it comes back as chores done and words she could not say before.",
+        "When the girl who could not face the world finds her own dream, and you realize you never had to fix her, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Princess Maker loop of daily choices slowly shaping a person",
+        "You want care, not correction: a warm, redemptive raising sim instead of a report card",
+        "You want a Japanese doujin gem the West has barely read, with only 29 English reviews",
+      ],
+      bad: [
+        "You want brutal fail states and min-max pressure (this is a warm, redemptive cohabitation story)",
+        "You want big-budget polish and a marketing machine (this is a small doujin circle's work)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "幸せなニートの育て方 - 立派にでなく幸せに育てる、西がまだ見つけていない同居育成シム",
+      description: "引きこもりの遠縁の少女を家に迎え、生活の知識を一つずつ教えて一緒に暮らす日本の同人育成シム。201件90%で非常に好評なのに英語レビューは29件で、西はまだほぼ見つけていない。",
+      h1a: "立派に育てない。",
+      h1flip: "幸せに育てる",
+      h1b: "。",
+      lede: "女王に育て上げる英才教育じゃない。生き方を見失った子との同居だ。遠縁のニートの少女を家に迎え、生活の知識を一つずつ教え、本人の夢が見つかるまで寄り添う。201件90%で非常に好評なのに英語レビューは29件。西はまだほぼ見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "彼女はほとんど話さない。人見知りで引っ込み思案なニートとの同居は、雑談すら空振りから始まる。",
+        "だから働いて、買って、教える。選んだ本と食事が生活の知識になり、教えたことが家事や、言えなかった一言になって返ってくる。",
+        "世界と向き合えなかった子が自分の夢を見つけ、直す必要なんて最初からなかったと気づいた瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "プリンセスメーカーの、毎日の選択で人がゆっくり形になる手応えが好きな人",
+        "矯正でなくケアの育成——採点されない、温かく救いのある物語が欲しい人",
+        "英語レビュー29件で西がまだほぼ読めていない、日本の同人原石を掘りたい人",
+      ],
+      bad: [
+        "ヒリつく失敗や効率詰めのプレッシャーが欲しい人(本作は温かく救いのある同居生活)",
+        "大作級の磨き込みと宣伝が欲しい人(小さな同人サークルの一本)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1401,6 +1479,7 @@ const LINEAGE_ANCHOR = {
   "metal-hellsinger": { steam: "1061910" },
   "uncharted-waters-2": { steam: "628170" },
   "dungeon-keeper": { steam: "1996630" },
+  "princess-maker-2": { steam: "523000" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;

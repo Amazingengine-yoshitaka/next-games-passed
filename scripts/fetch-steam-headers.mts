@@ -7,7 +7,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { picks, steamAppId } from "../src/data/picks.ts";
-import { STEAM_HEADER_SOURCES, OG_SRC_DIR } from "./og-card.config.mjs";
+import { STEAM_HEADER_SOURCES, STEAM_APPDETAILS_API, OG_SRC_DIR } from "./og-card.config.mjs";
 
 const FORCE = process.argv.includes("--force");
 
@@ -23,7 +23,44 @@ function leadAppIds(): string[] {
   return ids;
 }
 
-// 1 appid を CDN 優先順で取得し repo へ保存する。取得できたら true。
+// 最終フォールバック: 公式 appdetails API で header_image URL を引き、その URL から取得する。
+//   新しめの appid は固定 CDN パスに無い(ハッシュ付きパスへ移行済み)ため API 経由でだけ取れる。
+//   失敗は false を返すだけ(fail-soft)。呼び出し元が brand fallback へ落とす。
+async function fetchViaAppDetails(appid: string, dest: string): Promise<boolean> {
+  const apiUrl = STEAM_APPDETAILS_API.replace("{appid}", appid);
+  try {
+    const r = await fetch(apiUrl);
+    if (!r.ok) {
+      console.warn("[fetch] appdetails miss", r.status, apiUrl);
+      return false;
+    }
+    const json: any = await r.json();
+    const entry = json && json[appid];
+    const headerUrl = entry && entry.success && entry.data && entry.data.header_image;
+    if (!headerUrl) {
+      console.warn("[fetch] appdetails has no header_image for", appid);
+      return false;
+    }
+    const img = await fetch(headerUrl);
+    if (!img.ok) {
+      console.warn("[fetch] appdetails image miss", img.status, headerUrl);
+      return false;
+    }
+    const buf = Buffer.from(await img.arrayBuffer());
+    if (buf.length === 0) {
+      console.warn("[fetch] appdetails empty body", headerUrl);
+      return false;
+    }
+    await fs.writeFile(dest, buf);
+    console.log("[fetch] saved via appdetails", dest, buf.length, "bytes");
+    return true;
+  } catch (e) {
+    console.warn("[fetch] appdetails error", appid, (e as Error).message);
+    return false;
+  }
+}
+
+// 1 appid を CDN 優先順 -> appdetails API の順で取得し repo へ保存する。取得できたら true。
 async function fetchHeader(appid: string): Promise<boolean> {
   const dest = path.join(OG_SRC_DIR, appid + ".jpg");
   if (!FORCE) {
@@ -57,6 +94,8 @@ async function fetchHeader(appid: string): Promise<boolean> {
       console.warn("[fetch] error", url, (e as Error).message);
     }
   }
+  // 全 CDN 候補が miss -> 公式 appdetails API を最終フォールバックとして試す。
+  if (await fetchViaAppDetails(appid, dest)) return true;
   console.warn("[fetch] FAILED all sources for appid", appid, "-> brand fallback");
   return false;
 }

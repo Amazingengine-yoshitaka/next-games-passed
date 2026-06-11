@@ -40,6 +40,11 @@ export const STEAM_HEADER_SOURCES = [
   "https://cdn.akamai.steamstatic.com/steam/apps/{appid}/header.jpg",
 ];
 
+// 最終フォールバック: Steam 公式 appdetails API。
+//   新しめの appid は上記の固定 CDN パスに存在しない(ハッシュ付き store_item_assets/... へ移行済み)。
+//   ハッシュは事前導出できないため、API 応答 data.header_image の URL をそのまま取得元に使う。
+export const STEAM_APPDETAILS_API = "https://store.steampowered.com/api/appdetails?appids={appid}";
+
 // 取得物 (Steam JPG) の保存先 (appid 単位キャッシュ・複数 pick で共有)。
 export const OG_SRC_DIR = "public/og-src";
 // 生成物 (合成 PNG) の出力先。dist/og/... として配信される。
