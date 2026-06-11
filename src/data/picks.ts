@@ -1261,6 +1261,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dungeon-seisoku": {
+    published: "2026-06-10",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "simulation", lineage: "dungeon-keeper", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 101, positivePct: 89, noEnglish: true } },
+    games: [
+      {
+        name_en: "Dungeon ni Seisoku da!",
+        name_ja: "ダンジョンに生息だ！",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3894980/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese doujin 2D dungeon-management sim where you do not place traps: as a nature god you reshape terrain, spawn creatures, and grow an ecosystem of predation and breeding that swallows the adventurers coming for your crystal. Very Positive in Japan at 101 reviews and 89 percent, but it has no English support, so the West cannot read it yet (zero English reviews).",
+        desc_ja: "罠を置くのではなく、自然神として地形を組み替え、生物を生み、捕食と繁殖の生態系を育てて、クリスタルを狙う冒険者を呑み込む日本の同人2Dダンジョン経営シミュレーション。101レビュー89%で非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは0件)。",
+      },
+      {
+        name_en: "Dungeon Keeper Gold",
+        name_ja: "ダンジョンキーパー",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1996630/Dungeon_Keeper_Gold/",
+        wikidata: "https://www.wikidata.org/wiki/Q1265742",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of standing on the dungeon's side: the 1997 Bullfrog classic where you dig out a lair, place traps and monsters, and repel the heroes who invade (the Gold edition returned to Steam in 2024). This gem replaces that placement with an ecosystem of predation and breeding that runs on its own.",
+        desc_ja: "ダンジョン側に立って侵入する勇者を迎え撃つ味の創始原点。1997年のBullfrogの古典で、罠とモンスターを配置して守る(Gold版が2024年にSteamへ再リリース)。この未発掘の名作はその配置を、捕食と繁殖で勝手に回る生態系の設計に置き換える。",
+      },
+    ],
+    en: {
+      title: "Dungeon ni Seisoku da! - a buried dungeon-management gem where the ecosystem fights for you, walled off by language",
+      description: "A Japanese doujin dungeon-management sim where you grow a food chain instead of placing traps. Very Positive in Japan at 101 reviews and 89 percent, but it has no English support and zero English reviews.",
+      h1a: "Don't set traps. ",
+      h1flip: "Grow a food chain",
+      h1b: ".",
+      lede: "Not defend a dungeon. Raise one. As a nature god you reshape terrain, spawn creatures, and let predation and breeding swallow the adventurers coming for your crystal. Loved in Japan at 89 percent, but it is Japanese-only, with zero English reviews.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Adventurers march in, but you do not line up troops. You reshape the terrain, spawn creatures, and design a chain of eating, being eaten, and breeding.",
+        "Once you let go, the ecosystem runs on its own: predation, breeding, mutation. Misread the balance and the whole chain collapses.",
+        "When the food chain you raised swallows a party of adventurers whole, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Dungeon Keeper taste of standing on the dungeon's side against the raiders",
+        "You like designing a system, then watching it run and balance itself",
+        "You want a Japanese doujin gem with zero English reviews the West has not found at all",
+      ],
+      bad: [
+        "You need English support right now (it is Japanese-only, the wall is language)",
+        "You want to control units directly (this is indirect control: you shape terrain and the ecosystem)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ダンジョンに生息だ！ - 生態系で冒険者を呑み込む、言語の壁で埋もれたダンジョン経営",
+      description: "罠でなく生態系を組む日本の同人2Dダンジョン経営。101レビュー89%で非常に好評なのに英語非対応で、英語レビューは0件。西はまだ誰も見つけていない。",
+      h1a: "罠は置かない。",
+      h1flip: "生態系を組む",
+      h1b: "。",
+      lede: "ダンジョンを守るんじゃない。育てるんだ。自然神として地形を組み替え、生物を生み、捕食と繁殖の連鎖でクリスタルを狙う冒険者を呑み込む。日本では89%で好評なのに日本語のみ対応で、英語レビューは0件。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "冒険者が攻めてくる。でも兵は並べない。地形を組み替え、生物を生み、食う・食われる・増えるの連鎖を設計する。",
+        "組んだ生態系は手を離れて勝手に回る。捕食と繁殖、そして突然変異——読み違えれば連鎖ごと崩れる。",
+        "自分が育てた食物連鎖が、押し寄せる冒険者を呑み込んだ瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Dungeon Keeper の、ダンジョン側に立って侵入者を迎え撃つ味が好きな人",
+        "組んだ後は系が勝手に回る、生態系の読みと設計が好きな人",
+        "英語レビュー0件で西がまだ誰も見つけていない、日本の同人原石を掘りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応が欲しい人(日本語のみ・壁は言語だけ)",
+        "ユニットを直接操作して戦いたい人(本作は地形と生態系を整える間接制御)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1321,6 +1400,7 @@ const LINEAGE_ANCHOR = {
   "to-the-moon": { steam: "206440" },
   "metal-hellsinger": { steam: "1061910" },
   "uncharted-waters-2": { steam: "628170" },
+  "dungeon-keeper": { steam: "1996630" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
