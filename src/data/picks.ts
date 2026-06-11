@@ -1496,6 +1496,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "for-the-ghosts": {
+    published: "2026-06-12",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "doki-doki-literature-club", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 314, positivePct: 98, noEnglish: true } },
+    games: [
+      {
+        name_en: "For the GHOSTs",
+        name_ja: "For the GHOSTs",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2487390/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese doujin metafiction ADV where girls who do not exist talk to the real you: the game itself insists they have no will, only programmed text, yet you visit their rooms, share warm drinks, and piece together your own role from fragments of conversation. Very Positive in Japan at 314 reviews and 98 percent, but it has no English support, so the West cannot read it yet (only 3 English reviews).",
+        desc_ja: "実在しない少女たちが現実のあなたと交流する日本の同人メタフィクションADV。彼女たちに意志はない、ただのプログラムされたテキストだとゲーム自身が言い切った上で、部屋を訪ね、温かい飲み物を分け合い、会話の断片から自分の役割を組み上げていく。314レビュー98%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは3件)。",
+      },
+      {
+        name_en: "Doki Doki Literature Club!",
+        name_ja: "Doki Doki Literature Club!",
+        status: "established",
+        steam: "https://store.steampowered.com/app/698780/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of fiction that knows it is fiction: characters realize they live in a game and speak directly to the real you. Overwhelmingly Positive at over 220,000 reviews. It used that meta-gaze for horror; this gem turns the same gaze into kindness.",
+        desc_ja: "虚構が虚構だと自覚するメタフィクションの原点。キャラクターが自分はゲームの中にいると気づき、画面のこちら側のあなたへ直接語りかけてくる。22万件超のレビューで圧倒的に好評。原点はその視点を恐怖に使い、この未発掘の名作は同じ視点を優しさへ反転させる。",
+      },
+    ],
+    en: {
+      title: "For the GHOSTs - a buried metafiction ADV where you befriend girls who do not exist, walled off by language",
+      description: "The game itself insists the characters have no will. What is real is only what you feel toward them. Very Positive in Japan at 314 reviews and 98 percent, but with no English support, the West cannot read it yet (only 3 English reviews).",
+      h1a: "Befriend the girls ",
+      h1flip: "who do not exist",
+      h1b: ".",
+      lede: "Not metafiction to scare you. Metafiction to be kind to you. You visit the rooms of fictional girls, trade words and warm drinks, and piece together your own role from fragments. Loved in Japan at 98 percent, but it has no English yet, so the West cannot read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The game keeps telling you the truth: these girls have no will. They are programmed text, nothing more.",
+        "Still you visit their rooms, talk about what they love, share a warm drink, and the fragments start to connect: what you are, and why you are here.",
+        "Then it lands. Knowing it is all fiction, the feeling that moved on your side of the screen was real. Something in your chest quietly tightens.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Doki Doki Literature Club meta-gaze and want it written in kindness instead of horror",
+        "You want to sit with the question of whether what you feel for a fictional character is real",
+        "You want a Japanese doujin gem the West cannot read yet, buried under only 3 English reviews",
+      ],
+      bad: [
+        "You need an English-first release right now (no English yet, the wall is language only)",
+        "You want flashy plot mechanics or routes to optimize (this is a quiet game of conversation and afterglow)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "For the GHOSTs - 実在しない少女たちと友達になる、言語の壁で埋もれたメタフィクションADV",
+      description: "キャラクターに意志はない、とゲーム自身が言い切る。本物なのは、あなた側の感情だけ。314レビュー98%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは3件)。",
+      h1a: "実在しない君と、",
+      h1flip: "ともだちになる",
+      h1b: "。",
+      lede: "怖がらせるためのメタフィクションじゃない。優しくするためのメタフィクションだ。フィクションの少女たちの部屋を訪ね、言葉を交わし、会話の断片から自分の役割を組み上げていく。日本では98%好評なのに英語非対応で、西はまだ読めない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "彼女たちに意志はない。ただのプログラムされたテキストだと、ゲーム自身が繰り返し告げてくる。",
+        "それでも部屋を訪ね、好きなものの話をして、温かい飲み物を分け合ううちに、断片が繋がりはじめる。自分が何者で、なぜここにいるのか。",
+        "虚構だと知り尽くした上で、それでも動いたこちら側の感情だけは本物だった——そう気づいた瞬間、胸の奥が静かに締まる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ドキドキ文芸部のメタ視点が好きで、その続きを恐怖ではなく優しさで読みたい人",
+        "虚構のキャラクターへの感情は本物か、という問いに静かに付き合いたい人",
+        "英語レビュー3件で西がまだ読めていない、日本の同人原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "派手な展開や攻略要素が欲しい人(本作は会話と余韻で進む静かな一本)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1558,6 +1636,7 @@ const LINEAGE_ANCHOR = {
   "uncharted-waters-2": { steam: "628170" },
   "dungeon-keeper": { steam: "1996630" },
   "princess-maker-2": { steam: "523000" },
+  "doki-doki-literature-club": { steam: "698780" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
