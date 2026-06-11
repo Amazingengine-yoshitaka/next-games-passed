@@ -1182,6 +1182,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "irudo": {
+    published: "2026-06-10",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "simulation", lineage: "uncharted-waters-2", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 160, positivePct: 88, noEnglish: true } },
+    games: [
+      {
+        name_en: "Irudo",
+        name_ja: "イル・ドー",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3561770/Irudo/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A solo-doujin maritime trading sim from Japan. You trade to earn, gather crew, strengthen your fleet, and take the seas. Very Positive in Japan at 160 reviews and 88 percent, but it has no English support, so only 1 English review exists.",
+        desc_ja: "日本の個人同人による海洋交易シミュレーション。交易で稼ぎ、仲間を集めて艦隊を強化し、海域を制覇する。160レビュー88%で非常に好評なのに英語非対応で、英語レビューはわずか1件。",
+      },
+      {
+        name_en: "Uncharted Waters II",
+        name_ja: "大航海時代II",
+        status: "established",
+        steam: "https://store.steampowered.com/app/628170/",
+        wikidata: "https://www.wikidata.org/wiki/Q845526",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the maritime-trade taste: Koei's Uncharted Waters built three pillars, trade, exploration, and naval combat, into one loop of earning at sea and expanding. This gem distills that loop back down to a single solo-doujin scale.",
+        desc_ja: "海洋交易の味の原点。コーエーの大航海時代が、交易・探索・海戦の三本柱を「海で稼いで広げる」一つのループに組み上げた。この未発掘の名作はそのループを、個人同人のスケールへ純粋に凝縮し直す。",
+      },
+    ],
+    en: {
+      title: "Irudo - a buried maritime-trade sim where you build a fleet and conquer the seas, walled off by language",
+      description: "A solo-doujin maritime trading sim from Japan. Trade to earn, gather crew, strengthen your fleet, and take the seas. Very Positive at 160 reviews and 88 percent, but it has no English support, so only 1 English review exists.",
+      h1a: "Trade, build a fleet, ",
+      h1flip: "take the seas",
+      h1b: ".",
+      lede: "Earn through trade, gather companions, strengthen your fleet, and conquer the seas, fortress by fortress. Loved in Japan at 88 percent, but it has no English yet, so the West has not boarded. Just 1 English review exists.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You buy low in one port and the whole map tilts: you read where the next price gap is before anyone else.",
+        "Then a fortress blocks the lane, so you decide whether to invest, recruit, or fight your way through.",
+        "When a single trade run pays for the fleet that takes the sea, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Uncharted Waters loop of trade, explore, and naval combat, and want it at a focused doujin scale",
+        "You want to read price gaps and routes, then grow a fleet from a single good trade run",
+        "You do not mind no English yet: the gem is the loop, and language is the only wall (just 1 English review exists)",
+      ],
+      bad: [
+        "You need a polished, English-first release right now (no English yet, and it is still in Early Access)",
+        "You want fast action, not slow trade-route reading and fleet management",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "イル・ドー - 艦隊を組んで海域を制覇する、言語の壁で埋もれた海洋交易シミュレーション",
+      description: "日本の個人同人による海洋交易シミュレーション。交易で稼ぎ、仲間を集めて艦隊を強化し、海域を制覇する。160レビュー88%で非常に好評なのに英語非対応で、英語レビューはわずか1件。",
+      h1a: "交易し、艦隊を組み、",
+      h1flip: "海域を獲る",
+      h1b: "。",
+      lede: "交易で資金を稼ぎ、仲間を集め、艦隊を強化し、敵の拠点を一つずつ落として海域を制覇する。日本では88%で愛されながら英語はまだ無く、西は乗り込めていない。英語レビューはたった1件。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ある港で安く仕入れた瞬間、地図全体が傾く。次にどこで価格差が開くかを誰より先に読む。",
+        "航路を拠点が塞ぐ。投資するか、仲間を増やすか、押し通るかを決める。",
+        "たった一度の交易が、海域を獲る艦隊の元手になった瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "大航海時代の、交易・探索・海戦のループが好きで、それを凝縮した同人スケールで味わいたい人",
+        "価格差と航路を読み、一度の良い交易から艦隊を育てる手応えが欲しい人",
+        "まだ英語が無くても気にしない人——原石はループで、言語だけが唯一の壁(英語レビューは1件のみ)",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・かつ早期アクセス中)",
+        "ゆっくり航路を読む交易や艦隊運用より、速いアクションが欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1241,6 +1320,7 @@ const LINEAGE_ANCHOR = {
   "her-story": { steam: "368370" },
   "to-the-moon": { steam: "206440" },
   "metal-hellsinger": { steam: "1061910" },
+  "uncharted-waters-2": { steam: "628170" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
