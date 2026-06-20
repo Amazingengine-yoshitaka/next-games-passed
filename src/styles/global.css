@@ -20,6 +20,15 @@
   --lineage-self-accent:var(--accent);   /* 現在地の強調(動線色) */
   --lineage-root-accent:var(--accent2);  /* 原点の強調(化ける色) */
   --lineage-forest-gap:18px;          /* 家系図の root 間ギャップ(/lineage) */
+  /* --- ホームたたみ処理(群ヘッダ)の寸法を集約(マジックナンバー排除・SSOT) --- */
+  --fold-head-gap-top:20px;     /* 群ヘッダの上マージン */
+  --fold-head-gap-bottom:12px;  /* 群ヘッダの下マージン(.node のカード間隔と同系) */
+  --fold-toggle-pad-y:12px;     /* 群ヘッダボタンの上下余白 */
+  --fold-toggle-pad-x:18px;     /* 群ヘッダボタンの左右余白 */
+  --fold-toggle-gap:10px;       /* 群ヘッダボタン内の要素間ギャップ */
+  --fold-label-size:14.5px;     /* 群名のフォントサイズ */
+  --fold-meta-size:12.5px;      /* 件数/伏せ残数のフォントサイズ */
+  --fold-chevron-size:18px;     /* 群ヘッダのシェブロン(›)サイズ */
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -309,3 +318,36 @@ html.js .node-li[data-quizhit="1"] .node{border-color:rgba(255,93,143,.5);box-sh
    hidden 属性(display:none)を尊重するため display は指定しない(可視時のレイアウトだけ整える)。 */
 .soon{padding:64px 0 8px}
 .soon .soon-on{margin-top:14px;color:var(--accent);font-size:15px;font-weight:800;letter-spacing:.02em}
+
+/* ============================================================
+   ホームのたたみ処理(hub+新着は常時開示・残り find は genre 鉱脈ごとに畳む)
+   - 隠す方向のセレクタのみで実装する(展開 = data-fold 属性を外すだけ)。
+   - .node-li / .group-head に display を「足さない」こと。既存 filter と
+     time-gate は hidden 属性の UA 既定 display:none に依存しており、
+     author の display 指定はそれを上書きして filter を壊す。
+   - リンクを隠し得るルールは全て html.js スコープ = JS-off は全件・全文表示。
+   ============================================================ */
+.group-head{margin:var(--fold-head-gap-top) 0 var(--fold-head-gap-bottom)}
+.group-head .g-name{font-weight:800;font-size:var(--fold-label-size);color:#fff;letter-spacing:.04em}
+.group-head-fresh .g-name{margin:0;font-size:var(--fold-meta-size);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.g-toggle{display:flex;align-items:center;gap:var(--fold-toggle-gap);width:100%;font:inherit;text-align:left;
+  background:var(--bg2);border:1px dashed var(--line);border-radius:14px;
+  padding:var(--fold-toggle-pad-y) var(--fold-toggle-pad-x);cursor:pointer;transition:border-color .15s}
+.g-toggle:hover{border-color:rgba(70,214,230,.4)}
+.g-toggle .g-count{color:var(--muted);font-size:var(--fold-meta-size)}
+.g-toggle .g-buried{margin-left:auto;color:var(--accent2);font-size:var(--fold-meta-size);letter-spacing:.04em}
+.g-toggle::after{content:"\203A";color:var(--accent);font-size:var(--fold-chevron-size);font-weight:700;line-height:1;transition:transform .15s}
+html.js [data-group-head][data-state="expanded"] .g-toggle::after{transform:rotate(90deg)}
+
+/* 畳み: folded view でだけ data-fold=hidden の member を消す。リンクは DOM に残る(remove しない)。 */
+html.js [data-nodelist][data-view="folded"] .node-li[data-fold="hidden"]{display:none}
+/* filter/sort 操作中(flat view)は群ヘッダを消し、既存の絞り込み/並べ替えがそのまま動く。 */
+html.js [data-nodelist][data-view="flat"] .group-head{display:none}
+
+/* JS-off: 群見出しはプレーンな区切りテキストとして残し(クローラへの genre 区分の意味付け)、
+   操作示唆(伏せ残数/シェブロン/押せる感)だけを消す。リンクは一切隠さない。 */
+html.no-js .g-buried{display:none}
+html.no-js .g-toggle::after{display:none}
+html.no-js .g-toggle{pointer-events:none;cursor:default;border-style:solid}
+
+@media(prefers-reduced-motion:reduce){.g-toggle::after{transition:none}}
