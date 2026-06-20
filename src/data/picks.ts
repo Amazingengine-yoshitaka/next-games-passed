@@ -1574,6 +1574,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dreamin-her": {
+    published: "2026-06-12",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "clannad", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 234, positivePct: 98, noEnglish: true } },
+    games: [
+      {
+        name_en: "Dreamin' Her",
+        name_ja: "Dreamin' Her -僕は、彼女の夢を見る。-",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1920540/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese doujin-brand romance-occult novel where a girlfriend identical to the childhood friend who turned you down appears in your dreams, and night by night the dream encroaches on reality. Very Positive in Japan at 234 reviews and 98 percent, but it has no English support, so the West cannot read it yet (only 5 English reviews).",
+        desc_ja: "振られた幼なじみと瓜二つの「彼女」が夢に現れ、夜ごと夢が現実を侵しはじめる、日本の同人ブランドの恋愛オカルトノベル。234レビュー98%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは5件)。",
+      },
+      {
+        name_en: "CLANNAD",
+        name_ja: "CLANNAD",
+        status: "established",
+        steam: "https://store.steampowered.com/app/324160/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the all-ages Japanese crying game: a romance novel where small, quiet choices pile up until the emotion finally breaks through. Overwhelmingly Positive on Steam at over 10,000 reviews. This gem inherits that lineage and pours it, as one short story, into the point where dream and reality blur.",
+        desc_ja: "全年齢の「泣きゲー」の原点。静かな選択の積み重ねが、やがて感情の決壊に至る恋愛ノベル。Steam では1万件超のレビューで圧倒的に好評。この未発掘の名作はその系譜を受け継ぎ、夢と現実の境界が滲む一点へ短編で注ぎ込む。",
+      },
+    ],
+    en: {
+      title: "Dreamin' Her - a buried Japanese romance-occult novel where the dream encroaches on reality, walled off by language",
+      description: "A girlfriend identical to the childhood friend who turned you down appears in your dreams, and the dream starts encroaching on reality. Very Positive in Japan at 234 reviews and 98 percent, but with no English support, the West cannot read it yet (only 5 English reviews).",
+      h1a: "The dream starts ",
+      h1flip: "encroaching on reality",
+      h1b: ".",
+      lede: "Not a love story you watch. One you doubt. In your dreams a girlfriend appears, identical to the childhood friend who turned you down, and night by night the dream encroaches on the real. Loved in Japan at 98 percent, but it has no English yet, so the West cannot read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "By day you are a worn-out exam student. By night a girlfriend who should not exist waits in the dream, wearing the face of the childhood friend who rejected you.",
+        "At first the dream is sweet refuge. Then it leaks: which side is real begins to blur, and every choice tilts you toward one of them.",
+        "When you decide which world, and which her, to believe in, the ending lands and something in your chest quietly gives way.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love CLANNAD-style all-ages romance novels where the payoff is emotional, not racy",
+        "You are weak to stories that blur dream and reality until you doubt the world itself",
+        "You want a Japanese doujin-brand gem the West cannot read yet, buried under only 5 English reviews",
+      ],
+      bad: [
+        "You need an English-first release right now (no English yet, the wall is language only)",
+        "You want mechanics or fast plot turns (this is a short, quiet novel sitting with a worn-down student's inner life)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Dreamin' Her -僕は、彼女の夢を見る。- 夢が現実を侵してくる、言語の壁で埋もれた恋愛オカルトノベル",
+      description: "振られた幼なじみと瓜二つの「彼女」が夢に現れ、夢が現実を侵しはじめる。234レビュー98%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは5件)。",
+      h1a: "夢が、現実を",
+      h1flip: "侵してくる",
+      h1b: "。",
+      lede: "眺めるだけの恋愛じゃない。疑いながら読む恋愛だ。振られた幼なじみと瓜二つの「彼女」が夢の中に現れ、夜ごと夢が現実へ滲み出してくる。日本では98%好評なのに英語非対応で、西はまだ読めない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "昼は受験に疲弊した高校生。夜は夢の中で、振られたはずの幼なじみと同じ顔の「彼女」が待っている。",
+        "最初は甘い逃げ場だった夢が、やがて滲み出す。どちらが現実か揺らぎはじめ、選択のたびにどちらかへ傾いていく。",
+        "どちらの世界の、どちらの彼女を信じるかを決めた瞬間、結末が落ちてきて、胸の奥が静かに決壊する。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "CLANNAD のような全年齢の恋愛ノベルで、感情の決壊を読みたい人",
+        "夢と現実の境界が崩れていく物語に弱い人",
+        "英語レビュー5件で西がまだ読めていない、日本の同人ブランドの原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "ゲーム的な攻略や速い展開が欲しい人(本作は鬱屈した受験生の内面に寄り添う、短く静かな短編ノベル)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1637,6 +1715,7 @@ const LINEAGE_ANCHOR = {
   "dungeon-keeper": { steam: "1996630" },
   "princess-maker-2": { steam: "523000" },
   "doki-doki-literature-club": { steam: "698780" },
+  "clannad": { steam: "324160" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
