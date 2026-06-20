@@ -1652,6 +1652,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "putrika-1st-cut": {
+    published: "2026-06-13",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "kamaitachi-no-yoru", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 550, positivePct: 95, noEnglish: true } },
+    games: [
+      {
+        name_en: "Putrika 1st.cut: The Reason She Must Perish",
+        name_ja: "プトリカ 1st.cut:The Reason She Must Perish",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2818450/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese doujin-circle dark-fantasy visual novel about a girl who had to die: you read a tragedy of pure love and cruelty through branching choices, where an insanity trial executes the innocent and the dream and reality bleed into each other. Overwhelmingly Positive in Japan at 550 reviews and 95 percent, but it has no English support, so the West cannot read it yet (only 6 English reviews).",
+        desc_ja: "「死ななければならなかった」少女を描く、日本の同人サークルのダークファンタジー・ビジュアルノベル。選択分岐で純愛と惨劇の悲劇を読み進めるうち、無実が処刑される狂気の裁判が起き、夢と現実が混ざりはじめる。550レビュー95%で日本では圧倒的に好評なのに英語非対応で、西はまだ読めない(英語レビューは6件)。",
+      },
+      {
+        name_en: "Kamaitachi no Yoru",
+        name_ja: "かまいたちの夜",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2612660/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the sound novel: text, branching choices, and sound that pull you into a story of fear and tragedy you cannot stop reading. This gem keeps that spine and bends it from suspense into the cruel beauty of a tragedy with no salvation.",
+        desc_ja: "サウンドノベルの原点。文章と選択分岐と音で、止まれない恐怖と悲劇の物語へ引き込む。この未発掘の名作はその背骨を保ったまま、サスペンスから「救いのない悲劇の残酷美」へと味をずらす。",
+      },
+    ],
+    en: {
+      title: "Putrika 1st.cut - a buried dark-fantasy visual novel about a girl who had to die, walled off by language",
+      description: "A Japanese doujin-circle tragedy you read through branching choices: pure love, cruelty, and an insanity trial. Overwhelmingly Positive in Japan at 550 reviews and 95 percent, but with no English support, the West cannot read it yet (only 6 English reviews).",
+      h1a: "Read why ",
+      h1flip: "she had to die",
+      h1b: ".",
+      lede: "Not a tragedy you watch. A tragedy you read your way into. Through branching choices you trace a girl's pure love and the cruelty around it, until an insanity trial and a creeping dream pull the floor out from under you. Loved in Japan at 95 percent, but it has no English yet, so the West cannot read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The game keeps telling you she had to die. You do not know why yet, only that the ending is already fixed.",
+        "So you read on through each choice, watching her pure love collide with a world that executes the innocent, and the dream and the waking start to bleed together.",
+        "Then the reason lands. Knowing there was never any salvation, the cruelty reads as a kind of beauty, and a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love sound-novel storytelling like Kamaitachi no Yoru and want branching that reads toward tragedy instead of suspense",
+        "You want a story with no easy salvation, told in cruel beauty rather than comfort",
+        "You want a Japanese doujin gem the West cannot read yet, buried under only 6 English reviews",
+      ],
+      bad: [
+        "You need an English-first release right now (no English yet, the wall is language only)",
+        "You want a hopeful or wholesome romance (this is a deliberately cruel, no-salvation tragedy with depictions of suicide and torture)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "プトリカ 1st.cut - 死ななければならなかった少女を描く、言語の壁で埋もれたダークファンタジーADV",
+      description: "選択分岐で読む、日本の同人サークルの悲劇。純愛と惨劇、そして狂気の裁判。550レビュー95%で日本では圧倒的に好評なのに英語非対応で、西はまだ読めない(英語レビューは6件)。",
+      h1a: "なぜ彼女が、",
+      h1flip: "死ぬのかを読む",
+      h1b: "。",
+      lede: "眺める悲劇じゃない。自分で読み進める悲劇だ。選択分岐をたどって少女の純愛とそれを取り巻く惨さを追ううちに、無実が処刑される狂気の裁判と忍び寄る夢が、足元を崩していく。日本では95%好評なのに英語非対応で、西はまだ読めない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "彼女は死ななければならなかった——ゲームはそう繰り返す。理由はまだ分からない。ただ結末だけが、最初から決まっている。",
+        "だから選択を重ねて読み進める。純愛が、無実を処刑する世界とぶつかり、夢と現実が混ざりはじめる。",
+        "その理由が腑に落ちた瞬間、救いなど初めから無かったと知り、惨さがある種の美しさに反転する。ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "かまいたちの夜のようなサウンドノベルの語りが好きで、サスペンスではなく悲劇へ向かう分岐を読みたい人",
+        "安易な救いのない、優しさではなく残酷美で描かれた物語が欲しい人",
+        "英語レビュー6件で西がまだ読めていない、日本の同人原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "希望のある優しい恋愛が欲しい人(本作は意図的に残酷で救いのない悲劇・自殺や拷問の表現を含む)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1716,6 +1794,7 @@ const LINEAGE_ANCHOR = {
   "princess-maker-2": { steam: "523000" },
   "doki-doki-literature-club": { steam: "698780" },
   "clannad": { steam: "324160" },
+  "kamaitachi-no-yoru": { steam: "2612660" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;

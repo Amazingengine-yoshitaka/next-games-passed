@@ -87,6 +87,7 @@ export const ui = {
     "soon.body": "We have it ready, but it is not unsealed yet. Come back when it opens.",
     "soon.on": "Opens on {n} (JST)",
     "soon.back": "Back to home",
+    "meta.steamPrefix": "{n} on Steam. ",
   },
   ja: {
     "nav.home": "入口",
@@ -170,6 +171,7 @@ export const ui = {
     "soon.body": "用意はできている。でも、まだ封は解かれていない。開く日に、また来てほしい。",
     "soon.on": "公開予定: {n}(JST)",
     "soon.back": "入口へ戻る",
+    "meta.steamPrefix": "{n}（Steam）。",
   },
 } as const;
 

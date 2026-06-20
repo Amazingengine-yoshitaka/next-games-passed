@@ -32,6 +32,14 @@ const g1desc = isJa ? g1.desc_ja : g1.desc_en;
 const g0name = isJa ? (g0.name_ja || g0.name_en) : (g0.name_en || g0.name_ja);
 const g1name = isJa ? (g1.name_ja || g1.name_en) : (g1.name_en || g1.name_ja);
 const repName = representativeName(pick, lang);
+
+// 【meta description の SEO 加工(脳と体の分離)】data(picks.ts)は不可侵。表示側でだけ
+// 「ゲーム名 + Steam語」を前置して "(ゲーム名) steam" のロングテール検索にマッチさせる。
+// 代表ゲームは leadIndex 厳守(g0 固定にしない・将来の hub/leadIndex 変更で破綻しないため)。
+// hub は特定ゲームが代表でない(topic=味)ため前置しない = find のときだけ加工する(Early Return 思想)。
+const lead = pick.games[pick.leadIndex];
+const leadName = isJa ? (lead.name_ja || lead.name_en) : (lead.name_en || lead.name_ja);
+const metaDesc = pick.kind === "find" ? tn(lang, "meta.steamPrefix", leadName) + c.description : c.description;
 // 【未来の投稿を予約】このページの公開予定日(JST)。無ければ即公開(後方互換)。
 // SSR は本文を必ず出力(cron 無し方式・AEO)。client JS が now(JST) < publishAt のとき
 // 本文を隠し coming-soon に差し替える(脳と体の分離・判定 TZ は picks.ts が真実源)。
@@ -70,7 +78,7 @@ const multiRoot = roots.length > 1;
 // SITE.url 由来 = SSOT。命名規約は ogUrlPath に一元化(gen-og-cards と同一規約・ズレ防止)。
 const ogImage = SITE.url + ogUrlPath(slug, isJa);
 ---
-<Base title={c.title} description={c.description} jsonld={jsonld} ogImage={ogImage}>
+<Base title={c.title} description={metaDesc} jsonld={jsonld} ogImage={ogImage}>
   <main class="wrap" style="padding-top:48px;padding-bottom:0" data-pickgate data-publish-at={publishAt}>
 
     <!-- 公開予定面: now(JST) < publishAt のときだけ client JS が表示する。SSR では常に hidden
