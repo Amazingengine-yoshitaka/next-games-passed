@@ -1808,6 +1808,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "ika-sumi-potion": {
+    published: "2026-06-14",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "shop-sim", lineage: "recettear", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 77, positivePct: 99, noEnglish: true } },
+    games: [
+      {
+        name_en: "Ika Sumi Potion",
+        name_ja: "イカスミポーション",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3091010/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese solo dev's potion-crafting shop ADV: brew potions from squid ink and the sea, sell them to 24-plus animal-eared and inhuman customers, and unlock a drawn-to-order vignette of each one actually using what they bought. Very Positive in Japan at 77 reviews and 99 percent, but with no English support, the West cannot read it yet (only 2 English reviews).",
+        desc_ja: "日本の個人開発のポーション調合ショップADV。イカスミと海の素材からポーションを作り、24人超のケモミミ・人外の客に売り、その客が買ったポーションを実際に使う描き下ろしスチルのエピソードが開く。77レビュー99%で日本では非常に好評なのに英語非対応で、西はまだ遊べない(英語レビューは2件)。",
+      },
+      {
+        name_en: "Recettear: An Item Shop's Tale",
+        name_ja: "ルセッティア -アイテム屋さんのはじめ方-",
+        status: "established",
+        steam: "https://store.steampowered.com/app/70400/Recettear_An_Item_Shops_Tale/",
+        wikidata: "https://www.wikidata.org/wiki/Q7303969",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the item-shop sim: a Japanese doujin game (the first ever on Steam) where you craft and stock items, then read each customer and sell to keep the money moving. This gem keeps that brew-sell-restock spine, but bends the taste from beating capitalism into the warmth of inhuman customers and a drawn vignette of each one using what they bought.",
+        desc_ja: "アイテム屋経営SLGの原点。日本の同人ゲーム(Steam初の同人作)で、アイテムを仕入れて作り、客を読んで売り、金を回し続ける。この未発掘の名作はその「作って・売って・仕入れ直す」背骨を保ちつつ、味を「資本主義の攻略」から、人外の客との交流と彼らが買った品を使う描き下ろしエピソードの優しさへとずらす。",
+      },
+    ],
+    en: {
+      title: "Ika Sumi Potion - a buried potion-shop ADV where you brew, sell, and cannot stop, walled off by language",
+      description: "A Japanese solo dev's potion-crafting shop ADV: brew potions from squid ink and the sea, sell them to 24-plus animal-eared and inhuman customers, and unlock a drawn-to-order vignette of each one actually using what they bought. Very Positive in Japan at 77 reviews and 99 percent, but with no English support, the West cannot read it yet (only 2 English reviews).",
+      h1a: "Brew it, sell it, ",
+      h1flip: "and you cannot stop",
+      h1b: ".",
+      lede: "Not a story you only read. A shop you cannot close. You brew shady potions from squid ink and kelp, carry them across nations, and sell them to 24-plus inhuman customers, each sale unlocking a drawn-to-order scene of them using what they bought. One player just wrote: an infinite loop is kind of scary, isn't it. Loved in Japan at 99 percent, but it has no English yet, so the West cannot play it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You mix water, kelp, and squid ink into a potion of uncertain effect, and a strange animal-eared customer steps up to buy.",
+        "When the sale lands well, a drawn-to-order vignette opens: that exact customer, actually using your potion, with their own small story. You want to see the next one.",
+        "So you brew again, sell again, save up, buy new materials, and brew again, until you notice you have stopped wanting to put it down.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Recettear-style shop-sim loops where you craft, price, and sell, and the next sale always pulls you back in",
+        "You want a warm collection-hook: 24-plus inhuman customers, each with a hand-drawn vignette of using what they bought",
+        "You want a Japanese solo-dev gem the West cannot play yet, buried under only 2 English reviews",
+      ],
+      bad: [
+        "You need an English-first release right now (no English yet, the wall is language only)",
+        "You want twitch action or deep combat (this is a gentle craft-and-sell loop built on character vignettes; note it had a Japanese launch news writeup but no English-market coverage)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "イカスミポーション - 作って売って、手が止まらなくなる、言語の壁で埋もれたポーション屋ADV",
+      description: "日本の個人開発のポーション調合ショップADV。イカスミと海の素材からポーションを作り、24人超のケモミミ・人外の客に売り、その客が買ったポーションを実際に使う描き下ろしスチルのエピソードが開く。77レビュー99%で日本では非常に好評なのに英語非対応で、西はまだ遊べない(英語レビューは2件)。",
+      h1a: "作って、売って、",
+      h1flip: "手が止まらない",
+      h1b: "。",
+      lede: "読むだけの物語じゃない。閉められない店だ。イカスミや昆布から怪しいポーションを作り、各国へ運び、24人超の人外の客に売る。うまく売れるたびに、その客が買ったポーションを実際に使う描き下ろしのエピソードが開く。あるプレイヤーはこう書いた——「無限ループって怖くね…？」。日本では99%好評なのに英語非対応で、西はまだ遊べない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "水と昆布とイカスミを混ぜ、効果のあやしいポーションを作る。すると個性豊かなケモミミの客がそれを買いに来る。",
+        "うまく売れると、描き下ろしのエピソードが開く——その客が、あなたのポーションを実際に使う小さな物語だ。次の一枚が見たくなる。",
+        "だからまた作り、また売り、金を貯め、新しい素材を買い、また作る。気づけば、手を止めたくなくなっている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ルセッティアのような「作って・値をつけて・売る」店経営ループが好きで、次の一売りに毎回引き戻される感覚が欲しい人",
+        "24人超の人外の客と、それぞれが買ったポーションを使う描き下ろしエピソードを集めたくなる、優しい収集の引きが欲しい人",
+        "英語レビュー2件で西がまだ遊べていない、日本の個人開発の原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "派手なアクションや深い戦闘が欲しい人(本作はキャラのエピソードで進む穏やかな作って売るループ・また国内の発売告知記事はあるが英語圏向けの紹介は無い)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -1873,6 +1952,7 @@ const LINEAGE_ANCHOR = {
   "doki-doki-literature-club": { steam: "698780" },
   "clannad": { steam: "324160" },
   "kamaitachi-no-yoru": { steam: "2612660" },
+  "recettear": { steam: "70400" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
