@@ -3,6 +3,17 @@
 import { picks } from "../data/picks";
 import { SITE } from "../data/site";
 
+// published("YYYY-MM-DD")を JST 00:00:00 起点の ISO8601 完全形にする時の接尾辞 (SSOT)。
+//   日付のみの値に時刻+タイムゾーンを補い、時刻の捏造を避け日付境界(JST 0時)で固定する。
+//   sitemap (astro.config.mjs) の lastmod も同じ接尾辞を参照し、JST 起点の解釈を1箇所に集約する。
+export const JST_MIDNIGHT_SUFFIX = "T00:00:00+09:00";
+
+// published("YYYY-MM-DD")を ISO8601 完全形("YYYY-MM-DDT00:00:00+09:00")にする純粋関数。
+//   AEO/SEO 向けに datePublished / dateModified を時刻+タイムゾーン付きで出すための変換。
+export function isoFromPublished(published: string): string {
+  return published + JST_MIDNIGHT_SUFFIX;
+}
+
 // ゲーム名を表示言語で解決 (name_en / name_ja 統一形)。
 function gameName(g, isJa) {
   return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
@@ -84,7 +95,9 @@ export function pickJsonLd(slug, lang, pageUrl, homeLabel) {
         headline: c.title,
         description: c.description,
         inLanguage: lang,
-        datePublished: pick.published,
+        // ISO8601 完全形(時刻+JST)で出す。記事は公開後に更新していないので dateModified は datePublished と同値。
+        datePublished: isoFromPublished(pick.published),
+        dateModified: isoFromPublished(pick.published),
         isPartOf: { "@id": SITE.url + "/#website" },
         author: { "@type": "Organization", name: orgName, url: SITE.url },
         publisher: { "@type": "Organization", name: orgName, url: SITE.url },

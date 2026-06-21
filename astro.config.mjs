@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/data/site.ts";
 import { picks } from "./src/data/picks.ts";
+import { JST_MIDNIGHT_SUFFIX } from "./src/lib/jsonld.ts";
 
 // pick URL の slug から picks.ts の published を引き lastmod に注入する(SSOT・直書きしない)。
 //   対象は /picks/<slug>/ と /ja/picks/<slug>/ の両方。pick 以外は lastmod 省略(best effort)。
@@ -11,7 +12,7 @@ function pickLastmod(url) {
   if (!m) return undefined;
   const pick = picks[m[1]];
   if (!pick || !pick.published) return undefined;
-  return new Date(pick.published + "T00:00:00+09:00").toISOString();
+  return new Date(pick.published + JST_MIDNIGHT_SUFFIX).toISOString();
 }
 
 // 静的出力 (Cloudflare Pages がそのまま配信)。
