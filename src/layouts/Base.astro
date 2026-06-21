@@ -21,8 +21,15 @@ const isJa = lang === "ja";
 // OG 画像は絶対 URL 必須(クローラ/Twitter が相対を解決しない)。SITE.url 由来 = SSOT。
 // props 未指定ページ(保険)は既定カードに落ちる(og:image が空にならない)。
 const ogImageUrl = ogImage ?? SITE.url + ogUrlPath("default", isJa);
-// このページの正準絶対 URL(og:url)。Astro.site(=SITE.url) 由来 = SSOT。
+// このページの正準絶対 URL(og:url / canonical 共用)。Astro.site(=SITE.url) 由来 = SSOT。
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+// hreflang(言語別 alternate)用の en/ja 対を算出する。
+//   slug は保ったまま言語接頭辞だけ差し替える(prefixDefaultLocale:false 前提)。
+//   pathname から先頭の "/ja" を剥がした共通パス(commonPath)を作り、en は接頭辞なし、
+//   ja は "/ja" を付ける。URL 直書きはせず Astro.site 由来で絶対化(SSOT)。
+const commonPath = Astro.url.pathname.replace(/^\/ja(\/|$)/, "/");
+const enHref = new URL(commonPath, Astro.site).href;
+const jaHref = new URL("/ja" + commonPath, Astro.site).href;
 const brand = isJa ? SITE.name : SITE.nameEn;
 const ogLocale = isJa ? OG_META.localeJa : OG_META.localeEn;
 const other = isJa ? "en" : "ja";
@@ -44,6 +51,12 @@ const otherHome = getRelativeLocaleUrl(other, "/");
   <script is:inline>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
   <title>{title}</title>
   <meta name="description" content={description} />
+  <!-- canonical: このページ自身の正準絶対 URL(index 未登録対策・重複正規化)。pageUrl 共用(SSOT)。 -->
+  <link rel="canonical" href={pageUrl} />
+  <!-- hreflang: en/ja の対と x-default(en に倒す)。slug 保持・接頭辞だけ差(SSOT)。 -->
+  <link rel="alternate" hreflang="ja" href={jaHref} />
+  <link rel="alternate" hreflang="en" href={enHref} />
+  <link rel="alternate" hreflang="x-default" href={enHref} />
   <!-- OG/Twitter カード: シェア時に pick 固有の画像を出す(値は SSOT 由来・絶対 URL)。 -->
   <meta property="og:type" content={OG_META.type} />
   <meta property="og:title" content={title} />
