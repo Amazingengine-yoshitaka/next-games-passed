@@ -2436,6 +2436,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "sayonara-night-cap": {
+    published: "2026-06-18",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "exploration-adv", lineage: "yume-nikki", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 60, positivePct: 91, noEnglish: true } },
+    games: [
+      {
+        name_en: "Sayonara Night Cap",
+        name_ja: "さよならナイト・キャップ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2490020/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese point-and-click exploration ADV where you wake in a strange arcade, follow a mysterious girl, and explore a dream-logic world that explains nothing. Very Positive in Japan at 60 reviews and 91 percent, but with no English support, the West cannot read it yet (only 3 English reviews).",
+        desc_ja: "見知らぬゲームセンターで目覚め、謎の少女に導かれ、夢の論理で動く世界を探索する和製クリックADV。60レビュー91%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは3件)。",
+      },
+      {
+        name_en: "Yume Nikki",
+        name_ja: "ゆめにっき",
+        status: "established",
+        steam: "https://store.steampowered.com/app/650700/Yume_Nikki/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of surreal dream exploration: no story and no dialogue, you just walk a girl's dream world and read your own meaning into it, made by KIKIYAMA in Japan. This gem inherits that spine, where you explore a world that runs on dream logic, nothing is solved, nothing is spelled out, and only the afterglow stays.",
+        desc_ja: "不条理な夢探索の原点。物語も会話もなく、ただ少女の夢の世界を歩き、解釈を自分に委ねる。KIKIYAMA(日本)制作。この未発掘の名作はその背骨を継ぎ、夢の論理で動く世界を探索させる——何も解決せず、何も説明されず、ただ余韻だけが残る。",
+      },
+    ],
+    en: {
+      title: "Sayonara Night Cap - a buried surreal-exploration ADV where nothing is explained and the dream lingers, an heir to Yume Nikki, walled off by language",
+      description: "A Japanese point-and-click exploration ADV where you wake in a strange arcade, follow a mysterious girl, and explore a dream-logic world that explains nothing. Very Positive in Japan at 60 reviews and 91 percent, but with no English support, the West cannot read it yet (only 3 English reviews).",
+      h1a: "You wake in a strange world and ",
+      h1flip: "nothing is explained",
+      h1b: ".",
+      lede: "Not a story handed to you. A dream you walk through. You wake in an unfamiliar arcade, a girl who knows you leads you on, and you click your way across a world that runs on dream logic. Nothing is solved, nothing is spelled out, and the afterglow stays with you like a dream you just woke from. A quiet Japanese indie in the lineage of Kikiyama's Yume Nikki. Loved in Japan at 91 percent, but it has no English yet, so the West cannot read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You wake somewhere you do not know, with a girl who knows you, and the world offers no map and no reason. You just explore, clicking every corner.",
+        "The world hands you fragments without explanation: an inhabitant who needs help, a hint toward the exit, a sight that makes no literal sense. You sense the meaning is yours to hold, not to be told.",
+        "Then it ends without ever explaining itself. The instant the dream releases you and the quiet afterglow settles, a chill runs down your spine, and you keep asking what that was.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Yume Nikki feeling of exploring a dream world that explains nothing and leaves interpretation to you",
+        "You want atmosphere and afterglow over clear answers, a piece that lingers for days",
+        "You want a quiet Japanese gem the West cannot read yet, buried under only 3 English reviews",
+      ],
+      bad: [
+        "You need an English-first release right now (no English yet, the wall is language only)",
+        "You want clear goals, fast action, or a story that ties every thread (this is slow surreal exploration that withholds answers on purpose)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "さよならナイト・キャップ - 何も明かされず夢の余韻だけが残る、ゆめにっきの系譜の埋もれた探索ADV、言語の壁で",
+      description: "見知らぬゲームセンターで目覚め、謎の少女に導かれ、夢の論理で動く世界を探索する和製クリックADV。60レビュー91%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは3件)。",
+      h1a: "見知らぬ世界で目覚めて、",
+      h1flip: "何も明かされない",
+      h1b: "。",
+      lede: "渡される物語じゃない。歩く夢だ。見知らぬゲームセンターで目覚め、あなたを知る謎の少女に導かれ、夢の論理で動く世界をクリックで探索していく。何も解決せず、何も説明されず、夢から覚めた後のような余韻だけが残る。KIKIYAMA のゆめにっきの系譜に連なる、静かな和製インディー。日本では91%好評なのに英語非対応で、西はまだ読めない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "知らない場所で目を覚ます。隣にはあなたを知る少女。世界は地図も理由もくれない。ただ、隅々をクリックして探索する。",
+        "世界は説明のないまま断片を落としていく。助けを求める住人、出口へのヒント、意味の通らない光景。意味は語られるものじゃなく、自分で抱えるものだと半ば感じる。",
+        "そして、説明されないまま終わる。夢が解き放ち、静かな余韻が落ちた瞬間、ゾクッとくる——あれは何だったのか、と問い続けながら。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ゆめにっきのように、何も説明しない夢の世界を探索し、解釈が自分に委ねられる感覚が好きな人",
+        "明確な答えより、雰囲気と余韻が欲しい人——何日も尾を引く一本",
+        "英語レビュー3件で西がまだ読めていない、静かな和製原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "明確な目標・速いアクション・全部の伏線を回収する物語が欲しい人(本作はあえて答えを伏せる、ゆっくりした不条理探索)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2503,6 +2581,7 @@ const LINEAGE_ANCHOR = {
   "kamaitachi-no-yoru": { steam: "2612660" },
   "recettear": { steam: "70400" },
   "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
+  "yume-nikki": { steam: "650700" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
