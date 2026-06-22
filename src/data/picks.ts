@@ -2592,6 +2592,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "hangyaku-no-shugosha": {
+    published: "2026-06-19",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "srpg", lineage: "fire-emblem-thracia-776", obscurity: "wall", reachState: "unreached_west", rarity: { reviews: 60, positivePct: 93 } },
+    games: [
+      {
+        name_en: "Hangyaku no Shugosha",
+        name_ja: "叛逆の守護者",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3441450/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A turn-based SRPG built around a capture system: you seize enemy weapons mid-battle and grow an armory of what you take. Over 50 recruitable allies, support conversations, class change, weapon fusion, and difficulty tiers from Casual to Abyss, across 50-plus chapters and 70-plus hours. Made solo by the Japanese developer Oborotsubame. Very Positive in Japan at 60 reviews and 93 percent, yet the West has barely found it: just one English review.",
+        desc_ja: "捕獲システムを核に据えたターン制SRPG。戦闘中に敵の武器を奪い、奪った物で武器庫を育てる。50人を超える仲間、支援会話、クラスチェンジ、武器融合、カジュアルからアビスまでの多段難易度、50章超・70時間超。日本の個人開発者 朧燕(おぼろつばめ)による一本。60レビュー93%で日本では非常に好評なのに、西はまだほとんど見つけていない——英語レビューはわずか1件。",
+      },
+      {
+        name_en: "Fire Emblem: Thracia 776",
+        name_ja: "ファイアーエムブレム トラキア776",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Fire_Emblem:_Thracia_776",
+        wikidata: "https://www.wikidata.org/wiki/Q2632064",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of capture in tactical RPGs: in 1999, Nintendo and Intelligent Systems let you take a unit prisoner mid-battle and strip the weapons they carried, turning a turn into a calculated heist. No official Steam release. This gem is a direct heir to that capture, declared by its creator as a Fire Emblem fan, and grows it into a whole armory you build from what you steal.",
+        desc_ja: "タクティカルRPGにおける捕獲(キャプチャ)の原点。1999年、任天堂とインテリジェントシステムズが、戦闘中に敵ユニットを捕らえ持っていた武器を奪う——一手を計算ずくの強奪に変えるメカを生んだ。公式 Steam 版なし。この未発掘の名作はその捕獲の直系で、作者は自らを FE ファンと公言し、奪った物で武器庫を組み上げる遊びへと育てる。",
+      },
+    ],
+    en: {
+      title: "Hangyaku no Shugosha - a buried turn-based SRPG where you capture the enemy's weapons, an heir to Fire Emblem: Thracia 776",
+      description: "A turn-based SRPG built on a capture system: seize enemy weapons mid-battle and build an armory from what you take. Over 50 allies, class change, weapon fusion, Casual to Abyss difficulty, 50-plus chapters. Very Positive in Japan at 60 reviews and 93 percent, yet the West has barely found it: just one English review. English is already supported.",
+      h1a: "Don't beat them. ",
+      h1flip: "Take what they carry",
+      h1b: ".",
+      lede: "A turn-based SRPG where the goal is not only to defeat a unit but to capture them and strip the weapon in their hand. Over 50 allies, support talks, class change, weapon fusion, difficulty from Casual to Abyss across 50-plus chapters. A solo work by the Japanese developer Oborotsubame, in the lineage of the SRPG that invented capture, Fire Emblem: Thracia 776. It already plays in English, yet the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "An enemy raises a weapon you do not own, and the urge flips: you no longer want to kill them, you want to take it.",
+        "So you weaken instead of finish, line up the capture, and walk away holding the thing that was just aimed at you.",
+        "Every battle becomes a heist. The board fills with weapons you stole, and dropping a stronger foe to claim their blade sends a chill down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Fire Emblem and especially the Thracia 776 capture you could steal a unit and their gear",
+        "You want a deep solo SRPG: 50-plus allies, class change, weapon fusion, 50-plus chapters",
+        "You want a gem the West has not found yet, even though it already plays in English",
+      ],
+      bad: [
+        "You want a short, breezy tactics game, not a 70-hour campaign with Abyss-tier difficulty",
+        "You want big-studio polish and a marketing machine over a solo developer's labor of love",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "叛逆の守護者 - 敵の武器を捕獲する、ファイアーエムブレム トラキア776 の系譜の埋もれたターン制SRPG",
+      description: "捕獲システムを核にしたターン制SRPG。戦闘中に敵の武器を奪い、奪った物で武器庫を組む。50人超の仲間、クラスチェンジ、武器融合、カジュアルからアビスまでの難易度、50章超。60レビュー93%で日本では非常に好評なのに、西はまだほとんど見つけていない——英語レビューは1件。英語対応済み。",
+      h1a: "倒すな。",
+      h1flip: "持っている物を奪え",
+      h1b: "。",
+      lede: "ターン制SRPG。目的は敵を倒すことだけじゃない。捕らえて、その手の武器を奪うことだ。50人超の仲間、支援会話、クラスチェンジ、武器融合、カジュアルからアビスまでの難易度、50章超。日本の個人開発者 朧燕(おぼろつばめ)による一本で、捕獲を生んだSRPG ファイアーエムブレム トラキア776 の系譜に連なる。英語でもう遊べるのに、西はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "敵が、自分の持っていない武器を構える。その瞬間、欲求がひっくり返る——もう倒したくない、奪いたい。",
+        "だから仕留めずに削り、捕獲の手を整え、さっき自分に向けられていた物を手に歩き去る。",
+        "戦闘のすべてが強奪になる。盤面は奪った武器で埋まり、格上を落としてその刃を手にした瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "FE が好きで、特にトラキア776の、ユニットごと装備を奪える捕獲が好きな人",
+        "50人超の仲間・クラスチェンジ・武器融合・50章超の、奥深い個人制作SRPGが欲しい人",
+        "英語でもう遊べるのに西がまだ見つけてない原石を先に触りたい人",
+      ],
+      bad: [
+        "アビス級の難易度と70時間級のキャンペーンより、短くて気軽な戦術ゲームが欲しい人",
+        "個人開発者の労作より、大手の磨き込みと宣伝予算が欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2660,6 +2739,7 @@ const LINEAGE_ANCHOR = {
   "recettear": { steam: "70400" },
   "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
   "yume-nikki": { steam: "650700" },
+  "fire-emblem-thracia-776": { wikidata: "https://www.wikidata.org/wiki/Q2632064" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
