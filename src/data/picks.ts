@@ -2357,6 +2357,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "midnight-syndrome": {
+    published: "2026-06-17",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "twilight-syndrome", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 95, positivePct: 98, noEnglish: true } },
+    games: [
+      {
+        name_en: "Midnight Syndrome",
+        name_ja: "ミッドナイトシンドローム",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2877030/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A free Japanese exploration horror ADV where three high-school girls investigate the rumors and curses eating away at their rural town over one summer. Branching paths and multiple endings, in the lineage of SUDA51's Twilight Syndrome. Very Positive in Japan at 95 reviews and 98 percent, but with no English support, the West cannot read it yet (only 4 English reviews).",
+        desc_ja: "三人の女子高生が、ひと夏の田舎町を蝕む噂と怪異を探索する無料の和製ホラーADV。分岐とマルチエンドを持ち、SUDA51 のトワイライトシンドロームの系譜に連なる。95レビュー98%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは4件)。",
+      },
+      {
+        name_en: "Twilight Syndrome",
+        name_ja: "トワイライトシンドローム",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Twilight_Syndrome",
+        wikidata: "https://www.wikidata.org/wiki/Q7662337",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the exploration occult ADV: three schoolgirls walk a town's school and streets, reading each place to uncover the urban legends and curses underneath, directed by SUDA51 in 1996. No official Steam release. This gem revives that structure as a free modern indie, where you explore, branch, and converge on one truth far past a ghost story.",
+        desc_ja: "探索型の心霊ADVの原点。三人の女子高生が学校と町を歩き、その場所そのものを読み解いて、底にある都市伝説と怪異を暴いていく。1996年、SUDA51(須田剛一)ディレクション。公式 Steam 版なし。この未発掘の名作はその構造を無料の現代インディーで蘇らせ、探索し、分岐し、ただの怪談を遥かに超えた一つの真実へ収束させる。",
+      },
+    ],
+    en: {
+      title: "Midnight Syndrome - a buried Japanese horror ADV where three schoolgirls investigate a town's curses, a free heir to SUDA51's Twilight Syndrome, walled off by language",
+      description: "A free Japanese exploration horror ADV where three high-school girls investigate the rumors and curses eating away at their rural town over one summer. Branching paths and multiple endings, in the lineage of SUDA51's Twilight Syndrome. Very Positive in Japan at 95 reviews and 98 percent, but with no English support, the West cannot read it yet (only 4 English reviews).",
+      h1a: "Three girls walk into a haunted town and ",
+      h1flip: "only one truth gets out",
+      h1b: ".",
+      lede: "Not a horror you only watch. One you explore. Three high-school girls dig into the rumors, traditions, and curses of their rural town across one summer night, and what they uncover bends far past a ghost story. Branching choices, multiple endings, a chapter-by-chapter craft that earns the word force of work. A free game from the Japanese creator Natsumikan, built in the shadow of SUDA51's Twilight Syndrome. Loved in Japan at 98 percent, but it has no English yet, so the West cannot read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Summer night, a rural town, three schoolgirls chasing a rumor no one wants confirmed. Every place you choose to explore is a thread, and you do not yet know which one should stay buried.",
+        "The town drops its fragments without explanation: the school's tradition, the missing girl, the thing the rumor was hiding. You explore on, half-sensing the local legend and the real horror are the same.",
+        "Then it locks. The scattered rumors converge on one truth far past a ghost story, and the moment it clicks, a chill runs down your spine, because you see how close the wrong path came.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Twilight Syndrome feeling of schoolgirls exploring a town's curses, choosing where to look and reading the place itself",
+        "You want branching with multiple endings, where the path you take decides which truth you reach",
+        "You want a free Japanese gem the West cannot read yet, buried under only 4 English reviews",
+      ],
+      bad: [
+        "You need an English-first release right now (no English yet, the wall is language only)",
+        "You want fast action or a long campaign (this is a 4-to-5-hour exploration horror; note: ghost and curse horror imagery)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ミッドナイトシンドローム - 三人の少女が町の怪異を探索する、SUDA51 トワイライトシンドロームの無料の継承作、言語の壁で埋もれた和製ホラーADV",
+      description: "三人の女子高生が、ひと夏の田舎町を蝕む噂と怪異を探索する無料の和製ホラーADV。分岐とマルチエンドを持ち、SUDA51 のトワイライトシンドロームの系譜に連なる。95レビュー98%で日本では非常に好評なのに英語非対応で、西はまだ読めない(英語レビューは4件)。",
+      h1a: "三人の少女が怪異の町へ踏み込み、",
+      h1flip: "出てこられる真実は一つ",
+      h1b: "。",
+      lede: "ただ見るだけのホラーじゃない。探索するホラーだ。三人の女子高生が、ひと夏の田舎町の噂・しきたり・怪異を掘り起こしていく——その先に待つのは、ただの怪談を遥かに超えた真実。分岐する選択、複数のエンディング、章ごとに作りを変える紛うことなき力作。日本のクリエイター ナツミカンによる無料の一本で、SUDA51 のトワイライトシンドロームの影で生まれた。日本では98%好評なのに英語非対応で、西はまだ読めない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "夏の夜、田舎の町、誰も確かめたくない噂を追う三人の女子高生。どこを探索するかの選択の一つ一つが糸で、どれは掘り起こさない方がいいかはまだ分からない。",
+        "町は説明のないまま断片を落としていく。学校のしきたり、いなくなった少女、噂が隠していた何か。探索を続けるうち、土地の伝説と本物の怪異が同じものではと半ば感じはじめる。",
+        "そして噛み合う。散らばった噂が、ただの怪談を遥かに超えた一つの真実へ収束する。カチッとはまった瞬間、ゾクッとくる——間違った道がどれだけ近くにあったかに気づいて。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "トワイライトシンドロームのように、女子高生が町の怪異を探索し、どこを見るかを選び、その場所そのものを読み解く感覚が好きな人",
+        "進んだ道がどの真実に辿り着くかを決める、分岐とマルチエンドが欲しい人",
+        "英語レビュー4件で西がまだ読めていない、無料の和製原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語対応の完成品が欲しい人(英語は未対応・壁は言語だけ)",
+        "速いアクションや長い物量が欲しい人(本作は4〜5時間の探索ホラー・注記:幽霊や呪いの怪異描写あり)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2423,6 +2502,7 @@ const LINEAGE_ANCHOR = {
   "clannad": { steam: "324160" },
   "kamaitachi-no-yoru": { steam: "2612660" },
   "recettear": { steam: "70400" },
+  "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;

@@ -4,7 +4,7 @@ import GameCard from "./GameCard.astro";
 import { picks, relatedPicks, rarityStamps, lineageIds, lineageName, JST_OFFSET_MIN } from "../data/picks";
 import { SITE } from "../data/site";
 import { ogUrlPath } from "../../scripts/og-card.config.mjs";
-import { pickJsonLd, representativeName } from "../lib/jsonld";
+import { pickJsonLd, representativeName, gameUrl } from "../lib/jsonld";
 import { useTranslations, tn, defaultLang } from "../i18n/ui";
 import type { Lang } from "../i18n/ui";
 
@@ -31,6 +31,10 @@ const g1tag = isJa ? g1.tag_ja : g1.tag_en;
 const g1desc = isJa ? g1.desc_ja : g1.desc_en;
 const g0name = isJa ? (g0.name_ja || g0.name_en) : (g0.name_en || g0.name_ja);
 const g1name = isJa ? (g1.name_ja || g1.name_en) : (g1.name_en || g1.name_ja);
+// 外部リンク URL: Steam があればそれ、無ければ公式(homepage)へフォールバック(jsonld と同一思想・SSOT)。
+// Steam 版なし established(原点)は homepage を出す。両方無ければ undefined(GameCard がテキスト描画に分岐)。
+const g0url = gameUrl(g0);
+const g1url = gameUrl(g1);
 const repName = representativeName(pick, lang);
 
 // 【meta description の SEO 加工(脳と体の分離)】data(picks.ts)は不可侵。表示側でだけ
@@ -139,8 +143,8 @@ const ogImage = SITE.url + ogUrlPath(slug, isJa);
         <span class="ryet"> — {t("rarity.yet")}</span>
       </p>
     )}
-    <GameCard name={g0name} tag={g0tag} desc={g0desc} steam={g0.steam} />
-    <GameCard name={g1name} tag={g1tag} desc={g1desc} steam={g1.steam} />
+    <GameCard name={g0name} tag={g0tag} desc={g0desc} url={g0url} />
+    <GameCard name={g1name} tag={g1tag} desc={g1desc} url={g1url} />
 
     <h2><span class="num">04</span>{t("cta.passHeading")}</h2>
     <p class="lede">{t("cta.passBody")}</p>

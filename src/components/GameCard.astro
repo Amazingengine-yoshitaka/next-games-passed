@@ -5,14 +5,18 @@ interface Props {
   name: string;
   tag?: string;
   desc: string;
-  steam: string;
+  url?: string;
 }
-const { name, tag, desc, steam } = Astro.props;
+const { name, tag, desc, url } = Astro.props;
 const lang = (Astro.currentLocale ?? defaultLang) as Lang;
 const t = useTranslations(lang);
+// url(Steam or homepage フォールバック)が無い established は外部リンクを描画しない。
+// href 属性ごと消えた壊れたリンク(クリックして無反応=離脱トリガー)を物理的に作らない(北極星)。
 ---
 <div class="game">
   <p class="name">{name} <span class="tag">{tag}</span></p>
   <p>{desc}</p>
-  <a class="store" href={steam} target="_blank" rel="noopener">{t("cta.pass")}</a>
+  {url && (
+    <a class="store" href={url} target="_blank" rel="noopener">{t("cta.pass")}</a>
+  )}
 </div>

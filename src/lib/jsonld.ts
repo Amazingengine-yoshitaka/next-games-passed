@@ -44,7 +44,9 @@ function gameSameAs(g) {
 }
 
 // VideoGame の正準 URL: Steam があればそれ、無ければ公式(homepage)へフォールバック(url 必須回避)。
-function gameUrl(g) {
+// 表示層(GameCard)も同じ思想を共有するため export(SSOT・フォールバックロジックを 2 箇所に書かない)。
+// steam も homepage も無い場合は undefined(呼び出し側でリンクを描画しない分岐に使う)。
+export function gameUrl(g) {
   return g.steam || g.homepage;
 }
 
