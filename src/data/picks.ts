@@ -2908,6 +2908,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "potato-flowers": {
+    published: "2026-06-21",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "dungeon-rpg", lineage: "wizardry-proving-grounds", obscurity: "wall", reachState: "unreached_west", reviewBand: "hundreds", rarity: { reviews: 658, positivePct: 96 } },
+    games: [
+      {
+        name_en: "Potato Flowers in Full Bloom",
+        name_ja: "両手いっぱいに芋の花を",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1601280/Potato_Flowers_in_Full_Bloom/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A first-person, grid-movement 3D dungeon RPG. You explore stone-walled underground labyrinths one tile at a time, then battles drop into a third-person, turn-based view where you read each enemy's intent icon and pick the right answer: guard, dodge, or strike. It is built so every single battle asks for the best possible choice, a stoic design with no slack. You raise a party of up to three across classes like Knight and Shaman with skill trees, customizing race and hair. There is no harsh punishment for losing: a defeat sends you back to camp with your progress kept, so you simply return with a new strategy, and a new recruit grows up in just two or three fights, cutting the grind of the Etrian Odyssey line. About 16 to 20 hours to clear, around 30 for 100 percent, across four labyrinths. Made by the Japanese solo-feeling indie Pon Pon Games and published by PLAYISM. Overwhelmingly Positive in Japan at 658 reviews and 96 percent, yet the West has barely found it: only 218 English reviews, repeatedly called underrated and a hidden gem. English is already supported.",
+        desc_ja: "一人称視点・グリッド移動の3DダンジョンRPG。石壁で区切られた地下迷宮を1マスずつ探索し、戦闘になると三人称視点・ターン制に切り替わる——敵の行動アイコンを読み、ガード・回避・攻撃から最善の択を選ぶ。「全ての戦闘で最善択を求められる」、緩みのないストイックな設計だ。ナイトやシャーマンといったクラスとスキルツリーで最大3人のパーティを育て、種族や髪色もカスタムできる。負けても重い罰はない——死亡してもキャンプに戻り進行は保持され、別の戦略で挑み直すだけ。新キャラも2〜3戦闘で育ち、世界樹の迷宮系の育成コストを大幅に短縮する。クリアは約16〜20時間、100%で約30時間、迷宮は4つ。日本のインディー Pon Pon Games が作り、PLAYISM が発行した一本。658レビュー96%で日本では圧倒的に好評なのに、西はまだほとんど見つけていない——英語レビューは218件で、繰り返し「underrated(過小評価)」「hidden gem(隠れた名作)」と語られる。英語対応済み。",
+      },
+      {
+        name_en: "Wizardry: Proving Grounds of the Mad Overlord",
+        name_ja: "ウィザードリィ 狂王の試練場",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2518960/Wizardry_Proving_Grounds_of_the_Mad_Overlord/",
+        wikidata: "https://www.wikidata.org/wiki/Q1886140",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the first-person, grid party-based dungeon crawl: in 1981, Sir-Tech shipped the first party-based dungeon RPG on the Apple II, where you move through stone-walled labyrinths one grid tile at a time in first person, build and train a party, and descend toward the deepest floor. This gem is a direct heir to that core flavor, the first-person grid crawl and the party you raise, and the Etrian Odyssey line everyone knows sits downstream of it, while this one connects straight up to Wizardry itself.",
+        desc_ja: "一人称・グリッド型のパーティ制ダンジョンクロウルの原点。1981年、Sir-Tech が Apple II で史上初のパーティ制ダンジョンRPGを世に出した——石壁で区切られた迷宮を一人称視点で1マスずつ進み、パーティを編成・育成して最下層を目指す。この未発掘の名作はその根幹の味の直系——一人称のグリッド探索と、育てるパーティ。誰もが知る世界樹の迷宮はその下流に位置するが、本作はウィザードリィそのものへ、まっすぐ上流へ連なる。",
+      },
+    ],
+    en: {
+      title: "Potato Flowers in Full Bloom - a buried first-person grid dungeon RPG where every battle demands the best choice, an heir to Wizardry",
+      description: "A first-person, grid-movement 3D dungeon RPG. You explore stone-walled labyrinths one tile at a time, then battles turn turn-based, reading each enemy's intent icon to guard, dodge, or strike. Built so every battle demands the best choice, with no permadeath punishment and a low-grind party you raise. Overwhelmingly Positive in Japan at 658 reviews and 96 percent, yet only 218 English reviews. English is already supported.",
+      h1a: "A dungeon where ",
+      h1flip: "every battle demands the best choice",
+      h1b: ".",
+      lede: "A first-person, grid-movement 3D dungeon RPG. You walk stone-walled underground labyrinths one tile at a time, then battles drop into a third-person, turn-based view where you read each enemy's intent icon and answer it: guard, dodge, or strike. It is built so every single fight asks for the best possible choice, a stoic design with no slack. You raise a party of up to three across classes and skill trees, customizing race and hair. Losing is not punished: a defeat sends you back to camp with progress kept, so you return with a new plan, and new recruits grow up in just two or three fights. A solo-feeling work by the Japanese indie Pon Pon Games, published by PLAYISM, in the lineage of the first-person grid dungeon crawl, Wizardry. It already plays in English, yet the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Each battle puts the enemy's next move right in front of you as an intent icon, so combat stops being a damage race and becomes a reading puzzle: this attack is coming, so the one correct answer this turn is to guard, or dodge, or hit first.",
+        "Because every fight is built to demand the best possible choice, you slow down and weigh each turn, and the labyrinth itself rewards the same care: you read the grid, solve its locks, and push your reach one stone wall further.",
+        "And when you misread and fall, there is no spiral of loss: you wake at camp with your progress intact, rethink the answer, and walk back in. The stakes stay sharp while the dread stays low, so you keep choosing one more battle, one more floor.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the first-person grid dungeon crawl of Wizardry and Etrian Odyssey, walking stone labyrinths one tile at a time with a party you raise",
+        "You want combat where every single battle demands the best choice, reading intent icons to guard, dodge, or strike, not a button-mash grind",
+        "You want a gem the West has not found yet, Overwhelmingly Positive in Japan at 96 percent yet barely read abroad, even though it already plays in English",
+      ],
+      bad: [
+        "You want a forgiving, low-stakes RPG you can autopilot, not a stoic design where every battle asks for the best possible move",
+        "You want fast real-time action rather than first-person grid exploration and turn-based, read-and-answer battles",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "両手いっぱいに芋の花を - 全ての戦闘で最善択を求められる、ウィザードリィの系譜の埋もれた一人称グリッドダンジョンRPG",
+      description: "一人称視点・グリッド移動の3DダンジョンRPG。石壁の迷宮を1マスずつ探索し、戦闘はターン制——敵の行動アイコンを読み、ガード・回避・攻撃を選ぶ。全ての戦闘で最善択を求められる設計で、パーマデスの罰はなく育成は低ストレス。658レビュー96%で日本では圧倒的に好評なのに英語レビューは218件。英語対応済み。",
+      h1a: "全ての戦闘で、",
+      h1flip: "最善の択を求められる迷宮",
+      h1b: "。",
+      lede: "一人称視点・グリッド移動の3DダンジョンRPG。石壁で区切られた地下迷宮を1マスずつ歩き、戦闘になると三人称視点・ターン制に切り替わる——敵の行動アイコンを読み、それに答える。ガードか、回避か、攻撃か。一戦一戦が最善の択を求めるよう作られた、緩みのないストイックな設計だ。クラスとスキルツリーで最大3人のパーティを育て、種族や髪色もカスタムできる。負けても罰はない——死亡してもキャンプに戻り進行は保持され、別の戦略で挑み直す。新キャラも2〜3戦闘で育つ。日本のインディー Pon Pon Games が作り、PLAYISM が発行した一本で、一人称グリッドのダンジョンクロウル ウィザードリィの系譜に連なる。英語でもう遊べるのに、西はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "戦闘は、敵の次の手を行動アイコンとして目の前に置く。だから戦いは火力勝負ではなく「読みのパズル」になる——この攻撃が来る、ならこのターンの正解はガードか、回避か、先手の一撃か、ただ一つだ。",
+        "一戦が最善の択を求めるよう作られているから、ペースを落として一手ごとを吟味する。迷宮そのものも同じ慎重さに応える——グリッドを読み、仕掛けを解き、届く範囲を石壁ひとつ分ずつ押し広げる。",
+        "そして読み違えて倒れても、損失の連鎖はない。進行を保ったままキャンプで目覚め、答えを練り直し、また歩いて入っていく。緊張は鋭いまま、恐怖は低いまま。だから「もう一戦、もう一層」と選び続けてしまう。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ウィザードリィや世界樹の迷宮の一人称グリッド探索が好きな人——石の迷宮を1マスずつ、育てたパーティで歩く",
+        "ボタン連打の作業ではなく、一戦一戦が最善択を求める戦闘が欲しい人——行動アイコンを読み、ガード・回避・攻撃を選ぶ",
+        "日本では96%で圧倒的に好評なのに海外ではほとんど読まれていない、英語でもう遊べるのに西がまだ見つけてない原石を掘りたい人",
+      ],
+      bad: [
+        "一戦一戦が最善の手を求めるストイックな設計より、オートで流せる優しい低難度RPGが欲しい人",
+        "一人称グリッド探索と、読んで答えるターン制戦闘より、速いリアルタイムアクションが欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2982,6 +3061,10 @@ const LINEAGE_ANCHOR = {
   // 原点 零 -ZERO-(Fatal Frame / Project Zero), Tecmo, 2001。家庭用機作で公式 Steam 版なし
   // → wikidata で同定(Steam id を捏造しない・twilight-syndrome 型 href 破損の回避)。
   "fatal-frame": { wikidata: "https://www.wikidata.org/wiki/Q2323933" },
+  // 原点 Wizardry: Proving Grounds of the Mad Overlord, 1981(Apple II)。一人称グリッド型
+  // パーティ制ダンジョンクロウルの始祖。2024 リメイクで公式 Steam 版あり(app 2518960)
+  // → steam で同定(href 破損回避・established 側と /app/2518960/ で完全一致)。
+  "wizardry-proving-grounds": { steam: "2518960" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
