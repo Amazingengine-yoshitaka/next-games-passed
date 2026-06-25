@@ -1,0 +1,13 @@
+---
+// 系譜の原点ページ(origin) の動的ルート(JA)。
+// 経路 /ja/origins/<anchor>/ を picks.ts の originAnchorIds()(blurb を持つ原点)から自動生成する(SSOT)。
+// lang は OriginPage が Astro.currentLocale で判定(この階層に置けば ja として render される)。
+// 【URL 不変】slug は anchor-key。出力は directory format(/ja/origins/<anchor>/index.html)。
+import OriginPage from "../../../components/OriginPage.astro";
+import { originAnchorIds } from "../../../data/picks";
+export function getStaticPaths() {
+  return originAnchorIds().map((anchor) => ({ params: { anchor } }));
+}
+const { anchor } = Astro.params;
+---
+<OriginPage anchor={anchor} />

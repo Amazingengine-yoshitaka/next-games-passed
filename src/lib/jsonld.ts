@@ -1,6 +1,6 @@
 // JSON-LD (schema.org) 生成。脳と体の分離: データ(picks/site)から構造を作るだけ。
 // 値はベタ書きせず picks.ts / site.ts から参照 (SSOT)。AI(GEO/AEO) に意味を構造で渡す。
-import { picks } from "../data/picks";
+import { picks, lineageName, lineageBlurb, lineageAnchorIdentity, lineageIds, isPublished } from "../data/picks";
 import { SITE } from "../data/site";
 
 // published("YYYY-MM-DD")を JST 00:00:00 起点の ISO8601 完全形にする時の接尾辞 (SSOT)。
@@ -118,6 +118,103 @@ export function pickJsonLd(slug, lang, pageUrl, homeLabel) {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: homeLabel, item: SITE.url + (isJa ? "/ja/" : "/") },
           { "@type": "ListItem", position: 2, name: repName, item: pageUrl },
+        ],
+      },
+    ],
+  };
+}
+
+// 原点 anchor を同定する established game を picks から逆引きする(SSOT・捏造しない)。
+//   identity.steam があれば Steam URL の app id 一致で、wikidata があれば g.wikidata 完全一致で探す。
+//   lineageName の逆引きと同一思想(名前ではなく実体 anchor で同定)。見つからなければ null。
+//   原点ページの sameAs / gameUrl を established 側の事実(Steam URL/公式)から再利用するために使う。
+function establishedForAnchor(anchorId) {
+  const identity = lineageAnchorIdentity(anchorId);
+  if (!identity) return null;
+  for (const key of Object.keys(picks)) {
+    for (const g of picks[key].games) {
+      if (g.status !== "established") continue;
+      if (identity.steam) {
+        if (g.steam && g.steam.indexOf("/app/" + identity.steam + "/") !== -1) return g;
+        continue;
+      }
+      if (identity.wikidata) {
+        if (g.wikidata === identity.wikidata) return g;
+      }
+    }
+  }
+  return null;
+}
+
+// 原点ページ(/origins/<anchor>/)用 JSON-LD。
+//   CollectionPage(原点の系譜まとめ) + ItemList(その原点を継ぐ発掘記事=子孫) + about(原点 VideoGame)。
+//   about の原点 VideoGame には自サイトの #lead を付けない(AEO 不破壊: 有名原点を自サイトの正準
+//   エンティティに祭り上げない)。sameAs は established 側の事実(Steam/Wikidata/公式)を再利用する(捏造なし)。
+//   子孫 ItemList の各要素は発掘記事(CollectionPage)へのリンク。未公開(now < publishAt)の子孫は出さない。
+//   nowMs は呼び出し側(原点ページ)が渡す現在時刻(UTC epoch ms)。
+export function originJsonLd(anchorId, lang, pageUrl, homeLabel, nowMs) {
+  const isJa = lang === "ja";
+  const orgName = isJa ? SITE.name : SITE.nameEn;
+  const originName = lineageName(anchorId, lang);
+  const blurb = lineageBlurb(anchorId, lang);
+  // 原点 established の sameAs/url を再利用(established 由来=SSOT・原点ページが anchor を直読みしない)。
+  const established = establishedForAnchor(anchorId);
+  const aboutSameAs = established ? gameSameAs(established) : [];
+  const aboutUrl = established ? gameUrl(established) : undefined;
+
+  // この原点を継ぐ発掘記事(子孫)。lineageIds に anchorId を含む pick = 子孫。未公開は出さない。
+  //   ListItem.item は子孫記事ページ(CollectionPage)への URL。記事名は representativeName(SSOT)。
+  const childItems = [];
+  const localePrefix = isJa ? "/ja/picks/" : "/picks/";
+  for (const slug of Object.keys(picks)) {
+    const pick = picks[slug];
+    if (lineageIds(pick.meta).indexOf(anchorId) === -1) continue;
+    if (!isPublished(pick.publishAt, nowMs)) continue;
+    childItems.push({
+      "@type": "ListItem",
+      position: childItems.length + 1,
+      name: representativeName(pick, lang),
+      item: SITE.url + localePrefix + slug + "/",
+    });
+  }
+
+  // about: 原点 VideoGame。description は blurb(SSOT)。#lead は付けない(AEO 不破壊)。
+  const about = {
+    "@type": "VideoGame",
+    name: originName,
+    description: blurb,
+    sameAs: aboutSameAs,
+  };
+  if (aboutUrl) about.url = aboutUrl;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": pageUrl + "#page",
+        name: originName,
+        headline: originName,
+        description: blurb,
+        inLanguage: lang,
+        isPartOf: { "@id": SITE.url + "/#website" },
+        author: { "@type": "Organization", name: orgName, url: SITE.url },
+        publisher: { "@type": "Organization", name: orgName, url: SITE.url },
+        about: about,
+        mainEntity: { "@id": pageUrl + "#list" },
+      },
+      {
+        "@type": "ItemList",
+        "@id": pageUrl + "#list",
+        name: originName,
+        itemListElement: childItems,
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": pageUrl + "#breadcrumb",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: homeLabel, item: SITE.url + (isJa ? "/ja/" : "/") },
+          { "@type": "ListItem", position: 2, name: originName, item: pageUrl },
         ],
       },
     ],

@@ -1,0 +1,13 @@
+---
+// 系譜の原点ページ(origin) の動的ルート(EN)。
+// 経路 /origins/<anchor>/ を picks.ts の originAnchorIds()(blurb を持つ原点)から自動生成する(SSOT)。
+// blurb を 1 つ LINEAGE_ANCHOR に足すだけで EN/JA 両 route が自動で生える(脳=データ/体=OriginPage 分離)。
+// 【URL 不変】slug は anchor-key。出力は directory format(/origins/<anchor>/index.html)。
+import OriginPage from "../../components/OriginPage.astro";
+import { originAnchorIds } from "../../data/picks";
+export function getStaticPaths() {
+  return originAnchorIds().map((anchor) => ({ params: { anchor } }));
+}
+const { anchor } = Astro.params;
+---
+<OriginPage anchor={anchor} />

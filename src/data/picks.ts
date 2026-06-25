@@ -3112,42 +3112,122 @@ export function steamAppId(steamUrl: string | undefined): string | null {
   return m ? m[1] : null;
 }
 
+// wikidata URL から QID(例 "Q2632064")を抽出(計算だけ・副作用なし)。形式 .../wiki/Q<digits> のみ受ける。
+//   無し/不正は null(捏造しない)。原点ページの Wikidata リンク表示(QID ラベル)を一様に扱う入口(SSOT)。
+export function wikidataQid(wikidataUrl: string | undefined): string | null {
+  if (!wikidataUrl) return null;
+  const m = /\/wiki\/(Q\d+)$/.exec(wikidataUrl);
+  return m ? m[1] : null;
+}
+
+// Steam app id を Steam ストアの正準 URL に変換(計算だけ・副作用なし)。原点ページの Steam 出典リンク用。
+//   established 側の完全な Steam URL(タイトル slug 付き)とは別に、anchor の app id から正準 store URL を
+//   組む(slug 不要・store.steampowered.com/app/<id>/ は Steam 公式が title へ解決する)。無し/null は null。
+export function steamStoreUrl(appId: string | null): string | null {
+  if (!appId) return null;
+  return "https://store.steampowered.com/app/" + appId + "/";
+}
+
 // lineage id -> 原点 established を同定する識別子(多態)。原点名そのものは picks 内の games[] に
 // established として既出 = SSOT。ここでは「どの established が原点か」だけを同定する。
 //   steam   : Steam app id(後方互換・PC 作品の原点)。
 //   wikidata: Wikidata QID URL(Steam 版が無い原点。例 Archero はモバイル専用で Steam 版なし)。
 // どちらか一方を持つ。両方持つ場合は steam を優先する(後方互換)。
+//   blurb   : この原点が「何の系譜の原点か」を説明する解説文(en/ja)。researcher が事実確証した
+//             二言語の散文(SSOT・この 1 箇所にだけ持つ)。blurb を持つ anchor だけが /origins/<id>/
+//             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
+//             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
-  "slay-the-spire": { steam: "646570" },
-  "obra-dinn": { steam: "653530" },
+  "slay-the-spire": {
+    steam: "646570",
+    blurb: {
+      en: "Slay the Spire is a roguelike deck-building game developed by the American indie studio Mega Crit, launched in early access in late 2017 and fully released in January 2019. By combining procedurally generated ascents of a multi-floor spire with deck-building combat in which cards are gained as run rewards, it popularized and is widely credited with defining the roguelike deckbuilder genre, inspiring later titles such as Monster Train.",
+      ja: "Slay the Spireは、米国のインディースタジオMega Critが開発したローグライク・デッキ構築ゲームで、2017年末にアーリーアクセス、2019年1月に正式リリースされた。手続き生成される多層の塔の登攀と、戦闘の報酬としてカードを得て構築するデッキ戦闘を組み合わせ、「ローグライク・デッキビルダー」というジャンルを広く普及・定義したと評価され、Monster Trainなど後続作品に影響を与えた、その系譜の原点である。",
+    },
+  },
+  "obra-dinn": {
+    steam: "653530",
+    blurb: {
+      en: "Return of the Obra Dinn is a first-person mystery and deduction game created by Lucas Pope and published by 3909 LLC, released for Windows and macOS in October 2018 as Pope's follow-up to Papers, Please. Casting the player as an insurance investigator reconstructing the fates of a ship's crew through frozen-moment scenes and pure logical deduction, and rendered in a 1-bit monochrome style, it is a defining origin of the modern logic-deduction puzzle adventure.",
+      ja: "Return of the Obra Dinnは、Lucas Popeが制作し3909 LLCが販売した一人称のミステリ・推理ゲームで、『Papers, Please』に続く作品として2018年10月にWindows・macOS向けに発売された。プレイヤーを保険調査員とし、静止した瞬間の場面と純粋な論理的推理だけで船員たちの運命を再構成させる仕組みと、1ビットのモノクロ表現を特徴とし、現代の論理推理パズルアドベンチャーの系譜を定義した原点である。",
+    },
+  },
   "two-point-hospital": { steam: "535930" },
   "archero": { wikidata: "https://www.wikidata.org/wiki/Q116031886" },
   "her-story": { steam: "368370" },
-  "to-the-moon": { steam: "206440" },
+  "to-the-moon": {
+    steam: "206440",
+    blurb: {
+      en: "To the Moon is a narrative-focused adventure game developed and published by Freebird Games, designed by Kan Gao using RPG Maker XP and released in November 2011 as the studio's first commercial title. With minimal gameplay and a story about two doctors fulfilling a dying man's last wish through artificial memories, it won GameSpot's 2011 Best Story award and is a key origin of the emotionally driven, story-first indie adventure made in RPG Maker.",
+      ja: "To the Moonは、Freebird Gamesが開発・販売した物語重視のアドベンチャーゲームで、Kan GaoがRPGツクールXPを用いて制作し、同スタジオ初の商業作品として2011年11月に発売された。ゲーム的操作を最小限に抑え、瀕死の男の最後の願いを人工記憶で叶える2人の医師を描いた物語で、GameSpotの2011年「ベストストーリー」賞を受賞し、RPGツクール製で感情と物語を最優先するインディーアドベンチャーの系譜の重要な原点である。",
+    },
+  },
   "metal-hellsinger": { steam: "1061910" },
   "uncharted-waters-2": { steam: "628170" },
   "dungeon-keeper": { steam: "1996630" },
   "princess-maker-2": { steam: "523000" },
   "doki-doki-literature-club": { steam: "698780" },
   "clannad": { steam: "324160" },
-  "kamaitachi-no-yoru": { steam: "2612660" },
+  "kamaitachi-no-yoru": {
+    steam: "2612660",
+    blurb: {
+      en: "Kamaitachi no Yoru is a sound novel developed and published by Chunsoft for the Super Famicom, released in November 1994 as the studio's second sound novel after Otogirisou (1992). Written by mystery author Takemaru Abiko in the shin-honkaku tradition, it applied the branching-choice sound novel format to a snowbound murder mystery and is the landmark origin of the mystery-focused branch of Japanese sound novels and choice-driven mystery visual novels.",
+      ja: "かまいたちの夜は、チュンソフトがスーパーファミコン向けに開発・発売したサウンドノベルで、『弟切草』（1992年）に続く同社2作目のサウンドノベルとして1994年11月に発売された。新本格ミステリの作家・我孫子武丸が執筆し、分岐選択式のサウンドノベルという形式を雪山の殺人ミステリに応用した作品で、ミステリ志向のサウンドノベルおよび選択分岐型ミステリ・アドベンチャーの系譜を切り開いた画期的な原点である。",
+    },
+  },
   "recettear": { steam: "70400" },
   "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
   "yume-nikki": { steam: "650700" },
-  "fire-emblem-thracia-776": { wikidata: "https://www.wikidata.org/wiki/Q2632064" },
-  "fire-emblem-blazing-blade": { wikidata: "https://www.wikidata.org/wiki/Q150180" },
-  "into-the-breach": { steam: "590380" },
+  "fire-emblem-thracia-776": {
+    wikidata: "https://www.wikidata.org/wiki/Q2632064",
+    blurb: {
+      en: "Fire Emblem: Thracia 776 is the fifth entry in Intelligent Systems' tactical RPG series, released for the Super Famicom via the Nintendo Power flash cartridge in 1999 (and on a ROM cartridge in 2000), and is the final title designed by series creator Shouzou Kaga. Known for its high difficulty and mechanics such as capture, fatigue, and the fog of war that later became series staples, it is the origin point of the franchise's most demanding, systems-heavy strand of strategy design.",
+      ja: "ファイアーエムブレム トラキア776は、インテリジェントシステムズによるシミュレーションRPGシリーズの第5作で、1999年にスーパーファミコン向けにニンテンドウパワー書き換えで発売（2000年にROMカートリッジ版）、シリーズ生みの親・加賀昭三が手がけた最後の作品である。高難度に加え「捕獲」「疲労」「天候・視界（戦場の霧）」など後のシリーズ定番となる要素を備え、本シリーズで最も歯ごたえのあるシステム特化型の戦略設計の原点となった。",
+    },
+  },
+  "fire-emblem-blazing-blade": {
+    wikidata: "https://www.wikidata.org/wiki/Q150180",
+    blurb: {
+      en: "Fire Emblem: The Blazing Blade is the seventh entry in the series, developed by Intelligent Systems for the Game Boy Advance and released in Japan in April 2003 and in North America in November 2003. It was the first Fire Emblem game localized and released outside Japan, opening the long-Japan-exclusive tactical RPG series to Western audiences and establishing the franchise's international presence.",
+      ja: "ファイアーエムブレム 烈火の剣は、インテリジェントシステムズがゲームボーイアドバンス向けに開発したシリーズ第7作で、2003年4月に日本、2003年11月に北米で発売された。シリーズで初めて日本国外向けにローカライズ・発売された作品であり、長く日本専売だったシミュレーションRPGシリーズを西洋市場へ初めて開いた、本シリーズの国際展開の原点である。",
+    },
+  },
+  "into-the-breach": {
+    steam: "590380",
+    blurb: {
+      en: "Into the Breach is a turn-based tactics game developed by the two-person indie studio Subset Games (Justin Ma and Matthew Davis), released for Windows in February 2018 as the studio's follow-up to FTL: Faster Than Light. By showing enemy attacks in advance on a small, fully visible 8x8 grid and challenging players to neutralize threats through perfect-information puzzle-like turns, it defined a distilled, chess-like school of compact tactical design that influenced later turn-based puzzle-strategy games.",
+      ja: "Into the Breachは、2人組のインディースタジオSubset Games（Justin MaとMatthew Davis）が開発したターンベースのタクティクスゲームで、『FTL: Faster Than Light』に続く作品として2018年2月にWindows向けに発売された。敵の攻撃を事前に提示し、すべて見渡せる小さな8x8のマス目上で、完全情報のパズルのような一手で脅威を無力化させる設計により、チェスのように凝縮されたコンパクトな戦術設計の系譜を確立し、後続のターン制パズル戦略ゲームに影響を与えた。",
+    },
+  },
   // 原点 零 -ZERO-(Fatal Frame / Project Zero), Tecmo, 2001。家庭用機作で公式 Steam 版なし
   // → wikidata で同定(Steam id を捏造しない・twilight-syndrome 型 href 破損の回避)。
-  "fatal-frame": { wikidata: "https://www.wikidata.org/wiki/Q2323933" },
+  "fatal-frame": {
+    wikidata: "https://www.wikidata.org/wiki/Q2323933",
+    blurb: {
+      en: "Fatal Frame (titled Zero in Japan) is a survival horror game developed and published by Tecmo for the PlayStation 2, released in Japan in December 2001. As the first entry in the series, it established the franchise's signature mechanic of fighting ghosts with the Camera Obscura, a defensive camera used to capture and exorcise spirits, defining a Japanese horror style built around photography rather than conventional weapons.",
+      ja: "零（ZERO、海外名Fatal Frame）は、テクモがPlayStation 2向けに開発・販売したサバイバルホラーで、2001年12月に日本で発売された。シリーズ第1作として、霊を撮影して退ける防御用カメラ「射影機（カメラ・オブスクラ）」で幽霊と戦うという象徴的な仕組みを確立し、従来の武器ではなく「撮影」を核にした和製ホラーの系譜の原点となった。",
+    },
+  },
   // 原点 Wizardry: Proving Grounds of the Mad Overlord, 1981(Apple II)。一人称グリッド型
   // パーティ制ダンジョンクロウルの始祖。2024 リメイクで公式 Steam 版あり(app 2518960)
   // → steam で同定(href 破損回避・established 側と /app/2518960/ で完全一致)。
-  "wizardry-proving-grounds": { steam: "2518960" },
+  "wizardry-proving-grounds": {
+    steam: "2518960",
+    blurb: {
+      en: "Wizardry: Proving Grounds of the Mad Overlord, created by Andrew Greenberg and Robert Woodhead and published by Sir-Tech, shipped for the Apple II in September 1981 as the first game in the Wizardry series. As the first party-based role-playing video game, with first-person, grid-based dungeon exploration and turn-based combat, it is a foundational origin of the computer RPG and directly influenced Japanese series such as Dragon Quest and Final Fantasy.",
+      ja: "Wizardry: Proving Grounds of the Mad Overlordは、Andrew GreenbergとRobert Woodheadが制作しSir-Techが販売したWizardryシリーズ第1作で、1981年9月にApple II向けに発売された。一人称・グリッド式のダンジョン探索とターン制戦闘を備えた、最初のパーティ制ロールプレイングゲームとして、コンピュータRPGの基礎的な原点であり、ドラゴンクエストやファイナルファンタジーなど日本のシリーズに直接影響を与えた。",
+    },
+  },
   // 原点 NKODICE(んこダイス), ksym, 2021。同人発のチンチロ・ダイスゲームで、サイコロのランダム性が
   // 偶発的に淫語を組み上げる仕組みが核。日本語版 Wikipedia がウーマンコミュニケーションの公式の
   // 影響元と明記する。Steam 版あり(app 1510950)→ steam で同定(established 側と /app/1510950/ で完全一致)。
-  "nkodice": { steam: "1510950" },
+  "nkodice": {
+    steam: "1510950",
+    blurb: {
+      en: "NKODICE is a dice game developed by the individual creator ksym and released on Steam in May 2021, based on the traditional Japanese gambling game Chinchirorin. Its hook is that rolled dice show hiragana-like symbols that combine into crude or sexual words, and it became a viral hit, reaching the top of Steam's Japanese sales ranking in June 2021; it is the origin of a small wave of irreverent, word-combination novelty dice games.",
+      ja: "NKODICE（んこダイス）は、個人クリエイターksymが開発し2021年5月にSteamで配信されたダイスゲームで、日本の伝統的な賭博「チンチロリン」を題材にしている。出目がひらがな状の記号で表示され、組み合わせると下ネタの単語になるのが特徴で、2021年6月にSteamの日本売上ランキング1位に達するなど口コミでヒットした、悪ノリ的な単語組み合わせ系ノベルティ・ダイスゲームの原点である。",
+    },
+  },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
@@ -3176,6 +3256,40 @@ export function lineageName(id: string, lang: "en" | "ja"): string | null {
     }
   }
   return null;
+}
+
+// blurb を持つ anchor の id を distinct で返す(計算だけ・副作用なし)。
+//   /origins/<id>/ の個別ページを生やす対象 = 「解説文(blurb)を持つ原点」だけ(SSOT)。
+//   LINEAGE_ANCHOR の宣言順を保つ(安定)。blurb 無しの anchor(名前逆引き専用)は含めない。
+//   getStaticPaths(EN/JA)とリンク化判定(PickPage/LineagePage)が同一集合を参照する唯一の入口。
+export function originAnchorIds(): string[] {
+  const out: string[] = [];
+  for (const id of Object.keys(LINEAGE_ANCHOR)) {
+    const anchor = (LINEAGE_ANCHOR as Record<string, { blurb?: unknown }>)[id];
+    if (anchor && anchor.blurb) out.push(id);
+  }
+  return out;
+}
+
+// 原点 id の解説文(表示言語)を返す(計算だけ・副作用なし)。blurb は LINEAGE_ANCHOR の 1 箇所のみ
+// = SSOT(原点ページ本文と JSON-LD description が同じ源を読む)。anchor 無し/blurb 無しは null
+// (捏造しない・呼び出し側が描画分岐に使う)。
+export function lineageBlurb(id: string, lang: "en" | "ja"): string | null {
+  const anchor = (LINEAGE_ANCHOR as Record<string, { blurb?: { en: string; ja: string } }>)[id];
+  if (!anchor || !anchor.blurb) return null;
+  return lang === "ja" ? anchor.blurb.ja : anchor.blurb.en;
+}
+
+// 原点 id の外部実体識別子(steam app id / wikidata QID URL)を返す(計算だけ・副作用なし)。
+//   原点ページの出典リンクと JSON-LD sameAs が LINEAGE_ANCHOR を直読みせず一様に参照する入口(SSOT)。
+//   anchor 無しは null。steam / wikidata は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
+export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string } | null {
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string }>)[id];
+  if (!anchor) return null;
+  const out: { steam?: string; wikidata?: string } = {};
+  if (anchor.steam) out.steam = anchor.steam;
+  if (anchor.wikidata) out.wikidata = anchor.wikidata;
+  return out;
 }
 
 // meta.lineage を常に配列へ正規化する(計算だけ・副作用なし)。

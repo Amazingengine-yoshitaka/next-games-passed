@@ -1,0 +1,146 @@
+---
+// 系譜の原点ページ(/origins/<anchor>/)。PickPage を雛形に Base で包む。
+// 脳と体の分離: 名前/解説/識別子/子孫はすべて picks.ts(SSOT)が返す事実を読むだけ。原点名は
+// lineageName(anchor) で逆引きし二重定義しない。blurb は LINEAGE_ANCHOR の 1 箇所のみ(SSOT)。
+// AEO 不破壊: 原点 VideoGame に自サイトの #lead を付けない(originJsonLd が担保)。
+import Base from "../layouts/Base.astro";
+import GameCard from "./GameCard.astro";
+import {
+  picks,
+  lineageName,
+  lineageBlurb,
+  lineageAnchorIdentity,
+  lineageForest,
+  steamStoreUrl,
+  wikidataQid,
+  JST_OFFSET_MIN,
+} from "../data/picks";
+import { originJsonLd } from "../lib/jsonld";
+import { useTranslations, tn, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+
+interface Props {
+  anchor: string;
+}
+const { anchor } = Astro.props;
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const backHref = isJa ? "/ja/" : "/";
+const lineageHref = isJa ? "/ja/lineage/" : "/lineage/";
+
+// 原点名(表示言語)は established 逆引き(SSOT・捏造しない)。解説文(blurb)も SSOT を読むだけ。
+const originName = lineageName(anchor, lang) ?? anchor;
+const blurb = lineageBlurb(anchor, lang);
+
+// 出典: anchor の識別子から壊れないリンクだけを組む。steam appid → 正準 store URL、wikidata → QID 表示。
+//   持っていないものはリンクごと出さない(href 破損ゼロ・rel=noopener のみ・nofollow なし)。
+const identity = lineageAnchorIdentity(anchor);
+const steamHref = identity && identity.steam ? steamStoreUrl(identity.steam) : null;
+const wdQid = identity ? wikidataQid(identity.wikidata) : null;
+const wdHref = identity ? (identity.wikidata ?? null) : null;
+
+// JSON-LD は現在時刻(UTC ms)を渡し、未公開の子孫を出さない(脳が判定・SSOT)。SSR ビルド時刻基準。
+const jsonld = originJsonLd(anchor, lang, pageUrl, t("nav.home"), Date.now());
+
+// meta description: 原点名を前置してロングテール検索にマッチ。本文(blurb)を続ける(脳の事実のみ)。
+const metaDesc = tn(lang, "origin.meta.descPrefix", originName) + (blurb ?? "");
+
+// この原点を継ぐ発掘(子孫): lineageForest の rootId が一致する root の children を GameCard 化。
+//   名前/タグ/説明は各 pick の lead game(SSOT)。記事 href とゲーム外部 url を分けて持つ。
+//   未公開先は PickPage と同じ time-gate script が data-related で隠す(SSR は全文出力・AEO)。
+const matched = lineageForest(lang).find(function (r) { return r.rootId === anchor; });
+const descendants = (matched ? matched.children : []).map(function (ch) {
+  const pick = picks[ch.slug];
+  const lead = pick.games[pick.leadIndex];
+  return {
+    slug: ch.slug,
+    publishAt: ch.publishAt,
+    href: (isJa ? "/ja/picks/" : "/picks/") + ch.slug + "/",
+    name: isJa ? (lead.name_ja || lead.name_en) : (lead.name_en || lead.name_ja),
+    tag: isJa ? lead.tag_ja : lead.tag_en,
+    desc: isJa ? lead.desc_ja : lead.desc_en,
+  };
+});
+
+const title = originName + t("origin.h1suffix");
+// OG 画像は専用カードを持たないので Base の既定カード(ogUrlPath("default"))に保険で落とす(SSOT)。
+---
+<Base title={title} description={metaDesc} jsonld={jsonld}>
+  <main class="wrap" style="padding-top:48px;padding-bottom:0" data-pickgate>
+
+    <nav aria-label="breadcrumb" style="font-size:13px;color:var(--muted);margin-bottom:6px"><a href={backHref}>{t("nav.home")}</a> / <a href={lineageHref}>{t("nav.lineage")}</a> / {originName}</nav>
+
+    <span class="kicker"><span class="dot"></span> {t("origin.kicker")}</span>
+    <h1>{originName}<span class="flip">{t("origin.h1suffix")}</span></h1>
+
+    <h2><span class="num">01</span>{t("origin.overview")}</h2>
+    {blurb && <p class="lede">{blurb}</p>}
+
+    <!-- 出典: 持っている識別子だけをリンク化。壊れリンク(href 破損)を物理的に作らない(北極星)。
+         rel=noopener のみ(nofollow は付けない=出典への信頼リンク)。 -->
+    {(steamHref || (wdHref && wdQid)) && (
+      <>
+        <h2><span class="num">02</span>{t("origin.sources")}</h2>
+        <ul class="feel">
+          {steamHref && (
+            <li><a href={steamHref} target="_blank" rel="noopener">{t("origin.source.steam")}</a></li>
+          )}
+          {wdHref && wdQid && (
+            <li><a href={wdHref} target="_blank" rel="noopener">{tn(lang, "origin.source.wikidata", wdQid)}</a></li>
+          )}
+        </ul>
+      </>
+    )}
+
+    <h2><span class="num">03</span>{t("origin.descendants")}</h2>
+    {descendants.length > 0 ? (
+      descendants.map((d) => (
+        <a
+          class="origin-child"
+          href={d.href}
+          data-related
+          data-publish-at={d.publishAt}
+          style="display:block;text-decoration:none"
+        >
+          <GameCard name={d.name} tag={d.tag} desc={d.desc} />
+        </a>
+      ))
+    ) : (
+      <p class="lede">{t("origin.descendants.empty")}</p>
+    )}
+
+    <p style="margin-top:26px"><a href={lineageHref}>{t("origin.toLineage")}</a></p>
+
+    <footer><a href={backHref}>{t("home.back")}</a></footer>
+  </main>
+
+  <!-- 体(time-gate): 未公開(now(JST) < publishAt)の子孫リンクを隠す。脳(picks.ts publishAtToUtcMs)と
+       同一式で UTC ms を作る(SSOT・TZ をベタ書きしない)。SSR は全文出力(AEO/JS-off)。
+       PickPage の related gate と同方式(再ビルド無しで期日後に自動表示)。 -->
+  <script
+    is:inline
+    define:vars={{ jstOffsetMin: JST_OFFSET_MIN }}
+  >
+    (function () {
+      var gate = document.querySelector("[data-pickgate]");
+      if (!gate) return;
+      var nowMs = Date.now();
+      function publishAtUtcMs(s) {
+        var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || "");
+        if (!m) return null;
+        return Date.UTC(parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10))
+          - jstOffsetMin * 60 * 1000;
+      }
+      function isPublished(s) {
+        var at = publishAtUtcMs(s);
+        return at === null ? true : nowMs >= at;
+      }
+      var rels = gate.querySelectorAll("[data-related]");
+      for (var i = 0; i < rels.length; i++) {
+        if (!isPublished(rels[i].getAttribute("data-publish-at"))) rels[i].hidden = true;
+      }
+    })();
+  </script>
+</Base>

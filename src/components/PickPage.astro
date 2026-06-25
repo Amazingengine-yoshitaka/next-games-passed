@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import GameCard from "./GameCard.astro";
-import { picks, relatedPicks, rarityStamps, lineageIds, lineageName, JST_OFFSET_MIN } from "../data/picks";
+import { picks, relatedPicks, rarityStamps, lineageIds, lineageName, originAnchorIds, JST_OFFSET_MIN } from "../data/picks";
 import { SITE } from "../data/site";
 import { ogUrlPath } from "../../scripts/og-card.config.mjs";
 import { pickJsonLd, representativeName, gameUrl } from "../lib/jsonld";
@@ -74,9 +74,17 @@ const branches = related.filter(function (r) { return r.relation === "branch"; }
 
 // 【案1 縦血統ライン】原点(root)を多親対応で解決。lineageIds で配列化し各 root 名を逆引き(SSOT)。
 // null(同定不能)は捏造せず出さない。多親(Bit Oz hub)は root が複数行で並ぶ(二親の視覚化)。
+//   origin ページが存在する root(originAnchorIds に含まれる=blurb を持つ)だけ href を持たせ
+//   /origins/<id>/ へリンク化する。存在しない root は href=null でテキストのまま(404 を作らない)。
+const originIds = originAnchorIds();
 const roots = lineageIds(pick.meta)
-  .map(function (id) { return lineageName(id, lang); })
-  .filter(function (n): n is string { return n !== null; });
+  .map(function (id) {
+    const name = lineageName(id, lang);
+    if (name === null) return null;
+    const href = originIds.indexOf(id) !== -1 ? (isJa ? "/ja/origins/" : "/origins/") + id + "/" : null;
+    return { name: name, href: href };
+  })
+  .filter(function (r): r is { name: string; href: string | null } { return r !== null; });
 const multiRoot = roots.length > 1;
 // この pick 固有の OG カード絶対 URL(ビルド前に public/og/<slug>(.ja).png を生成済み)。
 // SITE.url 由来 = SSOT。命名規約は ogUrlPath に一元化(gen-og-cards と同一規約・ズレ防止)。
@@ -161,10 +169,13 @@ const ogImage = SITE.url + ogUrlPath(slug, isJa);
          nested ul/li + CSS 擬似要素罫線(SVG なし・role=tree なし・aria-label のみ)。
          JS-off でも入れ子リストが全文 SSR されて読める。未公開先は client が data-related で隠す。 -->
     <ul class="lineage-tree" aria-label={t("lineage.tree.aria")}>
-      <!-- 原点(root): 多親なら複数行で横並び(二親の視覚化)。null(同定不能)は出さない -->
-      {roots.map((rootName) => (
+      <!-- 原点(root): 多親なら複数行で横並び(二親の視覚化)。null(同定不能)は出さない。
+           origin ページがある root だけ名前を /origins/<id>/ へのリンクにする(無い root はテキスト)。 -->
+      {roots.map((root) => (
         <li class="lin-node lin-root" data-lin-role="root">
-          <span class="lin-name">{rootName}</span>
+          {root.href
+            ? <a class="lin-name" href={root.href}>{root.name}</a>
+            : <span class="lin-name">{root.name}</span>}
           <span class="lin-role-flag root">{t("lineage.role.root")}</span>
         </li>
       ))}

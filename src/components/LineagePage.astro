@@ -4,7 +4,7 @@
 // 伏せ札 FSM は HomePage と同じ localStorage key("uncut.discovered.<lang>")と --flip-ms を流用。
 // 北極星: 達成画面を出さない。全部めくっても各 root に伏せたプレースホルダ枠が常設で残る(未完維持)。
 import Base from "../layouts/Base.astro";
-import { picks, lineageForest, JST_OFFSET_MIN } from "../data/picks";
+import { picks, lineageForest, originAnchorIds, JST_OFFSET_MIN } from "../data/picks";
 import { representativeName, siteJsonLd } from "../lib/jsonld";
 import { SITE } from "../data/site";
 import { useTranslations, defaultLang } from "../i18n/ui";
@@ -17,10 +17,17 @@ const isJa = lang === "ja";
 const brand = isJa ? SITE.name : SITE.nameEn;
 
 // 家系図データ(脳)。各 child の表示名/leadTag/genre は体がここで一度だけ束ねる(SSR 全文出力)。
+//   origin ページが存在する root(originAnchorIds に含まれる=blurb を持つ)だけ rootHref を持たせ
+//   /origins/<id>/ へリンク化する。存在しない root は rootHref=null でテキストのまま(404 を作らない)。
+const originIds = originAnchorIds();
 const forest = lineageForest(lang).map(function (root) {
   return {
     rootId: root.rootId,
     rootName: root.rootName,
+    rootHref:
+      originIds.indexOf(root.rootId) !== -1
+        ? getRelativeLocaleUrl(lang, "/origins/" + root.rootId + "/")
+        : null,
     children: root.children.map(function (ch) {
       const pick = picks[ch.slug];
       const pcx = pick[lang];
@@ -62,7 +69,8 @@ const desc = t("lineage.page.desc");
     <section class="lineage-forest" data-forest aria-label={t("lineage.page.title")}>
       {forest.map((root) => (
         <div class="forest-root" data-forest-root>
-          <p class="forest-root-name"><span class="forest-root-flag">{t("lineage.role.root")}</span>{root.rootName}</p>
+          <!-- origin ページがある root だけ名前を /origins/<id>/ へのリンクにする(無い root はテキスト)。 -->
+          <p class="forest-root-name"><span class="forest-root-flag">{t("lineage.role.root")}</span>{root.rootHref ? <a href={root.rootHref}>{root.rootName}</a> : root.rootName}</p>
           <ul class="forest-branches">
             {root.children.map((ch) => (
               <li
