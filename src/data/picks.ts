@@ -2987,6 +2987,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "woman-communication": {
+    published: "2026-06-21",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "word-hunt-action", lineage: "nkodice", obscurity: "wall", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 802, positivePct: 99, noEnglish: true } },
+    games: [
+      {
+        name_en: "Woman Communication",
+        name_ja: "ウーマンコミュニケーション",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2095090/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A high-speed word-hunt action game wrapped in a school novel. As a public-morals committee member, you watch girls' everyday chatter stream across the screen as fast-scrolling text, and your job is to spot the dirty words that accidentally assemble themselves when you re-read the gaps between words, and shoot them down like a shooting game. The trick is the Japanese reading game of ginata-yomi: shift where one phrase is cut and an innocent line suddenly hides a filthy one. You are scored on how many you catch, how fast, and how accurately, across over 100 sensitive words, with branching multiple endings driven by how you act and a mosaic mode built for streamers. Because the whole game is the sound and syllable structure of Japanese itself, it is structurally near-impossible to localize. Made by the Japanese solo creator YAMADA (GameCreatorNeko). Overwhelmingly Positive in Japan at 802 reviews and 99 percent, yet the West has barely found it: only 18 English reviews out of 802, about 2 percent. There is no English version: the store supports Japanese only, so the language itself is the wall.",
+        desc_ja: "学園ノベルに包まれた、高速「ことば探し」アクション。風紀委員として、女の子たちの日常会話が画面に文字列となって高速で流れていくのを見張り、語と語の区切りを読み替えると「うっかり出来上がってしまった淫語」を見つけ出し、シューティング感覚で撃ち抜くのが仕事だ。鍵は日本語の遊び——ぎなた読み。一つの言葉をどこで区切るかをずらすと、無害な一文に、突然いかがわしい一文が潜む。発見した数・速さ・正確さでスコアが付き、センシティブワードは100種以上、行動で分岐するマルチエンディングと、配信者向けのモザイク機能まで備える。日本語の語呂と音節構造そのものを遊ぶため、構造的にローカライズはほぼ不可能だ。日本の個人クリエイター YAMADA(げーむくりえいたーねこ)による一本。802レビュー99%で日本では圧倒的に好評なのに、西はまだほとんど見つけていない——802件中、英語レビューはわずか18件、約2%。英語版は存在しない。ストアは日本語のみ対応で、言語そのものが壁になっている。",
+      },
+      {
+        name_en: "NKODICE",
+        name_ja: "NKODICE(んこダイス)",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1510950/NKODICE/",
+        wikidata: "https://www.wikidata.org/wiki/Q109602270",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the accidental-dirty-word game: in 2021, the Japanese doujin creator ksym shipped a chinchiro-style dice game where the random faces of the dice keep assembling themselves, by sheer chance, into filthy Japanese words. This gem is a direct heir to that core idea, only it swaps the randomness of dice for the randomness of conversation: instead of dice faces lining up into a dirty word, it is everyday chatter that lines up into one, and your job is to hunt it.",
+        desc_ja: "偶発的に淫語が出来上がる遊びの原点。2021年、日本の同人クリエイター ksym が、サイコロの出目がまったくの偶然でいかがわしい日本語の言葉に組み上がっていくチンチロ系ダイスゲームを世に出した。この未発掘の名作はその核となる発想の直系——ただしサイコロのランダム性を、会話のランダム性に置き換えた。出目が淫語に並ぶのではなく、日常会話が淫語に並ぶ。そしてそれを狩るのが、あなたの仕事になる。",
+      },
+    ],
+    en: {
+      title: "Woman Communication - a buried high-speed word-hunt action game you can only play in Japanese, an heir to NKODICE",
+      description: "A high-speed word-hunt action game in a school novel. As a morals committee member, you watch girls' chatter scroll by and shoot down the dirty words that accidentally form when you re-read the gaps, ginata-yomi style. Over 100 sensitive words, branching endings, a streamer mosaic mode. Overwhelmingly Positive in Japan at 802 reviews and 99 percent, yet only 18 English reviews. Japanese only: the language is the wall.",
+      h1a: "Read the gap between words, and ",
+      h1flip: "shoot the dirty one that appears",
+      h1b: ".",
+      lede: "A high-speed word-hunt action game wrapped in a school novel. As a public-morals committee member, you watch girls' everyday chatter stream across the screen as fast-scrolling text, and you shoot down the dirty words that accidentally assemble themselves when you re-read where one phrase is cut, the Japanese reading game of ginata-yomi. You are scored on how many you catch, how fast, and how accurately, across over 100 sensitive words, with branching endings and a mosaic mode for streamers. A solo work by the Japanese creator YAMADA, in the lineage of the accidental-dirty-word game NKODICE. Because it plays the sound of Japanese itself, there is no English version, and the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The conversation never stops scrolling, so reading turns physical: your eyes race the text, and the moment two harmless words touch and a filthy one snaps into shape, your trigger finger already knows before your brain catches up.",
+        "The catch is that the dirty word is never really there until you cut the line in the wrong place, so you are not reading what is written, you are hunting where it could break, ginata-yomi turned into a reflex.",
+        "And every hit is scored on speed and accuracy at once, so you are pulled to read faster and aim cleaner on the same pass, and one perfect streak of catches makes you start the next conversation before you mean to.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the accidental-dirty-word idea of NKODICE and want it turned into a fast reflex hunt through scrolling conversation",
+        "You enjoy Japanese wordplay, ginata-yomi and puns, and want a game built entirely on the sound and rhythm of the language",
+        "You want a gem the West cannot reach, Overwhelmingly Positive in Japan at 99 percent with just 18 English reviews, because there is no English version at all",
+      ],
+      bad: [
+        "You do not read Japanese: there is no English version, and the whole game is the sound of Japanese, so it cannot be localized",
+        "You want explicit content rather than text-based innuendo and lewd words built from misread phrases (this is wordplay, not depiction)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ウーマンコミュニケーション - 日本語でしか遊べない、NKODICE の系譜の埋もれた高速「ことば探し」アクション",
+      description: "学園ノベルに包まれた高速「ことば探し」アクション。風紀委員として女の子たちの会話が流れる中、語の区切りを読み替えると出来上がる淫語を、ぎなた読みで見つけて撃ち抜く。センシティブワード100種以上、マルチエンディング、配信者向けモザイク機能。802レビュー99%で日本では圧倒的に好評なのに英語レビューは18件。日本語のみ対応で、言語そのものが壁。",
+      h1a: "言葉の区切りを読み替え、",
+      h1flip: "現れた淫語を撃て",
+      h1b: "。",
+      lede: "学園ノベルに包まれた、高速「ことば探し」アクション。風紀委員として、女の子たちの日常会話が文字列となって画面を高速で流れていくのを見張り、一つの言葉をどこで区切るかをずらすと——ぎなた読みで——うっかり出来上がってしまう淫語を撃ち抜く。発見した数・速さ・正確さでスコアが付き、センシティブワードは100種以上、行動で分岐するマルチエンディングと、配信者向けのモザイク機能まで備える。日本の個人クリエイター YAMADA による一本で、偶発的に淫語が出来上がる遊びの原点 NKODICE の系譜に連なる。日本語の音そのものを遊ぶため英語版は存在せず、西はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "会話は止まらず流れ続ける。だから「読む」ことが身体的になる——目が文字列を追い、無害な二語が触れ合って淫語が一瞬で形になった瞬間、脳が気づくより先に、引き金にかけた指が動いている。",
+        "厄介なのは、その淫語は「間違った位置で区切る」まで本当はそこに無いということだ。だからあなたは書かれた文を読むのではなく、「どこで壊れうるか」を狩っている——ぎなた読みが、反射に変わる。",
+        "そして全てのヒットは速さと正確さで同時に採点される。だから同じ一読みの中で、もっと速く読み、もっと綺麗に狙うことへ引き込まれる。気持ちいい連続ヒットを決めた瞬間、次の会話を、自分の意図より先に始めてしまう。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "NKODICE の「偶発的に淫語が出来上がる」発想が好きで、それが流れる会話を狩る速い反射ゲームになったものが欲しい人",
+        "ぎなた読みや言葉遊び、語呂が好きで、言語の音とリズムそのものの上に組み上がったゲームが欲しい人",
+        "英語版が一切ないからこそ西が届かない、99%で日本では圧倒的に好評なのに英語レビュー18件の原石を掘りたい人",
+      ],
+      bad: [
+        "日本語が読めない人(英語版は存在せず、ゲーム全体が日本語の音そのものなのでローカライズできない)",
+        "読み違えた言葉から組み上がるテキストの下ネタ・言葉遊びより、露骨な描写が欲しい人(本作は言葉遊びであり描写ではない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3065,6 +3144,10 @@ const LINEAGE_ANCHOR = {
   // パーティ制ダンジョンクロウルの始祖。2024 リメイクで公式 Steam 版あり(app 2518960)
   // → steam で同定(href 破損回避・established 側と /app/2518960/ で完全一致)。
   "wizardry-proving-grounds": { steam: "2518960" },
+  // 原点 NKODICE(んこダイス), ksym, 2021。同人発のチンチロ・ダイスゲームで、サイコロのランダム性が
+  // 偶発的に淫語を組み上げる仕組みが核。日本語版 Wikipedia がウーマンコミュニケーションの公式の
+  // 影響元と明記する。Steam 版あり(app 1510950)→ steam で同定(established 側と /app/1510950/ で完全一致)。
+  "nkodice": { steam: "1510950" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
