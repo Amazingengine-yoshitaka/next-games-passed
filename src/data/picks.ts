@@ -2750,6 +2750,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "eutolant-saga": {
+    published: "2026-06-20",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "srpg", lineage: "fire-emblem-blazing-blade", obscurity: "wall", reachState: "unreached_west", reviewBand: "hundreds", rarity: { reviews: 104, positivePct: 93, noEnglish: true } },
+    games: [
+      {
+        name_en: "Eutolant Saga",
+        name_ja: "ユートラント戦記",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3470020/Eutolant_Saga/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A royal-road fantasy SRPG built to never let you give up. Turn-based battles play out without screen transitions for tempo, you field a party from over 40 recruitable allies among 120-plus unique characters, and stats grow randomly. When your growth stalls, a backup system raises your growth rates to catch you up, and special items help units who fall behind. There is no permadeath: a downed unit is not lost forever but temporarily withdraws and takes time to recover, so your training slows instead of ending. Weapons auto-repair after each chapter, support talks grant experience and stat bonuses, and you choose Normal (save anywhere) or Classic (no mid-battle saves). Made by the Japanese developer Oistar Games in SRPG Studio, in the lineage of GBA-era Fire Emblem. Very Positive in Japan at 104 reviews and 93 percent, yet the West has barely found it: just one English review. Note: it is Japanese-only, with no English support.",
+        desc_ja: "挫折させないために作られた、王道ファンタジーSRPG。画面切替なしでテンポを保つターン制バトル、120人超の固有キャラのうち40人超の仲間からパーティを編成、ステータスはランダム成長。成長が停滞すると成長率を底上げして追いつかせる「バックアップ(救済)システム」が働き、苦戦するキャラには特殊アイテムが手を差し伸べる。パーマデスは無い——撃破されたユニットは永久ロストではなく一時的に離脱し、回復に時間がかかる。だから育成が終わるのではなく遅れるだけだ。武器は章終了後に自動修理、支援会話で経験値と能力ボーナス、途中セーブ可の「ノーマル」か途中セーブ不可の「クラシック」を選べる。日本の開発者 Oistar Games(おいすた)が SRPG Studio で作った、GBA時代のファイアーエムブレムの系譜の一本。104レビュー93%で日本では非常に好評なのに、西はまだほとんど見つけていない——英語レビューはわずか1件。注: 日本語のみで、英語は非対応。",
+      },
+      {
+        name_en: "Fire Emblem: The Blazing Blade",
+        name_ja: "ファイアーエムブレム 烈火の剣",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Fire_Emblem:_The_Blazing_Blade",
+        wikidata: "https://www.wikidata.org/wiki/Q150180",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of GBA-era Fire Emblem: in 2003, Nintendo and Intelligent Systems shipped the first entry in the series to reach the West, defining the GBA-era feel of approachable tactics carried by story and the chemistry of its cast through support talks. No official Steam release. This gem is a direct heir to that feel, its clear-game reviews calling out the story structure and character banter of GBA-era Fire Emblem, and it grows that approachable line with backup and injury systems built so you never have to give up.",
+        desc_ja: "GBA時代のファイアーエムブレムの原点。2003年、任天堂とインテリジェントシステムズが、シリーズで初めて西洋に届いた一本を世に出し、物語と、支援会話で描かれるキャラ同士の掛け合いが牽引する——遊びやすいタクティクスというGBA期FEの味を定義した。公式 Steam 版なし。この未発掘の名作はその味の直系で、クリア感想レビューはGBA時代のFEのストーリー構成とキャラの掛け合いを挙げる。そして救済システムと負傷システムで、挫折しなくていいよう作られた遊びやすさの路線を育てる。",
+      },
+    ],
+    en: {
+      title: "Eutolant Saga - a buried royal-road SRPG built to never let you give up, an heir to GBA-era Fire Emblem",
+      description: "A royal-road fantasy SRPG built to never let you give up: no permadeath, a backup system that raises your growth rates when you stall, and a downed unit that withdraws to recover instead of being lost. Over 40 allies among 120-plus characters, Normal or Classic mode. Very Positive in Japan at 104 reviews and 93 percent, yet just one English review. Note: Japanese-only, no English support.",
+      h1a: "A royal-road SRPG that ",
+      h1flip: "refuses to let you give up",
+      h1b: ".",
+      lede: "A turn-based fantasy SRPG in the GBA-era Fire Emblem line, but built so you never have to reset and start over. No permadeath: a downed unit withdraws and takes time to heal, so training slows instead of dying. When your growth stalls, a backup system raises your rates to catch you up. Over 40 allies among 120-plus unique characters, support talks, Normal or Classic mode. A solo-feeling work by the Japanese developer Oistar Games in SRPG Studio. It is Japanese-only, so the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "A unit you raised goes down, and the old SRPG dread hits: reload, redo the whole map. Then it does not. They only withdraw, and the run keeps going, so you stop save-scumming and start playing the board as it actually fell.",
+        "Your favorite gets unlucky stat rolls and falls behind, and instead of benching them forever, the backup system quietly raises their growth so they climb back. The unit you love stays the unit you field.",
+        "So the campaign becomes a long road you never abandon. You take the loss, recover, and push the next chapter, and when a stalled unit finally catches up and lands the turn that wins the map, a quiet warmth runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love GBA-era Fire Emblem, the story and the support-talk chemistry that carry approachable tactics",
+        "You want a deep SRPG without the punishment: no permadeath, injury recovery instead of loss, and backup rates that catch up a stalled unit",
+        "You want a gem the West has not found yet, buried under a Japanese-only wall and just one English review",
+      ],
+      bad: [
+        "You want the hardcore, permadeath, every-loss-permanent line of Thracia 776, not a saga built to never let you give up",
+        "You need to play in English right now (it is Japanese-only, the wall is language; future localization is undecided)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ユートラント戦記 - 挫折させないために作られた、GBA期ファイアーエムブレムの系譜の埋もれた王道SRPG",
+      description: "挫折させないために作られた王道ファンタジーSRPG。パーマデス無し、成長停滞時に成長率を底上げする救済システム、撃破ユニットはロストではなく一時離脱して回復。120人超のキャラのうち40人超の仲間、ノーマルかクラシックを選択可。104レビュー93%で日本では非常に好評なのに英語レビューは1件。注: 日本語のみ、英語非対応。",
+      h1a: "挫折を、",
+      h1flip: "許さない王道SRPG",
+      h1b: "。",
+      lede: "GBA期ファイアーエムブレムの系譜に連なるターン制ファンタジーSRPG。でも、リセットしてやり直さなくていいよう作られている。パーマデス無し——撃破ユニットは一時離脱して回復に時間がかかる。だから育成は終わるのでなく遅れるだけ。成長が停滞すると、救済システムが成長率を底上げして追いつかせる。120人超の固有キャラのうち40人超の仲間、支援会話、ノーマルかクラシックを選択可。日本の開発者 Oistar Games(おいすた)が SRPG Studio で作った一本。日本語のみのため、西はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "育てたユニットが倒れる。あの古いSRPGの恐怖がよぎる——リロードして、このマップを最初からやり直しだ。ところが、そうはならない。彼らはただ離脱するだけで、ランは続く。だからセーブ&ロードを繰り返すのをやめ、実際に落ちた盤面そのままで戦い始める。",
+        "お気に入りが運の悪い成長を引いて遅れをとる。それでも永久にベンチに下げる代わりに、救済システムが静かにその成長を底上げして、また這い上がらせる。好きなユニットが、出し続けられるユニットのままでいる。",
+        "だからキャンペーンは、決して投げ出さない長い道になる。負けを受け止め、回復させ、次の章を押し進める。停滞していたユニットがついに追いつき、マップを決める一手を放った瞬間、静かな温かさがゾクッと背筋を走る。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "GBA期ファイアーエムブレムの、物語と支援会話の掛け合いが牽引する遊びやすいタクティクスが好きな人",
+        "罰のない奥深いSRPGが欲しい人——パーマデス無し、ロストでなく負傷回復、停滞ユニットを追いつかせる救済率",
+        "日本語のみの壁と英語レビュー1件に埋もれた、西がまだ見つけてない原石を先に触りたい人",
+      ],
+      bad: [
+        "挫折させないために作られた戦記より、トラキア776のような硬派でパーマデス、負けが全部永久の路線が欲しい人",
+        "今すぐ英語で遊びたい人(本作は日本語のみ・壁は言語・将来のローカライズは未定)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2819,6 +2898,7 @@ const LINEAGE_ANCHOR = {
   "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
   "yume-nikki": { steam: "650700" },
   "fire-emblem-thracia-776": { wikidata: "https://www.wikidata.org/wiki/Q2632064" },
+  "fire-emblem-blazing-blade": { wikidata: "https://www.wikidata.org/wiki/Q150180" },
   "into-the-breach": { steam: "590380" },
 } as const;
 
