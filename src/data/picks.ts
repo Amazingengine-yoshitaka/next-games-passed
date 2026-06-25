@@ -2671,6 +2671,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dungeon-artifact": {
+    published: "2026-06-19",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "deckbuilder", lineage: "into-the-breach", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 159, positivePct: 95 } },
+    games: [
+      {
+        name_en: "DUNGEON ARTIFACT",
+        name_ja: "ダンジョンアーティファクト",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2144220/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A roguelike deckbuilder where position is the core of strategy. Over 400 cards combine into combos, but many cards only hit a specific area, so where your character stands decides everything: you move to dodge attacks, charge up for a one-shot strike, and play cards that linger or nullify an enemy's action. Two protagonists, each with a different playstyle, descend into the dungeon. Made by the Japanese doujin circle ExertionGame. Very Positive in Japan at 159 reviews and 95 percent, yet the West has barely found it: only two English reviews. Note: this is an Early Access title, so it is not finished yet.",
+        desc_ja: "位置取りが戦略の核になるローグライク・デッキ構築。400種類以上のカードがコンボに組み上がるが、多くのカードは特定の範囲にしか効かない——だからキャラクターがどこに立つかが全てを決める。移動して敵の攻撃を避け、力をためて一撃必殺を放ち、効果が持続するカードや敵の行動を無効化するカードを切る。それぞれ別のプレイスタイルを持つ2人の主人公からダンジョンに挑む。日本の同人サークル ExertionGame による一本。159レビュー95%で日本では非常に好評なのに、西はまだほとんど見つけていない——英語レビューはわずか2件。注: 本作は早期アクセス(Early Access)で、まだ完成していない。",
+      },
+      {
+        name_en: "Into the Breach",
+        name_ja: "Into the Breach",
+        status: "established",
+        steam: "https://store.steampowered.com/app/590380/Into_the_Breach/",
+        wikidata: "https://www.wikidata.org/wiki/Q48729625",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of grid-positioning as the heart of tactics: in 2018, Subset Games built a run-based turn tactics game where where you stand on the grid is the whole strategy. This gem is a direct heir to that positioning, fusing it with Slay the Spire-style deckbuilding, so you place cards on a grid and fire them by where your character stands.",
+        desc_ja: "グリッド上の位置取りこそ戦術の核という味の原点。2018年、Subset Games がマス目上のどこに立つかが戦略の全てになるラン構造型ターン制タクティクスを生んだ。この未発掘の名作はその位置取りの直系で、Slay the Spire 型のデッキ構築と融合させ、カードをマス目上で位置取りしてキャラクターの立ち位置で撃たせる。",
+      },
+    ],
+    en: {
+      title: "DUNGEON ARTIFACT - a buried roguelike deckbuilder where position is everything, an heir to Into the Breach",
+      description: "A roguelike deckbuilder where position is the core of strategy: over 400 cards combine into combos, but many only hit a set area, so where you stand decides everything. Two protagonists, charge attacks, lingering cards. Very Positive in Japan at 159 reviews and 95 percent, yet only two English reviews. Note: this is an Early Access title, not finished yet.",
+      h1a: "Don't just build the deck. ",
+      h1flip: "Stand in the right place",
+      h1b: ".",
+      lede: "A roguelike deckbuilder where over 400 cards combine into combos, but many only land on a specific area, so where your character stands decides everything. You move to dodge attacks, charge up for a one-shot strike, and play cards that linger or nullify an enemy's action. Two protagonists, each a different playstyle. A doujin work by the Japanese circle ExertionGame, in the lineage of the tactics game that made grid positioning the whole strategy, Into the Breach. It already plays in English, yet the West has barely found it. It is still in Early Access, not finished, but already loved.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You stop thinking of cards as raw damage and start thinking in space: this card only hits that area, so your build means nothing until you stand in the right tile.",
+        "So you read the board, slide your character into position, and stack cards that overlap on the same spot to spike one strike's multiplier far past what any single card could do.",
+        "Then you charge it up and let the one-shot land where you placed it. When position and overlap line up and a charged combo erases a stronger foe, a chill runs down your spine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Slay the Spire deckbuilding but want positioning, like Into the Breach, to be the real axis",
+        "You like stacking area cards on one tile to spike a single charged strike's multiplier",
+        "You want a Japanese doujin gem the West has barely read, with only two English reviews, even though it already plays in English",
+      ],
+      bad: [
+        "You need a finished, content-complete release right now (this is Early Access, still unfinished)",
+        "You want a pure card game where the deck alone decides it, with no positioning or dodging on a grid",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ダンジョンアーティファクト - 位置取りが全てを決める、Into the Breach の系譜の埋もれたローグライク・デッキ構築",
+      description: "位置取りが戦略の核になるローグライク・デッキ構築。400種類以上のカードがコンボに組み上がるが、多くは特定の範囲にしか効かない——だからどこに立つかが全てを決める。2人の主人公、チャージ攻撃、持続カード。159レビュー95%で日本では非常に好評なのに英語レビューは2件。注: 本作は早期アクセスで、まだ完成していない。",
+      h1a: "デッキを組むだけじゃない。",
+      h1flip: "正しい位置に立て",
+      h1b: "。",
+      lede: "400種類以上のカードがコンボに組み上がるローグライク・デッキ構築。だが多くのカードは特定の範囲にしか効かない——だからキャラクターがどこに立つかが全てを決める。移動して敵の攻撃を避け、力をためて一撃必殺を放ち、効果が持続するカードや敵の行動を無効化するカードを切る。それぞれ別のプレイスタイルを持つ2人の主人公。日本の同人サークル ExertionGame による一本で、グリッドの位置取りを戦略の全てにしたタクティクス Into the Breach の系譜に連なる。英語でもう遊べるのに、西はまだほとんど見つけていない。まだ早期アクセスで未完成、それでももう愛されている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "カードを「火力」でなく「空間」で考え始める。このカードはこの範囲にしか効かない——だから正しいマスに立つまで、組んだビルドは何の意味も持たない。",
+        "だから盤面を読み、キャラクターを位置に滑り込ませ、同じマスに重なるカードを積んで、一発の倍率を単体カードでは届かない高みまで跳ね上げる。",
+        "そして力をため、置いた場所へ一撃必殺を落とす。位置と重ね合わせが噛み合い、チャージしたコンボが格上を消し飛ばした瞬間、ゾクッとくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Slay the Spire のデッキ構築が好きで、Into the Breach のように位置取りこそ本当の軸にしたい人",
+        "範囲カードを一つのマスに重ねて、チャージ一撃の倍率を跳ね上げるのが好きな人",
+        "英語でもう遊べるのに英語レビュー2件で、西がまだほとんど読めていない日本の同人原石を掘りたい人",
+      ],
+      bad: [
+        "今すぐ完成した、コンテンツ完備の一本が欲しい人(本作は早期アクセス・まだ未完成)",
+        "位置取りやグリッド回避なしに、デッキだけで決まる純粋なカードゲームが欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2740,6 +2819,7 @@ const LINEAGE_ANCHOR = {
   "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
   "yume-nikki": { steam: "650700" },
   "fire-emblem-thracia-776": { wikidata: "https://www.wikidata.org/wiki/Q2632064" },
+  "into-the-breach": { steam: "590380" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
