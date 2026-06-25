@@ -2829,6 +2829,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "naribiki-mura": {
+    published: "2026-06-20",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "exploration-horror", lineage: "fatal-frame", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 41, positivePct: 83 } },
+    games: [
+      {
+        name_en: "NARIBIKIMURA",
+        name_ja: "鳴蟇村",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2693860/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A first-person, single-player exploration horror set in a Japanese ghost village. A typhoon collapses a cliff and exposes a tunnel, and beyond it lies a village that is on no map: Naribikimura. You walk it on foot, gather clues, and unravel what happened to the place and the people who vanished. About 2 to 3 hours to clear. It also ships a Ruins Exploration mode that strips out the horror entirely, lets you change the time of day freely, and gives you a camera to photograph the abandoned buildings, so people who cannot take scares can still walk it. Built from real Japanese ruins and depopulated villages, and rooted in a Japanese net legend: in September 2000 a thread appeared on a huge message board claiming a landslide across Naribiki Pass had revealed something like a tunnel. Made by the Japanese indie studio DorsalFin Studio, who have built only Japan-set J-horror. Positive in Japan at 41 reviews and 83 percent, yet the West has barely found it: just four English reviews out of 41. English is already supported.",
+        desc_ja: "日本の幽霊村を舞台にした、一人称視点・シングルプレイの探索ホラー。台風が崖を崩し、トンネルらしき物が現れる。その先にあるのは、どの地図にも載っていない村——鳴蟇村だ。足で歩き、手掛かりを集め、この場所と消えた人々に何が起きたのかを解き明かす。クリアは約2〜3時間。ホラー要素を完全に取り除いた「廃墟探索モード」も搭載し、時間帯を自由に変え、カメラで廃墟を撮影できる。だから怖いのが苦手な人でも歩ける。日本の実在の廃墟・廃村を参考に作られ、日本のネット怪談に根を持つ——2000年9月、ある巨大掲示板に「鳴蟇峠の対岸の崖が崩れてトンネルらしき物が見える」というスレが立った。日本のインディースタジオ DorsalFin Studio による一本で、彼らは一貫して日本を舞台にしたJホラーだけを作ってきた。41レビュー83%で日本では好評なのに、西はまだほとんど見つけていない——41件中、英語レビューはわずか4件。英語対応済み。",
+      },
+      {
+        name_en: "Fatal Frame",
+        name_ja: "零 -ZERO-",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Fatal_Frame_(video_game)",
+        wikidata: "https://www.wikidata.org/wiki/Q2323933",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the cursed-Japanese-place exploration horror: in 2001, Tecmo built a first-person horror where you explore a cursed Japanese house and confront the dead through a camera, the Camera Obscura, and its sequel moved to a cursed, lost village. No official Steam release. This gem is a direct heir to that DNA, first-person dread in an abandoned Japanese place, a camera at the core of observing and recording, and an investigation into the buried truth of vanished people, only it makes that camera a tool of exploration rather than combat.",
+        desc_ja: "呪われた日本の場所を一人称で探索するホラーの原点。2001年、テクモが、呪われた日本の屋敷を探索し、射影機というカメラで死者と対峙する一人称ホラーを生んだ。続編の舞台は、呪われ失われた村だった。公式 Steam 版なし。この未発掘の名作はそのDNAの直系——廃れた日本の場所での一人称の恐怖、観察と記録の核に据えられたカメラ、消えた人々の埋もれた真実の調査。ただし本作はそのカメラを、戦闘ではなく探索の道具にする。",
+      },
+    ],
+    en: {
+      title: "NARIBIKIMURA - a buried first-person exploration horror in a Japanese village on no map, an heir to Fatal Frame",
+      description: "A first-person exploration horror set in a Japanese ghost village that is on no map. A collapsed cliff reveals a tunnel to Naribikimura; you gather clues and unravel what happened. About 2 to 3 hours, with a horror-free Ruins mode and a camera. Positive in Japan at 41 reviews and 83 percent, yet just four English reviews out of 41. English is already supported.",
+      h1a: "A village on ",
+      h1flip: "no map",
+      h1b: ", waiting to be walked.",
+      lede: "A first-person, single-player exploration horror. A typhoon collapses a cliff, a tunnel appears, and beyond it lies a village no map records: Naribikimura. You walk it on foot, gather clues, and unravel what happened to the place and the people who vanished. About 2 to 3 hours. It also ships a horror-free Ruins Exploration mode with free time-of-day and a camera, so people who cannot take scares can still walk it. A solo-feeling work by the Japanese studio DorsalFin Studio, in the lineage of the cursed-Japanese-place horror that put a camera at its core, Fatal Frame. It already plays in English, yet the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The map ends, the tunnel opens, and you step into a place that officially does not exist. Every house you enter is one more proof of a village the world forgot, and the urge to know why pulls you deeper.",
+        "There is no combat to lean on, so reading the place is the whole act: you follow scattered clues through abandoned rooms, and the story of who vanished here assembles itself in your hands as you walk.",
+        "And when the dread is too much, you flip to Ruins mode, change the hour to daylight, and raise the camera instead, so the same village becomes a place to photograph rather than fear. The fear and the quiet are the same walk, seen two ways.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Fatal Frame and the cursed-Japanese-place dread, a first-person walk through a place that should not exist",
+        "You want a tight, story-led exploration horror you can finish in an evening, rooted in real Japanese ruins and a net legend",
+        "You want a gem the West has not found yet, even though it already plays in English, with just four English reviews out of 41",
+      ],
+      bad: [
+        "You want monster combat, weapons, or a Camera Obscura you fight ghosts with (this is exploration, not battle)",
+        "You want a long, sprawling campaign rather than a focused 2-to-3-hour walk",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "鳴蟇村 - どの地図にも載っていない日本の村を歩く、零 -ZERO- の系譜の埋もれた一人称探索ホラー",
+      description: "どの地図にも載っていない日本の幽霊村を舞台にした一人称探索ホラー。崩れた崖が現れたトンネルの先にある鳴蟇村で、手掛かりを集め何が起きたのかを解き明かす。約2〜3時間、ホラーを排した廃墟探索モードとカメラも搭載。41レビュー83%で日本では好評なのに、41件中英語レビューは4件。英語対応済み。",
+      h1a: "どの地図にも、",
+      h1flip: "載っていない村",
+      h1b: "を歩く。",
+      lede: "一人称視点・シングルプレイの探索ホラー。台風が崖を崩し、トンネルが現れる。その先にあるのは、どの地図にも載っていない村——鳴蟇村だ。足で歩き、手掛かりを集め、この場所と消えた人々に何が起きたのかを解き明かす。約2〜3時間。ホラーを排した廃墟探索モードも搭載し、時間帯を自由に変え、カメラを構えられる。だから怖いのが苦手な人でも歩ける。日本のスタジオ DorsalFin Studio による一本で、カメラを核に据えた、呪われた日本の場所のホラー 零 -ZERO- の系譜に連なる。英語でもう遊べるのに、西はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "地図が途切れ、トンネルが開き、公式には存在しない場所へ足を踏み入れる。入る家の一軒一軒が、世界が忘れた村の証になり、「なぜ」を知りたい欲求が奥へと引き込む。",
+        "頼れる戦闘はない。だから場所を読むことが、遊びそのものになる。廃れた部屋に散らばる手掛かりを辿るうち、ここで消えた者たちの物語が、歩く手の中で自ずと組み上がっていく。",
+        "そして恐怖が過ぎたら、廃墟探索モードに切り替え、時間帯を昼に変え、代わりにカメラを構える。同じ村が、怯える場所ではなく撮る場所になる。恐怖と静けさは、二つの見方で歩く同じ一本だ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "零 -ZERO- の、呪われた日本の場所の恐怖が好きな人——存在しないはずの場所を一人称で歩く",
+        "実在の廃墟とネット怪談に根ざした、一晩で遊び切れる物語主導の探索ホラーが欲しい人",
+        "英語でもう遊べるのに41件中英語レビュー4件で、西がまだ見つけてない原石を先に触りたい人",
+      ],
+      bad: [
+        "モンスターとの戦闘や武器、霊と戦う射影機が欲しい人(本作は探索であり戦闘ではない)",
+        "焦点を絞った2〜3時間の一本より、長大で広がりのあるキャンペーンが欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -2900,6 +2979,9 @@ const LINEAGE_ANCHOR = {
   "fire-emblem-thracia-776": { wikidata: "https://www.wikidata.org/wiki/Q2632064" },
   "fire-emblem-blazing-blade": { wikidata: "https://www.wikidata.org/wiki/Q150180" },
   "into-the-breach": { steam: "590380" },
+  // 原点 零 -ZERO-(Fatal Frame / Project Zero), Tecmo, 2001。家庭用機作で公式 Steam 版なし
+  // → wikidata で同定(Steam id を捏造しない・twilight-syndrome 型 href 破損の回避)。
+  "fatal-frame": { wikidata: "https://www.wikidata.org/wiki/Q2323933" },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
