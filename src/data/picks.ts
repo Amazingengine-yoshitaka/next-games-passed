@@ -3222,6 +3222,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "demigoddess": {
+    published: "2026-06-23",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "strategy", lineage: "daisenryaku", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 112, positivePct: 97 } },
+    games: [
+      {
+        name_en: "Demigoddess!",
+        name_ja: "Demigoddess! 超種族になって無双する国取りSLG",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3281980/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A turn-based territory-conquest strategy game compressed into about an hour per run, made in Python by the Japanese solo developer Shirane Koma under the name SNP Engineering. A continent is split into 64 areas, and seizing 32 or more wins the run. A goddess grants you a cheat skill, and you become a demigod super-race that steamrolls the map: you customize with over 450 unit types, 20 distinct factions, and over 300 pieces of equipment, then set tactics on your units and let combat resolve automatically. Every run reshuffles the terrain, enemy placement, and resources hard, so it carries a roguelite drive to play it again. A free version is also distributed on the Japanese freeware site Freem. Positive in Japan at 112 reviews and 97 percent, and although the store supports five languages, the reviews are dominated by 63 in Japanese against only 17 in English, so the West has barely reached it.",
+        desc_ja: "1プレイ約1時間に凝縮した、ターン制の国取りストラテジー。日本の個人開発者・白根こまが SNP Engineering 名義で Python で作った一本だ。大陸は64エリアに分割され、32エリア以上を支配すれば勝利。女神に授かるチートスキルで無双する超種族となり、450種以上のユニット・20の異なる勢力・300種以上の装備でカスタマイズし、ユニットに戦術を設定すると戦闘は自動で進行する。プレイ毎に地形・敵配置・資源が大幅にランダム変化するから、また回したくなるローグライト的な反復性を持つ。日本のフリーゲーム投稿サイト ふりーむ では無料版も配信されている。112レビュー97%で日本では好評で、ストアは5言語に対応しているものの、レビューは英語17件に対し日本語63件が主体——西はまだほとんど届いていない。",
+      },
+      {
+        name_en: "Daisenryaku",
+        name_ja: "大戦略",
+        status: "established",
+        homepage: "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%88%A6%E7%95%A5",
+        wikidata: "https://www.wikidata.org/wiki/Q17229001",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the Japanese turn-based territory-conquest wargame: in 1985, SystemSoft launched Daisenryaku, a strategy game in which a map is divided into contested ground, you deploy and maneuver military units across it, and you win by conquering territory turn by turn. This gem is a direct heir to that DNA of area control, unit operations, and territorial conquest, only it distills that skeleton into a roguelite power fantasy: one run in about an hour, a map that reshuffles every time, and a goddess-granted cheat that lets you steamroll as a super-race. A modern doujin take on the conquest wargame.",
+        desc_ja: "ターン制の国取りウォーゲームの、日本における元祖。1985年、システムソフトが大戦略を世に出した——マップを陣取りの領域に分け、戦闘ユニットを配置・運用し、ターンごとに領土を制圧して勝つ戦略ゲームだ。この未発掘の名作は、エリア戦・ユニット運用・領土制圧というそのDNAの直系——ただしその骨格を、1プレイ約1時間・毎回マップが変わる・女神のチートで超種族として無双する、というローグライト的なパワーファンタジーに凝縮した。国取りウォーゲームの、現代の同人版だ。",
+      },
+    ],
+    en: {
+      title: "Demigoddess! - a one-hour turn-based conquest strategy where a goddess's cheat lets you steamroll the map, an heir to Daisenryaku",
+      description: "A turn-based territory-conquest strategy game compressed into about an hour per run, made in Python by the Japanese solo developer Shirane Koma (SNP Engineering). Seize 32 of a continent's 64 areas to win. A goddess grants a cheat skill and you become a demigod super-race, customizing with 450-plus units, 20 factions, and 300-plus pieces of equipment. Every run reshuffles terrain, enemies, and resources, roguelite-style. Positive in Japan at 112 reviews and 97 percent; multilingual, but the reviews skew Japanese (63) over English (17), so the West has barely reached it.",
+      h1a: "A goddess hands you a cheat, and you ",
+      h1flip: "steamroll the whole map in an hour",
+      h1b: ".",
+      lede: "A turn-based territory-conquest strategy game by the Japanese solo developer Shirane Koma, compressed into about an hour per run. A continent splits into 64 areas; seize 32 and you win. A goddess grants you a cheat skill and you become a demigod super-race, customizing across 450-plus units, 20 factions, and 300-plus pieces of equipment, then setting tactics and letting combat resolve itself. Every run reshuffles the terrain, enemy placement, and resources, so it pulls you back roguelite-style. In the lineage of Daisenryaku, the origin of the Japanese turn-based conquest wargame. Multilingual, but with the reviews dominated by Japanese over English, the West has barely reached it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The goddess's cheat does not just nudge the odds, it tilts the whole board: you become a super-race that overruns enemies who should outmatch you, and that raw I-am-too-strong rush of watching a continent fold under you is the engine of the whole thing.",
+        "A full conquest fits in about an hour, so you are never asked to commit a campaign's worth of evenings: one sitting is one whole rise from a single area to a thirty-two-area empire, and that clean arc is exactly what makes just one more run so easy to say.",
+        "Every run hard-reshuffles the terrain, enemy placement, and resources, so the map you mastered last time is gone and the cheat that broke one layout has to be re-aimed at a new one, and that roguelite churn keeps the conquest fresh long after a fixed-map wargame would have run dry.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the turn-based territory-conquest wargame of Daisenryaku, area control and unit operations toward total conquest, distilled here into a one-hour run",
+        "You want the unapologetic power fantasy of a goddess-granted cheat that turns you into a super-race steamrolling the board, with 450-plus units, 20 factions, and 300-plus pieces of equipment to build around",
+        "You want a buried gem the West has barely reached, Positive in Japan at 97 percent across 112 reviews, dug out from a solo Python developer who shipped a free version on the Japanese site Freem",
+      ],
+      bad: [
+        "You want a long, deliberate grand-strategy campaign that unfolds over many hours on a fixed map, rather than a one-hour run that reshuffles every time",
+        "You want a tense, evenly matched fight, rather than a power fantasy where a goddess's cheat lets a super-race overrun the board",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Demigoddess! - 女神のチートで1時間でマップを無双する、ターン制の国取りストラテジー。大戦略の系譜",
+      description: "日本の個人開発者・白根こま(SNP Engineering)が Python で作った、1プレイ約1時間のターン制国取りストラテジー。大陸64エリアのうち32エリアを支配すれば勝利。女神のチートスキルで無双する超種族となり、450種以上のユニット・20勢力・300種以上の装備でカスタマイズ。プレイ毎に地形・敵・資源が大幅変化するローグライト的反復。112レビュー97%で日本では好評。多言語対応だがレビューは英語17件に対し日本語63件が主体で、西はまだほとんど届いていない。",
+      h1a: "女神がチートをくれて、",
+      h1flip: "1時間でマップを無双する",
+      h1b: "。",
+      lede: "日本の個人開発者・白根こまによる、1プレイ約1時間に凝縮したターン制の国取りストラテジー。大陸は64エリアに分割され、32エリアを支配すれば勝利。女神に授かるチートスキルで無双する超種族となり、450種以上のユニット・20勢力・300種以上の装備でカスタマイズし、戦術を設定すれば戦闘は自動で進む。プレイ毎に地形・敵配置・資源が大幅にランダム変化するから、ローグライト的にまた引き戻される。ターン制の国取りウォーゲームの元祖、大戦略の系譜に連なる。多言語対応だが、レビューは英語より日本語が主体で、西はまだほとんど届いていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "女神のチートは、確率をちょっと傾けるだけじゃない。盤面そのものを傾ける。本来なら格上の敵を蹂躙する超種族になり、大陸が自分の前に崩れ落ちていく——その「俺が強すぎる」という純度の高い無双感が、すべての原動力になっている。",
+        "一回の征服が約1時間に収まる。だから何夜分もの長期キャンペーンを背負わされない。一度の着席が、たった1エリアから32エリアの帝国まで駆け上がる、ひと続きの興隆になる。この綺麗な弧こそが「もう一回だけ」を言わせる。",
+        "プレイ毎に地形・敵配置・資源が大幅に変わる。だから前回攻略したマップはもう無く、ある配置を壊したチートを、新しい配置へ当て直さなければならない。このローグライト的な攪拌が、固定マップのウォーゲームなら飽きていた頃にも、征服を新鮮なまま保つ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "エリア戦とユニット運用で総制圧へ向かう、大戦略のターン制国取りウォーゲームが好きで、それが1プレイ1時間に凝縮されたものが欲しい人",
+        "女神のチートで超種族となり盤面を蹂躙する、開き直ったパワーファンタジーが欲しい人——450種以上のユニット・20勢力・300種以上の装備を軸に組める",
+        "97%・112レビューで日本では好評なのに西がまだほとんど届いていない原石を掘りたい人——個人開発者が Python で作り、ふりーむで無料版まで配信した一本",
+      ],
+      bad: [
+        "固定マップ上で何時間もかけてじっくり展開する長大なグランドストラテジーが欲しい人(本作は毎回マップが変わる1時間のラン)",
+        "互角の緊張した戦いが欲しい人(本作は女神のチートで超種族が盤面を蹂躙するパワーファンタジー)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3403,6 +3482,16 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Narcissu is a Japanese visual novel written and directed by Tomo Kataoka and produced by the doujin circle Stage-nana, first released as a free download in 2005 and later expanded and sold commercially. Following a terminally ill young man and woman who slip away from the hospice ward together to spend their final days on the road, with no miracles, heroes, or villains, it is a quiet, melancholy meditation on death; built and given away as an amateur work, it is a landmark origin of the lyrical Japanese kinetic novel that confronts mortality through the last days of someone about to die.",
       ja: "ナルキッソスは、片岡ともが執筆・監督し同人サークル「ステージ☆なな」が制作した和製ノベルゲームで、2005年に無料配布作品として発表され、後に内容を拡張して商業化された。余命わずかな若い男女がホスピスの病棟を抜け出し、最期の日々を車で旅して過ごす——奇跡も英雄も悪役もない——静かで物悲しい死生観の物語である。アマチュアの手で作られ無償で配られた作品でありながら、死に向かう者の最期の日々を通して死を見つめる、叙情的な和製キネティックノベルの系譜の画期的な原点である。",
+    },
+  },
+  // 原点 大戦略(Daisenryaku), SystemSoft, 1985-。マップをエリアに分け、ユニットを運用し、ターン制で
+  // 領土を制圧していく日本のコンピュータ・ウォーゲーム(国取りストラテジー)の系譜の元祖。家庭用機/PC作で
+  // 公式 Steam 版なし → wikidata で同定(Steam id を捏造しない・twilight-syndrome 型 href 破損の回避)。
+  "daisenryaku": {
+    wikidata: "https://www.wikidata.org/wiki/Q17229001",
+    blurb: {
+      en: "Daisenryaku is a turn-based computer wargame series developed and published by SystemSoft, first released in Japan in 1985. By splitting a map into territory that two sides contest turn by turn, deploying and maneuvering individual military units across it, and winning through the conquest of ground, it established the template of the Japanese hex-and-unit strategy wargame, becoming the long-running origin of the turn-based territory-conquest strategy game in Japan.",
+      ja: "大戦略は、システムソフトが開発・販売したターン制のコンピュータ・ウォーゲームシリーズで、1985年に日本で初めて発売された。マップを陣取りの領域に分け、両軍がターンごとに奪い合い、個々の戦闘ユニットを配置・運用して領土の制圧によって勝敗を決する仕組みにより、日本における「ユニット運用×領土制圧」型の戦略ウォーゲームの雛形を確立した。ターン制の国取りストラテジーの、長く続く系譜の元祖である。",
     },
   },
 } as const;
