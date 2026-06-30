@@ -3537,6 +3537,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "mirage-feathers": {
+    published: "2026-06-25",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "rail-shooter", lineage: "after-burner", obscurity: "deep", reviewBand: "around_1k", rarity: { reviews: 2504, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "Mirage Feathers",
+        name_ja: "ミラージュフェザーズ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2719060/Mirage_Feathers/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "An anime-styled pseudo-3D on-rails shooter of fast-tempo aerial combat, played from behind your craft. Its core is an advanced fire-control system: any target that crosses your crosshair is auto-locked, and then homing attacks pour into every locked enemy at once, so the loop is not about dodging but about sweeping your sights across a wave and erasing all of it in a single offensive burst. Variable weapon loadouts, an OVERDRIVE power-burst mode, wave-based enemy assaults, a Story Mode and an Endless Mode, adjustable difficulty, Steam leaderboards, achievements, and trading cards. The developer self-describes it as a very faster version of After Burner II, and players cite After Burner and Sky Target. Made by the Japanese solo/small indie self-publisher oyasumi Workshop (oyasumi seisakusho), released in 2024 for 600 yen, with full Japanese voice and story; the original language is Japanese, later localized into English, Chinese, Korean, and Spanish. Overwhelmingly Positive at 2,504 reviews and 98 percent. It already plays in English (485 of those reviews are English, about 19 percent of the total), but the wider Western audience has barely found this 600-yen doujin rail shooter outside niche shmup circles.",
+        desc_ja: "アニメ調の擬似3D・オンレール(レール式)シューティング。自機を背後から見る視点で、高テンポの空中戦が展開する。核は高度なファイアコントロール——照準を横切った標的はすべて自動でロックオンされ、ロックした敵全部へ一斉に追尾攻撃が降り注ぐ。だからこのゲームのループは「避ける」ことではなく、照準を波の上に薙ぎ払い、一度の攻めの爆発で丸ごと消し去ることにある。可変の武装ロードアウト、パワーバースト「OVERDRIVE」モード、波状の敵襲、ストーリーモードとエンドレスモード、難度調整、Steamランキング/実績/トレーディングカード。開発者自身が「After Burner II をうんと速くした版」と説明し、プレイヤーは After Burner や Sky Target を挙げる。日本の個人/小規模インディーの自主制作者 oyasumi Workshop(oyasumi製作所)が2024年に600円で発売、日本語フルボイス・日本語ストーリー(原語は日本語で、後に英語・中国語・韓国語・スペイン語へローカライズ)。2504レビュー98%で圧倒的に好評。英語でもう遊べて(うち485件が英語レビュー・総数の約19%)、西の弾幕シューター好きの一部には届いているが、この600円の同人レールシューターを広い西側の観客はまだほとんど見つけていない。",
+      },
+      {
+        name_en: "After Burner II",
+        name_ja: "After Burner II",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/After_Burner_II",
+        wikidata: "https://www.wikidata.org/wiki/Q2628630",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: in 1987, Sega's AM2 division shipped After Burner II on the X Board arcade hardware, a pseudo-3D rail shooter seen from behind the cockpit in which you race through waves of enemy jets, lock missiles onto them, and unleash homing fire at high speed. It defined the fast, offensive, lock-and-erase rail-shooter feel built on speed and pouring fire into the targets ahead rather than careful dodging. This gem is a direct heir to that feel, with the developer self-describing it as a very faster version of After Burner II, and it sharpens the lock-on-everything-and-erase loop into its whole point. This rail lineage is distinct from the vertical-scrolling bullet-hell line, so it is its own branch of the shooter family.",
+        desc_ja: "この味の原点。1987年、セガのAM2が業務用基板「X Board」で After Burner II を世に送り出した。コクピット後方視点の擬似3Dレールシューティングで、敵機の波の中を高速で駆け抜け、ミサイルをロックオンして追尾弾を撃ち込む。慎重に避けるのではなく、速度に乗って前方の標的へ撃ち込みまくる——その速くて攻撃的な「ロックして消す」レールシューターの手触りを確立した。この未発掘の名作はその味の直系で、開発者自身が「After Burner II をうんと速くした版」と説明する通り、「全部ロックして消す」ループを核そのものへと研ぎ澄ます。このレール系の系譜は、縦スクロールの弾幕系とは別物で、シューティングという一族の中の独立した一枝である。",
+      },
+    ],
+    en: {
+      title: "Mirage Feathers - a buried anime rail shooter where your crosshair auto-locks a whole wave and homing fire erases it at once, an heir to After Burner II",
+      description: "An anime-styled pseudo-3D on-rails shooter of fast aerial combat. Sweep your crosshair across a wave and it auto-locks every target, then homing fire erases them all in one offensive burst. OVERDRIVE bursts, wave assaults, Story and Endless modes, Steam leaderboards. A 600-yen doujin work by Japan's oyasumi Workshop, self-described as a much faster After Burner II. Overwhelmingly Positive at 2,504 reviews and 98 percent; it plays in English, yet the wider West has barely found it.",
+      h1a: "Don't dodge the wave. ",
+      h1flip: "Lock all of it, and erase it at once",
+      h1b: ".",
+      lede: "An anime-styled pseudo-3D on-rails shooter of fast-tempo aerial combat, seen from behind your craft. Any target that crosses your crosshair is auto-locked, and then homing fire pours into every locked enemy at once, so you stop dodging and start sweeping your sights across a wave to erase all of it in a single burst. OVERDRIVE power-bursts, wave-based assaults, Story and Endless modes, Steam leaderboards. A 600-yen doujin work by Japan's oyasumi Workshop, self-described as a much faster After Burner II. It already plays in English, yet the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "A wave of enemies floods toward you, and your instinct in any shooter is to thread between them, but here you do the opposite: you drag your crosshair across the whole wave and the fire-control system snaps a lock onto every target it touches.",
+        "Then you let go, and homing attacks pour out of you into all of them at once, the screen blooming with simultaneous hits, so the reward is not a single clean shot but an entire wave erased in one breath of offense.",
+        "OVERDRIVE breaks open and the tempo spikes, the next wave is already on you before the last one finishes dying, and the loop of sweep-lock-erase tightens until you forget to stop, reaching to top the leaderboard one more time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love fast, offensive rail shooters in the After Burner line, where the thrill is speed and pouring fire into the targets ahead rather than careful dodging",
+        "You want a lock-and-erase loop where sweeping your crosshair across a wave auto-locks every target, then homing fire wipes the whole wave in one burst, with an OVERDRIVE mode, Story and Endless modes, and Steam leaderboards to chase",
+        "You want a Japanese solo/small-indie doujin gem the wider West has barely noticed, Overwhelmingly Positive at 98 percent, a 600-yen anime rail shooter with full Japanese voice",
+      ],
+      bad: [
+        "You want a slow, careful shooter built around weaving through bullets and keeping your distance, not one built to reward locking and erasing a whole wave at speed",
+        "You expect a big-studio, big-budget production rather than a one-person, 600-yen doujin rail shooter; note too that it has mild anime fanservice (swimsuit-style outfits, with an option to switch to less revealing designs), though that is not its focus",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ミラージュフェザーズ - 照準を薙ぐと波ごと自動ロックし追尾弾で一斉に消す、After Burner II の系譜の埋もれたアニメ・レールシューター",
+      description: "アニメ調の擬似3D・オンレールの高速空中戦シューティング。照準を波の上に薙ぐと標的を全部自動ロックし、追尾弾が一度の攻めで丸ごと消し去る。OVERDRIVE、波状の敵襲、ストーリー/エンドレスモード、Steamランキング。日本の oyasumi製作所による600円の同人作で、開発者自身が「After Burner II をうんと速くした版」と説明。2504レビュー98%で圧倒的に好評。英語でも遊べるが、広い西側にはまだほとんど見つかっていない。",
+      h1a: "波を避けるな。",
+      h1flip: "全部ロックして、一斉に消せ",
+      h1b: "。",
+      lede: "アニメ調の擬似3D・オンレール(レール式)シューティング。自機を背後から見る視点で、高テンポの空中戦が展開する。照準を横切った標的はすべて自動ロックされ、ロックした敵全部へ追尾弾が一斉に降り注ぐ。だから避けるのをやめ、照準を波の上に薙ぎ払い、一度の爆発で丸ごと消し去り始める。パワーバースト「OVERDRIVE」、波状の敵襲、ストーリー/エンドレスモード、Steamランキング。日本の oyasumi製作所による600円の同人作で、開発者自身が「After Burner II をうんと速くした版」と説明。英語でもう遊べるが、広い西側にはまだほとんど見つかっていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "敵の波が押し寄せてくる。どんなシューティングでも本能は「その隙間を縫え」だ。だがここでは逆をやる——照準を波全体の上に薙ぎ、ファイアコントロールが触れた標的すべてに次々とロックを噛ませていく。",
+        "そして放つと、ロックした全部へ追尾攻撃が一斉に噴き出し、画面が同時ヒットで咲き乱れる。報酬は一発の綺麗な命中ではなく、ひと息の攻めで波を丸ごと消し去ること、その快感だ。",
+        "OVERDRIVE が弾け、テンポが跳ね上がる。前の波が死に切る前に次の波がもう迫っていて、「薙いで・ロックして・消す」ループが締まっていく。気づけば止め時を忘れ、ランキング首位を取りにもう一回、手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "After Burner 系の、速くて攻撃的なレールシューターが好きな人——慎重な回避より、速度に乗って前方の標的へ撃ち込む快感が欲しい人",
+        "照準を波の上に薙ぐと標的を全部自動ロックし、追尾弾が波ごと一度に消し去る「ロックして消す」ループが欲しい人——OVERDRIVE モード、ストーリー/エンドレスモード、追いかけるべき Steam ランキング付き",
+        "広い西側がまだほとんど気づいていない日本の個人/小規模インディーの同人原石が欲しい人——98%で圧倒的に好評、日本語フルボイスの600円アニメ・レールシューター",
+      ],
+      bad: [
+        "弾の隙間を縫い、距離を取って慎重に戦うシューティングが欲しい人(本作は波ごとロックして高速で消し去るほど報われるよう作られている)",
+        "1人/小規模の同人による600円のレールシューターではなく、大手スタジオの大型予算作を期待する人(なお軽めのアニメ的サービス——水着風の衣装で、露出を抑えたデザインに切り替えるオプションあり——が含まれるが、それが主眼ではない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3764,6 +3843,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Devil Blade is a doujin vertical-scrolling shoot 'em up created in 1996 by the Japanese illustrator Shigatake (Takehiro Shiga), built with Dezaemon Plus, the PlayStation game-creation tool for making one's own shooters, and distributed only within Japan as an amateur work. Born from the Dezaemon movement in which players shared self-made shooters on memory cards, it embodies the Japanese arcade-and-doujin vertical shooter's core thrill of hugging your ship as close to the enemy as you dare to drive the score. With no surviving distribution of the 1996 original, its only available form today is the creator's own full remake a quarter-century later, DEVIL BLADE REBOOT, which reproduces the 1996 version in a retro mode; it is the origin of the aggressive, close-range score-chase strand of Japanese doujin shooting.",
       ja: "Devil Bladeは、日本のイラストレーター しがたけ(Takehiro Shiga)が1996年に制作した同人の縦スクロール・シューティングで、PS1の同人STG制作ツール「デザエモンプラス(Dezaemon Plus)」で作られ、日本国内のみでアマチュア作品として頒布された。プレイヤーが自作シューティングをメモリーカードで共有しあう「Dezaemonムーブメント」から生まれ、「自機をどこまで敵に寄せられるかでスコアを伸ばす」という和製アーケード/同人縦シューの核の快感を体現した作品である。1996年の原作は現存する流通物が無く、今日唯一入手できる形は、作者本人が四半世紀ぶりに全面リメイクした現行版 DEVIL BLADE REBOOT(レトロモードで1996版を再現)である。攻めるほどスコアが跳ねる、至近距離スコアチェイス型の和製同人シューティングの系譜の原点である。",
+    },
+  },
+  // 原点 After Burner II, Sega AM2, 1987(業務用基板 X Board)。コクピット後方視点の擬似3Dレール
+  // シューティングで、敵機の波を高速で抜け、ミサイルをロックオンして追尾弾を撃ち込む——慎重な回避でなく
+  // 速度に乗って前方へ撃ち込みまくる「ロックして消す」攻撃的レールシューターの手触りを確立した元祖。
+  // 本作開発者自身が「After Burner II をうんと速くした版」と明言する直接の祖。このレール系の系譜は
+  // 縦スクロール弾幕系(devil-blade)とは別物で、シューティング一族の中の独立した一枝。公式 SEGA AGES の
+  // After Burner II 単体 Steam ページは存在しない → wikidata で同定(Steam id を捏造しない・
+  // twilight-syndrome 型 href 破損の回避)。established 側と Q2628630 の完全一致で逆引き成立。
+  "after-burner": {
+    wikidata: "https://www.wikidata.org/wiki/Q2628630",
+    blurb: {
+      en: "After Burner II is an arcade rail shooter developed and published by Sega's AM2 division, released in 1987 on the X Board arcade hardware as a refined follow-up to After Burner. Seen from behind the cockpit of a fighter jet, it is a pseudo-3D on-rails shooter in which you race through relentless waves of enemy aircraft at high speed, lock missiles onto them, and unleash homing fire while the world banks and rushes past. By building its thrill on speed and pouring offensive fire into the targets ahead rather than careful dodging, it defined the fast, aggressive lock-and-erase rail-shooter feel, and is the origin of the behind-the-cockpit rail-shooter lineage, a branch of the shooter family distinct from the vertical-scrolling bullet-hell line.",
+      ja: "After Burner II(アフターバーナーII)は、セガのAM2が開発・販売したアーケードのレールシューティングで、『After Burner』を洗練させた続編として1987年に業務用基板「X Board」で発売された。戦闘機のコクピット後方からの視点で展開する擬似3Dのオンレール(レール式)シューティングで、絶え間ない敵機の波の中を高速で駆け抜け、ミサイルをロックオンして追尾弾を撃ち込みながら、世界が傾き、後方へ流れ去っていく。慎重に避けるのではなく、速度に乗って前方の標的へ攻撃を撃ち込みまくる——その点に快感を置くことで、速くて攻撃的な「ロックして消す」レールシューターの手触りを確立した。縦スクロールの弾幕系とは別物の、コクピット後方視点レールシューターの系譜の原点である。",
     },
   },
 } as const;
