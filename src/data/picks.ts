@@ -4248,6 +4248,86 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "ultra-zero": {
+    published: "2026-06-29",
+    publishAt: "2026-06-29",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "shooting-novel", lineage: "ultraman", obscurity: "deep", rarity: { reviews: 71, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "ULTRA0",
+        name_ja: "ULTRA0",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4019180/ULTRA0/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese indie game built in two parts: a pseudo-3D, pixel-art shooter crossed with a sci-fi yuri visual novel. Set in the nation of N ten years after giant kaiju first appeared, it sends young girls to the front line to defend their country from city-sized monsters. The shooting is made to be gentle and easy to play: auto-targeting and auto-attack carry the aim while you layer on bombs and skills, and random drops from each run raise your characters' power, up to two or three times stronger. Each chapter hands the lead to a different heroine, the first to Shirogane of the unit Area81, and the story leans heavily on the bond between the girls. Made by the Japanese solo developer peng under the name PenGames, whose earlier work was MOMIBOSU, and released on 2 June 2026, fully launched and not in Early Access. Very Positive at 71 reviews and 98 percent. It supports English and Japanese, and with 24 English reviews (about 33.8 percent) the West is only starting to find it, while the remaining two-thirds are mostly Japanese, so it is not yet saturated abroad. At 1,200 yen it is a paid, fully released game, not free. The pixel art is hand-drawn, not AI-generated.",
+        desc_ja: "二部構成の日本のインディーゲーム——疑似3Dのドット絵シューティングと、SF百合のノベルを掛け合わせた一本だ。巨大な怪獣が初めて現れてから10年後の「N国」を舞台に、都市ほどもある怪獣から国を守るため、少女たちを最前線へ送り出す。シューティングはやさしく遊びやすいよう作られている——自動ターゲティングと自動攻撃が照準を担い、そこにボムとスキルを重ねていく。一周ごとのランダムドロップがキャラクターを強化し、最大で2〜3倍まで強くなる。章ごとに主役は別の少女へ——第1章はエリア81(Area81)のシロガネ——交代し、物語は少女たちの絆を強く軸に据える。日本の個人開発者 peng が「PenGames」名義で手がけ(前作は MOMIBOSU)、2026年6月2日に発売——アーリーアクセスではなく正式リリース済みだ。71レビュー98%で非常に好評。英語・日本語に対応し、英語レビューは24件(約33.8%)——西側はようやく見つけ始めているが、残りの約3分の2は日本語が中心で、海外ではまだ飽和していない。価格1,200円の有料作で、無料ではない。ドット絵は手描きで、AI生成ではない。",
+      },
+      {
+        name_en: "Ultraman",
+        name_ja: "ウルトラマン",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Ultraman_(1966_TV_series)",
+        wikidata: "https://www.wikidata.org/wiki/Q1058534",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Ultraman, a tokusatsu (special-effects) television series created by Eiji Tsuburaya and produced by Tsuburaya Productions, first broadcast in Japan in 1966 as the show that followed Ultra Q. It set a giant silver-and-red hero against a procession of city-sized kaiju, with a human special-attack team fighting the monsters on the front line, and it crystallized the kaiju-defense story: giant monsters that threaten a nation, and those who rise to stand against them at the front. ULTRA0 is a clear heir to that taste, not an official Ultraman work but a doujin descendant of the lineage: ten years after kaiju appeared, named girls fight giant monsters on the front line to defend their nation. But it lifts that core onto a pseudo-3D pixel-art shooter with auto-targeting, bombs, and skills, wraps it in a sci-fi yuri visual novel told in two parts, and tells its own story of heroines who trade the lead chapter by chapter, making it its own creature rather than a copy. There is no official Steam release of the 1966 series, so its origin is anchored to its Wikidata entry.",
+        desc_ja: "この味の原点。ウルトラマンは、円谷英二が生み出し円谷プロダクションが製作した特撮テレビシリーズで、『ウルトラQ』に続く作品として1966年に日本で放送が始まった。銀と赤の巨大なヒーローを、都市ほどもある怪獣の群れと対峙させ、最前線で怪獣に立ち向かう人間の特捜隊がそれを支える——「巨大な怪獣が国を脅かし、それに立ち向かう者が現れる」怪獣防衛の物語を結晶化させた。ULTRA0(ウルトラゼロ)はその味の直系だ——公式のウルトラマン作品ではなく、その系譜に連なる同人の末裔である。怪獣出現から10年後、最前線で名を持つ少女たちが巨大な怪獣と戦い、国を守る。だがその核を、自動ターゲティング・ボム・スキルを備えた擬似3Dのドット絵シューティングへ載せ替え、SF百合のノベルを二部構成で織り込み、章ごとに主役を交代させる少女たちの物語として語ることで、模倣ではない独自の一作に仕立てている。1966年のシリーズに公式 Steam 版は存在しないため、その原点は Wikidata のエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "ULTRA0 - a buried two-part Japanese indie where girls defend their nation from city-sized kaiju in a gentle pseudo-3D pixel shooter wrapped in a sci-fi yuri novel, an heir to Ultraman",
+      description: "A two-part Japanese indie: a pseudo-3D pixel-art shooter crossed with a sci-fi yuri visual novel. Ten years after giant kaiju appeared, girls defend the nation of N on the front line against city-sized monsters. The shooting is gentle, auto-targeting and auto-attack handle the aim while you add bombs and skills, and random drops raise your characters up to two or three times stronger. Each chapter swaps the lead heroine, the first to Shirogane of Area81. By the solo developer peng under PenGames. Very Positive at 71 reviews and 98 percent; it supports English, and the West is only starting to find it.",
+      h1a: "Don't just clear the wave. ",
+      h1flip: "Stand at the front line and face down a kaiju the size of a city",
+      h1b: ".",
+      lede: "A Japanese indie game built in two parts: a pseudo-3D, pixel-art shooter crossed with a sci-fi yuri visual novel. Set in the nation of N ten years after giant kaiju first appeared, it sends young girls to the front line to defend their country from city-sized monsters. The shooting is made to be gentle and easy to play, with auto-targeting and auto-attack carrying the aim while you layer on bombs and skills, and random drops from each run raise your characters up to two or three times stronger. Each chapter hands the lead to a different heroine, the first to Shirogane of the unit Area81, and the story leans heavily on the bond between the girls. Made by the Japanese solo developer peng under the name PenGames, in the lineage of Ultraman. It already supports English, and the West is only starting to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Because auto-targeting and auto-attack carry the aim for you, the shooting never asks for twitch precision; what it asks is that you keep facing the thing in front of you, a kaiju the size of a city, while you choose when to spend a bomb and when to fire a skill, so the weight sits on nerve and timing rather than reflexes.",
+        "Every run rains random drops onto your characters and the numbers climb fast, up to two or three times stronger, so the pull is the visible swell of power between attempts: the same monster that walled you off an hour ago folds, and you reach for one more run to see how much harder you can hit.",
+        "The game is built in two halves, the pseudo-3D pixel shooter and a sci-fi yuri novel, and clearing the fight is what opens the next page; each chapter hands the lead to a different girl, the first to Shirogane of Area81, so the bond between the heroines keeps tugging you past the end of one battle into who speaks next.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Ultraman taste of standing against giant, city-sized kaiju on the front line to defend a nation, here carried by named girls ten years after the monsters first appeared",
+        "You want a shooter built to be gentle and easy: auto-targeting and auto-attack handle the aim while you layer on bombs and skills, with random drops that raise your characters up to two or three times stronger run after run, all wrapped in a sci-fi yuri novel told in two parts",
+        "You want a Japanese solo-dev gem the West is only starting to find, Very Positive at 98 percent over 71 reviews, that already supports English",
+      ],
+      bad: [
+        "You want a hardcore, precision shoot 'em up or a bullet-hell challenge; this is built to be gentle and accessible, with auto-targeting and auto-attack and story at its center, so the appeal is the spectacle and the bond, not twitch difficulty",
+        "You expect a story you can fully read in English everywhere, or a big already-popular title; this is a 1,200-yen paid doujin work by the solo developer peng, heavy on its sci-fi yuri novel, and still mostly Japanese-led abroad (about 33.8 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ULTRA0(ウルトラゼロ) - 都市ほどもある怪獣から、最前線で少女たちが国を守る、やさしい擬似3Dドット絵シューティング×SF百合ノベルの二部構成、ウルトラマンの系譜の埋もれた日本のインディー",
+      description: "疑似3Dのドット絵シューティングと、SF百合ノベルを掛け合わせた、二部構成の日本のインディー。巨大な怪獣が現れて10年後の「N国」を舞台に、都市ほどもある怪獣から国を守るため、少女たちが最前線で戦う。シューティングはやさしく——自動ターゲティングと自動攻撃が照準を担い、ボムとスキルを重ねる。ランダムドロップが一周ごとにキャラを最大2〜3倍強くする。章ごとに主役の少女が交代し、第1章はエリア81のシロガネ。個人開発者 peng(PenGames)制作。71レビュー98%で非常に好評。英語に対応し、西側はようやく見つけ始めた。",
+      h1a: "ただ撃ち落とすな。",
+      h1flip: "最前線に立ち、都市ほどもある怪獣に向き合え",
+      h1b: "。",
+      lede: "疑似3Dのドット絵シューティングと、SF百合のノベルを掛け合わせた、二部構成の日本のインディーゲーム。巨大な怪獣が初めて現れてから10年後の「N国」を舞台に、都市ほどもある怪獣から国を守るため、少女たちを最前線へ送り出す。シューティングはやさしく遊びやすいよう作られている——自動ターゲティングと自動攻撃が照準を担い、そこにボムとスキルを重ねていく。一周ごとのランダムドロップがキャラクターを最大2〜3倍まで強化する。章ごとに主役は別の少女へ——第1章はエリア81のシロガネ——交代し、物語は少女たちの絆を強く軸に据える。日本の個人開発者 peng が「PenGames」名義で手がける、ウルトラマンの系譜に連なる一本。英語に対応済みで、西側はようやく見つけ始めている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "自動ターゲティングと自動攻撃が照準を肩代わりしてくれるから、シューティングは反射神経の精密さを求めてこない。求められるのは、目の前のもの——都市ほどもある怪獣——に向き合い続けること、そしてボムをいつ切るか、スキルをいつ撃つかを選ぶことだ。だから重心は反射ではなく、胆力とタイミングに乗る。",
+        "一周ごとに、ランダムなドロップがキャラクターへ降り注ぎ、数字は速く跳ね上がる——最大で2〜3倍まで。だから手を止めさせるのは、挑戦と挑戦の間で「強くなった」と目に見えること。1時間前に行く手を塞いだ同じ怪獣が崩れ落ち、どこまで強く殴れるのか確かめたくて、もう一周へ手が伸びる。",
+        "本作は二つの半身——疑似3Dのドット絵シューティングと、SF百合のノベル——で組まれていて、戦いを越えることが、次のページを開く。章ごとに主役は別の少女へ渡される——第1章はエリア81のシロガネ。だから少女たちの絆が、一つの戦いの終わりの先、次に誰が口を開くのかへと、絶えず引っ張り続ける。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "巨大な——都市ほどもある——怪獣に、最前線で立ち向かい国を守る、ウルトラマンの味が好きな人。本作ではそれを、怪獣が初めて現れて10年後の、名を持つ少女たちが担う",
+        "やさしく遊びやすいシューティングが欲しい人——自動ターゲティングと自動攻撃が照準を担い、そこへボムとスキルを重ね、ランダムドロップが一周ごとにキャラクターを最大2〜3倍まで強くする。その全てが、二部構成のSF百合ノベルに包まれている",
+        "西側がようやく見つけ始めた、日本の個人開発の原石が欲しい人——71レビュー98%で非常に好評、しかも英語に対応済み",
+      ],
+      bad: [
+        "硬派で精密なシューティングや弾幕の歯ごたえが欲しい人(本作はやさしく遊びやすいよう作られ、自動ターゲティングと自動攻撃、そして物語を中心に据えている——快感は反射の難度ではなく、その光景と少女たちの絆にある)",
+        "どこでも英語で物語を読み切れることや、すでに人気の大作を期待する人(本作は個人開発者 peng による価格1,200円の有料同人作で、SF百合ノベルの物語比重が高く、海外ではまだ日本語中心——英語レビューは約33.8%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4578,6 +4658,19 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Metroid is an action-adventure game developed by Nintendo R&D1 with Intelligent Systems and published by Nintendo, first released for the Family Computer Disk System in Japan in 1986. Casting the player as the bounty hunter Samus Aran exploring the sprawling, interconnected subterranean world of the planet Zebes, it is built on non-linear exploration gated by ability: you find power-ups and equipment that open paths once out of reach, doubling back through a single connected map as your growing kit unlocks it. By fusing open exploration with ability-gated progression, it is the founding origin of the genre later named Metroidvania, the lineage of games where a single interconnected world opens up as your abilities grow.",
       ja: "メトロイドは、任天堂開発第一部(R&D1)がインテリジェントシステムズと共に開発し、任天堂が販売したアクションアドベンチャーで、1986年にファミリーコンピュータ ディスクシステム向けに日本で初めて発売された。プレイヤーはバウンティハンター・サムス・アランとなり、惑星ゼーベスの地下に広がる、入り組んでひと続きにつながった世界を探索する。核にあるのは、能力でゲートされた非線形の探索だ——パワーアップや装備を手に入れることで、かつて手の届かなかった道が開き、ひと続きの一枚マップを、増えていく装備で何度も引き返しながら攻略していく。開かれた探索と、能力で進行をゲートする設計を融合させた本作は、のちに『メトロイドヴァニア』と名づけられるジャンル——一つのひと続きの世界が、能力の成長とともに開かれていくゲーム群の系譜——の始祖となった原点である。",
+    },
+  },
+  // 原点 ウルトラマン(Ultraman), 円谷英二 / 円谷プロダクション, 1966(特撮 TV シリーズ・『ウルトラQ』に続く第2作)。
+  // 都市ほどもある巨大怪獣が国を脅かし、最前線で人間の特捜隊と巨大ヒーローがそれに立ち向かう——「巨大怪獣防衛」の
+  // 物語を結晶化させた、和製巨大怪獣防衛フィクションの系譜の原点。これは ULTRA0 への権利主張ではなく、「最前線で
+  // 巨大怪獣と向き合う」という味=ジャンルの原点という意味(同人作 ULTRA0 は公式ウルトラマン作品ではない)。1966 年の
+  // TV シリーズに公式 Steam 版なし → wikidata QID(Q1058534)で同定(Steam id を捏造しない・href 破損の回避)。
+  // established 側と wikidata URL の完全一致で逆引き成立(lineageName の Wikidata 同定)。
+  "ultraman": {
+    wikidata: "https://www.wikidata.org/wiki/Q1058534",
+    blurb: {
+      en: "Ultraman is a Japanese tokusatsu (special-effects) television series created by Eiji Tsuburaya and produced by Tsuburaya Productions, first broadcast in 1966 as the show that followed Ultra Q. It set a giant silver-and-red hero against a procession of city-sized kaiju, defended by a human special-attack team that fought the monsters on the front line, and it crystallized the kaiju-defense story: ordinary people standing against giant monsters that threaten a nation, and the figure who rises to fight them. It is the origin of the giant-kaiju-defense lineage in Japanese fiction, the taste of facing colossal monsters at the front line. It is the root of a taste, not a claim of license over any later or fan-made work.",
+      ja: "ウルトラマンは、円谷英二が生み出し円谷プロダクションが製作した日本の特撮テレビシリーズで、『ウルトラQ』に続く作品として1966年に放送が始まった。銀と赤の巨大なヒーローを、都市ほどもある怪獣の群れと対峙させ、最前線で怪獣に立ち向かう人間の特捜隊がそれを支える——この構図によって、「巨大な怪獣が国を脅かし、それに立ち向かう者が現れる」怪獣防衛の物語を結晶化させた。日本のフィクションにおける巨大怪獣防衛の系譜——最前線で巨大な怪獣と向き合うという味——の原点である。これは味の原点という意味であり、後続作品や同人作への権利を主張するものではない。",
     },
   },
 } as const;
