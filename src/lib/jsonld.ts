@@ -40,14 +40,16 @@ function gameSameAs(g) {
   if (g.wikidata) out.push(g.wikidata);
   if (g.appstore) out.push(g.appstore);
   if (g.homepage) out.push(g.homepage);
+  if (g.freem) out.push(g.freem);
   return out;
 }
 
-// VideoGame の正準 URL: Steam があればそれ、無ければ公式(homepage)へフォールバック(url 必須回避)。
-// 表示層(GameCard)も同じ思想を共有するため export(SSOT・フォールバックロジックを 2 箇所に書かない)。
-// steam も homepage も無い場合は undefined(呼び出し側でリンクを描画しない分岐に使う)。
+// VideoGame の正準 URL: Steam があればそれ、無ければ公式(homepage)、それも無ければ ふりーむ 配信ページへ
+// フォールバック(url 必須回避)。表示層(GameCard)も同じ思想を共有するため export(SSOT・フォールバック
+// ロジックを 2 箇所に書かない)。steam も homepage も freem も無い場合は undefined(呼び出し側でリンクを
+// 描画しない分岐に使う)。
 export function gameUrl(g) {
-  return g.steam || g.homepage;
+  return g.steam || g.homepage || g.freem;
 }
 
 // プラットフォーム: Steam 版があれば "PC"、無ければモバイル専用(Archero)の事実を出す(捏造しない)。
@@ -140,6 +142,10 @@ function establishedForAnchor(anchorId) {
       }
       if (identity.wikidata) {
         if (g.wikidata === identity.wikidata) return g;
+        continue;
+      }
+      if (identity.freem) {
+        if (g.freem === identity.freem) return g;
       }
     }
   }

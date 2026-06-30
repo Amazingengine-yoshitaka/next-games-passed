@@ -34,12 +34,14 @@ const lineageHref = isJa ? "/ja/lineage/" : "/lineage/";
 const originName = lineageName(anchor, lang) ?? anchor;
 const blurb = lineageBlurb(anchor, lang);
 
-// 出典: anchor の識別子から壊れないリンクだけを組む。steam appid → 正準 store URL、wikidata → QID 表示。
-//   持っていないものはリンクごと出さない(href 破損ゼロ・rel=noopener のみ・nofollow なし)。
+// 出典: anchor の識別子から壊れないリンクだけを組む。steam appid → 正準 store URL、wikidata → QID 表示、
+//   freem → ふりーむ 配信ページ URL。持っていないものはリンクごと出さない(href 破損ゼロ・rel=noopener のみ・
+//   nofollow なし)。
 const identity = lineageAnchorIdentity(anchor);
 const steamHref = identity && identity.steam ? steamStoreUrl(identity.steam) : null;
 const wdQid = identity ? wikidataQid(identity.wikidata) : null;
 const wdHref = identity ? (identity.wikidata ?? null) : null;
+const freemHref = identity ? (identity.freem ?? null) : null;
 
 // JSON-LD は現在時刻(UTC ms)を渡し、未公開の子孫を出さない(脳が判定・SSOT)。SSR ビルド時刻基準。
 const jsonld = originJsonLd(anchor, lang, pageUrl, t("nav.home"), Date.now());
@@ -80,7 +82,7 @@ const title = originName + t("origin.h1suffix");
 
     <!-- 出典: 持っている識別子だけをリンク化。壊れリンク(href 破損)を物理的に作らない(北極星)。
          rel=noopener のみ(nofollow は付けない=出典への信頼リンク)。 -->
-    {(steamHref || (wdHref && wdQid)) && (
+    {(steamHref || (wdHref && wdQid) || freemHref) && (
       <>
         <h2><span class="num">02</span>{t("origin.sources")}</h2>
         <ul class="feel">
@@ -89,6 +91,9 @@ const title = originName + t("origin.h1suffix");
           )}
           {wdHref && wdQid && (
             <li><a href={wdHref} target="_blank" rel="noopener">{tn(lang, "origin.source.wikidata", wdQid)}</a></li>
+          )}
+          {freemHref && (
+            <li><a href={freemHref} target="_blank" rel="noopener">{t("origin.source.freem")}</a></li>
           )}
         </ul>
       </>

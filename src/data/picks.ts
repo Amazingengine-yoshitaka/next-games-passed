@@ -4010,6 +4010,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "fish-in-the-bottle": {
+    published: "2026-06-27",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "point-click-puzzle", lineage: "igyou-no-machi-no-annie", obscurity: "deep", rarity: { reviews: 93, positivePct: 99, noEnglish: false } },
+    games: [
+      {
+        name_en: "For the Fish in the Bottle",
+        name_ja: "瓶の中のサカナのために",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4034190/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A free Japanese point-and-click puzzle game, played entirely with the mouse, set in a hand-drawn, black-and-white, picture-book-surreal desert world. From a first-person view you wander the scene, examine what is there, and solve short, escape-style puzzles by finding items and dragging them onto where they belong, gathering the things a lonely fish trapped inside a bottle wants. A single run is about twenty minutes, with no time limit and no puzzles that lean on language, sound, or color, so it plays the same in any tongue, and the artwork and music are all original and hand-made. Made by the Japanese doujin creator pickee under the name makina game, released June 2026. Very Positive at 93 reviews and 99 percent. It already supports Japanese, English, Simplified Chinese, and Korean (about 28 percent of reviews are English), yet this free, short doujin gem is still largely undiscovered by the wider West.",
+        desc_ja: "操作はすべてマウスクリックのみ、白黒トーンの手描き・絵本調シュールな砂漠世界を舞台にした、無料の日本産ポイント＆クリック謎解きゲーム。一人称視点で世界を見渡し、その場を調べ、アイテムを見つけてしかるべき場所へドラッグすることで、短い脱出ゲーム系のパズルを解いていく——瓶の中に閉じ込められた孤独なサカナが望むものを、ひとつずつ集めていく。1周は約20分、時間制限は無く、言語・音・色に依存するパズルも無いので、どの言語でも同じように遊べる。アートワークも音楽もすべて手作りのオリジナルだ。日本の同人クリエイター pickee が「makina game」名義で手がけ、2026年6月に配信。93レビュー99%で非常に好評。日本語・英語・簡体字中国語・韓国語に対応済み(英語レビューは約28%)だが、この無料の短編同人原石を、広い西側はまだほとんど見つけていない。",
+      },
+      {
+        name_en: "Igyou no Machi no Annie",
+        name_ja: "異形の街のアニー",
+        status: "established",
+        freem: "https://www.freem.ne.jp/win/game/25169",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Igyou no Machi no Annie, a freeware point-and-click adventure created by Qpic, the officially recognized Physics Research Club of Kyushu University, and distributed on the Japanese free-game platform Freem in 2020. Set in a hand-drawn, black-and-white, picture-book world of misshapen figures, it is played entirely by mouse: you click through a surreal town and solve its puzzles by examining each scene and dragging the items you find onto where they belong, all carried by original, hand-made artwork and music. For the Fish in the Bottle is a clear heir to that taste, made by pickee, who wrote the scenario and designed the characters for Annie: it keeps the same monochrome hand-drawn surrealism, the same all-mouse point-and-click solving with item drag-and-drop, and the same original art and music, but moves them into a short desert tale of bringing a lonely fish in a bottle what it wants, making it its own creature rather than a clone.",
+        desc_ja: "この味の原点。異形の街のアニーは、九州大学の公認サークル「Qpic(九州大学物理研究部)」が制作し、日本のフリーゲーム配信サイト「ふりーむ」で2020年に頒布されたフリーのポイント＆クリック・アドベンチャーだ。白黒トーンの手描き・絵本調の、異形の者たちが暮らす世界を舞台に、操作はすべてマウス——シュールな街をクリックで巡り、その場面を調べ、見つけたアイテムをしかるべき場所へドラッグして謎を解いていく。その全ては、手作りのオリジナルのアートワークと音楽に支えられている。瓶の中のサカナのためには、その直系——本作の開発者 pickee は、まさにこの『異形の街のアニー』のシナリオとキャラクターデザインを担当した人物だ。白黒手描きのシュールさ、全操作マウスのポイント＆クリック＋アイテムのドラッグ＆ドロップ、手作りのオリジナルの絵と音——その同じDNAを受け継ぎながら、瓶に囚われた孤独なサカナが望むものを届ける短い砂漠の物語へと移し替え、模倣ではない独自の一作へと仕立てている。",
+      },
+    ],
+    en: {
+      title: "For the Fish in the Bottle - a buried free Japanese point-and-click puzzle where you click through a hand-drawn black-and-white surreal desert to bring a lonely bottled fish what it wants, an heir to Igyou no Machi no Annie",
+      description: "A free Japanese point-and-click puzzle game played entirely with the mouse, set in a hand-drawn, black-and-white, picture-book-surreal desert. From a first-person view you examine the scene and solve short, escape-style puzzles by finding items and dragging them where they belong, gathering what a lonely fish trapped in a bottle wants. About a twenty-minute run, no time limit, and no puzzles that depend on language, sound, or color; all art and music are original and hand-made. By the Japanese doujin creator pickee under the name makina game. Very Positive at 93 reviews and 99 percent; it supports English, yet this free short doujin gem is still barely found in the West.",
+      h1a: "Don't rush to the answer. ",
+      h1flip: "Wander the hand-drawn silence and bring the fish what it wants",
+      h1b: ".",
+      lede: "A free Japanese point-and-click puzzle game, played entirely with the mouse, set in a hand-drawn, black-and-white, picture-book-surreal desert world. From a first-person view you wander the scene, examine what is there, and solve short, escape-style puzzles by finding items and dragging them onto where they belong, gathering the things a lonely fish trapped inside a bottle wants. A run is about twenty minutes, with no time limit and no puzzles that lean on language, sound, or color, and the artwork and music are all original and hand-made. Made by the Japanese doujin creator pickee under the name makina game, in the lineage of Igyou no Machi no Annie. It already supports English, yet this free, short doujin gem is still largely undiscovered by the wider West.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You are handed a black-and-white, hand-drawn desert that reads like a page torn from a strange picture book, and the only verb you have is the click, so the work is not reflexes or reading but looking: noticing what sits slightly wrong in the scene.",
+        "Somewhere a lonely fish waits inside a bottle, wanting something, and you wander the surreal town to find an item and drag it onto where it belongs, every puzzle solved by the eye and the hand alone, with no language, sound, or color cue to lean on and no clock to push you.",
+        "Because a full run is only about twenty minutes and asks nothing of you but attention, you sink into its quiet melancholy, and the last thing you bring the fish closes the loop so cleanly that you reach to go back and click every corner you walked past.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Igyou no Machi no Annie taste of a hand-drawn, black-and-white, picture-book-surreal world you explore entirely by mouse, solving its puzzles by looking and dragging items where they belong, all carried by original, hand-made art and music",
+        "You want a short, self-contained point-and-click, escape-style puzzle, about twenty minutes, with no time limit and no puzzles that depend on language, sound, or color, just observation and logic toward gathering what a lonely fish in a bottle wants",
+        "You want a free Japanese doujin gem the wider West has barely found, Very Positive at 99 percent, that already supports English",
+      ],
+      bad: [
+        "You want action, fast reflexes, or a long campaign; this is a short, slow, click-only puzzle of looking and dragging, about twenty minutes with no time limit, so the appeal is the quiet, not challenge or length",
+        "You expect a big, already-popular Western title; this is a free Japanese doujin short made under the name makina game, brief by design, and still largely undiscovered abroad (about 28 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "瓶の中のサカナのために - 手描き白黒のシュールな砂漠をクリックで巡り、瓶の中の孤独なサカナが望むものを届ける、異形の街のアニーの系譜の埋もれた日本のポイント＆クリック謎解き",
+      description: "操作はすべてマウスのみ、手描き白黒・絵本調シュールな砂漠を舞台にした、無料の日本産ポイント＆クリック謎解き。一人称視点で場面を調べ、アイテムを見つけてしかるべき場所へドラッグし、短い脱出ゲーム系のパズルを解いて、瓶に囚われた孤独なサカナが望むものを集める。1周約20分、時間制限なし、言語・音・色に依存するパズルもなし。絵も音もすべて手作りのオリジナル。日本の同人クリエイター pickee が makina game 名義で制作。93レビュー99%で非常に好評。英語に対応済みだが、この無料の短編同人原石を、西はまだほとんど見つけていない。",
+      h1a: "答えを急ぐな。",
+      h1flip: "手描きの静けさをさまよい、サカナが望むものを届けろ",
+      h1b: "。",
+      lede: "操作はすべてマウスクリックのみ、白黒トーンの手描き・絵本調シュールな砂漠世界を舞台にした、無料の日本産ポイント＆クリック謎解きゲーム。一人称視点で世界を見渡し、その場を調べ、アイテムを見つけてしかるべき場所へドラッグすることで、短い脱出ゲーム系のパズルを解いていく——瓶の中に閉じ込められた孤独なサカナが望むものを、ひとつずつ集めていく。1周は約20分、時間制限は無く、言語・音・色に依存するパズルも無い。アートワークも音楽もすべて手作りのオリジナルだ。日本の同人クリエイター pickee が「makina game」名義で手がける、異形の街のアニーの系譜に連なる一本。英語に対応済みだが、この無料の短編同人原石を、広い西側はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "手渡されるのは、奇妙な絵本から破り取った一葉のような、白黒の手描きの砂漠だ。持っている動詞はクリックだけ。だから仕事は反射神経でも読みでもなく、見ること——その場面で、何かがほんの少し噛み合っていない箇所に気づくことだ。",
+        "どこかで、瓶の中の孤独なサカナが何かを望んで待っている。あなたはシュールな街をさまよってアイテムを見つけ、しかるべき場所へドラッグする。あらゆる謎は、目と手だけで解かれる——言語も、音も、色の手がかりも頼れず、急かす時計も無い。",
+        "1周はわずか約20分で、求められるのは注意を向けることだけ。だからその静かな物悲しさに沈み込んでいく。最後にサカナへ届けた一品がループをあまりにきれいに閉じるから、通り過ぎたすべての隅を、もう一度クリックして回りたくて手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "手描き白黒・絵本調シュールな世界を、すべてマウスで探索し、見て、アイテムをしかるべき場所へドラッグして謎を解く——その全てが手作りのオリジナルの絵と音に支えられた、異形の街のアニーの手触りが好きな人",
+        "短く完結する、脱出ゲーム系のポイント＆クリック謎解きが欲しい人——約20分、時間制限なし、言語・音・色に依存するパズルもなく、観察と論理だけで、瓶の中の孤独なサカナが望むものを集めていく",
+        "広い西側がまだほとんど見つけていない、無料の日本の同人原石が欲しい人——99%で非常に好評、しかも英語に対応済み",
+      ],
+      bad: [
+        "アクションや速い反射、歯ごたえや長さが欲しい人(本作は見て・ドラッグするだけの、短くゆっくりしたクリック専用パズルで、約20分・時間制限なし——快感は手応えや長さではなく、静けさにある)",
+        "すでに西で人気の大作を期待する人(本作は makina game 名義で作られた無料の日本の同人短編で、設計上ごく短く、海外ではまだ広く未発見——英語レビューは約28%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4076,7 +4154,8 @@ export function steamStoreUrl(appId: string | null): string | null {
 // established として既出 = SSOT。ここでは「どの established が原点か」だけを同定する。
 //   steam   : Steam app id(後方互換・PC 作品の原点)。
 //   wikidata: Wikidata QID URL(Steam 版が無い原点。例 Archero はモバイル専用で Steam 版なし)。
-// どちらか一方を持つ。両方持つ場合は steam を優先する(後方互換)。
+//   freem   : ふりーむ 配信ページ URL(Steam 版も wikidata QID も無いフリーゲーム発の原点)。
+// いずれか一つを持つ。複数持つ場合は steam > wikidata > freem の順で優先する(後方互換)。
 //   blurb   : この原点が「何の系譜の原点か」を説明する解説文(en/ja)。researcher が事実確証した
 //             二言語の散文(SSOT・この 1 箇所にだけ持つ)。blurb を持つ anchor だけが /origins/<id>/
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
@@ -4303,6 +4382,20 @@ const LINEAGE_ANCHOR = {
       ja: "SCP財団は、2007年に始まった web ベースの共同創作(collaborative fiction)プロジェクトで、匿名の書き手たちが、架空の異常な存在・物体・現象を、それらを「確保(Secure)・収容(Contain)・保護(Protect)」する秘密機関の機密報告書という体裁で記録していく。特定の作者を持たず固定された正典も持たないまま、感情を排した報告書・収容手順の無機質な文体で書かれ、「異常を官僚的に記録する」営みと、「説明のつかない何かと密室に閉じ込められる」恐怖を、共有された現代の神話へと変えた。閉ざされた施設・密室の中で、文書を通して実存的な恐怖を立ち上げる anomalous horror(異常存在ホラー)の系譜の原点であり、怪談系や繰り返し惨劇系のホラーとは別物の一枝である。",
     },
   },
+  // 原点 異形の街のアニー(Igyou no Machi no Annie), Qpic(九州大学物理研究部・九州大学公認サークル), 2020。
+  // 日本のフリーゲーム配信サイト「ふりーむ」で頒布された、白黒手描き・絵本調シュールな世界を全操作マウスで
+  // 巡り、アイテムを見つけてドラッグして解くポイント＆クリック・アドベンチャー。本作開発者 pickee は、まさに
+  // この『異形の街のアニー』のシナリオ・キャラクターデザインを担当した人物で、作家連続性＋同一の味DNA(白黒
+  // 手描きの異形/絵本調シュール・全操作クリック＋アイテムD&D・オリジナルの絵と音)を本作へ継承する直系系譜。
+  // 商業流通でなくフリーゲーム発・公式 Steam 版なし・wikidata QID なし → 公式配信元の freem ページで同定する
+  // (Steam id/QID を捏造しない・href 破損回避)。established 側と freem URL の完全一致で逆引き成立。
+  "igyou-no-machi-no-annie": {
+    freem: "https://www.freem.ne.jp/win/game/25169",
+    blurb: {
+      en: "Igyou no Machi no Annie is a freeware point-and-click adventure game created by Qpic, the officially recognized Physics Research Club of Kyushu University in Japan, and distributed on the Japanese free-game platform Freem in 2020. Set in a hand-drawn, black-and-white, picture-book world of misshapen figures, it is played entirely by mouse: the player clicks through a surreal town and solves its puzzles by examining each scene and dragging the items they find onto where they belong, all carried by original, hand-made artwork and music. Through its writer and character designer pickee, who went on to make For the Fish in the Bottle, it is the origin of this short, hand-made, monochrome point-and-click puzzle lineage: surreal black-and-white worlds explored by mouse, solved by looking and dragging, and built on entirely original art and sound.",
+      ja: "異形の街のアニーは、九州大学の公認サークル「Qpic(九州大学物理研究部)」が制作し、日本のフリーゲーム配信サイト「ふりーむ」で2020年に頒布されたフリーのポイント＆クリック・アドベンチャーである。白黒トーンの手描き・絵本調の、異形の者たちが暮らす世界を舞台に、操作はすべてマウス——プレイヤーはシュールな街をクリックで巡り、その場面を調べ、見つけたアイテムをしかるべき場所へドラッグして謎を解いていく。その全ては、手作りのオリジナルのアートワークと音楽に支えられている。本作のシナリオとキャラクターデザインを担当し、のちに『瓶の中のサカナのために』を手がけた pickee を通じて、マウスで巡る白黒シュールな世界を、見てドラッグして解き、すべて手作りのオリジナルの絵と音で組み上げる——その短く手作りなモノクロ・ポイント＆クリック謎解きの系譜の原点となっている。",
+    },
+  },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
@@ -4311,7 +4404,7 @@ export type LineageId = keyof typeof LINEAGE_ANCHOR;
 // ゲーム名の二重定義を避ける(SSOT)。見つからなければ null(捏造しない)。
 //   同定は多態: anchor.steam があれば Steam URL で、anchor.wikidata があれば wikidata で逆引きする。
 export function lineageName(id: string, lang: "en" | "ja"): string | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string }>)[id];
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string }>)[id];
   if (!anchor) return null;
   const isJa = lang === "ja";
   for (const key of Object.keys(picks)) {
@@ -4326,6 +4419,11 @@ export function lineageName(id: string, lang: "en" | "ja"): string | null {
       // Wikidata 同定(Steam 版が無い原点): g.wikidata の完全一致で逆引き。
       if (anchor.wikidata) {
         if (g.wikidata !== anchor.wikidata) continue;
+        return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      }
+      // Freem 同定(Steam 版/wikidata QID が無いフリーゲーム発の原点): g.freem の完全一致で逆引き。
+      if (anchor.freem) {
+        if (g.freem !== anchor.freem) continue;
         return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
       }
     }
@@ -4358,12 +4456,13 @@ export function lineageBlurb(id: string, lang: "en" | "ja"): string | null {
 // 原点 id の外部実体識別子(steam app id / wikidata QID URL)を返す(計算だけ・副作用なし)。
 //   原点ページの出典リンクと JSON-LD sameAs が LINEAGE_ANCHOR を直読みせず一様に参照する入口(SSOT)。
 //   anchor 無しは null。steam / wikidata は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
-export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string } | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string }>)[id];
+export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string } | null {
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string }>)[id];
   if (!anchor) return null;
-  const out: { steam?: string; wikidata?: string } = {};
+  const out: { steam?: string; wikidata?: string; freem?: string } = {};
   if (anchor.steam) out.steam = anchor.steam;
   if (anchor.wikidata) out.wikidata = anchor.wikidata;
+  if (anchor.freem) out.freem = anchor.freem;
   return out;
 }
 
