@@ -4168,6 +4168,86 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "rolling-star": {
+    published: "2026-06-28",
+    publishAt: "2026-06-28",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "metroidvania", lineage: "metroid", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 205, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "ROLLING STAR",
+        name_ja: "ローリングスター",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3288460/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese 2D side-scrolling Metroidvania set on a vast space colony overrun by aliens. You play as Rory, a reclusive, mech-arm-loving girl who sets out to retake the colony, exploring its sprawling, interconnected map and using skills and equipment to open gates that were once out of reach. Material dropped by defeated enemies feeds crafting, giant bosses block the way, and a vehicle lets you fight in zero gravity and out in open space, inside and outside the colony alike. It is a story-driven game heavy on conversation and comedy events, built on the bounty-hunter-style exploration of a lonely, mech-equipped heroine reclaiming a station from aliens. Made by NUL2 STUDIO, the Japanese solo developer Shiruko, whose earlier indie work TOMOMI shipped in 2022, and released March 2025. Very Positive at 205 reviews and 98 percent. It already supports Japanese, English, Korean, and Simplified and Traditional Chinese, yet with only about 30 English reviews (14.6 percent) the wider West has barely found it; the rest are mostly Japanese. At 1,400 yen it is a paid, fully released game, not free and not in Early Access.",
+        desc_ja: "エイリアンに占拠された広大な宇宙コロニーを舞台にした、日本の2D横スクロール・メトロイドヴァニア。プレイヤーは、引きこもりでメカアーム好きの少女ローリーとなり、コロニー奪還を目指す。入り組んでひと続きにつながった広大なマップを探索し、スキルや装備で、かつて手の届かなかったゲートを開いていく。倒した敵が落とす素材はクラフトに回り、巨大なボスが行く手を塞ぎ、ビークルに乗れば無重力や宇宙空間でも——コロニーの内も外も——戦える。会話とコメディイベントを重視したストーリー型で、メカを身にまとった孤独な少女が、エイリアンからステーション(コロニー)を奪い返していく、バウンティハンター的な探索が核にある。日本の個人開発スタジオ NUL2 STUDIO(開発者・しるこ氏)による一本で、前作のインディー TOMOMI は2022年に発売されている。2025年3月発売。205レビュー98%で非常に好評。日本語・英語・韓国語・簡体字中国語・繁体字中国語に対応済みだが、英語レビューは約30件(14.6%)にとどまり、残りの大半は日本語——広い西側はまだほとんど見つけていない。価格1,400円の有料作で、無料でもアーリーアクセスでもない、正式リリース済みである。",
+      },
+      {
+        name_en: "Metroid",
+        name_ja: "メトロイド",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Metroid_(video_game)",
+        wikidata: "https://www.wikidata.org/wiki/Q2530723",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Metroid, developed by Nintendo R&D1 with Intelligent Systems and published by Nintendo, first released for the Family Computer Disk System in 1986. As the bounty hunter Samus Aran exploring the sprawling, interconnected underground of the planet Zebes, you find power-ups and equipment that open paths once out of reach, doubling back through one connected map as your growing kit unlocks it. By fusing open exploration with ability-gated progression, it founded the genre later named Metroidvania. Rolling Star is a clear heir to that idea: a lonely, mech-equipped heroine explores a single interconnected world, using newly gained skills and equipment to open gates that were sealed before, against giant bosses guarding the way. But it lifts that core onto a vast space colony to retake from aliens, adds enemy-drop crafting and zero-gravity vehicle combat out in open space, and wraps it in conversation-and-comedy storytelling, making it its own creature rather than a clone. There is no official Steam release of the original Metroid, so its origin is anchored to its Wikidata entry.",
+        desc_ja: "この味の原点。メトロイドは、任天堂開発第一部(R&D1)がインテリジェントシステムズと共に開発し、任天堂が販売したアクションアドベンチャーで、1986年にファミリーコンピュータ ディスクシステム向けに発売された。プレイヤーはバウンティハンター・サムス・アランとなり、惑星ゼーベスの地下に広がる、入り組んでひと続きにつながった世界を探索する。パワーアップや装備を手に入れることで、かつて手の届かなかった道が開き、ひと続きの一枚マップを、増えていく装備で何度も引き返しながら攻略していく。開かれた探索と、能力で進行をゲートする設計を融合させ、のちに『メトロイドヴァニア』と名づけられるジャンルを生み出した。ローリングスターはその直系——メカを身にまとった孤独な少女が、ひと続きにつながった一つの世界を探索し、新たに得たスキルや装備で、それまで封じられていたゲートを開き、行く手を守る巨大ボスに挑む。だがその核を、エイリアンから奪還すべき広大な宇宙コロニーへ載せ替え、敵ドロップ素材のクラフトと、宇宙空間での無重力ビークル戦闘を加え、会話とコメディの語り口で包むことで、模倣ではない独自の一作に仕立てている。オリジナルのメトロイドに公式 Steam 版は存在しないため、その原点は Wikidata のエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "ROLLING STAR - a buried Japanese side-scrolling Metroidvania where a reclusive, mech-armed girl explores a vast space colony, opening ability-gated gates to retake it from aliens, an heir to Metroid",
+      description: "A Japanese 2D side-scrolling Metroidvania set on a vast space colony overrun by aliens. You play as Rory, a reclusive, mech-arm-loving girl, exploring a sprawling, interconnected map and using skills and equipment to open gates once out of reach. Enemy drops feed crafting, giant bosses block the way, and a vehicle lets you fight in zero gravity and open space, inside and outside the colony. A story-driven game heavy on conversation and comedy. By NUL2 STUDIO, the Japanese solo developer Shiruko. Very Positive at 205 reviews and 98 percent; it supports English, yet the wider West has barely found it.",
+      h1a: "Don't just clear the room. ",
+      h1flip: "Open the gate that was sealed until you found the skill to pass it",
+      h1b: ".",
+      lede: "A Japanese 2D side-scrolling Metroidvania set on a vast space colony overrun by aliens. You play as Rory, a reclusive, mech-arm-loving girl who sets out to retake the colony, exploring its sprawling, interconnected map and using skills and equipment to open gates that were once out of reach. Material dropped by defeated enemies feeds crafting, giant bosses block the way, and a vehicle lets you fight in zero gravity and out in open space, inside and outside the colony alike. It is a story-driven game heavy on conversation and comedy. Made by NUL2 STUDIO, the Japanese solo developer Shiruko, in the lineage of Metroid. It already supports English, yet the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The colony is built as one continuous, interconnected world, and at the start much of it is sealed: a gap too wide, a barrier you cannot break, a height you cannot reach. The design plants those locked doors in plain sight, so the map itself becomes a list of questions you cannot yet answer.",
+        "Every skill and piece of equipment you gain is shaped as a key, not just a stat. The moment you earn a new ability, paths you walked past hours ago quietly become passable, so progress is less about pushing forward than about turning back through a place you thought you knew and watching it open up.",
+        "Around that exploration the design stacks reasons not to stop: enemies drop materials you craft into gear, giant bosses wall off the next region, and a vehicle pulls the fight out into zero gravity and open space beyond the colony, while conversation-and-comedy story beats keep tugging you toward what happens next.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Metroid loop of exploring one interconnected world and opening ability-gated gates: find a new skill or piece of equipment, then double back to reach what was sealed before, across a sprawling space colony",
+        "You want that core thickened with enemy-drop crafting, giant boss fights, and vehicle combat that moves out into zero gravity and open space, inside and outside the colony, all wrapped in conversation-and-comedy storytelling about a reclusive, mech-armed girl retaking the colony from aliens",
+        "You want a Japanese solo-dev gem the wider West has barely noticed, Very Positive at 98 percent over 205 reviews, that already supports English",
+      ],
+      bad: [
+        "You want a short, self-contained experience or a pure linear action game; this is an exploration-first Metroidvania built on backtracking and ability gates, so the pull is the slow opening-up of one big map, not a straight line to the end",
+        "You expect a big, already-popular Western title; this is a Japanese solo-dev indie, paid at 1,400 yen, fully released and not in Early Access, and still largely undiscovered abroad (about 14.6 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ローリングスター - 引きこもりでメカアーム好きの少女が、広大な宇宙コロニーを探索し、能力でゲートされた扉を開いてエイリアンから奪還する、メトロイドの系譜の埋もれた日本の横スクロール・メトロイドヴァニア",
+      description: "エイリアンに占拠された広大な宇宙コロニーを舞台にした、日本の2D横スクロール・メトロイドヴァニア。引きこもりでメカアーム好きの少女ローリーとなり、入り組んでひと続きにつながったマップを探索し、スキルや装備で、かつて手の届かなかったゲートを開く。敵が落とす素材はクラフトに回り、巨大ボスが行く手を塞ぎ、ビークルに乗れば無重力や宇宙空間でも戦える。会話とコメディを重視したストーリー型。日本の個人開発 NUL2 STUDIO(しるこ氏)制作。205レビュー98%で非常に好評。英語に対応済みだが、広い西側はまだほとんど見つけていない。",
+      h1a: "ただ敵を片づけるな。",
+      h1flip: "通る術を見つけるまで封じられていた、その扉を開け",
+      h1b: "。",
+      lede: "エイリアンに占拠された広大な宇宙コロニーを舞台にした、日本の2D横スクロール・メトロイドヴァニア。プレイヤーは、引きこもりでメカアーム好きの少女ローリーとなり、コロニー奪還を目指す。入り組んでひと続きにつながった広大なマップを探索し、スキルや装備で、かつて手の届かなかったゲートを開いていく。倒した敵が落とす素材はクラフトに回り、巨大なボスが行く手を塞ぎ、ビークルに乗れば無重力や宇宙空間でも——コロニーの内も外も——戦える。会話とコメディイベントを重視したストーリー型だ。日本の個人開発スタジオ NUL2 STUDIO(しるこ氏)が手がける、メトロイドの系譜に連なる一本。英語に対応済みだが、広い西側はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "コロニーは、ひと続きにつながった一つの世界として作られている。そして始まりの時点では、その多くが閉ざされている——広すぎる裂け目、壊せない障壁、届かない高さ。設計は、それらの「閉じた扉」をあえて目につく場所に置く。だからマップそのものが、まだ答えられない問いのリストになる。",
+        "手に入れるスキルや装備は、ただの能力値ではなく、一つひとつが「鍵」として設計されている。新しい能力を得た瞬間、何時間も前に素通りした道が、静かに通れるようになる。だから進行とは、前へ押し進むこと以上に、知っているつもりだった場所へ引き返し、それが開いていくのを見ることだ。",
+        "その探索の周りに、設計は「手を止めない理由」を積み上げる。敵は素材を落とし、それを装備にクラフトする。巨大なボスが次の領域を塞ぐ。ビークルは戦いを、コロニーの外の無重力と宇宙空間へ引っ張り出す。そして会話とコメディの物語が、次に何が起きるのかへと、絶えず引っ張り続ける。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「ひと続きにつながった一つの世界を探索し、能力でゲートされた扉を開く」メトロイドのループが好きな人——新しいスキルや装備を見つけ、広大な宇宙コロニーを引き返して、それまで封じられていた場所へ手を伸ばす",
+        "その核を、敵ドロップ素材のクラフト、巨大ボス戦、そしてコロニーの内外・無重力・宇宙空間へ広がるビークル戦闘で厚くした作品が欲しい人——引きこもりでメカアーム好きの少女が、エイリアンからコロニーを奪還する、会話とコメディの物語に包まれている",
+        "広い西側がまだほとんど気づいていない、日本の個人開発原石が欲しい人——205レビュー98%で非常に好評、しかも英語に対応済み",
+      ],
+      bad: [
+        "短く完結する体験や、純粋な一本道のアクションが欲しい人(本作は引き返しと能力ゲートで組まれた探索重視のメトロイドヴァニアで、快感は一本道のクリアではなく、一つの大きなマップが少しずつ開いていくことにある)",
+        "すでに西で人気の大作を期待する人(本作は日本の個人開発インディーで、価格1,400円の有料作・アーリーアクセスではなく正式リリース済み、海外ではまだ広く未発見——英語レビューは約14.6%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4486,6 +4566,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "KenKen, known in Japan as Kashikoku Naru Puzzle and internationally as Calcudoku, is an arithmetic logic puzzle devised by the Japanese educator Tetsuya Miyamoto in 2004 as a tool to make children sharper without instruction. On a Latin-square grid divided by heavy outlines into groups called cages, each cage carries a target number and one of the four arithmetic operations, and the solver fills in digits so that each cage's numbers combine through its operation to reach the target, with no number repeating in any row or column. By fusing the no-repeat logic of a Latin square with the demand to make numbers hit an exact value through addition, subtraction, multiplication, and division, it defined the modern arithmetic logic puzzle, the lineage of puzzles solved by computing numbers to an exact target. There is no official Steam release; the origin is anchored to its Wikidata entry.",
       ja: "KenKen(日本名・賢くなるパズル、海外名 Calcudoku)は、日本の教育者・宮本哲也が2004年に、子どもを教えずに賢くするための道具として考案した算数の論理パズルである。ラテン方陣のグリッドが太線で「ケージ」と呼ばれるまとまりに区切られ、各ケージには目標の数と四則演算のいずれか一つが添えられる。解き手は、各行・各列に数字が重複しないようにしながら、ケージ内の数字を指定された演算で組み合わせて目標値ぴったりにしていく。各行・各列で数字を重複させないラテン方陣の論理と、＋−×÷で数字をぴったりの値にするという要求を融合させ、「数字を計算してぴったりの目標値にする」ことで解く現代の算数論理パズル——その系譜を確立した原点である。公式 Steam 版は存在せず、原点は Wikidata のエントリで同定する。",
+    },
+  },
+  // 原点 メトロイド(Metroid), 任天堂開発第一部(R&D1) / インテリジェントシステムズ, 1986(ファミコン ディスク
+  // システム)。惑星ゼーベスの地下に広がる、ひと続きにつながった一枚マップを、パワーアップや装備で「ゲート」を
+  // 開きながら非線形に探索し、能力の獲得で進行をゲートする——のちに「メトロイドヴァニア」と名づけられるジャンルの
+  // 始祖。任天堂専有タイトルで公式 Steam 版なし → wikidata QID(Q2530723)で同定(Steam id を捏造しない・
+  // twilight-syndrome 型 href 破損の回避)。established 側と wikidata URL の完全一致で逆引き成立。
+  "metroid": {
+    wikidata: "https://www.wikidata.org/wiki/Q2530723",
+    blurb: {
+      en: "Metroid is an action-adventure game developed by Nintendo R&D1 with Intelligent Systems and published by Nintendo, first released for the Family Computer Disk System in Japan in 1986. Casting the player as the bounty hunter Samus Aran exploring the sprawling, interconnected subterranean world of the planet Zebes, it is built on non-linear exploration gated by ability: you find power-ups and equipment that open paths once out of reach, doubling back through a single connected map as your growing kit unlocks it. By fusing open exploration with ability-gated progression, it is the founding origin of the genre later named Metroidvania, the lineage of games where a single interconnected world opens up as your abilities grow.",
+      ja: "メトロイドは、任天堂開発第一部(R&D1)がインテリジェントシステムズと共に開発し、任天堂が販売したアクションアドベンチャーで、1986年にファミリーコンピュータ ディスクシステム向けに日本で初めて発売された。プレイヤーはバウンティハンター・サムス・アランとなり、惑星ゼーベスの地下に広がる、入り組んでひと続きにつながった世界を探索する。核にあるのは、能力でゲートされた非線形の探索だ——パワーアップや装備を手に入れることで、かつて手の届かなかった道が開き、ひと続きの一枚マップを、増えていく装備で何度も引き返しながら攻略していく。開かれた探索と、能力で進行をゲートする設計を融合させた本作は、のちに『メトロイドヴァニア』と名づけられるジャンル——一つのひと続きの世界が、能力の成長とともに開かれていくゲーム群の系譜——の始祖となった原点である。",
     },
   },
 } as const;
