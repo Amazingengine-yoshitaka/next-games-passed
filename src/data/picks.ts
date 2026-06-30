@@ -4088,6 +4088,86 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "electrogical": {
+    published: "2026-06-28",
+    publishAt: "2026-06-28",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "arithmetic-puzzle", lineage: "kenken", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 85, positivePct: 93, noEnglish: false } },
+    games: [
+      {
+        name_en: "Electrogical",
+        name_ja: "エレクトロジカル",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2501650/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese arithmetic wiring puzzle that crosses jigsaw assembly with the four operations of arithmetic (plus, minus, times, divide). Each piece carries a number and interlocking tabs, and you connect them so that the four operations transform the current and land it exactly on a goal's target value, powering the circuit to completion. Set in a far-future terraforming world, you repair aging power reactors, the distribution dungeons, alongside a superconducting lifeform called neko. It is mouse-only, hand-drawn pixel art, with over 250 stages, no time limit, and built-in hints, a roughly four-to-six-hour run. Made by kinjo, a solo developer based in Okinawa, Japan, and published by Tokyo's indie label Phoenixx; it is an award-winning entry from the first GYAAR Studio Indie Game Contest run by Bandai Namco Studios. Released in Early Access in November 2024 and fully launched on 15 April 2026, so it is out of Early Access. Very Positive at 85 reviews and 93 percent. It already supports English, Japanese, Simplified and Traditional Chinese, German, and Russian, yet with only about 20 English reviews (23.5 percent) the wider West has barely found it. At 980 yen it is a paid, fully released game.",
+        desc_ja: "ジグソーパズルと四則演算（＋−×÷）を掛け合わせた、日本の通電パズル。数字が書かれた凹凸ピースを四則演算で繋ぎ、ゴールの目標値ぴったりに電力を調整して回路に通電させる。遠未来のテラフォーミングを舞台に、超伝導生命体「neko」と共に、老朽化した発電炉（配電ダンジョン）を修復していく。操作はマウスのみ、手描きのドット絵で、250以上のステージ、時間制限はなく、ヒントも備わっている。プレイ時間は約4〜6時間。沖縄在住の個人開発者 kinjo が制作し、東京の日本インディーパブリッシャー Phoenixx（株式会社Phoenixx）が販売する、第1回 GYAAR Studio インディーゲームコンテスト（バンダイナムコスタジオ）の入賞作だ。2024年11月にアーリーアクセスを開始し、2026年4月15日に正式リリース——アーリーアクセスは脱している。85レビュー93%で非常に好評。英語・日本語・簡体字中国語・繁体字中国語・ドイツ語・ロシア語に対応済み(英語レビューは約23.5%)だが、広い西側はまだほとんど見つけていない。価格980円の有料作・正式リリース済みである。",
+      },
+      {
+        name_en: "KenKen",
+        name_ja: "賢くなるパズル",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/KenKen",
+        wikidata: "https://www.wikidata.org/wiki/Q372499",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: KenKen, known in Japan as Kashikoku Naru Puzzle and internationally as Calcudoku, an arithmetic logic puzzle devised by the Japanese educator Tetsuya Miyamoto in 2004. On a Latin-square grid divided by heavy outlines into cages, each cage prints a target number and one of the four operations, and you fill in digits so that each cage's numbers combine through its operation to reach that target, with no number repeating in any row or column. It crystallized the puzzle of bending the four operations to make numbers hit an exact target value, the arithmetic-puzzle lineage. Electrogical is a clear heir to that idea: it keeps the core of working plus, minus, times, and divide to land on an exact goal value, but lifts it off the grid and onto physical jigsaw pieces you interlock to wire and power a circuit, set inside a far-future terraforming tale, making it its own creature rather than a clone. There is no official Steam release of KenKen, so its origin is anchored to its Wikidata entry.",
+        desc_ja: "この味の原点。KenKen(日本名・賢くなるパズル、海外名 Calcudoku)は、日本の教育者・宮本哲也が2004年に考案した算数の論理パズルだ。ラテン方陣のグリッドが太線で「ケージ」に区切られ、各ケージには目標の数と四則演算のいずれか一つが指定される。プレイヤーは、各行・各列に数字が重複しないようにしつつ、ケージ内の数字を指定された演算で組み合わせて、その目標値ぴったりにする。「四則演算で数字を、ぴったりの目標値にする」というパズルを結晶化させた、算数パズルの系譜の原点である。エレクトロジカルはその直系——＋−×÷をやりくりして、ぴったりのゴール値に合わせるという核を受け継ぎながら、それをグリッドから引き剥がし、物理的に噛み合わせて回路を配線し通電させるジグソーピースへと載せ替え、遠未来のテラフォーミングの物語の中へ移している。模倣ではない独自の一作だ。KenKen の公式 Steam 版は存在しないため、その原点は Wikidata のエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "Electrogical - a buried Japanese arithmetic wiring puzzle where you chain numbered jigsaw pieces and bend the four operations to land the current exactly on target, an heir to KenKen",
+      description: "A Japanese arithmetic wiring puzzle that crosses jigsaw assembly with the four operations. Each piece carries a number; you connect them so plus, minus, times, and divide transform the current and land it exactly on a goal's target, powering aging reactors back to life alongside a superconducting lifeform called neko in a far-future terraforming world. Mouse-only pixel art, 250-plus stages, no time limit, hints included. By kinjo, an Okinawa solo developer, published by Phoenixx; an award-winning entry from the first GYAAR Studio Indie Game Contest. Very Positive at 85 reviews and 93 percent; it supports English, yet the wider West has barely found it.",
+      h1a: "Don't just wire it. ",
+      h1flip: "Compute the four operations until the current lands exactly on target",
+      h1b: ".",
+      lede: "A Japanese arithmetic wiring puzzle that crosses jigsaw assembly with the four operations of arithmetic. Each piece carries a number and interlocking tabs, and you connect them so that plus, minus, times, and divide transform the current and land it exactly on a goal's target value, powering aging reactors, the distribution dungeons, back to life alongside a superconducting lifeform called neko in a far-future terraforming world. It is mouse-only, hand-drawn pixel art, with over 250 stages, no time limit, and built-in hints. Made by kinjo, a solo developer based in Okinawa, Japan, published by Phoenixx, and an award-winning entry from the first GYAAR Studio Indie Game Contest. It already supports English, yet the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The board hands you number pieces with interlocking tabs and a goal that wants one exact value, so the work is not assembling a pretty shape but computing: choosing which pieces to chain and which of plus, minus, times, and divide turns their numbers into precisely the figure the circuit demands.",
+        "The click lands the instant a tangle of pieces resolves onto the exact target and the current floods a dead reactor back to life, because nothing counts until it is exactly right: one over or one under and the circuit stays dark, so every solve is a small proof rather than a lucky fit.",
+        "There is no clock, and hints wait if you stall, so the pull is purely the itch to make the number land, and with over 250 stages the next dead circuit is always waiting, each a fresh little equation hidden inside a jigsaw, drawing you to wire just one more back to life.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the KenKen idea of bending the four operations to make numbers hit an exact target value, the pure arithmetic-puzzle core, rather than action or twitch",
+        "You want that core lifted onto physical jigsaw pieces you interlock to wire and power a circuit: chain numbered pieces, choose plus, minus, times, or divide, and land the current exactly on each goal across 250-plus stages, with no time limit and hints when you stall",
+        "You want a Japanese solo-dev indie gem the wider West has barely noticed, an award-winning entry from the first GYAAR Studio Indie Game Contest, Very Positive at 93 percent over 85 reviews, that already supports English",
+      ],
+      bad: [
+        "You want action, fast reflexes, or fail states; this is a slow arithmetic puzzle with no time limit and built-in hints, so the thrill is landing the exact number, not being quick",
+        "You expect a big, already-popular Western title; this is a Japanese solo-dev indie, paid at 980 yen, fully released out of Early Access, and still largely undiscovered abroad (about 23.5 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "エレクトロジカル - 数字の凹凸ピースを繋ぎ、四則演算で電力を目標値ぴったりに合わせて通電させる、KenKen(賢くなるパズル)の系譜の埋もれた日本の算数パズル",
+      description: "ジグソーパズルと四則演算（＋−×÷）を掛け合わせた、日本の通電パズル。数字が書かれた凹凸ピースを繋ぎ、四則演算で電力を目標値ぴったりに調整して回路に通電させる。遠未来のテラフォーミングを舞台に、超伝導生命体「neko」と共に老朽化した発電炉（配電ダンジョン）を修復していく。マウス操作のみ・ドット絵・250以上のステージ・時間制限なし・ヒントあり。沖縄の個人開発者 kinjo が制作し、Phoenixx が販売する、第1回 GYAAR Studio インディーゲームコンテスト入賞作。85レビュー93%で非常に好評。英語に対応済みだが、広い西側はまだほとんど見つけていない。",
+      h1a: "ただ繋ぐな。",
+      h1flip: "四則演算で電力を、目標値ぴったりに合わせろ",
+      h1b: "。",
+      lede: "ジグソーパズルと四則演算（＋−×÷）を掛け合わせた、日本の通電パズル。数字が書かれた凹凸ピースを繋ぎ、四則演算で電力を変換して、ゴールの目標値ぴったりに合わせて回路に通電させる。遠未来のテラフォーミングを舞台に、超伝導生命体「neko」と共に、老朽化した発電炉（配電ダンジョン）を修復していく。操作はマウスのみ、手描きのドット絵で、250以上のステージ、時間制限はなく、ヒントも備わっている。沖縄在住の個人開発者 kinjo が手がけ、Phoenixx が販売する、第1回 GYAAR Studio インディーゲームコンテストの入賞作だ。英語に対応済みだが、広い西側はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "盤面が手渡すのは、噛み合う凹凸と数字を持つピースと、たった一つの目標値を欲しがるゴールだ。だから仕事は、きれいな形を組むことではなく、計算すること——どのピースを繋ぎ、＋−×÷のどれでその数字を、回路が求める値ぴったりへ変えるかを選ぶことだ。",
+        "もつれたピースが目標値ぴったりに収束し、死んでいた発電炉に電流がなだれ込んで蘇る——その瞬間に手応えが来る。ぴったり正しくなるまで何も成立しないからだ。一つ多くても、一つ足りなくても回路は暗いまま。だからどの一手も、まぐれの当てはめではなく、小さな証明になる。",
+        "急かす時計はなく、詰まればヒントも待っている。だから手を止めさせるのは「この数字を合わせたい」という純粋な疼きだけだ。250以上のステージで、次に死んだ回路が常に待っている——どれもジグソーの中に隠れた小さな方程式で、もう一つだけ蘇らせたくて手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「四則演算で数字を目標値ぴったりに合わせる」KenKen(賢くなるパズル)の発想が好きな人——核にあるのは純粋な算数パズルで、アクションや反射ではない",
+        "その核を、物理的に繋ぐジグソーピースに載せ替えた作品が欲しい人——数字のピースを連結し、＋−×÷を選び、250以上のステージで電力を各ゴールぴったりに合わせて通電させる。時間制限はなく、詰まればヒントもある",
+        "広い西側がまだほとんど気づいていない、日本の個人開発インディー原石が欲しい人——第1回 GYAAR Studio インディーゲームコンテスト入賞作で、85レビュー93%で非常に好評、しかも英語に対応済み",
+      ],
+      bad: [
+        "アクションや速い反射、失敗ペナルティが欲しい人(本作は時間制限もなくヒントも備わった、じっくり解く算数パズルで、快感は速さではなく「数字をぴったり合わせること」にある)",
+        "すでに西で人気の大作を期待する人(本作は日本の個人開発インディーで、価格980円の有料作・アーリーアクセスを脱した正式リリース済み、海外ではまだ広く未発見——英語レビューは約23.5%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4394,6 +4474,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Igyou no Machi no Annie is a freeware point-and-click adventure game created by Qpic, the officially recognized Physics Research Club of Kyushu University in Japan, and distributed on the Japanese free-game platform Freem in 2020. Set in a hand-drawn, black-and-white, picture-book world of misshapen figures, it is played entirely by mouse: the player clicks through a surreal town and solves its puzzles by examining each scene and dragging the items they find onto where they belong, all carried by original, hand-made artwork and music. Through its writer and character designer pickee, who went on to make For the Fish in the Bottle, it is the origin of this short, hand-made, monochrome point-and-click puzzle lineage: surreal black-and-white worlds explored by mouse, solved by looking and dragging, and built on entirely original art and sound.",
       ja: "異形の街のアニーは、九州大学の公認サークル「Qpic(九州大学物理研究部)」が制作し、日本のフリーゲーム配信サイト「ふりーむ」で2020年に頒布されたフリーのポイント＆クリック・アドベンチャーである。白黒トーンの手描き・絵本調の、異形の者たちが暮らす世界を舞台に、操作はすべてマウス——プレイヤーはシュールな街をクリックで巡り、その場面を調べ、見つけたアイテムをしかるべき場所へドラッグして謎を解いていく。その全ては、手作りのオリジナルのアートワークと音楽に支えられている。本作のシナリオとキャラクターデザインを担当し、のちに『瓶の中のサカナのために』を手がけた pickee を通じて、マウスで巡る白黒シュールな世界を、見てドラッグして解き、すべて手作りのオリジナルの絵と音で組み上げる——その短く手作りなモノクロ・ポイント＆クリック謎解きの系譜の原点となっている。",
+    },
+  },
+  // 原点 KenKen(日本名・賢くなるパズル, 海外名 Calcudoku), 宮本哲也, 2004, 日本。教育者・宮本哲也が子どもを
+  // 教えずに賢くするための道具として考案した算数の論理パズル。ラテン方陣のグリッドを太線で「ケージ」に区切り、
+  // 各ケージの目標値を指定の四則演算でぴったりにする(行・列で数字は重複させない)。「四則演算で数字をぴったりの
+  // 目標値にする」算数パズルの系譜の原点。公式 Steam 版なし → wikidata QID(Q372499)で同定(Steam id を捏造
+  // しない・href 破損回避)。established 側と wikidata URL の完全一致で逆引き成立(lineageName の Wikidata 同定)。
+  "kenken": {
+    wikidata: "https://www.wikidata.org/wiki/Q372499",
+    blurb: {
+      en: "KenKen, known in Japan as Kashikoku Naru Puzzle and internationally as Calcudoku, is an arithmetic logic puzzle devised by the Japanese educator Tetsuya Miyamoto in 2004 as a tool to make children sharper without instruction. On a Latin-square grid divided by heavy outlines into groups called cages, each cage carries a target number and one of the four arithmetic operations, and the solver fills in digits so that each cage's numbers combine through its operation to reach the target, with no number repeating in any row or column. By fusing the no-repeat logic of a Latin square with the demand to make numbers hit an exact value through addition, subtraction, multiplication, and division, it defined the modern arithmetic logic puzzle, the lineage of puzzles solved by computing numbers to an exact target. There is no official Steam release; the origin is anchored to its Wikidata entry.",
+      ja: "KenKen(日本名・賢くなるパズル、海外名 Calcudoku)は、日本の教育者・宮本哲也が2004年に、子どもを教えずに賢くするための道具として考案した算数の論理パズルである。ラテン方陣のグリッドが太線で「ケージ」と呼ばれるまとまりに区切られ、各ケージには目標の数と四則演算のいずれか一つが添えられる。解き手は、各行・各列に数字が重複しないようにしながら、ケージ内の数字を指定された演算で組み合わせて目標値ぴったりにしていく。各行・各列で数字を重複させないラテン方陣の論理と、＋−×÷で数字をぴったりの値にするという要求を融合させ、「数字を計算してぴったりの目標値にする」ことで解く現代の算数論理パズル——その系譜を確立した原点である。公式 Steam 版は存在せず、原点は Wikidata のエントリで同定する。",
     },
   },
 } as const;
