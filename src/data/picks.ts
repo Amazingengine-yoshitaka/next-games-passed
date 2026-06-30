@@ -3459,6 +3459,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "devil-blade-reboot": {
+    published: "2026-06-24",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "shoot-em-up", lineage: "devil-blade", obscurity: "deep", reviewBand: "hundreds", rarity: { reviews: 822, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "DEVIL BLADE REBOOT",
+        name_ja: "DEVIL BLADE REBOOT",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2882440/DEVIL_BLADE_REBOOT/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A vertical-scrolling bullet-hell shooter, hand-drawn in pixel art yet pushed into a pseudo-3D rush with multi-layered scrolling and zooms. Two shot types plus a bomb, and the signature Berserk System: the closer you destroy enemies at point-blank range, the higher the difficulty and the score climb, a risk-and-reward design that rewards aggression with an arcade score-chase you cannot stop running back into. Six story stages with stage select, four difficulty levels, a Retro Mode that reproduces the 1996 original, Steam leaderboards and achievements, and unlocks. Made by the Japanese solo creator Shigatake (Takehiro Shiga), a founding member and illustrator of Vanillaware, who spent six and a half years finishing it alongside his day job as a personal doujin project under the SHIGATAKE GAMES label. It is the full remake of his own 1996 doujin shooter, originally built with the PlayStation tool Dezaemon Plus and distributed only in Japan. Overwhelmingly Positive at 822 reviews and 98 percent. It already plays in English (461 of those reviews are English) and the Western shmup scene has begun to notice it, but to the wider world it is still a near-unknown original.",
+        desc_ja: "縦スクロールの弾幕シューティング。ドット絵でありながら、多重スクロールと拡大縮小で擬似3Dの没入感へ押し上げる独自の見せ方。2種のショットとボム、そしてシグネチャの「Berserk System(狂化システム)」——敵に至近距離で接近して破壊するほど、難度もスコアも跳ね上がる。攻めるほど報われるリスク・リワード設計が、何度でも戻ってきてしまうアーケード型スコアチェイスを生む。ステージセレクト付きのストーリー6面、難度4段階、1996年の原作を再現するレトロモード、Steamランキング/実績、アンロック要素。日本のひとりクリエイター しがたけ(Takehiro Shiga・Vanillaware の創設メンバー/イラストレーター)が、本職の傍ら6年半かけて完成させた、SHIGATAKE GAMES 名義の個人制作の同人作。本人が1996年に PS1 の同人STG制作ツール「デザエモンプラス」で作り日本国内のみで頒布した同人シューティングの、全面リメイクである。822レビュー98%で圧倒的に好評。英語でもう遊べて(うち461件が英語レビュー)、西の弾幕シューターたちも気づき始めているが、広い世界にとってはまだほとんど知られていない原石だ。",
+      },
+      {
+        name_en: "Devil Blade",
+        name_ja: "Devil Blade",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2882440/DEVIL_BLADE_REBOOT/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: in 1996, Shigatake built a vertical-scrolling shooter with Dezaemon Plus, the PlayStation game-creation tool for making one's own shooters, and it was distributed only in Japan as a doujin work. Born from the Dezaemon movement in which players shared self-made shooters on memory cards, it carried the Japanese arcade-and-doujin shooter's core thrill of hugging your ship as close to the enemy as you dare to drive the score. The 1996 original has no surviving distribution, so its only available form today is REBOOT itself, the creator's own full remake, which reproduces it in a Retro Mode. This gem is a direct heir to that taste, and its Berserk System sharpens the close-range score-chase into the whole point.",
+        desc_ja: "この味の原点。1996年、しがたけ が PS1 の同人STG制作ツール「デザエモンプラス」で縦スクロール・シューティングを作り、同人作品として日本国内のみで頒布した。プレイヤーが自作シューティングをメモリーカードで共有しあう「Dezaemonムーブメント」から生まれ、「自機をどこまで敵に寄せられるかでスコアを伸ばす」という和製アーケード/同人シューの核の快感を担った。1996年の原作は現存する流通物が無く、今日唯一入手できる形は、作者本人の全面リメイクである REBOOT そのもの(レトロモードで原作を再現)である。この未発掘の名作はその味の直系で、「Berserk System」が至近距離のスコアチェイスを核そのものへと研ぎ澄ます。",
+      },
+    ],
+    en: {
+      title: "DEVIL BLADE REBOOT - a buried bullet-hell shooter where hugging the enemy at point-blank drives the score, an heir to the 1996 doujin original Devil Blade",
+      description: "A vertical bullet-hell shooter, pixel-art pushed into a pseudo-3D rush. The Berserk System makes destroying enemies at point-blank spike both difficulty and score, an arcade score-chase you cannot stop. Six stages, four difficulties, a Retro Mode of the 1996 original. By Vanillaware artist Shigatake, six and a half years solo. Overwhelmingly Positive at 822 reviews and 98 percent; it plays in English, yet to the wider world it is still a near-unknown original.",
+      h1a: "Don't dodge the enemy. ",
+      h1flip: "Hug it, and the score erupts",
+      h1b: ".",
+      lede: "A vertical-scrolling bullet-hell shooter, hand-drawn in pixel art yet pushed into a pseudo-3D rush with multi-layered scrolling and zooms. Two shots and a bomb, and the signature Berserk System: the closer you destroy enemies at point-blank range, the higher the difficulty and the score climb. A solo doujin work by the Vanillaware artist Shigatake, six and a half years in the making, a full remake of his own 1996 Dezaemon Plus shooter. It already plays in English, but to the wider world it is still a near-unknown original.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The safe instinct of every shooter is to keep your distance, but here the score lives in the danger zone, so you stop fleeing the enemy and start steering straight into its face.",
+        "As you destroy them at point-blank the Berserk System bites: the difficulty and the score both spike together, so every meter you close is paid for in risk and rewarded in points, and you feel the multiplier breathing with how brave you are.",
+        "Then a wave breaks apart inches from your ship, the score erupts, and the line between dying and topping the board collapses into one held breath. The run ends, the leaderboard taunts you, and you reach for one more.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love arcade vertical shooters where the score lives in the danger zone, and you want a system, Berserk, that pays you for hugging the enemy at point-blank",
+        "You want a pixel-art shooter pushed into a pseudo-3D rush, with a Retro Mode that reproduces a 1996 doujin original, four difficulties, and Steam leaderboards to chase",
+        "You want a Japanese solo-made gem the wider world has barely noticed, Overwhelmingly Positive at 98 percent, made by a Vanillaware artist over six and a half years",
+      ],
+      bad: [
+        "You want a slow, safe shooter where keeping your distance is the right play, not one built to reward flying into point-blank range",
+        "You expect a big-studio, big-budget production rather than a one-person doujin remake of a 1996 amateur shooter",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "DEVIL BLADE REBOOT - 至近距離で敵に寄るほどスコアが跳ねる、1996年の同人原作 Devil Blade の系譜の埋もれた弾幕シューティング",
+      description: "縦スクロールの弾幕シューティング。ドット絵を擬似3Dの没入感へ押し上げる。「Berserk System」で敵を至近距離破壊するほど難度もスコアも跳ね上がる、止まれないアーケード型スコアチェイス。6面、難度4段階、1996年原作のレトロモード。Vanillaware のしがたけが6年半かけて個人制作。822レビュー98%で圧倒的に好評。英語でもう遊べるが、広い世界にとってはまだほとんど知られていない原石。",
+      h1a: "敵を避けるな。",
+      h1flip: "寄れ、スコアが噴き上がる",
+      h1b: "。",
+      lede: "縦スクロールの弾幕シューティング。ドット絵でありながら、多重スクロールと拡大縮小で擬似3Dの没入感へ押し上げる独自の見せ方。2種のショットとボム、そしてシグネチャの「Berserk System(狂化システム)」——敵に至近距離で接近して破壊するほど、難度もスコアも跳ね上がる。Vanillaware のアーティスト しがたけ が6年半かけてひとりで作り上げた同人作で、本人の1996年「デザエモンプラス」製シューティングの全面リメイク。英語でもう遊べるが、広い世界にとってはまだほとんど知られていない原石だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "どんなシューティングでも安全な本能は「距離を取れ」だ。だがここでは、スコアは危険地帯にこそ宿る。だから敵から逃げるのをやめ、その顔面へまっすぐ突っ込み始める。",
+        "至近距離で破壊するほど Berserk System が牙を剥く——難度もスコアも一緒に跳ね上がる。だから詰めた一メートルごとにリスクを支払い、点で報われる。倍率が、自分の勇気と一緒に呼吸しているのを感じる。",
+        "そして敵の波が自機の数センチ手前で砕け散り、スコアが噴き上がり、「死ぬ」と「ランキング首位」の境界線が、ひとつの止めた息に溶ける。ランが終わり、ランキングが挑発してくる。そして手は、もう一回へ伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "スコアが危険地帯にこそ宿るアーケード縦シューが好きで、至近距離で敵に寄るほど報われる仕組み「Berserk System」が欲しい人",
+        "ドット絵を擬似3Dの没入感へ押し上げたシューティングが欲しい人——1996年の同人原作を再現するレトロモード、難度4段階、追いかけるべき Steam ランキング付き",
+        "広い世界がまだほとんど気づいていない日本の個人制作の原石が欲しい人——98%で圧倒的に好評、Vanillaware のアーティストが6年半かけて作った一本",
+      ],
+      bad: [
+        "距離を取るのが正解の、ゆっくり安全なシューティングが欲しい人(本作は至近距離へ飛び込むほど報われるよう作られている)",
+        "1人の同人作家による1996年アマチュアシューティングのリメイクではなく、大手スタジオの大型予算作を期待する人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3672,6 +3750,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Tokimeki Memorial is a dating-sim adventure game developed and published by Konami, first released for the PC Engine Super CD-ROM2 in 1994. Casting the player as a high-school student who builds stats and reads each girl's interests, then raises an affection parameter through dialogue choices and daily actions over a three-year calendar toward a confession, it popularized and is widely credited with defining the affection-parameter raising adventure, the template that later choice-driven affection ADVs descend from.",
       ja: "ときめきメモリアルは、コナミが開発・販売した恋愛シミュレーション・アドベンチャーで、1994年にPCエンジン Super CD-ROM2向けに初めて発売された。プレイヤーを高校生とし、自分の能力値を育てつつ相手の興味を把握し、3年間のカレンダーの中で選択肢や日々の行動を通して好感度パラメータを高め、告白を目指す仕組みにより、「好感度パラメータを選択で育てる」育成型ADV(恋愛SIM)を広く普及・定義したと評価される。後続の選択駆動型・好感度ADVが連なる、その系譜の元祖である。",
+    },
+  },
+  // 原点 Devil Blade(1996), しがたけ(Takehiro Shiga)。PS1 の同人 STG 制作ツール「デザエモンプラス
+  // (Dezaemon Plus)」で作られ、日本国内のみで頒布された純日本産の同人縦シューティング。プレイヤーが自作
+  // シューティングを memory card で共有しあう Dezaemon ムーブメントから生まれ、「自機を限界まで敵に寄せる
+  // スコアチェイス」という和製アーケード/同人縦シューの快感を体現した、その系譜の原点。原作1996版は流通物
+  // が存在しない → 本人が四半世紀ぶりに全面リメイクした現行版 DEVIL BLADE REBOOT(app 2882440・レトロ
+  // モードで1996版を再現)が唯一の入手可能な参照点。よって anchor は現行 Steam 版で同定する(Steam id を
+  // 捏造しない・href 破損回避・established 側と /app/2882440/ で完全一致で逆引き成立)。
+  "devil-blade": {
+    steam: "2882440",
+    blurb: {
+      en: "Devil Blade is a doujin vertical-scrolling shoot 'em up created in 1996 by the Japanese illustrator Shigatake (Takehiro Shiga), built with Dezaemon Plus, the PlayStation game-creation tool for making one's own shooters, and distributed only within Japan as an amateur work. Born from the Dezaemon movement in which players shared self-made shooters on memory cards, it embodies the Japanese arcade-and-doujin vertical shooter's core thrill of hugging your ship as close to the enemy as you dare to drive the score. With no surviving distribution of the 1996 original, its only available form today is the creator's own full remake a quarter-century later, DEVIL BLADE REBOOT, which reproduces the 1996 version in a retro mode; it is the origin of the aggressive, close-range score-chase strand of Japanese doujin shooting.",
+      ja: "Devil Bladeは、日本のイラストレーター しがたけ(Takehiro Shiga)が1996年に制作した同人の縦スクロール・シューティングで、PS1の同人STG制作ツール「デザエモンプラス(Dezaemon Plus)」で作られ、日本国内のみでアマチュア作品として頒布された。プレイヤーが自作シューティングをメモリーカードで共有しあう「Dezaemonムーブメント」から生まれ、「自機をどこまで敵に寄せられるかでスコアを伸ばす」という和製アーケード/同人縦シューの核の快感を体現した作品である。1996年の原作は現存する流通物が無く、今日唯一入手できる形は、作者本人が四半世紀ぶりに全面リメイクした現行版 DEVIL BLADE REBOOT(レトロモードで1996版を再現)である。攻めるほどスコアが跳ねる、至近距離スコアチェイス型の和製同人シューティングの系譜の原点である。",
     },
   },
 } as const;
