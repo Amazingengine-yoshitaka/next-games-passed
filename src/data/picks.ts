@@ -3931,6 +3931,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "robot-girl-dreams": {
+    published: "2026-06-27",
+    publishAt: "2026-06-27",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "raising-sim", lineage: "princess-maker-2", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 190, positivePct: 97, noEnglish: false } },
+    games: [
+      {
+        name_en: "Robot girl's dream -RobotBattleChampionship-",
+        name_ja: "ロボット少女は夢を見る-RobotBattleChampionship-",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2742730/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese 2D raising simulation about a robot girl who has lost her memories and must build a life from scratch. Each turn you choose how she spends her time, going out, working, entering tournaments, and through those actions she grows and forms bonds with the humans and robots around her. Your choices, the dialogue options you pick, and the results of her battles accumulate and branch the story into multiple endings, all framed around her goal of winning the Robot Battle Championship. It is a raising sim with adventure and RPG elements: schedule, choose, fight, and watch a person take shape out of a blank slate. Made by the Japanese doujin circle DeskClub Games (creator Uwagaki), whose earlier RPG using the VOICEROID Kotonoha sisters earned a 95 percent on Steam, and released January 2025. Very Positive at 190 reviews and 97 percent. It already supports English and Japanese (about 18 percent of reviews are English), yet it is Japan-centered and the wider West has not broadly found it. At 1,900 yen it is a paid, fully released game.",
+        desc_ja: "記録を失ったロボット少女が、ゼロから人生を築いていく、日本の2D育成シミュレーション。毎ターン、彼女の時間の使い方——外出、仕事、大会への参加——を選び、その行動を通じて彼女は成長し、周囲の人間やロボットと絆を結んでいく。あなたの選択、選んだ選択肢、そして戦闘の結果が積み重なり、物語は複数のエンディングへと分岐する。その全ては「ロボットバトルチャンピオンシップ優勝」という彼女の目標を軸に編まれている。アドベンチャーとRPGの要素を備えた育成シムだ——予定を組み、選び、戦い、空白の石板から一人の人格が形づくられていくのを見守る。日本の同人サークル DeskClub Games(作者・上顎/Uwagaki 氏)による一本で、過去には VOICEROID 琴葉姉妹を用いたRPGが Steam で95%を獲得している。2025年1月発売。190レビュー97%で非常に好評。英語と日本語に対応済み(英語レビューは約18%)だが、日本中心で、広い西側はまだ広くは見つけていない。価格1,900円の有料作・正式リリース済みである。",
+      },
+      {
+        name_en: "Princess Maker 2 Refine",
+        name_ja: "プリンセスメーカー2",
+        status: "established",
+        steam: "https://store.steampowered.com/app/523000/Princess_Maker_2_Refine/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Princess Maker 2, Gainax, 1993 (the Refine edition is the one on Steam), the defining entry of the Princess Maker series begun in 1991. You become a young daughter's foster father and spend years scheduling her education, work, and lessons, watching parameters accumulate until those choices branch into one of many endings, from queen to merchant to ordinary townsfolk. It crystallized the raising-sim loop of scheduling a girl's time over a fixed period and letting accumulated stats and choices decide her future. Robot girl's dream is a clear heir to that idea: it hands you a girl to raise turn by turn through scheduled actions, and your choices and battle results pile up into branching endings, but it grafts that core onto an amnesiac robot's self-rediscovery aimed at a Battle Championship, making it its own creature rather than a clone.",
+        desc_ja: "この味の原点。プリンセスメーカー2、ガイナックス、1993年(Steam 版は Refine 版)——1991年に始まったプリンセスメーカーシリーズを代表する一作だ。プレイヤーは幼い娘の養父となり、何年もかけて教育・仕事・けいこごとの予定を組み、パラメータが積み上がっていくのを見守る。その選択の蓄積は、女王から商人、市井の人まで、数多のエンディングのいずれかへと分岐していく。「少女の時間を一定期間スケジューリングし、積み上がったパラメータと選択でその未来を決める」育成シムのループを結晶化させた。ロボット少女は夢を見るはその直系——一人の少女を、スケジュールした行動で1ターンずつ育てさせ、選択と戦闘結果が積み上がって分岐するエンディングへ向かわせる。だがその核を、記録を失ったロボットがバトルチャンピオンシップを目指して自分を取り戻していく物語へ接ぎ木し、模倣ではない独自の一作へと仕立てている。",
+      },
+    ],
+    en: {
+      title: "Robot girl's dream -RobotBattleChampionship- a buried Japanese raising sim where an amnesiac robot girl is scheduled, choice by choice, toward branching endings, an heir to Princess Maker 2",
+      description: "A Japanese 2D raising simulation about a robot girl who has lost her memories. Each turn you choose how she spends her time, going out, working, entering tournaments, and through those actions she grows and bonds with the humans and robots around her. Your choices, dialogue, and battle results accumulate and branch the story into multiple endings, framed around winning the Robot Battle Championship. By Japan's doujin circle DeskClub Games. Very Positive at 190 reviews and 97 percent; it supports English, yet it is Japan-centered and the wider West has barely found it.",
+      h1a: "Don't recall who she was. ",
+      h1flip: "Schedule, choice by choice, who she becomes",
+      h1b: ".",
+      lede: "A Japanese 2D raising simulation about a robot girl who has lost her memories and must build a life from scratch. Each turn you choose how she spends her time, going out, working, entering tournaments, and through those actions she grows and forms bonds with the humans and robots around her. Your choices, the dialogue you pick, and the results of her battles accumulate and branch the story into multiple endings, all aimed at winning the Robot Battle Championship. It is a raising sim with adventure and RPG elements. Made by Japan's doujin circle DeskClub Games. It supports English, yet it is Japan-centered and the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "She begins as a blank slate, a robot with no memories, so the work is not steering a fixed character but deciding, turn by turn, who she is going to be: every block of time you spend on going out, working, or training is a brushstroke on an empty canvas.",
+        "The pull is that nothing is wasted: each action she takes, each dialogue choice you pick, and each battle result quietly accumulates into stats and bonds, so you feel a person taking shape out of the choices you keep making, not out of a script you are handed.",
+        "And because those accumulated choices and battle results branch into one of several endings around the Robot Battle Championship, finishing one route only makes you reach to schedule her differently, spend her time another way, and find the self you did not raise the first time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Princess Maker loop of scheduling a girl's time over a fixed period and watching accumulated stats and choices slowly decide her future, branching into many endings",
+        "You want that core grafted onto an amnesiac robot's self-rediscovery: choose her actions turn by turn, bond with humans and robots, and let your choices, dialogue, and battle results pile up toward winning a Battle Championship across multiple endings",
+        "You want a Japanese doujin gem the wider West has barely noticed, Very Positive at 97 percent over 190 reviews, that already supports English",
+      ],
+      bad: [
+        "You want fast action or pure reflex; the battles feed a raising loop and the heart of the game is scheduling, choosing, and accumulating, not twitch combat",
+        "You expect a big, already-popular Western title; this is a Japanese-led doujin work, paid at 1,900 yen, and still largely undiscovered abroad (about 18 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ロボット少女は夢を見る - 記録を失ったロボット少女を、選択で一つずつ育て、分岐するエンディングへ導く、プリンセスメーカー2の系譜の埋もれた日本の育成シム",
+      description: "記録を失ったロボット少女が主人公の、日本の2D育成シミュレーション。毎ターン、彼女の時間の使い方——外出、仕事、大会への参加——を選び、その行動を通じて成長させ、人間やロボットと絆を結ぶ。あなたの選択、選んだ選択肢、戦闘の結果が積み重なり、物語は複数のエンディングへ分岐する。全ては「ロボットバトルチャンピオンシップ優勝」を軸に編まれている。日本の同人サークル DeskClub Games 制作。190レビュー97%で非常に好評。英語に対応済みだが、日本中心で、広い西側はまだほとんど見つけていない。",
+      h1a: "彼女が誰だったかを思い出すな。",
+      h1flip: "選択で一つずつ、彼女が誰になるかを組み上げろ",
+      h1b: "。",
+      lede: "記録を失ったロボット少女が、ゼロから人生を築いていく、日本の2D育成シミュレーション。毎ターン、彼女の時間の使い方——外出、仕事、大会への参加——を選び、その行動を通じて彼女は成長し、周囲の人間やロボットと絆を結んでいく。あなたの選択、選んだ選択肢、そして戦闘の結果が積み重なり、物語は複数のエンディングへと分岐する。その全ては「ロボットバトルチャンピオンシップ優勝」を軸に編まれている。アドベンチャーとRPGの要素を備えた育成シムだ。日本の同人サークル DeskClub Games が手がける。英語に対応済みだが、日本中心で、広い西側はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "彼女は空白の石板——記録を持たないロボットとして始まる。だから仕事は、決まったキャラクターを操ることではなく、1ターンずつ「彼女が誰になるか」を決めることだ。外出、仕事、訓練に費やす時間の一区切りが、白いカンバスに置く一筆になる。",
+        "手を止めさせないのは、何ひとつ無駄にならないという感覚だ。彼女がとる行動、あなたが選ぶ選択肢、そして戦闘の結果が、静かにパラメータと絆へと積み上がっていく。だから、渡された脚本からではなく、自分が選び続けた選択から、一人の人格が形づくられていくのを感じる。",
+        "そして積み上がった選択と戦闘結果は、ロボットバトルチャンピオンシップを軸に、いくつものエンディングのいずれかへ分岐する。だから一つのルートを見届けるたびに、今度は違う育て方を組み、別の時間の使い方をして、最初には育てなかった「もう一人の彼女」を見つけたくて、手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「少女の時間を一定期間スケジューリングし、積み上がったパラメータと選択が少しずつ未来を決め、数多のエンディングへ分岐する」プリンセスメーカーのループが好きな人",
+        "その核を、記録を失ったロボットの自己再発見に接ぎ木した作品が欲しい人——1ターンずつ彼女の行動を選び、人間やロボットと絆を結び、選択・選択肢・戦闘結果を積み上げてバトルチャンピオンシップ優勝と複数エンディングへ向かう",
+        "広い西側がまだほとんど気づいていない、日本の同人原石が欲しい人——190レビュー97%で非常に好評、しかも英語に対応済み",
+      ],
+      bad: [
+        "速いアクションや純粋な反射が欲しい人(戦闘は育成ループに供給される要素で、本作の核はスケジューリング・選択・蓄積にあり、瞬間反応の戦闘ではない)",
+        "すでに西で人気の大作を期待する人(本作は日本主体の同人作で、価格1,900円の有料作、海外ではまだ広く未発見——英語レビューは約18%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4049,7 +4128,13 @@ const LINEAGE_ANCHOR = {
   "metal-hellsinger": { steam: "1061910" },
   "uncharted-waters-2": { steam: "628170" },
   "dungeon-keeper": { steam: "1996630" },
-  "princess-maker-2": { steam: "523000" },
+  "princess-maker-2": {
+    steam: "523000",
+    blurb: {
+      en: "Princess Maker 2 is a raising simulation developed by Gainax, originally released in 1993 (the Refine edition is the one on Steam). The player becomes the foster father of a young daughter and spends years scheduling her education, work, and lessons, watching parameters accumulate until those choices branch into one of many endings, from queen to merchant to ordinary townsfolk. As the defining entry in the Princess Maker series begun in 1991, it crystallized the raising-sim loop of scheduling a girl's time over a fixed period and letting accumulated stats and choices decide her future, and is a foundational origin of the raising simulation lineage.",
+      ja: "プリンセスメーカー2は、ガイナックスが開発した育成シミュレーションで、1993年に発売された(Steam 版は Refine 版)。プレイヤーは幼い娘の養父となり、何年もかけて教育・仕事・けいこごとの予定を組み、パラメータが積み上がっていくのを見守る。その選択の蓄積は、女王から商人、市井の人まで、数多のエンディングのいずれかへと分岐していく。1991年に始まったプリンセスメーカーシリーズを代表する一作として、「少女の時間を一定期間スケジューリングし、積み上がったパラメータと選択でその未来を決める」育成シムのループを結晶化させた、育成シミュレーションの系譜の礎となる原点である。",
+    },
+  },
   "doki-doki-literature-club": { steam: "698780" },
   "clannad": { steam: "324160" },
   "kamaitachi-no-yoru": {
