@@ -3616,6 +3616,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "kaii-bangou": {
+    published: "2026-06-25",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "horror-novel", lineage: "apathy-school-ghost-stories", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 87, positivePct: 98, noEnglish: true } },
+    games: [
+      {
+        name_en: "Kaii Bangou ~20XX~",
+        name_ja: "怪異番号~20✕✕(ニーマルバツバツ)~",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4154100/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A psychological horror text adventure with no jump scares, set in the Japan of 2005. In a park's public toilet, someone has scrawled a phone number, and no one knows where it connects. From that single urban legend you follow the rumors and the digits into the strange things lurking in the town. It is an omnibus told across four episodes, a reading-type novel that does not lunge at you but stacks dread slowly through text, where the horror is the story itself rather than a sudden face in the dark. Made by the Japanese solo creator EBA GAME, released in March 2026 for 400 yen. The store supports Japanese only, there is not even an English interface, and out of 87 reviews not one is in English. Very Positive in Japan at 98 percent, yet the wider West has not found this 400-yen doujin horror novel at all.",
+        desc_ja: "ジャンプスケアの無い心理ホラー・テキストアドベンチャー。舞台は2005年(平成)の日本。公園の公衆トイレに、誰かが電話番号を落書きしている——どこに繋がるのか、誰も知らない。その一つの都市伝説から、噂と数字を手掛かりに、町に潜む怪異の謎へと辿っていく。全4エピソード構成のオムニバス形式で、襲いかかってくるのではなく、テキストでじわじわと恐怖を積み上げる読み物型のノベルだ。恐怖は暗闇から飛び出す顔ではなく、物語そのものにある。日本の個人ゲーム開発者 EBA GAME による一本で、2026年3月に400円で発売。ストアの対応言語は日本語のみ、英語インターフェースすら無く、87件のレビューに英語は1件も無い。98%で日本では非常に好評なのに、広い西側はこの400円の同人ホラーノベルをまだ全く見つけていない。",
+      },
+      {
+        name_en: "Gakkou de Atta Kowai Hanashi",
+        name_ja: "学校であった怖い話",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2283710/",
+        homepage: "https://ja.wikipedia.org/wiki/%E5%AD%A6%E6%A0%A1%E3%81%A7%E3%81%82%E3%81%A3%E3%81%9F%E6%80%96%E3%81%84%E8%A9%B1",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: in 1995, the Super Famicom title Gakkou de Atta Kowai Hanashi (planned by Takiya Iijima) had several narrators recount the scary stories, school legends, and urban myths of one school, building dread through text rather than shock. It established the form of the omnibus Japanese horror sound novel told as separate episodes through different storytellers, and it lived on for years as the personal, small-scale indie Apathy series, with a current Steam version, Apathy: Narugami Gakuen Gakkou de Atta Kowai Hanashi Kiwami. Kaii Bangou is a direct heir to that form: a solo-made Japanese text horror novel of Heisei urban legends, told as four episodes, that follows phone numbers and rumors and stacks fear through text instead of jump scares. This urban-legend omnibus ghost-story branch is distinct from the mystery sound novel, 3D horror, and looping-tragedy lines, so it stands as its own origin.",
+        desc_ja: "この味の原点。1995年、スーパーファミコンの『学校であった怖い話』(企画・飯島多紀哉)が、複数の語り部に一つの学校の怖い話・学校の伝説・都市伝説を語らせ、ショックではなくテキストで恐怖を積み上げた。語り部を替えながら別々のエピソードとして綴る、オムニバス形式の和製ホラーサウンドノベルという形を確立し、その後は個人・小規模インディーの「アパシーシリーズ」として長年受け継がれ、現在はSteam版『アパシー 鳴神学園 学校であった怖い話 極』も配信されている。怪異番号はその形の直系——個人が作った平成の都市伝説の和製テキストホラーノベルで、全4エピソードとして綴られ、電話番号と噂を辿り、ジャンプスケアではなくテキストで恐怖を積む。この「都市伝説オムニバス怪談ノベル」の枝は、ミステリ系サウンドノベルや3Dホラーや繰り返し惨劇系とは別物で、それ自体が一つの原点として立つ。",
+      },
+    ],
+    en: {
+      title: "Kaii Bangou ~20XX~ - a buried solo-made Japanese horror text novel that follows a public-toilet phone number into Heisei urban legends, an heir to Gakkou de Atta Kowai Hanashi",
+      description: "A psychological horror text adventure with no jump scares, set in the Japan of 2005. A phone number scrawled in a park toilet, connecting nowhere known, pulls you through rumors and digits into the strange things in town, told as a four-episode omnibus that stacks dread through text. A 400-yen doujin work by Japan's solo creator EBA GAME. Very Positive at 87 reviews and 98 percent, yet Japanese only, with zero English reviews: the West has not found it.",
+      h1a: "A number on a toilet wall, ",
+      h1flip: "connecting nowhere known",
+      h1b: ".",
+      lede: "A psychological horror text adventure with no jump scares, set in the Japan of 2005. In a park's public toilet someone has scrawled a phone number, and no one knows where it connects. From that single urban legend you follow the rumors and the digits into the strange things lurking in town, an omnibus across four episodes that does not lunge at you but stacks dread slowly through text. A 400-yen solo-made work by the Japanese creator EBA GAME, in the lineage of the omnibus Japanese horror text novel Gakkou de Atta Kowai Hanashi. The store is Japanese only, there is not even an English interface, and out of 87 reviews not one is English, so the West has not found it at all.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You read a phone number off a toilet wall that should mean nothing, and the not-knowing where it connects is the hook: the urge to dial, to trace it, to learn what the rumor is really about, pulls you one line deeper.",
+        "There is no monster to flee and no face that leaps out; the dread is built entirely in the reading, sentence by sentence, until an ordinary Heisei town turns quietly wrong in your hands and you cannot stop turning the page.",
+        "Each of the four episodes closes one loop of a local legend and opens the next, the omnibus tightening as the numbers and rumors start to rhyme, so finishing one only makes you reach for the following thread.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Japanese horror text novel in the Gakkou de Atta Kowai Hanashi line, where the fear is built in the reading and the urban legend itself, not in a jump scare",
+        "You want a quiet, slow-burn omnibus of Heisei urban legends told across four episodes, where a public-toilet phone number and a chain of rumors lead you into the strange",
+        "You want a Japanese solo-creator doujin gem the wider West has not found at all, Very Positive at 98 percent, a 400-yen text horror novel with zero English reviews",
+      ],
+      bad: [
+        "You want action, monsters, jump scares, or anything to flee from; this is a reading-type text novel that stacks dread through prose, not through shock",
+        "You cannot read Japanese, or you want a game that already plays in English; the store supports Japanese only, with not even an English interface, and there is no English version yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "怪異番号~20✕✕~ - 公衆トイレの電話番号から平成の都市伝説を辿る、学校であった怖い話の系譜の埋もれた個人製・和製テキストホラーノベル",
+      description: "ジャンプスケアの無い心理ホラー・テキストアドベンチャー。舞台は2005年の日本。公園の公衆トイレに落書きされた、どこに繋がるか分からない電話番号から、噂と数字を辿って町の怪異へ。全4エピソードのオムニバスで、テキストでじわじわ恐怖を積む。日本の個人開発者 EBA GAME による400円の同人作。87レビュー98%で非常に好評なのに、日本語のみ・英語レビュー0件で、西はまだ見つけていない。",
+      h1a: "トイレの壁の番号は、",
+      h1flip: "どこにも繋がらない",
+      h1b: "。",
+      lede: "ジャンプスケアの無い心理ホラー・テキストアドベンチャー。舞台は2005年(平成)の日本。公園の公衆トイレに、誰かが電話番号を落書きしている——どこに繋がるのか、誰も知らない。その一つの都市伝説から、噂と数字を手掛かりに、町に潜む怪異へと辿っていく。全4エピソードのオムニバスで、襲いかかるのではなく、テキストでじわじわと恐怖を積み上げる。日本の個人開発者 EBA GAME による400円の個人製作で、オムニバス形式の和製ホラーテキストノベル 学校であった怖い話 の系譜に連なる。ストアの対応言語は日本語のみ、英語インターフェースすら無く、87件のレビューに英語は1件も無いから、西はまだ全く見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "トイレの壁から、本来なら何の意味も無いはずの電話番号を読み上げる。「どこに繋がるか分からない」——その分からなさこそが釣り針だ。かけてみたい、辿ってみたい、この噂が本当は何なのか知りたい欲求が、一行先へと引き込む。",
+        "逃げるべき怪物も、飛び出す顔も無い。恐怖はすべて「読むこと」の中で、一文ずつ組み上がっていく。ありふれた平成の町が、手の中で静かに歪んでいき、ページをめくる手が止まらなくなる。",
+        "全4エピソードのそれぞれが、土地の伝説の一つのループを閉じ、次を開く。番号と噂が韻を踏み始め、オムニバスが締まっていく。一つ読み終えるたびに、次の糸へと手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "学校であった怖い話 系の和製テキストホラーノベルが好きな人——恐怖がジャンプスケアではなく「読むこと」と都市伝説そのものの中で組み上がる",
+        "公衆トイレの電話番号と噂の連鎖が怪異へ導く、全4エピソードの平成都市伝説オムニバスを、静かにじわじわ味わいたい人",
+        "広い西側がまだ全く見つけていない、日本の個人開発者の同人原石が欲しい人——98%で非常に好評、英語レビュー0件の400円テキストホラーノベル",
+      ],
+      bad: [
+        "アクションや怪物、ジャンプスケア、逃げる対象が欲しい人(本作はショックではなく散文でじわじわ恐怖を積む読み物型のテキストノベル)",
+        "日本語が読めない人、または英語でもう遊べる作品が欲しい人(対応言語は日本語のみで英語インターフェースすら無く、英語版はまだ無い)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3786,6 +3865,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Higurashi When They Cry is a sound novel created by the Japanese doujin circle 07th Expansion, written by Ryukishi07, with its first arc released at Comiket in 2002. Set in a small rural village, it unfolds as a looping tragedy in which the same days replay and small choices and missteps spiral toward gruesome violence before later answer arcs reveal the truth and a path to salvation; built and sold as an amateur work, it is the landmark origin of the Japanese amateur horror sound novel and its branching, choice-driven dread.",
       ja: "ひぐらしのなく頃には、日本の同人サークル07th Expansion（竜騎士07）が制作したサウンドノベルで、第1作が2002年のコミックマーケットで頒布された。山あいの小さな村を舞台に、同じ日々が繰り返される惨劇として展開し、わずかな選択や食い違いが凄惨な暴力へと転がり落ち、後の解答編で真相と救済への道が明かされる。アマチュアの手で作られ頒布された作品でありながら、選択分岐と繰り返しによる恐怖を核にした和製アマチュア恐怖サウンドノベルの系譜を切り開いた画期的な原点である。",
+    },
+  },
+  // 原点 学校であった怖い話, パンドラボックス / バナレックス, 1995(スーパーファミコン, 企画・飯島多紀哉)。
+  // 語り部を替えながら学校の怖い話・都市伝説を別々のエピソードとして語る、オムニバス形式の和製ホラー
+  // テキスト/サウンドノベルの形を確立。その後は個人・小規模インディーの「アパシーシリーズ」として長年展開され、
+  // 現在はSteam版「アパシー 鳴神学園 学校であった怖い話 極」(app 2283710)あり → steam で同定(established 側と
+  // /app/2283710/ で完全一致・href 破損回避)。怪異番号の「都市伝説オムニバス怪談ノベル」原点として新規 anchor。
+  "apathy-school-ghost-stories": {
+    steam: "2283710",
+    blurb: {
+      en: "Gakkou de Atta Kowai Hanashi is a horror sound novel released for the Super Famicom in 1995, planned by Takiya Iijima. Through several narrators who each recount the scary stories, school legends, and urban myths of one school as separate episodes, it built dread through text rather than shock and established the omnibus form of the Japanese horror sound novel. It lived on for years as the personal, small-scale indie Apathy series, with a current Steam version, and is the origin of the urban-legend omnibus ghost-story text novel.",
+      ja: "学校であった怖い話は、1995年にスーパーファミコン向けに発売されたホラーサウンドノベルで、飯島多紀哉が企画した。複数の語り部に、一つの学校の怖い話・学校の伝説・都市伝説を、それぞれ別のエピソードとして語らせる形式により、ショックではなくテキストで恐怖を積み上げ、オムニバス形式の和製ホラーサウンドノベルの形を確立した。その後は個人・小規模インディーの「アパシーシリーズ」として長年受け継がれ、現在はSteam版も配信されている、都市伝説オムニバス怪談テキストノベルの系譜の原点である。",
     },
   },
   // 原点 ナルキッソス(narcissu), 片岡とも / ステージ☆なな, 2005(元フリーゲーム発・後に商業化)。
