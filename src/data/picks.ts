@@ -3773,6 +3773,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "below-zero-despair": {
+    published: "2026-06-26",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "psychological-horror", lineage: "scp-foundation", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 353, positivePct: 97, noEnglish: false } },
+    games: [
+      {
+        name_en: "Below Zero 30 Degrees: Despair",
+        name_ja: "氷点下30度の絶望",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3736150/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A free Japanese psychological horror novel game in which two grown men are locked inside a walk-in freezer, and there is no survival ending. As the cold sets in, the game walks them through the real progression of hypothermia, hallucinations, paradoxical undressing (a documented late-stage symptom where victims feel burning hot and tear off their clothes), and pain, toward a buried \"truth\" and one of four deaths. A single run is about 15 to 20 minutes, mouse only, rendered in a PSX-style low-poly retro look. Choices open special conversations and probability-based random events give each run small differences, so with the skip function full completion of all endings runs roughly half an hour to two hours. Made by the Japanese solo doujin creator Mitsudomoe Koubou, released November 2025, distributed across Japanese doujin and free-game platforms like BOOTH, note, novelgame, and PLiCy, with the Steam version supporting Japanese only. The creator names the SCP Foundation, which they encountered in middle school, as the influence behind the work. Very Positive at 353 reviews and 97 percent, yet with only about 16 English reviews (around 4.5 percent), the wider West has barely found this free doujin horror.",
+        desc_ja: "成人男性2人が業務用の冷凍庫(ウォークイン・フリーザー)に閉じ込められる、無料の日本産・心理ホラーノベルゲーム。生存エンドは無い。冷えが進むにつれ、ゲームは低体温症の実際の進行——幻覚、そして「矛盾脱衣」(被害者が燃えるように熱く感じて服を脱ぎ捨てる、低体温症末期の実在する症状)、苦痛——を辿りながら、埋もれた「真相」と4つの死のいずれかへと向かわせる。1周は約15〜20分、操作はマウスのみ、PSX風(ローポリのレトロ3DCG)のビジュアルで描かれる。選択肢は特別な会話を開き、確率で発火するランダムイベントが各周回に小さな差を生むので、スキップ機能込みで全エンディング回収は概ね30分〜2時間。日本の個人同人開発者 みつどもえ工房 による一本で、2025年11月発売。BOOTH・note・novelgame・PLiCy など日本の同人/フリーゲームのプラットフォームで配布され、Steam版の対応言語は日本語のみ。作者は、中学時代に触れた SCP財団 を本作の影響源として挙げている。353レビュー97%で非常に好評なのに、英語レビューは約16件(約4.5%)しかなく、広い西側はこの無料の同人ホラーをまだほとんど見つけていない。",
+      },
+      {
+        name_en: "SCP Foundation",
+        name_ja: "SCP財団",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/SCP_Foundation",
+        wikidata: "https://www.wikidata.org/wiki/Q17439649",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: the SCP Foundation, a web-based collaborative fiction project begun in 2007, in which anonymous writers document fictional anomalous entities and phenomena as the classified files of a secret agency that Secures, Contains, and Protects them. Told in the flat, clinical voice of incident reports, with no single author and no fixed canon, it turned the bureaucratic record of the anomalous, and the dread of being sealed in with something inexplicable, into a shared modern mythology. Below Zero 30 Degrees: Despair is an heir to that anomalous-horror feel, named by its creator as the influence they met in middle school: it locks two men in a sealed freezer, treats the body's failure as the documented case to be read, and drives existential dread through a closed room toward death. This document-driven, closed-facility horror is distinct from the ghost-story and looping-tragedy lines, so it stands as its own origin.",
+        desc_ja: "この味の原点。SCP財団は、2007年に始まった web ベースの共同創作プロジェクトで、匿名の書き手たちが、架空の異常な存在や現象を、それらを「確保・収容・保護」する秘密機関の機密報告書として記録していく。特定の作者も固定された正典も持たず、感情を排した報告書の文体で綴られ、「異常を官僚的に記録する」営みと、「説明のつかない何かと密室に閉じ込められる」恐怖を、共有された現代の神話へと変えた。氷点下30度の絶望はその anomalous horror(異常存在ホラー)の手触りの直系で、作者自身が中学時代に出会った影響源として挙げている——2人の男を密閉された冷凍庫に閉じ込め、壊れていく身体そのものを「読まれるべき症例」として扱い、閉ざされた一室の中で実存的な恐怖を死へと向けて立ち上げる。この「文書で立ち上がる密室・閉鎖施設ホラー」は、怪談系や繰り返し惨劇系とは別物で、それ自体が一つの原点として立つ。",
+      },
+    ],
+    en: {
+      title: "Below Zero 30 Degrees: Despair - a buried free Japanese psychological horror novel where two men freeze to death in a sealed freezer, an heir to the SCP Foundation",
+      description: "A free Japanese psychological horror novel game with no survival ending: two men are locked in a walk-in freezer and the game walks them through real hypothermia, hallucinations, and paradoxical undressing toward one of four deaths. A 15-20 minute run, mouse only, in a PSX-style low-poly look, with choices and random events for replay. A free doujin work by Japan's solo creator Mitsudomoe Koubou. Very Positive at 353 reviews and 97 percent, yet Japanese only with about 16 English reviews: the West has barely found it.",
+      h1a: "There is no way out. ",
+      h1flip: "Only which death you reach",
+      h1b: ".",
+      lede: "A free Japanese psychological horror novel game in which two grown men are locked inside a walk-in freezer, and there is no survival ending. As the cold sets in, the game walks them through the real progression of hypothermia, hallucinations, and paradoxical undressing toward a buried truth and one of four deaths. A run is about 15 to 20 minutes, mouse only, in a PSX-style low-poly look; choices open special conversations and probability-based random events give each run small differences. A free doujin work by Japan's solo creator Mitsudomoe Koubou, in the lineage of the SCP Foundation's anomalous horror. The Steam version is Japanese only, and with only about 16 English reviews the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "From the first moment the door does not open, the game removes the one thing every survival horror promises: a way out. There is no survival ending, so what holds you is not hope of escape but the pull to learn how, and why, this ends.",
+        "The horror is the body failing on schedule: the cold creeps in, hallucinations bleed into the room, and the documented late symptom of paradoxical undressing arrives, so the dread is not a monster lunging but your own physiology read out to you like a clinical record you cannot look away from.",
+        "Each run is 15 to 20 minutes and lands on one of four deaths, and the choices and probability-based events leave small differences between runs, so finishing one death only makes you reach to trace the next branch and assemble the truth underneath, one more time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the SCP Foundation's anomalous, document-driven horror, where existential dread is built by sealing people in a closed room and reading the inexplicable out in a flat, clinical voice rather than by jump scares",
+        "You want a closed-room psychological horror novel about two men freezing in a freezer with no survival ending, that drives through real hypothermia symptoms toward four deaths, with choices and random events to trace across replays",
+        "You want a free, mouse-only Japanese solo-doujin gem the wider West has barely found, Very Positive at 97 percent, in a PSX-style low-poly look, short enough to finish a run in under 20 minutes",
+      ],
+      bad: [
+        "You want hope, a survival route, or a happy ending; this is built with no survival ending, so every path leads to one of four deaths and the appeal is the descent itself, not an escape",
+        "You cannot read Japanese, or you are sensitive to depictions of hypothermia, self-harm, blood, and death in a sealed space; the Steam version supports Japanese only and the content is heavy by design",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "氷点下30度の絶望 - 密閉された冷凍庫で2人の男が凍死していく、SCP財団の系譜の埋もれた無料の日本産・心理ホラーノベル",
+      description: "生存エンドの無い、無料の日本産・心理ホラーノベルゲーム。冷凍庫に閉じ込められた2人の男を、低体温症・幻覚・矛盾脱衣の実際の進行を辿りながら4つの死のいずれかへ向かわせる。1周15〜20分・マウスのみ・PSX風ローポリで、選択肢とランダムイベントで反復性を持つ。日本の個人開発者 みつどもえ工房 による無料の同人作。353レビュー97%で非常に好評なのに、日本語のみ・英語レビュー約16件で、西はまだほとんど見つけていない。",
+      h1a: "出口は無い。",
+      h1flip: "あるのは、どの死に辿り着くかだけ",
+      h1b: "。",
+      lede: "成人男性2人が業務用の冷凍庫に閉じ込められる、無料の日本産・心理ホラーノベルゲーム。生存エンドは無い。冷えが進むにつれ、ゲームは低体温症の実際の進行——幻覚、矛盾脱衣——を辿りながら、埋もれた「真相」と4つの死のいずれかへと向かわせる。1周は約15〜20分、操作はマウスのみ、PSX風のローポリで描かれ、選択肢は特別な会話を開き、確率で発火するランダムイベントが各周回に小さな差を生む。日本の個人開発者 みつどもえ工房 による無料の同人作で、SCP財団 の異常存在ホラーの系譜に連なる。Steam版の対応言語は日本語のみで、英語レビューは約16件しかなく、広い西側はこの作品をまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "扉が開かないと分かった最初の瞬間に、このゲームはあらゆるサバイバルホラーが約束するもの——「出口」——を取り上げる。生存エンドは無い。だから手を止めさせないのは脱出の希望ではなく、これが「どう」「なぜ」終わるのかを知りたい引力だ。",
+        "恐怖は、身体が決まった順序で壊れていくことそのものにある。冷えがじわじわと忍び寄り、幻覚が部屋に滲み出し、低体温症末期の実在症状である「矛盾脱衣」が訪れる。襲いかかる怪物ではなく、自分自身の生理現象が、目を逸らせない症例のように読み上げられていく——その不気味さだ。",
+        "1周は15〜20分で、4つの死のいずれかに着地する。選択肢と確率イベントが周回ごとに小さな差を残すから、一つの死を見届けるたびに、次の分岐を辿り、その下に沈む真相を組み上げたくて、もう一度手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "SCP財団 の異常存在ホラー——人を密室に閉じ込め、説明のつかないものを無機質な報告書の文体で読み上げることで、ジャンプスケアではなく実存的な恐怖を立ち上げる——が好きな人",
+        "生存エンドの無いまま、冷凍庫で凍えていく2人の男を描く密室心理ホラーノベルが欲しい人——低体温症の実際の症状を辿って4つの死へ向かい、選択肢とランダムイベントを周回で辿れる",
+        "広い西側がまだほとんど見つけていない、無料・マウスのみの日本の個人同人原石が欲しい人——97%で非常に好評、PSX風ローポリで、1周20分弱で終えられる短さ",
+      ],
+      bad: [
+        "希望や生存ルート、ハッピーエンドが欲しい人(本作は生存エンドを持たない設計で、どの道も4つの死のいずれかに至り、魅力は脱出ではなく堕ちていくことそのものにある)",
+        "日本語が読めない人、または密室での低体温症・自傷・流血・死の描写が苦手な人(Steam版の対応言語は日本語のみで、内容は設計上ヘビーである)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4033,6 +4112,19 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "After Burner II is an arcade rail shooter developed and published by Sega's AM2 division, released in 1987 on the X Board arcade hardware as a refined follow-up to After Burner. Seen from behind the cockpit of a fighter jet, it is a pseudo-3D on-rails shooter in which you race through relentless waves of enemy aircraft at high speed, lock missiles onto them, and unleash homing fire while the world banks and rushes past. By building its thrill on speed and pouring offensive fire into the targets ahead rather than careful dodging, it defined the fast, aggressive lock-and-erase rail-shooter feel, and is the origin of the behind-the-cockpit rail-shooter lineage, a branch of the shooter family distinct from the vertical-scrolling bullet-hell line.",
       ja: "After Burner II(アフターバーナーII)は、セガのAM2が開発・販売したアーケードのレールシューティングで、『After Burner』を洗練させた続編として1987年に業務用基板「X Board」で発売された。戦闘機のコクピット後方からの視点で展開する擬似3Dのオンレール(レール式)シューティングで、絶え間ない敵機の波の中を高速で駆け抜け、ミサイルをロックオンして追尾弾を撃ち込みながら、世界が傾き、後方へ流れ去っていく。慎重に避けるのではなく、速度に乗って前方の標的へ攻撃を撃ち込みまくる——その点に快感を置くことで、速くて攻撃的な「ロックして消す」レールシューターの手触りを確立した。縦スクロールの弾幕系とは別物の、コクピット後方視点レールシューターの系譜の原点である。",
+    },
+  },
+  // 原点 SCP Foundation(SCP財団), 2007-。匿名の書き手たちが collaborative fiction(共同創作)で、
+  // 異常な存在・物体を「収容」し、無感情な報告書の体裁で「記録」していく web ベースの創作プロジェクト。
+  // 閉鎖された施設・密室で異常と死に向き合う、現代の実存的恐怖(anomalous horror)の系譜の原点。
+  // 本作開発者が、中学時代に触れた SCP財団 への「リスペクト」を公式 X 初公開ポストおよびストアの詳細説明で
+  // 明言する直接の影響源。SCP財団はゲームでなく web 創作 → 公式 Steam 版なし。wikidata で同定(Steam id を
+  // 捏造しない・twilight-syndrome 型 href 破損の回避)。established 側と Q17439649 の完全一致で逆引き成立。
+  "scp-foundation": {
+    wikidata: "https://www.wikidata.org/wiki/Q17439649",
+    blurb: {
+      en: "The SCP Foundation is a web-based collaborative fiction writing project begun in 2007, in which anonymous writers document fictional anomalous entities, objects, and phenomena as if they were classified files of a secret agency tasked with Securing, Containing, and Protecting them. Written in the flat, clinical voice of incident reports and containment procedures, with no single author and no fixed canon, it turned the bureaucratic record of the anomalous, and the dread of being shut in with something inexplicable, into a shared modern mythology. It is the origin of the anomalous-horror lineage: existential, document-driven fear set in sealed rooms and closed facilities, distinct from ghost-story and looping-tragedy horror.",
+      ja: "SCP財団は、2007年に始まった web ベースの共同創作(collaborative fiction)プロジェクトで、匿名の書き手たちが、架空の異常な存在・物体・現象を、それらを「確保(Secure)・収容(Contain)・保護(Protect)」する秘密機関の機密報告書という体裁で記録していく。特定の作者を持たず固定された正典も持たないまま、感情を排した報告書・収容手順の無機質な文体で書かれ、「異常を官僚的に記録する」営みと、「説明のつかない何かと密室に閉じ込められる」恐怖を、共有された現代の神話へと変えた。閉ざされた施設・密室の中で、文書を通して実存的な恐怖を立ち上げる anomalous horror(異常存在ホラー)の系譜の原点であり、怪談系や繰り返し惨劇系のホラーとは別物の一枝である。",
     },
   },
 } as const;
