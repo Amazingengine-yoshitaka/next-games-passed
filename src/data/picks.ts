@@ -3695,6 +3695,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "million-depth": {
+    published: "2026-06-26",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "roguelike", lineage: "superhot", obscurity: "deep", reviewBand: "hundreds", rarity: { reviews: 679, positivePct: 94, noEnglish: false } },
+    games: [
+      {
+        name_en: "Million Depth",
+        name_ja: "ミリオンデプス",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2555950/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese roguelike-flavored action strategy game about diving a million floors underground. Moma searches for a lost friend through the ever-changing world of Million Depth, armed with a \"biotope jammer\" that freezes time around her for as long as she stays perfectly still. Surrounded by creatures in the dark, with weapons and shields that wear down and shatter mid-battle and leave her defenseless until repaired, you stop time to read the board, plan the next move, and craft new gear by combining blocks. The true story shifts between timelines and Moma's past choices ripple into other futures, so you piece together fragmented clues across multiple endings. Made by the Japanese developer Cyber Space Biotope (creator Pop) and published by PLAYISM, released November 2025. Very Positive at 679 reviews and 94 percent. It already plays in English (157 of those reviews are English, about 23 percent), yet the wider Western audience has not broadly found this Japanese indie.",
+        desc_ja: "100万階の地下へ潜る、日本のローグライク風アクションストラテジー。主人公モマは、絶えず姿を変える地下世界「Million Depth」で失った友を探す。武器は、自分が完全に静止しているあいだ周囲の時間を止める装置「biotope jammer(バイオトープ・ジャマー)」。闇のなかで生物に囲まれ、武器と盾は戦闘で摩耗して砕け、直すまで無防備になる——その瞬間こそ、時間を止めて盤面を読み、次の一手を組み立て、ブロックを組み合わせて装備をクラフトする。真実はタイムラインごとに移ろい、モマの過去の選択は別の未来へ波及していく。だから断片的な手がかりを繋ぎ、複数のエンディングへ向かう。日本の開発者 Cyber Space Biotope(開発者 Pop)が手がけ PLAYISM が販売、2025年11月発売。679レビュー94%で非常に好評。英語でもう遊べる(うち157件・約23%が英語レビュー)が、この日本のインディーを広い西側はまだ広くは見つけていない。",
+      },
+      {
+        name_en: "SUPERHOT",
+        name_ja: "SUPERHOT",
+        status: "established",
+        steam: "https://store.steampowered.com/app/322500/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: SUPERHOT, released in 2016 by the Superhot Team, built its whole identity on a single twist — time moves only when you move. Stand still and the world freezes; step, aim, or fire and it surges forward, turning every encounter into a puzzle you solve inside frozen moments. It defined the time-flows-with-your-motion feel. Million Depth is a clear heir to that idea: its biotope jammer freezes time while the heroine holds still, so you read the board and plan inside the pause, but it grafts that core onto a roguelike-flavored million-floor descent with weapon crafting and branching timelines, making it its own creature rather than a clone.",
+        desc_ja: "この味の原点。2016年に Superhot Team が放った SUPERHOT は、ただ一つの捻り——「時間は、自分が動いたときだけ進む」——にすべてを賭けた。静止すれば世界は凍り、踏み出し、狙い、撃てば時間が一気に走り出す。あらゆる遭遇が、凍った一瞬のなかで解く謎になる。「時間が自分の動きと共に流れる」という手触りを確立した作品だ。ミリオンデプスはその直系——biotope jammer はヒロインが静止するあいだ時間を止め、止まった間(ま)のなかで盤面を読み、計画を組む。だがその核を、ローグライク風の100万階下降・武器クラフト・分岐するタイムラインへ接ぎ木し、模倣ではない独自の一作へと仕立てている。",
+      },
+    ],
+    en: {
+      title: "Million Depth - a buried Japanese action-strategy where standing still freezes time so you read the board and craft your way down a million floors, an heir to SUPERHOT",
+      description: "A Japanese roguelike-flavored action strategy game. Stand perfectly still and a biotope jammer freezes time around you, so when creatures swarm and your gear shatters mid-battle you stop the world, read the board, plan, and craft new equipment from blocks. A story that splits across timelines, with multiple endings. By Japan's Cyber Space Biotope, published by PLAYISM. Very Positive at 679 reviews and 94 percent; it plays in English, yet the wider West has barely found it.",
+      h1a: "Don't react. ",
+      h1flip: "Stand still, freeze time, and read your way out",
+      h1b: ".",
+      lede: "A Japanese roguelike-flavored action strategy game about descending a million floors underground. The trick is your biotope jammer: stay perfectly still and time freezes around you, so the instant creatures swarm or your weapon shatters and leaves you defenseless, you stop the world, read the board, plan the next move, and craft fresh gear by combining blocks. The deeper story shifts between timelines and your past choices ripple into other futures. Made by Japan's Cyber Space Biotope and published by PLAYISM. It already plays in English, yet the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Creatures close in from the dark and your weapon picks this exact moment to shatter, leaving you defenseless, and your instinct is to panic, but instead you simply stop moving and the whole world freezes with you.",
+        "Inside that frozen pause you breathe, read the board, trace each enemy's reach, decide the one path through, and combine blocks into a fresh weapon, so survival is not reflexes but a plan assembled in stopped time.",
+        "Then you move and time crashes forward all at once, your plan executing in a single surge, and a floor later the story has quietly shifted timeline, your old choices echoing into a future you did not expect, pulling you one more floor down.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the SUPERHOT idea that time moves only when you move, where every fight becomes a puzzle solved inside frozen moments rather than a test of reflexes",
+        "You want that core grafted onto a roguelike-flavored million-floor descent with weapon crafting from blocks, breakable gear, branching timelines, and multiple endings to piece together",
+        "You want a Japanese indie gem the wider West has barely noticed, Very Positive at 94 percent, from Cyber Space Biotope and PLAYISM",
+      ],
+      bad: [
+        "You want a fast, reflex-driven action game; this is built around stopping time to think, so its thrill is planning inside the pause, not twitch execution",
+        "You expect a game already big in the West; it plays in English but is Japanese-led and still largely undiscovered abroad (about 23 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ミリオンデプス - 静止すると時間が止まり、盤面を読みクラフトで100万階を潜る、SUPERHOT の系譜の埋もれた日本のアクションストラテジー",
+      description: "日本のローグライク風アクションストラテジー。完全に静止すると biotope jammer が周囲の時間を止める。だから生物に囲まれ、戦闘中に装備が砕けても、世界を止めて盤面を読み、計画を立て、ブロックから装備をクラフトする。タイムラインごとに分岐する物語、複数のエンディング。日本の Cyber Space Biotope 開発、PLAYISM 販売。679レビュー94%で非常に好評。英語でも遊べるが、広い西側にはまだほとんど見つかっていない。",
+      h1a: "反応するな。",
+      h1flip: "静止し、時間を止めて、読み切って抜けろ",
+      h1b: "。",
+      lede: "100万階の地下を下る、日本のローグライク風アクションストラテジー。鍵は装置「biotope jammer」——完全に静止すると周囲の時間が止まる。だから生物が群がった瞬間も、武器が砕けて無防備になった瞬間も、世界を止め、盤面を読み、次の一手を組み立て、ブロックを組み合わせて装備をクラフトする。深層の物語はタイムラインごとに移ろい、過去の選択は別の未来へ波及する。日本の Cyber Space Biotope が開発し PLAYISM が販売。英語でもう遊べるが、広い西側にはまだほとんど見つかっていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "闇から生物が迫り、よりによってその瞬間に武器が砕けて無防備になる。本能は慌てろと叫ぶ。だがここでは、ただ動きを止める——すると世界が、あなたごと凍りつく。",
+        "凍った間(ま)のなかで息をつき、盤面を読み、敵それぞれの間合いをなぞり、抜ける一本道を決め、ブロックを組み合わせて新しい武器をクラフトする。生き残りは反射神経ではなく、止まった時間のなかで組み上げた計画だ。",
+        "そして動けば、時間が一気に崩れ落ちる。計画がひと息で執行される。一階下りれば物語は静かにタイムラインを変えていて、かつての選択が思いがけない未来へ谺(こだま)する——もう一階、下へと手が伸びる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「時間は自分が動いたときだけ進む」という SUPERHOT の発想が好きな人——あらゆる戦いが、反射神経の試験ではなく、凍った一瞬のなかで解く謎になる",
+        "その核を、ローグライク風の100万階下降に接ぎ木した作品が欲しい人——ブロックからの武器クラフト、壊れる装備、分岐するタイムライン、繋ぎ合わせる複数のエンディング",
+        "広い西側がまだほとんど気づいていない日本のインディー原石が欲しい人——94%で非常に好評、Cyber Space Biotope と PLAYISM",
+      ],
+      bad: [
+        "速い反射神経のアクションが欲しい人(本作は時間を止めて考える設計で、快感は瞬間反応ではなく「間」のなかの計画にある)",
+        "すでに西で大きい作品を期待する人(英語で遊べるが日本主体で、海外ではまだ広く未発見——英語レビューは約23%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3767,6 +3845,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "superhot": {
+    steam: "322500",
+    blurb: {
+      en: "SUPERHOT is a first-person shooter developed by the independent Superhot Team and released in 2016, built around a single signature mechanic: time moves only when you move. Standing still freezes the world almost completely, letting the player study a room full of bullets and enemies and plan inside frozen moments, then act and watch time surge forward. It crystallized and popularized the time-flows-with-your-motion design, and is the origin of the lineage of games that bind the passage of time to player action.",
+      ja: "SUPERHOT は、独立系の Superhot Team が開発し2016年に発売した一人称シューティングで、ただ一つの象徴的なメカニクス——「時間は、自分が動いたときだけ進む」——を核に作られている。静止すれば世界はほぼ完全に凍りつき、弾と敵で満ちた部屋を、凍った一瞬のなかで読み、計画してから動き、時間が一気に走り出すのを見届ける。「時間が自分の動きと共に流れる」というデザインを結晶化させ広く知らしめた作品であり、時間の流れをプレイヤーの行動に結びつけるゲーム群の系譜の原点である。",
+    },
+  },
   "slay-the-spire": {
     steam: "646570",
     blurb: {
