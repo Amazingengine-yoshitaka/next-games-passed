@@ -3066,6 +3066,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "before-you-disappear": {
+    published: "2026-06-22",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "higurashi", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 33, positivePct: 97, noEnglish: true } },
+    games: [
+      {
+        name_en: "Before You Disappear",
+        name_ja: "キミが消えてしまう前に",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3971860/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A romance-and-horror sound novel: a choice-driven ADV by the Japanese solo novel-game creator Nike. You transfer to a new school, wander into an abandoned schoolhouse, and find three girl ghosts who cannot pass on. You spend time with each of them, learn the regret that ties her to this place, and try to guide her toward being saved, which here means a parting. It is multi-ending: choose wrong and that heroine's spectral corruption advances, branching toward a harsh, grim bad end instead. Every character but the protagonist is fully voiced. Positive in Japan at 33 reviews and 97 percent, yet the West has not reached it at all: zero English reviews out of 33. There is no English version, the store supports Japanese only, so the language itself is the wall.",
+        desc_ja: "恋愛とホラーのサウンドノベル。日本の個人ノベルゲーム作家・ニケによる、選択肢式のADVだ。転校先で迷い込んだ廃校で、成仏できずにいる3人の幽霊少女と出会う。それぞれと時間を重ね、この場所に縛りつける未練を解き、救済——つまり、別れへと導こうとする。マルチエンドで、選択を誤るとそのヒロインの霊化が進み、壮絶で凄惨なバッドエンドへと分岐していく。主人公以外はフルボイス。33レビュー97%で日本では好評なのに、西はまだ一切届いていない——33件中、英語レビューは0件。英語版は存在しない。ストアは日本語のみ対応で、言語そのものが壁になっている。",
+      },
+      {
+        name_en: "Higurashi When They Cry",
+        name_ja: "ひぐらしのなく頃に",
+        status: "established",
+        steam: "https://store.steampowered.com/app/310360/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the Japanese amateur horror sound novel that branches between tragedy and salvation: in 2002, the doujin circle 07th Expansion (Ryukishi07) shipped a sound novel in which the same days loop, small missteps spiral into gruesome violence, and only the right path reveals the truth and a way to save everyone. This gem is a direct heir to that DNA, a choice-driven horror sound novel where a wrong reading drives ruin and the right one earns rescue, only it pours that structure into a romance with ghost girls whose salvation is a goodbye. Its theme song is also sung by Yuzuki, who recorded a vocal version of you, one of Higurashi's signature pieces, so the bloodline shows in the music too.",
+        desc_ja: "惨劇と救済の間で分岐する和製アマチュア恐怖サウンドノベルの原点。2002年、同人サークル07th Expansion(竜騎士07)が、同じ日々が繰り返され、わずかな食い違いが凄惨な暴力へと転がり落ち、正しい道だけが真相と全員を救う術を明かすサウンドノベルを世に出した。この未発掘の名作はそのDNAの直系——読み違えれば破滅へ、正しく読めば救済へと向かう選択分岐型の恐怖サウンドノベル。ただしその構造を、救済が別れになる幽霊少女との恋愛に注ぎ込んだ。本作の主題歌は、ひぐらしの代表曲『you』のボーカル版を歌った癒月が担当しており、音楽の面でも血統が表れている。",
+      },
+    ],
+    en: {
+      title: "Before You Disappear - a Japanese-only romance-and-horror sound novel where a wrong choice ruins her, an heir to Higurashi When They Cry",
+      description: "A romance-and-horror sound novel by the Japanese solo creator Nike. You transfer to a new school, wander into an abandoned schoolhouse, and help three girl ghosts undo the regret that binds them, guiding each toward a salvation that is really a parting. Multi-ending: choose wrong and her spectral corruption advances toward a grim bad end. Every character but the protagonist is fully voiced. Positive in Japan at 33 reviews and 97 percent, yet zero English reviews. Japanese only: the language is the wall.",
+      h1a: "Save her, and ",
+      h1flip: "saving her means letting her go",
+      h1b: ".",
+      lede: "A romance-and-horror sound novel by the Japanese solo novel-game creator Nike. You transfer to a new school, wander into an abandoned schoolhouse, and find three girl ghosts who cannot pass on. You spend time with each, learn the regret that ties her here, and try to guide her toward being saved, which here means a goodbye. It is multi-ending, and choose wrong and her spectral corruption advances toward a harsh bad end instead. Every character but you is fully voiced. In the lineage of the branching tragedy-and-salvation horror sound novel Higurashi When They Cry. Japanese only, with zero English reviews, the West has not reached it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every line of dialogue is a fork you cannot un-pick, because a wrong reading does not just dead-end the route, it pushes her spectral corruption one step further, so you weigh each choice with the quiet dread that you might be the one ruining her.",
+        "The goal is to save her, but salvation here is a parting, so the closer you grow the more it costs, and the warmth of getting through to a ghost and the ache of having to let her go are the same single act you cannot separate.",
+        "Multiple endings and the threat of a grim bad end mean one playthrough is never enough: you go back to read the gap you misread, to reach the salvation you missed, and the pull to get it right for her one more time keeps you in the schoolhouse longer than you meant.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the branching horror sound novel where a wrong choice spirals into ruin and the right one earns salvation, the structure Higurashi When They Cry made, told here through ghost girls",
+        "You want romance braided with horror, fully voiced for every character but the protagonist, where growing close to a ghost and having to say goodbye are the same act",
+        "You want a gem the West has not reached at all, Positive in Japan at 97 percent with zero English reviews out of 33, because there is no English version",
+      ],
+      bad: [
+        "You do not read Japanese: there is no English version and the store supports Japanese only, so the language itself is the wall",
+        "You want a horror with monsters and combat, or a romance with a clean happy ending, rather than a quiet, choice-driven tale where salvation means parting",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "キミが消えてしまう前に - 選択を誤ると彼女が壊れる、日本語のみの恋愛ホラーサウンドノベル。ひぐらしのなく頃にの系譜",
+      description: "日本の個人作家・ニケによる恋愛とホラーのサウンドノベル。転校先の廃校で、成仏できない3人の幽霊少女の未練を解き、救済——つまり別れへと導く。マルチエンドで、選択を誤ると霊化が進み壮絶なバッドエンドへ分岐する。主人公以外フルボイス。33レビュー97%で日本では好評なのに、英語レビューは0件。日本語のみ対応で、言語そのものが壁。",
+      h1a: "彼女を救う、けれど",
+      h1flip: "救うとは、別れること",
+      h1b: "。",
+      lede: "日本の個人ノベルゲーム作家・ニケによる、恋愛とホラーのサウンドノベル。転校先で迷い込んだ廃校で、成仏できずにいる3人の幽霊少女と出会う。それぞれと時間を重ね、この場所に縛りつける未練を解き、救済——つまり別れへと導こうとする。マルチエンドで、選択を誤るとそのヒロインの霊化が進み、壮絶なバッドエンドへ分岐していく。主人公以外はフルボイス。惨劇と救済の間で分岐する恐怖サウンドノベル、ひぐらしのなく頃にの系譜に連なる。日本語のみ対応で英語レビューは0件、西はまだ届いていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "一つ一つのセリフが、取り消せない分かれ道になる。読み違えると、その道が行き止まるだけでなく、彼女の霊化が一歩進んでしまうからだ。だから、自分こそが彼女を壊しているのかもしれない——その静かな恐れと共に、一つ一つの選択を量ることになる。",
+        "目的は彼女を救うこと。でもここでの救済は、別れだ。だから近づくほど、その代償は大きくなる。幽霊に想いが通じる温かさと、手放さなければならない痛みは、切り離せない一つの行為になっている。",
+        "マルチエンドと、凄惨なバッドエンドの脅威。だから一度の通しでは終われない。読み違えた隙間を読み直しに、見逃した救済へ届きに、また戻る。彼女のために、もう一度だけ正しく選びたい——その引力が、意図より長く廃校に留まらせる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "選択を誤れば破滅へ転がり、正しく選べば救済を得る——ひぐらしのなく頃にが作った分岐型恐怖サウンドノベルが好きで、それが幽霊少女で語られるものが欲しい人",
+        "恋愛とホラーが編み合わさり、主人公以外フルボイスで、幽霊と心を通わせることと別れを告げることが同じ行為になる物語が欲しい人",
+        "英語版が存在しないからこそ西がまだ一切届かない、97%で日本では好評なのに33件中英語レビュー0件の原石を掘りたい人",
+      ],
+      bad: [
+        "日本語が読めない人(英語版は存在せず、ストアは日本語のみ対応なので、言語そのものが壁になる)",
+        "怪物や戦闘のあるホラーや、すっきりしたハッピーエンドの恋愛が欲しい人(本作は救済が別れになる、静かな選択分岐の物語)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3226,6 +3304,16 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "NKODICE is a dice game developed by the individual creator ksym and released on Steam in May 2021, based on the traditional Japanese gambling game Chinchirorin. Its hook is that rolled dice show hiragana-like symbols that combine into crude or sexual words, and it became a viral hit, reaching the top of Steam's Japanese sales ranking in June 2021; it is the origin of a small wave of irreverent, word-combination novelty dice games.",
       ja: "NKODICE（んこダイス）は、個人クリエイターksymが開発し2021年5月にSteamで配信されたダイスゲームで、日本の伝統的な賭博「チンチロリン」を題材にしている。出目がひらがな状の記号で表示され、組み合わせると下ネタの単語になるのが特徴で、2021年6月にSteamの日本売上ランキング1位に達するなど口コミでヒットした、悪ノリ的な単語組み合わせ系ノベルティ・ダイスゲームの原点である。",
+    },
+  },
+  // 原点 ひぐらしのなく頃に, 07th Expansion(竜騎士07), 2002(Comiket 同人サウンドノベル)。選択や繰り返しの中で
+  // 惨劇に至り、正解で救済へ向かう分岐型恐怖サウンドノベルの構造を確立した和製アマチュア恐怖ノベルの系譜の原点。
+  // Steam 版あり(app 310360・MangaGamer 移植)→ steam で同定(established 側と /app/310360/ で完全一致)。
+  "higurashi": {
+    steam: "310360",
+    blurb: {
+      en: "Higurashi When They Cry is a sound novel created by the Japanese doujin circle 07th Expansion, written by Ryukishi07, with its first arc released at Comiket in 2002. Set in a small rural village, it unfolds as a looping tragedy in which the same days replay and small choices and missteps spiral toward gruesome violence before later answer arcs reveal the truth and a path to salvation; built and sold as an amateur work, it is the landmark origin of the Japanese amateur horror sound novel and its branching, choice-driven dread.",
+      ja: "ひぐらしのなく頃には、日本の同人サークル07th Expansion（竜騎士07）が制作したサウンドノベルで、第1作が2002年のコミックマーケットで頒布された。山あいの小さな村を舞台に、同じ日々が繰り返される惨劇として展開し、わずかな選択や食い違いが凄惨な暴力へと転がり落ち、後の解答編で真相と救済への道が明かされる。アマチュアの手で作られ頒布された作品でありながら、選択分岐と繰り返しによる恐怖を核にした和製アマチュア恐怖サウンドノベルの系譜を切り開いた画期的な原点である。",
     },
   },
 } as const;
