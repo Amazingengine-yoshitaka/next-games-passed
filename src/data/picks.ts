@@ -3852,6 +3852,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "timeline-detective": {
+    published: "2026-06-27",
+    publishAt: "2026-06-27",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "osint-investigation", lineage: "orwell", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 276, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "Demons' Timeline",
+        name_ja: "ミカクテイ事件の観測者-Demons'Timeline-",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4198660/DemonsTimeline/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Japanese SNS-puzzle deduction adventure in which you play the net detective El and solve supernatural murder cases using only the timeline of a fictional giant social network called Parrotter. The criminals are superhuman beings called Akuma, and each paradox case is cracked by reading posts for clues, gender, age, occupation, relationships, then linking public accounts to their secret alt accounts, recovering deleted data with passwords, citing the right posts as the grounds for your reasoning, and finally fitting a hashtag to complete the deduction. It is OSINT-style investigation, nine stages in all, with no time limit and no game over: the core is your power to read, to filter signal from noise, and to think logically. Made by the Japanese doujin indie team DigitalCats and released April 2026. Very Positive at 276 reviews and 98 percent, yet with only about 21 English reviews (7.6 percent) the wider West has barely found it. It already supports English and Japanese, and at 1,300 yen it is a paid, fully released game.",
+        desc_ja: "ネット探偵「エル」となり、架空の巨大SNS「パロッター」のタイムライン情報「だけ」を頼りに怪事件の真相を解く、日本のSNSパズル推理アドベンチャー。犯人は超常能力者「アクマ」で、怪事件「パラドックス」(殺人事件)は、投稿の手がかり(性別・年齢・職業・人間関係)を読み、公開アカウントと裏アカウントを紐付け、パスワードで削除データを復元し、投稿を根拠として正しく引用し、最後にハッシュタグを当てはめて推理を完成させることで解いていく。OSINT風調査で、全9ステージ、時間制限もゲームオーバーも無い。核にあるのは「読む力」「取捨選択」「論理的思考」だ。日本の同人/インディーチーム DigitalCats による一本で、2026年4月発売。276レビュー98%で非常に好評なのに、英語レビューは約21件(7.6%)しかなく、広い西側はまだほとんど見つけていない。英語と日本語に対応済みで、価格1,300円の有料作・正式リリース済みである。",
+      },
+      {
+        name_en: "Orwell: Keeping an Eye on You",
+        name_ja: "Orwell: Keeping an Eye on You",
+        status: "established",
+        steam: "https://store.steampowered.com/app/491950/Orwell_Keeping_an_Eye_On_You/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Orwell: Keeping an Eye on You, released in 2016 by Osmotic Studios and Daedalic Entertainment, put you behind a government surveillance system and let you read only a suspect's online traces, their social posts, chat logs, private files, and news, then drag fragments of conflicting evidence into a profile to decide who they are and what they did. By building deduction out of reading public and leaked information and choosing which excerpts to submit as proof, it defined the OSINT-style investigation adventure. Demons' Timeline is a clear heir to that idea: it hands you only the timeline of a fictional SNS and asks you to link public accounts to secret alts, cite posts as the grounds for your reasoning, and fit a hashtag to lock the truth, but it grafts that core onto a supernatural murder-mystery with deleted-data recovery and a nine-stage structure, making it its own creature rather than a clone.",
+        desc_ja: "この味の原点。2016年に Osmotic Studios と Daedalic Entertainment が放った Orwell: Keeping an Eye on You は、プレイヤーを政府の監視システムの後ろに座らせ、対象人物のオンラインの痕跡——SNSの投稿、チャットのログ、私的なファイル、ニュース——「だけ」を読ませ、真偽の入り混じる証拠の断片をプロファイルへドラッグして、その人物が何者で何をしたのかを確定させた。公開情報やリークされた情報を読み解き、どの一節を証拠として提出するかを選ぶことで推理を組み上げる仕組みにより、OSINT 調査型アドベンチャーを定義した作品だ。ミカクテイ事件の観測者はその直系——架空のSNSのタイムライン「だけ」を手渡し、公開アカウントと裏アカウントを紐付け、投稿を根拠として引用し、ハッシュタグを当てはめて真相を確定させる。だがその核を、削除データの復元と全9ステージ構成を備えた超常殺人ミステリへ接ぎ木し、模倣ではない独自の一作へと仕立てている。",
+      },
+    ],
+    en: {
+      title: "Demons' Timeline - a buried Japanese SNS-puzzle deduction adventure where you solve murders from a fake social network's timeline alone, an heir to Orwell: Keeping an Eye on You",
+      description: "A Japanese SNS-puzzle deduction adventure. As the net detective El, you crack supernatural murder cases using only the timeline of a fictional social network: read posts for clues, link public accounts to secret alts, recover deleted data with passwords, cite the right posts as your grounds, and fit a hashtag to complete each deduction. OSINT-style investigation, nine stages, no time limit, no game over. By Japan's doujin indie team DigitalCats. Very Positive at 276 reviews and 98 percent; it supports English, yet the wider West has barely found it.",
+      h1a: "Don't accuse. ",
+      h1flip: "Read the timeline until the truth is forced",
+      h1b: ".",
+      lede: "A Japanese SNS-puzzle deduction adventure in which you play the net detective El and solve supernatural murder cases using only the timeline of a fictional giant social network called Parrotter. You read posts for clues, gender, age, occupation, relationships, link public accounts to their secret alts, recover deleted data with passwords, cite the right posts as the grounds for your reasoning, and finally fit a hashtag to complete the deduction. It is OSINT-style investigation across nine stages, with no time limit and no game over: the core is your power to read, to filter signal from noise, and to think logically. Made by Japan's doujin indie team DigitalCats. It supports English, yet the wider West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "All you are given is a timeline, and the case is buried inside the noise of ordinary posts, so the work is not chasing a culprit but reading: tracing gender, age, job, and who talks to whom until a face starts to surface out of the scroll.",
+        "The click lands the moment a polished public account and a venomous secret alt turn out to be the same person, and you recover the deleted post that proves it, so the proof is not handed to you but assembled from fragments you chose to trust.",
+        "There is no clock and no game over to rush you, so the pull is purely the itch to be right: you cite the exact posts as your grounds, fit the final hashtag, and the truth locks into place, and the next stage's timeline is already waiting to be read.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Orwell idea of solving a case from someone's digital footprint alone, where deduction is reading public and leaked information and choosing which excerpts are the proof, rather than action or interrogation",
+        "You want that core grafted onto a supernatural SNS murder mystery: link public accounts to secret alts, recover deleted data with passwords, cite posts as grounds, and fit a hashtag to lock each of nine stages, with no time limit and no game over",
+        "You want a Japanese doujin-indie gem the wider West has barely noticed, Very Positive at 98 percent over 276 reviews, that already supports English",
+      ],
+      bad: [
+        "You want action, fast reflexes, or fail states; this is built around slow reading and logic with no time limit and no game over, so the thrill is being right, not being quick",
+        "You dislike text-heavy investigation or want a big, already-popular Western title; this is reading-first, Japanese-led, paid at 1,300 yen, and still largely undiscovered abroad (about 7.6 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ミカクテイ事件の観測者 - 架空SNSのタイムラインだけで殺人事件を解く、Orwell の系譜の埋もれた日本のSNS推理アドベンチャー",
+      description: "日本のSNSパズル推理アドベンチャー。ネット探偵「エル」となり、架空SNSのタイムライン情報だけで怪事件を解く。投稿の手がかりを読み、公開アカウントと裏アカウントを紐付け、パスワードで削除データを復元し、投稿を根拠として引用し、ハッシュタグを当てはめて推理を完成させる。OSINT風調査、全9ステージ、時間制限もゲームオーバーも無い。日本の同人/インディーチーム DigitalCats 制作。276レビュー98%で非常に好評。英語に対応済みだが、広い西側にはまだほとんど見つかっていない。",
+      h1a: "告発するな。",
+      h1flip: "タイムラインを読み切り、真相を必然にしろ",
+      h1b: "。",
+      lede: "ネット探偵「エル」となり、架空の巨大SNS「パロッター」のタイムライン情報「だけ」を頼りに怪事件の真相を解く、日本のSNSパズル推理アドベンチャー。投稿の手がかり(性別・年齢・職業・人間関係)を読み、公開アカウントと裏アカウントを紐付け、パスワードで削除データを復元し、投稿を根拠として正しく引用し、最後にハッシュタグを当てはめて推理を完成させる。OSINT風調査で全9ステージ、時間制限もゲームオーバーも無い。核にあるのは「読む力」「取捨選択」「論理的思考」だ。日本の同人/インディーチーム DigitalCats が手がける。英語に対応済みだが、広い西側にはまだほとんど見つかっていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "手渡されるのはタイムラインだけ。事件は何気ない投稿のノイズの中に埋もれている。だから仕事は犯人を追うことではなく、読むこと——性別、年齢、職業、誰が誰と話しているかをなぞるうちに、スクロールの中から一つの顔が浮かび上がってくる。",
+        "取り澄ました公開アカウントと、毒を吐く裏アカウントが同一人物だと判明し、それを裏づける削除済みの投稿を復元できた瞬間に、手応えが来る。証拠は与えられるのではなく、自分が信じると選んだ断片から組み上がる。",
+        "急かす時計もゲームオーバーも無いから、手を止めさせるのは「正しくありたい」という純粋な疼きだ。根拠となる投稿を正確に引用し、最後のハッシュタグを当てはめると、真相がカチリと嵌まる——そして次のステージのタイムラインが、もう読まれるのを待っている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「人物のデジタルな足跡だけで事件を解く」Orwell の発想が好きな人——推理が、アクションや尋問ではなく、公開情報やリーク情報を読み、どの一節が証拠かを選ぶことで成り立つ",
+        "その核を、超常のSNS殺人ミステリに接ぎ木した作品が欲しい人——公開アカウントと裏アカウントの紐付け、パスワードでの削除データ復元、投稿を根拠とした引用、ハッシュタグで全9ステージを確定、時間制限もゲームオーバーも無い",
+        "広い西側がまだほとんど気づいていない、日本の同人/インディー原石が欲しい人——276レビュー98%で非常に好評、しかも英語に対応済み",
+      ],
+      bad: [
+        "アクションや速い反射、失敗ペナルティが欲しい人(本作は時間制限もゲームオーバーも無い、じっくり読む推理と論理の設計で、快感は速さではなく「正しさ」にある)",
+        "テキスト主体の調査が苦手な人、またはすでに西で人気の大作を期待する人(本作は読むことが主体で日本主体、価格1,300円の有料作で、海外ではまだ広く未発見——英語レビューは約7.6%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3948,6 +4027,18 @@ const LINEAGE_ANCHOR = {
   "two-point-hospital": { steam: "535930" },
   "archero": { wikidata: "https://www.wikidata.org/wiki/Q116031886" },
   "her-story": { steam: "368370" },
+  // 原点 Orwell: Keeping an Eye on You, Osmotic Studios / Daedalic Entertainment, 2016。プレイヤーは
+  // 政府の監視システム「The Orwell」のオペレーターとなり、対象人物のオンライン情報(SNS・チャット・私的
+  // ファイル・ニュース)「だけ」を読み、真偽の入り混じる証拠の断片(datachunk)をプロファイルにドラッグして
+  // 真相を確定していく。公開情報の取捨選択と引用で人物像を組み上げる OSINT 調査型アドベンチャーの系譜の原点。
+  // Steam 版あり(app 491950)→ steam で同定(established 側と /app/491950/ で完全一致・href 破損回避)。
+  "orwell": {
+    steam: "491950",
+    blurb: {
+      en: "Orwell: Keeping an Eye on You is an investigative adventure game developed by Osmotic Studios and published by Daedalic Entertainment, released in 2016. Casting the player as an operator of a government surveillance system called The Orwell, it has you read only a suspect's online traces, their social posts, chat logs, private files, and news, and drag fragments of conflicting evidence into a profile to decide who they are and what they did. By building deduction out of reading public and leaked information and choosing which excerpts to submit as proof, it defined the OSINT-style investigation adventure, the lineage of games where you solve a case from someone's digital footprint alone.",
+      ja: "Orwell: Keeping an Eye on You は、Osmotic Studios が開発し Daedalic Entertainment が販売した調査アドベンチャーで、2016年に発売された。プレイヤーは政府の監視システム「The Orwell」のオペレーターとなり、対象人物のオンラインの痕跡——SNSの投稿、チャットのログ、私的なファイル、ニュース——「だけ」を読み、真偽の入り混じる証拠の断片をプロファイルへドラッグして、その人物が何者で何をしたのかを確定していく。公開情報やリークされた情報を読み解き、どの一節を証拠として提出するかを選ぶことで推理を組み上げる仕組みにより、「人物のデジタルな足跡だけで事件を解く」OSINT 調査型アドベンチャーの系譜を確立した、その原点である。",
+    },
+  },
   "to-the-moon": {
     steam: "206440",
     blurb: {
