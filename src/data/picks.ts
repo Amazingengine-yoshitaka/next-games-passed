@@ -3301,6 +3301,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "furikake-spacy": {
+    published: "2026-06-23",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "nantonaku-crystal", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 246, positivePct: 96, noEnglish: true } },
+    games: [
+      {
+        name_en: "ふりかけ☆スペイシー (no official English title)",
+        name_ja: "ふりかけ☆スペイシー",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1764700/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A high-tempo Neo-Showa nonsense-gag novel told in cel-shaded illustration and animation, in the sound-novel form of a visual novel, made by the Japanese solo doujin creator Yonton Tomachin (developer and publisher both). Across seven episodes, roughly one anime cours, the cat-eared protagonist Saatan and a cast of crazed schoolgirls run riot through hell, outer space, the inside of a child's body, and other surreal worlds. Its core device is the Neo-Showa Dictionary, which annotates some 700 proper nouns to bury you in 1980s Japanese culture, packed with homage and parody of 80s anime, games, films, music, and celebrities, plus over thirty original BGM tracks and divination and wordplay mini-games. Very Positive in Japan at 246 reviews and 96 percent, but the West has barely reached it: the reviews are dominated by 189 in Japanese against only 5 in English. There is no English version (the store supports Japanese and Simplified Chinese only), and an 80s Japanese proper-noun parody is brutally hard to translate, so the language is the wall.",
+        desc_ja: "セル画風のイラストとアニメで展開する、高テンポのネオ昭和ナンセンスギャグノベル。サウンドノベル形式のビジュアルノベルだ。日本のひとり同人作家・よんとんトマチンが、開発も販売も手がけた一本。全7エピソード(アニメ1クール相当)を通して、ブリ耳の主人公・さぁたんと狂気の女子高生たちが、地獄・宇宙・子どもの体内など、シュールな世界を大暴れする。核となる仕組みは「ネオ昭和辞典」——約700語の固有名詞を注釈で解説し、80年代日本の文化を浴びせてくる。80年代のアニメ・ゲーム・映画・音楽・芸能人へのオマージュとパロディが詰め込まれ、30曲超のオリジナルBGM、占いや言葉遊びのミニゲームまで備える。246レビュー96%で日本では非常に好評なのに、西はまだほとんど届いていない——レビューは英語5件に対し日本語189件が主体だ。英語版は存在せず(ストアは日本語と簡体字中国語のみ対応)、80年代日本の固有名詞パロディは翻訳難度が極端に高い。言語そのものが壁になっている。",
+      },
+      {
+        name_en: "Nantonaku, Crystal",
+        name_ja: "なんとなく、クリスタル",
+        status: "established",
+        homepage: "https://ja.wikipedia.org/wiki/%E3%81%AA%E3%82%93%E3%81%A8%E3%81%AA%E3%81%8F%E3%80%81%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB",
+        wikidata: "https://www.wikidata.org/wiki/Q11274657",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of capturing an era by drowning you in its proper nouns: in 1980, the writer Yasuo Tanaka published Nantonaku, Crystal, a novel that followed a fashion-model college student through her brand-saturated Tokyo days and annotated the real brands, shops, music, and trends it name-drops in 442 footnotes, turning the consumer culture of its moment into the substance of the work. It is a novel, not a game, so it has no Steam release. This gem is a direct heir to that DNA: the Neo-Showa Dictionary that annotates some 700 proper nouns to bathe you in 1980s culture is that same annotated style, only turned into a high-tempo nonsense-gag novel that makes the footnotes themselves the joke.",
+        desc_ja: "固有名詞の洪水で同時代を切り取る系譜の原点。1980年、作家・田中康夫が なんとなく、クリスタル を世に出した——ファッションモデルの女子大生が東京のブランドに彩られた日常を生きる小説で、本文が名指しする実在のブランド・店・音楽・流行を442個の注釈で解説し、その時代の消費文化そのものを作品の実質に変えてみせた。これは小説であってゲームではない——ゆえに Steam 版はない。この未発掘の名作はそのDNAの直系——約700語の固有名詞を注釈で解説し80年代文化を浴びせる「ネオ昭和辞典」は、まさにその注釈スタイルそのもので、ただしそれを高テンポのナンセンスギャグノベルへ転化し、注釈それ自体を笑いに変えてみせる。",
+      },
+    ],
+    en: {
+      title: "Furikake Spacy - a high-tempo Neo-Showa nonsense-gag novel that buries you in 700 annotated 80s proper nouns, an heir to Nantonaku, Crystal",
+      description: "A high-tempo Neo-Showa nonsense-gag novel in cel-shaded illustration and animation, the sound-novel form of a visual novel, by the Japanese solo doujin creator Yonton Tomachin. Across seven episodes, the cat-eared Saatan and crazed schoolgirls run riot through hell, space, and a child's body, while a Neo-Showa Dictionary annotates some 700 proper nouns to drown you in 1980s culture, with 30-plus original tracks and mini-games. Very Positive in Japan at 246 reviews and 96 percent, but with only 5 English reviews against 189 in Japanese, and no English version, the West has barely reached it.",
+      h1a: "Seven hundred annotated 80s nouns, fired at you ",
+      h1flip: "until the footnotes become the joke",
+      h1b: ".",
+      lede: "A high-tempo Neo-Showa nonsense-gag novel told in cel-shaded illustration and animation, the sound-novel form of a visual novel, by the Japanese solo doujin creator Yonton Tomachin. Across seven episodes, roughly one anime cours, the cat-eared protagonist Saatan and a cast of crazed schoolgirls run riot through hell, outer space, and the inside of a child's body. Its core device is the Neo-Showa Dictionary, which annotates some 700 proper nouns to bury you in 1980s Japanese culture, with 30-plus original BGM tracks and divination and wordplay mini-games. In the lineage of Nantonaku, Crystal, the 1980 novel that captured an era through 442 footnotes. There is no English version (the store supports Japanese and Simplified Chinese only), so the West has barely reached it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The Neo-Showa Dictionary does not slow the comedy down, it is the comedy: 80s proper nouns get fired at you faster than you can place them, and every footnote you tap to catch up lands as its own punchline, so the act of reading the annotations becomes the gag itself.",
+        "The pace never lets you set the controller down, because the cel-shaded illustration and animation keep flipping the scene, hell to outer space to the inside of a child's body, and the next absurd turn is always already on screen before you have finished laughing at the last.",
+        "It does not ask you to know the 1980s, it floods you with it until you do: across seven episodes the homage and parody pile up so densely that you stop trying to catch every reference and just let the era wash over you, which is exactly the trap that keeps you reading one more annotation.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Nantonaku, Crystal idea of capturing an era through annotation, here turned into a high-tempo gag novel where a Neo-Showa Dictionary annotates some 700 proper nouns to drown you in 1980s culture",
+        "You want dense, relentless nonsense comedy in cel-shaded illustration and animation, packed with homage and parody of 80s anime, games, films, music, and celebrities, plus 30-plus original tracks and mini-games",
+        "You want a gem the West has barely reached, Very Positive in Japan at 96 percent across 246 reviews, with only 5 English reviews against 189 in Japanese because there is no English version",
+      ],
+      bad: [
+        "You do not read Japanese: there is no English version, the store supports only Japanese and Simplified Chinese, and the comedy lives entirely in 80s Japanese proper nouns, so the language is the wall",
+        "You want a structured story or gameplay challenge, rather than a relentless, plot-light barrage of nonsense gags and annotated 80s references",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ふりかけ☆スペイシー - 約700語の80年代固有名詞を注釈で浴びせる、高テンポのネオ昭和ナンセンスギャグノベル。なんとなく、クリスタルの系譜",
+      description: "セル画風のイラストとアニメで展開する、高テンポのネオ昭和ナンセンスギャグノベル(サウンドノベル形式のビジュアルノベル)。日本のひとり同人作家・よんとんトマチン作。全7エピソードを通して、ブリ耳のさぁたんと狂気の女子高生たちが地獄・宇宙・子どもの体内を大暴れ。約700語の固有名詞を注釈する「ネオ昭和辞典」で80年代文化を浴びせ、30曲超のBGMとミニゲームを備える。246レビュー96%で日本では非常に好評なのに、英語レビューは5件で日本語189件が主体、英語版もなく西はまだほとんど届いていない。",
+      h1a: "約700語の80年代固有名詞を浴びせ、",
+      h1flip: "注釈そのものが笑いになるまで",
+      h1b: "。",
+      lede: "セル画風のイラストとアニメで展開する、高テンポのネオ昭和ナンセンスギャグノベル。サウンドノベル形式のビジュアルノベルだ。日本のひとり同人作家・よんとんトマチンが作った一本。全7エピソード(アニメ1クール相当)を通して、ブリ耳の主人公・さぁたんと狂気の女子高生たちが、地獄・宇宙・子どもの体内など、シュールな世界を大暴れする。核となる仕組みは「ネオ昭和辞典」——約700語の固有名詞を注釈で解説し、80年代日本の文化を浴びせてくる。30曲超のオリジナルBGM、占いや言葉遊びのミニゲームも備える。固有名詞の洪水で時代を切り取る なんとなく、クリスタル(1980)の系譜に連なる。英語版は存在せず(ストアは日本語と簡体字中国語のみ対応)、西はまだほとんど届いていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ネオ昭和辞典は、ギャグの足を引っ張るものじゃない。それ自体がギャグだ。80年代の固有名詞が、見て取れる速さを超えて浴びせられ、追いつくために叩く注釈の一つ一つが、それぞれオチとして着地する。だから「注釈を読む」という行為そのものが、ボケになる。",
+        "テンポはコントローラーを置かせてくれない。セル画風のイラストとアニメが場面を次々ひっくり返し——地獄から宇宙へ、子どもの体内へ——直前のボケで笑い終わる前に、次の不条理がもう画面に出ているからだ。",
+        "80年代を「知っていること」は求められない。知るまで浴びせてくる。全7エピソードを通してオマージュとパロディが濃密に積み上がり、やがて全部の元ネタを拾おうとするのをやめ、ただその時代に浸るようになる——それこそが「もう一つだけ注釈を」と読み続けさせる罠だ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "注釈で時代を切り取る なんとなく、クリスタル の発想が好きで、それが高テンポのギャグノベルに転化されたものが欲しい人——約700語の固有名詞を注釈する「ネオ昭和辞典」で80年代文化を浴びせてくる",
+        "セル画風のイラストとアニメで展開する、濃密で容赦のないナンセンスギャグが欲しい人——80年代のアニメ・ゲーム・映画・音楽・芸能人へのオマージュとパロディが詰まり、30曲超のBGMとミニゲーム付き",
+        "96%・246レビューで日本では非常に好評なのに西がまだほとんど届いていない原石を掘りたい人——英語版が存在しないため、英語レビューは5件で日本語189件が主体",
+      ],
+      bad: [
+        "日本語が読めない人(英語版は存在せず、ストアは日本語と簡体字中国語のみ対応で、笑いは80年代日本の固有名詞に丸ごと宿るため、言語そのものが壁になる)",
+        "構成された物語やゲーム的な手応えが欲しい人(本作は筋を追うより、ナンセンスギャグと注釈された80年代ネタを浴び続ける一本)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3492,6 +3571,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Daisenryaku is a turn-based computer wargame series developed and published by SystemSoft, first released in Japan in 1985. By splitting a map into territory that two sides contest turn by turn, deploying and maneuvering individual military units across it, and winning through the conquest of ground, it established the template of the Japanese hex-and-unit strategy wargame, becoming the long-running origin of the turn-based territory-conquest strategy game in Japan.",
       ja: "大戦略は、システムソフトが開発・販売したターン制のコンピュータ・ウォーゲームシリーズで、1985年に日本で初めて発売された。マップを陣取りの領域に分け、両軍がターンごとに奪い合い、個々の戦闘ユニットを配置・運用して領土の制圧によって勝敗を決する仕組みにより、日本における「ユニット運用×領土制圧」型の戦略ウォーゲームの雛形を確立した。ターン制の国取りストラテジーの、長く続く系譜の元祖である。",
+    },
+  },
+  // 原点 なんとなく、クリスタル(田中康夫, 1980)。本作の中核ギミック「ネオ昭和辞典」(約700語の固有名詞を
+  // 注釈で解説しながら80年代文化を浴びせる手法)の直接の祖。同時代の風俗・ブランド・流行を442個の膨大な
+  // 注釈で作品化したスタイルを確立した小説で、ゲームでない → 公式 Steam 版なし。wikidata で同定(Steam id を
+  // 捏造しない・twilight-syndrome 型 href 破損の回避)。established 側と Q11274657 の完全一致で逆引き成立。
+  "nantonaku-crystal": {
+    wikidata: "https://www.wikidata.org/wiki/Q11274657",
+    blurb: {
+      en: "Nantonaku, Crystal (Somehow, Crystal) is a 1980 debut novel by the Japanese writer Yasuo Tanaka, which followed a fashion-model college student through her brand-saturated everyday life in Tokyo. Its defining device was its 442 footnotes annotating the real brands, shops, music, and trends the narrative name-drops, turning the consumer culture of its moment into the substance of the work itself. That annotated style is the origin of capturing an era by drowning the reader in its proper nouns, the lineage that the Neo-Showa dictionary mechanic descends from directly.",
+      ja: "なんとなく、クリスタルは、作家・田中康夫が1980年に発表したデビュー小説で、ファッションモデルの女子大生が東京のブランドに彩られた日常を生きる姿を描いた。最大の特徴は、本文が名指しする実在のブランド・店・音楽・流行を解説する442個の膨大な注釈で、その時代の消費文化そのものを作品の実質に変えてみせた点にある。この注釈で時代の風俗を浴びせて作品化するスタイルは、固有名詞の洪水で同時代を切り取る系譜の原点であり、本作「ネオ昭和辞典」の仕組みが直接連なる祖である。",
     },
   },
 } as const;
