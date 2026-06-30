@@ -3380,6 +3380,85 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "devil-connection": {
+    published: "2026-06-24",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "affection-adv", lineage: "tokimeki-memorial", obscurity: "wall", reviewBand: "around_1k", reachState: "lang_walled", rarity: { reviews: 1842, positivePct: 99, noEnglish: true } },
+    games: [
+      {
+        name_en: "DevilConnection",
+        name_ja: "でびるコネクショん",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3054820/DevilConnection/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A choice-driven adventure about contracting a powerless little devil and summoning kemono characters across the world of Majirisia. You wield the devil's power, an Evil Eye search, to peer into each target's heart and read what stirs them, then pick one of two dialogue choices to raise their emotions and harvest the magical power that pours out. An affection-style emotion meter, multiple endings, and photo and collection elements wrap a dark-fantasy, dark-humor comedy tone. Made by the Japanese solo creator Bayachao under the name ChaoGames, self-published on Steam (a Switch port via PLAYISM is planned for 2026). In the lineage of the affection-parameter raising adventure that Tokimeki Memorial established, only it swaps romance for a devil's contract that harvests emotion as magic. Overwhelmingly Positive in Japan at 1,842 reviews and 99 percent, yet the West has barely found it: just 79 English reviews out of 1,842, and an English version does not exist yet (the store is Japanese-only). Note: English localization first arrives with the 2026 Switch version; on PC it is Japanese-only for now.",
+        desc_ja: "力なき小悪魔と契約し、世界マジリシアにケモノたちを召喚していく、選択駆動のアドベンチャー。悪魔の力「邪眼サーチ」で相手の心を覗き、何が感情を揺らすのかを読み取り、二つの選択肢から一つを選んでその感情を高ぶらせ、あふれ出す魔力を収穫する。好感度型の感情メーター、マルチエンディング、写真・コレクション要素が、ダークファンタジー×ダークユーモアのコメディを包む。日本のひとりクリエイター ばやちゃお が ChaoGames 名義で作り、Steam で自主販売した一本(2026年に PLAYISM 経由の Switch 移植を予定)。好感度パラメータを選択で育てる育成型ADVを確立した ときめきメモリアル の系譜に連なる——ただし恋愛ではなく、悪魔契約で感情を魔力として収穫する捻りを加えている。1,842レビュー99%で日本では圧倒的に好評なのに、西はまだほとんど見つけていない——1,842件中、英語レビューはわずか79件で、英語版そのものがまだ存在しない(ストアは日本語のみ)。注: 英語ローカライズは2026年の Switch 版で初提供。PC では現状、日本語のみ。",
+      },
+      {
+        name_en: "Tokimeki Memorial",
+        name_ja: "ときめきメモリアル",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Tokimeki_Memorial",
+        wikidata: "https://www.wikidata.org/wiki/Q1364574",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the affection-parameter raising adventure: in 1994, Konami built a dating sim where you read each girl's interests, then raise an affection parameter through dialogue choices and daily actions over a three-year calendar toward a confession. No official Steam release. This gem is a direct heir to that core, reading a target's heart and choosing how to speak to lift their emotions, only it makes the harvest a devil's magic rather than romance.",
+        desc_ja: "好感度パラメータを選択で育てる育成型ADVの原点。1994年、コナミが、相手の興味を読み、3年間のカレンダーの中で選択肢や日々の行動を通して好感度パラメータを高め、告白を目指す恋愛シミュレーションを生んだ。公式 Steam 版なし。この未発掘の名作はその核の直系——相手の心を読み、どう語りかけるかを選んで感情を持ち上げる。ただし本作はその収穫を、恋愛ではなく悪魔の魔力にする。",
+      },
+    ],
+    en: {
+      title: "DevilConnection - a buried choice-driven ADV where you read a heart and stir its emotion to harvest magic, an heir to Tokimeki Memorial",
+      description: "A choice-driven ADV: contract a little devil, summon kemono across Majirisia, and use an Evil Eye search to peer into each target's heart, then pick one of two lines to raise their emotion and harvest magic. An affection-style meter, multiple endings, dark-humor comedy. Overwhelmingly Positive in Japan at 1,842 reviews and 99 percent, yet just 79 English reviews and no English version yet (Japanese-only).",
+      h1a: "Read the heart. ",
+      h1flip: "Stir it. Harvest the magic",
+      h1b: ".",
+      lede: "A choice-driven adventure where you contract a powerless little devil and summon kemono characters across the world of Majirisia. You wield the devil's Evil Eye search to peer into each target's heart, read what moves them, then pick one of two dialogue choices to raise their emotion and harvest the magic that pours out. An affection-style emotion meter, multiple endings, a dark-fantasy, dark-humor tone. A solo-feeling work by the Japanese creator Bayachao as ChaoGames, in the lineage of the affection-parameter raising adventure Tokimeki Memorial. An English version does not exist yet, so the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The Evil Eye opens and a target's heart lies bare in front of you, so you stop guessing and start reading: this is what moves them, this is the soft spot, and the next thing you say is no longer a gamble but an aimed shot.",
+        "Two lines appear, and you weigh them not for romance but for leverage, picking the one that will spike their emotion highest, because the higher you lift it the more magic pours out when it breaks.",
+        "And when the read is right and the choice lands, the meter surges and the harvest hits, a dark little thrill of having seen straight through someone and turned their feeling into power. Then the next target waits, and you want to read them too.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the read-the-heart, raise-the-meter core of Tokimeki Memorial, but want it twisted into a devil's contract that harvests emotion as magic",
+        "You want a choice-driven ADV with a dark-fantasy, dark-humor tone, an affection-style emotion meter, multiple endings, and kemono characters to collect",
+        "You want a gem the West has not found yet, Overwhelmingly Positive in Japan at 99 percent yet only 79 English reviews out of 1,842",
+      ],
+      bad: [
+        "You need to play in English right now (an English version does not exist yet; the store is Japanese-only, and English localization first arrives with the 2026 Switch version)",
+        "You want a straight romance dating sim rather than a dark-humor comedy where you harvest emotion as a devil's magic",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "でびるコネクショん - 相手の心を読み、感情を高ぶらせて魔力を収穫する、ときめきメモリアルの系譜の埋もれた選択駆動ADV",
+      description: "選択駆動のADV。小悪魔と契約し、マジリシアにケモノを召喚し、「邪眼サーチ」で相手の心を覗き、二択の片方を選んで感情を高ぶらせ魔力を収穫する。好感度型の感情メーター、マルチエンディング、ダークユーモアのコメディ。1,842レビュー99%で日本では圧倒的に好評なのに英語レビューは79件、英語版はまだ存在しない(日本語のみ)。",
+      h1a: "心を読み、",
+      h1flip: "感情を高ぶらせ、魔力を収穫する",
+      h1b: "。",
+      lede: "力なき小悪魔と契約し、世界マジリシアにケモノたちを召喚していく、選択駆動のアドベンチャー。悪魔の「邪眼サーチ」で相手の心を覗き、何が感情を動かすのかを読み取り、二つの選択肢から一つを選んでその感情を高ぶらせ、あふれ出す魔力を収穫する。好感度型の感情メーター、マルチエンディング、ダークファンタジー×ダークユーモアの空気。日本のクリエイター ばやちゃお が ChaoGames 名義で作った一本で、好感度パラメータを育てる育成型ADV ときめきメモリアル の系譜に連なる。英語版がまだ存在しないため、西はまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "邪眼が開き、相手の心が目の前にむき出しになる。だから当て推量をやめ、読み始める——これが心を動かすもの、これが弱点だ。次に放つ一言は、もう賭けではなく、狙いを定めた一撃になる。",
+        "二つの台詞が現れる。恋のためではなく、てこの力として吟味する——感情を最も高く跳ね上げる方を選ぶ。高く持ち上げるほど、それが弾けたとき、あふれ出す魔力が多くなるからだ。",
+        "そして読みが当たり、選択が刺さると、メーターが跳ね、収穫が来る。相手を見透かし、その感情を力に変えた——背徳的な小さな高揚。すると次の相手が待っていて、その心も読みたくなる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ときめきメモリアルの「心を読み、メーターを高める」核が好きで、それが悪魔契約で感情を魔力として収穫する形に捻られたものが欲しい人",
+        "ダークファンタジー×ダークユーモアの空気、好感度型の感情メーター、マルチエンディング、集めたくなるケモノたちを備えた選択駆動ADVが欲しい人",
+        "日本では99%で圧倒的に好評なのに1,842件中英語レビュー79件で、西がまだ見つけてない原石を先に触りたい人",
+      ],
+      bad: [
+        "今すぐ英語で遊びたい人(英語版はまだ存在せず・ストアは日本語のみ・英語ローカライズは2026年の Switch 版で初提供)",
+        "悪魔の魔力として感情を収穫するダークユーモアのコメディより、まっすぐな恋愛シミュレーションが欲しい人",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3582,6 +3661,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Nantonaku, Crystal (Somehow, Crystal) is a 1980 debut novel by the Japanese writer Yasuo Tanaka, which followed a fashion-model college student through her brand-saturated everyday life in Tokyo. Its defining device was its 442 footnotes annotating the real brands, shops, music, and trends the narrative name-drops, turning the consumer culture of its moment into the substance of the work itself. That annotated style is the origin of capturing an era by drowning the reader in its proper nouns, the lineage that the Neo-Showa dictionary mechanic descends from directly.",
       ja: "なんとなく、クリスタルは、作家・田中康夫が1980年に発表したデビュー小説で、ファッションモデルの女子大生が東京のブランドに彩られた日常を生きる姿を描いた。最大の特徴は、本文が名指しする実在のブランド・店・音楽・流行を解説する442個の膨大な注釈で、その時代の消費文化そのものを作品の実質に変えてみせた点にある。この注釈で時代の風俗を浴びせて作品化するスタイルは、固有名詞の洪水で同時代を切り取る系譜の原点であり、本作「ネオ昭和辞典」の仕組みが直接連なる祖である。",
+    },
+  },
+  // 原点 ときめきメモリアル(Tokimeki Memorial), Konami, 1994(PC Engine)。相手のパラメータを把握し、
+  // 選択肢で働きかけて好感度を高め、その結果を報酬とする「好感度パラメータ育成型ADV」(恋愛SIM)の
+  // 系譜を確立した元祖。家庭用機作で公式 Steam 版なし → wikidata で同定(Steam id を捏造しない・
+  // twilight-syndrome 型 href 破損の回避)。established 側と Q1364574 の完全一致で逆引き成立。
+  "tokimeki-memorial": {
+    wikidata: "https://www.wikidata.org/wiki/Q1364574",
+    blurb: {
+      en: "Tokimeki Memorial is a dating-sim adventure game developed and published by Konami, first released for the PC Engine Super CD-ROM2 in 1994. Casting the player as a high-school student who builds stats and reads each girl's interests, then raises an affection parameter through dialogue choices and daily actions over a three-year calendar toward a confession, it popularized and is widely credited with defining the affection-parameter raising adventure, the template that later choice-driven affection ADVs descend from.",
+      ja: "ときめきメモリアルは、コナミが開発・販売した恋愛シミュレーション・アドベンチャーで、1994年にPCエンジン Super CD-ROM2向けに初めて発売された。プレイヤーを高校生とし、自分の能力値を育てつつ相手の興味を把握し、3年間のカレンダーの中で選択肢や日々の行動を通して好感度パラメータを高め、告白を目指す仕組みにより、「好感度パラメータを選択で育てる」育成型ADV(恋愛SIM)を広く普及・定義したと評価される。後続の選択駆動型・好感度ADVが連なる、その系譜の元祖である。",
     },
   },
 } as const;
