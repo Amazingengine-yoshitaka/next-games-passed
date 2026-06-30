@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-import { SITE } from "../data/site";
-import { useTranslations, defaultLang } from "../i18n/ui";
+import { SITE, OPERATOR, copyrightRange } from "../data/site";
+import { useTranslations, tv, defaultLang } from "../i18n/ui";
 import type { Lang } from "../i18n/ui";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { OG_META, ogUrlPath } from "../../scripts/og-card.config.mjs";
@@ -42,6 +42,11 @@ const home = getRelativeLocaleUrl(lang, "/");
 const findsHref = home + "#finds";
 const lineageHref = getRelativeLocaleUrl(lang, "/lineage/");
 const otherHome = getRelativeLocaleUrl(other, "/");
+// フッターの固定ページ link は言語別 (getRelativeLocaleUrl)。
+// 親ドメイン (passed.jp) は言語に依らず共通の外部 URL を OPERATOR(SSOT) から参照する。
+const privacyHref = getRelativeLocaleUrl(lang, "/privacy/");
+const aboutHref = getRelativeLocaleUrl(lang, "/about/");
+const contactHref = getRelativeLocaleUrl(lang, "/contact/");
 ---
 <!DOCTYPE html>
 <html lang={lang} class="no-js">
@@ -95,5 +100,18 @@ const otherHome = getRelativeLocaleUrl(other, "/");
     </div>
   </header>
   <slot />
+  <footer class="sitefoot">
+    <div class="wrap">
+      <nav class="sitefoot-links" aria-label={t("footer.about")}>
+        <a href={privacyHref}>{t("footer.privacy")}</a>
+        <a href={aboutHref}>{t("footer.about")}</a>
+        <a href={contactHref}>{t("footer.contact")}</a>
+        <a href={lineageHref}>{t("footer.lineage")}</a>
+        <a href={OPERATOR.companyUrl} rel="noopener" target="_blank">{t("footer.company")}</a>
+        <a href={OPERATOR.parentUrl} rel="noopener" target="_blank">{t("footer.operatedBy")} {OPERATOR.parentName}</a>
+      </nav>
+      <p class="sitefoot-copy">{tv(lang, "footer.copyright", { range: copyrightRange(), legalName: OPERATOR.legalNameEn })}</p>
+    </div>
+  </footer>
 </body>
 </html>

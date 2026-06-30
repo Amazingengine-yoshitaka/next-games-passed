@@ -100,6 +100,14 @@ ul.feel li::before{content:"\203A";position:absolute;left:6px;top:9px;color:var(
 
 footer{margin-top:50px;color:#5c6373;font-size:13px;border-top:1px solid var(--line);padding-top:18px;padding-bottom:90px}
 
+/* --- site footer (全ページ共通の AdSense 審査向け固定リンク帯) --- */
+.sitefoot{margin-top:0;border-top:1px solid var(--line);background:rgba(13,15,20,.6);padding:26px 0 44px}
+.sitefoot .wrap{display:flex;flex-direction:column;gap:10px}
+.sitefoot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
+.sitefoot-links a{color:var(--muted);font-size:13.5px}
+.sitefoot-links a:hover{color:var(--accent)}
+.sitefoot-copy{margin:0;color:#5c6373;font-size:12.5px}
+
 /* --- homepage 専用 --- */
 .hero{padding:72px 0 8px}
 .manifesto{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 24px 8px;margin:6px 0}

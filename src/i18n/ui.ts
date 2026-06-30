@@ -105,6 +105,62 @@ export const ui = {
     "origin.toLineage": "See the whole family tree",
     "origin.h1suffix": ": its lineage, descendants, and standing in Japan",
     "origin.meta.descPrefix": "{n}: the root of a lineage, the buried gems that descend from it, and how it is seen in Japan. ",
+
+    // --- footer (全ページ共通) ---
+    "footer.privacy": "Privacy Policy",
+    "footer.about": "About",
+    "footer.contact": "Contact",
+    "footer.lineage": "Family tree",
+    "footer.operatedBy": "Operated by",
+    "footer.company": "Company",
+    "footer.copyright": "Copyright {range} {legalName}",
+
+    // --- contact page ---
+    "contact.title": "Contact",
+    "contact.kicker": "Contact",
+    "contact.lede": "Questions, corrections, or a buried gem you want us to dig up? Reach us here.",
+    "contact.body.h": "How to reach us",
+    "contact.body.p": "We handle all inquiries through a single Google Form, shared with our sister site english.passed.jp. Tell us about factual corrections, tips on hidden gems, or anything else about the site, and we will read it.",
+    "contact.cta": "Open the contact form",
+    "contact.note.h": "A note before you write",
+    "contact.note.p": "The form opens in a new tab. We do not publish a contact email address; the form is the only inquiry window.",
+
+    // --- privacy page ---
+    "privacy.title": "Privacy Policy",
+    "privacy.kicker": "Privacy",
+    "privacy.lede": "How this site handles cookies, advertising, and access data.",
+    "privacy.cookie.h": "Cookies",
+    "privacy.cookie.p": "This site uses cookies to remember which buried gems you have uncovered (stored locally in your browser) and to measure how the site is used. You can disable or delete cookies in your browser settings; some features, such as remembering your uncovered gems, may then stop working.",
+    "privacy.ads.h": "Third-party advertising",
+    "privacy.ads.p1": "This site uses Google AdSense, a third-party advertising service. Google and its partners use cookies to serve ads based on your prior visits to this and other sites. Cookies such as the DoubleClick cookie let Google and its partners serve ads relevant to you.",
+    "privacy.ads.p2": "You can opt out of personalized advertising by visiting Google Ads Settings, or opt out of a third-party vendor's use of cookies for personalized advertising at aboutads.info. For more on how Google uses information from sites that use its services, see Google's policy.",
+    "privacy.analytics.h": "Access analytics",
+    "privacy.analytics.p": "This site uses Google Analytics to understand how pages are visited. It collects anonymized usage data through cookies and does not identify you personally.",
+    "privacy.personal.h": "Personal information",
+    "privacy.personal.p": "This site does not require you to register or submit personal information to browse. Any data collected through cookies and analytics is used only to operate and improve the site, and is not sold.",
+    "privacy.disclaimer.h": "Disclaimer",
+    "privacy.disclaimer.p": "We aim for accuracy, but make no guarantee that the information here is complete or error-free. We are not responsible for damages arising from use of this site or from external sites we link to.",
+    "privacy.contact.h": "Contact",
+    "privacy.contact.p": "This site is operated by {legalName} For inquiries about this policy, please use the contact form on our {contactUrl}, or reach us through our company site at {companyUrl}. The person responsible for handling personal information is the Representative Director.",
+    "privacy.revision.h": "Revisions",
+    "privacy.revision.p": "This policy may be revised as needed. The latest version always applies and is published on this page.",
+
+    // --- about page ---
+    "about.title": "About",
+    "about.kicker": "About",
+    "about.lede": "A curator's media that digs up Japan's buried gems and carries them West.",
+    "about.purpose.h": "What this site is for",
+    "about.purpose.p": "We dig up overlooked, well-made games from Japan and introduce them to players in the West. Our focus is the uncut gem: a title praised by the few who found it, yet still buried because almost no one outside Japan has seen it.",
+    "about.editorial.h": "How we choose and write",
+    "about.editorial.li1": "We back every claim with real numbers from Steam (review counts, positive ratios, language support), not impressions.",
+    "about.editorial.li2": "We do not fabricate. If we cannot verify something, we do not state it as fact.",
+    "about.editorial.li3": "We cover Japanese development only, by conviction, not as a side topic.",
+    "about.editorial.li4": "We select by lineage and by feel, tracing each gem back to the origin its taste descends from.",
+    "about.operator.h": "Who runs this site",
+    "about.operator.p": "This site is operated by {legalName}, a company headquartered in Japan and founded in {founded}. It is an owned media within the {parent} network, alongside sister sites such as games.passed.jp.",
+    "about.operator.link": "Visit the company site",
+    "about.contact.h": "Contact",
+    "about.contact.p": "For inquiries, please reach us through our company site at {companyUrl}.",
   },
   ja: {
     "nav.home": "入口",
@@ -206,6 +262,62 @@ export const ui = {
     "origin.toLineage": "家系図の全体を見る",
     "origin.h1suffix": "：その系譜と、子孫と、日本での評価",
     "origin.meta.descPrefix": "{n}：系譜の原点と、そこから枝分かれした埋もれた原石、そして日本での評価。",
+
+    // --- footer (全ページ共通) ---
+    "footer.privacy": "プライバシーポリシー",
+    "footer.about": "このサイトについて",
+    "footer.contact": "お問い合わせ",
+    "footer.lineage": "家系図",
+    "footer.operatedBy": "運営",
+    "footer.company": "運営会社",
+    "footer.copyright": "Copyright {range} {legalName}",
+
+    // --- contact page ---
+    "contact.title": "お問い合わせ",
+    "contact.kicker": "お問い合わせ",
+    "contact.lede": "ご質問・記載の誤りのご指摘・発掘してほしい埋もれた一本など、こちらからご連絡ください。",
+    "contact.body.h": "連絡方法",
+    "contact.body.p": "お問い合わせは、姉妹サイト english.passed.jp と共通の Google フォームで一本化して承ります。事実誤認のご指摘、隠れた名作の情報、その他サイトについてのご連絡をお寄せください。必ず目を通します。",
+    "contact.cta": "お問い合わせフォームを開く",
+    "contact.note.h": "ご記入の前に",
+    "contact.note.p": "フォームは新しいタブで開きます。連絡先のメールアドレスは公開しておらず、フォームが唯一のお問い合わせ窓口です。",
+
+    // --- privacy page ---
+    "privacy.title": "プライバシーポリシー",
+    "privacy.kicker": "プライバシー",
+    "privacy.lede": "当サイトにおける Cookie・広告・アクセス情報の取り扱いについて。",
+    "privacy.cookie.h": "Cookie の使用",
+    "privacy.cookie.p": "当サイトは、あなたがめくった原石の記録（ブラウザ内に保存）や、サイトの利用状況の計測のために Cookie を使用します。Cookie はブラウザの設定で無効化・削除できますが、その場合、めくった原石の記録など一部の機能が動作しなくなることがあります。",
+    "privacy.ads.h": "第三者配信事業者による広告",
+    "privacy.ads.p1": "当サイトは、第三者配信の広告サービス「Google AdSense」を利用しています。Google を含む第三者配信事業者は、Cookie を使用して、ユーザーが当サイトや他のサイトに過去にアクセスした際の情報に基づいて広告を配信します。DoubleClick Cookie などの Cookie により、ユーザーに関連性の高い広告が表示されます。",
+    "privacy.ads.p2": "パーソナライズ広告は、Google の広告設定で無効にできます。また、aboutads.info にアクセスすれば、第三者配信事業者による Cookie を利用したパーソナライズ広告を無効にできます。Google がサイトの利用情報をどう扱うかについては、Google のポリシーをご確認ください。",
+    "privacy.analytics.h": "アクセス解析",
+    "privacy.analytics.p": "当サイトは、ページの閲覧状況を把握するために Google Analytics を利用しています。Cookie を通じて匿名の利用データを収集しますが、個人を特定するものではありません。",
+    "privacy.personal.h": "個人情報の取り扱い",
+    "privacy.personal.p": "当サイトの閲覧にあたり、登録や個人情報の入力は必要ありません。Cookie やアクセス解析で収集したデータは、サイトの運営と改善のためにのみ利用し、販売することはありません。",
+    "privacy.disclaimer.h": "免責事項",
+    "privacy.disclaimer.p": "掲載情報の正確性には努めますが、その完全性や無誤りを保証するものではありません。当サイトの利用、またはリンク先の外部サイトに起因して生じた損害について、当方は責任を負いません。",
+    "privacy.contact.h": "お問い合わせ",
+    "privacy.contact.p": "当サイトは {legalName} が運営しています。本ポリシーに関するお問い合わせは、当サイトの{contactUrl}、または企業サイト {companyUrl} よりご連絡ください。個人情報保護管理者は代表取締役です。",
+    "privacy.revision.h": "改定について",
+    "privacy.revision.p": "本ポリシーは必要に応じて改定することがあります。常に最新版が適用され、本ページにて公開します。",
+
+    // --- about page ---
+    "about.title": "このサイトについて",
+    "about.kicker": "サイト紹介",
+    "about.lede": "日本の埋もれた良作＝原石を発掘し、西へ輸出する目利きメディア。",
+    "about.purpose.h": "このサイトの目的",
+    "about.purpose.p": "日本の見過ごされてきた良作を発掘し、西側のプレイヤーへ紹介します。狙うのは原石——見つけた一部の人には絶賛されながら、日本国外ではほとんど知られず、いまだ埋もれている一本です。",
+    "about.editorial.h": "選び方と書き方",
+    "about.editorial.li1": "すべての主張は、印象ではなく Steam の実数（レビュー数・好評率・対応言語）で裏取りします。",
+    "about.editorial.li2": "捏造しません。確認できないことは、事実として書きません。",
+    "about.editorial.li3": "日本開発を、片手間ではなく信念として貫きます。",
+    "about.editorial.li4": "系譜と味で選びます。それぞれの原石を、その味が継ぐ原点まで辿ります。",
+    "about.operator.h": "運営者",
+    "about.operator.p": "当サイトは、日本に本社を置く {legalName}（{founded}年設立）が運営しています。{parent} ネットワークのオウンドメディアで、姉妹サイトに games.passed.jp などがあります。",
+    "about.operator.link": "企業サイトを見る",
+    "about.contact.h": "お問い合わせ",
+    "about.contact.p": "お問い合わせは、企業サイト {companyUrl} よりご連絡ください。",
   },
 } as const;
 
@@ -223,4 +335,12 @@ export function useTranslations(lang: Lang) {
 export function tn(lang: Lang, key: Key, n: number | string): string {
   const tpl = ui[lang][key] ?? ui.en[key];
   return tpl.replace("{n}", String(n));
+}
+
+// 名前付きプレースホルダ({legalName} / {companyUrl} / {founded} / {parent} / {range} 等)を差し込む補間。
+// 文言(テンプレ)は ui.ts が唯一の源(SSOT)、値は呼び出し側が SITE/OPERATOR(SSOT)から渡す。
+// 文言内に固有値(運営者名・URL・メール)をベタ書きしないための窓口。
+export function tv(lang: Lang, key: Key, vars: Record<string, string>): string {
+  const tpl = ui[lang][key] ?? ui.en[key];
+  return tpl.replace(/\{(\w+)\}/g, (m, name) => (name in vars ? vars[name] : m));
 }

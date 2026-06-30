@@ -1,0 +1,32 @@
+---
+// Contact (/contact)。お問い合わせ窓口。送信先は english.passed.jp と共通の Google フォーム。
+// 体(presentation): 文言は ui.ts(SSOT)・フォーム URL は OPERATOR(SSOT)。メールは直書きしない。
+import Base from "../layouts/Base.astro";
+import { SITE, OPERATOR } from "../data/site";
+import { useTranslations, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const brand = isJa ? SITE.name : SITE.nameEn;
+
+const title = brand + " — " + t("contact.title");
+const desc = t("contact.lede");
+---
+<Base title={title} description={desc}>
+  <main class="wrap">
+    <section class="hero">
+      <span class="kicker"><span class="dot"></span> {t("contact.kicker")}</span>
+      <h1>{t("contact.title")}</h1>
+      <p class="lede">{t("contact.lede")}</p>
+    </section>
+
+    <h2>{t("contact.body.h")}</h2>
+    <p>{t("contact.body.p")}</p>
+    <p><a class="btn" href={OPERATOR.contactFormUrl} rel="noopener" target="_blank">{t("contact.cta")}</a></p>
+
+    <h2>{t("contact.note.h")}</h2>
+    <p>{t("contact.note.p")}</p>
+  </main>
+</Base>

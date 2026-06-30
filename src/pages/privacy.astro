@@ -1,0 +1,51 @@
+---
+// プライバシーポリシー (/privacy)。AdSense 審査向けの定型ポリシー。
+// 体(presentation): 文言はすべて ui.ts(SSOT)・固有値は OPERATOR(SSOT)から参照する。
+// Base.astro で包むことで canonical / hreflang / footer を自動付与する。
+import Base from "../layouts/Base.astro";
+import { SITE, OPERATOR } from "../data/site";
+import { useTranslations, tv, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const brand = isJa ? SITE.name : SITE.nameEn;
+
+const title = brand + " — " + t("privacy.title");
+const desc = t("privacy.lede");
+// 連絡導線は当サイトの /contact/(お問い合わせフォーム案内ページ)を第一に案内する。
+const contactHref = getRelativeLocaleUrl(lang, "/contact/");
+---
+<Base title={title} description={desc}>
+  <main class="wrap">
+    <section class="hero">
+      <span class="kicker"><span class="dot"></span> {t("privacy.kicker")}</span>
+      <h1>{t("privacy.title")}</h1>
+      <p class="lede">{t("privacy.lede")}</p>
+    </section>
+
+    <h2>{t("privacy.cookie.h")}</h2>
+    <p>{t("privacy.cookie.p")}</p>
+
+    <h2>{t("privacy.ads.h")}</h2>
+    <p>{t("privacy.ads.p1")}</p>
+    <p>{t("privacy.ads.p2")}</p>
+
+    <h2>{t("privacy.analytics.h")}</h2>
+    <p>{t("privacy.analytics.p")}</p>
+
+    <h2>{t("privacy.personal.h")}</h2>
+    <p>{t("privacy.personal.p")}</p>
+
+    <h2>{t("privacy.disclaimer.h")}</h2>
+    <p>{t("privacy.disclaimer.p")}</p>
+
+    <h2>{t("privacy.contact.h")}</h2>
+    <p>{tv(lang, "privacy.contact.p", { legalName: OPERATOR.legalNameEn, contactUrl: contactHref, companyUrl: OPERATOR.companyUrl })}</p>
+
+    <h2>{t("privacy.revision.h")}</h2>
+    <p>{t("privacy.revision.p")}</p>
+  </main>
+</Base>

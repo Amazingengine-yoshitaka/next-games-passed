@@ -1,0 +1,43 @@
+---
+// About (/about)。サイトの目的・編集方針・運営を示し E-E-A-T(専門性/信頼性)を補強する。
+// 体(presentation): 文言は ui.ts(SSOT)・固有値は OPERATOR(SSOT)。事実のみ・捏造禁止。
+import Base from "../layouts/Base.astro";
+import { SITE, OPERATOR } from "../data/site";
+import { useTranslations, tv, defaultLang } from "../i18n/ui";
+import type { Lang } from "../i18n/ui";
+
+const lang = (Astro.currentLocale ?? defaultLang) as Lang;
+const t = useTranslations(lang);
+const isJa = lang === "ja";
+const brand = isJa ? SITE.name : SITE.nameEn;
+
+const title = brand + " — " + t("about.title");
+const desc = t("about.lede");
+---
+<Base title={title} description={desc}>
+  <main class="wrap">
+    <section class="hero">
+      <span class="kicker"><span class="dot"></span> {t("about.kicker")}</span>
+      <h1>{t("about.title")}</h1>
+      <p class="lede">{t("about.lede")}</p>
+    </section>
+
+    <h2>{t("about.purpose.h")}</h2>
+    <p>{t("about.purpose.p")}</p>
+
+    <h2>{t("about.editorial.h")}</h2>
+    <ul class="feel">
+      <li>{t("about.editorial.li1")}</li>
+      <li>{t("about.editorial.li2")}</li>
+      <li>{t("about.editorial.li3")}</li>
+      <li>{t("about.editorial.li4")}</li>
+    </ul>
+
+    <h2>{t("about.operator.h")}</h2>
+    <p>{tv(lang, "about.operator.p", { legalName: OPERATOR.legalNameEn, founded: String(OPERATOR.foundedYear), parent: OPERATOR.parentName })}</p>
+    <p><a href={OPERATOR.companyUrl} rel="noopener" target="_blank">{t("about.operator.link")}</a></p>
+
+    <h2>{t("about.contact.h")}</h2>
+    <p>{tv(lang, "about.contact.p", { companyUrl: OPERATOR.companyUrl })}</p>
+  </main>
+</Base>
