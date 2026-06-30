@@ -3144,6 +3144,84 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "sinking-paradise": {
+    published: "2026-06-22",
+    kind: "find",
+    leadIndex: 0,
+    meta: { genre: "visual-novel", lineage: "narcissu", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 5, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Shizumeru Rakuen",
+        name_ja: "沈める楽園",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2461130/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A multi-ending novel game that traces the last day of two girls who came to die. On a fictional island in Japan's Seto Inland Sea, two college students, Mio and Nagisa, have come to drown themselves, and at the start you choose whose eyes to see that day through. Conversation choices branch the ending, but one thing never changes: the girl dies. The path bends, the death does not. It includes a Chapter mode to re-read any scene and a Gallery mode to revisit the stills. Made by the Japanese solo doujin circle Sajinage-bu and published by the Japanese company Waku Waku Games. Priced at 700 yen, with an eight-track soundtrack sold separately. Positive in Japan at 5 reviews and 100 percent, yet the West has not reached it at all: zero English reviews out of 5. There is no English version and no official English title, the store supports Japanese only, so the language itself is the wall.",
+        desc_ja: "死にに来た2人の少女の「最期の一日」を辿る、マルチエンディング型のノベルゲーム。瀬戸内海に浮かぶ架空の孤島・楽日島へ、投身自殺を図りに来た2人の女子大生、澪と渚。冒頭で、その一日を誰の視点で見るかを選ぶ。会話の選択肢でエンドは分岐するが、ただ一つだけ変わらないものがある——少女が死ぬ、という結末だ。道は曲がる、けれど死は曲がらない。任意の場面を読み返せるチャプターモードと、スチルを鑑賞できるギャラリーモードを備える。日本のひとりサークル「匙投げ部」が作り、日本の企業わくわくゲームズが発行した一本。価格700円、全8曲のサウンドトラックは別売。5レビュー100%で日本では好評なのに、西はまだ一切届いていない——5件中、英語レビューは0件。英語版も英語タイトルも存在しない。ストアは日本語のみ対応で、言語そのものが壁になっている。",
+      },
+      {
+        name_en: "Narcissu",
+        name_ja: "ナルキッソス",
+        status: "established",
+        steam: "https://store.steampowered.com/app/426690/Narcissu_10th_Anniversary_Anthology_Project/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the lyrical Japanese novel that meditates on death through the last days of someone about to die: in 2005, Tomo Kataoka and the doujin circle Stage-nana released a free visual novel about a terminally ill pair who leave the hospice to spend their final days on the road, with no miracles, no heroes, no villains, only a quiet road toward an end that does not change. This gem is a direct heir to that DNA, a low-priced, doujin-rooted novel that makes you weep through text and music about a girl who chooses death, where you select a viewpoint and trace a final day while the death itself stays fixed.",
+        desc_ja: "死に向かう者の最期の日々を通して死を見つめる、叙情的な和製ノベルの原点。2005年、片岡ともと同人サークル「ステージ☆なな」が、余命わずかな2人がホスピスを抜け出し最期の日々を旅して過ごす——奇跡も、英雄も、悪役もなく、ただ変わらない終わりへ向かう静かな道だけがある——ノベルゲームを無料で世に出した。この未発掘の名作はそのDNAの直系——低価格・同人発で、自ら死を選ぶ少女をめぐってテキストと音楽で泣かせるノベル。視点を選び、最期の一日を辿るが、死そのものは動かない。",
+      },
+    ],
+    en: {
+      title: "Shizumeru Rakuen - a Japanese-only novel game that traces two girls' last day, where the death never changes, an heir to Narcissu",
+      description: "A multi-ending novel game that traces the last day of two college girls who came to drown themselves on a fictional island in Japan's Seto Inland Sea. You choose whose eyes to see the day through; choices branch the ending, but the girl always dies. Chapter and Gallery modes, 700 yen, an eight-track soundtrack. Positive in Japan at 5 reviews and 100 percent, yet zero English reviews. Japanese only, with no English title: the language is the wall.",
+      h1a: "Choose the path. ",
+      h1flip: "The death never changes",
+      h1b: ".",
+      lede: "A multi-ending novel game that traces the last day of two college girls who came to die. On a fictional island in Japan's Seto Inland Sea, Mio and Nagisa have come to drown themselves, and you choose whose eyes to see that day through. Conversation choices branch the ending, but one thing never changes: the girl dies. The path bends, the death does not. It includes a Chapter mode to re-read scenes and a Gallery mode for the stills. A solo doujin work by the Japanese circle Sajinage-bu, published by Waku Waku Games, in the lineage of the lyrical Japanese novel that meditates on death through someone's final days, Narcissu. Japanese only, with no English title, the West has not reached it at all.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You pick whose eyes to live the last day through, so the same final day becomes a thing you inhabit rather than watch, and every line you read is read by someone you have chosen to be.",
+        "Your choices visibly bend the route, which keeps you grasping for a way out, and that is the trap: the ending shifts, the death does not, so each branch only teaches you a new shape of the same loss.",
+        "Knowing the death is fixed from the first choice does not lift the weight, it sharpens it: you stop playing to win and start playing to be there for the last day, and the Chapter and Gallery modes pull you back to read the moments you flinched from.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the lyrical death-and-mortality novel of Narcissu, a quiet last journey with no miracles, heroes, or villains, told here as two girls' final day",
+        "You want a short, low-priced doujin novel that weeps through text and music, with a Chapter mode to re-read and a Gallery for the stills",
+        "You want a gem the West has not reached at all, Positive in Japan at 100 percent with zero English reviews out of 5, because there is no English version",
+      ],
+      bad: [
+        "You do not read Japanese: there is no English version and no English title, and the store supports Japanese only, so the language itself is the wall",
+        "You want gameplay or a happy ending you can earn through good choices, rather than a quiet branching tale where the death is fixed no matter what you pick",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "沈める楽園 - 何を選んでも死は変わらない、2人の少女の最期の一日を辿る日本語のみのノベルゲーム。ナルキッソスの系譜",
+      description: "瀬戸内海の架空島で投身自殺を図りに来た2人の女子大生の最期の一日を辿る、マルチエンディング型ノベルゲーム。誰の視点で見るかを選び、選択肢でエンドが分岐するが、少女が死ぬ結末は不変。チャプター・ギャラリーモード、700円、全8曲のサントラ別売。5レビュー100%で日本では好評なのに英語レビューは0件。日本語のみ対応で英語タイトルもなく、言語そのものが壁。",
+      h1a: "道は選べる、けれど",
+      h1flip: "死は、何を選んでも変わらない",
+      h1b: "。",
+      lede: "死にに来た2人の少女の最期の一日を辿る、マルチエンディング型のノベルゲーム。瀬戸内海に浮かぶ架空の孤島へ、投身自殺を図りに来た女子大生の澪と渚。その一日を誰の視点で見るかを選ぶ。会話の選択肢でエンドは分岐するが、ただ一つだけ変わらないものがある——少女が死ぬ、という結末だ。道は曲がる、けれど死は曲がらない。場面を読み返せるチャプターモードと、スチルを鑑賞できるギャラリーモードを備える。日本のひとりサークル「匙投げ部」による一本で、わくわくゲームズが発行し、誰かの最期の日々を通して死を見つめる叙情的な和製ノベル ナルキッソスの系譜に連なる。日本語のみ対応で英語タイトルもなく、西はまだ一切届いていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "最期の一日を、誰の視点で生きるかを選ぶ。だからその一日は「観る」ものではなく「宿る」ものになり、読む一行一行が、自分が選んだ誰かの目で読まれていく。",
+        "選択は目に見えて道を曲げる。だから「逃げ道」を掴もうとしてしまう——それが罠だ。エンドは動くのに、死は動かない。どの分岐も、同じ喪失の別の形を教えるだけだ。",
+        "最初の選択から死が決まっていると知っても、重さは軽くならない。むしろ研ぎ澄まされる。勝つために遊ぶのをやめ、最期の一日をそばにいるために遊び始める。チャプターとギャラリーが、目を背けた瞬間を読み返しに引き戻す。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "奇跡も英雄も悪役もない静かな最期の旅——ナルキッソスの叙情的な死生観のノベルが好きで、それが2人の少女の最期の一日で語られるものが欲しい人",
+        "テキストと音楽で泣かせる、短く低価格な同人ノベルが欲しい人——読み返せるチャプターモードと、スチルのギャラリー付き",
+        "英語版が存在しないからこそ西がまだ一切届かない、100%で日本では好評なのに5件中英語レビュー0件の原石を掘りたい人",
+      ],
+      bad: [
+        "日本語が読めない人(英語版も英語タイトルも存在せず、ストアは日本語のみ対応なので、言語そのものが壁になる)",
+        "ゲーム的な手応えや、良い選択で勝ち取るハッピーエンドが欲しい人(本作は何を選んでも死が決まっている、静かな選択分岐の物語)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -3314,6 +3392,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Higurashi When They Cry is a sound novel created by the Japanese doujin circle 07th Expansion, written by Ryukishi07, with its first arc released at Comiket in 2002. Set in a small rural village, it unfolds as a looping tragedy in which the same days replay and small choices and missteps spiral toward gruesome violence before later answer arcs reveal the truth and a path to salvation; built and sold as an amateur work, it is the landmark origin of the Japanese amateur horror sound novel and its branching, choice-driven dread.",
       ja: "ひぐらしのなく頃には、日本の同人サークル07th Expansion（竜騎士07）が制作したサウンドノベルで、第1作が2002年のコミックマーケットで頒布された。山あいの小さな村を舞台に、同じ日々が繰り返される惨劇として展開し、わずかな選択や食い違いが凄惨な暴力へと転がり落ち、後の解答編で真相と救済への道が明かされる。アマチュアの手で作られ頒布された作品でありながら、選択分岐と繰り返しによる恐怖を核にした和製アマチュア恐怖サウンドノベルの系譜を切り開いた画期的な原点である。",
+    },
+  },
+  // 原点 ナルキッソス(narcissu), 片岡とも / ステージ☆なな, 2005(元フリーゲーム発・後に商業化)。
+  // 奇跡も英雄もいない現実の中で「死に向かう少女の最期の日々」を死生観として叙情的に描く和製ノベルの系譜の原点。
+  // Steam 版あり(10th Anniversary Anthology Project, app 426690)→ steam で同定(established 側と
+  // /app/426690/ で完全一致・href 破損回避)。なお別作「零 ZERO」との混同を避けるため anchor は本版を採用。
+  "narcissu": {
+    steam: "426690",
+    blurb: {
+      en: "Narcissu is a Japanese visual novel written and directed by Tomo Kataoka and produced by the doujin circle Stage-nana, first released as a free download in 2005 and later expanded and sold commercially. Following a terminally ill young man and woman who slip away from the hospice ward together to spend their final days on the road, with no miracles, heroes, or villains, it is a quiet, melancholy meditation on death; built and given away as an amateur work, it is a landmark origin of the lyrical Japanese kinetic novel that confronts mortality through the last days of someone about to die.",
+      ja: "ナルキッソスは、片岡ともが執筆・監督し同人サークル「ステージ☆なな」が制作した和製ノベルゲームで、2005年に無料配布作品として発表され、後に内容を拡張して商業化された。余命わずかな若い男女がホスピスの病棟を抜け出し、最期の日々を車で旅して過ごす——奇跡も英雄も悪役もない——静かで物悲しい死生観の物語である。アマチュアの手で作られ無償で配られた作品でありながら、死に向かう者の最期の日々を通して死を見つめる、叙情的な和製キネティックノベルの系譜の画期的な原点である。",
     },
   },
 } as const;
