@@ -4408,6 +4408,90 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dungeon-antiqua-2": {
+    published: "2026-06-30",
+    publishAt: "2026-06-30",
+    kind: "find",
+    leadIndex: 0,
+    // reachState は意図的に持たせない: 英語対応済み(English/Japanese/Simplified Chinese)なので
+    //   "lang_walled" は rarityStamps の "英語にまだ非対応" を誤って立てる(正直さ)。英語レビュー比率
+    //   約38%(98/257)=西へ部分到達のため "unreached_west"(西未到達)も実態とずれる。obscurity は
+    //   "wall"(高評価だが言語/地域の壁)で正直に表す。stamp は 95%好評 + レビュー257件のみ立てる。
+    meta: { genre: "dungeon-rpg", lineage: "final-fantasy-v", obscurity: "wall", reviewBand: "hundreds", rarity: { reviews: 257, positivePct: 95, noEnglish: false } },
+    games: [
+      {
+        name_en: "Dungeon Antiqua 2",
+        name_ja: "Dungeon Antiqua 2",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4005090/Dungeon_Antiqua_2/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Super Famicom-styled 2D dungeon hack-and-slash RPG by Shiromofu Factory, the work of the Japanese solo creator frenchbread, with pixel art and sound cast in the SFC mold. You explore six dungeons through line of sight and visible symbol encounters, fight in side-view battles, and build your party across 10 jobs (including new ones, a priest and an archer) plus skill builds, in the freely-composed, reassignable job tradition that runs back through Final Fantasy and Wizardry. It runs roughly 10 to 12 hours and is built with Pyxel, the Japanese retro game engine by Takashi Kitao. The sequel to Dungeon Antiqua (2024), which sits at 90 percent over 363 reviews from the same creator, it is Very Positive at 95 percent over 257 reviews (245 positive, 12 negative). It supports English, Japanese, and Simplified Chinese, and with 98 of its 257 reviews in English (about 38 percent) the West has begun to find it, further along than most of our digs, though its audience is still mainly Japanese. Released in January 2026, it is a paid title around 1,000 yen, not free, fully launched and not in Early Access, with no AI-generated assets and nothing sexual. One note to clear up: this Shiromofu Factory / frenchbread is a completely unrelated namesake to the fighting-game studio French-Bread (Melty Blood, UNDER NIGHT IN-BIRTH).",
+        desc_ja: "スーパーファミコン風のピクセルアートとサウンドで作られた、2Dダンジョン・ハック&スラッシュRPG。開発元は Shiromofu Factory（しろもふファクトリー）——日本の個人クリエイター frenchbread（ふれんち）の手による一本だ。視界とマップ上に見えるシンボルエンカウントで6つのダンジョンを探索し、サイドビューの戦闘を戦い、10のジョブ（新ジョブの僧侶と弓使いを含む）とスキルビルドでパーティを組み上げる——ファイナルファンタジーやウィザードリィへと遡る、自由に組み替えるジョブ編成の系譜にある。プレイ時間はおよそ10〜12時間、開発には日本製のレトロゲームエンジン Pyxel（北尾崇 作）が使われている。同じ作者による前作 Dungeon Antiqua（2024年・363レビュー90%）の続編で、本作は257レビュー95%（好評245・不評12）で非常に好評。英語・日本語・簡体字中国語に対応し、257件のうち98件（約38%）が英語レビュー——西はこの一本を見つけ始めており、これまでの発掘より一歩先まで進んでいる。それでも観客の中心は、まだ日本語圏だ。2026年1月リリース、価格はおよそ1,000円の有料作で、無料ではなく、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、性的な要素もない。一つだけ補足を——この Shiromofu Factory / frenchbread は、格闘ゲームのスタジオ French-Bread（Melty Blood、UNDER NIGHT IN-BIRTH）とは完全に無関係の同名別者だ。",
+      },
+      {
+        name_en: "Final Fantasy V",
+        name_ja: "ファイナルファンタジーV",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1173810/FINAL_FANTASY_V/",
+        wikidata: "https://www.wikidata.org/wiki/Q900305",
+        tag_en: "The job-system origin",
+        tag_ja: "ジョブシステムの原点",
+        desc_en: "The origin of the build-your-party RPG: Final Fantasy V, the fifth entry in Square's role-playing series, released for the Super Famicom in 1992, is the game that crystallized the Job System. Your party freely switches among a wide roster of jobs, learns abilities from each, and carries those abilities across jobs to assemble custom characters, making the deliberate composition of a party the heart of play. That freely-reassignable job design is the root that Dungeon Antiqua 2 grows from, where 10 jobs and skill builds let you rebuild your party for each dungeon, but it strips the world down to a compact, sight-based dungeon crawl with visible symbol encounters and side-view battles rather than a sprawling world map. The 1992 original is anchored here to its Pixel Remaster Steam release.",
+        desc_ja: "「パーティを組み上げる」RPGの原点。ファイナルファンタジーVは、スクウェアのロールプレイングシリーズ第5作として1992年にスーパーファミコン向けに発売され、「ジョブシステム」を結晶化させた作品である。パーティは数多くのジョブを自由に切り替え、それぞれからアビリティを習得し、ジョブをまたいでそのアビリティを持ち越して、自分だけのキャラクターを組み上げる——パーティを意図して編成すること、それ自体を遊びの核に据えた。この自由に組み替えられるジョブ設計こそ、Dungeon Antiqua 2 が育つ根だ。本作では10のジョブとスキルビルドが、ダンジョンごとにパーティを組み直させる。だが広大なワールドマップではなく、視界に基づくコンパクトなダンジョン探索と、目に見えるシンボルエンカウント、そしてサイドビューの戦闘へと世界を削ぎ落としている。1992年の原作は、そのピクセルリマスター版の Steam ページで同定する。",
+      },
+    ],
+    en: {
+      title: "Dungeon Antiqua 2 - a Super Famicom-style 2D dungeon hack-and-slash where you freely compose a party across 10 jobs and skill builds, an heir to Final Fantasy V's job system, only beginning to reach the West",
+      description: "A Super Famicom-styled 2D dungeon hack-and-slash RPG by Shiromofu Factory, the solo creator frenchbread. Explore six dungeons by line of sight and visible symbol encounters, fight in side-view battles, and rebuild your party across 10 jobs (including a new priest and archer) plus skill builds, in the freely-reassignable job tradition of Final Fantasy V. Built with the Japanese Pyxel engine, roughly 10 to 12 hours. Very Positive at 95 percent over 257 reviews; it supports English, yet with about 38 percent English reviews the West has only begun to find it.",
+      h1a: "You do not pick one class and lock in. ",
+      h1flip: "Reassign your whole party across ten jobs, dungeon by dungeon",
+      h1b: ".",
+      lede: "A Super Famicom-styled 2D dungeon hack-and-slash RPG by Shiromofu Factory, the work of the Japanese solo creator frenchbread, with pixel art and sound cast in the SFC mold. You explore six dungeons through line of sight and visible symbol encounters, fight in side-view battles, and build your party across 10 jobs (including new ones, a priest and an archer) plus skill builds, in the freely-composed, reassignable job tradition that runs back to Final Fantasy V. Built with the Japanese Pyxel engine and running roughly 10 to 12 hours, it is Very Positive at 95 percent over 257 reviews. It already supports English, yet with about 38 percent of its reviews in English, the West has only begun to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "You are never locked into one class, so the core of the game is composition: across 10 jobs (including a new priest and an archer) plus skill builds, you read what a dungeon throws at you and reassign your party to answer it, the same Final Fantasy V job-system pull of what if I combine these, now turned over and rebuilt dungeon by dungeon.",
+        "Encounters are not invisible random battles, they are symbols you can see, governed by line of sight, so exploring is a quiet act of choosing: you read the field, decide which fights to take and which to slip past, and that decision repeats across six hand-made dungeons rather than being rolled for you.",
+        "It is built to be finished, not farmed: Super Famicom-style pixel art and sound, side-view battles with a fast hack-and-slash rhythm, six dungeons and roughly 10 to 12 hours, the whole arc of a 90s job RPG in a compact, fully-released shell a single creator could polish end to end.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Final Fantasy V job system and the joy of freely composing a party, here 10 jobs including a new priest and archer, plus skill builds, rebuilt to answer each of six dungeons",
+        "You want a compact, fully-released SFC-style 2D dungeon hack-and-slash with side-view battles and visible symbol encounters you can read and choose, all in roughly 10 to 12 hours",
+        "You want a Japanese solo-made gem the West has only begun to find, Very Positive at 95 percent over 257 reviews, already supporting English and Simplified Chinese, from Shiromofu Factory's frenchbread, built with the Japanese Pyxel engine",
+      ],
+      bad: [
+        "You want a huge, modern, fully 3D RPG or a long open world; this is a deliberately retro, Super Famicom-style 2D dungeon RPG of about 10 to 12 hours, a paid title around 1,000 yen, made by one person",
+        "You expect a big-studio blockbuster, or you are looking for the fighting-game studio French-Bread of Melty Blood and UNDER NIGHT IN-BIRTH; this is a completely unrelated namesake solo doujin developer, and the audience is still mostly Japanese (about 38 percent of reviews are English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Dungeon Antiqua 2 - 10のジョブとスキルビルドでパーティを自由に組み上げる、スーパーファミコン風の2Dダンジョン・ハック&スラッシュ。ファイナルファンタジーVのジョブシステムの系譜、西がようやく見つけ始めた一本",
+      description: "Shiromofu Factory（個人クリエイター frenchbread）による、スーパーファミコン風の2Dダンジョン・ハック&スラッシュRPG。視界と見えるシンボルエンカウントで6つのダンジョンを探索し、サイドビューの戦闘を戦い、10のジョブ（新ジョブの僧侶と弓使いを含む）とスキルビルドでパーティを組み直す——ファイナルファンタジーVの、自由に組み替えるジョブ編成の系譜。日本製の Pyxel エンジン製、約10〜12時間。257レビュー95%で非常に好評。英語に対応済みだが、英語レビューは約38%、西はようやく見つけ始めたばかりだ。",
+      h1a: "ひとつの職に縛られない。",
+      h1flip: "10のジョブでパーティを丸ごと組み替え、ダンジョンを攻略する",
+      h1b: "。",
+      lede: "スーパーファミコン風のピクセルアートとサウンドで作られた、2Dダンジョン・ハック&スラッシュRPG。開発元は Shiromofu Factory（しろもふファクトリー）——日本の個人クリエイター frenchbread（ふれんち）の手による一本だ。視界とマップ上に見えるシンボルエンカウントで6つのダンジョンを探索し、サイドビューの戦闘を戦い、10のジョブ（新ジョブの僧侶と弓使いを含む）とスキルビルドでパーティを組み上げる——ファイナルファンタジーVへと遡る、自由に組み替えるジョブ編成の系譜にある。日本製の Pyxel エンジンで作られ、プレイ時間はおよそ10〜12時間。257レビュー95%で非常に好評だ。すでに英語に対応しているが、レビューのうち英語は約38%——西はこの一本を、ようやく見つけ始めたばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ひとつの職に縛られることがない。だからゲームの核は「編成」だ。10のジョブ（新ジョブの僧侶と弓使いを含む）とスキルビルドの中で、ダンジョンが突きつけてくるものを読み、それに応えるようパーティを組み替える——「これとこれを組み合わせたら？」というファイナルファンタジーVのジョブシステムの引力が、ここではダンジョンごとに、何度もひっくり返され、組み直される。",
+        "エンカウントは、見えない乱数の戦闘ではない。視界に支配された、目に見えるシンボルだ。だから探索は、静かな「選択」の行為になる——盤面を読み、どの戦いを受け、どれをすり抜けるかを決める。そしてその判断が、手作りの6つのダンジョンを通して繰り返される。あなたの代わりに、サイコロが振られることはない。",
+        "これは「やり込んで搾る」ためではなく、「遊び終える」ために作られている。スーパーファミコン風のピクセルアートとサウンド、速いハック&スラッシュの手触りのサイドビュー戦闘、6つのダンジョンとおよそ10〜12時間——90年代のジョブRPGの一巡りが、ひとりの作者が端から端まで磨き上げられる、コンパクトで正式リリース済みの器に収まっている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ファイナルファンタジーVのジョブシステムと、パーティを自由に編成する楽しさが好きな人。本作ではそれを、新ジョブの僧侶と弓使いを含む10のジョブとスキルビルドが担い、6つのダンジョンそれぞれに応えるよう組み直す",
+        "コンパクトで正式リリース済みの、スーパーファミコン風2Dダンジョン・ハック&スラッシュが欲しい人。サイドビューの戦闘と、読んで選べる見えるシンボルエンカウント、すべてがおよそ10〜12時間に収まる",
+        "西側がようやく見つけ始めた、日本の個人制作の原石が欲しい人。257レビュー95%で非常に好評、英語（と簡体字中国語）に対応済み、Shiromofu Factory の frenchbread が日本製の Pyxel エンジンで作った一本",
+      ],
+      bad: [
+        "大規模で現代的な、フル3DのRPGや長大なオープンワールドが欲しい人(本作はあえてレトロな、スーパーファミコン風の2DダンジョンRPGで、約10〜12時間、価格およそ1,000円の有料作、ひとりで作られている)",
+        "大手スタジオの大作を期待する人、あるいは Melty Blood や UNDER NIGHT IN-BIRTH の格闘ゲームスタジオ French-Bread を探している人(本作はそれとは完全に無関係の同名の個人同人開発者で、観客の中心はまだ日本語圏だ——英語レビューは約38%)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4751,6 +4835,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Ultraman is a Japanese tokusatsu (special-effects) television series created by Eiji Tsuburaya and produced by Tsuburaya Productions, first broadcast in 1966 as the show that followed Ultra Q. It set a giant silver-and-red hero against a procession of city-sized kaiju, defended by a human special-attack team that fought the monsters on the front line, and it crystallized the kaiju-defense story: ordinary people standing against giant monsters that threaten a nation, and the figure who rises to fight them. It is the origin of the giant-kaiju-defense lineage in Japanese fiction, the taste of facing colossal monsters at the front line. It is the root of a taste, not a claim of license over any later or fan-made work.",
       ja: "ウルトラマンは、円谷英二が生み出し円谷プロダクションが製作した日本の特撮テレビシリーズで、『ウルトラQ』に続く作品として1966年に放送が始まった。銀と赤の巨大なヒーローを、都市ほどもある怪獣の群れと対峙させ、最前線で怪獣に立ち向かう人間の特捜隊がそれを支える——この構図によって、「巨大な怪獣が国を脅かし、それに立ち向かう者が現れる」怪獣防衛の物語を結晶化させた。日本のフィクションにおける巨大怪獣防衛の系譜——最前線で巨大な怪獣と向き合うという味——の原点である。これは味の原点という意味であり、後続作品や同人作への権利を主張するものではない。",
+    },
+  },
+  // 原点 ファイナルファンタジーV(Final Fantasy V), スクウェア, 1992(スーパーファミコン)。パーティが
+  // 数多のジョブを自由に切り替え、各ジョブからアビリティを習得し、ジョブをまたいで持ち越して自分だけの
+  // キャラクターを組み上げる——「ジョブシステム」を結晶化させ、「パーティを自由に編成して組み上げる」RPGの
+  // 系譜の原点となった作品。現行入手可能な参照点は FF ピクセルリマスター版 Steam(app 1173810)→ steam で
+  // 同定(established 側と /app/1173810/ で完全一致・href 破損回避・wikidata Q900305 実体確認済み)。
+  "final-fantasy-v": {
+    steam: "1173810",
+    blurb: {
+      en: "Final Fantasy V is the fifth entry in Square's role-playing series, released for the Super Famicom in Japan in 1992. It is widely credited with crystallizing the Job System: the player's party freely switches among a large roster of jobs, learns abilities from each one, and carries those abilities across jobs to assemble custom characters, making the deliberate composition of a party the core of play. By turning free, reassignable class composition into the heart of an RPG, it became a defining origin of the build-your-party job-system lineage. The original 1992 game is anchored to its Pixel Remaster Steam release.",
+      ja: "ファイナルファンタジーVは、スクウェアのロールプレイングシリーズ第5作で、1992年に日本でスーパーファミコン向けに発売された。「ジョブシステム」を結晶化させた作品として広く評価されている——プレイヤーのパーティは数多くのジョブを自由に切り替え、それぞれからアビリティを習得し、ジョブをまたいでそのアビリティを持ち越すことで、自分だけのキャラクターを組み上げる。パーティを意図して編成すること、それ自体を遊びの核に据えた。自由に組み替えられるクラス編成をRPGの中心に据えたことで、「パーティを組み上げる」ジョブシステムの系譜を定義づけた原点となった。1992年の原作は、そのピクセルリマスター版の Steam ページで同定する。",
     },
   },
 } as const;
