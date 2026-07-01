@@ -5174,6 +5174,93 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "strongest-tofu": {
+    published: "2026-07-04",
+    publishAt: "2026-07-04",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "charge-jump-platformer"(溜めジャンプアクション): 本作の遊びの全ては単一ボタンの溜めジャンプ 1 つ
+    //   —— 精密プラットフォーマー(precision-platformer)一般より、溜めて任意方向へ跳ぶこの 1 メカが核なので専用ラベルを
+    //   立てる(site の細粒度ジャンル分類に整合)。obscurity は "deep"(レビュー僅少帯・西で無名)——scp-tale-of-crossing
+    //   型(353 件/97%/unreached_west/deep)と同帯。英語対応済み(noEnglish=false)なので lang_walled は使わない
+    //   (誤って「英語非対応」stamp を立てない・正直さ)。英語 43/355=12.1% で西未浸透 = reachState="unreached_west"。
+    //   系譜は スーパーマリオブラザーズ(Super Mario Bros.)——制作者の任天堂(マリオ・カービィ)言明・作中の明示 SMB /
+    //   ドンキーコングオマージュ面・「走り/踏み/ゴール到達」のジャンル原型から根と判定(wikidata Q11168 で同定)。
+    meta: { genre: "charge-jump-platformer", lineage: "super-mario-bros", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 355, positivePct: 99, noEnglish: false } },
+    games: [
+      {
+        name_en: "The Strongest TOFU",
+        name_ja: "スゴイツヨイトウフ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2408680/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A tightly crafted, single-button precision platformer in which you play a living block of tofu, developed by Zounoashi Games (the doujin and indie circle of TomozovP and Masaki Meguro) and published by the Japanese indie label Phoenixx. Everything runs on one move: crouch, charge, and release to hurl yourself in any direction, tuning the height, angle, and mid-air control of a single jump with precision, and body-slamming into enemies to defeat them and into obstacles to break them. The catch is that tofu is fragile, and the game turns that fragility into its difficulty dial with three kinds you can choose: koya (freeze-dried) tofu is sturdy and plays with no time limit for beginners, momen (firm) tofu takes fall damage for intermediate players, and kinu (silken) tofu slides on slippery physics for experts. Each stage ends when you reach a bowl of miso soup, there are boss stages along the way, and power-ups reshape the run: atsuage (thick fried tofu) makes you huge and lets you smash through everything, while aburaage (thin fried tofu) boosts your jump. It leans hard on haptics, the feel of each charged leap, carries music by Ryo Nagamatsu, and folds in affectionate homage stages to Super Mario Bros. and Donkey Kong, all as a deliberately compact one-to-two-hour experience with no padding. Released on October 2, 2024, Tofu Day in Japan, and the grand-prize winner of the first GYAAR Studio Indie Game Contest, with a Nintendo Switch version following in February 2025, it is Very Positive at 99 percent over 355 reviews (352 positive), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It already supports English alongside Japanese, Simplified and Traditional Chinese, and Korean, yet only 43 of its 355 reviews are in English (about 12.1 percent); every one of those English reviews is positive, but the Steam English-speaking world has only just begun to find it.",
+        desc_ja: "あなたが操るのは、生きた豆腐の塊——たった一つのボタンで遊ぶ、緻密に作り込まれた精密プラットフォーマーだ。開発元は ゾウノアシゲームズ（トモぞヴP と目黒将希の同人／インディーサークル）、販売元は日本のインディー系レーベル Phoenixx。遊びのすべては、一つの動きに集約される——しゃがみ、力を溜め、離して任意の方向へ跳ぶ。その一回の跳躍の高さ・角度・空中制御を精密に調整し、敵には体当たりで撃破し、障害物には体当たりで破壊する。ただし豆腐は脆い。本作はその脆さを難度のダイヤルに変えていて、三種から選べる——高野豆腐は頑丈で時間無制限、初心者向け。木綿豆腐は落下ダメージを受ける中級者向け。絹ごし豆腐は滑る物理で滑走する上級者向けだ。各ステージは味噌汁の椀にたどり着けばクリア、道中にはボス面もあり、パワーアップが遊びを組み替える——厚揚げは巨大化してあらゆるものを破壊でき、油揚げは跳躍力を上げる。ハプティクス（触覚フィードバック）に強く寄せ、溜めた一跳びの手触りを核に据え、永井崚（Ryo Nagamatsu）の楽曲を擁し、スーパーマリオブラザーズやドンキーコングへの愛あるオマージュ面を織り込む——そのすべてを、水増しのない、意図的にコンパクトな1〜2時間の体験にまとめている。2024年10月2日（日本の「とうふの日」）にリリースされ、第1回 GYAAR Studio インディーゲームコンテストの大賞を受賞、2025年2月には Nintendo Switch 版も登場した。355レビュー99%（好評352）で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。すでに英語に、日本語・簡体字／繁体字中国語・韓国語と並んで対応しているが、355件のうち英語レビューは43件（約12.1%）にとどまる——その43件はすべて好評だが、Steam の英語圏は、この一本をまだ見つけ始めたばかりだ。",
+      },
+      {
+        name_en: "Super Mario Bros.",
+        name_ja: "スーパーマリオブラザーズ",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Super_Mario_Bros.",
+        wikidata: "https://www.wikidata.org/wiki/Q11168",
+        tag_en: "The platformer origin",
+        tag_ja: "プラットフォーマーの原点",
+        desc_en: "The origin of this taste: Super Mario Bros., a side-scrolling platformer developed and published by Nintendo, released for the Family Computer in Japan in 1985 and worldwide on the NES. You run and jump through side-scrolling stages, stomping enemies, gathering power-ups that change what the hero can do, and racing to a goal at the end of each course, with fortress boss encounters along the way. As the game that crystallized and popularized the side-scrolling action platformer, it is one of the most influential video games ever made and the foundational origin of the run-jump-stomp-and-reach-the-goal platformer lineage. That skeleton is the root The Strongest TOFU grows from: it keeps the running, jumping, stomping, power-ups, boss stages, and the goal at the end of each course, but rebuilds the jump itself into a single charge-and-release move, casts you as a fragile block of tofu whose three varieties set the difficulty, swaps the goal for a bowl of miso soup, and even folds in explicit homage stages, so the homage runs both ways. The 1985 game has no Steam release, so the origin is anchored here to its Wikidata entry, with its Wikipedia page as the reference point.",
+        desc_ja: "この味の原点——スーパーマリオブラザーズ。任天堂が開発・発売した横スクロールのプラットフォーマーで、1985年に日本でファミリーコンピュータ向けに、そして世界では NES 向けに発売された。プレイヤーは横スクロールのステージを走り、跳び、敵を踏みつけ、主人公にできることを変えるパワーアップを拾い、各コースの終端にあるゴールを目指す——道中には砦のボスも待ち受ける。横スクロール・アクションプラットフォーマーを結晶化させ広く知らしめた作品として、史上最も影響力の大きいビデオゲームの一つであり、「走り、跳び、敵を踏み、ゴールを目指す」プラットフォーマーの系譜の礎となる原点だ。この骨格こそ、スゴイツヨイトウフが育つ根である。本作は、走り・跳び・踏み・パワーアップ・ボス面・各コース終端のゴールを受け継ぎながら、跳躍そのものを単一の「溜めて離す」動きへと組み直し、あなたを脆い豆腐の塊——三種の豆腐が難度を決める——に据え、ゴールを味噌汁の椀へと差し替え、そのうえで明示的なオマージュ面まで織り込む。だからオマージュは双方向に流れる。1985年の原作に Steam 版は存在せず、その原点は Wikidata のエントリで——Wikipedia のページを参照点として——同定する。",
+      },
+    ],
+    en: {
+      title: "The Strongest TOFU - a single-button precision platformer where you are a fragile block of tofu that charges one jump to slam through enemies and reach a bowl of miso soup, a Japanese indie heir to Super Mario Bros. the Steam West has only begun to find",
+      description: "A tightly crafted, single-button precision platformer in which you play a living block of tofu, by Zounoashi Games (the doujin circle of TomozovP and Masaki Meguro) and published by the Japanese indie label Phoenixx. Everything runs on one move: crouch, charge, and release to hurl yourself in any direction, precisely tuning a single jump, body-slamming enemies and breaking obstacles. Tofu is fragile, and that fragility is the difficulty dial: pick koya (sturdy, no time limit), momen (takes fall damage), or kinu (slides on slippery physics). Reach the bowl of miso soup at each stage's end, face bosses, and use power-ups (atsuage to grow huge and smash through everything, aburaage to jump higher). Haptics-focused, with music by Ryo Nagamatsu and homage stages to Super Mario Bros. and Donkey Kong, all in a deliberately tight one-to-two-hour run. Very Positive at 99 percent over 355 reviews; it supports English, yet with only about 12.1 percent English reviews the Steam West has only begun to find it.",
+      h1a: "You are a block of tofu, and your one move is to crouch, charge, and hurl yourself. ",
+      h1flip: "Aim that single jump precisely and you slam through enemies and walls, but tofu is fragile, and one careless landing can shatter the run",
+      h1b: ".",
+      lede: "A tightly crafted, single-button precision platformer in which you play a living block of tofu, developed by Zounoashi Games (the doujin and indie circle of TomozovP and Masaki Meguro) and published by the Japanese indie label Phoenixx. Everything runs on one move: crouch, charge, and release to hurl yourself in any direction, tuning the height, angle, and mid-air control of a single jump with precision, and body-slamming into enemies to defeat them and into obstacles to break them. The catch is that tofu is fragile, and the game turns that fragility into its difficulty dial with three kinds you choose: koya (freeze-dried) tofu is sturdy and plays with no time limit for beginners, momen (firm) tofu takes fall damage for intermediate players, and kinu (silken) tofu slides on slippery physics for experts. Each stage ends when you reach a bowl of miso soup, boss stages wait along the way, and power-ups reshape the run: atsuage makes you huge and smashes through everything, aburaage boosts your jump. It leans hard on haptics and folds in homage stages to Super Mario Bros. and Donkey Kong, all as a deliberately compact one-to-two-hour experience with no padding. In the lineage of Super Mario Bros. It already supports English, yet the Steam English-speaking world has only begun to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game is one button. You crouch, charge, and release, and everything the game asks is that you shape that single leap, its height, its angle, its little corrections in the air, precisely enough to land where you meant to and to body-slam through the enemy or the wall in your way. The design leans hard into haptics, the feel of the charge and the release in your hands, so mastering one jump is not a warm-up for the game, it is the game.",
+        "Tofu is fragile, and the game makes that fragility the point rather than a flaw. You choose your difficulty by choosing your tofu: koya, the sturdy freeze-dried kind, plays with no time limit for beginners; momen, firm tofu, starts taking fall damage; kinu, silken tofu, slides on slippery physics for experts. The same stages become three different tests depending on which block you are, so a careless landing that a beginner shrugs off can shatter an expert's run.",
+        "Under the precision runs a playful, tactile loop. Each stage ends not at a flagpole but at a bowl of miso soup, boss stages break the rhythm, and power-ups swing the feel wide open, atsuage turning you huge enough to smash through everything, aburaage sending your jump higher, with affectionate homage stages nodding back to Super Mario Bros. and Donkey Kong. It is built as a deliberately tight one-to-two-hour run with no padding, a game designed around the density of one perfectly judged jump rather than around length.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love precise, single-mechanic platformers where the whole game is mastering one move, here a charge-and-release jump you aim in any direction to slam through enemies and reach the goal, descended from the run-jump-stomp of Super Mario Bros. but rebuilt around a fragile block of tofu",
+        "You want difficulty you set through the material itself, three kinds of tofu (koya with no time limit, momen that takes fall damage, kinu that slides on slippery physics) reshaping the same stages, plus miso-soup goals, boss stages, power-ups (atsuage to grow huge and smash everything, aburaage to jump higher), haptics tuned to each leap, and playful homages to Super Mario Bros. and Donkey Kong",
+        "You want a Japanese indie gem the Steam West has barely found, Very Positive at 99 percent over 355 reviews, the grand-prize winner of the first GYAAR Studio Indie Game Contest, made by Zounoashi Games and published by Phoenixx, already supporting English",
+      ],
+      bad: [
+        "You want a long game to sink dozens of hours into; this is a deliberately compact one-to-two-hour precision platformer with no padding, built around the feel and replay of a single charge jump rather than around length",
+        "You expect a big-publisher, already-popular Western title, or you want something free; this is a paid Japanese indie and doujin work by Zounoashi Games (published by Phoenixx), not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's descriptors, and its audience is still overwhelmingly Japanese, with only about 12.1 percent of its reviews in English (though every one of those 43 English reviews is positive)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "スゴイツヨイトウフ - 脆い豆腐を操り、たった一つの溜めジャンプで敵を突き破り味噌汁の椀を目指す、単一ボタンの精密プラットフォーマー。スーパーマリオブラザーズの系譜、Steam の西がまだ見つけ始めたばかりの、日本のインディーの一本",
+      description: "あなたが操るのは、生きた豆腐の塊——たった一つのボタンで遊ぶ、緻密に作り込まれた精密プラットフォーマー。開発元は ゾウノアシゲームズ（トモぞヴP と目黒将希の同人サークル）、販売元は日本のインディー系レーベル Phoenixx。遊びのすべては一つの動きに集約される——しゃがみ、力を溜め、離して任意の方向へ跳ぶ。その一跳びを精密に調整し、敵には体当たりで撃破し、障害物を破壊する。豆腐は脆く、その脆さが難度のダイヤルだ——高野（頑丈・時間無制限）、木綿（落下ダメージ）、絹ごし（滑る物理）から選ぶ。各ステージ終端の味噌汁の椀を目指し、ボス面に挑み、パワーアップを使う（厚揚げで巨大化しあらゆるものを破壊、油揚げで跳躍力アップ）。ハプティクス重視、永井崚の楽曲、スーパーマリオブラザーズやドンキーコングへのオマージュ面を、水増しのない1〜2時間にまとめている。355レビュー99%で非常に好評。英語に対応済みだが、英語レビューは約12.1%——Steam の西は、この一本をまだ見つけ始めたばかりだ。",
+      h1a: "あなたは、豆腐の塊。できることはただ一つ——しゃがみ、力を溜め、身を投げること。",
+      h1flip: "その一跳びを精密に狙えば、敵も壁も突き破る。だが豆腐は脆く、たった一度の雑な着地が、そのランを砕く",
+      h1b: "。",
+      lede: "あなたが操るのは、生きた豆腐の塊——たった一つのボタンで遊ぶ、緻密に作り込まれた精密プラットフォーマーだ。開発元は ゾウノアシゲームズ（トモぞヴP と目黒将希の同人／インディーサークル）、販売元は日本のインディー系レーベル Phoenixx。遊びのすべては、一つの動きに集約される——しゃがみ、力を溜め、離して任意の方向へ跳ぶ。その一回の跳躍の高さ・角度・空中制御を精密に調整し、敵には体当たりで撃破し、障害物には体当たりで破壊する。ただし豆腐は脆い。本作はその脆さを難度のダイヤルに変えていて、三種から選べる——高野豆腐は頑丈で時間無制限、初心者向け。木綿豆腐は落下ダメージを受ける中級者向け。絹ごし豆腐は滑る物理で滑走する上級者向けだ。各ステージは味噌汁の椀にたどり着けばクリア、道中にはボス面もあり、パワーアップが遊びを組み替える——厚揚げは巨大化してあらゆるものを破壊でき、油揚げは跳躍力を上げる。ハプティクスに強く寄せ、スーパーマリオブラザーズやドンキーコングへのオマージュ面を織り込み、そのすべてを水増しのない、意図的にコンパクトな1〜2時間の体験にまとめている。スーパーマリオブラザーズの系譜に連なる一本。すでに英語に対応しているが、Steam の英語圏は、この一本をまだ見つけ始めたばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては、たった一つのボタンだ。しゃがみ、溜め、離す——ゲームが求めるのはただ、その一跳びを、高さも、角度も、空中でのわずかな補正も、狙った場所に着地し、行く手を阻む敵や壁を体当たりで突き破れるほど精密に、かたち作ることだけ。設計はハプティクス——溜めと解放の、手のなかの手触り——に強く寄せていて、だから一つの跳躍を極めることは、ゲームの準備運動ではなく、ゲームそのものになる。",
+        "豆腐は脆い。そして本作は、その脆さを欠点ではなく主眼に据える。あなたは、自分の豆腐を選ぶことで難度を選ぶ——頑丈な高野豆腐は時間無制限で初心者向け、木綿豆腐は落下ダメージを受けはじめ、絹ごし豆腐は滑る物理で滑走する上級者向けだ。同じステージが、どの豆腐であるかによって三つの異なる試練になる。だから、初心者なら受け流せる雑な着地が、上級者のランを砕きうる。",
+        "その精密さの下には、遊び心のある、触覚的なループが流れている。各ステージが終わるのは旗竿ではなく、味噌汁の椀。ボス面がリズムを断ち切り、パワーアップが手触りを大きく振る——厚揚げはあらゆるものを砕けるほど巨大化させ、油揚げは跳躍をより高くする。そしてスーパーマリオブラザーズやドンキーコングへ愛を込めて頷き返すオマージュ面がある。本作は、意図的に引き締まった、水増しのない1〜2時間のランとして作られている——長さではなく、完璧に見極めた一跳びの密度をめぐって設計されたゲームだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "たった一つの動きを極めることがすべての、精密な単一メカのプラットフォーマーが好きな人——ここではそれが、任意方向へ狙って敵を突き破り、ゴールを目指す「溜めて離す」跳躍だ。スーパーマリオブラザーズの走り・跳び・踏みから受け継がれながら、脆い豆腐の塊を核に組み直されている",
+        "素材そのもので難度を決めたい人——三種の豆腐（時間無制限の高野、落下ダメージの木綿、滑る物理の絹ごし）が同じステージを組み替え、味噌汁のゴール、ボス面、パワーアップ（巨大化してすべてを砕く厚揚げ、跳躍を上げる油揚げ）、一跳びごとに調整されたハプティクス、そしてスーパーマリオブラザーズやドンキーコングへの遊び心あるオマージュがある",
+        "Steam の西がまだほとんど見つけていない、日本のインディーの原石が欲しい人——355レビュー99%で非常に好評、第1回 GYAAR Studio インディーゲームコンテスト大賞受賞作、ゾウノアシゲームズが手がけ、Phoenixx が販売する、英語に対応済みの一本",
+      ],
+      bad: [
+        "何十時間も費やせる長いゲームが欲しい人（本作は、意図的にコンパクトな1〜2時間の精密プラットフォーマーで、水増しは無く、長さではなく、一つの溜めジャンプの手触りと反復をめぐって作られている）",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人、あるいは無料のものが欲しい人（本作は ゾウノアシゲームズ による有料のインディー／同人作で——販売は Phoenixx——無料でもアーリーアクセスでもない。AI生成アセットはなく、Steam のディスクリプタ上、性的な要素もない。受け手の中心はいまも圧倒的に日本語圏で、英語レビューは約12.1%にとどまる。ただし、その43件の英語レビューはすべて好評だ）",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5623,6 +5710,19 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Only Up! is a 3D climbing platformer developed by SCKR Games and released on Steam in 2023. The player climbs ever upward across a towering, surreal stack of floating platforms and debris, and because there are no checkpoints, a single misstep can send you plummeting far back down and undo long stretches of hard-won height in an instant. Built so that the whole tension is the fear of falling and losing progress, with the only goal being to keep going up, it became a viral streaming phenomenon in 2023 and crystallized and popularized the ascension climbing platformer, the lineage where the entire game is the climb and one fall can cost you everything. It was later delisted from Steam, so its origin is anchored to its Wikidata entry rather than a store page.",
       ja: "Only Up!(上がるのみ!)は、SCKR Games が開発し2023年に Steam で配信された3Dのクライミング・プラットフォーマーである。プレイヤーは、垂直にそびえ立つ、浮遊する足場と瓦礫の塔を、ひたすら上へと登っていく——そしてチェックポイントが存在しないため、たった一度の踏み外しで遥か下まで落ち、苦労して稼いだ高さが一瞬にして失われることがある。ゲームの緊張のすべてを「落ちる恐怖」と「積み上げた高さを失うこと」に置き、ただ上へ登り続けることだけを目標に据えた設計により、2023年に配信を中心として爆発的に流行し、上昇（ascension）型のクライミング・プラットフォーマーを結晶化させ広く知らしめた。ゲームのすべてが「登ること」であり、一度の落下で何もかもを失いかねない——その系譜の原点である。のちに Steam から配信停止（delist）されたため、その原点は Steam のストアページではなく Wikidata のエントリで同定する。",
+    },
+  },
+  // 原点 スーパーマリオブラザーズ(Super Mario Bros.), 任天堂, 1985(ファミリーコンピュータ/NES)。横スクロールで
+  //   走り・跳び・敵を踏み・パワーアップで能力を変え、各コース終端のゴールを目指す——「走り、跳び、踏み、ゴールへ
+  //   到達する」横スクロール・アクションプラットフォーマーを結晶化させ広く知らしめた原点。1985年の原作に Steam 版は
+  //   無い → wikidata QID(Q11168・label「Super Mario Bros.」/「1985 platform video game」実測確認済み)で同定する
+  //   (Steam id を捏造しない・href 破損の回避)。established 側は wikidata URL(Q11168)完全一致で逆引き成立し、公式
+  //   参照点として Wikipedia を homepage 併記(gameUrl フォールバックで href 破損回避)。
+  "super-mario-bros": {
+    wikidata: "https://www.wikidata.org/wiki/Q11168",
+    blurb: {
+      en: "Super Mario Bros. is a side-scrolling platformer developed and published by Nintendo, released for the Family Computer in Japan in 1985 and worldwide on the NES. The player runs and jumps through side-scrolling stages, stomping enemies, gathering power-ups that change the hero's abilities, and racing to a goal at the end of each course, with fortress boss encounters along the way. As the game that crystallized and popularized the side-scrolling action platformer, it is one of the most influential video games ever made and the foundational origin of the run-jump-stomp-and-reach-the-goal platformer lineage. The 1985 game has no Steam release, so its origin is anchored to its Wikidata entry.",
+      ja: "スーパーマリオブラザーズは、任天堂が開発・発売した横スクロールのプラットフォーマーで、1985年に日本でファミリーコンピュータ向けに、そして世界では NES 向けに発売された。プレイヤーは横スクロールのステージを走り、跳び、敵を踏みつけ、主人公の能力を変えるパワーアップを拾い、各コースの終端にあるゴールを目指す——道中には砦のボスも待ち受ける。横スクロール・アクションプラットフォーマーを結晶化させ広く知らしめた作品として、史上最も影響力の大きいビデオゲームの一つであり、「走り、跳び、敵を踏み、ゴールを目指す」プラットフォーマーの系譜の礎となる原点である。1985年の原作に Steam 版は存在せず、その原点は Wikidata のエントリで同定する。",
     },
   },
 } as const;
