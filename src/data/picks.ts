@@ -5088,6 +5088,92 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "abyss-runner": {
+    published: "2026-07-04",
+    publishAt: "2026-07-04",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 134 件は "hundreds"(数百)と言い切るには境界的(誇張しない)。rarity.reviews=134 を
+    //   確定値でそのまま出す。obscurity は "deep"(レビュー僅少・西で無名)——momibosu(60)/witchroid-vania(83)と
+    //   同帯の小規模。英語対応済みで noEnglish=false のため lang_walled は使わない(誤って「英語非対応」stamp を
+    //   立てない・正直さ)。英語レビュー 33/134=24.6% で西未浸透 = reachState="unreached_west"(ただし処女地では
+    //   なく中程度・stamp は positivePct+reviews で埋まるため "西ではまだ無名" fallback は発火しない・状態の
+    //   正直な記録として付す)。系譜は Only Up!(上がるのみ!)——ストア説明文の「上がるのみ!ゲームに影響を受けた」の直接引用。
+    meta: { genre: "climbing-platformer", lineage: "only-up", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 134, positivePct: 93, noEnglish: false } },
+    games: [
+      {
+        name_en: "Abyss Runner",
+        name_ja: "アビスランナー",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3779380/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A brutally hard, precision 2D climbing platformer in the Only Up! mold, by Asuwawagami, a Japanese doujin and indie developer, published by the Japanese indie label Tensei Games. You play Lily, the Queen of the Underworld, whose magic is immense but who is, frankly, a bit of an airhead. Spotting a vertical pit full of monsters, she hatches a prank: fling a Cursed Arm Binder onto a passing adventurer and drop him in for the monsters to feast on. Instead she trips into her own trap, the binder clamps onto her own arms, and because it seals off all of her magic she can no longer fly, plummeting straight down into the abyss completely defenseless. From there the game has a single objective, climb up: it is, in the developer's own words on the store page, a 2D platformer influenced by Only Up!, a deliberately merciless ascension where you inch up out of the pit through four areas while countless monsters get in your way, and a single slip can strip away a long stretch of hard-won height in an instant. The difficulty is punishing on purpose, its beta testers were tearing their hair out and the developer took two full days to reach the top, with hidden techniques to master and, for those who do not want the full ordeal, optional cheats offered as a mercy. Released in May 2026, it is Very Positive at 93 percent over 134 reviews (125 positive, 9 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. Asuwawagami is a Japanese doujin and indie developer, and Tensei Games a Japanese indie games studio. It already supports English alongside Japanese and Simplified and Traditional Chinese, yet with only 33 of its 134 reviews in English (about 24.6 percent) and no Korean at all, the Steam English-speaking world has only begun to find it.",
+        desc_ja: "「上がるのみ!」の系譜に連なる、高難度・精密の2Dクライミング・プラットフォーマー。開発元は Asuwawagami（明日は我が身）——日本の同人／インディー開発者で、販売元は日本のインディー系レーベル Tensei Games（転生）だ。あなたが操るのは、魔界の女王リリ——魔法の力は絶大だが、正直、少しおバカ。ある日、魔物が巣食う縦穴を見つけたリリは、いたずらを思いつく。「呪いのアームバインダー」を通りすがりの冒険者に投げつけ、縦穴へ突き落として魔物の餌にしてやろう、と。ところが——リリは自らの罠に嵌る。アームバインダーは自分の腕に装着され、その効果で魔法の力がすべて封じられてしまう。もう飛べない。無防備なまま、リリはアビス（奈落）の底へと真っ逆さまに落ちていく。ここからのゲームの目標はただ一つ、上へ登ること——ストアページで開発者自身が「『上がるのみ!』（Only Up!）ゲームに影響を受けた2Dプラットフォーマ」と明言する、意図的に容赦のない上昇（ascension）だ。全4エリアの縦穴を、数多のモンスターに邪魔されながら、少しずつ上へよじ登っていく。そして、わずかな踏み外しが、苦労して稼いだ高さを一気に奪っていく。難易度はわざと理不尽なほど高く、テストプレイヤーは阿鼻叫喚、開発者自身が初回クリアに2日を要したという。習得すべき隠しテクニックがあり、そして「そこまでの苦行は望まない」人のために、救済としてのオプションのチート（裏技）も用意されている。2026年5月リリース、134レビュー93%（好評125・不評9）で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。Asuwawagami は日本の同人／インディー開発者、Tensei Games は日本のインディー・ゲームスタジオだ。すでに英語に、日本語・簡体字／繁体字中国語と並んで対応しているが、134件のうち英語レビューは33件（約24.6%）にとどまり、韓国語には一切対応していない——Steam の英語圏は、この一本をまだ見つけ始めたばかりだ。",
+      },
+      {
+        name_en: "Only Up!",
+        name_ja: "Only Up!（上がるのみ!）",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Only_Up!",
+        wikidata: "https://www.wikidata.org/wiki/Q119626229",
+        tag_en: "The ascension origin",
+        tag_ja: "上昇の原点",
+        desc_en: "The origin of this taste: Only Up!, a 3D climbing platformer developed by SCKR Games and released on Steam in 2023. You climb ever upward across a towering, surreal stack of floating platforms and debris, and with no checkpoints, a single misstep can send you plummeting far back down and undo long stretches of hard-won height in an instant, so the whole game becomes the fear of falling and the pull to try the same climb again. It exploded into a viral streaming phenomenon in 2023 and crystallized the ascension climbing platformer, the lineage where the entire game is the climb and one fall can cost you everything. That core is the root Abyss Runner grows from, keeping the up-only ascension and the terror of losing height, but flattening it into a precision 2D platformer, wrapping it in a comic story of a fallen demon queen, and threading monsters through the climb across four areas. Only Up! was later delisted from Steam, so the origin is anchored here to its Wikidata entry rather than a store page.",
+        desc_ja: "この味の原点——Only Up!（上がるのみ!）。SCKR Games が開発し、2023年に Steam で配信された3Dのクライミング・プラットフォーマーだ。プレイヤーは、垂直にそびえ立つ、浮遊する足場と瓦礫の塔を、ひたすら上へと登っていく。チェックポイントは無く、たった一度の踏み外しで遥か下まで落ち、苦労して稼いだ高さが一瞬にして失われる——だからゲームのすべてが、「落ちる恐怖」と、「同じ登りにもう一度挑む」引力になる。2023年に配信を中心として爆発的に流行し、上昇（ascension）型のクライミング・プラットフォーマー——ゲームのすべてが「登ること」であり、一度の落下で何もかもを失いかねない、その系譜——を結晶化させた。この核こそ、Abyss Runner が育つ根だ。本作は「上へ登るのみ」の上昇と、高さを失う恐怖を受け継ぎながら、それを精密な2Dプラットフォーマーへと落とし込み、罠に落ちた魔王の喜劇的な物語で包み、全4エリアの登りにモンスターを織り込んでいる。Only Up! はのちに Steam から配信停止（delist）されたため、その原点は、ストアページではなく Wikidata のエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "Abyss Runner - a brutally hard 2D climbing platformer where a demon queen, sealed by her own cursed trap, must climb up out of a monster-filled abyss with every slip dragging her back down, a Japanese indie heir to Only Up! the Steam West has only begun to find",
+      description: "A brutally hard, precision 2D climbing platformer in the Only Up! mold, by Asuwawagami, a Japanese doujin and indie developer, published by the Japanese indie label Tensei Games. You play Lily, the airheaded Queen of the Underworld, who tries to prank an adventurer with a Cursed Arm Binder but falls into her own trap, has her magic sealed, and plummets defenseless into a monster-filled pit. The only objective is to climb up: a deliberately merciless ascension through four areas where a single slip can strip away a long stretch of hard-won height, with hidden techniques to master and optional cheats as a mercy. Very Positive at 93 percent over 134 reviews; it supports English, yet with only about 24.6 percent English reviews the Steam West has only begun to find it.",
+      h1a: "You are the demon queen who set the trap, and you fell into it yourself. ",
+      h1flip: "Your magic is sealed, the only way out of the abyss is up, and every slip sends you falling back down",
+      h1b: ".",
+      lede: "A brutally hard, precision 2D climbing platformer in the Only Up! mold, by Asuwawagami, a Japanese doujin and indie developer, published by the Japanese indie label Tensei Games. You play Lily, the Queen of the Underworld, whose magic is immense but who is, frankly, a bit of an airhead. She spots a monster-filled vertical pit and hatches a prank: fling a Cursed Arm Binder onto a passing adventurer and drop him in. Instead she trips into her own trap, the binder clamps onto her own arms, seals off all of her magic so she can no longer fly, and she plummets defenseless into the abyss. From there the game has a single objective, climb up: in the developer's own words on the store page, a 2D platformer influenced by Only Up!, a deliberately merciless ascension through four areas where monsters get in your way and a single slip can strip away a long stretch of hard-won height. There are hidden techniques to master and, for those who do not want the full ordeal, optional cheats offered as a mercy. In the lineage of Only Up! It already supports English, yet the Steam English-speaking world has only begun to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game is a climb, and what you can lose is height. In the Only Up! mold that inspired it, there are no gentle do-overs: a slip can send you falling back down and cost you a hard-won stretch of the ascent, so every precise jump carries the weight of everything below it. The pull is the same one that made Only Up! spread, the fear of falling and the itch to line up the exact jump one more time.",
+        "It is punishing on purpose. The developer took two full days to reach the top and the beta testers were tearing their hair out, and across four areas of the vertical pit the monsters are not scenery but obstacles that get in your way and try to stop the climb, so ascending is a precision gauntlet where reading each hazard and nailing each jump is the entire game.",
+        "But it is not pure cruelty. There are hidden techniques to discover and master that change how you move, and for players who do not want the full ordeal there are optional cheats offered as a mercy, so the same abyss can be a masochistic test or a gentler climb. Under the difficulty runs a dark comedy: a powerful, airheaded demon queen who set a trap and fell into it herself, stripped of her magic and forced to claw her way back up defenseless.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Only Up! and the ascension climbing platformer, the merciless up-only climb where one slip drops you back down and the whole game is the fear of losing your height, here reframed as a fallen demon queen clawing out of a monster-filled abyss",
+        "You want that ascension threaded with 2D precision and enemies: four areas of a vertical pit where monsters get in your way, hidden techniques to master, and, if the full punishment is too much, optional cheats offered as a mercy",
+        "You want a Japanese indie gem the Steam West has barely found, Very Positive at 93 percent over 134 reviews, already supporting English, the work of Asuwawagami published by the Japanese indie studio Tensei Games",
+      ],
+      bad: [
+        "You bounce off brutally hard, punishing platformers; this is an intentionally merciless up-only ascension where one slip can cost you a long stretch of progress, its own beta testers were tearing their hair out, and the whole pull is enduring that until you reach the top (there are optional cheats, but they are a mercy, not the intended way to play)",
+        "You expect a big-publisher, already-popular Western title, or you want something free; this is a paid indie and doujin work by Asuwawagami (published by the Japanese indie studio Tensei Games), not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's descriptors, and its audience is still mostly Japanese and Chinese-speaking, with only about 24.6 percent of reviews in English",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "アビスランナー - 罠を仕掛けた魔王が自らの罠に落ち、魔法を封じられて奈落の底から上へ登る。一度の踏み外しが稼いだ高さを奪う、高難度・精密の2Dクライミング・プラットフォーマー。「上がるのみ!」の系譜、Steam の西がまだ見つけ始めたばかりの、日本のインディーの一本",
+      description: "「上がるのみ!」（Only Up!）の系譜に連なる、高難度・精密の2Dクライミング・プラットフォーマー。開発元は日本の同人／インディー開発者 Asuwawagami（明日は我が身）、販売元は日本のインディー系レーベル Tensei Games（転生）。魔界の女王リリは、冒険者を陥れようと「呪いのアームバインダー」を使うが、自らの罠に嵌り、魔法を封じられて無防備なままアビスへ落ちる。目標はただ一つ、上へ登ること。全4エリアの縦穴を、モンスターに邪魔されながらよじ登り、わずかな踏み外しが稼いだ高さを奪う。134レビュー93%で非常に好評。英語に対応済みだが、英語レビューは約24.6%——Steam の西は、この一本をまだ見つけ始めたばかりだ。",
+      h1a: "罠を仕掛けた魔王が、自分の罠に落ちた。",
+      h1flip: "魔法は封じられ、アビスから出る道はただ一つ、上へ——そして少しの踏み外しが、あなたを下へと突き落とす",
+      h1b: "。",
+      lede: "「上がるのみ!」の系譜に連なる、高難度・精密の2Dクライミング・プラットフォーマー。開発元は Asuwawagami（明日は我が身）——日本の同人／インディー開発者で、販売元は日本のインディー系レーベル Tensei Games（転生）だ。あなたが操るのは、魔界の女王リリ——魔法の力は絶大だが、正直、少しおバカ。魔物が巣食う縦穴を見つけたリリは、いたずらを思いつく。「呪いのアームバインダー」を通りすがりの冒険者に投げつけ、縦穴へ突き落としてやろう、と。ところが——リリは自らの罠に嵌る。アームバインダーは自分の腕に装着され、魔法の力がすべて封じられてしまう。もう飛べない。無防備なまま、リリはアビスの底へと落ちていく。ここからのゲームの目標はただ一つ、上へ登ること——ストアページで開発者自身が「『上がるのみ!』（Only Up!）ゲームに影響を受けた2Dプラットフォーマ」と明言する、意図的に容赦のない上昇（ascension）だ。全4エリアの縦穴を、モンスターに邪魔されながらよじ登り、わずかな踏み外しが、苦労して稼いだ高さを一気に奪っていく。習得すべき隠しテクニックがあり、そして「そこまでの苦行は望まない」人のために、救済としてのオプションのチート（裏技）も用意されている。Only Up! の系譜に連なる一本。すでに英語に対応しているが、Steam の英語圏は、この一本をまだ見つけ始めたばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては登りであり、失いうるのは「高さ」だ。影響元である『上がるのみ!』の型がそうであるように、優しいやり直しは無い——わずかな踏み外しが、あなたを下へと落とし、苦労して稼いだ登りの一区間を奪っていく。だから一つひとつの精密な跳躍は、その下にあるすべての重みを背負う。引力は、『上がるのみ!』を広めたのと同じもの——落ちる恐怖と、同じ跳躍をもう一度きっちり合わせたくなる、あの疼きだ。",
+        "難易度は、わざと理不尽なほど高い。開発者自身が頂上まで2日を要し、テストプレイヤーは阿鼻叫喚——全4エリアの縦穴では、モンスターは背景ではなく、あなたの邪魔をし、登りを止めにくる障害だ。だから上昇は、一つひとつの危険を読み、一つひとつの跳躍を決めることがすべての、精密な試練になる。",
+        "だが、ただ残酷なだけではない。見つけて習得すれば動き方が変わる隠しテクニックがあり、そして「そこまでの苦行は望まない」人のために、救済としてのオプションのチート（裏技）が用意されている——同じアビスが、厳しい試練にも、もう少し優しい登りにもなる。その難易度の下には、ダークコメディが流れている。強大だが、少しおバカな魔王が、自ら仕掛けた罠に自分で落ち、魔法を奪われ、無防備なまま這い上がる羽目になる——その物語だ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "『上がるのみ!』と、上昇（ascension）型のクライミング・プラットフォーマーが好きな人——一度の踏み外しで下へ落ち、ゲームのすべてが「高さを失う恐怖」になる、あの容赦のない上りだけの登り。本作はそれを、モンスターの巣食う奈落から這い上がる、罠に落ちた魔王の物語として組み直している",
+        "その上昇を、2Dの精密さと敵に織り込んだものが欲しい人——モンスターが邪魔をしてくる全4エリアの縦穴、習得すべき隠しテクニック、そして苦行がきつすぎるなら、救済として用意されたオプションのチート",
+        "Steam の西がまだほとんど見つけていない、日本のインディーの原石が欲しい人——134レビュー93%で非常に好評、英語に対応済み、Asuwawagami が手がけ、日本のインディースタジオ Tensei Games が販売する一本",
+      ],
+      bad: [
+        "難しく、厳しいプラットフォーマーが苦手な人（本作は、わざと容赦なく作られた上りだけの上昇で、一度の踏み外しが長い進捗を奪いかねない。テストプレイヤーですら頭を掻きむしり、そのループを頂上まで耐えることにこそ引力がある。オプションのチートはあるが、それは救済であって、本来の遊び方ではない）",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人、あるいは無料のものが欲しい人（本作は Asuwawagami による有料のインディー／同人作で——販売は日本のインディースタジオ Tensei Games——無料でもアーリーアクセスでもない。AI生成アセットはなく、Steam のディスクリプタ上、性的な要素もない。受け手の中心はいまも日本語・中国語圏で、英語レビューは約24.6%にとどまる）",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5523,6 +5609,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Crayon Physics Deluxe is a physics-based puzzle game created by the Finnish independent designer Petri Purho and released in 2009. The player draws shapes with a crayon on a 2D canvas, and everything drawn instantly becomes a solid object that obeys gravity and physics, so guiding a ball to a star means sketching ramps, levers, pendulums, and weights and letting the simulation carry them out. Winner of the Seumas McNally Grand Prize at the Independent Games Festival, it crystallized and popularized the draw-a-shape-and-let-physics-solve-it puzzle and is a defining origin of the hand-drawn physics puzzle lineage.",
       ja: "Crayon Physics Deluxe は、フィンランドの独立系デザイナー Petri Purho が制作し、2009年に発売した物理演算パズルゲームである。プレイヤーは2Dのキャンバスにクレヨンで形を描き、描いたものはすべて、その瞬間に重力と物理に従う固いオブジェクトになる。ボールを星まで導くには、坂やてこ、振り子、重りを描き、あとはシミュレーションに委ねればよい。インディペンデント・ゲームズ・フェスティバルでシューマス・マクナリー大賞を受賞し、「形を描いて、あとは物理に解かせる」パズルを結晶化させ広く知らしめた、手描き物理パズルの系譜を定義する原点である。",
+    },
+  },
+  // 原点 Only Up!(2023), SCKR Games。垂直に積み上がった浮遊物の塔をひたすら上へ登る 3D プラットフォーマー。
+  //   チェックポイントが無く、一度の踏み外しで遥か下まで落ち、積み上げた高さが一瞬で失われる——「落ちる恐怖と、
+  //   稼いだ高さを失う緊張」を核に、上へ登ることだけを目標にした ascension/climbing プラットフォーマーを結晶化し
+  //   広く知らしめた原点。2023 年に配信直後から配信者を中心に爆発的に流行したが、後に Steam から delist され現在
+  //   購入不可 → Steam id を積まない(delist 済みリンクは href 破損)。wikidata QID(Q119626229・label「Only Up!」/
+  //   「2023 video game」実測確認済み)で同定する(Steam id を捏造しない・twilight-syndrome 型 href 破損の回避)。
+  //   established 側と wikidata URL(Q119626229)の完全一致で逆引き成立(lineageName の Wikidata 同定)。
+  "only-up": {
+    wikidata: "https://www.wikidata.org/wiki/Q119626229",
+    blurb: {
+      en: "Only Up! is a 3D climbing platformer developed by SCKR Games and released on Steam in 2023. The player climbs ever upward across a towering, surreal stack of floating platforms and debris, and because there are no checkpoints, a single misstep can send you plummeting far back down and undo long stretches of hard-won height in an instant. Built so that the whole tension is the fear of falling and losing progress, with the only goal being to keep going up, it became a viral streaming phenomenon in 2023 and crystallized and popularized the ascension climbing platformer, the lineage where the entire game is the climb and one fall can cost you everything. It was later delisted from Steam, so its origin is anchored to its Wikidata entry rather than a store page.",
+      ja: "Only Up!(上がるのみ!)は、SCKR Games が開発し2023年に Steam で配信された3Dのクライミング・プラットフォーマーである。プレイヤーは、垂直にそびえ立つ、浮遊する足場と瓦礫の塔を、ひたすら上へと登っていく——そしてチェックポイントが存在しないため、たった一度の踏み外しで遥か下まで落ち、苦労して稼いだ高さが一瞬にして失われることがある。ゲームの緊張のすべてを「落ちる恐怖」と「積み上げた高さを失うこと」に置き、ただ上へ登り続けることだけを目標に据えた設計により、2023年に配信を中心として爆発的に流行し、上昇（ascension）型のクライミング・プラットフォーマーを結晶化させ広く知らしめた。ゲームのすべてが「登ること」であり、一度の落下で何もかもを失いかねない——その系譜の原点である。のちに Steam から配信停止（delist）されたため、その原点は Steam のストアページではなく Wikidata のエントリで同定する。",
     },
   },
 } as const;
