@@ -4745,6 +4745,90 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "moonless-moon": {
+    published: "2026-07-02",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand "hundreds"(314=数百)を持たせる。rarity.reviews=314 が確定値で stamp を埋める。英語対応済みで
+    //   noEnglish=false のため lang_walled は使わない(誤って「英語非対応」stamp を立てない・正直さ)。英語レビュー
+    //   34/314=10.8% は西未浸透が強い = reachState="unreached_west"。obscurity は "wall"(高評価だが西へ未到達=
+    //   壁の向こう)。stamp は positivePct+reviews で埋まるため "西ではまだ無名" fallback は発火しない(状態の正直な
+    //   記録として reachState を付す)。系譜は銀河鉄道の夜(宮沢賢治 1934・Wikidata Q1524969)。
+    meta: { genre: "riddle-adventure", lineage: "night-on-the-galactic-railroad", obscurity: "wall", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 314, positivePct: 92, noEnglish: false } },
+    games: [
+      {
+        name_en: "Moonless Moon",
+        name_ja: "ムーンレスムーン",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2951340/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A text adventure that runs like a playable music video, the first work of the ANMC (Anomachi) project, which makes music and indie games from the stories and worldview of the Japanese writer Kazuhide Oka. It is developed by Kazuhide Oka and published by KAMITSUBAKI STUDIO, a Tokyo music studio, together with yokaze. The main story is told through entirely original songs and animated music videos, so you do not just read the scenes, you ride through them, drifting across dreamlike, shifting worlds, a moon desert, a cafe inside a tunnel, an island floating in the sky. Between those sung passages comes a RIDDLE part, where you search each world for keywords and place them to solve the puzzle that opens the way forward, and the journey branches toward multiple endings, a poetic night pilgrimage you can walk again for a different close. Released in August 2024, it is Very Positive at 92 percent over 314 reviews, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It already supports Japanese, English, and Simplified and Traditional Chinese, yet only 34 of its 314 reviews are in English (about 10.8 percent); a Chinese localization exists, but the West's actual player base has barely arrived, with KAMITSUBAKI known within music and virtual-singer circles yet essentially unknown among gamers, so on Steam this is still a gem the West has hardly found.",
+        desc_ja: "「プレイできるミュージックビデオ」のようなテキストアドベンチャー。日本の作家 Kazuhide Oka の物語と世界観をもとに、音楽とインディーゲームを制作するプロジェクト ANMC（アノマチ）の第1作だ。開発は Kazuhide Oka、販売は東京の音楽スタジオ・神椿スタジオ（KAMITSUBAKI STUDIO）と yokaze。本編は全編オリジナル楽曲とアニメーションMVで語られ、あなたは場面をただ読むのではなく、その中を「くぐって」進んでいく——月の砂漠、トンネルの中の喫茶店、空に浮かぶ島。夢のように移ろう世界を巡る。歌のパートの合間には「RIDDLEパート」がある。世界の中からキーワードを探し出し、当てはめて、行く手を開く謎を解く。旅は複数のエンディングへと分岐し、別の結末へ、もう一度歩き直せる、詩的な夜の巡礼だ。2024年8月リリース、314レビュー92%で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。日本語・英語・簡体字／繁体字中国語に対応しているが、314件のうち英語レビューは34件（約10.8%）にとどまる。中国語ローカライズはあるものの、西側の実プレイ層はまだほとんど到達していない——神椿の知名度は音楽やバーチャルシンガーの圏内に限られ、ゲーム層ではほぼ無名だからだ。Steam では、これはまだ西がほとんど見つけていない原石である。",
+      },
+      {
+        name_en: "Night on the Galactic Railroad",
+        name_ja: "銀河鉄道の夜",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Night_on_the_Galactic_Railroad",
+        wikidata: "https://www.wikidata.org/wiki/Q1524969",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Night on the Galactic Railroad, a novel by the Japanese author and poet Kenji Miyazawa, left unfinished at his death and published posthumously in 1934. A lonely boy, Giovanni, boards a mysterious train that runs through the night sky along the Milky Way and travels with his friend Campanella past strange, dreamlike stations and landscapes, while the journey turns quietly toward death, sacrifice, and the search for true happiness. That core, a poetic night voyage through unreal, shifting worlds that becomes a meditation on life and death, is the root Moonless Moon grows from, carrying it into a playable music video whose original songs and animated MVs drift through a moon desert, a cafe inside a tunnel, and an island in the sky. There is no game version of the 1934 novel, so its origin is anchored to its Wikidata entry.",
+        desc_ja: "この味の原点——銀河鉄道の夜。日本の作家・詩人、宮沢賢治の小説で、賢治の没後、未完のまま遺され、1934年に発表された。孤独な少年ジョバンニが、天の川に沿って夜空を走る不思議な列車に乗り込み、友人のカムパネルラとともに、夢のように移り変わる駅や風景を巡っていく——その旅は、やがて静かに、死や、自己犠牲や、「ほんとうの幸い」とは何かという問いへと向かっていく。星空の下、非現実的に移ろう世界を巡る旅が、そのまま生と死をめぐる瞑想になる——この詩的な「夜の旅」の核こそ、ムーンレスムーンが育つ根だ。本作はそれを、オリジナル楽曲とアニメーションMVが、月の砂漠、トンネルの中の喫茶店、空に浮かぶ島を巡る「プレイできるミュージックビデオ」へと運んでいる。1934年の小説にゲーム版は存在しないため、その原点は Wikidata のエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "Moonless Moon - a text adventure that plays like a music video, riding original songs and animated MVs through a moon desert, a cafe inside a tunnel, and an island in the sky, solving riddles by finding and placing keywords, a poetic heir to Night on the Galactic Railroad the West has barely found",
+      description: "A text adventure that runs like a playable music video, the first work of the ANMC project from the Japanese writer Kazuhide Oka, published by the Tokyo music studio KAMITSUBAKI STUDIO with yokaze. The story unfolds through entirely original songs and animated MVs across dreamlike, shifting worlds, a moon desert, a cafe inside a tunnel, an island floating in the sky, with a RIDDLE part where you find and place keywords to open the way, branching toward multiple endings. In the lineage of Night on the Galactic Railroad. Very Positive at 92 percent over 314 reviews; it supports English, yet with only about 10.8 percent of its reviews in English the West has barely found it.",
+      h1a: "It is not a game with music playing over it. ",
+      h1flip: "It is a music video you play through, riddle by riddle, world by dreamlike world",
+      h1b: ".",
+      lede: "A text adventure that runs like a playable music video, the first work of the ANMC (Anomachi) project, which makes music and indie games from the stories and worldview of the Japanese writer Kazuhide Oka, developed by Oka and published by the Tokyo music studio KAMITSUBAKI STUDIO with yokaze. The main story is told through entirely original songs and animated music videos, so you do not just read the scenes, you ride through them, drifting across dreamlike, shifting worlds, a moon desert, a cafe inside a tunnel, an island floating in the sky. Between those sung passages comes a RIDDLE part, where you search each world for keywords and place them to solve the puzzle that opens the way, and the journey branches toward multiple endings. In the lineage of Night on the Galactic Railroad. It already supports English, yet the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole thing is built as a playable music video. The story moves through entirely original songs and animated MVs, so a scene is something you ride rather than something you read, and the pull is the sensation of being inside the video, carried by the music through a night that keeps opening into stranger, dreamlike worlds, a moon desert, a cafe inside a tunnel, an island floating in the sky.",
+        "It does not leave you a passive viewer. Between the sung passages comes a RIDDLE part, where you have to read the poem-world closely enough to find its hidden keywords and place them to unlock the way forward, so advancing the night becomes an act of attention: the song sets the mood, and the riddle asks whether you actually understood what you just drifted through.",
+        "It is a journey you can walk more than once. The route branches across unreal, shifting worlds toward multiple endings, so the same poetic night reads differently depending on where it closes, and the feeling it reaches for is the one at the heart of Night on the Galactic Railroad, a dreamlike nocturnal voyage through otherworldly places that turns, quietly, toward the questions at the edge of living.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a poetic night journey rather than a system to master, a playable music video of entirely original songs and animated MVs drifting through dreamlike worlds, a moon desert, a cafe inside a tunnel, an island in the sky, in the lineage of Night on the Galactic Railroad",
+        "You want that ride to ask something of you: a RIDDLE part where you find and place hidden keywords to open the way, branching across worlds toward multiple endings that reward a second and third pass",
+        "You want a Japanese indie gem the West has barely found, Very Positive at 92 percent over 314 reviews and already supporting English, the first work of the ANMC project by the writer Kazuhide Oka, published by the Tokyo music studio KAMITSUBAKI STUDIO with yokaze",
+      ],
+      bad: [
+        "You want long, mechanically deep gameplay or a large branching RPG; this is a short, story-and-music-first text adventure carried by its original songs and its keyword riddles rather than by systems, a paid title, not free and not in Early Access",
+        "You expect a big-studio, already-popular Western hit; its maker is known mainly in music and virtual-singer circles rather than among gamers, and with only about 10.8 percent of its 314 reviews in English and a Chinese localization but little Western play, it is still largely a Japanese-speaking audience the West has barely reached (no AI-generated assets, and Steam flags no sexual content)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ムーンレスムーン - プレイできるミュージックビデオのようなテキストアドベンチャー。全編オリジナル楽曲とアニメーションMVで、月の砂漠、トンネルの中の喫茶店、空に浮かぶ島——夢のような世界を巡り、キーワードを探して当てはめる謎解きで夜を進める。銀河鉄道の夜の系譜、西がまだ見つけていない、日本のインディーの一本",
+      description: "「プレイできるミュージックビデオ」のようなテキストアドベンチャー。日本の作家 Kazuhide Oka の物語と世界観をもとに音楽とインディーゲームを作るプロジェクト ANMC（アノマチ）の第1作で、販売は東京の音楽スタジオ・神椿スタジオ（KAMITSUBAKI STUDIO）と yokaze。本編は全編オリジナル楽曲とアニメーションMVで進み、月の砂漠、トンネルの中の喫茶店、空に浮かぶ島——夢のように移ろう世界を巡る。歌の合間には「RIDDLEパート」があり、キーワードを探して当てはめ、行く手を開く謎を解く。旅は複数のエンディングへ分岐する。銀河鉄道の夜の系譜。英語に対応済みだが、314件中の英語レビューは約10.8%——西はこの一本を、まだほとんど見つけていない。",
+      h1a: "音楽が添えられた、ただのゲームではない。",
+      h1flip: "謎を解きながら世界から世界へくぐり抜ける、プレイできるミュージックビデオだ",
+      h1b: "。",
+      lede: "「プレイできるミュージックビデオ」のようなテキストアドベンチャー。日本の作家 Kazuhide Oka の物語と世界観をもとに、音楽とインディーゲームを制作するプロジェクト ANMC（アノマチ）の第1作で、開発は Oka、販売は東京の音楽スタジオ・神椿スタジオ（KAMITSUBAKI STUDIO）と yokaze だ。本編は全編オリジナル楽曲とアニメーションMVで語られ、あなたは場面をただ読むのではなく、その中を「くぐって」進んでいく——月の砂漠、トンネルの中の喫茶店、空に浮かぶ島。夢のように移ろう世界を巡る。歌のパートの合間には「RIDDLEパート」があり、世界の中からキーワードを探し出して当てはめ、行く手を開く謎を解く。旅は複数のエンディングへと分岐する。銀河鉄道の夜の系譜に連なる一本。英語に対応済みだが、西はこの一本を、まだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "すべては「プレイできるミュージックビデオ」として作られている。物語は全編オリジナル楽曲とアニメーションMVで進むから、場面は読むものではなく、くぐり抜けるものになる。引力は、映像の「中」にいる感覚だ——音楽に運ばれ、夜がより奇妙で、夢のような世界へと次々に開いていく。月の砂漠、トンネルの中の喫茶店、空に浮かぶ島へと。",
+        "本作は、あなたを受け身の観客のままにはしない。歌のパートの合間には「RIDDLEパート」があり、その詩のような世界を、隠されたキーワードを見つけられるほど深く読み解き、当てはめて、行く手を開かなければならない。だから夜を進めることは、注意を向ける行為そのものになる——歌が空気をつくり、謎が、いま漂い抜けてきたものを本当に理解できたかを問う。",
+        "これは、一度きりでは終わらない旅だ。道は非現実的に移ろう世界を巡り、複数のエンディングへと分岐する。だから同じ詩的な夜も、どこで閉じるかによって別の顔を見せる。そして本作がたどり着こうとする感覚は、銀河鉄道の夜の核にあるものと同じだ——星空の下、異世界のような場所を巡る夢のような夜の旅が、静かに、生の際にある問いへと向かっていく。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "習熟すべきシステムよりも、詩的な夜の旅が欲しい人——全編オリジナル楽曲とアニメーションMVで、月の砂漠、トンネルの中の喫茶店、空に浮かぶ島と、夢のような世界を巡る「プレイできるミュージックビデオ」。銀河鉄道の夜の系譜に連なる一本",
+        "その旅が、こちらに何かを求めてくることを望む人——隠されたキーワードを探して当てはめ、行く手を開く「RIDDLEパート」があり、世界をまたいで複数のエンディングへ分岐し、二度目・三度目の周回に応える",
+        "西側がまだほとんど見つけていない、日本のインディーの原石が欲しい人——314レビュー92%で非常に好評、英語に対応済み、作家 Kazuhide Oka の物語をもとにしたプロジェクト ANMC の第1作で、販売は東京の音楽スタジオ・神椿スタジオ（KAMITSUBAKI STUDIO）と yokaze",
+      ],
+      bad: [
+        "長く、メカニクスの奥深いゲームプレイや、大きな分岐のRPGが欲しい人（本作は短く、物語と音楽を優先したテキストアドベンチャーで、システムよりもオリジナル楽曲とキーワードの謎解きが支える有料作だ——無料でもアーリーアクセスでもない）",
+        "大手スタジオの、すでに西で人気のヒット作を期待する人（作り手の知名度は音楽やバーチャルシンガーの圏内が中心で、ゲーム層ではほぼ無名だ。314レビューのうち英語は約10.8%にとどまり、中国語ローカライズはあっても西側での実プレイはわずか——受け手はいまも大半が日本語圏で、西はこの一本にほとんど届いていない。AI生成アセットはなく、Steam は性的な内容を示していない）",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5134,6 +5218,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Final Fantasy V is the fifth entry in Square's role-playing series, released for the Super Famicom in Japan in 1992. It is widely credited with crystallizing the Job System: the player's party freely switches among a large roster of jobs, learns abilities from each one, and carries those abilities across jobs to assemble custom characters, making the deliberate composition of a party the core of play. By turning free, reassignable class composition into the heart of an RPG, it became a defining origin of the build-your-party job-system lineage. The original 1992 game is anchored to its Pixel Remaster Steam release.",
       ja: "ファイナルファンタジーVは、スクウェアのロールプレイングシリーズ第5作で、1992年に日本でスーパーファミコン向けに発売された。「ジョブシステム」を結晶化させた作品として広く評価されている——プレイヤーのパーティは数多くのジョブを自由に切り替え、それぞれからアビリティを習得し、ジョブをまたいでそのアビリティを持ち越すことで、自分だけのキャラクターを組み上げる。パーティを意図して編成すること、それ自体を遊びの核に据えた。自由に組み替えられるクラス編成をRPGの中心に据えたことで、「パーティを組み上げる」ジョブシステムの系譜を定義づけた原点となった。1992年の原作は、そのピクセルリマスター版の Steam ページで同定する。",
+    },
+  },
+  // 原点 銀河鉄道の夜(Night on the Galactic Railroad), 宮沢賢治, 1934(没後発表・未完)。孤独な少年ジョバンニが
+  // 天の川を走る不思議な列車に乗り、夢のように移ろう駅や風景を巡りながら、死・自己犠牲・「ほんとうの幸い」への
+  // 問いへ静かに向かう。星空の下、非現実的に移ろう世界を巡る「夜の旅」が生と死の瞑想になる——その詩的な系譜の原点。
+  // 小説にゲーム版はなく公式 Steam 版なし → wikidata QID(Q1524969)で同定(Steam id を捏造しない・href 破損の回避)。
+  // established 側と wikidata URL(Q1524969)の完全一致で逆引き成立(lineageName の Wikidata 同定)。
+  "night-on-the-galactic-railroad": {
+    wikidata: "https://www.wikidata.org/wiki/Q1524969",
+    blurb: {
+      en: "Night on the Galactic Railroad is a novel by the Japanese author and poet Kenji Miyazawa, left unfinished at his death and published posthumously in 1934. A lonely boy, Giovanni, boards a mysterious train that runs through the night sky along the Milky Way and travels with his friend Campanella past strange, dreamlike stations and landscapes, while the journey turns quietly toward death, sacrifice, and the search for true happiness. One of the most beloved works of modern Japanese literature, it crystallized a distinctly poetic kind of night voyage, a passage through unreal, shifting worlds under the stars that becomes a meditation on life and death. It is the origin of that lineage: dreamlike nocturnal journeys through otherworldly places that drift toward the questions at the edge of living. There is no game version of the 1934 novel; the origin is anchored to its Wikidata entry.",
+      ja: "銀河鉄道の夜は、日本の作家・詩人、宮沢賢治の小説で、賢治の没後、未完のまま遺され、1934年に発表された。孤独な少年ジョバンニが、天の川に沿って夜空を走る不思議な列車に乗り込み、友人のカムパネルラとともに、夢のように移り変わる駅や風景を巡っていく——その旅は、やがて静かに、死や、自己犠牲や、「ほんとうの幸い」とは何かという問いへと向かっていく。近代日本文学のなかでも最も広く愛された作品の一つであり、星空の下、非現実的に移ろう世界を巡る旅が、そのまま生と死をめぐる瞑想になる——その詩的な「夜の旅」を結晶化させた。夢のように移ろう異世界を巡り、生の際にある問いへと漂い向かう、その系譜の原点である。1934年の小説にゲーム版は存在せず、原点は Wikidata のエントリで同定する。",
     },
   },
 } as const;
