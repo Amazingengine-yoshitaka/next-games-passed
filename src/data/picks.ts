@@ -5522,6 +5522,97 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "one-turn-kill": {
+    published: "2026-07-06",
+    publishAt: "2026-07-06",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "single-turn-deckbuilder"(単ターン制デッキ構築): 既存の "deckbuilder"/"roguelike" では
+    //   捉えきれない、この作品を定義する核——山札から引くこと自体が唯一のコストで、かつ1ターン以内に
+    //   敵を倒せなければ即敗北する強制単ターン制——を専用ラベルとして立てる(raising-roguelite/
+    //   instant-death-action と同型の細粒度ラベル追加・ui.ts en/ja 追加済み)。系譜は Slay the Spire——
+    //   開発者 onkyi(DenDen)が Game*Spark インタビューでバトル/カードデザインの影響源として直接名指し
+    //   (副次的に構造面で Hades、物語演出面で SANABI/A Space for the Unbound、lineage_anchor_key=steam_url、
+    //   appid 646570 の既存 anchor で同定・新規 anchor 追加は不要)。reviewBand は "around_1k"(1,372件は
+    //   drapline の1,720件/hollow-cocoonの906件と同水準)。obscurity は "deep"(英語対応済み・noEnglish=false
+    //   のため誤って「英語非対応」stampを立てない・正直さ)。reachState は立てない: 英語レビュー比率34.4%
+    //   (472/1372)は低くなく、既に英語圏YouTubeレビュー1本・英語インディーブログ「Gaming Parrot」レビュー・
+    //   Metacriticページも存在する一方、大手西側メディア/パブリッシャー主導のプッシュは未確認で「完全未到達」
+    //   と言い切るのは誇張(sonokuni/devil-blade-reboot 型・誇張しない正直さ)。
+    meta: { genre: "single-turn-deckbuilder", lineage: "slay-the-spire", obscurity: "deep", reviewBand: "around_1k", rarity: { reviews: 1372, positivePct: 96, noEnglish: false } },
+    games: [
+      {
+        name_en: "One Turn Kill",
+        name_ja: "One Turn Kill",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3151270/One_Turn_Kill/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A roguelite deckbuilder in which drawing a card from your deck is itself the cost of playing it, and every battle is a forced single turn: fail to kill the enemy before that one turn ends and you lose outright, developed by DenDen, a Japanese doujin circle that grew out of a 2021 winter hackathon-winning project built by members of traP, the student game-development circle at Institute of Science Tokyo, and published by the Tokyo indie publisher Waku Waku Games, the solo-run label of Ryuji Oyanagi since it split from Chorus Worldwide in 2022. You build a 20-card deck and open every fight with a 5-card starting hand, and because drawing itself spends your one resource, every card you pull toward a kill is a card you can no longer hold in reserve, so a run is less about surviving many turns than about proving, in that single instant, that your whole deck was built to end the fight before it can even properly start. Deck construction carries no randomness: skills and cards are earned through a persistent unlock system rather than random run rewards, so once you have found a combo it stays yours to execute again, reliably, across a roughly seven-hour, time-loop story told through five escalating difficulty tiers. Every card played triggers its own character animation, so the deck you have built is not just read off a hand, it is watched. The developer has named Slay the Spire directly as the influence behind the game's battle and card design, alongside Hades for structure and SANABI and A Space for the Unbound for how the story is staged. Released on January 15, 2026, it is Very Positive at 96 percent over 1,372 reviews, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It fully supports English, Japanese, Simplified Chinese, and Traditional Chinese, interface, full voice acting, and subtitles alike across all four, and about 472 of its 1,372 reviews, roughly 34.4 percent, are already in English; an English-language YouTube review and a review from the English indie blog Gaming Parrot already exist, and it has a Metacritic page, but no major Western outlet or publisher-led push has picked it up yet, so real room remains for it to travel further west.",
+        desc_ja: "山札から1枚引くこと自体がカードを使うコストになり、すべての戦闘が強制的な単ターン制——その1ターン以内に敵を倒せなければ、即座に敗北するローグライト・デッキ構築。開発は DenDen(サークル電電)——東京科学大学の学生ゲーム制作サークル「traP」のメンバーが手がけ、2021年冬のハッカソン優勝作を発展させた日本の同人サークル——販売は東京のインディーパブリッシャー Waku Waku Games(わくわくゲームズ合同会社)——2022年に Chorus Worldwide から独立した大柳竜児の一人運営レーベル。デッキは20枚、各戦闘は初期手札5枚から始まり、引くこと自体が唯一のリソースを消費するため、キルへ向けて引く一枚一枚が、温存できたはずの一枚を手放すことを意味する。だからランは、何ターンも生き延びることではなく、その一瞬で——デッキ全体がまさにこの一撃で戦いを終わらせるために組まれていたことを証明することに懸かっている。デッキ構築にランダム性は無く、スキルやカードはランごとのランダム報酬ではなく、恒久的なアンロック制で獲得される。だから一度見つけたコンボは、以後も確実に再現して実行できる——約7時間、5段階の高難度層をたどるタイムループ物語を通して。カードを使うたびに専用のキャラクターアニメーションが発動するので、組み上げたデッキは手札として読まれるだけでなく、見られるものになる。開発者は Game*Spark のインタビューで、戦闘・カードデザインの影響源として Slay the Spire を直接名指しし、副次的に構造面で Hades、物語演出の面で SANABI や A Space for the Unbound を挙げている。2026年1月15日リリース、1,372件のレビュー中96%が好評の「非常に好評」。無料ではない有料作で、アーリーアクセスではなく正式リリース済み。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上、性的な要素もない。英語・日本語・簡体字中国語・繁体字中国語の4言語すべてに、インターフェース・フル音声・字幕のいずれでも対応済みで、1,372件のうち英語レビューは約472件(約34.4%)を占める。英語圏のYouTubeレビュー1本と、英語インディーブログ「Gaming Parrot」のレビューはすでに存在し、Metacriticのページもあるが、大手西側メディアやパブリッシャー主導のプッシュはまだ確認されておらず、西側へさらに広がる余地は大きい。",
+      },
+      {
+        name_en: "Slay the Spire",
+        name_ja: "Slay the Spire",
+        status: "established",
+        steam: "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+        tag_en: "The roguelike deckbuilder origin",
+        tag_ja: "ローグライク・デッキ構築の原点",
+        desc_en: "The origin of this taste: Slay the Spire, a roguelike deck-building game developed by the American indie studio Mega Crit, launched in early access in late 2017 and fully released in January 2019. By combining procedurally generated ascents of a multi-floor spire with deck-building combat, in which cards are gained as random run rewards and an energy pool limits how many can be played in a turn across a sequence of turns, it popularized and is widely credited with defining the roguelike deckbuilder genre. That core, that a run's deck decides whether combat can be won and combat itself unfolds across a sequence of turns, is the root One Turn Kill grows from: it keeps the roguelike deckbuilding structure, but strips out Slay the Spire's randomized card rewards for a persistent, unlockable deck built the same reliable way every time, replaces its energy-per-turn cost with the cost of drawing itself, and compresses its multi-turn attrition into a single enforced turn that a run either wins outright or loses.",
+        desc_ja: "この味の原点——Slay the Spire。米国のインディースタジオ Mega Crit が開発したローグライク・デッキ構築ゲームで、2017年末にアーリーアクセス、2019年1月に正式リリースされた。手続き生成される多層の塔の登攀と、ランごとのランダム報酬でカードを得て、複数ターンにわたる戦闘の中で1ターンに使えるカード枚数をエナジープールで制限するデッキ構築戦闘を組み合わせ、「ローグライク・デッキビルダー」というジャンルを広く普及・定義したと評価されている。この核——ランで組んだデッキが戦闘に勝てるかを決め、戦闘そのものは複数ターンにわたって展開する——こそ、One Turn Kill が育つ根だ。本作はローグライク・デッキ構築という構造を受け継ぎながら、Slay the Spire のランダムなカード報酬を排し、毎回同じように確実に組める恒久的なアンロック制のデッキへ据え替え、ターンごとのエナジーコストを、引くこと自体のコストへ組み替え、複数ターンにわたる消耗戦を、勝つか負けるかがその場で決まる強制的な単ターンへと圧縮している。",
+      },
+    ],
+    en: {
+      title: "One Turn Kill - a roguelite deckbuilder where drawing a card from your deck is itself the cost of playing it and every battle is a forced single turn you must end by killing the enemy before it runs out or lose outright, built on a randomness-free, permanently unlockable 20-card deck across a five-tier, roughly seven-hour time-loop story with a card-triggered animation for every play, a Japanese doujin heir to Slay the Spire the Steam West has only begun to find",
+      description: "A roguelite deckbuilder by the Japanese doujin circle DenDen, published by the Tokyo indie publisher Waku Waku Games. Drawing a card from your 20-card deck is itself the cost of playing it, and every battle is a forced single turn: fail to kill the enemy before it ends and you lose outright. Skills and cards come from a persistent, randomness-free unlock system, so a found combo stays reliably repeatable across a five-tier, roughly seven-hour time-loop story, and every card played triggers its own character animation. In the lineage of Slay the Spire. Very Positive at 96 percent over 1,372 reviews; it supports English, yet with about 34.4 percent English reviews the Steam West has only begun to find it.",
+      h1a: "You draw a card, and the draw itself is what it cost you. ",
+      h1flip: "One turn to kill, or the run ends there, and the deck you built has to prove it in that single breath",
+      h1b: ".",
+      lede: "A roguelite deckbuilder in which drawing a card from your deck is itself the cost of playing it, and every battle is a forced single turn: fail to kill the enemy before that one turn ends and you lose outright, developed by DenDen, a Japanese doujin circle that grew out of a 2021 winter hackathon-winning project built by members of traP, the student game-development circle at Institute of Science Tokyo, and published by the Tokyo indie publisher Waku Waku Games. You build a 20-card deck and open every fight with a 5-card starting hand, and because drawing itself spends your one resource, every card you pull toward a kill is a card you can no longer hold in reserve, so a run is less about surviving many turns than about proving, in that single instant, that your whole deck was built to end the fight before it can even properly start. Deck construction carries no randomness: skills and cards are earned through a persistent unlock system rather than random run rewards, so once you have found a combo it stays yours to execute again, reliably, across a roughly seven-hour, time-loop story told through five escalating difficulty tiers. Every card played triggers its own character animation. In the lineage of Slay the Spire. It already supports English among four languages, yet the Steam West has only begun to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every card you draw off the top of your deck is already spent the instant it lands in your hand: drawing is the cost, not a separate step before it, so the resource you are managing is never mana or energy sitting in a pool, it is the deck itself getting thinner with every card you commit to pulling toward the kill.",
+        "There is no second turn to lean on. Every fight is a hard single turn, and if the enemy is not dead when it ends, you have already lost, so nothing you assemble is a plan for attrition, it is a bet that this exact hand, drawn this exact way, adds up to a kill before the turn is allowed to close.",
+        "Because the deck holds no randomness, once you have found a combo that works you can call on it again, reliably, run after run, so mastery is not about getting lucky with the draw, it is about knowing exactly which cards your unlocked deck contains and playing each one, its own character animation flaring on cue, across a roughly seven-hour time-loop story that keeps raising the stakes over five escalating difficulty tiers.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Slay the Spire's roguelike deckbuilding and want its multi-turn attrition replaced with a single, all-or-nothing turn where drawing itself is the resource you spend",
+        "You want a deckbuilder with zero randomness in its construction: skills and cards come from a persistent unlock system, so a combo you find stays reliably yours to repeat, across a five-tier, roughly seven-hour time-loop story with card-triggered character animation",
+        "You want a Japanese doujin gem the Steam West has only begun to find, Very Positive at 96 percent over 1,372 reviews, made by the circle DenDen (grown out of a 2021 hackathon-winning project by members of the student circle traP) and published by Waku Waku Games, already supporting English among four languages with full voice acting",
+      ],
+      bad: [
+        "You want a roguelike deckbuilder with room to breathe across several turns of attrition and randomized card rewards to build around; this game removes both, forcing every fight into a single turn and every deck into a fixed, unlockable set",
+        "You expect a big-publisher, already-popular Western title, or you want something free; this is a paid solo-circle doujin work by DenDen, published by the one-person label Waku Waku Games, not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's descriptors, and while about 34.4 percent of its reviews are already in English with some individual Western coverage, no major outlet or publisher-led push has picked it up yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "One Turn Kill - 山札から引くこと自体がカードのコストになり、すべての戦闘が強制的な単ターン制。1ターン以内に敵を倒せなければ即敗北する、ランダム性ゼロのアンロック制20枚デッキで挑むローグライト。約7時間・5段階の高難度層をたどるタイムループ物語、カード使用に連動するキャラクターアニメーション。Slay the Spireの系譜、Steamの西側がまだ見つけ始めたばかりの日本の同人の一本",
+      description: "開発は日本の同人サークル DenDen、販売は東京のインディーパブリッシャー Waku Waku Games。20枚デッキから1枚引くこと自体がカードを使うコストになり、すべての戦闘は強制的な単ターン制——そのターンが終わるまでに敵を倒せなければ即座に敗北する。スキルやカードは恒久的なアンロック制で手に入り、ランダム性はゼロ。見つけたコンボは、約7時間・5段階の高難度層をたどるタイムループ物語を通して確実に再現できる。カードを使うたびに専用のキャラクターアニメーションが発動する。Slay the Spireの系譜に連なる一本。96%の『非常に好評』、1,372件のレビュー。英語に対応済みだが、英語レビューは約34.4%——Steamの西側は、まだ見つけ始めたばかりだ。",
+      h1a: "カードを1枚引く。その「引く」こと自体が、支払った代償だ。",
+      h1flip: "1ターンで倒すか、そこでランが終わるか——組んだデッキがそれを証明できるのは、その一息だけ",
+      h1b: "。",
+      lede: "山札から1枚引くこと自体がカードを使うコストになり、すべての戦闘が強制的な単ターン制——その1ターン以内に敵を倒せなければ、即座に敗北するローグライト・デッキ構築。開発は DenDen(サークル電電)——東京科学大学の学生ゲーム制作サークル「traP」のメンバーが手がけ、2021年冬のハッカソン優勝作を発展させた日本の同人サークル——販売は東京のインディーパブリッシャー Waku Waku Games。デッキは20枚、各戦闘は初期手札5枚から始まり、引くこと自体が唯一のリソースを消費するため、キルへ向けて引く一枚一枚が、温存できたはずの一枚を手放すことを意味する。だからランは、何ターンも生き延びることではなく、その一瞬で——デッキ全体がまさにこの一撃で戦いを終わらせるために組まれていたことを証明することに懸かっている。デッキ構築にランダム性は無く、スキルやカードはランごとのランダム報酬ではなく、恒久的なアンロック制で獲得される。だから一度見つけたコンボは、以後も確実に再現して実行できる——約7時間、5段階の高難度層をたどるタイムループ物語を通して。カードを使うたびに専用のキャラクターアニメーションが発動する。Slay the Spireの系譜に連なる一本。4つの言語のなかに英語もすでに対応済みだが、Steamの西側は、まだ見つけ始めたばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "山札の一番上から引いたカードは、手札に収まった瞬間、もう使われている——引くこと自体がコストであり、その手前に別の消費段階は無い。だから管理すべきリソースは、どこかに溜まるマナやエナジーではなく、キルへ向けて引くたびに薄くなっていくデッキそのものだ。",
+        "頼れる2ターン目は無い。すべての戦いは強制的な単ターン制で、そのターンが終わるまでに敵を倒せていなければ、その時点ですでに負けている。だから組み上げるものはどれも、消耗戦のための計画ではない——この手札を、この引き方で、ターンが閉じる前にキルへ届かせられるかという賭けだ。",
+        "デッキにランダム性は無いから、一度効くコンボを見つければ、以後もランを重ねるたびに確実に呼び出せる。だから習熟とは、引きの運に恵まれることではなく、アンロックしたデッキに何が入っているかを正確に把握し、その一枚一枚を——専用のキャラクターアニメーションを合図に——撃っていくことだ。約7時間、5段階に高まる難度をたどるタイムループ物語が、その賭けの重みを積み上げていく。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Slay the Spireのローグライク・デッキ構築が好きで、複数ターンの消耗戦を、引くこと自体がコストになる一発勝負の単ターンへ置き換えた形が欲しい人",
+        "構築にランダム性がまったく無いデッキ構築ゲームが欲しい人——スキルやカードは恒久的なアンロック制で手に入るので、見つけたコンボは以後も確実に再現できる。約7時間、5段階の難度をたどるタイムループ物語と、カード使用に連動するキャラクターアニメーションを備える",
+        "Steamの西側がまだ見つけ始めたばかりの、日本の同人の原石が欲しい人——1,372件のレビューで96%の『非常に好評』。東京科学大学の学生サークル「traP」出身の2021年ハッカソン優勝作を発展させた同人サークル DenDen が手がけ、Waku Waku Games が販売する一本。4言語のなかに英語もフル音声で対応済み",
+      ],
+      bad: [
+        "複数ターンの消耗戦と、それを組み立てるためのランダムなカード報酬に息をつく余地が欲しい人(本作はその両方を排し、すべての戦いを単ターンに、すべてのデッキを固定のアンロック制に絞り込んでいる)",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人、あるいは無料のものが欲しい人(本作は DenDen による有料の同人サークル作で——販売は一人運営のレーベル Waku Waku Games——無料でもアーリーアクセスでもない。AI生成アセットはなく、Steamのディスクリプタ上、性的な要素もない。英語レビューはすでに約34.4%を占め、個別の西側での言及も出てきてはいるが、大手メディアやパブリッシャー主導のプッシュはまだ確認されていない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
