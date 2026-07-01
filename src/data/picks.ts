@@ -5002,6 +5002,92 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "q2-humanity": {
+    published: "2026-07-03",
+    publishAt: "2026-07-03",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 62 件は "hundreds"(数百)にも "around_1k"(約千)にも当たらない(捏造しない)。
+    //   rarity.reviews=62 を確定値でそのまま出す。英語対応済みで noEnglish=false(誤って「英語非対応」stamp を
+    //   立てない・正直さ)。英語レビュー 12/62=約19.4%・残る約8割は日本語、dev/pub とも日本の liica、Switch/Steam
+    //   とも日本先行 = 西ほぼ未到達。ゆえに rarity(reviews+positivePct)は正直(「なのに、ほとんど誰も見つけていない」は
+    //   真 = 全62件・英12件の小規模)。obscurity は "deep"(レビュー僅少・西で無名)、reachState="unreached_west"。
+    //   系譜は Crayon Physics Deluxe(2009, Petri Purho, IGF シューマス・マクナリー大賞・Steam app 26900)——描いた
+    //   形を重力落下させ物理で解くドロー物理パズルの原点。ジャンルは physics-puzzle(物理パズル)。
+    meta: { genre: "physics-puzzle", lineage: "crayon-physics-deluxe", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 62, positivePct: 90, noEnglish: false } },
+    games: [
+      {
+        name_en: "Q2 HUMANITY",
+        name_ja: "Q2 HUMANITY",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2357950/Q2_HUMANITY/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A physics-puzzle game by liica, Inc. (Kabushiki-gaisha Riica), a small commercial studio based in Chiyoda, Tokyo, founded in 2011, both the developer and the publisher of the work; the Q series is game-designed and produced by Yusuke Kurita, the creator of the KY (Kuuki Yomi) games. It is the sequel to Q, released in 2015. You solve each stage by drawing: the lines and shapes you draw are made of little human figures, and the instant you finish a stroke it drops under gravity and behaves as real physics, tumbling, rolling, wedging against a wall, and settling into a pile, so a puzzle is solved not by placing an answer but by drawing a shape and trusting the fall to carry it where the goal needs it. On top of that drawing core sit hands-on verbs, your humans can jump, grab, throw, and punch, and eighteen different human characters each bring a special ability, from an enhanced slow-motion and a double jump to detonating a bomb or bending gravity itself, across more than three hundred stages. It plays solo or with up to four players in co-op or competition, over online play and Remote Play Together. Released on Steam in December 2024, after the Switch version in August 2024, it is Very Positive at 90 percent over 62 reviews, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It supports English alongside Japanese, yet with only 12 of its 62 reviews in English (about 19.4 percent) and roughly four in five of them in Japanese, the West has barely found it. Both a Tokyo studio's work and a Japan-first release, on Switch in August 2024 and Steam that December, it is a sixty-two-review hidden gem the West has not reached. This is a registered commercial studio, not an anonymous doujin.",
+        desc_ja: "物理演算パズル。開発・販売はいずれも liica, Inc.（株式会社リイカ）——2011年設立、東京・千代田を拠点とする小規模な商業スタジオだ。Qシリーズのゲームデザインとプロデュースは、『空気読み。』シリーズの作者・栗田祐介が手がける。本作は、2015年に発売された『Q』の続編である。ステージを解く手段は「描く」こと——描いた線や形は、小さな人間たちでできていて、一筆を描き終えた瞬間、それは重力で落下し、本物の物理として振る舞う。転がり、ころがり込み、壁に噛み合い、山になって落ち着く。だからパズルは、答えを「置く」のではなく、形を「描いて」、その落下がゴールの求める場所へ運んでくれることに賭けて解く。その「描く」核の上に、直接手を動かす動詞が乗る——人間たちはジャンプし、掴み、投げ、殴る。さらに18人の人間キャラクターが、強化されたスローモーション、二段ジャンプから、爆弾の起爆、重力そのものを曲げる力まで、それぞれ特殊能力を持つ。ステージは300問を超える。ソロでも、最大4人での協力・競争でも遊べ、オンラインプレイと Remote Play Together に対応する。2024年12月にSteamで発売（2024年8月のSwitch/Nintendo Switch版に続く）、62レビュー90%で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。日本語と並んで英語にも対応しているが、62件のうち英語レビューは12件（約19.4%）にとどまり、およそ5件に4件は日本語——西はこの一本を、まだほとんど見つけていない。東京のスタジオの作品であり、かつ日本先行のリリース（2024年8月にSwitch、同12月にSteam）でもある、62レビューの隠れた名作。これは無名の同人ではなく、登記された商業スタジオの一本であり、西にはまだ届いていない。",
+      },
+      {
+        name_en: "Crayon Physics Deluxe",
+        name_ja: "Crayon Physics Deluxe",
+        status: "established",
+        steam: "https://store.steampowered.com/app/26900/Crayon_Physics_Deluxe/",
+        tag_en: "The draw-and-drop physics origin",
+        tag_ja: "描いて落とす物理パズルの原点",
+        desc_en: "The origin of this taste: Crayon Physics Deluxe, created by the Finnish designer Petri Purho and released in 2009. You draw with a crayon on the screen, and everything you draw instantly becomes a solid physical object that obeys gravity, so to guide a ball to a star you sketch ramps, pendulums, levers, and weights and let physics do the rest, solving each puzzle by drawing shapes that fall and swing and push exactly as real matter would. It won the Seumas McNally Grand Prize at the Independent Games Festival and crystallized the draw-a-shape-and-let-physics-solve-it puzzle. That core, that you author the solution by drawing objects and trust gravity and physics to carry them, is the root Q2 HUMANITY grows from, carrying the same crayon-physics idea into stages drawn out of human figures that fall, and where it once was a lone ball and a star, this fills the screen with people who can also jump, grab, throw, and act. Its origin is anchored to its Steam release.",
+        desc_ja: "この味の原点——Crayon Physics Deluxe。フィンランドのデザイナー Petri Purho が制作し、2009年に発売された。画面にクレヨンで絵を描くと、描いたものはすべて、その瞬間に重力に従う固い物理オブジェクトになる。だからボールを星まで導くには、坂や振り子、てこ、重りを描き、あとは物理に任せる——落ちて、揺れて、押す、本物の物質そのままの挙動で、形を描いてパズルを解いていく。インディペンデント・ゲームズ・フェスティバルでシューマス・マクナリー大賞を受賞し、「形を描いて、あとは物理に解かせる」パズルを結晶化させた。この核——オブジェクトを描いて解答を「作り」、重力と物理がそれを運ぶことに賭ける——こそ、Q2 HUMANITY が育つ根だ。本作は同じクレヨン物理のアイデアを、落下する人間たちで描かれるステージへと運び、かつては一つのボールと一つの星だったものを、ジャンプし、掴み、投げ、行動できる人間たちで画面いっぱいに満たしている。その原点は、Steam ページで同定する。",
+      },
+    ],
+    en: {
+      title: "Q2 HUMANITY - a physics-puzzle game where the lines and shapes you draw are made of little humans that drop under gravity and behave as real physics to solve each stage, with eighteen characters who can jump, grab, throw, and wield special abilities across three hundred stages, a Japan-made heir to Crayon Physics Deluxe the West has barely found",
+      description: "A physics-puzzle game by liica, Inc. (Kabushiki-gaisha Riica), a small commercial studio in Chiyoda, Tokyo, both developer and publisher; the Q series is designed and produced by Yusuke Kurita, creator of the KY games. The sequel to Q (2015). You solve each stage by drawing: the lines and shapes you draw are made of little human figures, and the instant a stroke is finished it drops under gravity and behaves as real physics, so you solve not by placing an answer but by drawing a shape and trusting the fall. On top of that, your humans can jump, grab, throw, and punch, and eighteen characters each bring a special ability across more than three hundred stages, solo or up to four players in co-op or competition. In the lineage of Crayon Physics Deluxe. Very Positive at 90 percent over 62 reviews; it supports English, yet with only about 19.4 percent English reviews the West has barely found it.",
+      h1a: "You do not place the answer. ",
+      h1flip: "You draw a shape out of little humans, and trust gravity to drop it exactly where the goal needs it",
+      h1b: ".",
+      lede: "A physics-puzzle game by liica, Inc. (Kabushiki-gaisha Riica), a small commercial studio based in Chiyoda, Tokyo, both the developer and the publisher of the work, with the Q series designed and produced by Yusuke Kurita, the creator of the KY (Kuuki Yomi) games. It is the sequel to Q, released in 2015. You solve each stage by drawing: the lines and shapes you draw are made of little human figures, and the instant you finish a stroke it drops under gravity and behaves as real physics, tumbling, rolling, wedging, and stacking, so a puzzle is solved not by placing an answer but by drawing a shape and trusting the fall to carry it where the goal needs it. On top of that drawing core, your humans can jump, grab, throw, and punch, and eighteen characters each bring a special ability, from enhanced slow-motion and a double jump to detonating a bomb or bending gravity, across more than three hundred stages, solo or with up to four players in co-op or competition. In the lineage of Crayon Physics Deluxe. It supports English alongside Japanese, yet with only about 19.4 percent of its reviews in English, the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game turns drawing into physics. You do not drop a pre-made block into a slot; you draw a line or a shape freehand, and the instant the stroke is done it comes alive under gravity and behaves as real matter, tumbling, rolling, wedging against a wall, and settling into a pile. So the pull is that a puzzle is never solved by placing the right answer, it is solved by drawing a shape and then watching whether the fall you set in motion carries it where the goal needs it, and the click of the solution is the moment your rough stroke lands as if it had been engineered.",
+        "Those shapes are not abstract, they are made of little humans, and that turns the drawing into a cast of bodies you can act through. Your people can jump, grab, throw, and punch, and eighteen different characters each carry a special ability, an enhanced slow-motion, a double jump, a bomb they can detonate, a hand that bends gravity itself, so a stage is not only a shape you draw but a crew you choose, and reading which ability turns an impossible fall into a solvable one is half the puzzle.",
+        "Then it opens up sideways. Across more than three hundred stages you can play alone and deliberately, or bring up to four people into co-op or competition over online play and Remote Play Together, and the same physics that made your solo drawings tumble now has four sets of humans falling, shoving, and stacking at once, so a quiet act of authorship becomes a shared, physical scramble where everyone's strokes and bodies pile into the same simulation.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Crayon Physics Deluxe and hand-drawn physics puzzles, authoring the solution by drawing shapes and trusting gravity and physics to carry them, and you want that idea filled with little humans who fall, stack, and can also jump, grab, throw, and act",
+        "You want a puzzle that is about drawing and reading physics rather than memorizing answers, more than three hundred stages, eighteen characters with special abilities from slow-motion and double jumps to bombs and gravity-bending, solvable solo and turned into a scramble with up to four players in co-op or competition",
+        "You want a Japan-made gem the West has barely found, Very Positive at 90 percent over 62 reviews, the work of the Tokyo studio liica whose Q series is designed by KY creator Yusuke Kurita, already supporting English yet with only about 19.4 percent of its reviews in English",
+      ],
+      bad: [
+        "You want a story-driven adventure or a fast twitch-action game; this is a physics-puzzle built around drawing shapes and letting them fall, a paid title, not free and not in Early Access, carried by reading physics and choosing abilities rather than by reflexes or narrative, with no AI-generated assets and no sexual content by Steam's descriptors",
+        "You specifically want something the West already knows, or a big-publisher release; this is the work of a small Tokyo commercial studio, liica, released Japan-first on Switch in August 2024 and Steam that December, and while it fully supports English, only 12 of its 62 reviews are in English and roughly four in five are Japanese, so it is a Japan-born gem the West has not reached, neither a doujin anonymity nor a Western hit",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Q2 HUMANITY - 描いた線や形（小さな人間たち）が重力で落下し、本物の物理として振る舞ってステージを解く物理演算パズル。ジャンプ・掴む・投げるができる18人のキャラクターと、300を超えるステージ。Crayon Physics Deluxe の系譜、東京の小さなスタジオが作った、西がまだほとんど見つけていない一本",
+      description: "物理演算パズル。開発・販売はいずれも liica, Inc.（株式会社リイカ）——東京・千代田の小規模な商業スタジオで、Qシリーズのゲームデザインとプロデュースは『空気読み。』の作者・栗田祐介が手がける。2015年の『Q』の続編。ステージを解く手段は「描く」こと——描いた線や形は小さな人間たちでできていて、一筆を描き終えた瞬間、それは重力で落下し、本物の物理として振る舞う。だから答えを「置く」のではなく、形を「描いて」その落下に賭けて解く。さらに人間たちはジャンプし、掴み、投げ、殴り、18人のキャラクターがそれぞれ特殊能力を持つ。300を超えるステージを、ソロでも最大4人の協力・競争でも遊べる。Crayon Physics Deluxe の系譜。62レビュー90%で非常に好評。英語に対応しているが、英語レビューは約19.4%——西はこの一本を、まだほとんど見つけていない。",
+      h1a: "答えを「置く」のではない。",
+      h1flip: "小さな人間たちで形を描き、その落下がゴールの求める場所へ運んでくれることに賭ける",
+      h1b: "。",
+      lede: "物理演算パズル。開発・販売はいずれも liica, Inc.（株式会社リイカ）——2011年設立、東京・千代田を拠点とする小規模な商業スタジオだ。Qシリーズのゲームデザインとプロデュースは、『空気読み。』シリーズの作者・栗田祐介が手がける。本作は、2015年に発売された『Q』の続編である。ステージを解く手段は「描く」こと——描いた線や形は、小さな人間たちでできていて、一筆を描き終えた瞬間、それは重力で落下し、本物の物理として振る舞う。転がり、ころがり込み、噛み合い、積み上がっていく。だからパズルは、答えを「置く」のではなく、形を「描いて」、その落下がゴールの求める場所へ運んでくれることに賭けて解く。その「描く」核の上に、人間たちはジャンプし、掴み、投げ、殴る。さらに18人のキャラクターが、強化スローモーションや二段ジャンプから、爆弾の起爆、重力を曲げる力まで、それぞれ特殊能力を持つ——300を超えるステージを、ソロでも、最大4人の協力・競争でも。Crayon Physics Deluxe の系譜に連なる一本だ。日本語と並んで英語にも対応しているが、レビューのうち英語は約19.4%——西はこの一本を、まだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては、「描く」ことを物理に変える。既製のブロックを枠にはめ込むのではない——線や形を、フリーハンドで描く。そして一筆を描き終えた瞬間、それは重力のもとで命を持ち、本物の物質として振る舞う。転がり、ころがり込み、壁に噛み合い、山になって落ち着く。だから引力は、パズルが決して「正しい答えを置く」ことでは解けない、という点にある。形を「描いて」、自分が動かし始めたその落下が、ゴールの求める場所へ運んでくれるかを見つめる——ラフな一筆が、まるで設計されていたかのようにはまる、その瞬間だ。",
+        "その形は抽象ではない——小さな人間たちでできている。それが「描く」ことを、あなたが乗り移って動かせる「体」の一団に変える。人間たちはジャンプし、掴み、投げ、殴る。そして18人のキャラクターが、それぞれ特殊能力を持つ——強化されたスローモーション、二段ジャンプ、起爆できる爆弾、重力そのものを曲げる手。だからステージは、描く「形」であると同時に、選ぶ「一団」でもある。どの能力が、不可能な落下を、解ける落下に変えるかを読むこと——それがパズルの半分だ。",
+        "そして、それは横へと開いていく。300を超えるステージを、ひとりでじっくり遊ぶこともできれば、最大4人を協力・競争へ——オンラインプレイと Remote Play Together で——連れ込むこともできる。ソロの絵を転がしていたのと同じ物理が、いまや4組の人間たちを、いっぺんに落とし、押し合わせ、積み上げる。静かな「作る」行為が、みんなの一筆と体が同じシミュレーションになだれ込む、共有の物理的な混戦になる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Crayon Physics Deluxe と、手描きの物理パズルが好きな人——形を描いて解答を「作り」、重力と物理がそれを運ぶことに賭ける、あの味。本作はそれを、落下し、積み上がり、しかもジャンプ・掴む・投げるができる小さな人間たちで満たしている",
+        "答えを覚えることではなく、「描く」ことと物理を「読む」ことのパズルが欲しい人——300を超えるステージ、スローモーションや二段ジャンプから爆弾・重力操作まで特殊能力を持つ18人のキャラクター。ソロで解け、最大4人の協力・競争で混戦にもなる一本",
+        "西側がまだほとんど見つけていない、日本製の原石が欲しい人——62レビュー90%で非常に好評、Qシリーズを『空気読み。』の作者・栗田祐介がデザインする、東京のスタジオ liica の一本。英語に対応済みだが、レビューのうち英語は約19.4%にとどまる",
+      ],
+      bad: [
+        "物語主導のアドベンチャーや、速い反射神経勝負のアクションが欲しい人（本作は、形を描いて落とす物理演算パズルだ。無料でもアーリーアクセスでもない有料作で、反射神経や物語ではなく、物理を読み、能力を選ぶことが支える。AI生成アセットはなく、Steam のディスクリプタ上、性的な要素もない）",
+        "すでに西で知られたものや、大手パブリッシャーの作品を求める人（本作は、東京の小さな商業スタジオ liica の作品で、2024年8月にSwitch、同12月にSteamと、日本先行で発売された。英語には完全対応しているが、62件のうち英語レビューは12件、およそ5件に4件は日本語だ。無名の同人でも、西のヒット作でもなく、西がまだ届いていない、日本発の原石である）",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5426,6 +5512,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Game Dev Story is a business management and tycoon simulation developed and published by Kairosoft, originally released in 1997 and brought worldwide by its 2010 smartphone version. The player runs a game development company: you hire and grow staff, choose a genre and type for each new title, develop and release games, and manage budget, hardware trends, and reputation across years of a fictional game industry, making decisions from limited information and watching the numbers accumulate. As the work that crystallized Kairosoft's signature pixel-art management sim, it is a defining origin of the lineage of games about steering a single business through the game industry's own history. The original is anchored here to its Steam release.",
       ja: "ゲーム発展途上国(Game Dev Story)は、カイロソフトが開発・販売した経営・タイクーン型のシミュレーションで、1997年に発売され、2010年のスマートフォン版で世界的に広まった。プレイヤーはゲーム開発会社を経営する——スタッフを雇って育て、新作ごとにジャンルとタイプを選び、ゲームを開発して発売し、予算やハードの流行、評判を、架空のゲーム業界の何年もの歳月にわたって管理していく。限られた情報から判断を下し、積み上がっていく数字を見守る。カイロソフトを代表するドット絵経営シムを結晶化させた作品として、「一つの事業を、ゲーム業界そのものの歴史の中で舵取りする」ゲーム群の系譜を定義した原点である。原作は、その Steam ページで同定する。",
+    },
+  },
+  // 原点 Crayon Physics Deluxe(2009), Petri Purho(フィンランドの独立系デザイナー)。2Dキャンバスにクレヨンで
+  //   形を描くと、描いたものすべてが重力・物理に従う固いオブジェクトになり、ボールを星まで導く——「形を描いて、
+  //   あとは物理に解かせる」ドロー物理パズルを結晶化させ広く知らしめた原点。IGF シューマス・マクナリー大賞。
+  //   Steam 版あり(app 26900)→ steam で同定(established 側と /app/26900/ で完全一致・href 破損回避)。
+  "crayon-physics-deluxe": {
+    steam: "26900",
+    blurb: {
+      en: "Crayon Physics Deluxe is a physics-based puzzle game created by the Finnish independent designer Petri Purho and released in 2009. The player draws shapes with a crayon on a 2D canvas, and everything drawn instantly becomes a solid object that obeys gravity and physics, so guiding a ball to a star means sketching ramps, levers, pendulums, and weights and letting the simulation carry them out. Winner of the Seumas McNally Grand Prize at the Independent Games Festival, it crystallized and popularized the draw-a-shape-and-let-physics-solve-it puzzle and is a defining origin of the hand-drawn physics puzzle lineage.",
+      ja: "Crayon Physics Deluxe は、フィンランドの独立系デザイナー Petri Purho が制作し、2009年に発売した物理演算パズルゲームである。プレイヤーは2Dのキャンバスにクレヨンで形を描き、描いたものはすべて、その瞬間に重力と物理に従う固いオブジェクトになる。ボールを星まで導くには、坂やてこ、振り子、重りを描き、あとはシミュレーションに委ねればよい。インディペンデント・ゲームズ・フェスティバルでシューマス・マクナリー大賞を受賞し、「形を描いて、あとは物理に解かせる」パズルを結晶化させ広く知らしめた、手描き物理パズルの系譜を定義する原点である。",
     },
   },
 } as const;
