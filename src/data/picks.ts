@@ -4660,6 +4660,91 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "witchroid-vania": {
+    published: "2026-07-01",
+    publishAt: "2026-07-01",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 83 件は "hundreds"(数百)にも "around_1k"(約千)にも当たらない(捏造しない)。
+    //   rarity.reviews=83 を確定値でそのまま出す。obscurity は "deep"(レビュー僅少・西で無名)。英語対応済みで
+    //   noEnglish=false のため lang_walled は使わない(誤って「英語非対応」stamp を立てない・正直さ)。英語レビュー
+    //   25/83=30.1% で西未浸透 = reachState="unreached_west"(stamp は positivePct+reviews で埋まるため
+    //   "西ではまだ無名" fallback は発火しない・状態の正直な記録として付す)。系譜は Castlevania(悪魔城ドラキュラ)。
+    meta: { genre: "metroidvania", lineage: "castlevania", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 83, positivePct: 92, noEnglish: false } },
+    games: [
+      {
+        name_en: "Witchroid Vania: A Magical Girl's Fantastical Adventures",
+        name_ja: "ウィッチロイドヴァニア 〜魔法少女の不思議な冒険〜",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2615430/Witchroid_Vania_A_Magical_Girls_Fantastical_Adventures/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A 2D Metroidvania starring the magical girl Lily, made by Turkey Games, the work of the Japanese solo developer Turkey (who built everything but the soundtrack alone) and published by the one-person Tokyo doujin label Waku Waku Games. Lily learns elemental magic of fire, ice, wind, and thunder, each in three escalating tiers, and equips three spells at once across four loadout sets she can flip between in the middle of a fight, so combat is about composing a kit and switching it on the fly rather than mashing one attack. What sets it apart from most Metroidvanias is its gate structure: exploration opens up not through movement abilities like a double jump or a dash, but through the magic and tools you gain, so the spell or item that finally lets you cross a barrier is the key that widens the map. Equipment and levels give it RPG-style growth, and a companion mini-dragon fights alongside you and helps you move, threading through both battle and traversal, and the praised heart of it is exhilarating, satisfying combat. Released March 2025, it is Very Positive at 92 percent over 83 reviews (76 positive), a paid title at 1,800 yen, not free, and fully launched rather than in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. Turkey Games is the solo label of the individual developer Turkey, and Waku Waku Games is a one-person Tokyo doujin and indie publisher. It already supports English alongside Japanese and Simplified and Traditional Chinese, yet with only 25 of its 83 reviews in English (about 30 percent, though 24 of those 25 are positive) and no Korean or European languages at all, the Steam English-speaking world has barely found it in absolute numbers; the audience is still largely Japanese.",
+        desc_ja: "魔法少女リリィが主役の2Dメトロイドヴァニア。開発元は Turkey Games——日本の個人開発者 Turkey が、サントラ以外はひとりで手作りした一本だ。販売元は、東京・西五反田の、ひとりで営む同人・インディー系レーベル、わくわくゲームズ。リリィは火・氷・風・雷の属性魔法を、それぞれ3段階で習得し、3つを同時に装備した状態を4つのセットとして持ち、戦いの最中に切り替える。だから戦闘は、一つの攻撃を叩き込むのではなく、装備を組み、その場で切り替える遊びになる。多くのメトロイドヴァニアと一線を画すのは、そのゲート構造だ——探索は、二段ジャンプやダッシュのような移動能力ではなく、手に入れた魔法や道具によって開かれていく。だから、ようやく壁を越えさせてくれる魔法やアイテムは、そのままマップを広げる鍵になる。装備とレベルによるRPG的な成長があり、相棒のミニドラゴンが戦いに寄り添い、移動も助けてくれる——戦闘と道中の双方に織り込まれている。そして核にあるのは、爽快なバトルだ。2025年3月リリース、83レビュー92%(好評76)で非常に好評。価格1,800円の有料作で、無料ではなく、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。Turkey Games は個人開発者 Turkey の自主レーベルであり、わくわくゲームズは東京のひとりで営む同人・インディー系パブリッシャーだ。すでに英語に、日本語・簡体字中国語・繁体字中国語と並んで対応しているが、83件のうち英語レビューは25件(約30%、うち24件は好評)にとどまり、韓国語や欧州言語には一切対応していない——Steam の英語圏は、絶対数ではこの一本をまだほとんど見つけておらず、その受け手はいまも大半が日本語圏だ。",
+      },
+      {
+        name_en: "Castlevania",
+        name_ja: "悪魔城ドラキュラ",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Castlevania_(1986_video_game)",
+        wikidata: "https://www.wikidata.org/wiki/Q1043375",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Castlevania, developed and published by Konami, first released for the Family Computer Disk System in Japan in 1986. As the vampire hunter Simon Belmont advancing through Dracula's castle with a whip and an arsenal of sub-weapons, you climb a gothic gauntlet of stages and classic monster bosses, a template that defined a whole strain of gothic action; and as the series evolved and fused that gothic action with a single interconnected, ability-gated castle to explore, it gave the later genre name Metroidvania its vania half. Witchroid Vania wears that lineage in its very name (Witch + [Met]roid + [Castle]vania): a gothic-flavored Metroidvania whose castle-like world opens up as you gain new powers. But it hands the hunt to a magical girl, Lily, swaps movement-gated progress for magic-and-tool gates, and layers on a four-set elemental spell-loadout system, RPG growth, and a companion mini-dragon, making it its own creature rather than a copy. There is no official standalone Steam release of the original 1986 game, so its origin is anchored to its Wikidata entry.",
+        desc_ja: "この味の原点。悪魔城ドラキュラ(英題 Castlevania)は、コナミが開発・販売したアクションゲームで、1986年に日本でファミリーコンピュータ ディスクシステム向けに発売された。プレイヤーはヴァンパイアハンター、シモン・ベルモンドとなり、鞭とさまざまなサブウェポンを手に、ドラキュラの城を突き進む——定番の怪物ボスに挑みながらステージを一つずつ登っていく、ゴシックアクションの一大潮流を築いた型だ。そしてシリーズが進化し、そのゴシックアクションを、能力でゲートされたひと続きの城の探索と融合させたことで、のちの『メトロイドヴァニア』というジャンル名の『ヴァニア』の側が生まれた。ウィッチロイドヴァニアは、その系譜をタイトルそのものに宿している(Witch + [Met]roid + [Castle]vania)——力を得るにつれて城のような世界が開かれていく、ゴシックな味わいのメトロイドヴァニアだ。だがその狩りを魔法少女リリィに手渡し、移動能力によるゲートを魔法と道具のゲートに置き換え、4セットの属性魔法ロードアウト、RPG的な成長、相棒のミニドラゴンを重ねることで、模倣ではない独自の一作に仕立てている。1986年の原作に単独の公式 Steam 版は存在しないため、その原点は Wikidata のエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "Witchroid Vania - a gothic 2D Metroidvania where a magical girl learns fire, ice, wind, and thunder across four swappable loadout sets and opens the map with magic and tools instead of movement, a Japanese solo-made heir to Castlevania the Steam West has barely found",
+      description: "A 2D Metroidvania starring the magical girl Lily, by Turkey Games, the Japanese solo developer Turkey, published by the one-person doujin label Waku Waku Games. Lily learns fire, ice, wind, and thunder in three tiers each and equips three spells at once across four loadout sets she flips between mid-fight, so combat is about composing a kit. Unlike most Metroidvanias, the map opens through the magic and tools you gain rather than movement abilities, with RPG growth and a companion mini-dragon. Very Positive at 92 percent over 83 reviews; it supports English, yet with only about 30 percent English reviews the Steam West has barely found it.",
+      h1a: "The wall won't open for a dash or a double jump. ",
+      h1flip: "It opens for the spell you just learned",
+      h1b: ".",
+      lede: "A 2D Metroidvania starring the magical girl Lily, made by Turkey Games, the work of the Japanese solo developer Turkey, and published by the one-person Tokyo doujin label Waku Waku Games. Lily learns elemental magic of fire, ice, wind, and thunder, each in three escalating tiers, and equips three spells at once across four loadout sets she can flip between mid-fight, so combat is about composing a kit rather than repeating one attack. What sets it apart from most Metroidvanias is its gate structure: the map opens not through movement abilities like a double jump or a dash, but through the magic and tools you gain. Equipment and levels give it RPG growth, and a companion mini-dragon fights alongside you and helps you move. The praised heart of it is exhilarating combat. In the lineage of Castlevania. It already supports English, yet the Steam English-speaking world has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Combat is built around composing magic, not repeating one attack. Lily learns fire, ice, wind, and thunder, each in three escalating tiers, and carries three spells at once across four loadout sets she can flip between in the middle of a fight, so a single encounter becomes a running decision about which set answers what is in front of you, and the exhilaration reviewers single out comes from swapping the right magic in on the right beat.",
+        "The map does not open the usual Metroidvania way. Instead of a double jump or a dash unlocking new ground, it is the magic and tools you gain that widen the world, so every new spell is also a key, and the moment a barrier that has blocked you for an hour finally answers to a power you just earned is the moment the castle grows.",
+        "Underneath runs RPG-style growth through equipment and levels, and a companion mini-dragon that both fights beside you and helps you move, so progress is not only about opening gates but about a build that keeps getting stronger and a partner threaded through every battle and every traversal, tying the exploration and the combat into one climbing loop.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Castlevania and gothic Metroidvanias, the castle-like world that opens as your powers grow, here handed to a magical girl and rebuilt around elemental magic instead of a whip",
+        "You want combat you compose: fire, ice, wind, and thunder in three tiers each, three spells equipped at once across four loadout sets you flip between mid-fight, with RPG growth and a companion mini-dragon, all pointed at the exhilarating battles reviewers single out",
+        "You want a Japanese solo-made gem the Steam West has barely found, Very Positive at 92 percent over 83 reviews, already supporting English, the work of one developer under Turkey Games and the one-person doujin label Waku Waku Games",
+      ],
+      bad: [
+        "You want progression gated by movement skills, the classic double jump or dash that opens the map; here the gates are magic and tools instead, so the exploration is keyed to your spell and item list rather than to new ways of moving",
+        "You expect a big-studio, already-popular Western title or a fully proven hit; this is a paid solo doujin work (developer Turkey Games and publisher Waku Waku Games are each one-person operations), not free and not in Early Access, and with only about 30 percent of its 83 reviews in English and no Korean or European languages, it is still a small gem the West has barely reached in absolute numbers",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ウィッチロイドヴァニア 〜魔法少女の不思議な冒険〜 - 魔法少女が火・氷・風・雷を4つの切替セットで操り、移動能力ではなく魔法と道具でマップを開く、ゴシックな2Dメトロイドヴァニア。悪魔城ドラキュラの系譜、Steam の西がまだ見つけていない、日本の個人制作の一本",
+      description: "魔法少女リリィが主役の2Dメトロイドヴァニア。開発元は日本の個人開発者 Turkey による Turkey Games、販売元はひとりで営む同人レーベルわくわくゲームズ。リリィは火・氷・風・雷の魔法を各3段階で習得し、3つ同時装備を4セット、戦いの最中に切り替える——戦闘は魔法を「組む」ゲームだ。多くのメトロイドヴァニアと違い、マップは移動能力ではなく、手に入れた魔法や道具で開いていく。装備とレベルのRPG成長、相棒のミニドラゴン。83レビュー92%で非常に好評。英語に対応済みだが、英語レビューは約30%——Steam の西は、この一本をまだほとんど見つけていない。",
+      h1a: "壁は、ダッシュや二段ジャンプでは開かない。",
+      h1flip: "開くのは、いま覚えたばかりの魔法だ",
+      h1b: "。",
+      lede: "魔法少女リリィが主役の2Dメトロイドヴァニア。開発元は Turkey Games——日本の個人開発者 Turkey が(サントラ以外はひとりで)手がけた一本で、販売元は東京の、ひとりで営む同人レーベルわくわくゲームズだ。リリィは火・氷・風・雷の属性魔法を、それぞれ3段階で習得し、3つを同時に装備した状態を4つのセットとして持ち、戦いの最中に切り替える——だから戦闘は、一つの攻撃を繰り返すのではなく、魔法を「組む」遊びになる。多くのメトロイドヴァニアと一線を画すのは、そのゲート構造だ。マップは、二段ジャンプやダッシュのような移動能力ではなく、手に入れた魔法や道具で開いていく。装備とレベルによるRPG的な成長があり、相棒のミニドラゴンが戦いに寄り添い、移動も助けてくれる。核にあるのは、爽快なバトルだ。悪魔城ドラキュラの系譜に連なる一本。英語に対応済みだが、Steam の英語圏は、この一本をまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "戦闘は、一つの攻撃を繰り返すのではなく、魔法を「組む」ことを軸に作られている。リリィは火・氷・風・雷の魔法を、それぞれ3段階で習得し、3つを同時に装備した状態を4つのセットとして持ち、戦いの最中に切り替える。だから一度の戦闘が、目の前の敵にどのセットで応えるかを走りながら選び続ける行為になる——レビューが口をそろえて挙げる爽快感は、正しい魔法を正しい拍で差し込む、その手応えから生まれている。",
+        "マップは、ふつうのメトロイドヴァニアのようには開かない。二段ジャンプやダッシュが新たな足場を解放するのではなく、手に入れた魔法や道具が世界を広げていく。だから新しい魔法は、そのまま鍵でもある。一時間も行く手を塞いでいた壁が、いま覚えたばかりの力にようやく応える——その瞬間こそ、城が広がる瞬間だ。",
+        "その下には、装備とレベルによるRPG的な成長が流れ、戦いに寄り添い、移動も助けてくれる相棒のミニドラゴンがいる。だから進行は、ゲートを開くことだけではない——強くなり続けるビルドと、あらゆる戦闘と道中に織り込まれた相棒によって、探索と戦闘が一つの登っていくループに結ばれている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "悪魔城ドラキュラや、ゴシックなメトロイドヴァニアが好きな人——力の成長とともに開かれていく、城のような世界。本作ではそれを魔法少女に手渡し、鞭ではなく属性魔法を軸に組み直している",
+        "自分で組み立てる戦闘が欲しい人——火・氷・風・雷を各3段階、3つ同時装備を4セット、戦いの最中に切り替え、装備とレベルのRPG成長と、相棒のミニドラゴン。その全てが、レビューの挙げる爽快なバトルに向いている",
+        "Steam の西がまだほとんど見つけていない、日本の個人制作の原石が欲しい人——83レビュー92%で非常に好評、英語に対応済み、開発元 Turkey Games と、ひとりで営む同人レーベルわくわくゲームズによる一本",
+      ],
+      bad: [
+        "移動スキルで進行がゲートされるのを望む人(二段ジャンプやダッシュでマップが開く、あの古典的な設計)。本作ではその代わりに魔法と道具がゲートになる——だから探索は、新しい移動手段ではなく、手持ちの魔法とアイテムに紐づいている",
+        "大手スタジオの、すでに西で人気の大作や、完全に実績のあるヒット作を期待する人(本作は有料の個人同人作で——開発元 Turkey Games も販売元わくわくゲームズも、それぞれひとりの営みだ——無料でもアーリーアクセスでもない。83レビューのうち英語は約30%にとどまり、韓国語や欧州言語には非対応で、西へは絶対数でまだほとんど届いていない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5001,6 +5086,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Metroid is an action-adventure game developed by Nintendo R&D1 with Intelligent Systems and published by Nintendo, first released for the Family Computer Disk System in Japan in 1986. Casting the player as the bounty hunter Samus Aran exploring the sprawling, interconnected subterranean world of the planet Zebes, it is built on non-linear exploration gated by ability: you find power-ups and equipment that open paths once out of reach, doubling back through a single connected map as your growing kit unlocks it. By fusing open exploration with ability-gated progression, it is the founding origin of the genre later named Metroidvania, the lineage of games where a single interconnected world opens up as your abilities grow.",
       ja: "メトロイドは、任天堂開発第一部(R&D1)がインテリジェントシステムズと共に開発し、任天堂が販売したアクションアドベンチャーで、1986年にファミリーコンピュータ ディスクシステム向けに日本で初めて発売された。プレイヤーはバウンティハンター・サムス・アランとなり、惑星ゼーベスの地下に広がる、入り組んでひと続きにつながった世界を探索する。核にあるのは、能力でゲートされた非線形の探索だ——パワーアップや装備を手に入れることで、かつて手の届かなかった道が開き、ひと続きの一枚マップを、増えていく装備で何度も引き返しながら攻略していく。開かれた探索と、能力で進行をゲートする設計を融合させた本作は、のちに『メトロイドヴァニア』と名づけられるジャンル——一つのひと続きの世界が、能力の成長とともに開かれていくゲーム群の系譜——の始祖となった原点である。",
+    },
+  },
+  // 原点 悪魔城ドラキュラ(Castlevania), コナミ, 1986(ファミコン ディスクシステム)。鞭とサブウェポンを手に、
+  // ヴァンパイアハンター・シモンがドラキュラの城をステージごとに登攀する——ゴシックホラー・アクションの型を築き、
+  // シリーズの進化の中でそのゴシックアクションを能力ゲートされたひと続きの城の探索と融合させ、「メトロイドヴァニア」の
+  // 「ヴァニア」側を生んだ系譜の礎。1986 年の原作に単独の公式 Steam 版なし → wikidata QID(Q1043375)で同定
+  // (Steam id を捏造しない・href 破損の回避)。established 側と wikidata URL(Q1043375)の完全一致で逆引き成立。
+  "castlevania": {
+    wikidata: "https://www.wikidata.org/wiki/Q1043375",
+    blurb: {
+      en: "Castlevania is an action game developed and published by Konami, first released for the Family Computer Disk System in Japan in 1986. Casting the player as the vampire hunter Simon Belmont fighting through Dracula's castle with a whip and an arsenal of sub-weapons, it set a gothic-horror action template of stage-by-stage ascent against classic monster bosses, and as the series evolved it fused that gothic action with a single interconnected, ability-gated castle to explore, giving the later genre name Metroidvania its vania half. It is a foundational origin of the gothic action and gothic-Metroidvania lineage, the taste of exploring a monster-haunted castle that opens up as your powers grow. There is no official standalone Steam release of the original 1986 game; the origin is anchored to its Wikidata entry.",
+      ja: "悪魔城ドラキュラ(英題 Castlevania)は、コナミが開発・販売したアクションゲームで、1986年に日本でファミリーコンピュータ ディスクシステム向けに初めて発売された。プレイヤーはヴァンパイアハンター、シモン・ベルモンドとなり、鞭とさまざまなサブウェポンを手に、ドラキュラの城を突き進む。定番の怪物ボスに挑みながらステージを一つずつ登っていく、ゴシックホラー・アクションの型を築いた作品であり、シリーズが進化する中で、そのゴシックアクションを、能力でゲートされたひと続きの城の探索と融合させ、のちの『メトロイドヴァニア』というジャンル名の『ヴァニア』の側を生み出した。怪物の潜む城が、力の成長とともに開かれていく——そのゴシックアクション、そしてゴシック・メトロイドヴァニアの系譜の礎となった原点である。1986年の原作に単独の公式 Steam 版は存在せず、原点は Wikidata のエントリで同定する。",
     },
   },
   // 原点 ウルトラマン(Ultraman), 円谷英二 / 円谷プロダクション, 1966(特撮 TV シリーズ・『ウルトラQ』に続く第2作)。
