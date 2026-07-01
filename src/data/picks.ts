@@ -5707,6 +5707,97 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "aiai-kissaten": {
+    published: "2026-07-07",
+    publishAt: "2026-07-07",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "loop-mystery-adv"(周回ミステリーADV): 既存の "visual-novel"/"adventure" では捉えきれない、
+    //   この作品を定義する核——1周約5分、喫茶店で何を注文しても奥の部屋へ通される「合言葉」システムで分岐し、
+    //   複数のバッドエンドを経て「トゥルーエンド」で全ての謎を明かす、周回前提の短時間マルチエンド構造——を
+    //   専用ラベルとして立てる(rhythm-command-deckbuilder/single-turn-deckbuilder と同型の細粒度ラベル追加・
+    //   ui.ts en/ja 追加済み)。系譜は開発元 麺屋すぱいす東京支店 自身: 4Gamerが報じた同サークルのデベロッパー
+    //   ページで、次回作「ナカノ人格移植研究所」(2026年発表)が同じ短時間周回×マルチエンドのミステリーADV
+    //   形式を継ぐことが確認できる一方、この形式自体に先行するフリーゲーム/ゲームジャム作は捜索の上でも
+    //   見つからなかった(lineage_anchor_key=steam_url, appid 3847100 = 本作自身を新規 anchor
+    //   "aiai-kissaten" として同定・自己起源のため self-anchor)。obscurity は "wall"(日本語のみで
+    //   インターフェース/字幕/音声すべて英語非対応・完全な言語の壁)。reachState は "lang_walled"
+    //   (199件中英語レビューは1件・約0.5%で、Kotaku・IGN・Niche Gamer・Metacritic・BitSummit・IGF・TGA
+    //   いずれにも言及なし=西側メディア露出ゼロを確認済み)。
+    meta: { genre: "loop-mystery-adv", lineage: "aiai-kissaten", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 199, positivePct: 96, noEnglish: true } },
+    games: [
+      {
+        name_en: "アイアイ喫茶店 (no official English title)",
+        name_ja: "アイアイ喫茶店",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3847100/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A five-minute-loop, multiple-ending mystery adventure told in visual-novel form, developed and self-published by the Japanese doujin circle Menya Spice Tokyo Branch. The setting is a small coffee shop where, per Steam's own description, ordering something as innocuous as an iced coffee turns out to double as the 'password' that leads you into the back room, and each order and each choice you make from there branches the story toward one of several endings. Every one of those bad endings still hands you a piece of the truth, so a run rarely takes more than about five minutes, and the game is built for you to keep failing it on purpose, order differently, and read the room again, until enough pieces line up to reach the single true ending that resolves the shop's mystery in full; 44 Steam achievements track that progress across replays. Released on August 28, 2025 per Steam's own listing (Japanese outlets including Famitsu and 4Gamer report August 29, a one-day discrepancy also noted here), it is Very Positive at 96 percent over 199 reviews (191 positive, per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets disclosed and, by Steam's own content descriptors, nothing sexual (nothing is flagged at all; Indonesia's IGRS board separately rates it 18+, but for horror and violence, not sexual content). Built with accessibility options that include keyboard-only and mouse-only play, color alternatives, and no timed input required, it supports Japanese only, interface, subtitles, and voice alike, with no English option anywhere in the store or the game, and only 1 of its 199 reviews, about 0.5 percent, is in English. No coverage has turned up from Kotaku, IGN, Niche Gamer, Metacritic, BitSummit, IGF, or the Game Awards, so this is not a case of a game merely underperforming in the West, it is one the West has not yet been offered a way to read at all. The circle has also exhibited at Tokyo Game Dungeon, Japan's own doujin game showcase.",
+        desc_ja: "1周約5分のマルチエンド・ミステリーアドベンチャーで、ビジュアルノベル形式によるテキスト進行と選択で物語が進む。開発・販売は日本の同人サークル 麺屋すぱいす東京支店 による自社セルフパブリッシュ。舞台は小さな喫茶店——Steam自身の説明によれば、何気なく頼んだ「アイスコーヒー」の注文が、そのまま奥の部屋へ通される「合言葉」になっている。そこからの注文や選択の一つ一つが物語を分岐させ、いくつものエンディングへ導く。どのバッドエンドも、真相の断片を必ず一つ手渡してくれるので、1周はおよそ5分で終わり、わざと失敗しては別の注文を選び、その場をもう一度読み直す——それを繰り返すように作られている。断片が十分に揃ったとき、店の謎をすべて明かす唯一の「トゥルーエンド」に辿り着く。44個のSteam実績が、周回を重ねる進捗を記録する。2025年8月28日にリリース(Steam自身の表記。ファミ通・4Gamerなど日本のメディアは8月29日と報じており、1日のズレがある——両論併記する)。199件のレビュー(Steam自身のレビューAPIでは191件が好評)中96%が好評の「非常に好評」。無料ではない有料作で、アーリーアクセスではなく正式リリース済み。AI生成アセットの開示はなく、Steam自身のコンテンツディスクリプタ上、性的な要素も一切フラグされていない(インドネシアのIGRSレーティング機関は別途18+を付与しているが、これはホラー・暴力表現に対するもので、性的な理由ではない)。キーボードのみ・マウスのみでのプレイ、色覚設定の代替、タイムアタック要素なしのプレイなど、アクセシビリティにも配慮した作りだ。対応言語は日本語のみ——インターフェース・字幕・音声のすべてが日本語で、ストアにもゲーム内にも英語の選択肢は一切なく、199件のレビューのうち英語は1件、約0.5%にとどまる。Kotaku・IGN・Niche Gamer・Metacritic・BitSummit・IGF・The Game Awardsのいずれにも言及は見つからず、これは西側で単に埋もれているというより、そもそも読む手立てをまだ渡されていない状態だ。同サークルは、国内の同人ゲーム展示イベント「東京ゲームダンジョン」への出展実績も持つ。",
+      },
+      {
+        name_en: "アイアイ喫茶店 (no official English title)",
+        name_ja: "アイアイ喫茶店",
+        status: "established",
+        steam: "https://store.steampowered.com/app/3847100/",
+        tag_en: "The origin of its own lineage",
+        tag_ja: "この系譜そのものの原点",
+        desc_en: "There is no earlier work this grows from. Aiai Kissaten is developed and self-published as the debut release of Menya Spice Tokyo Branch, and an extensive search turned up no earlier freeware build or game-jam prototype behind its five-minute-loop, order-as-password, multiple-bad-ends-into-one-true-ending mystery ADV format. Per the circle's own developer page as reported by 4Gamer, their next announced project, Nakano Jinkaku Ishoku Kenkyuujo (announced for 2026), carries that same short-loop, multi-ending mystery ADV format forward, so this is the point, at least within this developer's own body of work, where the format begins rather than one it inherited.",
+        desc_ja: "これより前に育った土台は無い。アイアイ喫茶店は、麺屋すぱいす東京支店によるデビュー作として開発・自社セルフパブリッシュされた一本で、1周5分・注文がそのまま合言葉になる・複数のバッドエンドを経てトゥルーエンドへ至るこのミステリーADVの形式には、捜索を尽くしても、それ以前のフリーゲーム版やゲームジャム版といった土台は見つからなかった。4Gamerが報じた同サークルのデベロッパーページによれば、次回作として発表済みの「ナカノ人格移植研究所」(2026年発表)は、この同じ短時間周回×マルチエンドのミステリーADV形式を引き継ぐ。だから本作は、少なくともこの開発者自身の仕事の中では、何かを受け継いだ側ではなく、その形式が始まる場所そのものだ。",
+      },
+    ],
+    en: {
+      title: "Aiai Kissaten - a five-minute-loop, multiple-ending mystery adventure where ordering something as simple as iced coffee doubles as the password into a coffee shop's back room, branching toward one of several bad endings before a single true ending resolves the whole mystery, tracked across 44 Steam achievements, a self-published Japanese doujin debut with no earlier format to inherit from and no English support at all, unreached by the West",
+      description: "A five-minute-loop, multiple-ending mystery adventure by the self-published Japanese doujin circle Menya Spice Tokyo Branch. In its titular coffee shop, ordering something as simple as iced coffee doubles as the password into a back room, and every order and choice branches the story toward one of several bad endings, each handing you a piece of the truth, until enough of them add up to the one true ending that resolves the mystery in full, tracked across 44 Steam achievements. Very Positive at 96 percent over 199 reviews; it supports Japanese only, with just 1 English review and no Western media coverage found anywhere, so the West has not yet been offered a way to read it.",
+      h1a: "Order an iced coffee, and that order itself is the password. ",
+      h1flip: "Fail into one bad ending after another until the fragments they hand you finally add up to the one true ending that explains the whole shop",
+      h1b: ".",
+      lede: "A five-minute-loop, multiple-ending mystery adventure told in visual-novel form, developed and self-published by the Japanese doujin circle Menya Spice Tokyo Branch. Order something as simple as iced coffee at its titular coffee shop and, per the game's own description, that order itself doubles as the password into the back room, and every choice from there branches the story toward one of several endings. Every bad ending still hands you a fragment of the truth, so a run rarely runs past five minutes, and the whole point is to keep failing it on purpose until enough fragments line up to reach the one true ending that resolves the shop's mystery in full, with 44 Steam achievements tracking that progress across replays. There is no earlier work this format grows from; the circle's own next announced project is reported to carry the same short-loop, multi-ending mystery ADV format forward, making this the origin within their own lineage. It supports Japanese only, and with zero Western media coverage found anywhere, the West has not yet been offered a way to read it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every order you place is doing two things at once: it is what you say you want to drink, and it is also the password that decides which door opens next, so choosing 'iced coffee' is never just small talk, it is already a move in the mystery before you know there is one to solve.",
+        "Losing does not feel like losing. Every bad ending closes the run in a few minutes, but it also hands you a fragment you did not have before, so failing on purpose, ordering something different next time, reading the same room from a new angle, is not a detour from progress, it is the entire shape progress takes.",
+        "The true ending is not unlocked by playing better, it is unlocked by playing enough different wrong ways first, so the five-minute loop turns replay itself into the investigation: each short run is one more piece filed away until, all at once, the fragments you accumulated across every bad ending line up into the one story that explains the shop.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a mystery adventure where the core loop is deliberately failing forward: five-minute runs, a menu order that doubles as a password, and bad endings that each still hand you a piece of the truth on the way to one true ending",
+        "You want a self-published Japanese doujin debut that is genuinely starting something rather than following a known format: no earlier freeware or game-jam version behind this exact short-loop, multi-ending mystery ADV structure was found, and the circle's own next announced project is already reported to carry it forward",
+        "You want an early look at a quietly praised Japanese find, Very Positive at 96 percent over 199 reviews, tracked across 44 Steam achievements, made and published solely by Menya Spice Tokyo Branch, a circle that has also exhibited at Tokyo Game Dungeon",
+      ],
+      bad: [
+        "You do not read Japanese: the game supports Japanese only, interface, subtitles, and voice alike, with no English option anywhere in the store or the game, and only 1 of its 199 reviews is in English",
+        "You want a title with an existing Western footprint to point to; no coverage from Kotaku, IGN, Niche Gamer, Metacritic, BitSummit, IGF, or the Game Awards has turned up, so this is not a case of a game underperforming in the West, it is one the West has not yet been offered a way to read at all",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "アイアイ喫茶店 - 「アイスコーヒー」のような何気ない注文が、そのまま奥の部屋への合言葉になる、1周5分のマルチエンド・ミステリーアドベンチャー。いくつものバッドエンドを経て、唯一の「トゥルーエンド」で謎のすべてが明かされる。44個のSteam実績で周回を記録する、継ぐべき前例を持たない自社セルフパブリッシュの日本の同人デビュー作——英語には一切対応せず、西側はまだ届いていない",
+      description: "自社セルフパブリッシュの日本の同人サークル 麺屋すぱいす東京支店 による、1周5分のマルチエンド・ミステリーアドベンチャー。舞台となる喫茶店では、「アイスコーヒー」のような何気ない注文が、そのまま奥の部屋への合言葉になっており、注文と選択の一つ一つが物語を分岐させ、いくつものバッドエンドへ導く。どのバッドエンドも真相の断片を一つ手渡してくれ、それが十分に揃ったとき、謎のすべてを明かす唯一のトゥルーエンドに辿り着く。44個のSteam実績が周回の進捗を記録する。199件のレビュー中96%が好評の『非常に好評』。対応言語は日本語のみで、英語レビューはわずか1件、西側メディアの言及もどこにも見つからず、西側はまだこの一本を読む手立てを渡されていない。",
+      h1a: "「アイスコーヒー」を頼む。その注文そのものが、合言葉になっている。",
+      h1flip: "バッドエンドを重ねて手渡された断片が、唯一のトゥルーエンドとして店の謎すべてを説き明かすまで",
+      h1b: "。",
+      lede: "ビジュアルノベル形式で物語が進む、1周5分のマルチエンド・ミステリーアドベンチャー。開発・販売は日本の同人サークル 麺屋すぱいす東京支店 による自社セルフパブリッシュ。舞台となる喫茶店で「アイスコーヒー」のような何気ない注文をすると、ゲーム自身の説明によれば、その注文そのものが奥の部屋への合言葉になっていて、そこからの選択の一つ一つが物語を分岐させ、いくつものエンディングへ導く。どのバッドエンドも真相の断片を必ず一つ手渡してくれるので、1周はめったに5分を超えず、わざと失敗を重ねては、断片が十分に揃い唯一のトゥルーエンドへ届くまで読み直し続けることが、このゲームの本題だ。44個のSteam実績が、その周回の進捗を記録する。この形式には、それ以前に育った土台が無い——同サークルの次回作は、この同じ短時間周回×マルチエンドのミステリーADV形式を引き継ぐと報じられており、本作はこの系譜における原点そのものだ。対応言語は日本語のみで、西側メディアの言及もどこにも見つからず、西側はまだこの一本を読む手立てを渡されていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "注文の一つ一つは、同時に二つのことをしている——飲みたいものを告げる行為であると同時に、次にどの扉が開くかを決める合言葉でもある。だから「アイスコーヒー」を選ぶことは、ただの世間話ではない。謎があると気づく前から、もうその謎の中の一手になっている。",
+        "負けることが、負けたようには感じられない。バッドエンドはどれも数分でランを閉じるが、同時にそれまで持っていなかった断片を一つ手渡してくれる。だからわざと失敗して、次は違う注文を選び、同じ部屋を新しい角度で読み直すことは、進捗の寄り道ではなく、進捗そのものの形をしている。",
+        "トゥルーエンドは、うまくプレイすることでは解錠されない。先に十分な数の「違う失敗」を重ねることで解錠される。だから1周5分のループは、周回そのものを捜査へと変える——短い一周ごとに一つの手がかりが積み上がり、あるとき、すべてのバッドエンドを通して集めた断片が、店を説明する唯一の物語として、一斉に噛み合う。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "わざと失敗しながら前へ進む構造が核になったミステリーアドベンチャーが欲しい人——1周5分のラン、合言葉を兼ねる注文メニュー、そして真相の断片を必ず一つ手渡してくれるバッドエンドを重ねて、唯一のトゥルーエンドへ辿り着く",
+        "既存の型をなぞるのではなく、本当に何かを始めている自社セルフパブリッシュの日本の同人デビュー作が欲しい人——この短時間周回×マルチエンドのミステリーADVという構造そのものに、それ以前のフリーゲーム版やゲームジャム版は見つからず、同サークルの次回作としてすでに発表済みの作品がこの形式を引き継ぐと報じられている",
+        "静かに評価されている日本の発掘を早めに触りたい人——199件のレビューで96%の『非常に好評』、44個のSteam実績で周回を記録する、麺屋すぱいす東京支店が単独で開発・販売する一本。同サークルは東京ゲームダンジョンへの出展実績も持つ",
+      ],
+      bad: [
+        "日本語が読めない人(対応言語は日本語のみで、インターフェース・字幕・音声のすべてが日本語。ストアにもゲーム内にも英語の選択肢は一切なく、199件のレビューのうち英語は1件にとどまる)",
+        "西側での実績を手がかりにしたい人(Kotaku・IGN・Niche Gamer・Metacritic・BitSummit・IGF・The Game Awardsのいずれにも言及は見つからない。これは西側で単に埋もれているというより、そもそも読む手立てをまだ渡されていない状態だ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6225,6 +6316,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "MOTHER 3 is a role-playing game developed by HAL Laboratory and published by Nintendo for the Game Boy Advance, released in Japan in April 2006 as the third entry in the Mother series. Its signature Sound Battle system turns ordinary turn-based combat into a rhythm exercise: pressing a skill's command in time with the beat of that battle's own music chains consecutive hits together into a combo, so landing the bigger hit is a matter of feeling the beat, not only choosing the right command. It has never received an official English localization. By binding a combo's success to the beat of its own soundtrack, it is the origin of the lineage of games that turn rhythmic, on-beat input into the trigger for a combo attack.",
       ja: "MOTHER3 は、HAL研究所が開発し任天堂が販売したロールプレイングゲームで、2006年にゲームボーイアドバンス向けに日本で発売された、「MOTHER」シリーズ第3作である。象徴的な「サウンドバトル」システムは、通常のターン制戦闘をリズムの試練に変える——技のコマンドを、その戦闘曲自身のビートに合わせて入力すると、一撃一撃がコンボとして繋がっていく。大きな一撃を決めるのは、正しいコマンドを選ぶことだけでなく、そのビートを感じ取ることだ。公式の英語ローカライズは行われていない。コンボの成否を、自らのサウンドトラックのビートと結びつけたことで、リズムに乗せたオンビートの入力をコンボ攻撃の引き金にする、そのゲーム群の系譜の原点である。",
+    },
+  },
+  // 原点 アイアイ喫茶店 自身(自己起源・appid 3847100)。開発・販売は麺屋すぱいす東京支店による自社セルフ
+  //   パブリッシュ。1周5分・注文がそのまま合言葉になる・複数のバッドエンドを経てトゥルーエンドへ至る短時間
+  //   周回×マルチエンドのミステリーADV形式に、先行するフリーゲーム/ゲームジャム版が無いか捜索したが
+  //   見つからなかった。4Gamerが報じた同サークルのデベロッパーページによれば、次回作として発表済みの
+  //   「ナカノ人格移植研究所」(2026年発表)がこの同じ形式を継ぐことが確認できるため、本作自身をこの
+  //   開発者自身の系譜の原点として新規 anchor 化する(lineage_anchor_key=steam_url, appid 3847100 =
+  //   本作自身・自己参照の self-anchor。既存 established を持つ他の anchor とは異なる新パターン)。
+  "aiai-kissaten": {
+    steam: "3847100",
+    blurb: {
+      en: "Aiai Kissaten is a five-minute-loop, multiple-ending mystery adventure released in August 2025 by the Japanese doujin circle Menya Spice Tokyo Branch, who developed, published, and exhibited it entirely on their own. Set in a small coffee shop, it turns something as ordinary as an order for iced coffee into the 'password' that leads the player into a back room, branching the story from there; reaching the one true ending that resolves the shop's mystery in full requires working through a series of bad endings first, each surrendering a piece of the truth, with Steam achievements tracking that progress across replays. An extensive search turned up no earlier freeware or game-jam version behind this exact format, and per the circle's own developer page as reported by 4Gamer, their next announced project, Nakano Jinkaku Ishoku Kenkyuujo, carries the same short-loop, multi-ending mystery ADV format forward, making Aiai Kissaten the origin of that lineage within this developer's own work.",
+      ja: "アイアイ喫茶店は、日本の同人サークル 麺屋すぱいす東京支店 が、開発・販売・出展のすべてを自分たちだけで手がけ、2025年8月に発売した、1周約5分のマルチエンド・ミステリーアドベンチャーだ。舞台は小さな喫茶店——「アイスコーヒー」を頼むような何気ない注文が、そのまま奥の部屋へ通される「合言葉」に変わり、そこから物語が分岐していく。店の謎をすべて解き明かす唯一の「トゥルーエンド」へ辿り着くには、まず複数のバッドエンドを経る必要があり、そのどれもが真相の断片を一つずつ手渡してくれる。周回を重ねる進捗はSteam実績が記録する。この形式にそれ以前のフリーゲーム版やゲームジャム版があったかを捜索したが、見つからなかった。4Gamerが報じた同サークルのデベロッパーページによれば、次回作として発表済みの「ナカノ人格移植研究所」は、この同じ短時間周回×マルチエンドのミステリーADV形式を引き継いでおり、アイアイ喫茶店は、この開発者自身の系譜における、その原点である。",
     },
   },
 } as const;
