@@ -4575,6 +4575,91 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "momibosu": {
+    published: "2026-07-01",
+    publishAt: "2026-07-01",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 60 件は "hundreds"(数百)にも "around_1k"(約千)にも当たらない(捏造しない)。
+    //   rarity.reviews=60 を確定値でそのまま出す。obscurity は "deep"(レビュー僅少・西で無名)。英語対応済みで
+    //   noEnglish=false のため lang_walled は使わない(誤って「英語非対応」stamp を立てない・正直さ)。英語レビュー
+    //   17/60=28% で西未浸透 = reachState="unreached_west"(ただし stamp は positivePct+reviews で埋まるため
+    //   "西ではまだ無名" fallback は発火しない・状態の正直な記録として付す)。
+    meta: { genre: "precision-platformer", lineage: "super-meat-boy", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 60, positivePct: 92, noEnglish: false } },
+    games: [
+      {
+        name_en: "MOMIBOSU",
+        name_ja: "MOMIBOSU（モミボス）",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2487340/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A high-difficulty, precision 2D platformer by PenGames, the work of the Japanese solo developer peng, hand-built over roughly six years. A boy and a girl set out from their small underground village with a mysterious weapon drone, on a road-movie journey to a vast new world. It is a die-and-retry game built on one feeling, no matter how many times you get hit, one more time: you fall, learn, and throw yourself at the same precise jump again. Its gimmicks turn on the enemies themselves, bump two enemies into each other and something happens, so fights and traversal both become puzzles of using foes against foes, and you collect power-up items and hone technique against boss characters that are not only human but monsters, all across a vast, Metroidvania-style map you explore from an underground village out into new lands. Released in January 2025, it is Very Positive at 92 percent over 60 reviews (55 positive), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. PenGames is the solo label of the individual developer peng, developer and publisher one and the same. It already supports English and Japanese, yet with only 17 of its 60 reviews in English (about 28 percent, 16 of them positive) and the rest largely Japanese, the Steam English-speaking world has barely found it. It already has a Switch version and Japanese press coverage, but on Steam it is still a small, sixty-review gem the West has not reached.",
+        desc_ja: "高難易度・精密の2Dプラットフォーマー。開発元は PenGames——日本の個人開発者 peng が、およそ6年をかけて手作りした一本だ。少年と少女が、地下の小さな村から、謎の兵器ドローンを手に、広大な新天地を目指すロードムービーのような旅に出る。核にあるのは、たった一つの感覚——「何度やられても、もう一回」。落ちて、学んで、同じ精密な跳躍へ、もう一度身を投げる、ダイ&リトライの設計だ。ギミックは敵そのものを軸に回る——敵同士をぶつけると、何かが起こる。だから戦いも道中も、「敵を敵にぶつけて使う」パズルになる。パワーアップアイテムを集め、技を磨いて、人型だけでなくモンスターのボスに挑む。その全ては、地下の村から新天地へと広がる、メトロイドヴァニア型の広大なマップの中にある。2025年1月リリース、60レビュー92%（好評55）で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。PenGames は個人開発者 peng の自主レーベルで、開発元と販売元は同一だ。すでに英語と日本語に対応しているが、60件のうち英語レビューは17件（約28%、うち16件が好評）にとどまり、残りの多くは日本語圏——Steam の英語圏は、この一本をまだほとんど見つけていない。すでに Switch 版や日本メディアの露出はあるが、Steam では60レビューと小規模で、西はまだ届いていない。",
+      },
+      {
+        name_en: "Super Meat Boy",
+        name_ja: "Super Meat Boy",
+        status: "established",
+        steam: "https://store.steampowered.com/app/40800/Super_Meat_Boy/",
+        wikidata: "https://www.wikidata.org/wiki/Q1784048",
+        tag_en: "The die-and-retry origin",
+        tag_ja: "ダイ&リトライの原点",
+        desc_en: "The origin of the die-and-retry precision platformer: Super Meat Boy, made by Team Meat, the two-person studio of Edmund McMillen and Tommy Refenes, and released in 2010. You play a cube of living meat racing through hyper-precise gauntlets of saw blades and hazards to rescue Bandage Girl, dying instantly on the smallest mistake and respawning at once, fast enough that death becomes just another attempt. By pairing merciless, pixel-tight platforming with instant restarts, it crystallized the modern one-more-try precision platformer, the lineage where the whole loop is failing, learning, and hurling yourself at the same jump again. That core is the root MOMIBOSU grows from, keeping the die-and-retry precision but wrapping it in enemy-collision gimmicks, boss fights, power-up items, and a vast Metroidvania-style world to explore. The 2010 game is anchored here to its Steam release.",
+        desc_ja: "ダイ&リトライ型の精密プラットフォーマーの原点——Super Meat Boy。Edmund McMillen と Tommy Refenes の2人組スタジオ Team Meat が制作し、2010年に発売された。プレイヤーは生きた肉の塊となり、ノコギリの刃と罠で埋め尽くされた超精密なコースを駆け抜け、包帯少女（Bandage Girl）を救い出す——ほんの小さなミスで即死し、すぐさま復活する。その復活があまりに速いから、死は次の一回の挑戦にすぎなくなる。容赦のないピクセル単位のプラットフォーミングと、瞬時のリスタートを結びつけたことで、現代の「もう一回」精密プラットフォーマーを結晶化させた——失敗し、学び、同じ跳躍へまた身を投げる、そのループの全てを核にした系譜の原点である。この核こそ、MOMIBOSU が育つ根だ。本作はダイ&リトライの精密さを受け継ぎながら、それを敵同士の衝突ギミック、ボス戦、パワーアップアイテム、そして探索すべきメトロイドヴァニア型の広大な世界で包んでいる。2010年の作品は、その Steam ページで同定する。",
+      },
+    ],
+    en: {
+      title: "MOMIBOSU - a high-difficulty precision 2D platformer where you die and retry, bump enemies into each other, and explore a vast Metroidvania world, a six-year solo-made heir to Super Meat Boy the Steam West has barely found",
+      description: "A high-difficulty, precision 2D platformer by PenGames, the solo developer peng, hand-built over roughly six years. A boy and a girl leave their underground village with a mysterious weapon drone for a vast new world, in a die-and-retry game built on one feeling: no matter how many times you get hit, one more time. Gimmicks turn on the enemies themselves, bump two together and something happens, and you collect power-ups and fight human and monster bosses across a vast Metroidvania map. Very Positive at 92 percent over 60 reviews; it supports English, yet with only about 28 percent English reviews the Steam West has barely found it.",
+      h1a: "You will die, again and again. ",
+      h1flip: "And every time, the one feeling is the same: one more try",
+      h1b: ".",
+      lede: "A high-difficulty, precision 2D platformer by PenGames, the work of the Japanese solo developer peng, hand-built over roughly six years. A boy and a girl set out from their small underground village with a mysterious weapon drone, on a road-movie journey to a vast new world. It is a die-and-retry game built on one feeling, no matter how many times you get hit, one more time: you fall, learn, and throw yourself at the same precise jump again. Its gimmicks turn on the enemies themselves, bump two enemies into each other and something happens, and you collect power-up items and hone technique against bosses that are not only human but monsters, all across a vast, Metroidvania-style map. In the lineage of Super Meat Boy. It already supports English, yet the Steam English-speaking world has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game is built to be failed. Its precision platforming kills you on the smallest mistake, but dying costs almost nothing, and the pull is always the same, one more try: you fall, read exactly where you fell, and hurl yourself at the same jump again, so what stays is not frustration but the tightening loop of getting one inch further with every attempt.",
+        "Its gimmicks turn on the enemies themselves. Bump two enemies into each other and something happens, so both traversal and combat become a small puzzle of using foes against foes rather than only dodging or out-jumping them, and the level design keeps asking what you can make the enemies do to open the way.",
+        "Underneath the precision runs a vast, Metroidvania-style world, from a small underground village out into new lands, where the power-up items you collect change what you can reach and boss characters that are not only human but monsters gate the road, so the die-and-retry loop is threaded through exploration and a road-movie story of a boy and a girl, not just a string of standalone stages.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Super Meat Boy and the die-and-retry precision platformer, the merciless jump you fail and fail until one more try finally lands, here wrapped in a six-year solo-made adventure",
+        "You want that precision threaded through exploration: enemy-collision gimmicks, power-up items, human and monster bosses, and a vast Metroidvania-style world to roam from an underground village into new lands",
+        "You want a Japanese solo-made gem the Steam West has barely found, Very Positive at 92 percent over 60 reviews, already supporting English, the hand-built work of PenGames' peng",
+      ],
+      bad: [
+        "You bounce off hard, punishing platformers; this is a high-difficulty, precision die-and-retry game where you are meant to die over and over, and the whole pull is in enduring that loop until it clicks",
+        "You expect a big-studio, already-popular Western title or a fully proven hit; this is a paid solo doujin work by one developer (developer and publisher are the same, PenGames), not free and not in Early Access, that already has a Switch version and Japanese press coverage but on Steam is still a small, sixty-review gem the West has not reached (only about 28 percent of reviews are in English)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "MOMIBOSU（モミボス）- 何度も死んで、もう一回。敵同士をぶつけ、メトロイドヴァニア型の広大な世界を探索する、高難易度・精密2Dプラットフォーマー。Super Meat Boy の系譜、Steam の西がまだ見つけていない、6年かけた個人制作の一本",
+      description: "PenGames（個人開発者 peng）が、およそ6年かけて手作りした、高難易度・精密の2Dプラットフォーマー。少年と少女が、地下の村から謎の兵器ドローンを手に、広大な新天地を目指す。核にあるのは、たった一つの感覚——「何度やられても、もう一回」。ギミックは敵そのものを軸に回り、敵同士をぶつけると何かが起こる。パワーアップアイテムを集め、人型とモンスターのボスに挑み、メトロイドヴァニア型の広大なマップを探索する。60レビュー92%で非常に好評。英語に対応済みだが、英語レビューは約28%——Steam の西は、この一本をまだほとんど見つけていない。",
+      h1a: "何度も、何度も死ぬ。",
+      h1flip: "そのたびに残る感覚は、ただ一つ——もう一回",
+      h1b: "。",
+      lede: "高難易度・精密の2Dプラットフォーマー。開発元は PenGames——日本の個人開発者 peng が、およそ6年をかけて手作りした一本だ。少年と少女が、地下の小さな村から、謎の兵器ドローンを手に、広大な新天地を目指すロードムービーのような旅に出る。核にあるのは、たった一つの感覚——「何度やられても、もう一回」。落ちて、学んで、同じ精密な跳躍へ、もう一度身を投げる。ギミックは敵そのものを軸に回り、敵同士をぶつけると何かが起こる。パワーアップアイテムを集め、人型だけでなくモンスターのボスに、技を磨いて挑む——その全ては、メトロイドヴァニア型の広大なマップの中にある。Super Meat Boy の系譜に連なる一本。英語に対応済みだが、Steam の英語圏は、この一本をまだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては、「失敗する」ために作られている。精密なプラットフォーミングは、ほんの小さなミスであなたを殺す。だが、死ぬコストはほとんどゼロになるよう設計されていて、引力はいつも同じ——「もう一回」。落ちて、どこで落ちたのかを正確に読み、同じ跳躍へまた身を投げる。だから残るのは苛立ちではなく、一回ごとにあと数センチ先へ進む、締まっていくループそのものだ。",
+        "ギミックは、敵そのものを軸に回る。敵同士をぶつけると、何かが起こる。だから道中も戦闘も、ただ避け、跳び越えるだけでなく、「敵を敵にぶつけて使う」小さなパズルになる。レベルデザインは、敵に何をさせれば道が開くのかを、繰り返し問いかけてくる。",
+        "精密さの下には、メトロイドヴァニア型の広大な世界が広がっている——地下の小さな村から、新天地へ。集めたパワーアップアイテムが、届く範囲を変えていく。人型だけでなくモンスターのボスが、道を塞ぐ。だからダイ&リトライのループは、独立したステージの連なりではなく、探索と、少年と少女のロードムービーのような物語の中に、織り込まれている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Super Meat Boy と、ダイ&リトライの精密プラットフォーマーが好きな人——何度も失敗する容赦のない跳躍を、「もう一回」でついに決める、あの手触り。本作ではそれを、6年かけた個人制作の冒険が包んでいる",
+        "その精密さを、探索に織り込んだものが欲しい人——敵同士の衝突ギミック、パワーアップアイテム、人型とモンスターのボス、そして地下の村から新天地へと巡る、メトロイドヴァニア型の広大な世界",
+        "Steam の西がまだほとんど見つけていない、日本の個人制作の原石が欲しい人——60レビュー92%で非常に好評、英語に対応済み、PenGames の peng が手作りした一本",
+      ],
+      bad: [
+        "難しく、厳しいプラットフォーマーが苦手な人(本作は高難易度・精密のダイ&リトライで、何度も死ぬことが前提で、そのループがハマるまで耐える——その点にこそ引力がある)",
+        "大手スタジオの、すでに西で人気の大作や、完全に実績のあるヒット作を期待する人(本作はひとりの開発者による有料の同人作で——開発元と販売元は同一の PenGames——無料でもアーリーアクセスでもない。すでに Switch 版や日本メディアの露出はあるが、Steam ではまだ60レビューと小規模で、西には届いていない——英語レビューは約28%だ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4929,6 +5014,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Ultraman is a Japanese tokusatsu (special-effects) television series created by Eiji Tsuburaya and produced by Tsuburaya Productions, first broadcast in 1966 as the show that followed Ultra Q. It set a giant silver-and-red hero against a procession of city-sized kaiju, defended by a human special-attack team that fought the monsters on the front line, and it crystallized the kaiju-defense story: ordinary people standing against giant monsters that threaten a nation, and the figure who rises to fight them. It is the origin of the giant-kaiju-defense lineage in Japanese fiction, the taste of facing colossal monsters at the front line. It is the root of a taste, not a claim of license over any later or fan-made work.",
       ja: "ウルトラマンは、円谷英二が生み出し円谷プロダクションが製作した日本の特撮テレビシリーズで、『ウルトラQ』に続く作品として1966年に放送が始まった。銀と赤の巨大なヒーローを、都市ほどもある怪獣の群れと対峙させ、最前線で怪獣に立ち向かう人間の特捜隊がそれを支える——この構図によって、「巨大な怪獣が国を脅かし、それに立ち向かう者が現れる」怪獣防衛の物語を結晶化させた。日本のフィクションにおける巨大怪獣防衛の系譜——最前線で巨大な怪獣と向き合うという味——の原点である。これは味の原点という意味であり、後続作品や同人作への権利を主張するものではない。",
+    },
+  },
+  // 原点 Super Meat Boy, Team Meat(Edmund McMillen / Tommy Refenes), 2010。ノコギリと罠で埋め尽くされた
+  // 超精密なコースを、生きた肉の塊で駆け抜け、即死→瞬時リスタートを繰り返す——「何度死んでも、もう一回」の
+  // ダイ&リトライ精密プラットフォーマーを結晶化させ広く知らしめた原点。PC 公式 Steam 版あり(app 40800)
+  // → steam で同定(established 側と /app/40800/ で完全一致・href 破損回避・wikidata Q1784048 実体確認済み)。
+  "super-meat-boy": {
+    steam: "40800",
+    blurb: {
+      en: "Super Meat Boy is a platformer developed by Team Meat, the two-person studio of Edmund McMillen and Tommy Refenes, and released in 2010. You play a small cube of living meat racing through hyper-precise gauntlets of saw blades and hazards to rescue Bandage Girl, dying instantly at the smallest mistake and respawning at once, fast enough that death becomes just another attempt. By fusing merciless, pixel-tight platforming with instant restarts, it crystallized and popularized the modern die-and-retry precision platformer, and is the origin of the lineage where the whole loop is failing, learning, and hurling yourself at the same jump one more time.",
+      ja: "Super Meat Boy は、Edmund McMillen と Tommy Refenes の2人組スタジオ Team Meat が開発し、2010年に発売したプラットフォーマーである。プレイヤーは小さな生きた肉の塊となり、ノコギリの刃と罠で埋め尽くされた超精密なコースを駆け抜け、包帯少女（Bandage Girl）を救い出す——ほんの小さなミスで即死し、すぐさま復活する。その復活があまりに速いため、死は次の一回の挑戦にすぎなくなる。容赦のないピクセル単位のプラットフォーミングと、瞬時のリスタートを融合させたことで、現代のダイ&リトライ型・精密プラットフォーマーを結晶化させ広く知らしめた。失敗し、学び、同じ跳躍へ「もう一回」身を投げる——そのループの全てを核にしたゲーム群の系譜の原点である。",
     },
   },
   // 原点 ファイナルファンタジーV(Final Fantasy V), スクウェア, 1992(スーパーファミコン)。パーティが
