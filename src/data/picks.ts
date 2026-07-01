@@ -5261,6 +5261,91 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "clock-rogue": {
+    published: "2026-07-05",
+    publishAt: "2026-07-05",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 112 件は demigoddess(同じ112件)と同帯で "hundreds"(数百)と言い切るには境界的
+    //   (誇張しない)。rarity.reviews=112 を確定値でそのまま出す。英語対応済み(10言語中の1つ)で
+    //   noEnglish=false(誤って「英語非対応」stampを立てない・正直さ)。英語レビュー 16/112=14.3%・西未浸透 =
+    //   reachState="unreached_west"。obscurity は "deep"(レビュー僅少・西で無名)。系譜は Loop Hero——自分で
+    //   周回構造(円環ボード)を組み、その進行が配置した効果を発火させる骨格が、時計盤上に技を配置し発動
+    //   タイミングを組む Clock Rogue の骨格と一致(lineage_anchor_key=steam_url, appid 1282730 で同定)。
+    meta: { genre: "roguelike", lineage: "loop-hero", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 112, positivePct: 99, noEnglish: false } },
+    games: [
+      {
+        name_en: "Clock Rogue",
+        name_ja: "Clock Rogue",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2812120/Clock_Rogue/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A body-clock roguelike action game developed solo by MONO ENTERTAINMENT, an individual Japanese indie developer based in Tokyo, and published by Phoenixx Inc., a mid-size Japanese indie publisher. No timer is ever shown on screen: you feel out the passage of time inside your own head, stop a stopwatch at the moment you judge to be right, and the instant you stop it a skill locks onto whatever position on a clock face your stop lands on, triggering if it lands inside that skill's window. The catch is that power costs precision: the stronger a skill, the narrower the window of the dial it must land inside to fire, while the weaker skills forgive a wide sweep of the clock face. Every enemy you defeat opens a three-choice draft of new skills, and across a run you place each pick onto the dial yourself, building a clock face that is entirely your own, positioned and timed rather than simply collected. The setting casts you inside the body of a hedgehog, where you play a Hari Cell (a spine-based immune cell), holding the line against a viral invasion from within. Released on November 7, 2024, it is Very Positive at 99 percent over 112 reviews, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It supports English alongside Japanese, French, Italian, German, Spanish (Spain), Brazilian Portuguese, Simplified and Traditional Chinese, and Korean, all as localizations of a game both developed and published in Japan, yet with only 16 of its 112 reviews in English (about 14.3 percent), the West has barely found it.",
+        desc_ja: "体内時計ローグライクアクション。開発は MONO ENTERTAINMENT——東京を拠点とする個人インディー開発者が一人で手がけ、販売は日本の中堅インディーパブリッシャー Phoenixx Inc. が担う。画面にタイマーは一切表示されない——時間の経過を自分の頭の中だけで感じ取り、「ここだ」と判断した瞬間にストップウォッチを止める。止めた瞬間、技はその停止が着地した時計盤上の位置に固定され、その技の許容幅の内側に着地していれば発動する。ただし、力には精密さという代償が伴う——強い技ほど、発動に必要な盤面上の幅は狭く、弱い技ほど、盤面を広く撫でても許される。敵を一体倒すたびに、新しい技の3択ドラフトが開かれ、ランを通してその一枚一枚を自分の手で時計盤に配置していく——ただ集めるのではなく、位置とタイミングで組み上げる、完全に自分だけの時計盤だ。舞台はハリネズミの体内、プレイヤーは「ハリ細胞」（棘由来の免疫細胞）となり、内側からのウイルスの侵入を食い止める。2024年11月7日リリース、112レビュー99%で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。英語のほか、日本語・フランス語・イタリア語・ドイツ語・スペイン語（スペイン）・ポルトガル語（ブラジル）・簡体字/繁体字中国語・韓国語に対応——いずれも日本で開発・販売される一本のローカライズであり、112件のうち英語レビューは16件（約14.3%）にとどまる——西はこの一本を、まだほとんど見つけていない。",
+      },
+      {
+        name_en: "Loop Hero",
+        name_ja: "Loop Hero",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1282730/Loop_Hero/",
+        tag_en: "The loop-building origin",
+        tag_ja: "周回構築の原点",
+        desc_en: "The origin of this taste: Loop Hero, a roguelike developed by Four Quarters and published by Devolver Digital, released in March 2021. There is no map to walk and no direct command over the fight itself: a hero advances automatically along a looping road, engaging whatever the player has placed there, while the entire game is the act of laying terrain, building, and enemy cards along and around that loop, cards that both construct the world the hero passes through and generate the resources and threats within it. Loot recovered along the way and camp upgrades built between runs carry a player's progress forward, but the loop itself, built card by card rather than fought move by move, is the whole design. It crystallized the idea of a roguelike where you build the very structure that then plays itself, and is the origin of the lineage of games in which arranging placed effects along an automatic progression, not directly controlling the action, is the entire game. That core, that you do not fight in real time so much as you construct the progression that fights for you, is the root Clock Rogue grows from, keeping the built-not-fought loop but rebuilding it around a hidden internal clock, where the loop becomes a dial, the cards become skills placed by precisely timed position, and automatic movement becomes a stopwatch you must stop yourself.",
+        desc_ja: "この味の原点——Loop Hero。Four Quarters が開発し Devolver Digital が販売したローグライクで、2021年3月に発売された。歩き回る地図は無く、戦闘そのものを直接指揮することもない——主人公は周回する道を自動で進み、そこに置かれたものと自動的に交戦する。プレイヤーの仕事はすべて、その周回に沿って地形・建物・敵のカードを配置することにある。そのカードは、主人公が進む世界そのものを構築すると同時に、そこに現れるリソースと脅威を生み出す。道中で拾う戦利品や、ラン間で積み上げる野営地の強化がプレイヤーの進歩を次へ運ぶが、一手ずつ戦って進めるのではなく、一枚ずつ組んで作る周回そのものが、設計のすべてだ。「自ら組んだ構造が、勝手に進行していく」というローグライクの発想を結晶化させた作品であり、直接アクションを操作するのではなく、自動で進む周回に沿って配置した効果を組み立てることがゲームのすべてになる——その系譜の原点である。この核——リアルタイムで戦うのではなく、自分の代わりに戦ってくれる進行そのものを組み立てる——こそ、Clock Rogue が育つ根だ。本作は「戦うのではなく組む」周回を受け継ぎながら、それを隠された体内時計へと組み直す。周回は時計盤になり、カードは精密なタイミングの位置で置かれる技になり、自動の移動は、自分自身で止めなければならないストップウォッチになる。",
+      },
+    ],
+    en: {
+      title: "Clock Rogue - a body-clock roguelike action game where you count an unseen timer in your head, stop it at the instant you choose, and place a skill on a clock face whose timing window narrows the stronger it hits, drafting three choices after every kill to build your own dial as a Hari Cell defending a hedgehog's body from viral invasion, a Japanese indie heir to Loop Hero the West has barely found",
+      description: "A body-clock roguelike action game by MONO ENTERTAINMENT, an individual Japanese indie developer based in Tokyo, published by the Japanese indie publisher Phoenixx Inc. No timer is shown on screen: you count the passage of time in your head, stop a hidden stopwatch, and place a skill at the position on a clock face where it needs to land to trigger. The stronger the skill, the narrower its timing window; the weaker the skill, the wider. After every enemy you defeat, a three-choice draft lets you add to your own clock face. Set inside the body of a hedgehog, you play a Hari Cell defending it from viral invasion. In the lineage of Loop Hero, where you build the loop that plays itself rather than directly controlling the fight. Very Positive at 99 percent over 112 reviews; it supports English among ten languages, yet with only about 14.3 percent of its reviews in English, the West has barely found it.",
+      h1a: "You never see the clock. ",
+      h1flip: "You count it in your head, and you have to stop it at the exact instant your skill needs to land",
+      h1b: ".",
+      lede: "A body-clock roguelike action game developed solo by MONO ENTERTAINMENT, an individual Japanese indie developer based in Tokyo, and published by Phoenixx Inc., a mid-size Japanese indie publisher. No timer is ever shown on screen: you feel out the passage of time inside your own head, stop a stopwatch at the moment you judge to be right, and the instant you stop it a skill locks onto whatever position on a clock face your stop lands on, triggering if it lands inside that skill's window. The stronger a skill, the narrower the window it must land inside to fire; the weaker skills forgive a wide sweep of the clock face. Every enemy you defeat opens a three-choice draft of new skills, and across a run you place each pick onto the dial yourself, building a clock face that is entirely your own. The setting casts you inside the body of a hedgehog, where you play a Hari Cell, holding the line against a viral invasion from within. In the lineage of Loop Hero. It already supports English among ten languages, yet the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The core loop hides its own clock. No stopwatch, no timer bar is shown on screen: you feel out the beat in your head, and you have to stop that private count and lock a skill onto a spot on the dial at the exact instant it needs to land. The game trusts your internal rhythm more than your eyes, so the tension is not whether you can react to what you see, it is whether you actually know how much time has passed.",
+        "Where you stop is also where you build. Placing a skill on the clock face is not choosing from a menu, it is choosing a position, and the strength of a skill is paid for in precision: the stronger it hits, the narrower the window you must land inside to trigger it, while the weaker ones forgive a wide sweep of the dial. Every skill you draft is also a bet on how tightly you can trust your own timing.",
+        "After every kill, a three-choice draft hands you the next piece of your dial, and across a run you are not filling a deck, you are laying out a face, deciding which narrow-window powerhouses and wide-window safety nets sit where relative to each other. Wrapped around that build is the frame of a Hari Cell inside a hedgehog's body, holding the line against a viral invasion from within, so the abstraction of a clock face becomes, in fiction, an immune system you are personally assembling.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Loop Hero and the idea of building the loop that plays itself rather than controlling the fight directly, and you want that turned into a precision timing game where a position on a clock face, not a card in a deck, is the unit of your build",
+        "You want a roguelike where risk is measured in timing windows, narrower margins for stronger skills and wider ones for weaker skills, drafted three at a time after every kill into a clock face that is different every run",
+        "You want a Japanese indie gem the West has barely found, Very Positive at 99 percent over 112 reviews, made solo by MONO ENTERTAINMENT and published by Phoenixx Inc., already supporting English among ten languages",
+      ],
+      bad: [
+        "You want visible timers, clear on-screen cues, and reflex-based action; this game deliberately hides the clock and asks you to trust an internal count instead of your eyes, so the whole pull is precision built on your own sense of time, not on what you can see",
+        "You expect a big-publisher, already-popular Western title, or you want something free; this is a paid solo indie work by MONO ENTERTAINMENT, published by the Japanese indie publisher Phoenixx Inc., not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's descriptors, and its audience is still mostly Japanese, with only about 14.3 percent of its reviews in English",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Clock Rogue - 表示されない時間を頭の中で数え、狙った瞬間にストップウォッチを止めて時計盤に技を配置する体内時計ローグライクアクション。強い技ほど発動の許容幅は狭く、敵を倒すたびの3択ドラフトで自分だけの時計盤を組む。ハリネズミの体内で「ハリ細胞」としてウイルスの侵入から体を守る。Loop Hero の系譜、西がまだほとんど見つけていない日本のインディーの一本",
+      description: "開発は MONO ENTERTAINMENT——東京を拠点とする個人インディー開発者。販売は日本のインディーパブリッシャー Phoenixx Inc.。画面にタイマーは表示されない——頭の中で時間の経過を数え、隠されたストップウォッチを止め、時計盤上のその技が発動に必要とする位置へ配置する。強い技ほど発動タイミングの許容幅は狭く、弱い技ほど広い。敵を倒すたびに3択のドラフトで、自分だけの時計盤に技を加えていく。舞台はハリネズミの体内、プレイヤーは「ハリ細胞」としてウイルスの侵入から体を守る。Loop Hero の系譜——戦闘を直接操作するのではなく、勝手に進行する周回そのものを組み立てる系譜——に連なる一本。10の言語のなかに英語も含め対応済みだが、レビューのうち英語は約14.3%——西はこの一本を、まだほとんど見つけていない。",
+      h1a: "時計は、見えない。",
+      h1flip: "頭の中で数え、技が着地すべき瞬間ぴったりで、自分の手で止めなければならない",
+      h1b: "。",
+      lede: "体内時計ローグライクアクション。開発は MONO ENTERTAINMENT——東京を拠点とする個人インディー開発者が一人で手がけ、販売は日本の中堅インディーパブリッシャー Phoenixx Inc. が担う。画面にタイマーは一切表示されない——時間の経過を自分の頭の中だけで感じ取り、「ここだ」と判断した瞬間にストップウォッチを止める。止めた瞬間、技はその停止が着地した時計盤上の位置に固定され、その技の許容幅の内側に着地していれば発動する。強い技ほど、発動に必要な盤面上の幅は狭く、弱い技ほど、盤面を広く撫でても許される。敵を一体倒すたびに、新しい技の3択ドラフトが開かれ、ランを通してその一枚一枚を自分の手で時計盤に配置していく——完全に自分だけの時計盤だ。舞台はハリネズミの体内、プレイヤーは「ハリ細胞」となり、内側からのウイルスの侵入を食い止める。Loop Hero の系譜に連なる一本。10の言語のなかに英語もすでに対応済みだが、西はこの一本を、まだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "核となるループは、時計そのものを隠している。画面にストップウォッチもタイマーバーも表示されない——頭の中でリズムを数え、その心の中だけの計測を、狙った瞬間に止めて、時計盤上の位置に技を固定しなければならない。ゲームは目に見えるものより、あなたの内的なリズムを信じている。だから緊張感は「見えたものに反応できるか」ではなく「本当に、どれだけ時間が経ったかを知っているか」にある。",
+        "止めた場所こそが、組む場所になる。時計盤に技を置くことは、メニューから選ぶことではなく、位置を選ぶことだ。そして技の強さは精密さで支払われる——強い技ほど、発動させるために着地しなければならない幅は狭く、弱い技ほど、盤面を広く撫でても許される。だからドラフトで選ぶ技のひとつひとつが、自分の計測をどこまで信じられるかへの賭けになる。",
+        "敵を倒すたびに、3択のドラフトが時計盤の次の一片を差し出す。ランを通して積み上げるのはデッキではなく、盤面そのもの——狭い許容幅を持つ火力と、広い許容幅を持つ安全網を、どこに置き、どう隣り合わせるかを決めていく。その構築を包むのは、ハリネズミの体内で、内側からのウイルスの侵入を食い止める「ハリ細胞」という枠組みだ。時計盤という抽象が、物語の上では、自分の手で組み上げる免疫システムになる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Loop Hero と、戦闘を直接操作するのではなく、勝手に進行する周回そのものを組み立てる発想が好きな人——本作はそれを、デッキの一枚ではなく時計盤上の「位置」が構築の単位になる、精密なタイミングゲームへと組み替えている",
+        "リスクを「発動タイミングの許容幅」で測るローグライクが欲しい人——強い技ほど狭く、弱い技ほど広い許容幅を、敵を倒すたびの3択ドラフトで時計盤に足していく。盤面はランごとに違う顔を持つ",
+        "西がまだほとんど見つけていない、日本のインディーの原石が欲しい人——112レビュー99%で非常に好評、MONO ENTERTAINMENT が一人で手がけ、Phoenixx Inc. が販売する一本。10の言語のなかに英語もすでに含まれている",
+      ],
+      bad: [
+        "見えるタイマーや、はっきりした画面上の合図、反射神経で決まるアクションが欲しい人（本作はあえて時計を隠し、目に見えるものではなく、自分の内的な計測を信じることを求める。だから引力は、見えるものではなく、自分自身の時間感覚の上に築かれる精密さにある）",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人、あるいは無料のものが欲しい人（本作は MONO ENTERTAINMENT による有料のソロ・インディー作で——販売は日本のインディーパブリッシャー Phoenixx Inc.——無料でもアーリーアクセスでもない。AI生成アセットはなく、Steam のディスクリプタ上、性的な要素もない。受け手の中心はいまも日本語圏で、英語レビューは約14.3%にとどまる）",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5723,6 +5808,19 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Super Mario Bros. is a side-scrolling platformer developed and published by Nintendo, released for the Family Computer in Japan in 1985 and worldwide on the NES. The player runs and jumps through side-scrolling stages, stomping enemies, gathering power-ups that change the hero's abilities, and racing to a goal at the end of each course, with fortress boss encounters along the way. As the game that crystallized and popularized the side-scrolling action platformer, it is one of the most influential video games ever made and the foundational origin of the run-jump-stomp-and-reach-the-goal platformer lineage. The 1985 game has no Steam release, so its origin is anchored to its Wikidata entry.",
       ja: "スーパーマリオブラザーズは、任天堂が開発・発売した横スクロールのプラットフォーマーで、1985年に日本でファミリーコンピュータ向けに、そして世界では NES 向けに発売された。プレイヤーは横スクロールのステージを走り、跳び、敵を踏みつけ、主人公の能力を変えるパワーアップを拾い、各コースの終端にあるゴールを目指す——道中には砦のボスも待ち受ける。横スクロール・アクションプラットフォーマーを結晶化させ広く知らしめた作品として、史上最も影響力の大きいビデオゲームの一つであり、「走り、跳び、敵を踏み、ゴールを目指す」プラットフォーマーの系譜の礎となる原点である。1985年の原作に Steam 版は存在せず、その原点は Wikidata のエントリで同定する。",
+    },
+  },
+  // 原点 Loop Hero(2021), Four Quarters 開発 / Devolver Digital 販売。地図を歩かず、戦闘も直接操作しない——
+  //   主人公は周回する道を自動で進み、プレイヤーは地形・建物・敵のカードをその周回に沿って配置するだけ。
+  //   自ら組んだ構造(周回)が勝手に進行していく、というローグライクの発想を結晶化させた原点。appdetails
+  //   (developers/publishers/release_date)を実測確認済み(appid 1282730)。Clock Rogue はこの「戦うのではなく
+  //   組む周回」を、時計盤上に技を配置し発動タイミングを計る体内時計へ組み直した子孫(lineage_anchor_key=
+  //   steam_url で同定)。
+  "loop-hero": {
+    steam: "1282730",
+    blurb: {
+      en: "Loop Hero is a roguelike developed by Four Quarters and published by Devolver Digital, released in March 2021. There is no map to explore and no unit for the player to directly command in the fight itself: a hero walks a looping road on autopilot, engaging enemies automatically, while the player's whole task is to place cards, terrain, buildings, and camps, along and around that loop, which both constructs the world it runs through and spawns the enemies and resources within it. As runs progress, loot recovered along the way and camp upgrades built between expeditions carry a player's strength forward into the next attempt. It crystallized the idea of a roguelike where you build the very loop that then plays itself, and is the origin of the lineage of games in which arranging placed effects along an automatic progression, rather than directly controlling the action, is the entire game.",
+      ja: "Loop Hero は、Four Quarters が開発し Devolver Digital が販売したローグライクで、2021年3月に発売された。探索するマップは無く、戦闘そのものをプレイヤーが直接操作するユニットも無い——主人公は周回する道を自動で歩き、敵と自動的に交戦する。プレイヤーの仕事はすべて、その周回に沿ってカード——地形・建物・野営地——を配置することにあり、それが同時に主人公の進む世界そのものを構築し、そこに現れる敵とリソースを生み出す。ランを重ねるほど、道中で拾う戦利品や、遠征の合間に積み上げる野営地の強化が、次の挑戦へ向けた強さとして持ち越される。「自ら組んだ周回そのものが、勝手に進行していく」というローグライクの発想を結晶化させた作品であり、直接アクションを操作するのではなく、自動で進む周回に沿って配置した効果を組み立てることがゲームのすべてになる——その系譜の原点である。",
     },
   },
 } as const;
