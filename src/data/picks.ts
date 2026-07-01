@@ -4492,6 +4492,89 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "decollate-decoration": {
+    published: "2026-06-30",
+    publishAt: "2026-06-30",
+    kind: "find",
+    leadIndex: 0,
+    // reachState は意図的に持たせない: 英語対応済み(Japanese/English/Simplified+Traditional Chinese/Korean)
+    //   なので "lang_walled" は rarityStamps の "英語にまだ非対応" を誤って立てる(正直さ)。英語レビュー比率
+    //   27.5%(98/356)=西へ部分到達のため "unreached_west"(西未到達)も実態とずれる。obscurity は
+    //   "wall"(高評価だが言語/地域の壁)で正直に表す。stamp は 93%好評 + レビュー356件のみ立てる。
+    meta: { genre: "haunting-adventure", lineage: "ghost-trick", obscurity: "wall", reviewBand: "hundreds", rarity: { reviews: 356, positivePct: 93, noEnglish: false } },
+    games: [
+      {
+        name_en: "Decollate Decoration",
+        name_ja: "でこれいと・でこれいしょん",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3155570/Decollate_Decoration/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A pixel-art point-and-click adventure by KANEKODO, the work of a Japanese solo doujin creator, published by KEMCO. You play a girl who has become a ghost, with forty-nine days before you pass on. The one you love, called only kimi (you), is still alive and cannot perceive you at all, so you reach for them by the only means a ghost has: speaking into air that does not carry, stirring a poltergeist, standing at the edge of their dream, or laying a curse. Because they cannot sense you, every attempt is guesswork, a dark comedy laced with horror about trying to change a fate from the far side of death. Choices come once a week over seven turns, a deliberately spare structure carried by dense, feeling-heavy writing, and the whole runs roughly one to two hours across six endings, plus a prequel and sequel of about an hour, a recollection gallery, and an ending list. It is Very Positive at 93 percent over 356 reviews (333 positive, 23 negative), and it already supports Japanese, English, Simplified and Traditional Chinese, and Korean. Yet with only 98 of its 356 reviews in English (about 27.5 percent), and the rest mostly Japanese and Chinese, the West has barely begun to find it. Released in January 2026, it is a paid title, not free, fully launched and not in Early Access, with no AI-generated assets. Its ratings flag heavy themes around death, but Steam itself sets no sexual content descriptor.",
+        desc_ja: "ピクセルアートのポイント&クリック・アドベンチャー。開発元は KANEKODO（金庫堂）——日本の個人同人クリエイターの手による一本で、配信は KEMCO だ。あなたは幽霊になった少女。あの世へ旅立つまでの、残された四十九日。想い人——「きみ」とだけ呼ばれる相手——はまだ生きていて、あなたを少しも知覚できない。だからあなたは、幽霊にできる手立てだけで手を伸ばす——届かない空気へ話しかけ、ポルターガイストを起こし、夢枕に立ち、呪う。相手はあなたを感じ取れないから、どの試みも手探りだ。死の向こう側から運命を変えようとする、ダークコメディとホラーが入り混じる物語。選択は週に一度、全七ターン——あえて簡素にした構造を、心情描写の濃いテキストが支える。本編は六つのエンディングでおよそ一〜二時間、加えて約一時間の前日譚／後日譚、回想ギャラリー、エンディングリスト。356レビュー93%（好評333・不評23）で非常に好評。日本語・英語・簡体字／繁体字中国語・韓国語に対応している。それでも、356件のうち英語レビューは98件（約27.5%）にとどまり、残りの多くは日本語・中国語圏——西はこの一本を、まだ見つけ始めたばかりだ。2026年1月リリース、無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはない。レーティングは死をめぐる重いテーマに注記を付けているが、Steam 自身は性的な内容のディスクリプタを設定していない。",
+      },
+      {
+        name_en: "Ghost Trick: Phantom Detective",
+        name_ja: "ゴーストトリック",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1967430/Ghost_Trick_Phantom_Detective/",
+        tag_en: "The haunting origin",
+        tag_ja: "干渉する幽霊の原点",
+        desc_en: "The origin of this taste: Ghost Trick: Phantom Detective, a puzzle adventure directed by Shu Takumi (of the Ace Attorney series) and released by Capcom for the Nintendo DS in 2010, with a Steam remaster in 2023. You play a spirit who, robbed of his memories on the night of his death, can possess and manipulate objects in the world and rewind to the four minutes before a person dies, bending the physical world to change their fate before time runs out. That core, a ghost reaching into the living world under a clock to rewrite a fate, is the root Decollate Decoration grows from, turning the puzzle-box energy inward into a quiet, forty-nine-day story of haunting the one person you love but cannot reach. The 2010 original is anchored here to its 2023 Steam remaster.",
+        desc_ja: "この味の原点——ゴーストトリック（Ghost Trick: Phantom Detective）。逆転裁判シリーズの巧舟がディレクションし、カプコンが2010年にニンテンドーDS向けに発売したパズルアドベンチャーで、2023年にSteamリマスター版が出た。プレイヤーは、死んだ夜に記憶を奪われた幽霊となり、世界の「物」に乗り移って操り、人が死ぬ直前の四分間へ巻き戻る——時間が尽きる前に、物理世界を曲げて人の運命を変えていく。この核——制限時間のなかで、幽霊が生者の世界に手を伸ばし、運命を書き換える——こそ、Decollate Decoration が育つ根だ。本作はそのパズル的なエネルギーを内へ向け、届かない想い人ひとりに「取り憑く」静かな四十九日の物語へと変えている。2010年の原作は、その2023年のSteamリマスター版で同定する。",
+      },
+    ],
+    en: {
+      title: "Decollate Decoration - a pixel-art haunting adventure where a dead girl has forty-nine days to reach the living person she loves through poltergeists, dreams, and curses, an intimate heir to Ghost Trick, only barely reaching the West",
+      description: "A pixel-art point-and-click adventure by the Japanese solo doujin creator KANEKODO, published by KEMCO. You are a girl who has become a ghost with forty-nine days to reach the living person you love, who cannot perceive you at all, by speaking into the air, stirring poltergeists, entering dreams, or laying curses, a dark comedy laced with horror. Choices come once a week over seven turns, carried by dense writing, across six endings in one to two hours. Very Positive at 93 percent over 356 reviews; it supports English, yet with only 27.5 percent English reviews the West has barely begun to find it.",
+      h1a: "You are dead, and the one you love cannot see, hear, or touch you. ",
+      h1flip: "You have forty-nine days to haunt your way back into a living person's fate",
+      h1b: ".",
+      lede: "A pixel-art point-and-click adventure by KANEKODO, the work of a Japanese solo doujin creator, published by KEMCO. You play a girl who has become a ghost, with forty-nine days before you pass on. The one you love, called only kimi (you), is still alive and cannot perceive you at all, so you reach for them by the only means a ghost has: speaking into air that does not carry, stirring a poltergeist, standing at the edge of their dream, or laying a curse. Because they cannot sense you, every attempt is guesswork, a dark comedy laced with horror about changing a fate from the far side of death. Choices come once a week over seven turns, a deliberately spare structure carried by dense, feeling-heavy writing, running roughly one to two hours across six endings. It is Very Positive at 93 percent over 356 reviews and already supports English, yet with only about 27.5 percent of its reviews in English, the West has barely begun to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game rests on a cruel asymmetry: the person you most want to reach cannot see, hear, or touch you, so you can never simply tell them anything. You only have a ghost's blunt instruments, words that do not carry, rattled objects, a dream you slip into, a curse, and you have to guess how each one lands on someone who has no idea you are there. Reaching them at all, by inches, becomes the entire feeling.",
+        "Time is not infinite. You get one move a week across seven turns inside a forty-nine-day countdown, so the structure is deliberately spare, and each choice carries weight precisely because you cannot take many. It is the Ghost Trick pull of a ghost bending the world to change a living person's fate, slowed down and turned inward, where the question is less how do I solve this and more what is the one thing I can still do for them before I have to go.",
+        "It does not play its premise as pure tragedy. A ghost fumbling poltergeists at a person who cannot perceive her is as often funny as it is sad, and the tone swings between dark comedy and quiet horror within a single scene. Six endings of about fifteen minutes each, a prequel and a sequel, and a recollection gallery make it a thing you finish and then turn over again, reading the same forty-nine days toward a different end.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You loved Ghost Trick's idea of a ghost reaching into the living world to change someone's fate, and you want it slowed into something quieter and more intimate, a forty-nine-day countdown spent haunting the one person you cannot reach",
+        "You want a short, dense, feeling-heavy adventure you can finish in one or two hours, six endings of about fifteen minutes each plus a prequel and sequel and a recollection gallery, carried by its writing rather than by long systems",
+        "You want a Japanese solo-made gem the West has barely found, Very Positive at 93 percent over 356 reviews, already supporting English, Simplified and Traditional Chinese, and Korean, the handmade pixel-art work of KANEKODO published by KEMCO",
+      ],
+      bad: [
+        "You want long, mechanically deep gameplay; this is a deliberately spare, story-first adventure of one to two hours, choices once a week over seven turns, a paid title carried by its writing far more than by its systems",
+        "You are put off by death and grief as central themes, or you expect a big-studio production; this is a small doujin work by a solo creator (KEMCO publishes it, but it is not a big-studio title), its ratings call out heavy themes around death though Steam itself flags no sexual content, and its audience is still mostly Japanese and Chinese-speaking, with only about 27 percent of reviews in English",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "でこれいと・でこれいしょん - 幽霊になった少女が、残された四十九日で、想い人へ手を伸ばす。ポルターガイストや夢や呪いで生者の運命に干渉する、ピクセルアートの幽霊アドベンチャー。ゴーストトリックの系譜、西がようやく見つけ始めた一本",
+      description: "日本の個人同人クリエイター KANEKODO（金庫堂）が作り、KEMCO が配信する、ピクセルアートのポイント&クリック・アドベンチャー。あなたは幽霊になった少女。死後四十九日のうちに、あなたを知覚できない想い人へ手を伸ばす——話しかけ、ポルターガイストを起こし、夢枕に立ち、呪う。ダークコメディとホラーが入り混じる。選択は週に一度、全七ターン。心情描写の濃いテキストが支え、本編は六つのエンディングで一〜二時間。356レビュー93%で非常に好評。英語に対応済みだが、英語レビューは27.5%——西はこの一本を、ようやく見つけ始めたばかりだ。",
+      h1a: "あなたは死んでいて、想い人にはあなたが見えない、聞こえない、触れられない。",
+      h1flip: "残された四十九日で、生者の運命に「取り憑いて」干渉する",
+      h1b: "。",
+      lede: "ピクセルアートのポイント&クリック・アドベンチャー。開発元は KANEKODO（金庫堂）——日本の個人同人クリエイターの手による一本で、配信は KEMCO だ。あなたは幽霊になった少女。あの世へ旅立つまでの、残された四十九日。想い人——「きみ」とだけ呼ばれる相手——はまだ生きていて、あなたを少しも知覚できない。だからあなたは、幽霊にできる手立てだけで手を伸ばす——届かない空気へ話しかけ、ポルターガイストを起こし、夢枕に立ち、呪う。相手はあなたを感じ取れないから、どの試みも手探りだ。死の向こう側から運命を変えようとする、ダークコメディとホラーが入り混じる物語。選択は週に一度、全七ターン——あえて簡素にした構造を、心情描写の濃いテキストが支える。本編は六つのエンディングでおよそ一〜二時間。356レビュー93%で非常に好評だ。すでに英語に対応しているが、レビューのうち英語は約27.5%——西はこの一本を、まだ見つけ始めたばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては、ひとつの残酷な非対称の上に立っている。あなたが最も届きたい相手には、あなたが見えず、聞こえず、触れられない。だから「ただ伝える」ことが、決してできない。手元にあるのは幽霊の不器用な道具だけだ——届かない言葉、揺らした物、忍び込む夢、呪い。そしてそれが、あなたの存在に気づいてもいない相手にどう作用するかを、手探りで推し量るしかない。少しずつ「届くこと」そのものが、ここでの感覚のすべてになる。",
+        "時間は、無限ではない。四十九日のカウントダウンのなかで、動けるのは週に一度、全七ターン——だから構造はあえて簡素で、多くを打てないからこそ、一つひとつの選択が重くなる。これは「幽霊が世界を曲げて生者の運命を変える」というゴーストトリックの引力を、減速させ、内へ向けたものだ。問いはもう「どう解くか」ではなく、「旅立つ前に、あの人のためにできる最後の一つは何か」になる。",
+        "本作は、その前提を純粋な悲劇としては描かない。自分を知覚できない相手に向かってポルターガイストをしくじる幽霊は、悲しいのと同じくらい、おかしい。トーンはひとつの場面のなかで、ダークコメディと静かなホラーのあいだを揺れる。約十五分の六つのエンディング、前日譚と後日譚、回想ギャラリー——それらが、一度遊び終えてもまた裏返したくなる一本にする。同じ四十九日を、別の結末へと読み直すために。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「幽霊が生者の世界に手を伸ばし、誰かの運命を変える」というゴーストトリックの発想が好きで、それをもっと静かで親密なものへ——届かないただ一人に取り憑く、四十九日のカウントダウンへと——減速させたものが欲しい人",
+        "一〜二時間で遊び終えられる、短く濃い、心情描写中心のアドベンチャーが欲しい人。約十五分の六つのエンディングに加え、前日譚・後日譚と回想ギャラリー、長大なシステムではなくテキストが支える一本",
+        "西側がまだほとんど見つけていない、日本の個人制作の原石が欲しい人。356レビュー93%で非常に好評、英語・簡体字／繁体字中国語・韓国語に対応済み、KANEKODO が手描きのピクセルアートで作り KEMCO が配信する一本",
+      ],
+      bad: [
+        "長く、メカニクスの奥深いゲームプレイが欲しい人(本作はあえて簡素な、物語優先の一〜二時間のアドベンチャーで、選択は週に一度・全七ターン、システムよりもテキストが支える有料作だ)",
+        "死や喪失を中心テーマに据えることが苦手な人、あるいは大手スタジオの大作を期待する人(本作は個人クリエイターによる小さな同人作で——配信は KEMCO だが大手スタジオの作品ではない——、レーティングは死をめぐる重いテーマに注記を付けるものの、Steam 自身は性的な内容を示していない。観客の中心はまだ日本語・中国語圏で、英語レビューは約27%にとどまる)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -4658,6 +4741,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Fatal Frame (titled Zero in Japan) is a survival horror game developed and published by Tecmo for the PlayStation 2, released in Japan in December 2001. As the first entry in the series, it established the franchise's signature mechanic of fighting ghosts with the Camera Obscura, a defensive camera used to capture and exorcise spirits, defining a Japanese horror style built around photography rather than conventional weapons.",
       ja: "零（ZERO、海外名Fatal Frame）は、テクモがPlayStation 2向けに開発・販売したサバイバルホラーで、2001年12月に日本で発売された。シリーズ第1作として、霊を撮影して退ける防御用カメラ「射影機（カメラ・オブスクラ）」で幽霊と戦うという象徴的な仕組みを確立し、従来の武器ではなく「撮影」を核にした和製ホラーの系譜の原点となった。",
+    },
+  },
+  // 原点 Ghost Trick: Phantom Detective(ゴーストトリック), Capcom(巧舟 ディレクション), 2010(Nintendo DS)。
+  // 記憶を失った幽霊が世界の「物」に乗り移って操り、人が死ぬ直前へ巻き戻って物理世界を曲げ、制限時間の
+  // なかで人の運命を変える。「幽霊が生者の世界に干渉して運命を書き換える」味の原点。2023 Steam リマスター
+  // 版あり(app 1967430)→ steam で同定(established 側と /app/1967430/ で完全一致・href 破損回避)。
+  "ghost-trick": {
+    steam: "1967430",
+    blurb: {
+      en: "Ghost Trick: Phantom Detective is a puzzle adventure game directed by Shu Takumi and developed and published by Capcom, originally released for the Nintendo DS in 2010 and remastered on Steam and other platforms in 2023. The player is a spirit who has lost his memories on the night of his death and can possess and manipulate objects in the world, rewinding to the four minutes before a person dies to alter the chain of events and change their fate. By binding a ghost's interference in the physical world to a countdown that rewrites how someone dies, it is a defining origin of the lineage of games where a spirit reaches into the living world to bend fate.",
+      ja: "ゴーストトリック（Ghost Trick: Phantom Detective）は、巧舟がディレクションし、カプコンが開発・販売したパズルアドベンチャーで、2010年にニンテンドーDS向けに発売され、2023年にSteamほかでリマスター版が出た。プレイヤーは、死んだ夜に記憶を失った幽霊となり、世界の「物」に乗り移って操り、人が死ぬ直前の四分間へ巻き戻って出来事の連鎖を変え、その運命を変えていく。幽霊が物理世界に干渉することを、人の死に方を書き換える制限時間と結びつけたこの仕組みにより、「死者の魂が生者の世界に手を伸ばし、運命を曲げる」ゲーム群の系譜を定義した原点である。",
     },
   },
   // 原点 Wizardry: Proving Grounds of the Mad Overlord, 1981(Apple II)。一人称グリッド型
