@@ -4829,6 +4829,93 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "motionrec": {
+    published: "2026-07-02",
+    kind: "find",
+    leadIndex: 0,
+    // 【正直さ・西到達の誇張禁止】本作は英語レビュー 158/407=約39% と高く、PLAYISM(Active Gaming Media)
+    //   経由で西側のストア/メディアに流通・報道あり = 西到達がやや進行している。ゆえに rarity(希少性スタンプ)は
+    //   持たせない: rarity を持たせると PickPage が無条件で「— なのに、ほとんど誰も見つけていない」を後置し、
+    //   これは偽りの未発見主張になる(west_unreached=部分的にのみ未到達)。好評率99%(406/407,否定1)・407件・
+    //   英39% は本文(散文)で正直に述べる。obscurity も "deep"(西で無名)/"wall"(壁の向こう)は共に西未到達を
+    //   含意し誇張になるため none(埋もれ過ぎ facet に載せない=正直)。reachState も unreached_west/lang_walled
+    //   のいずれも当たらない(英語対応・西流通)ため持たせない。系譜は The Misadventures of P.B. Winterbottom
+    //   (2010, The Odd Gentlemen/2K, Steam app 40930・自分を録画→再生して過去の自分と協調するパズルの原点)。
+    meta: { genre: "puzzle-platformer", lineage: "pb-winterbottom", obscurity: "none" },
+    games: [
+      {
+        name_en: "MotionRec",
+        name_ja: "MotionRec",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2602230/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A recording-based puzzle-action platformer by the Japanese studio HANDSUM, published by PLAYISM (Active Gaming Media). You play Rec, a robot that records civilization across a devastated world, and its one ability is the whole game: Rec records the trajectory of its own motion, walking, jumping, riding stage gimmicks, and then replays that recording somewhere else as a ghost, a double of a few seconds of its own past. That replayed self becomes a solid, moving platform: it walks the path you recorded, lifts you, and carries you, so you cooperate with your own past motion to reach a ledge you could never touch alone or cross a gap with no floor at all. Solving a room means authoring the recording, planning and performing the movement so that its playback lands you where you need to be, and layering ghost upon ghost until your own past selves are the staircase forward. Released in October 2025, it is Very Positive with 99 percent of its reviews positive (406 of 407, a single negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. And it is only honest to say the West is already arriving: it ships in sixteen languages including English, PLAYISM carries it to Western storefronts and press, and 158 of its 407 reviews (about 39 percent) are in English. This is not a gem no one has found; it is a Japan-born gem the West is only now reaching.",
+        desc_ja: "録画を核にしたパズルアクション・プラットフォーマー。開発は日本のスタジオ HANDSUM、販売は PLAYISM（Active Gaming Media）。プレイヤーは、荒廃した世界で文明を記録するロボット Rec を操る。その唯一の能力が、ゲームのすべてだ——Rec は自分の動き（歩行、ジャンプ、ステージギミックとの連携）の軌跡を録画し、それを別の場所で「幽霊」＝数秒前の自分の分身として再生する。再生されたその自分は、動く固い足場になる。録画したとおりの道を歩き、あなたを持ち上げ、運んでいく。だからあなたは、自分の過去の動きと協力して、単独では決して届かない高台に上り、床のない裂け目を越えていく。部屋を解くとは、その録画を「作る」ことだ——再生した動きがちょうど目的地へ運んでくれるように、動きを計画し、演じる。そして幽霊の上に幽霊を重ね、過去の自分たちを、前へ進むための階段にしていく。2025年10月リリース、レビューの99%が好評（407件中406件、否定はわずか1件）で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。そして正直に言えば、西側はすでに届きつつある——英語を含む16言語に対応し、PLAYISM が西側のストアとメディアへ運び、407件のレビューのうち158件（約39%）が英語だ。これは「誰も見つけていない原石」ではない。西側がいままさに手を伸ばしている、日本発の原石である。",
+      },
+      {
+        name_en: "The Misadventures of P.B. Winterbottom",
+        name_ja: "The Misadventures of P.B. Winterbottom",
+        status: "established",
+        steam: "https://store.steampowered.com/app/40930/The_Misadventures_of_PB_Winterbottom/",
+        wikidata: "https://www.wikidata.org/wiki/Q2087449",
+        tag_en: "The record-and-replay origin",
+        tag_ja: "録画と再生の原点",
+        desc_en: "The origin of this taste: The Misadventures of P.B. Winterbottom, developed by The Odd Gentlemen and published by 2K, released in April 2010. In a macabre, silent, hand-drawn world in pursuit of a mysterious pie, Winterbottom records himself and then plays those recordings back so that his past selves act alongside him, and you cooperate with, compete against, and get in the way of your own recorded clones to solve over eighty puzzles. That core, record your own motion and replay it so a copy of your past self becomes the partner you build the solution from, is the root MotionRec grows from, carrying the same record-and-playback cooperation into a platformer where the replayed self is a moving platform across a devastated world. Its origin is anchored to its Steam release.",
+        desc_ja: "この味の原点——The Misadventures of P.B. Winterbottom。The Odd Gentlemen が開発し、2K が販売した作品で、2010年4月に発売された。不気味で無音の、手描きの世界。謎めいたパイを追い求めるなかで、ウィンターボトムは自分自身を録画し、その録画を再生して、過去の自分たちを自分のかたわらで動かす。プレイヤーは、録画された自分のクローンと協力し、競い合い、ときに邪魔をしながら、80を超えるパズルを解いていく。「自分の動きを録画し、再生して、過去の自分のコピーを、解答を組み立てるための相棒にする」——この核こそ、MotionRec が育つ根だ。本作は同じ録画と再生の協調を、再生した自分が動く足場になるプラットフォーマーへと、荒廃した世界を舞台に運んでいる。その原点は、Steam ページで同定する。",
+      },
+    ],
+    en: {
+      title: "MotionRec - a recording-based puzzle-action platformer where you record your own motion and replay it as a ghost that becomes a moving platform, cooperating with your past selves to reach places you never could alone, a Japan-born heir to The Misadventures of P.B. Winterbottom the West is only now reaching",
+      description: "A recording-based puzzle-action platformer by the Japanese studio HANDSUM, published by PLAYISM. You play Rec, a civilization-recording robot whose one ability is the whole game: record the trajectory of your own motion, walking, jumping, riding gimmicks, then replay it elsewhere as a ghost that becomes a solid, moving platform. You cooperate with your own past self to reach ledges and cross floorless gaps you never could alone, layering ghost on ghost into a staircase of your past selves. In the lineage of The Misadventures of P.B. Winterbottom. Very Positive with 99 percent of 407 reviews positive; it supports English and, honestly, the West is already arriving, so this is a Japan-born gem the West is only now reaching, not one no one has found.",
+      h1a: "It is not a game you solve alone. ",
+      h1flip: "You record your own motion, replay it as a ghost, and stand on your past self to climb",
+      h1b: ".",
+      lede: "A recording-based puzzle-action platformer by the Japanese studio HANDSUM, published by PLAYISM (Active Gaming Media). You play Rec, a robot that records civilization across a devastated world, and its one ability is the whole game: Rec records the trajectory of its own motion, walking, jumping, riding stage gimmicks, and replays it somewhere else as a ghost, a double of a few seconds of its own past, that becomes a solid, moving platform. You cooperate with your own past motion to reach a ledge you could never touch alone or cross a gap with no floor at all, layering ghost upon ghost until your past selves are the staircase forward. In the lineage of The Misadventures of P.B. Winterbottom. It supports English and, honestly, the West is already arriving, so this is a Japan-born gem the West is only now reaching.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game is one ability turned into a partner. Rec records the exact trajectory of its own motion, every step, jump, and gimmick it rides, and then replays that recording somewhere else as a ghost, so the pull is watching a few seconds of your own past come to life beside you and do precisely what you did, on cue, as a second body you now get to build on.",
+        "That replayed self is not decoration, it is solid ground. The ghost becomes a moving platform that walks the path you recorded and lifts and carries you, so reaching a ledge with no way up, or crossing a gap with no floor at all, becomes a problem of authorship: you plan and perform the recording so that its playback arrives exactly where and when you will need to stand on it.",
+        "Then it compounds. You layer ghost upon ghost, a past self standing on an earlier past self, until you have choreographed a whole staircase out of your own recorded motion, and the click of the puzzle is the moment you realize the only thing that could carry you across was a better-planned version of what you already did.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love a single mechanic taken all the way, record your own motion and replay it as a ghost, and want that ghost to become a moving platform you cooperate with, in the lineage of The Misadventures of P.B. Winterbottom",
+        "You want puzzles that are about authorship and timing rather than reflexes, planning and performing a recording so its playback lands you where you need to be, then layering self on self into a staircase forward",
+        "You want a Japan-born gem in beautiful shape, a HANDSUM game published by PLAYISM, Very Positive with 99 percent of 407 reviews positive, that the West is only now reaching rather than one already worn out",
+      ],
+      bad: [
+        "You want a long, sprawling action game or twitch-heavy combat; this is a focused, record-and-playback puzzle-action platformer built around one idea, a paid title, not free and not in Early Access, with no AI-generated assets and no sexual content by Steam's descriptors",
+        "You specifically want something the West has never heard of; be honest here, this one is already arriving, it ships in sixteen languages, PLAYISM carries it to Western stores and press, and about 39 percent of its 407 reviews are in English, so it is a Japan-born gem the West is reaching, not one still hidden from it",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "MotionRec - 自分の動きを録画し、幽霊として再生して「動く足場」にする、録画パズルアクション・プラットフォーマー。過去の自分と協力して、単独では決して届かない場所へ。The Misadventures of P.B. Winterbottom の系譜、西側がいままさに手を伸ばしている、日本発の一本",
+      description: "録画を核にしたパズルアクション・プラットフォーマー。開発は日本のスタジオ HANDSUM、販売は PLAYISM。プレイヤーは文明を記録するロボット Rec を操り、その唯一の能力がゲームのすべてだ——自分の動き（歩行・ジャンプ・ギミック連携）の軌跡を録画し、別の場所で「幽霊」として再生する。再生された自分は動く固い足場になり、過去の自分と協力して、単独では届かない高台に上り、床のない裂け目を越える。幽霊の上に幽霊を重ね、過去の自分たちを前へ進む階段にしていく。The Misadventures of P.B. Winterbottom の系譜。407件のレビューの99%が好評で非常に好評。英語に対応し、正直に言えば西側はすでに届きつつある——これは誰も見つけていない一本ではなく、西側がいままさに手を伸ばしている、日本発の原石だ。",
+      h1a: "ひとりで解くゲームではない。",
+      h1flip: "自分の動きを録画し、幽霊として再生して、過去の自分の上に立って登っていく",
+      h1b: "。",
+      lede: "録画を核にしたパズルアクション・プラットフォーマー。開発は日本のスタジオ HANDSUM、販売は PLAYISM（Active Gaming Media）。プレイヤーは、荒廃した世界で文明を記録するロボット Rec を操る。その唯一の能力が、ゲームのすべてだ——Rec は自分の動き（歩行、ジャンプ、ステージギミックとの連携）の軌跡を録画し、それを別の場所で「幽霊」＝数秒前の自分の分身として再生する。再生されたその自分は、動く固い足場になる。あなたは自分の過去の動きと協力して、単独では決して届かない高台に上り、床のない裂け目を越えていく——幽霊の上に幽霊を重ね、過去の自分たちを、前へ進むための階段にしながら。The Misadventures of P.B. Winterbottom の系譜に連なる一本。英語に対応し、正直に言えば西側はすでに届きつつある——これは、西側がいままさに手を伸ばしている、日本発の原石だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては、たった一つの能力を「相棒」に変えることにある。Rec は自分の動き——一歩ごと、跳躍、乗り込んだギミックのすべて——の軌跡を正確に録画し、それを別の場所で「幽霊」として再生する。だから引力は、数秒前の自分の過去が、かたわらで命を持ち、合図どおりに、自分がやったとおりを再現するのを見つめる感覚だ。それは、いまから組み上げていける、もう一つの身体になる。",
+        "再生されたその自分は、飾りではない——固い地面だ。幽霊は録画したとおりの道を歩き、あなたを持ち上げ、運ぶ「動く足場」になる。だから、上る術のない高台や、床のない裂け目を越えることは、「作る」ことの問題になる。再生した動きが、あなたが立つべき場所へ、立つべき瞬間にちょうど届くように、録画を計画し、演じるのだ。",
+        "そして、それは積み重なっていく。幽霊の上に幽霊を——過去の自分を、さらに前の過去の自分の上に——重ね、自分の録画した動きだけで、一つの階段を振り付けていく。パズルがカチッとはまる瞬間は、こう気づく瞬間だ——ここを越えられる唯一の方法は、すでに自分がやったことの、もっとよく計画された一つの版だったのだ、と。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "たった一つのメカニクスを最後まで突き詰めたものが好きな人——自分の動きを録画し、幽霊として再生し、その幽霊が協力できる「動く足場」になる。The Misadventures of P.B. Winterbottom の系譜に連なる一本",
+        "反射神経よりも、「作る」ことと「間（タイミング）」のパズルが欲しい人——再生した動きが立つべき場所へ届くように録画を計画し、演じ、そして自分の上に自分を重ねて、前へ進む階段にしていく",
+        "きれいな状態の、日本発の原石が欲しい人——HANDSUM が開発し PLAYISM が販売、407件のレビューの99%が好評で非常に好評。すでに擦り切れた一本ではなく、西側がいままさに手を伸ばしている一本",
+      ],
+      bad: [
+        "長く広大なアクションや、反射神経勝負の戦闘が欲しい人（本作は、たった一つのアイデアを軸にした、録画と再生のパズルアクション・プラットフォーマーだ。無料でもアーリーアクセスでもない有料作で、AI生成アセットはなく、Steam のディスクリプタ上、性的な要素もない）",
+        "「西側が一度も聞いたことのないもの」を、あえて求める人（ここは正直に言おう——この一本はすでに届きつつある。英語を含む16言語に対応し、PLAYISM が西側のストアとメディアへ運び、407件のレビューのうち約39%が英語だ。これは、まだ西側から隠れている一本ではなく、西側がいままさに手を伸ばしている、日本発の原石である）",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5230,6 +5317,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Night on the Galactic Railroad is a novel by the Japanese author and poet Kenji Miyazawa, left unfinished at his death and published posthumously in 1934. A lonely boy, Giovanni, boards a mysterious train that runs through the night sky along the Milky Way and travels with his friend Campanella past strange, dreamlike stations and landscapes, while the journey turns quietly toward death, sacrifice, and the search for true happiness. One of the most beloved works of modern Japanese literature, it crystallized a distinctly poetic kind of night voyage, a passage through unreal, shifting worlds under the stars that becomes a meditation on life and death. It is the origin of that lineage: dreamlike nocturnal journeys through otherworldly places that drift toward the questions at the edge of living. There is no game version of the 1934 novel; the origin is anchored to its Wikidata entry.",
       ja: "銀河鉄道の夜は、日本の作家・詩人、宮沢賢治の小説で、賢治の没後、未完のまま遺され、1934年に発表された。孤独な少年ジョバンニが、天の川に沿って夜空を走る不思議な列車に乗り込み、友人のカムパネルラとともに、夢のように移り変わる駅や風景を巡っていく——その旅は、やがて静かに、死や、自己犠牲や、「ほんとうの幸い」とは何かという問いへと向かっていく。近代日本文学のなかでも最も広く愛された作品の一つであり、星空の下、非現実的に移ろう世界を巡る旅が、そのまま生と死をめぐる瞑想になる——その詩的な「夜の旅」を結晶化させた。夢のように移ろう異世界を巡り、生の際にある問いへと漂い向かう、その系譜の原点である。1934年の小説にゲーム版は存在せず、原点は Wikidata のエントリで同定する。",
+    },
+  },
+  // 原点 The Misadventures of P.B. Winterbottom, The Odd Gentlemen / 2K, 2010。無音・手描きの世界で、
+  // 主人公が自分自身を録画し、その録画を再生して「過去の自分たち」を並走させ、協力・競争・妨害しながら
+  // 80 以上のパズルを解く。「自分の動きを録画して再生し、過去の自分のコピーを解答の相棒にする」——録画と
+  // 再生の協調パズルの系譜の原点。Steam 版あり(app 40930)→ steam で同定(established 側と /app/40930/ で
+  // 完全一致・href 破損回避・wikidata Q2087449 実体確認済み)。
+  "pb-winterbottom": {
+    steam: "40930",
+    blurb: {
+      en: "The Misadventures of P.B. Winterbottom is a puzzle platformer developed by The Odd Gentlemen and published by 2K, released in April 2010. In a macabre, silent, hand-drawn world in pursuit of a mysterious pie, the player records Winterbottom's own motion and replays those recordings so that past selves act alongside him, and you cooperate with, compete against, and obstruct your own recorded clones across more than eighty puzzles. By turning a copy of your own past movement into the partner you build each solution from, it is a defining origin of the record-and-playback cooperative puzzle, the lineage of games where you solve space by playing back your own recorded self.",
+      ja: "The Misadventures of P.B. Winterbottom は、The Odd Gentlemen が開発し 2K が販売したパズルプラットフォーマーで、2010年4月に発売された。不気味で無音の、手描きの世界。謎めいたパイを追い求めるなかで、プレイヤーはウィンターボトム自身の動きを録画し、その録画を再生して、過去の自分たちを本人のかたわらで動かす——録画された自分のクローンと協力し、競い合い、ときに邪魔をしながら、80を超えるパズルを解いていく。自分の過去の動きのコピーを、解答を組み立てるための相棒に変えるこの仕組みにより、「録画した自分自身を再生して空間を解く」——録画と再生の協調パズルの系譜を定義した原点である。",
     },
   },
 } as const;
