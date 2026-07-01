@@ -5346,6 +5346,94 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "drapline": {
+    published: "2026-07-05",
+    publishAt: "2026-07-05",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は "around_1k"(1,720件は千前後の水準・tokimeki-memorial の1,842件/after-burner の2,504件と
+    //   同水準)。obscurity は "deep"(西で無名帯)——noEnglish=false(英語・日本語・簡体字中国語に対応済み)の
+    //   ため lang_walled は使わない(誤って「英語非対応」stampを立てない・正直さ)。英語レビュー 265/1720=15.4%で
+    //   西未浸透 = reachState="unreached_west"。genre は新設 "raising-roguelite"(育成ローグライト): 週単位の
+    //   食事選択で育て、職場ドラフトで得た技を最大5つ組んで戦うローグライト構造は、既存の "raising-sim"
+    //   (スケジューリングのみ)や "roguelike" 単体よりこの専用ラベルに正確に当てはまる(strongest-tofu 型の
+    //   細粒度ラベル追加)。系譜は プリンセスメーカー(Princess Maker)——開発者インタビュー(Game*Spark誌、
+    //   2025年7月)で本人が「育成の理想」として名指し、4Gamerレビューも独立に同作を比較対象に挙げ二重確証
+    //   (lineage_anchor_key=steam_url, appid 583040 で同定・既存の "princess-maker-2" anchor とは別ゲーム)。
+    meta: { genre: "raising-roguelite", lineage: "princess-maker", obscurity: "deep", reviewBand: "around_1k", reachState: "unreached_west", rarity: { reviews: 1720, positivePct: 96, noEnglish: false } },
+    games: [
+      {
+        name_en: "DRAPLINE",
+        name_ja: "DRAPLINE（ドラプリン）",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3103780/DRAPLINE/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A body-and-diet raising roguelite in which you spend one year, week by week, feeding a dragon girl who will eat absolutely anything and training her into the strongest creature alive to face down an impending catastrophe, developed by KANAWO, an individual Japanese doujin creator best known for Noel the Mortal Fate (Higyaku no Noel), together with the Tokyo (Nakano-based) indie publisher Vaka Game Magazine. Each week you pick one of three meals set in front of her, meat, a rock, molten lava, and whatever else the game finds to feed her, and each choice raises a different stat while nudging a WILD/RULE personality axis that quietly reshapes her appearance, unlocks branching events, alters battle buffs, and ultimately decides which of the game's endings you reach. Between meals she goes to work, and work is where her real arsenal comes from: a pool of roughly 100 to 150 skills you draft from and equip up to five at a time, building combat synergies to take into battle. A full run is designed to last about an hour, and clearing one unlocks New Game Plus bonuses that ease the difficulty for the next attempt, so the whole loop is built to be replayed rather than finished once. The developer has named Princess Maker, Uma Musume Pretty Derby, and Monster Rancher as the raising-sim ideals behind it, credited Rance X for its combat feel, and pointed to the Atelier series for its setting and music (Game*Spark interview, July 2025), and 4Gamer's independent review reached for the same touchstones, Princess Maker, Monster Rancher, and Summon Night. Released into Early Access on June 29, 2025, it is Overwhelmingly Positive at 96 percent over 1,720 reviews, a paid title, not free, still in Early Access rather than fully launched, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It fully supports Japanese, English, and Simplified Chinese, interface, voice acting, and subtitles alike across all three, yet only 265 of its 1,720 reviews are in English (about 15.4 percent), so the Steam West has barely begun to find it.",
+        desc_ja: "何でも食べるドラゴン娘に餌を与え、1年間・週単位で「最強」へと鍛え上げ、迫りくる大災厄に立ち向かわせる、身体と食事の育成ローグライト。開発は KANAWO——「被虐のノエル」で知られる日本の個人ドゥジン作家——と、東京都中野区の日本のインディーパブリッシャー Vaka Game Magazine。毎週、目の前に並ぶ3つの食事——肉、岩、溶岩、その他ゲームが見つけてくるあらゆるもの——から1つを選ぶと、それぞれ異なるステータスが上昇すると同時に、「WILD/RULE」という性格指標がわずかに動く。この指標は、外見、派生イベント、戦闘バフ、そして最終的にどのエンディングへたどり着くかまでを、静かに決めていく。食事の合間には職場に出向き、そこでこそ本当の武器が手に入る——約100~150種のスキルプールから選び、最大5つまで装備して、戦いへ持ち込む戦闘シナジーを組み立てる。1周は約1時間で終わるよう設計されており、クリアすると「周回ボーナス」が解禁され、次の周回の難易度が緩和される——つまりループ全体が、一度きりで終わらせるのではなく、繰り返し遊ばれることを前提に作られている。開発者は「プリンセスメーカー」「ウマ娘プリティーダービー」「モンスターファーム」を育成の理想として名指しし、「ランスX」からゲーム性、「アトリエ」シリーズから世界観と音楽の影響を受けたと述べており(Game*Spark インタビュー、2025年7月)、4Gamerのレビューも独立に、「プリンセスメーカー」「モンスターファーム」「サモンナイト」を比較対象として挙げている。2025年6月29日にアーリーアクセスとして配信開始、1,720件のレビュー中96%が好評という「非常に好評」の評価。無料ではない有料作で、正式リリースではなくアーリーアクセス中。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上、性的な要素もない。日本語・英語・簡体字中国語の3言語に、インターフェース・音声・字幕のいずれでも対応しているが、1,720件のうち英語レビューは265件(約15.4%)にとどまる——Steamの西側は、この一本をまだほとんど見つけていない。",
+      },
+      {
+        name_en: "Princess Maker",
+        name_ja: "プリンセスメーカー",
+        status: "established",
+        steam: "https://store.steampowered.com/app/583040/Princess_Maker_Refine/",
+        tag_en: "The raising-sim origin",
+        tag_ja: "育成シムの原点",
+        desc_en: "The origin of this taste: Princess Maker, a raising simulation series produced by Gainax, whose first entry released in 1991 (the Refine edition on Steam was developed by CFK Co., Ltd. and published by Bliss Brain). You become the foster father of a young girl and spend a fixed span of years scheduling her days between education, work, and rest, watching stats accumulate until those choices branch into one of many possible endings, from royalty to ordinary professions. As the game that introduced the idea of raising your own daughter to the life-simulation genre, it crystallized the raising-sim loop of scheduling a life over a fixed period and letting accumulated choices decide its future, and is the foundational origin of the raising simulation lineage the developer of DRAPLINE has named directly as an ideal. That core, scheduling a life turn by turn and letting the choices you make along the way branch into an ending, is the root DRAPLINE grows from: it keeps the scheduled, choice-driven raising loop and the branching endings, but recasts the daughter as a dragon girl who eats anything, compresses the fixed span into one year told in weekly turns, and grafts on a roguelite draft of combat skills and a WILD/RULE personality axis that a Princess Maker save file never had.",
+        desc_ja: "この味の原点——プリンセスメーカー。ガイナックスが手掛けた育成シミュレーションシリーズで、その第1作は1991年に発売された(Steam版はCFK Co., Ltd.が開発しBliss Brainが販売するRefine版)。プレイヤーは幼い娘の養父となり、一定期間の年月にわたって教育・仕事・休養へ日々の予定を割り振っていく。パラメータが積み上がっていくのを見守り、その選択の蓄積は、王侯貴族から市井の職業まで、数多のエンディングのいずれかへと分岐する。「自分の娘を育てる」という発想を育成シミュレーションのジャンルに導入した作品として、「一定期間、時間をスケジューリングし、積み上がった選択がその未来を決める」育成シムのループを結晶化させた、育成シミュレーションの系譜の礎となる原点であり、DRAPLINE の開発者自身が理想として名指ししている。この核——一手ずつ生活をスケジューリングし、道中の選択の蓄積がエンディングへ分岐する——こそ、DRAPLINE が育つ根だ。本作はそのスケジューリング型・選択駆動の育成ループと、分岐するエンディングを受け継ぎながら、娘を何でも食べるドラゴン娘へと据え替え、一定期間を1年間・週単位の周回へ圧縮し、プリンセスメーカーのセーブデータには無かった、戦闘スキルのローグライト・ドラフトと「WILD/RULE」性格指標を接ぎ木している。",
+      },
+    ],
+    en: {
+      title: "DRAPLINE - a raising roguelite where you spend one year, week by week, feeding a dragon girl who eats absolutely anything, choosing one of three weekly meals that shift a WILD/RULE personality axis reshaping her looks, events, and ending, then drafting from 100 to 150 workplace skills and equipping five at a time to build combat synergy against an impending catastrophe, a Japanese indie heir to Princess Maker the Steam West has barely found",
+      description: "A raising roguelite by KANAWO, a Japanese doujin creator known for Noel the Mortal Fate, and the Tokyo indie publisher Vaka Game Magazine. Over one year told in weekly turns, you feed a dragon girl who eats anything, meat, a rock, molten lava, each meal choice raising a stat and nudging a WILD/RULE personality axis that reshapes her looks, events, battle buffs, and ending. Workplace drafts hand you skills from a pool of 100 to 150, up to five equipped at once, to build combat synergy against an impending catastrophe. Runs take about an hour, and clears unlock New Game Plus bonuses that ease the next attempt. Overwhelmingly Positive at 96 percent over 1,720 reviews; it supports English, yet with only about 15.4 percent English reviews the Steam West has barely found it.",
+      h1a: "You feed a dragon girl who will eat absolutely anything, one meal a week, for a single year. ",
+      h1flip: "Every bite you choose reshapes who she becomes, and the skills she drafts at work decide whether she is strong enough to face what is coming",
+      h1b: ".",
+      lede: "A body-and-diet raising roguelite in which you spend one year, week by week, feeding a dragon girl who will eat absolutely anything and training her into the strongest creature alive, developed by KANAWO, an individual Japanese doujin creator best known for Noel the Mortal Fate, together with the Tokyo indie publisher Vaka Game Magazine. Each week you choose one of three meals set in front of her, meat, a rock, molten lava, and whatever else the game finds to feed her, and each choice raises a different stat while nudging a WILD/RULE personality axis that quietly reshapes her appearance, unlocks branching events, alters battle buffs, and ultimately decides which ending you reach. Between meals she goes to work, and work is where her real arsenal comes from: a pool of roughly 100 to 150 skills you draft from and equip up to five at a time, building combat synergies to take into battle against the catastrophe the story keeps warning about. A full run is designed to last about an hour, and clearing one unlocks New Game Plus bonuses that ease the difficulty for the next attempt. In the lineage of Princess Maker. It already supports English alongside Japanese and Simplified Chinese, yet the Steam West has barely begun to find it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every week collapses into a single choice: one of three meals in front of a dragon girl who will eat anything, meat, a rock, molten lava. There is no right answer sitting outside the moment, because whichever bite you choose both raises a stat and nudges her WILD/RULE personality a little further one way, and that axis quietly rewrites her appearance, which events fire, which battle buffs she gets, and which of the many endings you are steering toward. You are not filling a stat bar, you are deciding who she becomes, one meal at a time, for a year you cannot take back.",
+        "Work is where the actual build lives. Every trip to the job hands you a shot at a pool of roughly 100 to 150 skills, and you can only ever carry five of them onto the field, so every draft is a small argument with yourself about what to cut. The strength you assemble is not accumulated so much as curated, five choices that have to work together against the catastrophe the story keeps promising is coming, and a run that goes wrong is usually a build that never quite came together.",
+        "The whole year is designed to fit inside about an hour, so a single run reads less like an epic and more like one sitting you can actually finish. And because clearing it unlocks New Game Plus bonuses that soften the next attempt, the loop is not built to be solved once, it is built to be re-fed, re-drafted, and re-raised, run after run, chasing a slightly different daughter each time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Princess Maker and the idea of scheduling a life over a fixed period, choices accumulating into one of many endings, here compressed into weekly meals over a single year and rebuilt around a dragon girl instead of a daughter",
+        "You want that raising loop paired with roguelite combat building: a WILD/RULE personality axis that reshapes her look, events, and battle buffs, and a workplace skill draft of roughly 100 to 150 skills where you can only ever equip five at a time",
+        "You want a Japanese indie gem the Steam West has barely found, Overwhelmingly Positive at 96 percent over 1,720 reviews, made by the doujin creator KANAWO (of Noel the Mortal Fate) with the Tokyo indie publisher Vaka Game Magazine, already supporting English alongside Japanese and Simplified Chinese",
+      ],
+      bad: [
+        "You want a finished, fully launched game rather than a work in progress; DRAPLINE entered Early Access on June 29, 2025 and is still being built out, and each run is a deliberately compact one-hour loop, not a long single sitting",
+        "You expect a big-publisher, already-popular Western title, or you want something free; this is a paid solo doujin work by KANAWO published by the small Tokyo studio Vaka Game Magazine, not free, with no AI-generated assets and nothing sexual by Steam's descriptors, and its audience is still overwhelmingly Japanese-speaking, with only about 15.4 percent of its 1,720 reviews in English",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "DRAPLINE（ドラプリン） - 何でも食べるドラゴン娘に、1年間・週単位で餌を与えて育てる育成ローグライト。毎週3択の食事が「WILD/RULE」性格指標を動かし、外見・イベント・エンディングを分岐させ、職場で得る100~150種のスキルから5つを装備して迫る大災厄に挑む戦闘シナジーを組む。プリンセスメーカーの系譜、Steamの西側がまだほとんど見つけていない、日本のインディーの一本",
+      description: "開発は KANAWO(「被虐のノエル」で知られる日本の個人ドゥジン作家)と、東京都中野区のインディーパブリッシャー Vaka Game Magazine。1年間を週単位のターンで描き、何でも食べるドラゴン娘に餌を与える——肉、岩、溶岩。食事の選択ごとにステータスが上がり、「WILD/RULE」性格指標が動いて外見・イベント・戦闘バフ・エンディングを分岐させる。職場のドラフトで100~150種のスキルプールから選び、最大5つを装備し、迫る大災厄に挑む戦闘シナジーを組む。1周は約1時間、クリアで次周の難易度を緩和する周回ボーナスが解禁される。1,720件のレビュー中96%が好評の「非常に好評」。英語に対応済みだが、英語レビューは約15.4%——Steamの西側は、この一本をまだほとんど見つけていない。",
+      h1a: "何でも食べるドラゴン娘に、週に1度、1年間だけ餌を与える。",
+      h1flip: "選んだ一口が、彼女が何者になるかを組み替え、職場で手にする技が、迫る災厄に立ち向かえるかを決める",
+      h1b: "。",
+      lede: "何でも食べるドラゴン娘に餌を与え、1年間・週単位で「最強」の生き物へと鍛え上げる、身体と食事の育成ローグライト。開発は KANAWO——「被虐のノエル」で知られる日本の個人ドゥジン作家——と、東京のインディーパブリッシャー Vaka Game Magazine。毎週、目の前に並ぶ3つの食事——肉、岩、溶岩、その他ゲームが見つけてくるあらゆるもの——から1つを選ぶと、それぞれ異なるステータスが上昇すると同時に、「WILD/RULE」という性格指標がわずかに動く。この指標は、外見、派生イベント、戦闘バフ、そして最終的にどのエンディングへたどり着くかまでを、静かに決めていく。食事の合間には職場に出向き、そこでこそ本当の武器が手に入る——約100~150種のスキルプールから選び、最大5つまで装備して、物語が警告し続ける大災厄へ挑む戦闘シナジーを組み立てる。1周は約1時間で終わるよう設計されており、クリアすると次周の難易度を緩和する周回ボーナスが解禁される。プリンセスメーカーの系譜に連なる一本。すでに日本語・簡体字中国語と並んで英語にも対応しているが、Steamの西側は、この一本をまだほとんど見つけ始めたばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "毎週が、たった一つの選択に凝縮される——目の前に並ぶ3つの食事のうち一つ、肉か、岩か、溶岩か。その瞬間の外側に「正解」は存在しない。どの一口を選んでも、ステータスが一つ上がると同時に、彼女の「WILD/RULE」という性格指標がわずかに、どちらかへ傾く。その指標が、外見、発生するイベント、得られる戦闘バフ、そして目指すことになる数多のエンディングのどれかを、静かに書き換えていく。あなたはステータスバーを満たしているのではなく、やり直しの利かない1年をかけて、彼女が何者になるかを、一口ごとに決めているのだ。",
+        "本当の構築が宿るのは、職場だ。仕事に出るたびに、約100~150種のスキルプールへのチャンスが差し出されるが、戦場へ持ち込めるのは常に最大5つだけ。だから一回一回のドラフトは、何を切り捨てるかという、自分自身との小さな議論になる。積み上がる強さは蓄積というより取捨選択であり、物語が予告し続ける大災厄に挑むために、5つの選択がかみ合うかどうかがすべてを決める。うまくいかないランは、たいてい、最後までかみ合わなかった構築のことだ。",
+        "1年間まるごとが、約1時間に収まるよう設計されている——だから1周は、大作というより、ちゃんと最後まで座って遊びきれる一回の腰掛けとして読める。そしてクリアすれば「周回ボーナス」が解禁され、次の挑戦の難易度が緩和される。だからこのループは、一度解けば終わるものではなく、何度も餌を与え、何度もドラフトし、何度も育て直すために作られている——毎回、わずかに違う娘を追いかけて。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "プリンセスメーカーと、一定期間の生活をスケジューリングし、積み上がった選択が数多のエンディングのいずれかへ分岐する発想が好きな人——本作はそれを、1年間・週単位の食事へと圧縮し、娘の代わりにドラゴン娘を据えて組み直している",
+        "その育成ループを、ローグライトの戦闘構築と組み合わせたい人——外見・イベント・戦闘バフを書き換える「WILD/RULE」性格指標と、約100~150種のスキルから常に5つしか装備できない職場のスキルドラフト",
+        "Steamの西側がまだほとんど見つけていない、日本のインディーの原石が欲しい人——1,720件のレビューで96%の『非常に好評』、「被虐のノエル」のドゥジン作家 KANAWO が手がけ、東京のインディーパブリッシャー Vaka Game Magazine が販売する一本。日本語・簡体字中国語と並んで英語にも対応済み",
+      ],
+      bad: [
+        "完成した正式リリース版が欲しい人、作りかけの作品は避けたい人(DRAPLINE は2025年6月29日にアーリーアクセスとして配信開始したばかりで、いまも作り込みが続いている。1周は長い一腰掛けというより、意図的にコンパクトな約1時間のループだ)",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人、あるいは無料のものが欲しい人(本作は KANAWO による有料のソロ・ドゥジン作で——販売は東京の小規模インディーパブリッシャー Vaka Game Magazine——無料ではない。AI生成アセットはなく、Steamのディスクリプタ上、性的な要素もない。受け手の中心はいまも圧倒的に日本語圏で、1,720件のうち英語レビューは約15.4%にとどまる)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5821,6 +5909,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Loop Hero is a roguelike developed by Four Quarters and published by Devolver Digital, released in March 2021. There is no map to explore and no unit for the player to directly command in the fight itself: a hero walks a looping road on autopilot, engaging enemies automatically, while the player's whole task is to place cards, terrain, buildings, and camps, along and around that loop, which both constructs the world it runs through and spawns the enemies and resources within it. As runs progress, loot recovered along the way and camp upgrades built between expeditions carry a player's strength forward into the next attempt. It crystallized the idea of a roguelike where you build the very loop that then plays itself, and is the origin of the lineage of games in which arranging placed effects along an automatic progression, rather than directly controlling the action, is the entire game.",
       ja: "Loop Hero は、Four Quarters が開発し Devolver Digital が販売したローグライクで、2021年3月に発売された。探索するマップは無く、戦闘そのものをプレイヤーが直接操作するユニットも無い——主人公は周回する道を自動で歩き、敵と自動的に交戦する。プレイヤーの仕事はすべて、その周回に沿ってカード——地形・建物・野営地——を配置することにあり、それが同時に主人公の進む世界そのものを構築し、そこに現れる敵とリソースを生み出す。ランを重ねるほど、道中で拾う戦利品や、遠征の合間に積み上げる野営地の強化が、次の挑戦へ向けた強さとして持ち越される。「自ら組んだ周回そのものが、勝手に進行していく」というローグライクの発想を結晶化させた作品であり、直接アクションを操作するのではなく、自動で進む周回に沿って配置した効果を組み立てることがゲームのすべてになる——その系譜の原点である。",
+    },
+  },
+  // 原点 プリンセスメーカー(Princess Maker) シリーズ第1作、ガイナックス制作、1991年発売(Wikipedia 実測確認済み)。
+  //   「自分の娘を育てる」という発想を育成シミュレーションのジャンルに導入した作品で、育成シムの系譜の礎となる
+  //   原点。Steam 版は Refine(appid 583040・開発 CFK Co., Ltd./販売 Bliss Brain・appdetails 実測確認済み、
+  //   原作の監修は生みの親・鮎川たみお(Takami Akai))。既存の "princess-maker-2" anchor(appid 523000・シリーズ
+  //   第2作)とは別ゲーム/別 appid のため新規 anchor として区別する。DRAPLINE はこの「一定期間、娘の時間を
+  //   スケジューリングし、積み上がった選択が未来を分岐させる」育成シムの核を継ぎ、それをドラゴン娘を1年間・
+  //   週単位で鍛えるローグライトへ組み替えた子孫(lineage_anchor_key=steam_url で同定)。
+  "princess-maker": {
+    steam: "583040",
+    blurb: {
+      en: "Princess Maker is a raising simulation series produced by Gainax, whose first entry was released in 1991 (the Refine edition, developed by CFK Co., Ltd. and published by Bliss Brain, is the one on Steam). The player becomes the foster father of a young girl, scheduling her days between education, work, and rest across a fixed span of years, while the stats and choices that accumulate branch into one of many possible endings, from royalty to ordinary professions. As the game that introduced the idea of raising your own daughter to the life-simulation genre, it is the foundational origin of the raising-sim lineage.",
+      ja: "プリンセスメーカーは、ガイナックスが手掛けた育成シミュレーションシリーズで、その第1作は1991年に発売された(Steam 版は CFK Co., Ltd. が開発し Bliss Brain が販売する Refine 版)。プレイヤーは幼い娘の養父となり、一定期間の年月にわたって教育・仕事・休養へ日々の予定を割り振っていく。積み上がったパラメータと選択は、王侯貴族から市井の職業まで、数多のエンディングのいずれかへ分岐する。「自分の娘を育てる」という発想を育成シミュレーションのジャンルに導入した作品であり、育成シムの系譜の礎となる原点である。",
     },
   },
 } as const;
