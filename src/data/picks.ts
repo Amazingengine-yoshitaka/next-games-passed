@@ -5434,6 +5434,94 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "sonokuni": {
+    published: "2026-07-06",
+    publishAt: "2026-07-06",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 120 件は clock-rogue(112件)と同帯で "hundreds"(数百)と言い切るには境界的
+    //   (誇張しない)。rarity.reviews=120 を確定値でそのまま出す。英語対応済み(11言語中の1つ)で
+    //   noEnglish=false(誤って「英語非対応」stampを立てない・正直さ)。英語レビュー 45/120=37.5%は他の
+    //   unreached_west 事例(12〜15%台)より明確に高く、海外メディア(TheGamer・Gamescom 2024 プレビュー)の
+    //   言及も既にあるため reachState="unreached_west" は立てない(devil-blade-reboot 型・誇張しない正直さ)。
+    //   obscurity は "deep"(レビュー僅少帯・西でまだ無名)。系譜は Hotline Miami——見下ろし視点の一撃死・
+    //   即時再挑戦ループの原点。Famitsu記事(「『ホットラインマイアミ』を彷彿とさせる鮮烈な一撃必死ゲーム」)と
+    //   海外メディア TheGamer記事(「Sonokuni Is Much More Than A Hotline Miami Clone」)の両独立記事タイトルで
+    //   裏付け(lineage_anchor_key=steam_url, appid 219150 で同定)。
+    meta: { genre: "instant-death-action", lineage: "hotline-miami", obscurity: "deep", rarity: { reviews: 120, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "SONOKUNI",
+        name_ja: "SONOKUNI",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2054380/SONOKUNI/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A top-down hardcore action game in which you play Takeru, a lone assassin infiltrating the vast nation of Wanokuni inside a bio-SF retelling of Japanese myth, developed by the Japanese hip-hop group DON YASA CREW and published by the Japanese localization house Kakehashi Games. Every fight runs on the same fast, punishing loop: a single hit kills you exactly as it kills anyone else, and divine power (shin'i) revives you again almost instantly, so you throw yourself back into the same room before the last mistake has finished landing, learning it through repetition rather than a health bar. The toolkit stays deliberately narrow but layered across three core actions: attack to end a fight outright, parry to deflect an incoming blow back at your attacker with your shield, and slow to stretch time just long enough to thread an opening that was not there a moment ago, and reading which one the next instant calls for is the whole game. Levels branch into multiple routes rather than a single correct path, a dedicated speedrun mode is built for players chasing clean times, and a story-focused Easy mode exists for anyone who wants to follow Takeru's assassination plot without fighting the game's full difficulty. The soundtrack is an original Japanese-language hip-hop score written and performed by DON YASA CREW themselves, the same group behind the game, who turned to making games in 2020 after the pandemic halted their live shows; SONOKUNI is effectively their debut title. Released on March 24, 2025, it is Very Positive at 98 percent over 120 reviews, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, violence and gore only, nothing sexual. It supports eleven languages, English and Japanese among them, alongside French, Italian, German, Spanish (Spain), Brazilian Portuguese, Russian, Simplified and Traditional Chinese, and Korean, and about 45 of its 120 reviews, roughly 37.5 percent, are already in English. Some Western press has taken notice, but at 120 reviews total it remains a niche find rather than a widely surfaced one.",
+        desc_ja: "バイオSFで描き直された日本神話の世界で、大国「ワノクニ」に単身潜入する暗殺者タケルを操る、見下ろし型ハードコア高速アクション。開発は日本のヒップホップグループ DON YASA CREW、販売は日本のローカライズ会社 架け橋ゲームズ(Kakehashi Games)。すべての戦いは、同じ速く容赦のないループの上に成り立つ——一撃で死ぬのは、行く手を阻む誰とも変わらない。だが神威によってほぼ即座に復活し、最後のミスがまだ着地し切らないうちに、同じ部屋へ身を投げ直す——体力ゲージではなく、反復によって覚えていく。手数はあえて絞り込まれながら、3つの核となる動きで層を成す——attackは戦いをその場で終わらせ、parryは盾を使って受けた一撃をそのまま撃った相手へ弾き返し、slowは、一瞬前には無かった隙を見出せるだけの引き伸ばされた時間を作る。次の瞬間がそのどれを求めているかを読むこと、それがゲームのすべてだ。ステージは一本道ではなく複数のルートへ分岐し、タイムを狙う人向けのスピードラン専用モードと、本作の難度と戦わずにタケルの暗殺劇を追いたい人向けの、物語重視のEasyモードを備える。BGMは、開発元自身である DON YASA CREW が手がけたオリジナル日本語ラップ——コロナ禍でライブ活動が止まったのを機に、2020年からゲーム制作を始めた彼らにとって、本作は実質的なデビュー作である。2025年3月24日にリリースされ、120件のレビュー中98%が好評の「非常に好評」。無料ではない有料作で、アーリーアクセスではなく正式リリース済み。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上、暴力・グロ表現のみで性的な要素はない。英語・日本語のほか、フランス語・イタリア語・ドイツ語・スペイン語(スペイン)・ポルトガル語(ブラジル)・ロシア語・簡体字/繁体字中国語・韓国語の11言語に対応し、120件のうち英語レビューは約45件(約37.5%)を占める。海外メディアの言及も出てきてはいるが、レビュー総数120件という規模では、まだニッチな発掘にとどまっている。",
+      },
+      {
+        name_en: "Hotline Miami",
+        name_ja: "Hotline Miami",
+        status: "established",
+        steam: "https://store.steampowered.com/app/219150/Hotline_Miami/",
+        tag_en: "The instant-death action origin",
+        tag_ja: "即死アクションの原点",
+        desc_en: "The origin of this taste: Hotline Miami, a top-down action game developed by the two-person Swedish studio Dennaton Games (Jonatan Söderström and Dennis Wedin) and published by Devolver Digital, released in October 2012. Set in a lurid, fictionalized 1989 Miami, a masked mercenary follows cryptic answering-machine messages into buildings full of armed criminals, and a single hit kills the player exactly as easily as it kills an enemy, dropping you back into the same room almost instantly to try again, all wrapped in a neon synthwave soundtrack and brutal pixel-art violence. By crystallizing that one-hit-death, instant-restart loop, it became the foundational origin of the lineage of top-down action games built around dying constantly and restarting without friction. That core, that death is not a punishment so much as the very rhythm of play, is the root SONOKUNI grows from: it keeps the one-hit death and near-instant revival, but recasts the neon crime thriller as a bio-SF retelling of Japanese myth, swaps the masked mercenary for the lone assassin Takeru infiltrating the nation of Wanokuni, replaces Hotline Miami's straightforward brutality with a three-part core of attack, parry, and slow, and adds branching routes and a dedicated speedrun mode that Hotline Miami's original release never had.",
+        desc_ja: "この味の原点——Hotline Miami。スウェーデンの2人組スタジオ Dennaton Games(Jonatan Söderström と Dennis Wedin)が開発し、Devolver Digital が販売した見下ろし型アクションで、2012年10月に発売された。毒々しく脚色された1989年のマイアミを舞台に、覆面の殺し屋が留守番電話に残された暗号めいた指示に従い、武装した犯罪者で満ちた建物へと向かう。プレイヤーは敵とまったく同じように一撃で死に、死ぬとほぼ即座に同じ部屋へ戻されて再挑戦する——そのすべてを、ネオンのシンセウェイブ楽曲と暴力的なドット絵表現が包み込む。この「一撃死・即時再挑戦」のループを結晶化させたことで、死に続けては摩擦なく再挑戦する見下ろし型アクションの系譜の礎となる原点となった。この核——死は罰というより、プレイそのもののリズムである——こそ、SONOKUNI が育つ根だ。本作は一撃死とほぼ即時の復活を受け継ぎながら、ネオンの犯罪スリラーを、バイオSFで描き直した日本神話の世界へと据え替え、覆面の殺し屋を、大国「ワノクニ」へ単身潜入する暗殺者タケルへと入れ替え、Hotline Miami の直截的な暴力を、attack・parry・slow の3つからなる核へと組み直し、Hotline Miami の原作には無かった複数ルートと専用のスピードランモードを接ぎ木している。",
+      },
+    ],
+    en: {
+      title: "SONOKUNI - a top-down hardcore action game where a lone assassin named Takeru infiltrates the nation of Wanokuni in a bio-SF retelling of Japanese myth, dying in a single hit and reviving almost instantly by divine power, wielding attack, parry, and slow across branching routes and a dedicated speedrun mode, scored by its own developers' original Japanese hip-hop, a Japanese indie heir to Hotline Miami still finding its footing in the Steam West",
+      description: "A top-down hardcore action game by the Japanese hip-hop group DON YASA CREW, published by Kakehashi Games. You play Takeru, a lone assassin infiltrating the vast nation of Wanokuni in a bio-SF retelling of Japanese myth. Die in a single hit, revive almost instantly by divine power, and fight with three core moves, attack, a shield parry, and a time-slowing slow, across branching routes, a dedicated speedrun mode, and a story-focused Easy mode, all scored by the developers' own original Japanese hip-hop. Very Positive at 98 percent over 120 reviews; it supports English, yet with about 37.5 percent English reviews it remains a niche find in the Steam West.",
+      h1a: "You die in one hit, and divine power throws you back in almost instantly. ",
+      h1flip: "Attack, parry with your shield, or slow time down, and read the gap between one killing blow and the next, alone, inside a nation built to crush you",
+      h1b: ".",
+      lede: "A top-down hardcore action game in which you play Takeru, a lone assassin infiltrating the vast nation of Wanokuni inside a bio-SF retelling of Japanese myth, developed by the Japanese hip-hop group DON YASA CREW and published by the Japanese localization house Kakehashi Games. A single hit kills you exactly as it kills anyone else, and divine power revives you again almost instantly, so you throw yourself back into the same fight before the last mistake has finished landing. Your toolkit stays narrow but layered: attack ends a fight outright, parry deflects an incoming blow back at your attacker with your shield, and slow stretches time just long enough to thread an opening that was not there a moment ago. Levels branch into multiple routes, a dedicated speedrun mode exists for players chasing clean times, and a story-focused Easy mode lets anyone follow Takeru's assassination plot without the game's full difficulty. In the lineage of Hotline Miami. It already supports English among eleven languages, yet with about 37.5 percent of its reviews in English, it remains a niche find in the Steam West.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every encounter runs on the same brutal arithmetic: one hit ends you, exactly as it ends anyone else in your way. But death carries no weight of its own, because divine power throws you back into the same fight almost the instant you fall, so the loop never asks you to sit with failure, it asks you to try again before the last mistake has even finished landing.",
+        "Three moves are all you ever have, and the game is entirely about knowing which one the next half-second calls for. Attack ends a fight, parry turns your shield into a mirror that sends the blow back where it came from, and slow buys you a sliver of stretched time to see a lethal gap that was not there a moment ago. None of the three is ever the whole answer; reading which one this exact instant demands is.",
+        "That loop is wrapped around a single quiet mission: one assassin, alone, walking into a nation built to crush him. Levels branch into more than one way through, so the same infiltration can be replayed as a genuinely different route, a dedicated speedrun mode turns mastery into a stopwatch, and an Easy mode carved out for the story means the tension of dying and reviving is a choice, not a barrier, for anyone who came for Takeru's mission first.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Hotline Miami's one-hit-death, instant-restart rhythm and want it rebuilt around a three-move core, attack, a shield parry, and a time-slowing slow, instead of straightforward brutality",
+        "You want a lone-assassin infiltration story wrapped in a bio-SF retelling of Japanese myth, with branching routes, a dedicated speedrun mode for players chasing clean times, a story-focused Easy mode, and a soundtrack of original Japanese hip-hop written and performed by the developers themselves",
+        "You want an early look at a Japanese indie gem still finding its footing in the West, Very Positive at 98 percent over 120 reviews, made by the debut studio DON YASA CREW (a hip-hop group that turned to making games after the pandemic halted their live shows) and published by Kakehashi Games, already supporting English among eleven languages",
+      ],
+      bad: [
+        "You want a long, sprawling campaign; this is a tightly focused hardcore action game built around mastering one repeating loop of death and revival rather than around scale",
+        "You expect a big-publisher, already-popular Western title; this is a paid debut work by the indie group DON YASA CREW published by the mid-size Japanese localization house Kakehashi Games, not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's descriptors, and while about 37.5 percent of its reviews are already in English and some Western press has taken notice, its total review count of 120 is still small enough that its reputation could shift either way",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "SONOKUNI - バイオSF×日本神話の世界で、大国「ワノクニ」に単身潜入する暗殺者タケルを操る、見下ろし型ハードコア高速アクション。一撃死んでも神威でほぼ即座に復活し、attack・parry(盾で弾き返す)・slow(時間減速)を使い分け、複数ルートとスピードラン専用モードに挑む。開発元自身によるオリジナル日本語ラップが響く、Hotline Miamiの系譜——Steamの西はまだ足がかりをつかみ始めたばかりの日本のインディーの一本",
+      description: "開発は日本のヒップホップグループ DON YASA CREW、販売は架け橋ゲームズ(Kakehashi Games)。プレイヤーは、バイオSFで描き直された日本神話の世界で、大国「ワノクニ」に単身潜入する暗殺者タケル。一撃で死に、神威によってほぼ即座に復活し、attack・盾で弾き返すparry・時間を緩めるslowという3つの核となる動きで戦う。複数ルート、スピードラン専用モード、物語重視のEasyモードを備え、BGMは開発元自身によるオリジナル日本語ラップ。120件のレビュー中98%が好評の「非常に好評」。英語に対応済みだが、英語レビューは約37.5%——Steamの西側では、まだニッチな一本にとどまっている。",
+      h1a: "一撃で死に、神威が、ほぼ即座にあなたを送り返す。",
+      h1flip: "攻撃するか、盾で弾き返すか、時間を緩めるか——一撃と次の一撃の隙間を、たった一人で、あなたを叩き潰そうとする国の只中で読み抜く",
+      h1b: "。",
+      lede: "バイオSFで描き直された日本神話の世界で、大国「ワノクニ」に単身潜入する暗殺者タケルを操る、見下ろし型ハードコア高速アクション。開発は日本のヒップホップグループ DON YASA CREW、販売は日本のローカライズ会社 架け橋ゲームズ(Kakehashi Games)。一撃で死ぬのは、行く手を阻む誰とも変わらない。だが神威によってほぼ即座に復活し、最後のミスがまだ着地し切らないうちに、同じ戦いへ身を投げ直す。手数は絞り込まれながら層を成す——attackは戦いをその場で終わらせ、parryは盾で受けた一撃をそのまま撃った相手へ弾き返し、slowは一瞬前には無かった隙を見出せるだけの引き伸ばされた時間を作る。ステージは複数のルートへ分岐し、タイムを狙う人向けのスピードラン専用モードと、物語重視のEasyモードを備える。Hotline Miamiの系譜に連なる一本。11の言語の中に英語もすでに対応済みだが、レビューのうち英語は約37.5%——Steamの西側では、まだニッチな一本にとどまっている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "すべての戦いは、同じ残酷な算数の上に成り立っている——一撃で終わる。それは行く手を阻む誰にとっても同じだ。だが死には重みが無い。神威が、倒れたほぼ直後にあなたを同じ戦いへ送り返すからだ。だからこのループは、失敗と向き合うことを求めない。最後のミスがまだ着地し切らないうちに、もう一度挑むことを求める。",
+        "使える動きは、常にたった三つ。ゲームのすべては、次の0.5秒が、そのどれを求めているかを知ることにある。attackは戦いを終わらせ、parryは盾を鏡に変えて、受けた一撃をそのまま撃った相手へ送り返し、slowは、一瞬前には無かった致命の隙を見出せるだけの、引き伸ばされた時間を買う。三つのどれも、それ単体で答えにはならない。答えは、この瞬間がどれを求めているかを読むことそのものだ。",
+        "そのループは、静かな一つの使命を包んでいる——たった一人の暗殺者が、彼を叩き潰すために作られた大国へと踏み込んでいく。ステージは一本道ではなく複数のルートへ分岐し、同じ潜入を、まったく違う経路として遊び直せる。スピードラン専用モードが習熟をストップウォッチに変え、物語のために切り出されたEasyモードは、死んでは蘇るという緊張感を、タケルの使命をまず追いたい誰にとっても、障壁ではなく選択にする。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Hotline Miamiの「一撃死・即時再挑戦」のリズムが好きで、それが直截な暴力ではなく、attack・盾のparry・時間を緩めるslowという3つの核へ組み直された形が欲しい人",
+        "バイオSFで描き直された日本神話の世界を舞台にした、単身潜入の暗殺劇が欲しい人——複数ルート、タイムを狙う人向けのスピードラン専用モード、物語重視のEasyモード、そして開発元自身が手がけるオリジナル日本語ラップのサウンドトラックを備えている",
+        "Steamの西がまだ足がかりをつかみ始めたばかりの、日本のインディーの原石を早めに触りたい人——120件のレビューで98%の『非常に好評』、コロナ禍でのライブ活動停止をきっかけにゲーム制作を始めた実質デビュー作のインディー集団 DON YASA CREW が手がけ、架け橋ゲームズが販売する一本。11の言語の中に英語もすでに対応済み",
+      ],
+      bad: [
+        "何十時間も遊べる長大なキャンペーンが欲しい人(本作は、規模ではなく「死んでは蘇る」一つのループを極めることをめぐって組まれた、引き締まったハードコアアクションだ)",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人(本作は、DON YASA CREW による有料の実質デビュー作で——販売は日本の中堅パブリッシャー架け橋ゲームズ——無料でもアーリーアクセスでもない。AI生成アセットはなく、Steamのディスクリプタ上、性的な要素もない。英語レビューはすでに約37.5%を占め、海外メディアの言及も出てきてはいるが、レビュー総数120件はまだ小さく、評価が今後どちらに転ぶかは未知数だ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5923,6 +6011,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Princess Maker is a raising simulation series produced by Gainax, whose first entry was released in 1991 (the Refine edition, developed by CFK Co., Ltd. and published by Bliss Brain, is the one on Steam). The player becomes the foster father of a young girl, scheduling her days between education, work, and rest across a fixed span of years, while the stats and choices that accumulate branch into one of many possible endings, from royalty to ordinary professions. As the game that introduced the idea of raising your own daughter to the life-simulation genre, it is the foundational origin of the raising-sim lineage.",
       ja: "プリンセスメーカーは、ガイナックスが手掛けた育成シミュレーションシリーズで、その第1作は1991年に発売された(Steam 版は CFK Co., Ltd. が開発し Bliss Brain が販売する Refine 版)。プレイヤーは幼い娘の養父となり、一定期間の年月にわたって教育・仕事・休養へ日々の予定を割り振っていく。積み上がったパラメータと選択は、王侯貴族から市井の職業まで、数多のエンディングのいずれかへ分岐する。「自分の娘を育てる」という発想を育成シミュレーションのジャンルに導入した作品であり、育成シムの系譜の礎となる原点である。",
+    },
+  },
+  // 原点 Hotline Miami(2012), Dennaton Games(Jonatan Söderström / Dennis Wedin)開発 / Devolver Digital 販売。
+  //   見下ろし視点で、一撃死ぬプレイヤーがほぼ即座に同じ部屋へ戻され再挑戦する「一撃死・即時再挑戦」ループを
+  //   結晶化させ広く知らしめた原点(appid 219150・良く知られた事実として記述)。SONOKUNI はこの一撃死+即時復活の
+  //   ループを継ぎ、直截な暴力を attack/parry(盾で弾き返す)/slow(時間減速)の3コアへ組み替えた子孫と、Famitsu
+  //   記事(「『ホットラインマイアミ』を彷彿とさせる鮮烈な一撃必死ゲーム」)および海外メディア TheGamer の記事
+  //   (「Sonokuni Is Much More Than A Hotline Miami Clone」)の両独立記事タイトルで裏付け
+  //   (lineage_anchor_key=steam_url で同定)。
+  "hotline-miami": {
+    steam: "219150",
+    blurb: {
+      en: "Hotline Miami is a top-down action game developed by the two-person Swedish studio Dennaton Games (Jonatan Söderström and Dennis Wedin) and published by Devolver Digital, released in October 2012. Set in a lurid, fictionalized 1989 Miami, a masked mercenary follows cryptic answering-machine messages into buildings full of armed criminals, and a single hit kills the player exactly as easily as it kills an enemy, dropping you back into the same room almost instantly to try again. That one-hit-death, instant-restart loop, wrapped in a neon synthwave soundtrack and brutal pixel-art violence, crystallized and popularized the lineage of top-down action games built around dying constantly and restarting without friction.",
+      ja: "Hotline Miami は、スウェーデンの2人組スタジオ Dennaton Games(Jonatan Söderström と Dennis Wedin)が開発し、Devolver Digital が販売した見下ろし型アクションで、2012年10月に発売された。毒々しく脚色された1989年のマイアミを舞台に、覆面の殺し屋が留守番電話に残された暗号めいた指示に従い、武装した犯罪者で満ちた建物へ向かう。プレイヤーは敵とまったく同じように一撃で死に、死ぬとほぼ即座に同じ部屋へ戻されて再挑戦する。この「一撃死・即時再挑戦」のループを、ネオンのシンセウェイブ楽曲と暴力的なドット絵表現とともに結晶化させ広く知らしめた作品であり、死に続けては摩擦なく再挑戦する見下ろし型アクションの系譜の原点である。",
     },
   },
 } as const;
