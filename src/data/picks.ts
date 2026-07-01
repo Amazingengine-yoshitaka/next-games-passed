@@ -5613,6 +5613,100 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "cento": {
+    published: "2026-07-07",
+    publishAt: "2026-07-07",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "rhythm-command-deckbuilder"(リズムコマンド・デッキ構築): 既存の "deckbuilder"/
+    //   "roguelike" では捉えきれない、この作品を定義する核——戦闘曲のビートに合わせてスキルのコマンドを
+    //   入力しコンボを発動する「サウンドバトル」型の仕組み——を専用ラベルとして立てる(raising-roguelite/
+    //   single-turn-deckbuilder と同型の細粒度ラベル追加・ui.ts en/ja 追加済み)。系譜は MOTHER3(2006,
+    //   HAL研究所/任天堂)の「サウンドバトル」システム——戦闘曲のビートに合わせてボタン入力しコンボ攻撃を
+    //   発動する仕組み——の直系(lineage_anchor_key=wikidata_qid, Q2383167 の新規 anchor "mother-3" で同定)。
+    //   reviewBand は持たせない: 109件は clock-rogue(112件)/sonokuni(120件)と同帯で "hundreds" と
+    //   言い切るには境界的(誇張しない)。rarity.reviews=109 を確定値でそのまま出す。reachState も立てない:
+    //   英語レビュー比率58.7%(64/109)は他の unreached_west 事例(15〜37%台)より明確に高く、Kotaku
+    //   ギャラリーページ・Metacriticページ・BitSummit PUNCH 2026でのオーディオデザイン最優秀賞受賞という
+    //   西側の実際の露出も確認済みのため、「西側未到達」と言い切るのは誇張(sonokuni/devil-blade-reboot 型・
+    //   誇張しない正直さ)。obscurity は "deep"(レビュー僅少・109件という小さな母数で、批評的評価と受賞の
+    //   わりに商業的な知名度は伸びきっていない)。noEnglish=false(日本語・英語の2言語対応済み・誤って
+    //   「英語非対応」stampを立てない・正直さ)。
+    meta: { genre: "rhythm-command-deckbuilder", lineage: "mother-3", obscurity: "deep", rarity: { reviews: 109, positivePct: 97, noEnglish: false } },
+    games: [
+      {
+        name_en: "Cento",
+        name_ja: "Cento",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2416050/Cento/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A rhythm-command roguelite deckbuilder in which every skill card in your hand carries a command that you press in time with the beat of that stage's own music to chain it into the next hit, developed and self-published by the small Japanese studio Hoshimadara Lab. Each run, you draft skill cards into your hand and combine them with gift artifacts, the run's equivalent of relics, to build a deck around combos your hands and your timing can actually land, then carry that deck across stages that range from city-like settings to ancient ones, each set to its own distinct music and pixel-art visuals. An endurance mode lets you chain consecutive battles back to back rather than resetting between fights, and per Steam's own tags it is a Roguelike Deckbuilder, Deckbuilding, Card Game, and Turn-Based Tactics title. Released on May 15, 2024, it is Very Positive at 97 percent over 109 reviews (Steam's own review API records 109 total and 106 positive), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. In May 2026 it won the Excellence in Sound Design Award at BitSummit PUNCH, Japan's largest indie game festival, and it has since picked up a Kotaku gallery page, a Metacritic page, and coverage from Japanese outlets including IGN Japan, Famitsu, and Dengeki Online. It supports Japanese and English, and about 64 of its 109 reviews, roughly 58.7 percent, are already in English, so it is not fully undiscovered by the Steam West. But at 109 total reviews, a small sample where a single review can move the positive rate by close to a point, its total footprint has stayed modest in the roughly two years since release, so despite the critical praise and the award, it has not broken out commercially.",
+        desc_ja: "リズムコマンド・デッキ構築ローグライト——手札のスキルカード一枚一枚がコマンドを背負っていて、そのステージ固有の曲のビートに合わせてそれを入力すると、次の一撃へと繋がっていく。開発・販売は日本の小規模スタジオ 星斑研究室(Hoshimadara Lab.)による自社セルフパブリッシュ。ランごとにスキルカードをドラフトし、このランの遺物にあたるギフト(アーティファクト)と組み合わせて、自分の手とタイミングが本当に決められるコンボを軸にデッキを組み、そのデッキを、都市風から古代風まで、それぞれ固有の音楽とドット絵ビジュアルを持つステージへ持ち込んでいく。エンデュランスモードは連戦をリセットせずに繋げられる。Steam自身のタグでは Roguelike Deckbuilder・Deckbuilding・Card Game・Turn-Based Tactics。2024年5月15日にリリースされ、109件のレビュー中97%が好評の「非常に好評」(Steam自身のレビューAPIでは109件中106件が好評と記録)。無料ではない有料作で、アーリーアクセスではなく正式リリース済み。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上、性的な要素もない。2026年5月には、日本最大級のインディーゲーム祭典 BitSummit PUNCH で「オーディオデザイン最優秀賞」を受賞し、以降 Kotaku のギャラリーページ、Metacritic のページ、IGN Japan・ファミ通・電撃オンラインといった日本のメディアの記事も出てきている。日本語・英語に対応し、109件のうち約64件(約58.7%)がすでに英語レビュー——Steamの西側から完全に見つかっていないわけではない。しかし総レビュー数109件という小さな母数では、1件の増減が好評率を1ポイント近く動かしうる。発売から約2年強のあいだ、総合的な規模はまだ控えめなままで、批評的な評価と受賞にもかかわらず、商業的なブレイクにはまだ至っていない。",
+      },
+      {
+        name_en: "MOTHER 3",
+        name_ja: "MOTHER3",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/Mother_3",
+        wikidata: "https://www.wikidata.org/wiki/Q2383167",
+        tag_en: "The rhythm-command battle origin",
+        tag_ja: "リズムコマンドバトルの原点",
+        desc_en: "The origin of this taste: MOTHER 3, a role-playing game developed by HAL Laboratory and published by Nintendo for the Game Boy Advance, released in Japan in April 2006 as the third entry in the Mother series. Its Sound Battle system turns ordinary turn-based combat into a rhythm exercise: pressing a skill's command in time with the beat of that battle's own music chains consecutive hits together into a combo, so landing the bigger hit is a matter of feeling the beat, not only choosing the right command. It has never received an official English localization. That core, that a combo's success rides on pressing a command on the beat of the music playing in that fight, is the root Cento grows from: it keeps on-beat command input as the trigger for a combo, but recasts a single RPG's battle flourish as the engine of a full roguelite deckbuilder, where a hand of skill cards and gift artifacts you draft run to run replaces a fixed party's command list, and stages set to their own distinct music, from city streets to ancient ruins, replace one game's recurring battle theme.",
+        desc_ja: "この味の原点——MOTHER3。HAL研究所が開発し任天堂が販売したロールプレイングゲームで、2006年にゲームボーイアドバンス向けに日本で発売された、「MOTHER」シリーズ第3作である。「サウンドバトル」システムは、通常のターン制戦闘をリズムの試練に変える——技のコマンドを、その戦闘曲自身のビートに合わせて入力すると、一撃一撃がコンボとして繋がっていく。大きな一撃を決めるのは、正しいコマンドを選ぶことだけでなく、そのビートを感じ取ることだ。公式の英語ローカライズは行われていない。この核——コンボの成否が、その戦いで流れている曲のビートに合わせてコマンドを撃つことに懸かっている——こそ、Cento が育つ根だ。本作はオンビートのコマンド入力をコンボの引き金にする仕組みを受け継ぎながら、1本のRPGのたまの戦闘演出だったものを、ランごとに手札のスキルカードとギフト(アーティファクト)をドラフトして組む、ローグライト・デッキビルダーの駆動源そのものへ据え替え、1本のゲームの決まった戦闘曲を、都市風から古代風まで、それぞれ固有の音楽を持つステージ群へ組み替えている。",
+      },
+    ],
+    en: {
+      title: "Cento - a roguelite deckbuilder where you press a skill's command in time with the beat of that stage's own music to chain it into a combo, drafting skill cards and gift artifacts into a hand-built deck across settings from city streets to ancient ruins, with an endurance mode for chaining consecutive battles, self-published by the Japanese studio Hoshimadara Lab., heir to MOTHER 3's Sound Battle system, already carrying a BitSummit PUNCH sound design award yet still a quiet, small-review find",
+      description: "A roguelite deckbuilder by the self-published Japanese studio Hoshimadara Lab. Press a skill's command in time with the beat of that stage's own music and it chains into the next hit, while you draft skill cards and gift artifacts into a hand-built deck and carry it across stages set to their own music and visuals, from city streets to ancient ruins, with an endurance mode for chaining consecutive battles. In the lineage of MOTHER 3's Sound Battle system. Very Positive at 97 percent over 109 reviews, and winner of a BitSummit PUNCH 2026 sound design award; it supports English, and with about 58.7 percent of its reviews already in English it is not fully undiscovered, though its total review count has stayed small since its 2024 release.",
+      h1a: "Every skill you play, you play on the beat. ",
+      h1flip: "Miss the rhythm of that stage's own music and the combo breaks; land it, and the hand of skill cards and gift artifacts you drafted turns into a chain of hits",
+      h1b: ".",
+      lede: "A roguelite deckbuilder in which combat itself is a rhythm exercise: press a skill's command in time with the beat of that stage's own music and it chains into the next hit, developed and self-published by the Japanese studio Hoshimadara Lab. Each run, you draft skill cards into your hand and combine them with gift artifacts to build a deck, carrying that build across stages that range from city streets to ancient ruins, each set to its own distinct music and visuals. An endurance mode lets you chain consecutive battles back to back, stacking your build's strength rather than resetting between fights. In the lineage of MOTHER 3's Sound Battle system, the HAL Laboratory-developed, Nintendo-published Game Boy Advance RPG that first turned pressing a command on the beat of its battle music into a combo attack. Released in May 2024, it is Very Positive at 97 percent over 109 reviews, and in May 2026 it won the Excellence in Sound Design Award at BitSummit PUNCH, Japan's largest indie game festival. It supports English alongside Japanese, and with about 58.7 percent of its reviews already in English, a Kotaku gallery page, a Metacritic page, and coverage from Japanese outlets such as IGN Japan, Famitsu, and Dengeki Online around BitSummit, it is not a fully undiscovered title. What holds true is that its total review count has stayed small in the roughly two years since release, so despite the critical praise and the award, it has not broken out commercially.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every skill card in your hand carries a command, and playing it is not a menu choice so much as a musical one: you press that command in time with the beat of the music playing in that exact stage, land it on beat and the hit chains into the next, land it off beat and the chain does not form. The card in your hand tells you what to play; the music tells you when.",
+        "Between fights, you draft skill cards and combine them with gift artifacts, the run's version of relics, to assemble a deck built around whichever combos your hands and your timing can actually land. A deck that looks strong on paper still has to be played on the beat of whatever stage you carry it into, so building is only half the work; the other half is playing what you built in rhythm.",
+        "Stages shift in setting and in music, from city streets to ancient ruins, and each carries its own beat for you to read. An endurance mode strings consecutive battles together without a reset in between, so the tension of staying on rhythm compounds fight after fight rather than resetting to zero each time you win one.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love MOTHER 3's Sound Battle idea, pressing a command in time with the battle music to chain a combo, and want that rhythm made the entire spine of a roguelite deckbuilder rather than one RPG's occasional flourish",
+        "You want a deckbuilder where the resource you manage is a hand of skill cards plus gift artifacts, replayed across stages that each carry their own music and visuals, with an endurance mode for runs built around chaining consecutive battles",
+        "You want an early look at a quietly acclaimed, self-published Japanese indie: Very Positive at 97 percent over 109 reviews, already carrying the Excellence in Sound Design Award from BitSummit PUNCH 2026, made and published solely by Hoshimadara Lab., supporting English alongside Japanese",
+      ],
+      bad: [
+        "You want a completely undiscovered title with zero footprint; this one already carries real recognition, about 58.7 percent of its reviews are in English, it has a Kotaku gallery page and a Metacritic page, and Japanese outlets covered it around its BitSummit PUNCH award, so calling it fully unreached would not be honest. What is true is that its total review count has stayed small, only 109, in the roughly two years since its May 2024 release, so its reputation is still thin despite the praise",
+        "You expect a big-publisher, already-popular Western title, or you want something free; this is a paid, self-published indie work by the small Japanese studio Hoshimadara Lab., not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Cento - 各ステージ固有の曲のビートに合わせてスキルのコマンドを入力するとコンボとして繋がる、リズムコマンド・デッキ構築ローグライト。手札のスキルカードとギフト(アーティファクト)を組み合わせてデッキを編成し、都市風から古代風まで多様なステージを巡る。連戦しながら強化を積むエンデュランスモードあり。自社セルフパブリッシュの日本のスタジオ星斑研究室が手がける、MOTHER3の「サウンドバトル」の系譜——BitSummit PUNCHでサウンドデザイン賞を受賞しながらも、レビュー数はまだ静かな一本",
+      description: "自社セルフパブリッシュの日本のスタジオ星斑研究室(Hoshimadara Lab.)が手がけるリズムコマンド・デッキ構築ローグライト。スキルのコマンドを、そのステージ固有の曲のビートに合わせて入力すると、次の一撃へと繋がっていく。手札のスキルカードとギフト(アーティファクト)を組み合わせてデッキを編成し、都市風から古代風まで、それぞれ固有の音楽とビジュアルを持つステージを渡り歩く。連戦を重ねながら強化を積み上げるエンデュランスモードあり。MOTHER3の「サウンドバトル」の系譜。97%が好評の『非常に好評』(109件)、BitSummit PUNCH 2026 でサウンドデザイン賞を受賞済み。英語に対応し、レビューのうち約58.7%がすでに英語——完全な未発見ではないが、2024年の発売から総レビュー数はまだ小さいままだ。",
+      h1a: "プレイするスキルはすべて、ビートの上で撃つ。",
+      h1flip: "そのステージ固有の曲のリズムを外せばコンボは途切れ、乗せられれば、組んだ手札のスキルカードとギフトが一連の連撃に変わる",
+      h1b: "。",
+      lede: "戦闘そのものがリズムの試練になる、リズムコマンド・デッキ構築ローグライト——スキルのコマンドを、そのステージ固有の曲のビートに合わせて入力すると、次の一撃へと繋がっていく。開発・販売は日本のスタジオ 星斑研究室(Hoshimadara Lab.)による自社セルフパブリッシュ。ランごとに手札のスキルカードをドラフトし、ギフト(アーティファクト)と組み合わせてデッキを編成し、その構築を、都市風から古代風まで、それぞれ固有の音楽とビジュアルを持つステージへ持ち込んでいく。エンデュランスモードは連戦を途切れさせず、リセットせずに強化を積み上げ続けられる。系譜はMOTHER3の「サウンドバトル」——HAL研究所が開発し任天堂が販売したゲームボーイアドバンスのRPGで、戦闘曲のビートに合わせてコマンドを入力することをコンボ攻撃の発動条件にした最初の作品だ。2024年5月に発売され、109件のレビューで97%が好評の『非常に好評』。2026年5月には、日本最大級のインディーゲーム祭典 BitSummit PUNCH で「オーディオデザイン最優秀賞」を受賞した。日本語に加え英語にも対応しており、レビューのうち約58.7%がすでに英語で、Kotakuのギャラリーページ、Metacriticのページ、そしてBitSummitを巡ってのIGN Japan・ファミ通・電撃オンラインなど日本のメディア露出もある——完全な未発見のタイトルとは言えない。それでも本当なのは、発売から約2年強のあいだ、総レビュー数がまだ小さいままだということだ。批評的な評価と受賞にもかかわらず、商業的なブレイクにはまだ至っていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "手札のスキルカード一枚一枚がコマンドを背負っていて、それを撃つことはメニューの選択というより、音楽的な選択に近い——そのステージでまさに流れている曲のビートに合わせてそのコマンドを入力し、ビートに乗せられれば一撃が次へと繋がり、外せばコンボは形にならない。手札のカードが「何を撃つか」を教え、音楽が「いつ撃つか」を教える。",
+        "戦闘の合間には、スキルカードをドラフトし、ギフト(アーティファクト)——このランの遺物にあたるもの——と組み合わせて、自分の手とタイミングが本当に決められるコンボを軸にデッキを組み上げる。紙の上で強く見えるデッキも、持ち込んだステージのビートの上で撃てなければ意味がない。組むことは仕事の半分でしかなく、残り半分は、組んだものをリズムに乗せて撃つことだ。",
+        "ステージは舞台も曲も移り変わる——都市風から古代風まで、それぞれ固有のビートを読ませてくる。エンデュランスモードは連戦をリセット無しで繋げていくので、リズムを保ち続ける緊張は、1戦勝つごとにゼロへ戻るのではなく、戦いを重ねるたびに積み上がっていく。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "MOTHER3の「サウンドバトル」——戦闘曲のビートに合わせてコマンドを入力しコンボを繋げる発想——が好きで、それを1本のRPGのたまの演出ではなく、ローグライト・デッキ構築の背骨そのものに据えた形が欲しい人",
+        "管理するリソースが、手札のスキルカードとギフト(アーティファクト)であるデッキ構築が欲しい人——それぞれ固有の音楽とビジュアルを持つステージを渡り歩き、連戦を繋げるエンデュランスモードでランを組む",
+        "静かに評価されている、自社セルフパブリッシュの日本のインディーの原石を早めに触りたい人——109件のレビューで97%の『非常に好評』、BitSummit PUNCH 2026の「オーディオデザイン最優秀賞」をすでに携え、星斑研究室が単独で開発・販売する一本。日本語に加え英語にも対応済み",
+      ],
+      bad: [
+        "痕跡ゼロの、完全に未発見のタイトルが欲しい人(本作にはすでに実質的な認知がある——レビューの約58.7%が英語で、KotakuのギャラリーページとMetacriticのページがあり、BitSummit PUNCHの受賞を巡って日本のメディアも報じている。だから「完全に西で未到達」と言い切るのは正直ではない。本当なのは、2024年5月の発売から約2年強のあいだ、総レビュー数がまだ109件と小さいままで、評価の高さのわりに知名度が伸びきっていないということだ)",
+        "大手パブリッシャーの、すでに西で人気の大作を期待する人、あるいは無料のものが欲しい人(本作は星斑研究室による有料の自社セルフパブリッシュ作で、無料でもアーリーアクセスでもない。AI生成アセットはなく、Steamのディスクリプタ上、性的な要素もない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6116,6 +6210,21 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Hotline Miami is a top-down action game developed by the two-person Swedish studio Dennaton Games (Jonatan Söderström and Dennis Wedin) and published by Devolver Digital, released in October 2012. Set in a lurid, fictionalized 1989 Miami, a masked mercenary follows cryptic answering-machine messages into buildings full of armed criminals, and a single hit kills the player exactly as easily as it kills an enemy, dropping you back into the same room almost instantly to try again. That one-hit-death, instant-restart loop, wrapped in a neon synthwave soundtrack and brutal pixel-art violence, crystallized and popularized the lineage of top-down action games built around dying constantly and restarting without friction.",
       ja: "Hotline Miami は、スウェーデンの2人組スタジオ Dennaton Games(Jonatan Söderström と Dennis Wedin)が開発し、Devolver Digital が販売した見下ろし型アクションで、2012年10月に発売された。毒々しく脚色された1989年のマイアミを舞台に、覆面の殺し屋が留守番電話に残された暗号めいた指示に従い、武装した犯罪者で満ちた建物へ向かう。プレイヤーは敵とまったく同じように一撃で死に、死ぬとほぼ即座に同じ部屋へ戻されて再挑戦する。この「一撃死・即時再挑戦」のループを、ネオンのシンセウェイブ楽曲と暴力的なドット絵表現とともに結晶化させ広く知らしめた作品であり、死に続けては摩擦なく再挑戦する見下ろし型アクションの系譜の原点である。",
+    },
+  },
+  // 原点 MOTHER3, HAL研究所開発 / 任天堂販売, 2006(ゲームボーイアドバンス, 日本のみ・公式英語版なし)。
+  //   「サウンドバトル」システム——その戦闘曲のビートに合わせてコマンドを入力するとコンボ攻撃として
+  //   繋がる——を核とした、RPGシリーズ「MOTHER」第3作。戦闘曲のビートに入力を同期させることを
+  //   コンボ攻撃の発動条件にした、その仕組みの原点。Cento はこの「ビートに合わせて入力する」核を継ぎ、
+  //   1本のRPGの戦闘演出だったものを、ランごとに手札のスキルカードとギフト(アーティファクト)を
+  //   ドラフトして組むローグライト・デッキビルダーの駆動源そのものへ据え替えた子孫(lineage_anchor_key=
+  //   wikidata_qid, Q2383167 で同定)。公式 Steam 版なし → wikidata で同定(Steam id を捏造しない・
+  //   twilight-syndrome 型 href 破損の回避)。established 側と wikidata URL の完全一致で逆引き成立。
+  "mother-3": {
+    wikidata: "https://www.wikidata.org/wiki/Q2383167",
+    blurb: {
+      en: "MOTHER 3 is a role-playing game developed by HAL Laboratory and published by Nintendo for the Game Boy Advance, released in Japan in April 2006 as the third entry in the Mother series. Its signature Sound Battle system turns ordinary turn-based combat into a rhythm exercise: pressing a skill's command in time with the beat of that battle's own music chains consecutive hits together into a combo, so landing the bigger hit is a matter of feeling the beat, not only choosing the right command. It has never received an official English localization. By binding a combo's success to the beat of its own soundtrack, it is the origin of the lineage of games that turn rhythmic, on-beat input into the trigger for a combo attack.",
+      ja: "MOTHER3 は、HAL研究所が開発し任天堂が販売したロールプレイングゲームで、2006年にゲームボーイアドバンス向けに日本で発売された、「MOTHER」シリーズ第3作である。象徴的な「サウンドバトル」システムは、通常のターン制戦闘をリズムの試練に変える——技のコマンドを、その戦闘曲自身のビートに合わせて入力すると、一撃一撃がコンボとして繋がっていく。大きな一撃を決めるのは、正しいコマンドを選ぶことだけでなく、そのビートを感じ取ることだ。公式の英語ローカライズは行われていない。コンボの成否を、自らのサウンドトラックのビートと結びつけたことで、リズムに乗せたオンビートの入力をコンボ攻撃の引き金にする、そのゲーム群の系譜の原点である。",
     },
   },
 } as const;
