@@ -4916,6 +4916,92 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "sunset-game-shop-shayou": {
+    published: "2026-07-03",
+    publishAt: "2026-07-03",
+    kind: "find",
+    leadIndex: 0,
+    // reviewBand は持たせない: 56 件は "hundreds"(数百)にも "around_1k"(約千)にも当たらない(捏造しない)。
+    //   rarity.reviews=56 を確定値でそのまま出す。obscurity は "deep"(レビュー僅少・西で無名)。英語対応済みで
+    //   noEnglish=false のため lang_walled は使わない(誤って「英語非対応」stamp を立てない・正直さ)。英語レビュー
+    //   1/56=約1.8% で西ほぼ未到達 = reachState="unreached_west"(stamp は positivePct+reviews で埋まるため
+    //   "西ではまだ無名" fallback は発火しない・状態の正直な記録として付す)。系譜は Game Dev Story(ゲーム発展途上国)。
+    //   ジャンルはターン制の経営/タイクーン型 = "simulation"(経営SLG)。実時間カウンター店の Recettear 系
+    //   "shop-sim"(店経営SLG)ではなく、月単位ターン制で業界史を生き延びる経営シムのため simulation を採る。
+    meta: { genre: "simulation", lineage: "game-dev-story", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 56, positivePct: 93, noEnglish: false } },
+    games: [
+      {
+        name_en: "Sunset Game Shop Shayou",
+        name_ja: "ゲームショップ斜陽",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3986100/Sunset_Game_Shop_Shayou/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A business management and shopkeeping simulation by Lobstudio, the work of a small Japanese studio based in Kyoto, with the Chinese-market publishers P-Stardio and NexraGames carrying its release into Chinese-speaking regions. You run a game shop in a small town across the twenty-five years from 1985 to 2010, one turn per month, reading a market you can only see in part and deciding, month after month, what to stock, how much to carry, and what to charge. From limited information you predict how popular each piece of software will be, then place your orders, set your prices, and live with the result, surviving the real tides of Japan's game-industry history as the game moves through the Famicom boom, the bubble economy, the used-game controversy, and the rise of digital distribution, until you reach the year 2010 and clear the run. It is a single-player, pixel-art retro-styled sim of roughly ten to fifteen hours a playthrough. Released in April 2026, it is Very Positive at 93 percent over 56 reviews, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. Lobstudio, by its own dev blog, is a Kyoto company, and the theme is the history of the Japanese game shop, Famicom and all, so it is culturally Japanese to the core; its co-publishers P-Stardio and NexraGames are distributors who carry Japanese developers' work into China rather than its origin. It already supports English alongside Japanese and Simplified and Traditional Chinese, yet with only 1 of its 56 reviews in English (about 1.8 percent) and the rest Japanese and Chinese, the West has barely found it at all. In Japan it has been shown at BitSummit and covered by outlets such as Dengeki, 4Gamer, and gamebiz, but on Steam it is still a fifty-six-review gem the West has not reached.",
+        desc_ja: "経営・店番のシミュレーション。開発元は Lobstudio(ロブスタジオ)——京都を拠点とする日本の小規模スタジオの手による一本で、中国語圏への展開は中国市場向けのパブリッシャー P-Stardio と NexraGames が担う。プレイヤーは、1985年から2010年までの25年間、町のゲームショップを経営する。1ターンは1ヶ月。部分的にしか見えない市場を読み、毎月、何を仕入れ、どれだけ在庫を抱え、いくらで売るかを決めていく。限られた情報からソフトの人気を予測し、発注し、値付けし、その結果とともに生きる——ファミコンブーム、バブル経済、中古ゲーム論争、そしてダウンロード販売の台頭と、実在の日本のゲーム業界史の荒波を生き延び、2010年に到達すればクリアだ。シングルプレイ、ドット絵レトロ調で、1周およそ10〜15時間。2026年4月リリース、56レビュー93%で非常に好評。無料ではない有料作で、アーリーアクセスでもない正式リリース済み。AI生成アセットはなく、Steam 自身のコンテンツディスクリプタ上、性的な要素もない。Lobstudio は、自身の開発ブログで「京都の会社」と明記する日本のスタジオであり、テーマはファミコンをはじめとする日本のゲームショップの歴史——文化的に芯まで日本産だ。共同パブリッシャーの P-Stardio と NexraGames は、日本のデベロッパーの作品を中国へ届ける販売パートナーであって、原産ではない。すでに英語に、日本語・簡体字／繁体字中国語と並んで対応しているが、56件のうち英語レビューは1件(約1.8%)にとどまり、残りは日本語・中国語圏——西はこの一本を、まだほとんど見つけていない。日本では BitSummit に出展され、電撃・4Gamer・gamebiz などのメディアに掲載されているが、Steam ではまだ56レビューと小規模で、西には届いていない。",
+      },
+      {
+        name_en: "Game Dev Story",
+        name_ja: "ゲーム発展途上国",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1847240/Game_Dev_Story/",
+        tag_en: "The management-sim origin",
+        tag_ja: "経営シムの原点",
+        desc_en: "The origin of this taste: Game Dev Story, a business management simulation developed and published by Kairosoft, originally released in 1997 and brought worldwide by its 2010 smartphone version. You run a game development company, hiring and growing staff, choosing a genre and type for each new title, releasing games and managing budget, hardware trends, and reputation across years of a fictional game industry, making decisions from limited information and watching the numbers accumulate. That core, steering a single small business through the game industry's own history on limited information, is the root Sunset Game Shop Shayou grows from, but where Kairosoft put you on the development side making the games, this puts you on the retail side selling them, a mirror image that trades the studio for the shop. The original is anchored here to its Steam release.",
+        desc_ja: "この味の原点——ゲーム発展途上国(Game Dev Story)。カイロソフトが開発・販売した経営シミュレーションで、1997年に発売され、2010年のスマートフォン版で世界的に広まった。プレイヤーはゲーム開発会社を経営し、スタッフを雇って育て、新作ごとにジャンルとタイプを選び、ゲームを発売し、予算やハードの流行、評判を、架空のゲーム業界の何年もの歳月にわたって管理していく——限られた情報から判断を下し、積み上がっていく数字を見守りながら。この核——限られた情報のもとで、一つの小さな事業を、ゲーム業界そのものの歴史の中で舵取りする——こそ、ゲームショップ斜陽が育つ根だ。ただし、カイロソフトがあなたを「ゲームを作る」開発側に置いたのに対し、本作はあなたを「ゲームを売る」小売側に置く。スタジオを店に置き換えた、鏡像である。原作は、その Steam ページで同定する。",
+      },
+    ],
+    en: {
+      title: "Sunset Game Shop Shayou - a turn-based management sim where you run a small-town game shop across the twenty-five years from 1985 to 2010, predicting each game's popularity from limited information to survive the Famicom boom, the bubble, the used-game controversy, and the rise of digital, a Kyoto-made retail-side mirror of Game Dev Story the West has barely found",
+      description: "A business management simulation by Lobstudio, a small Japanese studio in Kyoto, with the Chinese-market publishers P-Stardio and NexraGames handling its release into Chinese-speaking regions. You run a small-town game shop across the twenty-five years from 1985 to 2010, one turn per month, reading a market you can only partly see and deciding what to stock, how much, and at what price. From limited information you predict each game's popularity, then survive the real history of Japan's game industry, the Famicom boom, the bubble, the used-game controversy, and the rise of digital distribution, until you reach 2010. A single-player, pixel-art sim of ten to fifteen hours. Very Positive at 93 percent over 56 reviews; it supports English, yet with only about 1.8 percent English reviews the West has barely found it.",
+      h1a: "You do not make the games. ",
+      h1flip: "You run the shop that sells them, and survive twenty-five years of the game industry's own history",
+      h1b: ".",
+      lede: "A business management and shopkeeping simulation by Lobstudio, the work of a small Japanese studio based in Kyoto, with the Chinese-market publishers P-Stardio and NexraGames carrying its release into Chinese-speaking regions. You run a game shop in a small town across the twenty-five years from 1985 to 2010, one turn per month, reading a market you can only see in part and deciding, month after month, what to stock, how much to carry, and what to charge. From limited information you predict how popular each piece of software will be, place your orders, set your prices, and live with the result, surviving the real tides of Japan's game-industry history, the Famicom boom, the bubble economy, the used-game controversy, and the rise of digital distribution, until you reach the year 2010. A single-player, pixel-art retro sim of roughly ten to fifteen hours a playthrough. In the lineage of Game Dev Story, but on the retail side rather than the development side. It supports English, yet with only about 1.8 percent of its reviews in English, the West has barely found it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The whole game is a bet made on partial information. You never see the full market, only fragments of what people want, and every month you have to guess how well a given piece of software will sell, then commit real money to stocking it. The tension lives in the gap between what you can know and what you have to decide: order too many of a game that flops and it rots as dead stock, order too few of a hit and you watch the demand walk out the door, so each month becomes a small act of reading the room and betting on your read.",
+        "It is turn-based, one turn to a month, and that rhythm turns the passage of time into pressure. The years do not stand still around your shop; they move through the actual history of the Japanese game industry, the Famicom boom, the bubble, the used-game controversy, the rise of digital distribution, and each era rewrites what sells and how you make money. A strategy that carried you through one decade can quietly stop working in the next, so surviving is less about a single optimal build and more about reading each new age and adapting the shop to it before it leaves you behind.",
+        "Its whole shape is a mirror. Game Dev Story put you inside the studio, making the games and riding the industry from the maker's side; this stands you at the counter of the shop that sells them, riding the same twenty-five years from the retail side, watching tides you did not create wash your inventory in and out. Reaching 2010 alive, having steered one small shop through a quarter-century of an industry you can only partly see, is the run, and the pull is the long arc of keeping a fragile business afloat era after era.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Game Dev Story and Kairosoft-style management sims, steering a small business through the tides of the game industry on limited information, and you want that taste turned to the retail side, running the shop that sells the games rather than the studio that makes them",
+        "You want a turn-based sim where time itself is the pressure, twenty-five years from 1985 to 2010 that move through the real history of the Famicom boom, the bubble, the used-game controversy, and the rise of digital, each era rewriting what sells, over a ten-to-fifteen-hour playthrough",
+        "You want a Japanese-made gem the West has barely found, Very Positive at 93 percent over 56 reviews, the Kyoto-made work of Lobstudio, already supporting English yet with only about 1.8 percent of its reviews in English",
+      ],
+      bad: [
+        "You want fast, real-time action or an over-the-counter haggling shop; this is a deliberate, turn-based business sim of predicting demand and setting monthly stock and prices, a paid title, not free and not in Early Access, carried by numbers and reading the market rather than by reflexes",
+        "You expect a big-studio, already-popular Western release; this is a small doujin-scale sim by a Kyoto studio, and while its co-publishers P-Stardio and NexraGames carry it into Chinese-speaking regions, that is market distribution, not its origin, which is wholly Japanese, and its audience is still almost entirely Japanese and Chinese, with only one of its fifty-six reviews in English, though it has no AI-generated assets and Steam flags no sexual content",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ゲームショップ斜陽 - 1985年から2010年までの25年間、町のゲームショップを経営するターン制の経営シミュレーション。限られた情報からソフトの人気を予測し、ファミコンブーム、バブル、中古ゲーム論争、ダウンロード販売の台頭を生き延びる。Game Dev Story の「小売側」の鏡像、京都発の、西がまだほとんど見つけていない一本",
+      description: "開発元は Lobstudio(ロブスタジオ)——京都の小規模な日本のスタジオ。中国語圏への展開は、中国市場向けのパブリッシャー P-Stardio と NexraGames が担う。プレイヤーは、1985年から2010年までの25年間、町のゲームショップを経営する。1ターンは1ヶ月。部分的にしか見えない市場を読み、何を、どれだけ、いくらで売るかを決めていく。限られた情報からソフトの人気を予測し、ファミコンブーム、バブル、中古ゲーム論争、ダウンロード販売の台頭と、実在の日本のゲーム業界史を生き延び、2010年に到達する。シングルプレイ、ドット絵の、1周10〜15時間のシム。56レビュー93%で非常に好評。英語に対応済みだが、英語レビューは約1.8%——西はこの一本を、まだほとんど見つけていない。",
+      h1a: "あなたは、ゲームを作らない。",
+      h1flip: "ゲームを売る店を経営し、ゲーム業界そのものの25年の歴史を生き延びる",
+      h1b: "。",
+      lede: "経営・店番のシミュレーション。開発元は Lobstudio(ロブスタジオ)——京都を拠点とする日本の小規模スタジオの手による一本で、中国語圏への展開は中国市場向けのパブリッシャー P-Stardio と NexraGames が担う。プレイヤーは、1985年から2010年までの25年間、町のゲームショップを経営する。1ターンは1ヶ月。部分的にしか見えない市場を読み、毎月、何を仕入れ、どれだけ在庫を抱え、いくらで売るかを決めていく。限られた情報からソフトの人気を予測し、発注し、値付けし、その結果とともに生きる——ファミコンブーム、バブル経済、中古ゲーム論争、そしてダウンロード販売の台頭と、実在の日本のゲーム業界史の荒波を生き延び、2010年に到達する。シングルプレイ、ドット絵レトロ調で、1周およそ10〜15時間。Game Dev Story の系譜に連なるが、開発側ではなく小売側の一本だ。英語に対応済みだが、レビューのうち英語は約1.8%——西はこの一本を、まだほとんど見つけていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームのすべては、部分的な情報の上に賭ける行為だ。市場の全体は決して見えず、人々が何を欲しがっているかの断片だけが手元にある。そして毎月、あるソフトがどれだけ売れるかを推し量り、実際のお金を張って仕入れなければならない。緊張は、「知れること」と「決めねばならないこと」の間の隙間にある——売れないゲームを仕入れすぎれば不良在庫として腐り、ヒット作を仕入れそこねれば、需要が店の外へ歩き去っていくのを見送ることになる。だから一月一月が、場の空気を読み、自分の読みに賭ける、小さな一手になる。",
+        "本作はターン制で、1ターンは1ヶ月——そのリズムが、時間の流れそのものを圧力に変える。あなたの店の周りで、歳月は止まっていない。それは、実在の日本のゲーム業界史の中を進んでいく——ファミコンブーム、バブル、中古ゲーム論争、ダウンロード販売の台頭。それぞれの時代が、「何が売れるか」「どう稼ぐか」を書き換えていく。ある十年を支えてくれた戦略が、次の十年では静かに通用しなくなる。だから生き延びるとは、一つの最適解を回すことではなく、新しい時代ごとにそれを読み、置いていかれる前に店を作り替えていくことだ。",
+        "その形の全体が、一枚の鏡だ。Game Dev Story はあなたをスタジオの内側に置き、ゲームを作りながら、作り手の側から業界の波に乗せた。本作は、そのゲームを売る店のカウンターにあなたを立たせ、同じ25年を、小売の側から乗り越えさせる——自分が生み出したわけではない波が、在庫を運び入れ、運び出していくのを見つめながら。部分的にしか見えない四半世紀の業界を、一つの小さな店で舵取りして、2010年に生きて辿り着くこと——それがこの一周であり、引力は、時代また時代と、脆い事業を浮かべ続ける、その長い弧にある。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Game Dev Story と、カイロソフト型の経営シムが好きな人——限られた情報のもとで、ゲーム業界の波の中を、一つの小さな事業で舵取りする、あの味。本作はそれを小売側へ——ゲームを作るスタジオではなく、ゲームを売る店へと向けている",
+        "時間そのものが圧力になる、ターン制のシムが欲しい人——1985年から2010年までの25年が、ファミコンブーム、バブル、中古ゲーム論争、ダウンロード販売の台頭という実在の歴史の中を進み、時代ごとに「何が売れるか」を書き換えていく、1周10〜15時間の一本",
+        "西側がまだほとんど見つけていない、日本製の原石が欲しい人——56レビュー93%で非常に好評、京都の Lobstudio が手がけた一本。英語に対応済みだが、レビューのうち英語は約1.8%にとどまる",
+      ],
+      bad: [
+        "速いリアルタイムのアクションや、カウンター越しの値切り交渉の店経営が欲しい人(本作は、需要を予測し、毎月の仕入れと値付けを決める、じっくりとしたターン制の経営シムだ。無料でもアーリーアクセスでもない有料作で、反射神経ではなく、数字と市場の読みが支える)",
+        "大手スタジオの、すでに西で人気の作品を期待する人(本作は京都のスタジオによる同人規模のシムだ。共同パブリッシャーの P-Stardio と NexraGames が中国語圏へ届けてはいるが、それは市場への流通であって、原産ではない——原産は完全に日本だ。受け手はいまも大半が日本語・中国語圏で、56件のうち英語レビューは1件にとどまる。ただしAI生成アセットはなく、Steam は性的な内容を示していない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -5329,6 +5415,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "The Misadventures of P.B. Winterbottom is a puzzle platformer developed by The Odd Gentlemen and published by 2K, released in April 2010. In a macabre, silent, hand-drawn world in pursuit of a mysterious pie, the player records Winterbottom's own motion and replays those recordings so that past selves act alongside him, and you cooperate with, compete against, and obstruct your own recorded clones across more than eighty puzzles. By turning a copy of your own past movement into the partner you build each solution from, it is a defining origin of the record-and-playback cooperative puzzle, the lineage of games where you solve space by playing back your own recorded self.",
       ja: "The Misadventures of P.B. Winterbottom は、The Odd Gentlemen が開発し 2K が販売したパズルプラットフォーマーで、2010年4月に発売された。不気味で無音の、手描きの世界。謎めいたパイを追い求めるなかで、プレイヤーはウィンターボトム自身の動きを録画し、その録画を再生して、過去の自分たちを本人のかたわらで動かす——録画された自分のクローンと協力し、競い合い、ときに邪魔をしながら、80を超えるパズルを解いていく。自分の過去の動きのコピーを、解答を組み立てるための相棒に変えるこの仕組みにより、「録画した自分自身を再生して空間を解く」——録画と再生の協調パズルの系譜を定義した原点である。",
+    },
+  },
+  // 原点 Game Dev Story(ゲーム発展途上国), Kairosoft, 1997。ゲーム開発会社を経営する経営/タイクーン型
+  //   シミュレーションの祖。限られた情報から判断を下し、架空のゲーム業界の歴史の中で一つの事業を舵取りする、
+  //   カイロソフト型ドット絵経営シムの原点。2010 スマートフォン版で世界的に普及。Steam 版あり(app 1847240)
+  //   → steam で同定(established 側と /app/1847240/ で完全一致・href 破損回避)。
+  "game-dev-story": {
+    steam: "1847240",
+    blurb: {
+      en: "Game Dev Story is a business management and tycoon simulation developed and published by Kairosoft, originally released in 1997 and brought worldwide by its 2010 smartphone version. The player runs a game development company: you hire and grow staff, choose a genre and type for each new title, develop and release games, and manage budget, hardware trends, and reputation across years of a fictional game industry, making decisions from limited information and watching the numbers accumulate. As the work that crystallized Kairosoft's signature pixel-art management sim, it is a defining origin of the lineage of games about steering a single business through the game industry's own history. The original is anchored here to its Steam release.",
+      ja: "ゲーム発展途上国(Game Dev Story)は、カイロソフトが開発・販売した経営・タイクーン型のシミュレーションで、1997年に発売され、2010年のスマートフォン版で世界的に広まった。プレイヤーはゲーム開発会社を経営する——スタッフを雇って育て、新作ごとにジャンルとタイプを選び、ゲームを開発して発売し、予算やハードの流行、評判を、架空のゲーム業界の何年もの歳月にわたって管理していく。限られた情報から判断を下し、積み上がっていく数字を見守る。カイロソフトを代表するドット絵経営シムを結晶化させた作品として、「一つの事業を、ゲーム業界そのものの歴史の中で舵取りする」ゲーム群の系譜を定義した原点である。原作は、その Steam ページで同定する。",
     },
   },
 } as const;
