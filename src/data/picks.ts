@@ -6299,6 +6299,108 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "mamon-king": {
+    published: "2026-07-10",
+    publishAt: "2026-07-10",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "monster-raising-sim"(モンスター育成SLG): 既存の "raising-sim"(プリンセスメーカー型の
+    //   スケジュール育成のみ・戦闘を持たない)では捉えきれない、本作を定義する核——「育成(牧場での日々の
+    //   訓練とライバルのマモンとの合同特訓)」「遠征(サイコロで進むすごろく形式のボード移動、ランダム要素で
+    //   ステータスが変動)」「戦闘(SPを奪い合う1対1コマンド制ターンバトル)」という3サイクル構造——を専用
+    //   ラベルとして立てる(LiTMUSのCXO戸塚友氏本人の言明:「基本的な牧場型の育成ゲームは育成→対戦の2つの
+    //   繰り返し」「マモンキングは育成/遠征/戦闘という3つのサイクル」AUTOMATON JPインタビュー記事、実測
+    //   確認済み)。hand-me-down-mecha-fps等と同型の細粒度ラベル追加・ui.ts en/ja 追加済み。
+    // 系譜は Monster Rancher(モンスターファーム、Tecmo(現・コーエーテクモ)開発、1997年11月30日PS初代発売、
+    //   Steam版は2021年12月8日発売のリマスター2作収録版『Monster Rancher 1 & 2 DX』appid 1716120、
+    //   Steam appdetails実測確認済み)。開発者よしなま氏はAUTOMATON JPインタビュー(2025-12-05公開、実測
+    //   確認済み)で「『モンスターファーム』をリスペクトしていると度々お話されていますが」と記者から直接
+    //   問われ「もちろんです」と明言している——chikyu-boueigun/imscared型の「開発者未確認の当サイト独自の
+    //   推定」ではなく、本作は developer-confirmed(開発者自身の言明が一次情報として存在)。自信度: 高。
+    // obscurity は "deep"(noEnglish=false、Steam自身が英語(日本語と2言語のみ)対応済みだが西への到達が
+    //   まだ薄いタイプ)。英語レビュー69/605=約11.4%(Steam appreviews API実測)と過半数に遠く及ばないため
+    //   reachState="unreached_west" を立てる。AUTOMATON WEST(英語圏メディア)による発売時の記事化(発売
+    //   直後に日本のSteam売上ランキング1位となり、Apex LegendsやOverwatch 2を一時的に上回ったと報道・実測
+    //   確認済み)や、Metacriticにゲームページ自体は存在する(スコアは未集計・実測確認済み)ことは確認済みだが、
+    //   母数の大半が日本語圏である実測を誇張せず reachState を立てる判断(誇張しない正直さ・dyping-escape型)。
+    //   content_descriptors は ids=[]・notes=null(API実測)。release_date はSteam appdetails実測(日本語版・
+    //   英語版ストアとも一致)の2025年12月10日を正として採用する。AUTOMATON JPインタビュー記事(発売前公開)と
+    //   AUTOMATON WESTの発売後記事はいずれも12月11日と記載しており1日のズレがあるが、二次情報として両論併記し
+    //   Steamの記載日を正とする(捏造しない・the-last-salvage-squad型)。
+    meta: { genre: "monster-raising-sim", lineage: "monster-rancher", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 605, positivePct: 90, noEnglish: false } },
+    games: [
+      {
+        name_en: "Mamon King",
+        name_ja: "マモンキング",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4030290/Mamon_King/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A single-player monster-raising simulation in which you summon and raise creatures called Mamon, training them with equal parts kindness and strictness until you can dethrone the reigning champion and become the Mamon King yourself, developed and self-published by LiTMUS Co., Ltd., a Tokyo studio wholly owned by the talent-management company UUUM. The loop runs on three cycles rather than the usual two: raising, day-to-day ranch training plus joint drills with rival Mamon that teach new skills; expedition, a dice-rolled, board-game-style trek into unexplored land where ancient Mamon lurk, its route branching through random events that can just as easily hand you a stat boost as throw a carefully built plan off balance; and battle, a 1-on-1, turn-based command fight in which every skill costs SP, tougher moves demand more of it or an even greater sacrifice, and either side can drain the other's pool outright, so timing what you spend and when becomes the whole contest. Across 38 distinctly designed Mamon and more than 170 skills that evolve with repeated use, the game is the debut project of Yoshinama, a popular Japanese gaming YouTuber making his first game, who spent roughly two years and 25 million yen (about $160,000) of his own money building it after LiTMUS's own staff took notice of his commitment. Asked directly by AUTOMATON JP whether the game is an homage to Monster Rancher, which he has repeatedly cited in past interviews, Yoshinama confirmed it outright; per that same interview, he personally obsessed over the game's probability tuning, checking and re-checking training success rates and random-event odds against his own hundreds of hours of playtesting to keep the randomness thrilling rather than stressful. Released December 10, 2025 per Steam's own listing on both its Japanese and English storefronts (AUTOMATON's own pre-launch interview and its post-launch coverage both give December 11, a one-day gap we note rather than resolve), it is Very Positive at 90 percent per Steam's own store page (546 of 605 reviews positive per Steam's review API), a paid title at $12.99 (¥1,480 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports English and Japanese only, and while AUTOMATON WEST covered its launch, describing it as briefly topping Japan's Steam best-seller chart ahead of games like Apex Legends and Overwatch 2, only about 69 of its 605 reviews, roughly 11.4 percent, are in English so far, and Metacritic already has a page for it with no score yet aggregated, so calling this discovered by the West would not be honest. What is true is that almost all of its praise so far is Japanese-language, and its reach beyond that is only just beginning.",
+        desc_ja: "「マモン」と呼ばれるモンスターを召喚し、優しさと時には厳しさをもって育て上げ、現王者を倒して自らが「マモンキング」となることを目指す、シングルプレイのモンスター育成シミュレーション。開発・発売は東京のゲーム会社LiTMUS株式会社——タレントマネジメント企業UUUM株式会社の完全子会社。ループは通常の2サイクルではなく3サイクルで回る——「育成」(牧場での日々の訓練と、ライバルのマモンと合同で行い新技を習得できる特訓)、「遠征」(サイコロを振って進む、すごろく形式の未開の地への旅で、古代のマモンが潜み、ランダムなイベントがステータスを押し上げることもあれば、せっかくの育成計画を狂わせることもある)、そして「戦闘」(1対1のターン制コマンドバトルで、技を出すたびにSPを消費し、強力な技ほど多くのSP——あるいはさらに大きな代償——を要求し、互いにSPを奪い合える。だからいつ何を使うかというタイミングそのものが勝負になる)。38種の個性的なマモンと、繰り返し使うことで進化する170以上のスキルを備える本作は、人気ゲーム実況者よしなま氏の初開発プロジェクトで、LiTMUSのスタッフがその本気度に目を留めたことをきっかけに、約2年の歳月と自費2,500万円(約16万ドル)を投じて作り上げた。AUTOMATON JPのインタビューで、たびたび公言してきた『モンスターファーム』へのリスペクトについて直接尋ねられると、よしなま氏は「もちろんです」と明言している。同インタビューによれば、確率調整——特訓の成功率やイベントの発生率——には自身で何度もチェックを重ねてこだわり、数百時間に及ぶ自らのプレイテストをもとに、ランダム性が「ストレス」ではなく「快感」であり続けるよう細かく詰めていったという。Steam自身の表記(日本語版・英語版のストアページとも一致)によれば2025年12月10日にリリースされ(AUTOMATONの発売前インタビュー記事、および発売後の記事はいずれも12月11日と記載しており、この1日のズレはここに両論併記し、Steamの記載日を正とする)、Steam自身のストアページで好評率90%の「非常に好評」(Steamのレビューデータでは605件中546件が好評)。無料ではない有料作(12.99ドル、日本では1,480円)で、アーリーアクセスではなく正式リリース済み。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。対応言語は英語と日本語のみ。AUTOMATON WESTは発売時、日本のSteam売上ランキングでApex LegendsやOverwatch 2などを一時的に上回り首位に立ったと報じたが、605件のレビューのうち英語は約69件、約11.4%に留まり、Metacriticにもすでにページが存在するがスコアはまだ集計されていない——だから「西側に発見された」と呼ぶのは正直ではない。本当なのは、その支持のほとんどが今なお日本語で語られているということで、それより先への広がりはまだ始まったばかりだ。",
+      },
+      {
+        name_en: "Monster Rancher",
+        name_ja: "モンスターファーム",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1716120/Monster_Rancher_1__2_DX/",
+        tag_en: "The monster-raising origin",
+        tag_ja: "モンスター育成の原点",
+        desc_en: "The origin of this taste, confirmed directly by the developer: Monster Rancher, known in Japan as Monster Farm (モンスターファーム), a life-simulation raising game created by Tecmo (now Koei Tecmo), first released for the PlayStation on November 30, 1997 (the Steam version, Monster Rancher 1 & 2 DX, remastering the series' first two entries, was developed and published by Koei Tecmo in December 2021). Its signature gimmick let players generate a brand-new monster by inserting almost any CD into the console, a disc-reading system Tecmo built that turned the disc's own stored data into a random seed for the creature's stats and breed, and from there the player raised it on a training schedule and entered it into official tournaments to fight, a raise-then-battle loop that helped define the genre of monster-raising sims. Asked directly by AUTOMATON JP whether Mamon King is an homage to Monster Rancher, which he has repeatedly cited in interviews, its developer Yoshinama confirmed it outright. Mamon King keeps that raise-then-battle spine, training a summoned creature called a Mamon and entering it into 1-on-1 command battles, but replaces the disc-reading monster generator with a dice-rolled, board-game-style expedition phase between training and battle, and layers an SP resource either fighter can drain onto the fights themselves, additions the original Monster Rancher never had.",
+        desc_ja: "この味の原点——開発者本人が直接明言した一本。Monster Rancher(モンスターファーム)。Tecmo(現・コーエーテクモ)が手がけた育成シミュレーションで、初代は1997年11月30日にPlayStation向けに発売された(Steam版『Monster Rancher 1 & 2 DX』はシリーズ最初の2作をリマスターした版で、2021年12月にコーエーテクモが開発・発売)。象徴的な仕掛けは、手持ちのほぼどんなCDを本体に挿入しても新しいモンスターを生成できるという点にあった——Tecmoが構築したディスク読み取りシステムが、ディスクに記録されたデータをそのまま乱数のシードへ変換し、モンスターのステータスや種族を決定する。そこから先はスケジュールを組んで育成し、公式大会へエントリーして戦わせる——この「育てて、戦わせる」ループが、モンスター育成シムというジャンルを定義づけた。『マモンキング』が『モンスターファーム』へのオマージュかとAUTOMATON JPから直接尋ねられ、開発者よしなま氏はそれを明言している——彼はインタビューでたびたびそのリスペクトを公言してきた人物だ。『マモンキング』は、召喚した「マモン」を育て、1対1のコマンドバトルへ送り出すという同じ「育てて、戦わせる」骨格を受け継ぎながら、CD読み取りによるモンスター生成を、育成と戦闘の間に挟むサイコロ制・すごろく形式の遠征フェーズへと置き換え、さらに戦闘そのものに、互いに奪い合えるSPというリソースを接ぎ木している——いずれも初代『モンスターファーム』には無かった要素だ。",
+      },
+    ],
+    en: {
+      title: "Mamon King - a monster-raising sim whose developer, a Japanese YouTuber making his solo debut, confirmed he built it as an homage to Monster Rancher, training a summoned Mamon through daily ranch work, a dice-rolled board expedition, and SP-draining 1-on-1 command battles, Very Positive at 90 percent over 605 reviews though still only about 11 percent English",
+      description: "A monster-raising sim by Yoshinama, a Japanese YouTuber making his solo debut, developed and self-published by LiTMUS Co., Ltd., a subsidiary of UUUM. Summon and raise a Mamon through three cycles: day-to-day training, a dice-rolled board expedition into unexplored land, and 1-on-1 command battles where every skill costs SP that either side can drain. The developer confirmed it as an homage to Monster Rancher. Very Positive at 90 percent over 605 reviews, still only about 11.4 percent English.",
+      h1a: "You spend SP to unleash your Mamon's signature skill. ",
+      h1flip: "Your opponent can just take that SP for themselves instead, and now it is their move",
+      h1b: ".",
+      lede: "A single-player monster-raising simulation developed and self-published by LiTMUS Co., Ltd., a Tokyo studio wholly owned by the talent-management company UUUM. You summon and raise a Mamon, training it with kindness and sometimes strictness, across three cycles instead of the usual two: day-to-day raising and joint drills with rival Mamon, a dice-rolled expedition into unexplored land where random events can boost a stat or upend your plans, and 1-on-1, turn-based command battles where every skill costs SP, and either fighter can drain the other's pool outright. It is the debut project of Yoshinama, a popular Japanese gaming YouTuber, who spent roughly two years and 25 million yen of his own money building it after LiTMUS took notice of his commitment; asked directly whether it is an homage to Monster Rancher, which he has repeatedly cited, he confirmed it outright, and per that same interview obsessed personally over tuning training success rates and random-event odds against his own hundreds of hours of playtesting. Released in December 2025, it is Very Positive at 90 percent over 605 reviews, and while AUTOMATON WEST has already covered its launch, only about 11.4 percent of those reviews are in English so far, so its reach beyond Japan is only just beginning.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The expedition is a dice roll into land no one has trained for: advance along its branching route and a random event can hand your Mamon a stat you never trained for, or just as easily strip away a stockpile of SP you had been saving for the fight at the end of it, so every roll carries real upside and the same risk of undoing exactly the training you spent the last cycle building.",
+        "Every skill in a fight draws down a shared resource, SP, and it is not only yours to spend: your opponent's move can drain it straight out of your pool before you get to use it, so a battle is never just picking the strongest attack, it is deciding whether to spend now, hold, or gamble that the enemy will not reach for your reserves first.",
+        "Training, expedition, and battle keep handing off to each other rather than looping in place, so a skill your Mamon only picked up by surviving a bad roll out in the field becomes the exact move that turns a losing command fight around, and the next raising session already has a new reason behind it.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love Monster Rancher's raise-then-battle taste, and want a developer-confirmed homage that adds a third cycle on top, a dice-rolled expedition where random events reshape your Mamon before it ever reaches a fight",
+        "You want the SP economy of the battles themselves: every skill draws from a pool either fighter can drain, across 38 distinctly designed Mamon and more than 170 evolving skills, tuned personally by a developer who obsessed over its probabilities",
+        "You want to catch a genuine Japan-side debut early: a YouTuber's first game, self-funded for about $160,000, Very Positive at 90 percent over 605 reviews and already covered by AUTOMATON WEST, before its English-language audience catches up",
+      ],
+      bad: [
+        "You want twitch reflexes or real-time action; this is a turn-based, SP-managed command battle system built to be accessible to anyone, not one that rewards fast reactions, and it is a paid, fully launched title, not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+        "You want a game the West has never touched; AUTOMATON WEST has already covered its launch and Metacritic has opened a page for it, so calling it fully undiscovered would not be honest. What is true is that only about 11.4 percent of its 605 reviews are in English so far, and its praise remains almost entirely Japanese-language",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "マモンキング - 開発者本人が『モンスターファーム』へのオマージュだと明言した、モンスター育成シム。召喚したマモンを、日々の育成、サイコロで進む遠征、SPを奪い合う1対1コマンドバトルで鍛え上げる。605件のレビューで好評率90%の『非常に好評』ながら、英語レビューはまだ約11%",
+      description: "人気ゲーム実況者よしなま氏がソロデビュー作として手がけ、UUUM子会社のLiTMUS株式会社が開発・発売するモンスター育成シム。召喚した「マモン」を、日々の育成、サイコロで進むボード形式の遠征、そして技のたびにSPを消費し互いに奪い合える1対1コマンドバトルの3サイクルで鍛え上げる。開発者本人が『モンスターファーム』へのオマージュだと明言。605件のレビューで好評率90%の『非常に好評』、英語レビューはまだ約11.4%。",
+      h1a: "SPを使って、マモンの必殺技を放つ。",
+      h1flip: "そのSPは、相手にそのまま奪われることもある——次の手番は、もう相手のものだ",
+      h1b: "。",
+      lede: "東京のゲーム会社LiTMUS株式会社——タレントマネジメント企業UUUM株式会社の完全子会社——が開発・発売する、シングルプレイのモンスター育成シミュレーション。「マモン」と呼ばれるモンスターを召喚し、優しさと時には厳しさをもって育て上げる。ループは通常の2サイクルではなく3サイクル——牧場での日々の育成とライバルのマモンとの合同特訓、サイコロを振って未開の地を進む遠征(ランダムなイベントがステータスを押し上げることもあれば、計画を狂わせることもある)、そして1対1のターン制コマンドバトル(技を出すたびにSPを消費し、互いにSPを奪い合える)。本作は人気ゲーム実況者よしなま氏の初開発プロジェクトで、LiTMUSのスタッフがその本気度に目を留めたことをきっかけに、約2年の歳月と自費2,500万円を投じて作り上げた。たびたび公言してきた『モンスターファーム』へのリスペクトについて直接尋ねられると、よしなま氏は明言し、同インタビューによれば、特訓の成功率やイベントの発生率という確率調整に、自らの数百時間に及ぶプレイテストをもとにこだわり抜いたという。2025年12月にリリースされ、605件のレビューで好評率90%の『非常に好評』。AUTOMATON WESTがすでにその発売を記事化しているが、英語レビューはまだ約11.4%に留まり、日本を超えた広がりはまだ始まったばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "遠征は、まだ鍛えていない土地へのサイコロ賭けだ——枝分かれするルートを進めば、ランダムなイベントが鍛えてもいないステータスをマモンに授けることもあれば、その先の戦いのために温存していたSPの蓄えをまるごと奪い去ることもある。だからどの一振りにも、確かな上振れと、直前のサイクルで積み上げた育成そのものを台無しにしかねない同じリスクが、同時に乗っている。",
+        "戦闘のあらゆる技は、SPという共有リソースを削って発動する——しかもそれは自分だけのものではない。相手の一手が、使う前にそのSPをこちらのプールからそのまま奪っていくこともある。だから戦いは最強の攻撃を選ぶだけの作業ではなく、いま使うか、温存するか、それとも相手が先にこちらの備蓄へ手を伸ばさないことに賭けるか、という駆け引きになる。",
+        "育成、遠征、戦闘は、その場でループするのではなく、互いに手渡し合っていく。だから、遠征中の悪い出目を生き延びたことで偶然覚えた一つの技が、劣勢のコマンドバトルをそのままひっくり返す決め手になり、次の育成セッションには、もう新しい理由が生まれている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「モンスターファーム」的な、育てて戦わせるという味が好きで、そこに開発者本人が明言するオマージュとして、サイコロで進む遠征というもう一つのサイクルが足され、ランダムなイベントが戦う前からマモンを作り替えていく作品が欲しい人",
+        "戦闘そのもののSP経済——互いに奪い合える共有リソース——が欲しい人。38種の個性的なマモンと170以上の進化するスキルを備え、確率にこだわり抜いた開発者本人によって細かくチューニングされている",
+        "本物の日本発デビュー作を早めに掴みたい人——ゲーム実況者の初開発作で、自費約2,500万円を投じ、605件のレビューで好評率90%の『非常に好評』。AUTOMATON WESTがすでに記事化しているが、英語圏の広い注目が追いつく前に触れられる",
+      ],
+      bad: [
+        "速い反射神経やリアルタイムのアクションが欲しい人——本作は「誰でも遊べる」ことを目指したターン制・SP管理型のコマンドバトルで、反応速度を競うものではない。また、無料ではない有料の正式リリース済みタイトルで、アーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない",
+        "西側がまったく触れていない一本が欲しい人(AUTOMATON WESTがすでにその発売を記事化しており、Metacriticにもすでにページが存在する。だから「完全未発見」と呼ぶのは正直ではない。本当なのは、605件のレビューのうち英語はまだ約11.4%に留まり、支持のほとんどは今なお日本語で語られているということだ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6917,6 +7019,23 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "A likely, though not developer-confirmed, root of this taste: Imscared (stylized IMSCARED), a first-person horror game created by the solo Italian developer Ivan Zanotti, first released for free in 2012 and expanded into a full paid release, IMSCARED: A Pixelated Nightmare, on Steam on February 3, 2016. To finish it, the player has to outwit two entities, White Face and HER, that reach past the game's own fiction to act on what looks like the player's real computer, creating files on the desktop and faking crashes, and folding its ending into a file the player has to find and delete on their own machine to beat the game. That premise, staging what happens on screen as something happening to your actual PC rather than to a character, is widely credited with helping define the fourth-wall-breaking strand of meta horror, and both its 2012 and 2016 releases went viral for exactly that reason, praised at the time by PC Gamer, Polygon, and Rock Paper Shotgun, and later named by IGN as one of the best horror games on PC. Dyping Escape's floating eyeball game master, which reflects your typed words back onto what looks like your own desktop and walks you into signing a contract you never agreed to, carries that same premise forward with typing as its sole verb. We found no statement from the developer behind Heaviside Creations naming Imscared as an influence; this lineage is our own reading of a shared taste, not a confirmed statement from either side.",
       ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——Imscared(表記はIMSCARED)。イタリアのソロ開発者 Ivan Zanotti が制作した一人称ホラーゲームで、2012年に無料で最初に公開され、2016年2月3日には有料の完全版『IMSCARED: A Pixelated Nightmare』としてSteamでリリースされた。クリアするにはプレイヤーは White Face と HER という2体の存在を出し抜く必要があり、彼らはゲームというフィクションの外側にまで手を伸ばし、プレイヤーの実際のパソコンであるかのような画面上でファイルを作成したり、偽のクラッシュを起こしたりする——そしてエンディングは、プレイヤーが自分のPC上で実際に見つけて削除しなければならない1つのファイルへと折り込まれている。「画面で起きていることは、キャラクターにではなく、あなたの実際のPCに起きているように見せる」というこの前提は、第四の壁を破るメタホラーというジャンルの一系統を定義したと広く評価されており、2012年版・2016年版とも、まさにその理由でバイラルヒットとなった。当時PC Gamer・Polygon・Rock Paper Shotgunが賞賛し、後にIGNは2016年版を「PC向けベストホラーゲーム」の1本に選んでいる。『Dyping Escape』の浮遊する目玉のゲームマスターは、打ち込んだ言葉をそのまま自分自身のデスクトップであるかのような画面へ反映し、同意していない契約書への署名へとプレイヤーを導く——同じ前提を、「タイピング」だけを唯一の動詞として引き継いでいる。Heaviside Creations の開発者本人がImscaredを影響源として名指しした言明は見つかっておらず、この系譜は、共通する味わいについての当サイト独自の読み解きであり、どちらの側からも確認された事実ではない。",
+    },
+  },
+  // 原点(開発者本人確認済み) Monster Rancher(モンスターファーム), Tecmo(現・コーエーテクモ)開発、
+  //   1997年11月30日にPS向けに発売(Wikipedia実測確認済み)。手持ちのほぼどんなCDを本体に挿入しても
+  //   モンスターを生成できる仕組みが象徴的で、育成→大会出場という「育てて、戦わせる」ループの原点。
+  //   Steam版は原作そのものではなくリマスター2作収録版『Monster Rancher 1 & 2 DX』(開発・販売とも
+  //   コーエーテクモ、2021年12月8日、appid 1716120、Steam appdetails実測確認済み)。MAMON KING の
+  //   開発者よしなま氏は、AUTOMATON JPインタビュー(2025-12-05公開、実測確認済み)で「『モンスターファーム』
+  //   をリスペクトしていると度々お話されていますが」と記者に直接問われ「もちろんです」と明言している——
+  //   chikyu-boueigun/imscared/puzznic型の「開発者未確認の当サイト独自の推定」ではなく、本作は
+  //   developer-confirmed(一次情報が存在)。lineage_anchor_key=steam, appid 1716120 で同定
+  //   (established側と /app/1716120/ で完全一致・href破損回避)。
+  "monster-rancher": {
+    steam: "1716120",
+    blurb: {
+      en: "A root of this taste, confirmed directly by the developer: Monster Rancher, known in Japan as Monster Farm (モンスターファーム), a life-simulation raising game created by Tecmo (now Koei Tecmo), first released for the PlayStation on November 30, 1997 (the Steam version, Monster Rancher 1 & 2 DX, remastering the series' first two entries, was developed and published by Koei Tecmo in December 2021). Its signature gimmick let players generate a brand-new monster by inserting almost any CD into the console, a disc-reading system Tecmo built that turned the disc's own stored data into a random seed for the creature's stats and breed, and from there the player raised it on a training schedule and entered it into official tournaments to fight, a raise-then-battle loop that helped define the genre of monster-raising sims. Asked directly by AUTOMATON JP whether Mamon King is an homage to Monster Rancher, which he has repeatedly cited in interviews, its developer Yoshinama confirmed it outright. Mamon King keeps that raise-then-battle spine, training a summoned creature called a Mamon and entering it into 1-on-1 command battles, but replaces the disc-reading monster generator with a dice-rolled, board-game-style expedition phase between training and battle, and layers an SP resource either fighter can drain onto the fights themselves, additions the original Monster Rancher never had.",
+      ja: "この味の原点で、開発者本人が直接明言している一本——Monster Rancher(モンスターファーム)。Tecmo(現・コーエーテクモ)が手がけた育成シミュレーションで、初代は1997年11月30日にPlayStation向けに発売された(Steam版『Monster Rancher 1 & 2 DX』はシリーズ最初の2作をリマスターした版で、2021年12月にコーエーテクモが開発・発売)。象徴的な仕掛けは、手持ちのほぼどんなCDを本体に挿入しても新しいモンスターを生成できるという点にあった——Tecmoが構築したディスク読み取りシステムが、ディスクに記録されたデータをそのまま乱数のシードへ変換し、モンスターのステータスや種族を決定する。そこから先はスケジュールを組んで育成し、公式大会へエントリーして戦わせる——この「育てて、戦わせる」ループが、モンスター育成シムというジャンルを定義づけた。『マモンキング』が『モンスターファーム』へのオマージュかとAUTOMATON JPから直接尋ねられ、開発者よしなま氏はそれを明言している——彼はインタビューでたびたびそのリスペクトを公言してきた人物だ。『マモンキング』は、召喚した「マモン」を育て、1対1のコマンドバトルへ送り出すという同じ「育てて、戦わせる」骨格を受け継ぎながら、CD読み取りによるモンスター生成を、育成と戦闘の間に挟むサイコロ制・すごろく形式の遠征フェーズへと置き換え、さらに戦闘そのものに、互いに奪い合えるSPというリソースを接ぎ木している——いずれも初代『モンスターファーム』には無かった要素だ。",
     },
   },
 } as const;
