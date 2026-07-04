@@ -7131,6 +7131,100 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "aquarium-does-not-dance": {
+    published: "2026-07-14",
+    publishAt: "2026-07-14",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに水族館探索ホラーADVを的確に表す語がないため新設 "aquarium-escape-horror"。
+    // 系譜は開発者本人による自己参照: 2024年2月にGotcha Gotcha Games名義で無料公開された原作
+    //   『アクアリウムは踊らない』(steam appid 2814910)を established anchor として採用。
+    //   本作(Special Edition, appid 3675470)は同じ原作者・橙々によるブランニュー・バージョンで、
+    //   フルボイス化・アナザーストーリー追加・英語対応を加えた有料の完全版(Steam appdetails実測:
+    //   about_the_game に "本作は2024年2月にGotcha Gotcha Gamesより発表された『アクアリウムは
+    //   踊らない』に…追加されたブランニュー・バージョン" と明記)。enjoy-the-diner/shadow-corridor
+    //   と同型の自己参照origin判断。
+    // content_descriptors は ids=[5](General Mature Content のみ・性的表現IDなし)・notes に暴力等の
+    //   一般的成人向け内容の言及のみ(Steam実測、外部注記不採用)。AI生成コンテンツ開示欄はストアページに
+    //   存在せず非AI。発売元Frontier Works Inc.はアニメイトグループ傘下の中堅企業(資本金5,000万円)で、
+    //   ゲーム大手(KOEI/Cygames/Key/ANIPLEX/CAPCOM/Idea Factory/上海アリス級)には非該当。
+    // 英語レビュー比率は約14.2%(40/281、appreviews API実測)で西未発見が強い。Kotakuに専用ページが
+    //   存在するがIGDB由来の自動生成メタデータページ(著者・レビュー本文なし)でありKotaku編集部による
+    //   単独レビューではないことをWebFetchで確認済み。
+    meta: { genre: "aquarium-escape-horror", lineage: "aquarium-does-not-dance-original", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 281, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "The Aquarium does not dance Special Edition",
+        name_ja: "アクアリウムは踊らない Special Edition",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3675470/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A horror adventure about a girl searching for her missing best friend inside an aquarium that has turned into a world of terror. Per Steam's own listing, you explore the aquarium's map, solving puzzles you cannot proceed without, while risking death at the hands of misshapen creatures called Creepies. It began life in February 2024 as a free release credited to Gotcha Gotcha Games (the RPG Maker publishing label); this Special Edition, entirely the original creator 橙々's own new work per Steam's own text, adds full voice acting for its five main heroines, a new \"Another Story\" scenario, revised UI, added event art and music, and English-language support on top of that free original. Published by Frontier Works Inc., a mid-sized company under the Animate Group, it released July 31, 2025 and sits at Overwhelmingly Positive, 98 percent over 281 reviews (274 positive, 7 negative per Steam's own review API). A paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: General Mature Content only, no sexual-content IDs). It supports Japanese, English, Simplified and Traditional Chinese, and Korean, and while only about 40 of its 281 reviews, some 14.2 percent, are in English, Kotaku does carry a page for it — though checking that page directly shows it is an auto-generated database listing with no byline or review text, not an edited feature, so this remains a conversation held almost entirely in Japanese.",
+        desc_ja: "恐怖の世界と化した水族館で、行方不明になった親友を探す少女を描くホラーアドベンチャー。Steam自身の表記によれば、水族館のマップ内を探索してゲームを進め、解かなければ進めない謎がいくつも用意されており、「クリーピー」と呼ばれる異形の存在に襲われ命を落とす危険もある。本作はもともと2024年2月にGotcha Gotcha Games名義で無料公開されたのが始まりで、このSpecial Editionは、Steam自身の表記によれば全て原作者・橙々本人による追加として、メインヒロイン5人のフルボイス化・新規シナリオ「アナザーストーリー」・UIデザイン修正・イベントCG追加・BGM追加・英語対応を無料版に加えたブランニュー・バージョンだ。発行はアニメイトグループ傘下の中堅企業フロンティアワークス。リリース日は2025年7月31日、281件のレビュー(好評274件・不評7件)で好評率98%の「圧倒的に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:一般成人向けのみ、性的表現IDなし)性的な要素もない。日本語・英語・簡体字/繁体字中国語・韓国語に対応するが、281件のうち英語レビューは約40件、14.2%程度に留まる。Kotakuに専用ページはあるが、直接確認するとIGDB由来の自動生成データベースページで著者名もレビュー本文も無く、編集部による特集記事ではない——だからこれは、今のところほぼ日本語だけで交わされる会話のままだ。",
+      },
+      {
+        name_en: "The Aquarium does not dance (free original, Gotcha Gotcha Games, 2024)",
+        name_ja: "アクアリウムは踊らない（無料版・原作）",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2814910/",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The free original this grew from: released free in February 2024 credited to Gotcha Gotcha Games, the RPG Maker publishing label, by creator 橙々. Per Steam's own listing it already carries the same premise — a girl searching for her missing best friend inside a horror-stricken aquarium, exploring and puzzle-solving while risking death from misshapen Creepies — and sits at Overwhelmingly Positive itself, 96 percent over more than a thousand reviews. The Aquarium does not dance Special Edition on Steam is not a new work borrowing that DNA from outside; it is 橙々's own from-scratch expansion of this same free game, per Steam's own text, keeping the same story and cast while adding full voice acting, a new Another Story scenario, and English support.",
+        desc_ja: "本作が育った、その無料版の原点。2024年2月、RPGツクールの発売元Gotcha Gotcha Games名義で、制作者・橙々により無料公開された。Steam自身の表記によれば、この時点ですでに恐怖の水族館で行方不明の親友を探す少女という同じ筋立てを備え、探索と謎解き、異形の存在「クリーピー」による死の危険という骨格も同一で、1,000件超のレビューで自身も好評率96%の「圧倒的に好評」を得ている。Steam版『アクアリウムは踊らない Special Edition』は、外部からこのDNAを借りた新作ではない——橙々本人による、この同じ無料ゲームのゼロからの拡張版だ。Steam自身の表記によれば、同じ物語とキャストを保ったまま、フルボイス化・新規シナリオ「アナザーストーリー」・英語対応を加えている。",
+      },
+    ],
+    en: {
+      title: "The Aquarium does not dance Special Edition - a horror adventure about a girl searching for her best friend inside an ever-shifting aquarium of misshapen creatures, expanded by solo creator 橙々 from a free 2024 original into a fully voiced paid edition published by Frontier Works, Overwhelmingly Positive at 98 percent over 281 reviews though only about 14 percent of reviews are in English",
+      description: "A horror adventure exploring an aquarium turned world of terror, solving puzzles and evading misshapen creatures called Creepies while searching for a missing best friend. Expanded by solo creator 橙々 from a free 2024 original into this fully-voiced Special Edition, published by Frontier Works Inc. under the Animate Group. Overwhelmingly Positive at 98 percent over 281 reviews, with English readers still only around 14 percent.",
+      h1a: "An aquarium where the exhibits have started hunting back, ",
+      h1flip: "and the friend you came in to find keeps slipping one room further away",
+      h1b: ".",
+      lede: "A horror adventure originally released free in February 2024 under the RPG Maker label Gotcha Gotcha Games, then expanded from scratch by its solo creator 橙々 into this fully-voiced Special Edition, published by Frontier Works Inc., a mid-sized company under the Animate Group. Per Steam's own listing, you explore the aquarium's map solving puzzles you cannot proceed without, while misshapen creatures called Creepies threaten to kill you outright. This edition adds full voice acting for its five main heroines, a new \"Another Story\" scenario, revised UI, added event art and music, and English-language support on top of the free original. Released July 31, 2025, it is Overwhelmingly Positive at 98 percent over 281 reviews (274 positive, 7 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: General Mature Content only). It supports Japanese, English, Simplified and Traditional Chinese, and Korean, and while about 40 of its 281 reviews, some 14.2 percent, are already in English, and Kotaku does carry a page for it, that page turns out to be an auto-generated database listing with no byline or review text once checked directly, not an edited feature — so this remains, for now, a conversation held almost entirely in Japanese.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Steam's own listing frames the puzzles as mandatory gates you cannot proceed past without solving, and per that same listing misshapen Creepies can kill you outright mid-search, so every room doubles as both a lock you have to pick and a threat you have to read before it reads you.",
+        "This Special Edition adds full voice acting for all five main heroines on top of the free original, so the cast a solo creator once conveyed through text alone now performs the same friendship-and-fear story with full vocal presence, changing how much the missing-friend search lands emotionally scene to scene.",
+        "Clearing the base story unlocks a new \"Another Story\" scenario exclusive to this edition, so the mystery of who else was really in that aquarium keeps resolving itself after the first ending, rather than closing the moment you find your friend.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a puzzle-first horror ADV where every room is a mandatory gate to solve, with real death threats from its monster designs rather than jump-scare padding",
+        "You want a small Japanese solo production carried to Steam: a free February 2024 original by creator 橙々, expanded from scratch into a fully-voiced paid edition and published through the mid-sized Frontier Works Inc.",
+        "You want to catch an Overwhelmingly Positive title (98 percent over 281 reviews) while the West is still mostly absent: only about 14 percent of its reviews are in English, and its lone Kotaku page turns out to be an unedited auto-generated listing rather than a Western review",
+      ],
+      bad: [
+        "You want a long game or heavy combat; this is a puzzle-and-exploration horror ADV of moderate length with monster encounters rather than a full combat system",
+        "You want the free original instead; this Special Edition is a paid title, not free and not in Early Access, adding full voice acting, a new Another Story scenario, and English support that the free 2024 version does not have, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: General Mature Content only)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "アクアリウムは踊らない Special Edition - 異形の存在が徘徊する水族館で行方不明の親友を探す、謎解き主体のホラーアドベンチャー。個人制作者・橙々が2024年の無料版からフルボイス化して拡張した有料完全版、発行はフロンティアワークス。281件のレビューで好評率98%の「圧倒的に好評」ながら、英語レビューはまだ約14%",
+      description: "異形の存在「クリーピー」が徘徊する、恐怖の世界と化した水族館を探索し、謎を解きながら行方不明の親友を探すホラーアドベンチャー。個人制作者・橙々が2024年の無料版からフルボイス化して拡張したSpecial Edition。発行はアニメイトグループ傘下のフロンティアワークス。281件のレビューで好評率98%の「圧倒的に好評」、英語レビューはまだ約14%に留まる。",
+      h1a: "展示されていた者たちが、狩る側に回った水族館がある。",
+      h1flip: "探しに来たはずの親友は、話すたびにもう一部屋、遠くへ行ってしまう",
+      h1b: "。",
+      lede: "もとは2024年2月、RPGツクールの発売元Gotcha Gotcha Games名義で無料公開されたホラーアドベンチャー。制作者・橙々本人がゼロから拡張し、このフルボイスのSpecial Editionへと仕上げた。発行はアニメイトグループ傘下の中堅企業、フロンティアワークス。Steam自身の表記によれば、水族館のマップ内を探索し、解かなければ進めない謎がいくつも待ち構え、異形の存在「クリーピー」に襲われれば命を落とす危険もある。本エディションでは、無料版にメインヒロイン5人のフルボイス化・新規シナリオ「アナザーストーリー」・UIデザイン修正・イベントCG追加・BGM追加・英語対応が加えられている。リリース日は2025年7月31日、281件のレビュー(好評274件・不評7件)で好評率98%の「圧倒的に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:一般成人向けのみ)性的な要素もない。日本語・英語・簡体字/繁体字中国語・韓国語に対応するが、281件のうち約40件、14.2%程度がすでに英語レビューで、Kotakuに専用ページもあるが、直接確認するとIGDB由来の自動生成データベースページで著者名もレビュー本文も無く、編集部による特集記事ではない——だからこれは今のところ、ほぼ日本語だけで交わされる会話のままだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、謎は解かなければ先に進めない必須の関門として設計されており、同じ表記によれば探索中は異形の存在「クリーピー」に襲われ命を落とす危険もある。だからどの部屋も、解くべき錠であると同時に、読み解く前に読まれてしまう脅威にもなる。",
+        "このSpecial Editionは無料版にメインヒロイン5人分のフルボイスを新たに追加しており、個人制作者がかつてテキストだけで伝えていた友情と恐怖の物語が、今は声の存在感を伴って場面ごとに響くようになった。",
+        "本編をクリアすると、このエディション限定の新規シナリオ「アナザーストーリー」が解放される。だから、あの水族館に本当は誰がいたのかという謎は、最初のエンディングの後も解け続ける——親友を見つけた瞬間に終わる話ではない。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "謎解き主体のホラーADVが欲しい人——どの部屋も解かなければ進めない関門で、ジャンプスケアの水増しではなく実際の死の脅威を伴うモンスターデザインがある",
+        "Steamへ届いた小規模な日本の個人発プロダクションが欲しい人——制作者・橙々による2024年2月の無料版を、本人がゼロから拡張しフルボイス化した有料版に仕立て、中堅企業フロンティアワークスが発行した一本",
+        "西側がまだほとんど到達していない「圧倒的に好評」タイトル(281件のレビューで98%)を掴みたい人——英語レビューはまだ約14%で、唯一のKotakuページも直接確認すると編集された西側レビューではなく無編集の自動生成リストに過ぎない",
+      ],
+      bad: [
+        "長時間のボリュームや本格的な戦闘が欲しい人——本作は謎解きと探索が主体の中程度の長さのホラーADVで、本格的な戦闘システムはなくモンスターとの遭遇のみ",
+        "無料版で十分だという人——このSpecial Editionは無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。フルボイス化・新規シナリオ「アナザーストーリー」・英語対応は2024年の無料版には無く、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:一般成人向けのみ)性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7824,6 +7918,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "影廊 -Shadow Corridor- (Kageroh: Shadow Corridor) is a free Japanese indie horror game, released for free on the freeware platform Freem with a release date of June 21, 2017, made by the solo developer Kazuki Shiroma. Shiroma first posted footage of a Western-styled horror project on Niconico Douga in February 2016 under the handle Kagetsu (花月), reworked it into a Japanese-styled one that April, and the finished free game went on to win the Gold Award in the Horror category at Freem's 13th game contest. It set the template this lineage grows from: creep through the corridors of a traditional Japanese building using only whatever light and items you can find, and survive by evading, not fighting, the Noh-mask apparitions that hunt you by sight and sound. Shiroma later rebuilt it from the ground up as the commercial Shadow Corridor on Steam, which keeps that same loop while adding, per its own store listing, 'more than ten times' the free original's content, on top of a new story and additional mechanics.",
       ja: "影廊 -Shadow Corridor-は、日本のフリーゲーム配信サイト「ふりーむ！」でリリース日2017年6月21日に無料公開された、ソロ開発者 城間一樹 による日本産インディーホラーゲームだ。城間は2016年2月、当時の旧HN「花月」名義で洋風テイストのホラーゲームの制作映像をニコニコ動画に投稿し始め、同年4月には和風ホラーへと方向転換、完成したフリー版は第13回ふりーむ！ゲームコンテストのホラー部門で金賞を受賞した。和風建築の回廊を、手持ちの明かりと見つけたアイテムだけを頼りに歩き、視覚と聴覚で追う能面の徘徊者を、戦うのではなく避けてやり過ごして生き延びる——この系譜のひな型を作った一本だ。城間は後に、この同じ作品をゼロから作り直し、Steamで商業版『Shadow Corridor』としてリリースした。同じループを保ったまま、新規のストーリーと追加のゲームシステムを加え、Steam自身のストア表記によれば、そのボリュームは無料版の「何と10倍以上」になっている。",
+    },
+  },
+  // 原点 アクアリウムは踊らない(無料版), Gotcha Gotcha Games名義, 2024年2月14日リリース(Steam appdetails
+  //   実測)。制作者・橙々による1,000件超レビュー・好評率96%の水族館探索ホラーADV。Special Edition
+  //   (appid 3675470)は同一制作者によるフルボイス化+新規シナリオ追加のブランニュー・バージョンで
+  //   (Steam about_the_game実測: "本作は2024年2月にGotcha Gotcha Gamesより発表された『アクアリウムは
+  //   踊らない』に…追加されたブランニュー・バージョン")、kageroh/moonpalace型の自己参照origin判断。
+  "aquarium-does-not-dance-original": {
+    steam: "2814910",
+    blurb: {
+      en: "The Aquarium does not dance is a free Japanese horror adventure released February 14, 2024 under the RPG Maker publishing label Gotcha Gotcha Games, made by solo creator 橙々 (Daidai). Per its own store listing, it already carries the template this grew from: a girl exploring an aquarium turned world of terror in search of her missing best friend, solving mandatory puzzles while misshapen creatures called Creepies threaten to kill her outright, told across a multi-ending story. The free game itself sits at Overwhelmingly Positive, 96 percent over more than a thousand reviews. The Aquarium does not dance Special Edition on Steam is not a new work borrowing that DNA from outside; it is 橙々's own from-scratch expansion of this same free game, per Steam's own text, keeping the same story and cast while adding full voice acting, a new Another Story scenario, and English-language support.",
+      ja: "『アクアリウムは踊らない』は、RPGツクールの発売元Gotcha Gotcha Games名義で2024年2月14日に無料公開された、制作者・橙々による日本産ホラーアドベンチャーだ。Steam自身の表記によれば、この時点ですでにこの系譜のひな型——恐怖の世界と化した水族館で行方不明の親友を探す少女が、解かなければ進めない謎を解きながら、命を落としかねない異形の存在「クリーピー」の脅威をくぐり抜けていく、マルチエンディングの物語——を備えていた。この無料版自体も1,000件超のレビューで好評率96%の「圧倒的に好評」を得ている。Steam版『アクアリウムは踊らない Special Edition』は、外部からこのDNAを借りた新作ではない——橙々本人による、この同じ無料ゲームのゼロからの拡張版だ。Steam自身の表記によれば、同じ物語とキャストを保ったまま、フルボイス化・新規シナリオ「アナザーストーリー」・英語対応を加えている。",
     },
   },
   // 原点 パーフェクトブルー(Perfect Blue), 今敏監督, マッドハウス制作, 1997年公開。竹内義和の同名小説を
