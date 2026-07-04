@@ -6401,6 +6401,108 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "revolgear-zero": {
+    published: "2026-07-11",
+    publishAt: "2026-07-11",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存 "shoot-em-up"(Steam自身のジャンルタグは Action/Adventure/Casual だが、STG専用タグが
+    //   Steamに無いための表面上の分類。実体は横スクロールシューティング——Steam公式ストア本文(日本語版)が
+    //   「本格横スクロールシューティング」と明記・appdetails実測確認済み——であり devil-blade-reboot と
+    //   同じ genre を採用)。
+    // 系譜は RayStorm(タイトー、1996年アーケード稼働)——開発者ねこび白銀氏がTech-Gaming単独インタビューで
+    //   「決定的な影響」と明言(developer-confirmed・monster-rancher型の一次情報)。RayStorm単体のSteam版は
+    //   無いため、収録コンピレーション『Ray'z Arcade Chronology』(M2開発・タイトー発売、Steam配信開始2023年
+    //   9月25日、appid 2478020、Steam appdetails実測確認済み)のURLを lineage_anchor_key=steam_url として
+    //   採用(devil-blade-reboot型・原作単体の流通が無い場合の代替アンカー)。同インタビューで開発者は、
+    //   バースト/ゲージ機構「メガビットシステム」の直接の元ネタとして『DoDonPachi II: Bee Storm』
+    //   (シリーズ通常の開発元ケイブでなくIGSが開発・Wikipedia実測確認済み)の「エネルギーモード」も併せて
+    //   名指ししているが、今回与えられた anchor は1つ(RayStorm/Ray'z Arcade Chronology)のみのため、
+    //   DoDonPachi II は新規 anchor 化せず established 側の本文内言及に留める(捏造しない・一次情報の範囲を
+    //   超えない)。
+    // obscurity は "deep"(noEnglish=false、Steam自身が英語対応済み)。reviewBand は持たせない: 129件は
+    //   elbab-library-autobattler(同じ129件)と同帯で "hundreds"(数百)と言い切るには境界的(誇張しない)。
+    //   reachState は持たせない: 英語レビュー比率34.1%(44/129、Steam appreviews API実測)は過半数に満たない
+    //   ものの、Tech-Gaming・DualShockers・Video Chums・WayTooManyGames・Game Critix・Gazettely・
+    //   Co-Optimus・GameRant と西側メディア8媒体がすでにレビュー済み(the-last-salvage-squad型・複数媒体
+    //   到達済みの場合はreachStateを立てない、誇張しない判断)。release_date は Steam appdetails実測(英語版
+    //   ストア)のリリース表記2026年2月18日を正として採用。4Gamer/ファミ通は発売日を2月19日と表記しており
+    //   1日のズレがあるが、二次情報として両論併記しSteamの記載日を正とする(捏造しない・the-last-salvage-squad型)。
+    //   content_descriptors は ids=[]・notes=null(API実測)。
+    meta: { genre: "shoot-em-up", lineage: "raystorm", obscurity: "deep", rarity: { reviews: 129, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "Revolgear Zero",
+        name_ja: "Revolgear Zero（リボルギア・ゼロ）",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3941820/Revolgear_Zero/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A side-scrolling shoot 'em up in which two rival pilots, Shizuku and Akane, fly the Revolgear-class fighters Pheasant and Dove to defend their home world from an invading force called Xeno, developed by the four-person Osaka doujin circle Bikkuri Software and published by Henteko Doujin and Sanuk Inc. Its core is what the developer calls the Megabit System: a boomerang-style Bit Shoot throws an orb out to scoop up energy and dropped items at range instead of flying in for them, and once that shared gauge fills, Burst spends every point of it at once to erase the enemy bullets already on screen and slam a heavy hit into whatever is still standing, a system its creator, who goes by Nekobi Shirogane, built as an evolution of the grazing system from the studio's earlier Graze Counter GM. In a solo interview with Tech-Gaming, Shirogane named Taito's 1996 arcade shooter RayStorm a 'decisive influence' on the game, and separately credited the energy mode of DoDonPachi II as the direct model for the Megabit System's own gauge. Two playable pilots, seven stages across four difficulty levels, a 30-stage mission mode, more than 2,000 equipment combinations, six possible endings, and local co-op play round it out, alongside a mystery bonus game, God of Cats; the four-person team, all working other jobs, built it in sessions of roughly two to three hours a day. Per Steam's own listing it released February 18, 2026 (some Japanese outlets, including 4Gamer and Famitsu, list a release date of February 19, a one-day gap we note here rather than resolve outright), and it sits at Very Positive, 98 percent, per Steam's own store page (127 of 129 reviews positive per Steam's review API). It is voiced entirely in Japanese, with English, Simplified Chinese, and Traditional Chinese available as text; a paid title at ¥1,480 in Japan, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). Outlets including Tech-Gaming (91/100), DualShockers (8/10), Video Chums (4/5), WayTooManyGames, Game Critix, Gazettely, Co-Optimus, and GameRant have already reviewed it, yet only about 44 of its 129 reviews, roughly 34.1 percent, are in English so far, so this reads less as a game the West has never touched and more as a small one a slice of its indie shmup audience has already quietly found.",
+        desc_ja: "リボル星の宇宙戦闘機「リボルギア」を駆るライバル同士のパイロット、雫と緋音が、侵略者「ゼノ」から故郷を守るために戦う横スクロールシューティング。開発は大阪拠点の同人サークル びっくりソフトウェア(4名体制)、発売は Henteko Doujin と Sanuk Inc.。核となるのは開発者が「メガビットシステム」と呼ぶ攻防一体のゲージ機構——ブーメラン状に飛ばす「ビットシュート」で、自ら突っ込まずとも遠距離からエネルギーや落下アイテムを回収でき、共有のゲージが満タンになると「バースト」でその全てを一気に消費し、画面上の敵弾をまとめて消し去りながら、なお立っている敵に大ダメージを叩き込む。この仕組みは、代表のねこび白銀氏が前作『Graze Counter GM』のかすり(グレイズ)システムを発展させて構築したものだ。Tech-Gamingの単独インタビューで白銀氏は、タイトーのアーケードシューティング RayStorm(レイストーム)を本作への「決定的な影響」と名指しし、あわせて『DoDonPachi II: Bee Storm』の「エネルギーモード」を、メガビットシステムそのもののゲージ機構の直接の元ネタとして挙げている。操作キャラは2人、7ステージ×4段階の難易度、30面のミッションモード、2,000通り以上の装備の組み合わせ、6種のマルチエンディング、ローカル協力プレイに加え、おまけの謎ミニゲーム「ネコの神」も収録。本業を持つ4人のチームが、1日2〜3時間ペースで作り上げた。Steam自身の表記によればリリース日は2026年2月18日(4Gamer・ファミ通など一部の国内メディアは発売日を2月19日と表記しており、この1日のズレはここに記すに留め、どちらか一方を正として断定しない)。Steam自身のストアページで好評率98%の「非常に好評」(Steamのレビューデータでは129件中127件が好評)。音声は日本語のみのフルボイスで、英語・簡体字中国語・繁体字中国語はテキストで対応。無料ではない有料作(日本では1,480円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。Tech-Gaming(91/100)・DualShockers(8/10)・Video Chums(4/5)・WayTooManyGames・Game Critix・Gazettely・Co-Optimus・GameRantといった媒体がすでにレビューを掲載しているが、129件のレビューのうち英語はまだ約44件、約34.1%に留まる。だからこれは「西側がまったく触れていない一本」というより、「西の弾幕シューター好きの一部が、すでにひっそりと見つけ始めている小粒な一本」と読む方が正確だ。",
+      },
+      {
+        name_en: "RayStorm",
+        name_ja: "レイストーム",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2478020/Rayz_Arcade_Chronology/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The influence Bikkuri Software's own developer names directly: RayStorm, a vertically scrolling shoot 'em up developed and published by Taito, which powered up Japanese arcades in 1996 as the sequel to RayForce. Rendered with 3D polygon enemies over scrolling backgrounds, it is best known for its lock-on laser, holding a button to paint a reticle across several enemies at once and releasing it to fire a spread of homing lasers that erases them in a single strike. The 1996 arcade original has no standalone Steam release; its only current PC form is Ray'z Arcade Chronology, a 2023 collection developed by M2 Co., Ltd. and published by Taito that gathers RayStorm with RayForce and RayCrisis in HD. In a solo interview with Tech-Gaming, Bikkuri Software's Nekobi Shirogane named RayStorm a 'decisive influence' on Revolgear Zero, and separately credited DoDonPachi II: Bee Storm, developed not by the series' usual studio Cave but by IGS, for its energy mode as the direct model for the Megabit System, the gauge-driven burst that Revolgear Zero builds its whole design around.",
+        desc_ja: "びっくりソフトウェアの開発者本人が名指しした影響元——RayStorm(レイストーム)。タイトーが開発・発売した縦スクロールシューティングで、『レイフォース』の続編として1996年に日本のアーケードで稼働を開始した。スクロールする背景に3Dポリゴンの敵を描く作りで知られ、代名詞は「ロックオンレーザー」——ボタンを押し続けて複数の敵に同時に照準を合わせ、放つと追尾レーザーの束が一気に敵を消し去る。1996年のアーケード原作単体のSteam版は存在せず、今日PCで唯一遊べる形は、M2が開発しタイトーが発売した2023年のコレクション『Ray'z Arcade Chronology』で、レイフォース・レイクライシスとともにHD収録されている。Tech-Gamingの単独インタビューで、びっくりソフトウェアのねこび白銀氏は RayStorm を『リボルギア・ゼロ』への「決定的な影響」と名指しし、あわせて——シリーズの通常の開発元ケイブではなくアイジーエス(IGS)が手がけた『DoDonPachi II: Bee Storm』の「エネルギーモード」を、本作の設計全体を貫くゲージ制バースト「メガビットシステム」の直接の元ネタとして挙げている。",
+      },
+    ],
+    en: {
+      title: "Revolgear Zero - a buried side-scrolling shmup whose developer named Taito's RayStorm a decisive influence and DoDonPachi II's energy mode the direct model for its Megabit System, a shared gauge you spend all at once to erase every bullet on screen, Very Positive at 98 percent over 129 reviews though only about a third of them are English",
+      description: "A side-scrolling shmup by the four-person Osaka doujin circle Bikkuri Software. Two rival pilots build a shared energy gauge through a boomerang-style Bit Shoot, then spend it all at once in a Burst that erases enemy bullets outright. The developer named Taito's RayStorm a decisive influence and DoDonPachi II's energy mode the model for that gauge. Very Positive at 98 percent over 129 reviews, still only about a third English.",
+      h1a: "Every hit feeds the same gauge. ",
+      h1flip: "Spend it all in one Burst, and the whole screen of bullets is simply gone",
+      h1b: ".",
+      lede: "A side-scrolling shoot 'em up developed by Bikkuri Software, a four-person doujin circle out of Osaka working on it around their day jobs, and published by Henteko Doujin and Sanuk Inc. Two rival pilots, Shizuku and Akane, fly the Revolgear fighters Pheasant and Dove against an invading force called Xeno, building a shared energy gauge, the Megabit System, through a boomerang-style Bit Shoot that grabs energy and items at range, then spending every point of it at once in a Burst that erases the bullets on screen and slams a finishing hit into whatever survives. Its creator, Nekobi Shirogane, named Taito's 1996 arcade shooter RayStorm a 'decisive influence' in a solo interview with Tech-Gaming, and separately credited DoDonPachi II's energy mode as the direct model for that gauge, an evolution of the grazing system the studio first built in Graze Counter GM. Seven stages across four difficulties, a 30-stage mission mode, more than 2,000 equipment combinations, six endings, and local co-op fill it out, alongside the bonus game God of Cats. It is Very Positive at 98 percent over 129 reviews, and while outlets from Tech-Gaming to GameRant have already reviewed it, only about a third of those reviews are in English so far.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The boomerang-style Bit Shoot throws out and calls back a single orb, letting you scoop up energy and dropped items from a distance instead of flying into the crossfire for them, so the same gauge that will later save you keeps climbing whether you play it cautious or aggressive.",
+        "Once that gauge is full, Burst spends every point of it in one motion, erasing the enemy bullets already on screen and slamming a heavy hit into whatever is still standing, so the same button that gets you out of a wall of bullets is the one that decides how much damage you just gave up waiting to press it.",
+        "Score earned from whatever a Burst destroys funds the shop between runs, so how eagerly you spend the gauge this stage decides which of the game's more than 2,000 equipment combinations you can actually afford for the next one, turning a single panic button into the whole build.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a developer-confirmed heir to Taito's RayStorm and to DoDonPachi II's energy-gauge design, built by a four-person doujin circle around a single gauge you can hoard for damage or dump for survival",
+        "You want deep build variety with a story to match: two playable pilots, seven stages across four difficulties, a 30-stage mission mode, more than 2,000 equipment combinations, six endings, and local co-op, plus the bonus game God of Cats",
+        "You want to catch a small Japanese doujin circle's release while the wider West is still only starting to notice it: Very Positive at 98 percent over 129 reviews, already praised by Tech-Gaming, DualShockers, and Video Chums among others",
+      ],
+      bad: [
+        "You want a slow, careful shooter you dodge by hand; the Megabit System is built around the gamble of when to spend the whole gauge at once, and it is a paid, fully launched title, not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+        "You want a game the West has never touched at all; Tech-Gaming, DualShockers, Video Chums, WayTooManyGames, Game Critix, Gazettely, Co-Optimus, and GameRant have all already covered it, so calling it fully undiscovered would not be honest. What is true is that only about 34.1 percent of its 129 reviews are in English so far, and most of its support still reads Japanese",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Revolgear Zero - 開発者本人がタイトーの RayStorm を「決定的な影響」、DoDonPachi II の「エネルギーモード」をゲージ機構「メガビットシステム」の直接の元ネタと明言した、埋もれた横スクロールシューティング。溜めたゲージを一気に使い切ると画面の敵弾がまとめて消える。129件のレビューで好評率98%の「非常に好評」ながら、英語レビューはまだ約3割",
+      description: "大阪拠点の同人サークル びっくりソフトウェア(4名体制)による横スクロールシューティング。ライバル同士のパイロット2人が、ブーメラン状の「ビットシュート」で共有のエネルギーゲージを溜め、「バースト」で一気に使い切って敵弾をまとめて消し去る。開発者はタイトーの RayStorm を「決定的な影響」、DoDonPachi II の「エネルギーモード」をそのゲージの元ネタと明言。129件のレビューで好評率98%の「非常に好評」、英語レビューはまだ約3割。",
+      h1a: "敵を撃つたび、同じゲージが溜まっていく。",
+      h1flip: "「バースト」で一気に使い切れば、画面を埋めた弾がまるごと消える",
+      h1b: "。",
+      lede: "大阪拠点の同人サークル びっくりソフトウェア(4名体制、全員本業を持ちながらの兼業開発)が手がけ、Henteko Doujin と Sanuk Inc. が発売する横スクロールシューティング。ライバル同士のパイロット、雫と緋音が、リボルギア級戦闘機「Pheasant」と「Dove」を駆り、侵略者「ゼノ」に立ち向かう。ブーメラン状に飛ばす「ビットシュート」で遠距離からエネルギーやアイテムを回収し、共有ゲージ「メガビットシステム」を溜め、満タンになると「バースト」で一気に消費して画面上の敵弾をまとめて消し去り、なお残る敵にとどめを刺す。代表のねこび白銀氏は、Tech-Gamingの単独インタビューでタイトーのアーケードシューティング RayStorm を「決定的な影響」と名指しし、あわせて DoDonPachi II の「エネルギーモード」をそのゲージ機構の直接の元ネタとして挙げている。前作『Graze Counter GM』のかすり(グレイズ)システムを発展させた設計だ。操作キャラは2人、7ステージ×4段階の難易度、30面のミッションモード、2,000通り以上の装備の組み合わせ、6種のマルチエンディング、ローカル協力プレイに加え、おまけの謎ミニゲーム「ネコの神」も収録。129件のレビューで好評率98%の「非常に好評」。Tech-Gamingから GameRant まで複数の媒体がすでにレビューを掲載しているが、そのうち英語はまだ約3割に留まる。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ブーメラン状の「ビットシュート」は投げて呼び戻せる一つの弾——だから自ら弾幕へ突っ込まずとも、遠距離からエネルギーや落下アイテムをかき集められる。慎重に立ち回ろうと、攻めに攻めようと、後であなたを救うことになる同じゲージは、そのぶんだけ着実に溜まっていく。",
+        "ゲージが満タンになると、「バースト」はその全てを一動作で使い切り、画面上の敵弾をまとめて消し去りながら、なお立っている敵に大ダメージを叩き込む。だから、弾の壁から自分を救い出すのと同じボタンが、押すのを我慢していた分だけどれだけの火力を手放したのかも、同時に決めてしまう。",
+        "バーストで倒した敵から得たスコアは、次のステージまでの間にショップの購入資金になる。だから今のステージでどれだけ大胆にゲージを使うかが、2,000通り以上ある装備の組み合わせのうち、次に何を買えるかまで決めてしまう——たった一つのパニックボタンが、そのままビルドそのものになる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "タイトーの RayStorm と DoDonPachi II のゲージ設計、その両方への開発者確認済みの後継作が欲しい人——4人の同人サークルが、ダメージのために溜めるか生存のために吐き出すか、一つのゲージを軸に据えて作り上げた一本",
+        "物語も伴った奥深いビルド要素が欲しい人——操作キャラ2人、7ステージ×4段階の難易度、30面のミッションモード、2,000通り以上の装備の組み合わせ、6種のマルチエンディング、ローカル協力プレイ、おまけの「ネコの神」まで揃っている",
+        "日本の小さな同人サークルの新作を、広い西側がまだ気づき始めたばかりのうちに掴みたい人——129件のレビューで好評率98%の「非常に好評」、すでに Tech-Gaming・DualShockers・Video Chums などが高く評価している",
+      ],
+      bad: [
+        "手を動かしてすべて避け切る、じっくりした弾幕シューティングが欲しい人(メガビットシステムは、いつゲージを一気に使い切るかという賭けを核に据えている)。また、無料ではない有料の正式リリース済みタイトルで、アーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない",
+        "西側がまったく触れていない一本が欲しい人(Tech-Gaming・DualShockers・Video Chums・WayTooManyGames・Game Critix・Gazettely・Co-Optimus・GameRantがすでにレビューを掲載しており、「完全未発見」と呼ぶのは正直ではない。本当なのは、129件のレビューのうち英語はまだ約34.1%に留まり、支持の大半は今なお日本語で語られているということだ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7036,6 +7138,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "A root of this taste, confirmed directly by the developer: Monster Rancher, known in Japan as Monster Farm (モンスターファーム), a life-simulation raising game created by Tecmo (now Koei Tecmo), first released for the PlayStation on November 30, 1997 (the Steam version, Monster Rancher 1 & 2 DX, remastering the series' first two entries, was developed and published by Koei Tecmo in December 2021). Its signature gimmick let players generate a brand-new monster by inserting almost any CD into the console, a disc-reading system Tecmo built that turned the disc's own stored data into a random seed for the creature's stats and breed, and from there the player raised it on a training schedule and entered it into official tournaments to fight, a raise-then-battle loop that helped define the genre of monster-raising sims. Asked directly by AUTOMATON JP whether Mamon King is an homage to Monster Rancher, which he has repeatedly cited in interviews, its developer Yoshinama confirmed it outright. Mamon King keeps that raise-then-battle spine, training a summoned creature called a Mamon and entering it into 1-on-1 command battles, but replaces the disc-reading monster generator with a dice-rolled, board-game-style expedition phase between training and battle, and layers an SP resource either fighter can drain onto the fights themselves, additions the original Monster Rancher never had.",
       ja: "この味の原点で、開発者本人が直接明言している一本——Monster Rancher(モンスターファーム)。Tecmo(現・コーエーテクモ)が手がけた育成シミュレーションで、初代は1997年11月30日にPlayStation向けに発売された(Steam版『Monster Rancher 1 & 2 DX』はシリーズ最初の2作をリマスターした版で、2021年12月にコーエーテクモが開発・発売)。象徴的な仕掛けは、手持ちのほぼどんなCDを本体に挿入しても新しいモンスターを生成できるという点にあった——Tecmoが構築したディスク読み取りシステムが、ディスクに記録されたデータをそのまま乱数のシードへ変換し、モンスターのステータスや種族を決定する。そこから先はスケジュールを組んで育成し、公式大会へエントリーして戦わせる——この「育てて、戦わせる」ループが、モンスター育成シムというジャンルを定義づけた。『マモンキング』が『モンスターファーム』へのオマージュかとAUTOMATON JPから直接尋ねられ、開発者よしなま氏はそれを明言している——彼はインタビューでたびたびそのリスペクトを公言してきた人物だ。『マモンキング』は、召喚した「マモン」を育て、1対1のコマンドバトルへ送り出すという同じ「育てて、戦わせる」骨格を受け継ぎながら、CD読み取りによるモンスター生成を、育成と戦闘の間に挟むサイコロ制・すごろく形式の遠征フェーズへと置き換え、さらに戦闘そのものに、互いに奪い合えるSPというリソースを接ぎ木している——いずれも初代『モンスターファーム』には無かった要素だ。",
+    },
+  },
+  // 原点 RayStorm(レイストーム), タイトー開発・発売, 1996年アーケード稼働。開発者ねこび白銀氏が
+  //   Tech-Gaming単独インタビューで Revolgear Zero への「決定的な影響」と明言(developer-confirmed・
+  //   monster-rancher型の一次情報)。1996年のアーケード原作単体のSteam版は無いため、収録コンピレーション
+  //   『Ray'z Arcade Chronology』(M2開発・タイトー発売、appid 2478020、Steam appdetails実測確認済み)の
+  //   URLで同定(devil-blade-reboot型・原作単体の流通が無い場合の代替アンカー・href破損回避)。
+  "raystorm": {
+    steam: "2478020",
+    blurb: {
+      en: "RayStorm is a vertically scrolling shoot 'em up developed and published by Taito, released in Japanese arcades in 1996 as the sequel to RayForce (also known abroad as Layer Section or Gunlock). Rendered with 3D polygon enemies over scrolling 2D backgrounds, it is best known for its lock-on laser: holding a button paints a reticle across multiple enemies at once, and releasing it fires a spread of homing lasers that clears them out in a single strike, letting the player neutralize threats before they can even return fire. The 1996 arcade original has no standalone Steam release; its only form available today is Ray'z Arcade Chronology, a collection developed by M2 Co., Ltd. and published by Taito that gathers RayStorm alongside RayForce and RayCrisis with HD-remastered visuals. It is the origin of a lineage built around locking onto and erasing threats in bulk rather than weaving between them one at a time.",
+      ja: "RayStorm(レイストーム)は、タイトーが開発・発売した縦スクロールシューティングで、『レイフォース』(海外名Layer Section / Gunlock)の続編として1996年に日本のアーケードで稼働を開始した。スクロールする2Dの背景に3Dポリゴンの敵を描画する作りで知られ、代名詞は「ロックオンレーザー」——ボタンを押し続けて複数の敵に同時に照準を合わせ、放つと追尾レーザーの束が一気に敵を消し去り、反撃を受ける前に脅威を無力化できる。1996年のアーケード原作単体のSteam版は存在せず、今日唯一入手できる形は、M2が開発しタイトーが発売したコレクション『Ray'z Arcade Chronology』で、レイフォース・レイクライシスとともにHDリマスターされた本作が収録されている。一体ずつ避けるのではなく、まとめてロックオンして消し去るという系譜の原点である。",
     },
   },
 } as const;
