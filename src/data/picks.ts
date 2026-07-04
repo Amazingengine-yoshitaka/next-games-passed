@@ -6705,6 +6705,115 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "shadow-corridor": {
+    published: "2026-07-12",
+    publishAt: "2026-07-12",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存 "exploration-horror"(naribiki-mura で使用中の fatal-frame系ラベル)を採用:
+    //   Steam自身のジャンルタグは Action/Indie のみ(appdetails実測確認済み・専用ホラー
+    //   タグは無い)だが、実体は一人称視点・戦闘なし・手続き生成される和風建築の回廊を探索し「能面」の
+    //   追跡者から逃げる探索ホラーで(Steam本文実測: "Traverse randomized dungeons" / "Beware the curse
+    //   of the Noh Mask that stalks you around every corner")、既存の exploration-horror 群と同じ核を持つ。
+    // 系譜は外部作品(零/Fatal Frame・青鬼等)への安易な断定を避け、開発者本人の無料版原典——リリース日
+    //   2017年6月21日、ふりーむ！で無料公開された『影廊 -Shadow Corridor-』(制作者 城間一樹、当時の旧HN
+    //   「花月」)を新規 anchor "kageroh" として採用する(lineage_anchor_key=wikidata_qid, Q97198038。
+    //   Wikidata実測: jawiki sitelink "Shadow Corridor"、公式サイトP856=https://www.spaceonigirigames.com/
+    //   games)。第13回ふりーむ！ゲームコンテスト ホラー部門金賞受賞は、ふりーむ配信ページ本体に加え、
+    //   Steam自身の英語レビュー本文(recommendationid 49634997: 無料デモ時代を指して "it won site-wide
+    //   awards for best Horror game" と証言)からも独立に裏付けが取れている。本Steam版(appid 1025250)は
+    //   この無料版の直系の全面リメイクで、Steam自身の about_the_game(EN/JA両ロケール実測)が新規ストー
+    //   リーと追加のゲームシステムに加え「そのボリュームは何と10倍以上」と明記。原版の配信は今も生きて
+    //   いる(freem.ne.jp/win/game/15097、直接WebFetchで200応答・現行ページ実測確認済み)ため、established
+    //   側は wikidata(anchorとの逆引きキー)+ homepage(開発元公式サイトの本作専用ページ)+ freem(配信
+    //   ページ本体)を併記し、Steam URLを持たない established の href 破損を防ぐ(捏造しない・gradius/
+    //   mother-3型)。
+    // obscurity は "deep"(総レビュー2,176件は少数とは言えないが、西側での認知は薄い・revolgear-zero/
+    //   mirage-feathers型)。reachState は持たせない: WayTooManyGames(waytoomany.games、Final Verdict
+    //   4.5)・Real Otaku Gamer(realotakugamer.com、"Better Off Staying in the Dark - Shadow Corridor
+    //   Review")の実記事、およびMetacriticの批評ページ(コンシューマ版に対するGameGrin/Video Chums/
+    //   Pure Nintendoのスコア)を直接WebFetchで実測確認済みであり、「西側未到達」と言い切るのは誇張
+    //   (revolgear-zero/mirage-feathers型・複数媒体到達済みは誇張しない判断)。reviewBand は持たせない:
+    //   2,176件は「数百」にも「約千」にも当てはまらない(誇張しない・lofi-girl型)。noEnglish=false(英語
+    //   テキスト対応済み・フルボイスは日本語のみ)。content_descriptors は ids=[]・notes=null(API実測、
+    //   EN/JA両ロケール一致)。好評率はストアページのキャッシュ表示「91%(1,974件)」より新しい
+    //   appreviews API実測(2,176件・positive 1,969・90.487%)を正とし、整数へ丸めた90を採用。
+    meta: { genre: "exploration-horror", lineage: "kageroh", obscurity: "deep", rarity: { reviews: 2176, positivePct: 90, noEnglish: false } },
+    games: [
+      {
+        name_en: "Shadow Corridor",
+        name_ja: "影廊 -Shadow Corridor-",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1025250/Shadow_Corridor/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A first-person, combat-free 3D horror escape game: at summer dusk you wander into an ancient, labyrinthine mansion of bamboo and tatami, and must scour its procedurally generated halls for glowing Magatama stones to unlock the door out, carrying only a lighter as your one light source (extinguishing it helps you go undetected, but leaves you blind) plus whatever active items, firecrackers, a teleport mirror, and passive ones, like a stamina leaf, you scavenge along the way, while several distinct kinds of Noh-mask apparition, each with its own detection patterns, hunt you by sight and by sound and must be read and slipped past rather than fought. Developed and self-published by the solo Japanese developer Space Onigiri Game LLC, led by Kazuki Shiroma, who began posting early development footage under the handle Kagetsu (花月) in 2016. Per player reviews, dying restarts you at a checkpoint on the same generated map with your held items intact, but any reusable markers you had already placed stay wherever you dropped them, and quitting the run outright regenerates the whole map and sends the next level back to zero items, a real risk some reviews flag directly. Beyond that first corridor, further stages carry the story onward across multiple difficulty levels, with a bonus area unlocked only through what one reviewer called an 'ironman-esque' challenge. This is a ground-up commercial expansion of what began as a free Japanese indie demo: Steam's own listing describes the finished release as carrying 'more than ten times' that original's content, on top of a new story and additional mechanics. Released March 8, 2019, it is Very Positive at 90 percent over 2,176 reviews (1,969 positive per Steam's own review API), a paid title at $7.99 in the US (¥820 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It is voiced entirely in Japanese, with English, Korean, Russian, and Simplified Chinese available as text. Western outlets including WayTooManyGames (Final Verdict: 4.5) and Real Otaku Gamer have already reviewed it, and Metacritic hosts further critic reviews of its console ports from GameGrin, Video Chums, and Pure Nintendo, yet only about 73 of its 2,176 reviews, roughly 3.35 percent, are in English so far, so this overwhelmingly positive reception still reads almost entirely in Japanese.",
+        desc_ja: "一人称視点・戦闘要素なしの3Dホラー脱出ゲーム。夏の夕暮れ、迷い込んだ先は竹と畳造りの古い迷宮のような屋敷——手続き生成されるその回廊を歩き、脱出の扉を開ける光る勾玉(まがたま)を探し出さなければならない。頼れる光源はライター一つ(火を消せば見つかりにくくなるが、その代わり周りは何も見えなくなる)。道中で拾う爆竹やテレポート鏡といった能動的なアイテム、体力の葉のような受動的なアイテムだけを頼りに、視覚と聴覚でこちらを追う複数種の能面の徘徊者——それぞれ固有の探知パターンを持つ——を、戦うのではなく読んで避けてやり過ごす。開発・自社セルフパブリッシュは、日本のソロ開発者 城間一樹 が率いる Space Onigiri Game LLC(スペースおにぎりゲーム合同会社)。城間は2016年、当時の旧HN「花月」名義で開発中の映像をニコニコ動画に投稿し始めた人物だ。プレイヤーレビューによれば、死亡した場合は同じ生成マップ上のチェックポイントから、手持ちアイテムを保持したまま再開できるが、すでに設置し終えた再利用可能なマーカー類は落とした場所に残ったまま手元には戻らず、ラン自体を中断してしまうとマップ全体が生成し直され、次のレベルはアイテムゼロから始まる——一部のレビューが直接指摘するリスクだ。最初の回廊の先にはさらなるステージが続いて物語を進め、複数の難易度が用意されており、あるレビュアーが「アイアンマン的」と評した挑戦を突破しないと解放されないおまけエリアもある。本作はもともと無料の日本産インディーデモとして始まった作品を、ゼロから作り直した商業拡張版だ——Steam自身の表記は、完成版のボリュームは原版の「何と10倍以上」になったとし、新規のストーリーと追加のゲームシステムも加えたとしている。リリース日は2019年3月8日、2,176件のレビュー(Steam自身のレビューAPIでは1,969件が好評)で好評率90%の「非常に好評」。無料ではない有料タイトル(米国7.99ドル、日本では820円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。音声は日本語のみのフルボイスで、英語・韓国語・ロシア語・簡体字中国語はテキストで対応。WayTooManyGames(最終評価4.5)やReal Otaku Gamerといった西側メディアがすでにレビューを掲載し、Metacriticには家庭用機版に対するGameGrin・Video Chums・Pure Nintendoの批評ページも存在するが、2,176件のレビューのうち英語はまだ約73件、約3.35%に留まり、この圧倒的に好評な評価は今なお、ほとんどが日本語で語られている。",
+      },
+      {
+        name_en: "Kageroh: Shadow Corridor",
+        name_ja: "影廊 -Shadow Corridor-",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q97198038",
+        homepage: "https://www.spaceonigirigames.com/%E5%BD%B1%E5%BB%8A-shadowcorridor",
+        freem: "https://www.freem.ne.jp/win/game/15097",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The free original this grew from: 影廊 -Shadow Corridor- (Kageroh: Shadow Corridor), released for free on the Japanese freeware platform Freem, with a release date of June 21, 2017. Its creator, Kazuki Shiroma, first posted footage of a Western-styled horror project on Niconico Douga in February 2016 under the handle Kagetsu (花月), then reworked it into a Japanese-styled one that April; the finished free game went on to win the Gold Award in the Horror category at Freem's 13th game contest. It already carried this taste's core DNA: creeping through a traditional Japanese building by whatever light you carry, evading rather than fighting the Noh-mask apparitions that stalk its halls. Shadow Corridor on Steam is Shiroma's own ground-up commercial remake of this same free game, not a new work borrowing its DNA from the outside; per Steam's own listing, it keeps that original loop while adding a new story, new mechanics, and, in Steam's own words, 'more than ten times' the content of what shipped for free in 2017.",
+        desc_ja: "本作が育った、その無料版の原点——リリース日2017年6月21日、日本のフリーゲーム配信サイト「ふりーむ！」で無料公開された『影廊 -Shadow Corridor-』。制作者の城間一樹は、2016年2月、当時の旧HN「花月」名義で洋風テイストのホラーゲームの制作映像をニコニコ動画に投稿し始め、同年4月には和風ホラーへと方向転換、完成したフリー版は第13回ふりーむ！ゲームコンテストのホラー部門で金賞を受賞した。この時点ですでに、和風建築の回廊を手持ちの明かりだけで歩き、徘徊する能面を戦わずに避けてやり過ごすという、この味の核となるDNAを備えていた。Steam版『Shadow Corridor』は、外部の何かからDNAを借りた新作ではなく、城間本人によるこの同じ無料ゲームのゼロからの商業リメイクだ。Steam自身の表記によれば、その同じループを保ったまま、新規のストーリーと新しいゲームシステムを加え、2017年に無料で公開されたボリュームの「何と10倍以上」にまで拡張されている。",
+      },
+    ],
+    en: {
+      title: "Shadow Corridor - a first-person, combat-free horror escape through corridors that regenerate every session, evading Noh-mask apparitions with only a lighter and whatever you scavenge, a ground-up commercial remake of a free 2017 original that won a Freem contest horror gold award, Very Positive at 90 percent over 2,176 reviews though only about 3.35 percent are English",
+      description: "A first-person, combat-free horror escape game where you creep through procedurally generated corridors of a Japanese building using only a lighter and scavenged items, evading Noh-mask apparitions rather than fighting them. A ground-up commercial remake of a free 2017 original that won a Freem contest horror gold award. Very Positive at 90 percent over 2,176 reviews, still only about 3.35 percent English.",
+      h1a: "You are given no weapon, only a lighter that shows you the dark. ",
+      h1flip: "The corridor rebuilds itself every session, and a Noh mask is already listening for you",
+      h1b: ".",
+      lede: "A first-person, combat-free 3D horror escape game developed and self-published by the solo Japanese developer Space Onigiri Game LLC, led by Kazuki Shiroma. At summer dusk you wander into the procedurally generated corridors of a traditional Japanese building, carrying only a Zippo lighter as your one light source, plus whatever firecrackers, hand mirrors, and other items you scavenge along the way, looking for your own way out. Per Steam's own store text, the corridors 'change with every playthrough' and there is 'no one set route to take,' so surviving means reading the room with whatever you are holding, learning the habits of the several distinct Noh-mask apparitions that hunt you by sight and by sound, and finding a different way to slip past each of them. It began as a free Japanese indie horror game Shiroma made under the handle Kagetsu (花月), a release that went out for free on the platform Freem in June 2017 and was awarded Gold in the Horror category at Freem's 13th game contest; this Steam release is his own ground-up commercial remake of that same free game, carrying, per its own listing, a new story and 'more than ten times' the original's content. It is Very Positive at 90 percent over 2,176 reviews, and while Western outlets including WayTooManyGames and Real Otaku Gamer have already reviewed it, only about 3.35 percent of those reviews are in English so far.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Your only light source is a single lighter, and Steam's own text is explicit that the corridor changes shape every session, so the same flick of the wheel that lets you see where you are going is also what a nearby Noh mask can see coming; player accounts describe deliberately snapping it shut and finishing the last few steps blind, because being unseen matters more than being able to see.",
+        "There is no fighting anything. What you are given instead is a fistful of counter-play: firecrackers you can throw to lure a wandering mask away from your real path, a teleport mirror to warp yourself somewhere else, a stamina leaf to outlast a chase you should not have started, so the entire game becomes reading which single item you are willing to spend on the one Magatama stone you can still see glowing down the hall.",
+        "A death only sends you back to a checkpoint on the same map with your held items intact, so the game itself is not that harsh, but quitting the run at all regenerates the whole layout from nothing, so every session becomes its own sealed bet: however many Magatama and secrets you have already found only count for anything if you see this particular maze through to the end.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a first-person Japanese horror built entirely around evasion, not combat: read a single lighter's light against the position of whatever Noh-mask apparition is hunting you, and slip past it with firecrackers, a teleport mirror, or nothing but nerve",
+        "You want real stakes behind a randomly generated maze: the layout regenerates whenever you quit, so hunting down every glowing Magatama and secret in a run means committing to seeing that specific maze through, not saving it for later",
+        "You want to catch a solo Japanese developer's own commercial remake of his free breakout hit before the West does: Very Positive at 90 percent over 2,176 reviews, already reviewed by WayTooManyGames and Real Otaku Gamer, yet still read almost entirely in Japanese",
+      ],
+      bad: [
+        "You want a horror game with a map or mini-map to lean on; per player reviews there is neither, so a randomly generated layout with dead ends you cannot predict is part of the design, not an oversight, and it is a paid, fully launched title at $7.99 (¥820 in Japan), not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+        "You want full voice acting in your own language; only Japanese is fully voiced, with English, Korean, Russian, and Simplified Chinese offered as text only, and with just 73 of 2,176 reviews in English so far, this is still overwhelmingly a Japanese-language conversation",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "影廊 -Shadow Corridor- - 手続き生成される和風建築の回廊を、ライター一つの明かりだけを頼りに、複数種の能面の徘徊者から戦わずに逃げ延びる一人称ホラー脱出ゲーム。第13回ふりーむ！ゲームコンテスト ホラー部門で金賞を受賞した2017年の無料版を、ゼロから作り直した商業拡張版。2,176件のレビューで好評率90%の「非常に好評」ながら、英語レビューはまだ約3.35%",
+      description: "手続き生成される和風建築の回廊を、ライター一つの明かりと拾ったアイテムだけを頼りに歩き、戦うのではなく能面の徘徊者から逃げ延びる、一人称視点の3Dホラー脱出ゲーム。第13回ふりーむ！ゲームコンテストのホラー部門で金賞を受賞した2017年の無料版を、ゼロから作り直した商業拡張版。2,176件のレビューで好評率90%の「非常に好評」、英語レビューはまだ約3.35%に留まる。",
+      h1a: "武器は無い。渡されるのは、暗闇を照らすライターだけだ。",
+      h1flip: "回廊はプレイするたびに姿を変え、能面の何かがすでに息を潜めて耳を澄ましている",
+      h1b: "。",
+      lede: "日本のソロ開発者 城間一樹 が率いる Space Onigiri Game LLC(スペースおにぎりゲーム合同会社)が開発・自社セルフパブリッシュする、一人称視点・戦闘要素なしの3Dホラー脱出ゲーム。夏の夕暮れ、手続き生成される和風建築の回廊に迷い込み、光源であるジッポーのライター一つと、道中で拾う爆竹や手鏡などのアイテムだけを頼りに、出口を探す。Steam自身のストア表記によれば、回廊は「プレイするたびに形を変え」「決まった攻略ルートは存在しない」——だから生き延びる術は、そのとき手にしているものを頼りに状況を読み、視覚と聴覚でこちらを追う複数種の能面の徘徊者、それぞれの習性をつかんで、その都度別のやり方ですり抜けることにある。本作はもともと、城間が当時の旧HN「花月」名義で手がけ、ふりーむ！での無料公開リリースを経て第13回ふりーむ！ゲームコンテストのホラー部門で金賞を受賞した、日本産インディーホラーが原点だ。Steam版はその同じ無料ゲームをゼロから作り直した商業版で、Steam自身の表記によれば新規のストーリーを加えボリュームは「何と10倍以上」になっている。2,176件のレビューで好評率90%の「非常に好評」。WayTooManyGamesやReal Otaku Gamerといった西側メディアがすでにレビューを掲載しているが、そのうち英語はまだ約3.35%に留まる。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "頼れる光源はライター一つ。Steam自身の表記どおり回廊はプレイのたびに形を変えるから、自分の足元を照らすためのその小さな火は、同時に近くにいる能面へこちらの居場所を教える灯りでもある。だから多くのプレイヤーは、あえてその火を閉じ、最後の数歩を何も見えないまま歩き切る——見えることより、見られないことの方が、命を左右する。",
+        "戦う手段は与えられない。代わりに渡されるのは、ひとつかみの対抗策だ——徘徊する能面を本当の進路から引き離す爆竹、自分の位置をずらすテレポート鏡、無茶な追いかけっこを生き延びるための体力の葉。だから毎回のゲームは、廊下の先にまだ光って見えているその一つの勾玉のために、どのアイテムを差し出す覚悟があるかを読む作業になる。",
+        "死んでも戻されるのは同じマップ上のチェックポイントまでで、手持ちアイテムはそのまま残る——だからこのゲーム自体はそこまで理不尽ではない。だが、ラン自体を切り上げてしまえば、その回廊はまるごと生成し直される。だから一回のセッションはそれ自体で完結した賭けになる——それまでに見つけた勾玉や秘密のどれだけもが、この迷宮を最後まで見届けて初めて意味を持つ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "戦闘ではなく回避だけで組み立てられた、一人称視点の和風ホラーが欲しい人——ライター一つの明かりと、追ってくる能面の位置関係を読み、爆竹やテレポート鏡、あるいは度胸だけですり抜ける",
+        "ランダム生成の迷路に本当の緊張感が欲しい人——マップはラン(セッション)を中断すると生成し直されるから、光る勾玉や秘密を狩り尽くすには、その一回の迷宮を最後まで見届ける覚悟が要る",
+        "ソロの日本人開発者が、自らの無料版ヒット作を作り直した商業リメイクを、西側より先に掴みたい人——2,176件のレビューで好評率90%の「非常に好評」、WayTooManyGamesやReal Otaku Gamerがすでにレビュー済みながら、いまだにほとんどが日本語で語られている",
+      ],
+      bad: [
+        "地図やミニマップに頼れるホラーが欲しい人(プレイヤーレビューによれば、そのどちらも存在せず、先の読めない行き止まりのあるランダム生成の構造そのものが本作の設計であり不備ではない)。また、無料ではない有料タイトル(米国7.99ドル、日本では820円)の正式リリース済みでアーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない",
+        "自分の言語でのフルボイスが欲しい人(フルボイスは日本語のみで、英語・韓国語・ロシア語・簡体字中国語はテキスト対応に留まる)。2,176件のレビューのうち英語はまだ73件、この作品はいまなお圧倒的に日本語の会話の中にある",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7382,6 +7491,22 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Not a defining-mechanic ancestor, but the earlier game this heroine headlined: Minesweeper Adventure Tale 2: Rurumu's Adventure (扫雷冒险谭2 ~露露姆的冒险~), a minesweeper-based adventure game developed by CelLab, the same studio behind Core Awaken Rurumu's will, and published in the China market by OTAKU Plan, released March 19, 2021 with Simplified Chinese as its only supported language per Steam's own listing. It stars the same robot heroine, Rurumu, on the same mission she is still on in Core Awaken Rurumu's will: getting the people of Noruru Village home safely, in this case after a disaster leaves their route buried in landmines. Per its own store page, the number revealed on a swept tile tells you how many mines surround it, so you mark them by deduction across more than a hundred stages, picking up items and dodging traps along the way, and leveling up equipped skills using stars earned as stage-clear rewards. Core Awaken Rurumu's will keeps Rurumu and her drive to protect that same village, but replaces that number-reading minesweeper puzzle entirely with real-time, switchable combat and a second playable heroine of her own.",
       ja: "ジャンル上の原点ではなく、このヒロインが本作より前に主演していた一本——扫雷冒险谭2 ~露露姆的冒险~(Minesweeper Adventure Tale 2: Rurumu's Adventure)。『機核覚醒～ルルムの決意～』と同じ開発元 CelLab による、数字を読んで地雷を見極めるアドベンチャーで、発売(中国市場向けローカライズ)は OTAKU Plan、2021年3月19日にリリースされた。Steam自身の表記によれば対応言語は簡体字中国語のみ。主人公は本作と同じロボットのルルムで、目指すゴールも変わらない——ノルル村(诺鲁鲁村)の人々を無事に村へ帰すこと。この前作では、ある事件で村への帰り道が地雷原と化してしまい、ルルムが地雷除去の旅に出る。ストアページによれば、開いたマスに表示される数字が周囲の地雷数を示し、その数字を手がかりに100を超えるステージで地雷を見極めてマークしていく——道中には手助けとなるアイテムや妨害となる罠もあり、ステージクリア報酬で得られる「星」を使って装備したスキルを強化していく。『機核覚醒～ルルムの決意～』は、同じルルムと同じ「村を守る」という動機を受け継ぎながら、この数字読み型の地雷パズルを、リアルタイムで切り替え可能な戦闘と、もう一人の操作キャラクターへとまるごと置き換えている。",
+    },
+  },
+  // 原点 影廊 -Shadow Corridor-(Kageroh: Shadow Corridor)、リリース日2017年6月21日、日本のフリーゲーム
+  //   配信サイト「ふりーむ！」で無料公開。制作者は城間一樹(当時の旧HN「花月」)、2016年2月にニコニコ動画へ
+  //   洋風テイストの制作映像を投稿し始め、同年4月に和風ホラーへ方向転換。第13回ふりーむ！ゲームコンテスト
+  //   ホラー部門金賞受賞(ふりーむ配信ページ本体、およびSteam自身の英語レビュー本文recommendationid
+  //   49634997の証言から独立に裏付け済み)。ジャンル上の外部原点ではなく、開発者本人による自己参照の
+  //   フリー版原典(shadow-corridor pick の全面リメイクの前身)。公式Steam版は無い自己参照的origin
+  //   のため lineage_anchor_key には steam ではなく wikidata QID(Q97198038)を採用する(established側の
+  //   games[] で wikidata + homepage(開発元公式サイト) + freem(配信ページ本体)を併記してhref破損を
+  //   防ぐのは picks 側の責務・gradius/mother-3型)。
+  "kageroh": {
+    wikidata: "https://www.wikidata.org/wiki/Q97198038",
+    blurb: {
+      en: "影廊 -Shadow Corridor- (Kageroh: Shadow Corridor) is a free Japanese indie horror game, released for free on the freeware platform Freem with a release date of June 21, 2017, made by the solo developer Kazuki Shiroma. Shiroma first posted footage of a Western-styled horror project on Niconico Douga in February 2016 under the handle Kagetsu (花月), reworked it into a Japanese-styled one that April, and the finished free game went on to win the Gold Award in the Horror category at Freem's 13th game contest. It set the template this lineage grows from: creep through the corridors of a traditional Japanese building using only whatever light and items you can find, and survive by evading, not fighting, the Noh-mask apparitions that hunt you by sight and sound. Shiroma later rebuilt it from the ground up as the commercial Shadow Corridor on Steam, which keeps that same loop while adding, per its own store listing, 'more than ten times' the free original's content, on top of a new story and additional mechanics.",
+      ja: "影廊 -Shadow Corridor-は、日本のフリーゲーム配信サイト「ふりーむ！」でリリース日2017年6月21日に無料公開された、ソロ開発者 城間一樹 による日本産インディーホラーゲームだ。城間は2016年2月、当時の旧HN「花月」名義で洋風テイストのホラーゲームの制作映像をニコニコ動画に投稿し始め、同年4月には和風ホラーへと方向転換、完成したフリー版は第13回ふりーむ！ゲームコンテストのホラー部門で金賞を受賞した。和風建築の回廊を、手持ちの明かりと見つけたアイテムだけを頼りに歩き、視覚と聴覚で追う能面の徘徊者を、戦うのではなく避けてやり過ごして生き延びる——この系譜のひな型を作った一本だ。城間は後に、この同じ作品をゼロから作り直し、Steamで商業版『Shadow Corridor』としてリリースした。同じループを保ったまま、新規のストーリーと追加のゲームシステムを加え、Steam自身のストア表記によれば、そのボリュームは無料版の「何と10倍以上」になっている。",
     },
   },
 } as const;
