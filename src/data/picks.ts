@@ -5798,6 +5798,105 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "chippy-and-noppo": {
+    published: "2026-07-08",
+    publishAt: "2026-07-08",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "shape-craft-co-op-puzzle"(変形クラフト協力パズル): 既存の "puzzle-platformer"
+    //   (pb-winterbottom 系譜・自分を録画して過去の自分と協調する)や "puzzle" では捉えきれない、この作品を
+    //   定義する核——工場内で集めたパーツを、色・形を加工する機械に通して設計図通りの形へ作り変え、せまい
+    //   場所が得意な「ちっぴー」と高くジャンプできる「のっぽー」という移動特性の異なる2キャラクターを、
+    //   ソロプレイでは同時操作、マルチプレイでは1人1キャラずつ操作して協力する——を専用ラベルとして立てる
+    //   (rhythm-command-deckbuilder 等と同型の細粒度ラベル追加・ui.ts en/ja 追加済み)。系譜は Snipperclips:
+    //   Cut It Out, Together!(SFB Games 開発・任天堂発売, 2017, Nintendo Switch)——「違う形の2キャラを
+    //   1つの道具として使い、変形そのものでパズルを解く」協力パズルを結晶化させた原点(Wikipedia/Wikidata
+    //   実測確認済み)。本作はその変形の対象をキャラクター自身の体からパーツへ据え替えた子孫(Steam版が
+    //   無い原点のため lineage_anchor_key=wikidata_qid, Q28312055 の新規 anchor "snipperclips" で同定)。
+    //   obscurity は "deep"(母数58件と小さく西で無名)。reachState は "unreached_west"(英語レビュー比率
+    //   25.9%(15/58、Steam自身のレビューAPIで実測確認済み)で西未浸透)。noEnglish=false: 日本語・英語・
+    //   簡体中文の3言語にすべてフルボイス対応済みで、誤って「英語非対応」stampを立てない(正直さ)。
+    //   Metacriticにページは存在するがCritic Reviewsは"tbd"で、Kotaku/IGN等の言及も見つからず、西側の
+    //   実到達はいまも薄い。母数58件は小さく、数件の増減で好評率が動きうる点も本文で正直に述べる(誇張
+    //   しない)。開発元/発行元の株式会社オーツーは1991年設立・大阪拠点・従業員172名(2026年4月時点)の
+    //   中堅スタジオで、Steamジャンルタグは"Indie"だが厳密な同人サークルではないため is_doujin_indie=false
+    //   と判定(BitSummitに自社ブースを出展した実績はあるが、受賞・ノミネート記録は確認できず=出展と受賞
+    //   を混同しない・正直さ)。
+    meta: { genre: "shape-craft-co-op-puzzle", lineage: "snipperclips", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 58, positivePct: 91, noEnglish: false } },
+    games: [
+      {
+        name_en: "Chippy & Noppo",
+        name_ja: "ちっぴーとのっぽー なかよしコンビのわくわく工場",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/596500/Chippy__Noppo/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A cooperative action puzzler developed by peakvox, a joint original label formed by O-TWO inc. and Fun Unit inc., and self-published by O-TWO inc. Set inside a toy factory, it has you gather parts scattered around each stage and run them through machines that change their color and shape, so you can assemble what comes out into a toy that matches a given blueprint. Two characters carry that work, Chippy, built for tight, narrow spaces, and Noppo, who can jump high, and per Steam's own description you either control both of them at once in solo play or split them one per player in multiplayer, cooperating to reach parts neither one could reach alone; stages range from forest to ocean settings. Per Steam's own tags it is an Action, Casual, and Indie title with Co-op, Shared/Split-Screen Co-op, Remote Play Together, and Steam Achievements. Released on March 8, 2023, it is Very Positive at 91 percent over 58 reviews (Steam's own review API records 58 total and 53 positive), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It supports Japanese, English, and Simplified Chinese, with full voice acting in all three per Steam's own language listing, yet only about 15 of its 58 reviews, roughly 25.9 percent, are in English, and while it does have a Metacritic page, that page's Critic Reviews section still reads tbd, with no Kotaku, IGN, or comparable Western outlet coverage found. So this is a release that has already done the work of full localization, voice included, and the West has still barely reviewed or written about it. At just 58 total reviews, a small sample where a handful of reviews can move the positive rate by several points, its footprint has stayed modest in the roughly three years since release. O-TWO inc. is an established studio founded in 1991 and based in Osaka, with around 172 employees as of April 2026, not a small doujin circle, and while it has exhibited its own booth at BitSummit, Japan's largest indie game festival, no awards or nominations for this title were found. A Nintendo Switch 2 version of the game also exists.",
+        desc_ja: "開発は peakvox——株式会社オーツーと Fun Unit inc. による共同オリジナルレーベル——で、販売は株式会社オーツーによる自社セルフパブリッシュ。舞台はおもちゃ工場で、各ステージに散らばったパーツを集め、色と形を変える機械に通す。そこから出てきたものを、設計図通りのおもちゃへと組み立てていく。その作業を支えるのは2人のキャラクター——せまい場所が得意な「ちっぴー」と、高くジャンプできる「のっぽー」。ストア自身の説明によれば、ソロプレイでは2キャラを同時に操作し、マルチプレイでは1人1キャラずつを操作して協力する。1人では届かないパーツにも、こうして手が届くようになる。ステージは森林から海洋まで用意されている。Steam自身のタグでは Action・Casual・Indie で、Co-op・Shared/Split-Screen Co-op・Remote Play Together・Steam実績に対応する。2023年3月8日にリリースされ、58件のレビュー中91%が好評の「非常に好評」(Steam自身のレビューAPIでは58件中53件が好評と記録)。無料ではない有料作で、アーリーアクセスではなく正式リリース済み。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上、性的な要素もない。対応言語は日本語・英語・簡体中文で、Steam自身の言語表記によれば、すべてフルボイス対応。それでも58件のレビューのうち英語は約15件、約25.9%にとどまり、Metacriticのページはあるものの、そのCritic Reviews欄はいまも「tbd」のままで、Kotaku・IGNといった西側大手メディアの言及も見つからなかった。つまり、音声込みのフルローカライズという仕事はすでに終えているのに、西側はまだこの一本をほとんどレビューも報道もしていない、という状態だ。総レビュー数はわずか58件——数件の増減で好評率が数ポイント動きうる小さな母数のまま、発売から約3年、その足跡は控えめなままだ。株式会社オーツーは1991年設立・大阪拠点で、2026年4月時点で従業員約172名を抱える老舗スタジオであり、小規模な同人サークルではない。国内最大級のインディーゲーム祭典 BitSummit に自社ブースを出展した実績はあるが、本作についての受賞・ノミネート記録は見つからなかった。Nintendo Switch 2版も存在する。",
+      },
+      {
+        name_en: "Snipperclips: Cut It Out, Together!",
+        name_ja: "いっしょにチョキッと スニッパーズ",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q28312055",
+        homepage: "https://en.wikipedia.org/wiki/Snipperclips",
+        tag_en: "The shape-swap co-op origin",
+        tag_ja: "変形協力パズルの原点",
+        desc_en: "The origin of this taste: Snipperclips: Cut It Out, Together!, a puzzle game developed by the British studio SFB Games (with additional work by Nintendo Software Technology) and published by Nintendo, released worldwide as a Nintendo Switch launch title on March 3, 2017. Its two characters, Snip and Clip, are each shaped like a distinct cardboard-cutout silhouette, and its signature 'snipping' mechanic lets one character cut a piece out of the other's body, reshaping them into whatever tool-like form, a hook, a wedge, a key, the puzzle at hand needs, whether that means catching a falling object, cutting a rope, or fitting through a gap. It is played solo, switching between the two shapes, or cooperatively with a second player controlling the other. That core, that solving a puzzle means physically reshaping a character built for one purpose into whatever the moment calls for, and doing it together, is the root Chippy & Noppo grows from: it keeps two characters with different traversal traits working as one shared tool, but moves the reshaping off the characters' own bodies and onto the parts they gather, running each one through a machine that changes its color and form until it matches a factory blueprint.",
+        desc_ja: "この味の原点——いっしょにチョキッと スニッパーズ(英題: Snipperclips - Cut It Out, Together!)。イギリスのゲーム開発会社 SFB Games が開発(追加開発に Nintendo Software Technology が参加)し、任天堂が発売したパズルゲームで、2017年3月3日、Nintendo Switchのローンチタイトルとして世界同時発売された。登場する2人のキャラクター、スニップとクリップは、それぞれ紙を切り抜いたような固有のシルエットを持ち、代表的な「チョキッと」システムでは、一方がもう一方の体を切り取り、フック・くさび・鍵など、その場のパズルが必要とする形へと作り変えられる——落ちてくる物を受け止めたり、ロープを切ったり、隙間をくぐり抜けたりするために。1人では2つの形を切り替えながら、2人では1人がもう一方を操作して協力プレイできる。この核——パズルを解くとは、ひとつの目的のために作られたキャラクターを、その瞬間に必要な形へ物理的に、しかも2人がかりで作り変えることであり——こそ、ちっぴーとのっぽーが育つ根だ。本作はこの「違う移動特性を持つ2キャラが1つの道具として働く」核を受け継ぎながら、変形の対象をキャラクター自身の体から、彼らが集めるパーツへと移し替え、それぞれを機械に通して色と形を変え、工場の設計図に合わせていく。",
+      },
+    ],
+    en: {
+      title: "Chippy & Noppo - a cooperative action puzzler where you gather parts around a toy factory and run them through machines that change their color and shape until they match a blueprint, carried there by two characters, Chippy for tight spaces and Noppo for high jumps, played together solo or split one-per-player in co-op, across stages from forest to ocean, fully voiced in Japanese, English, and Simplified Chinese, by the established Osaka studio O-TWO inc., yet still barely reviewed in the West",
+      description: "A cooperative action puzzler by the Japanese label peakvox (O-TWO inc. and Fun Unit inc.), self-published by O-TWO inc. Gather parts around a toy factory and run them through machines that change their color and shape until they match a blueprint, using two characters, Chippy for tight spaces and Noppo for high jumps, controlled together solo or split one-per-player in co-op, across stages from forest to ocean. Very Positive at 91 percent over 58 reviews. It supports Japanese, English, and Simplified Chinese with full voice acting in all three, yet only about 25.9 percent of its reviews are in English and no major Western outlet has covered it yet.",
+      h1a: "The part in your hand is the wrong shape. ",
+      h1flip: "Feed it through a machine that changes its color and form until it matches the blueprint, while a teammate built for tight spaces and one built to jump high carry the pieces there together",
+      h1b: ".",
+      lede: "A cooperative action puzzler developed by peakvox, the joint original label from O-TWO inc. and Fun Unit inc., and self-published by O-TWO inc. You gather parts scattered around a toy factory and feed them into machines that reshape their color and form, then assemble the result into a toy that matches a given blueprint. Two characters carry that work: Chippy, built for tight, narrow spaces, and Noppo, who can jump high, and per Steam's own description you either control both at once in solo play or split them one per player in multiplayer, working stages that range from forest to ocean. Released in March 2023, it is Very Positive at 91 percent over 58 reviews. It already supports Japanese, English, and Simplified Chinese with full voice acting in all three, yet only about 25.9 percent of its reviews are in English, and it has not yet drawn coverage from major Western outlets.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every part you pick up starts out the wrong shape and the wrong color for the blueprint in front of you, so the first move is never placing it, it is running it through a machine and watching it change until it finally fits what the plan asks for.",
+        "In solo play you hold both bodies at once, the small one that slips through gaps built only for it and the tall one that clears jumps built only for it, so a single stage keeps asking you to think in two shapes at the same time rather than one.",
+        "Move to multiplayer and the same stage does not get easier, it gets split: one player becomes the small shape, the other becomes the tall one, and reaching a part neither could reach alone now depends on reading the same puzzle through someone else's hands.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You loved Snipperclips' idea of using two differently-shaped characters together to physically reshape your way through a puzzle, and want that DNA rebuilt around collecting parts and running them through color-and-form machines to match a blueprint, rather than cutting a partner's silhouette",
+        "You want a puzzle that scales cleanly between solo and co-op, the same stage working as one player juggling two asymmetric characters or two players each taking one, across factory stages from forest to ocean, with Remote Play Together and Steam Achievements",
+        "You want an early look at a fully English- and Chinese-voiced release from an established, non-doujin Japanese studio, O-TWO inc. (founded 1991, based in Osaka), Very Positive at 91 percent over 58 reviews, before its Metacritic page picks up any critic scores",
+      ],
+      bad: [
+        "You want a completely unlocalized, undiscovered title; this one already ships with full English and Simplified Chinese voice acting and text and already has a Metacritic page, so calling it entirely unreached would not be honest. What is true is that only about 25.9 percent of its 58 reviews are in English, its Metacritic Critic Reviews still read tbd, and no Kotaku, IGN, or comparable Western outlet coverage has turned up",
+        "You want a big-publisher hit, a free game, or a hardcore-difficulty puzzle challenge; this is a paid, Casual-tagged release from the mid-size studio O-TWO inc., not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ちっぴーとのっぽー なかよしコンビのわくわく工場 - 工場内に散らばったパーツを集め、色・形を変える機械に通して設計図通りに作り変える協力アクションパズル。せまい場所が得意な「ちっぴー」と高く跳べる「のっぽー」を、ソロでは同時操作、マルチでは1人1キャラで協力する。森林〜海洋のステージを、日本語・英語・簡体中文フルボイスで届ける、大阪の老舗スタジオ株式会社オーツーの一本——それでも西側ではまだほとんどレビューされていない",
+      description: "peakvox(株式会社オーツーと Fun Unit inc. による共同オリジナルレーベル)が開発し、株式会社オーツーが自社セルフパブリッシュする協力アクションパズル。工場内に散らばったパーツを集め、色・形を加工する機械に通して設計図通りの形に作り変える。せまい場所が得意な「ちっぴー」と高くジャンプできる「のっぽー」を、ソロプレイでは同時操作、マルチプレイでは1人1キャラずつ操作して協力する。森林〜海洋まで複数の工場ステージがある。58件のレビューで91%が好評の『非常に好評』。日本語・英語・簡体中文に対応し、すべてフルボイスだが、レビューのうち英語は約25.9%にとどまり、西側大手メディアの言及もまだない。",
+      h1a: "手にしたパーツは、まだ求める形じゃない。",
+      h1flip: "色と形を変える機械に通し、設計図に合うまで作り変える——せまい場所が得意な相棒と、高く跳べる相棒が、二人でそれを運んでいく",
+      h1b: "。",
+      lede: "peakvox(株式会社オーツーと Fun Unit inc. による共同オリジナルレーベル)が開発し、株式会社オーツーが自社セルフパブリッシュする協力アクションパズル。工場内に散らばったパーツを集め、色・形を加工する機械に通して設計図通りの形に作り変えていく。その作業を支えるのが、せまい場所が得意な「ちっぴー」と、高くジャンプできる「のっぽー」——ストア自身の説明によれば、ソロプレイでは2キャラを同時に操作し、マルチプレイでは1人1キャラずつを操作して協力する。ステージは森林から海洋まで複数用意されている。2023年3月に発売され、58件のレビューで91%が好評の『非常に好評』。日本語・英語・簡体中文に対応し、すべてフルボイス対応済みだが、レビューのうち英語は約25.9%にとどまり、西側の大手メディアの言及もまだ見つからない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "手にしたパーツは、最初は設計図とは違う色・違う形をしている。だから最初の一手は「置く」ことではなく、機械に通して、それが設計図の求める形に変わっていくのを見届けることだ。",
+        "ソロプレイでは、2つの体を同時に操ることになる——せまい隙間をすり抜けられる小さな体と、その体だけのために作られた段差を越えられる高い体。だから1つのステージは、常に2つの形を同時に考えることを求めてくる。",
+        "マルチプレイに移っても、同じステージが簡単になるわけではない。ただ役割が分かれるだけだ——1人が小さな形を、もう1人が高い形を担う。1人では届かなかったパーツに手が届くかどうかは、同じ謎を、相手の手を通して読めるかどうかにかかっている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "2人のキャラの違う形を組み合わせてパズルを解く、Snipperclipsのような発想が好きで、それを相棒の輪郭を切り取るのではなく、パーツを集めて色・形を機械で加工し設計図に合わせるという形に据え替えたDNAが欲しい人",
+        "ソロとマルチで綺麗にスケールするパズルが欲しい人——同じステージが、1人で2キャラを同時操作するパズルにも、2人がそれぞれ1キャラずつ担当する協力プレイにもなる。森林から海洋までのステージ、Remote Play TogetherとSteam実績付き",
+        "英語・簡体中文フルボイスで届く、1991年設立・大阪拠点の老舗スタジオ株式会社オーツーによる一本を早めに触りたい人——58件のレビューで91%の『非常に好評』。Metacriticページに批評スコアが載る前に触れる",
+      ],
+      bad: [
+        "ローカライズもされていない、完全に未発見のタイトルが欲しい人(本作はすでに英語・簡体中文の音声・テキストにフルボイスで対応し、Metacriticのページもある。だから「完全に西で未到達」と言い切るのは正直ではない。本当なのは、58件のレビューのうち英語は約25.9%にとどまり、MetacriticのCritic Reviews欄はいまも「tbd」のままで、Kotaku・IGN級の西側大手メディアの言及もまだ見つからないということだ)",
+        "大手パブリッシャーのヒット作、無料タイトル、あるいは高難度のパズルを期待する人(本作は中堅スタジオ株式会社オーツーによる有料作で、Steam自身のタグでも「Casual」。無料でもアーリーアクセスでもなく、AI生成アセットはなく、Steamのディスクリプタ上、性的な要素もない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6330,6 +6429,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Aiai Kissaten is a five-minute-loop, multiple-ending mystery adventure released in August 2025 by the Japanese doujin circle Menya Spice Tokyo Branch, who developed, published, and exhibited it entirely on their own. Set in a small coffee shop, it turns something as ordinary as an order for iced coffee into the 'password' that leads the player into a back room, branching the story from there; reaching the one true ending that resolves the shop's mystery in full requires working through a series of bad endings first, each surrendering a piece of the truth, with Steam achievements tracking that progress across replays. An extensive search turned up no earlier freeware or game-jam version behind this exact format, and per the circle's own developer page as reported by 4Gamer, their next announced project, Nakano Jinkaku Ishoku Kenkyuujo, carries the same short-loop, multi-ending mystery ADV format forward, making Aiai Kissaten the origin of that lineage within this developer's own work.",
       ja: "アイアイ喫茶店は、日本の同人サークル 麺屋すぱいす東京支店 が、開発・販売・出展のすべてを自分たちだけで手がけ、2025年8月に発売した、1周約5分のマルチエンド・ミステリーアドベンチャーだ。舞台は小さな喫茶店——「アイスコーヒー」を頼むような何気ない注文が、そのまま奥の部屋へ通される「合言葉」に変わり、そこから物語が分岐していく。店の謎をすべて解き明かす唯一の「トゥルーエンド」へ辿り着くには、まず複数のバッドエンドを経る必要があり、そのどれもが真相の断片を一つずつ手渡してくれる。周回を重ねる進捗はSteam実績が記録する。この形式にそれ以前のフリーゲーム版やゲームジャム版があったかを捜索したが、見つからなかった。4Gamerが報じた同サークルのデベロッパーページによれば、次回作として発表済みの「ナカノ人格移植研究所」は、この同じ短時間周回×マルチエンドのミステリーADV形式を引き継いでおり、アイアイ喫茶店は、この開発者自身の系譜における、その原点である。",
+    },
+  },
+  // 原点 Snipperclips: Cut It Out, Together!(2017), イギリスのスタジオ SFB Games 開発(追加開発に
+  //   Nintendo Software Technology が参加)/ 任天堂発売。Nintendo Switch のローンチタイトルとして世界同時
+  //   発売(Wikipedia/Wikidata 実測確認済み)。「違う形の2キャラを1つの道具として使い、変形そのもので
+  //   パズルを解く」協力パズルを結晶化させた原点。1本のキャラの体を切り取って変形させる代わりに、
+  //   Chippy & Noppo はその変形の対象を工場のパーツへ据え替えた子孫(lineage_anchor_key=wikidata_qid,
+  //   Q28312055 で同定)。公式 Steam 版なし(Nintendo Switch 専用)→ wikidata で同定(Steam id を捏造しない・
+  //   twilight-syndrome 型 href 破損の回避)。established 側と wikidata URL の完全一致で逆引き成立。
+  "snipperclips": {
+    wikidata: "https://www.wikidata.org/wiki/Q28312055",
+    blurb: {
+      en: "Snipperclips: Cut It Out, Together! is a puzzle game developed by the British studio SFB Games, with additional work by Nintendo Software Technology, and published by Nintendo, released worldwide as a Nintendo Switch launch title on March 3, 2017. Its two characters, Snip and Clip, are each shaped like a distinct cardboard-cutout silhouette, and its signature 'snipping' mechanic lets one character cut a piece out of the other's body, reshaping them into whatever tool-like form, a hook, a wedge, a key, the current puzzle calls for, whether that means catching a falling object, cutting a rope, or fitting through a gap; it can be played solo, switching between the two shapes, or cooperatively with a second player controlling the other. By making the act of physically reshaping a character, together, the core of how a puzzle is solved, it is the origin of the lineage of games in which two characters with different traits become one shared tool through deliberate transformation.",
+      ja: "いっしょにチョキッと スニッパーズ(英題: Snipperclips - Cut It Out, Together!)は、イギリスのゲーム開発会社 SFB Games が開発(追加開発に Nintendo Software Technology が参加)し、任天堂が発売したパズルゲームで、2017年3月3日、Nintendo Switchのローンチタイトルとして世界同時発売された。登場する2人のキャラクター、スニップとクリップは、それぞれ紙を切り抜いたような固有のシルエットを持ち、代表的な「チョキッと」システムでは、一方がもう一方の体を切り取り、フック・くさび・鍵など、いまのパズルが必要とする形へと作り変えられる——落ちてくる物を受け止めたり、ロープを切ったり、隙間をくぐり抜けたりするために。1人では2つの形を切り替えながら、2人では1人がもう一方を操作して協力プレイできる。キャラクターを物理的に、しかも2人がかりで作り変えることそのものをパズルを解く核に据えたことで、違う特性を持つ2キャラが、意図的な変形を通して1つの道具になる——その系譜の原点である。",
     },
   },
 } as const;
