@@ -5897,6 +5897,107 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "singou-breaka": {
+    published: "2026-07-08",
+    publishAt: "2026-07-08",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "chain-slide-puzzle"(連鎖スライドパズル): 既存の "puzzle"(散らばった記録を論理で
+    //   収束させる推理パズル系)や "puzzle-platformer"/"physics-puzzle" では捉えきれない、この作品を
+    //   定義する核——縦向きブロックは縦方向のみ・横向きブロックは横方向のみへスライド移動できる
+    //   「シグナルブロック」を操作し、同色のシグナルが2つ以上隣接すると爆発、その衝撃を受けた隣接
+    //   ブロックは点灯色が反転し、そこから新たな同色隣接が生まれれば連鎖爆破へ発展する——を専用ラベルと
+    //   して立てる(shape-craft-co-op-puzzle 等と同型の細粒度ラベル追加・ui.ts en/ja 追加済み)。系譜は
+    //   Puzznic(パズニック、タイトー、1989)——軸固定スライド+同色隣接消去という核メカニクスの原点
+    //   (lineage_anchor_key=wikidata_qid, Q2182742 の新規 anchor "puzznic" で同定。Steam版Puzznicは
+    //   確認できずWikidata実測(label="Puzznic", developer=Taito, 公開1989年)をanchorとした)。「衝撃で
+    //   隣接ブロックの色が反転し連鎖する」独自要素は開発者オリジナルで、開発者本人からPuzznicへの直接的な
+    //   インスピレーション言明は確認できていないため、本文でもその旨を正直に明記する(捏造しない・
+    //   自信度: 中)。obscurity は "deep"(レビュー総数22件と極めて小さく西で無名)。reachState は
+    //   "unreached_west"(英語レビュー比率45.5%(10/22、Steam自身のレビューAPIで実測確認済み)は数値上は
+    //   高く見えるが、母数自体が22件と小さく統計的信頼度は低い。海外の言及も米インディーブログ The
+    //   Virtual Moose の2025年10月ラウンドアップ記事程度で、専用レビューや西側大手メディアの掲載は確認
+    //   できず、実質的に西側未到達と判断)。noEnglish=false(英語・日本語・韓国語の3言語に対応済み・誤って
+    //   「英語非対応」stampを立てない・正直さ)。reviewBand は持たせない: 22件は "hundreds"(数百)にも
+    //   遠く届かない(捏造しない)。開発元/発行元のNEOタケトンボは個人サークル(主宰: やなぼ〜 / X:
+    //   @yanaboh777)と推定される自己パブリッシュで、法人登記や複数人体制の記載は見つからず個人規模と
+    //   判断(断定的な一次情報はないため自信度: 中)。国内メディア(でんふぁみこゲーマー、ニコニコニュース
+    //   経由)は体験版公開時に記事化しているが西側メディアではないため has_awards_or_press=false とした。
+    meta: { genre: "chain-slide-puzzle", lineage: "puzznic", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 22, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "SINGOU BREAKA",
+        name_ja: "シンゴウブレイカ SINGOU BREAKA",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3506550/_SINGOU_BREAKA/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A puzzle action game about signal blocks modeled on traffic lights, developed and self-published by the Japanese circle NEOタケトンボ (NEO Taketonbo, led by a creator going by やなぼ〜 / X: @yanaboh777). The circle's own website states, in its own words, that it doesn't even have a business card, and no complex, multi-person credit list turns up anywhere; it has exhibited as an individual circle at the Tokyo doujin game event Game Dungeon (both Tokyo6 and Tokyo8), so everything points to a solo operation, though no single source states a headcount outright. You slide 'signal blocks' along one fixed axis each: blocks oriented vertically can only move up and down, blocks oriented horizontally can only move left and right, and pushing two or more same-colored signals into contact detonates them. That detonation's shockwave then flips the lit color of whatever blocks sit next to it, so a single explosion can hand a fresh block a new color, create a brand new same-color adjacency, and set off a further chain of detonations on its own. A denfaminicogamer feature covering its demo also describes Arrow Blocks and Laser Spheres as additional pieces layered onto that same chain. It ships five modes, Endless, Stage Clear, Time Limit, Score Race, and an offline local Battle mode, each playable at Easy, Normal, or Hard, and per Steam's own tags it is an Action, Casual, and Indie title with Single-player, Multi-player, PvP, Shared/Split Screen, Steam Achievements, and Remote Play Together. Released on October 27, 2025, it supports English, Japanese, and Korean, a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual. It sits at Positive, 100 percent, but that is over just 22 reviews (Steam's own review API records 22 total and 22 positive), a sample small enough that a single new review could move that number. About 10 of those 22, roughly 45.5 percent, are already in English, a share that looks high on paper but, resting on a base of only 22 total reviews, we do not read as proof the West has found this game. The clearest outside mention we could turn up is a brief listing in a late-October 2025 roundup post from the American indie-games blog The Virtual Moose, and we found no dedicated Western review or coverage from a major outlet. Japanese outlets did cover its demo before launch, denfaminicogamer's feature was syndicated through Nico Nico News, but that is domestic press, not Western reach. Its core, blocks locked to one axis of slide, cleared by matching same-colored blocks into contact, closely echoes Puzznic, Taito's 1989 arcade puzzle game; the shockwave-driven color flip and chain reaction is SINGOU BREAKA's own addition, and we found no statement from its developer naming Puzznic as an influence, so we list that lineage as our own read of the mechanic, not a confirmed one.",
+        desc_ja: "信号機を模した「シグナルブロック」を操作するパズルアクションゲーム。開発・販売は日本の個人サークル NEOタケトンボ(主宰は「やなぼ〜」/ X: @yanaboh777)による自社セルフパブリッシュ。同サークルの公式サイトは自らを「名刺なんて持ってないし」と語っており、複数人体制をうかがわせる込み入ったクレジット表記もどこにも見当たらない。東京の同人ゲーム即売会「ゲームダンジョン」(Tokyo6・Tokyo8)に個人サークルとして出展した実績もあり、状況証拠はすべて個人規模の運営を示しているが、人数を断定する一次情報は無い。プレイヤーは軸が固定された「シグナルブロック」をスライドさせる——縦向きのブロックは縦方向のみ、横向きのブロックは横方向のみへ移動できる。同色のシグナルを2つ以上隣接させると爆発し、その衝撃を受けた隣のブロックは点灯色が反転する。これによって新たな同色隣接が生まれれば、連鎖爆破へと発展していく。体験版を取り上げたでんふぁみこゲーマーの記事によれば、この連鎖にはさらに「アローブロック」「レーザースフィア」という要素も加わるという。モードはEndless・Stage Clear・Time Limit・Score Race、そしてオフラインのローカル対戦であるBattleの5種類で、それぞれEasy・Normal・Hardの難易度がある。Steam自身のタグではAction・Casual・Indieで、シングルプレイヤー・マルチプレイヤー・PvP・画面分割・Steam実績・Remote Play Togetherに対応する。2025年10月27日にリリースされ、対応言語は英語・日本語・韓国語。無料ではない有料作で、アーリーアクセスではなく正式リリース済み。AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上、性的な要素もない。レビューは22件中22件が好評の「非常に好評」(好評率100%)——だがこれはわずか22件という母数の上での話で、1件増えるだけでもこの数字は動きうる。22件のうち英語レビューは約10件、約45.5%で、数字だけ見れば高く映るが、母数がわずか22件である以上、これを「西側がこの作品を見つけた証拠」とは読まない。見つけられた海外での最も明確な言及は、米国のインディーゲームブログ The Virtual Moose による発売直後のラウンドアップ記事内の短い一節程度で、専用のレビューや西側大手メディアの掲載は確認できなかった。国内メディア(でんふぁみこゲーマー、ニコニコニュース経由で配信)は発売前の体験版を記事化しているが、これは国内メディアであって西側への到達ではない。「軸に固定されたブロックをスライドさせ、同色のブロックを接触させて消す」という核メカニクスは、タイトーが1989年に発売したアーケードパズル『パズニック』と一致度が高い。衝撃で隣接ブロックの色が反転し連鎖するという要素は本作独自のものであり、開発者本人がパズニックを影響源として挙げた言明は見つからなかった。そのため、この系譜はこちらの読み解きであり、確定した事実ではないことを明記しておく。",
+      },
+      {
+        name_en: "Puzznic",
+        name_ja: "パズニック",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q2182742",
+        homepage: "https://en.wikipedia.org/wiki/Puzznic",
+        tag_en: "The likely origin",
+        tag_ja: "系譜上の原点(推定)",
+        desc_en: "A likely, but not developer-confirmed, root of this taste: Puzznic, an arcade puzzle game developed and published by Taito, released in 1989 and later ported to home systems including the NES, Game Boy, Sega Genesis, and Amiga. Each block sits fixed to a single axis, some sliding only left and right, others only up and down, and a stage clears when the player slides two or more blocks that share the same face into direct contact, making them vanish, all within a limited number of moves per stage. That core, blocks locked to one axis of slide, cleared by matching same faces into contact, is the mechanic SINGOU BREAKA's own signal blocks echo most closely: blocks oriented vertically sliding only vertically, blocks oriented horizontally sliding only horizontally, and same-colored signals detonating once two or more touch. Where SINGOU BREAKA departs is its own addition, a detonation's shockwave flips the color of the blocks beside it, letting one explosion spark another, a mechanic Puzznic never had. We have found no statement from SINGOU BREAKA's developer naming Puzznic as an influence, so we list it here as a lineage we read from the mechanic itself, not one either side has confirmed.",
+        desc_ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——『パズニック』(Puzznic)。タイトーが開発・販売したアーケードパズルゲームで、1989年に発売され、後にファミコン、ゲームボーイ、メガドライブ、Amigaなど複数の家庭用機種へ移植された。それぞれのブロックは一つの軸に固定されていて、左右にしか動かせないものと、上下にしか動かせないものがあり、同じ面を持つブロックを2つ以上隣接させて消す——それを限られた手数の中で行うことでステージをクリアする。この核——一つの軸に固定されたブロックを、同じ面同士を接触させて消すという仕組み——こそ、SINGOU BREAKAの「シグナルブロック」がもっとも色濃く受け継いでいるものだ。縦向きのブロックは縦方向のみ、横向きのブロックは横方向のみへスライドし、同色のシグナルが2つ以上触れると爆発する。SINGOU BREAKAが独自に踏み出しているのは、爆発の衝撃で隣のブロックの色が反転し、一つの爆発が次の爆発を呼び込むという仕組みで、これはパズニックには無かったものだ。SINGOU BREAKAの開発者がパズニックを影響源として名指しした言明は見つかっておらず、そのためここに記す系譜は、メカニクスそのものから私たちが読み取ったものであり、どちらの側からも確認された事実ではない。",
+      },
+    ],
+    en: {
+      title: "SINGOU BREAKA - a signal-block puzzle action game where matching same-colored blocks explodes them and the shockwave flips the color of neighboring blocks, chaining into further explosions, across five modes including an offline local Battle mode, self-published by the solo-read Japanese circle NEOタケトンボ, Positive at 100 percent over a still-tiny 22 reviews",
+      description: "A puzzle action game self-published by the solo-read Japanese circle NEOタケトンボ. Vertical signal blocks slide only vertically, horizontal ones only horizontally, and sliding two or more same-colored signals into contact detonates them, with the shockwave flipping neighboring blocks' colors so one explosion can chain into the next. Five modes, Endless, Stage Clear, Time Limit, Score Race, and an offline local Battle mode, each across three difficulties. Positive at 100 percent, but over just 22 reviews, and while about 45.5 percent of those are already in English, the sample is too small, and outside mentions too thin, to call it discovered by the West.",
+      h1a: "Two signals of the same color touch, and they explode. ",
+      h1flip: "The shockwave flips the color of every block beside the blast, so the explosion you just triggered can spark the next one before you have moved again",
+      h1b: ".",
+      lede: "A puzzle action game about signal blocks modeled on traffic lights, developed and self-published by the Japanese circle NEOタケトンボ, everything about it, down to its own website's claim that it doesn't even have a business card, reading as a solo operation, though no single source confirms a headcount outright. Blocks oriented vertically can only slide vertically, blocks oriented horizontally can only slide horizontally, and sliding two or more same-colored signals into contact detonates them; that blast's shockwave then flips the lit color of whatever sits beside it, so one explosion can hand you the next one before you have made another move. A denfaminicogamer feature on its demo also describes Arrow Blocks and Laser Spheres layered onto that same chain. It ships five modes, Endless, Stage Clear, Time Limit, Score Race, and an offline local Battle mode, each across Easy, Normal, and Hard. Released on October 27, 2025, it supports English, Japanese, and Korean, and sits at Positive, 100 percent, over just 22 reviews. About 45.5 percent of those 22 are already in English, but the sample is so small we do not read that as the West having found it; the clearest outside mention we turned up is a brief line in a late-October 2025 roundup from the American indie blog The Virtual Moose, with no dedicated Western review or major outlet coverage yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "A signal block only ever moves the one way its shape allows, so a vertical block sliding down a column can never solve the problem waiting one column over; that has to come from a horizontal block sliding in from the side, so every stage reads as two separate lanes of movement that have to meet in the same place.",
+        "Two same-colored signals touching is not the end of a move, it is the start of the next one: the shockwave reaches into whatever block sits beside the blast and flips its lit color, so a block that was the wrong shade a second ago can suddenly match its neighbor, and the explosion you triggered on purpose keeps triggering ones you did not plan.",
+        "Endless, Stage Clear, Time Limit, Score Race, and a local offline Battle mode all run the same chain reaction under a different constraint, a fixed board to clear, a clock to beat, a score to chase, or another player to out-detonate, so the one chain-reaction idea keeps getting re-asked under a new kind of pressure.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You liked Puzznic's idea of blocks locked to a single sliding axis, cleared by matching same faces together, and want to see that core carried by a mechanic Puzznic never had, an explosion whose shockwave repaints its neighbors and can set off the next explosion on its own",
+        "You want a puzzle game built around a real chain reaction rather than pre-placed combos, tested across five modes, Endless, Stage Clear, Time Limit, Score Race, and a local offline Battle mode, each at three difficulty tiers",
+        "You want an early look at a solo-read, self-published Japanese circle's release, Positive at 100 percent, before its review count, currently 22, grows into something a bigger audience has already weighed in on",
+      ],
+      bad: [
+        "You want a game the West has clearly already found; about 45.5 percent of its reviews are already in English, but that is 10 reviews out of 22 total, too small a sample to call it discovered, and the only outside mention we could find was a brief line in an American indie blog's roundup post, with no dedicated Western review or major outlet coverage",
+        "You want a big-publisher hit, a free game, or a confirmed multi-person studio behind it; NEOタケトンボ reads everywhere as a solo circle, though no source states a headcount outright, and this is a paid, not-free title that is fully launched and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "シンゴウブレイカ SINGOU BREAKA - 同色のシグナルブロックを接触させると爆発し、その衝撃で隣接ブロックの色が反転して次の爆発を呼ぶ連鎖パズルアクション。オフラインのローカル対戦モードを含む5モードを収録し、個人サークルと見られるNEOタケトンボが自社セルフパブリッシュ。好評率100%ながらレビューはまだ22件という一本",
+      description: "個人サークルと見られるNEOタケトンボが自社セルフパブリッシュするパズルアクション。縦向きのシグナルブロックは縦方向のみ、横向きは横方向のみへスライドし、同色のシグナルを2つ以上接触させると爆発、その衝撃で隣のブロックの点灯色が反転し、一つの爆発が次の爆発へと連鎖していく。Endless・Stage Clear・Time Limit・Score Race、オフラインのローカル対戦Battleの5モード、それぞれ3段階の難易度を収録。好評率100%だが、レビューはわずか22件——うち約45.5%はすでに英語だが、母数が小さすぎ、海外での言及も薄いため、西側に発見されたとは言えない。",
+      h1a: "同じ色のシグナルが2つ触れれば、爆発する。",
+      h1flip: "その衝撃が隣のブロックの色を反転させ、次に自分が動くよりも先に、いま起こした爆発が次の爆発を呼び込む",
+      h1b: "。",
+      lede: "信号機を模した「シグナルブロック」を操作するパズルアクションゲーム。開発・販売は日本のサークルNEOタケトンボによる自社セルフパブリッシュで、公式サイト自身が「名刺なんて持ってないし」と語るように、隅々まで個人運営を思わせるが、人数を断定する一次情報は無い。縦向きのブロックは縦方向のみ、横向きのブロックは横方向のみへスライドでき、同色のシグナルを2つ以上接触させると爆発する。その衝撃は隣のブロックの点灯色を反転させ、次に自分が動くよりも先に、いま起きた爆発が次の爆発を呼び込んでいく。体験版を取り上げたでんふぁみこゲーマーの記事によれば、この連鎖には「アローブロック」「レーザースフィア」という要素も加わるという。モードはEndless・Stage Clear・Time Limit・Score Race、そしてオフラインのローカル対戦Battleの5種で、それぞれEasy・Normal・Hardの難易度がある。2025年10月27日にリリースされ、対応言語は英語・日本語・韓国語。22件のレビューで好評率100%の「非常に好評」——うち約45.5%はすでに英語だが、母数がわずか22件と小さすぎるため、これを「西側に見つかった」証拠とは読まない。見つけられた海外での最も明確な言及は、米国のインディーゲームブログThe Virtual Mooseによる発売直後のラウンドアップ記事内の短い一節程度で、専用レビューや西側大手メディアの掲載はまだ無い。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "シグナルブロックは、自分の形が許す一方向にしか動けない。だから縦に並んだ列を降りていく縦向きブロックだけでは、隣の列で待っている問題を解けない——それを解くのは、横から滑り込んでくる横向きブロックの仕事だ。だからどのステージも、交わるべき2つの移動レーンとして読むことになる。",
+        "同色のシグナルが2つ触れることは、一手の終わりではなく、次の一手の始まりだ。爆発の衝撃は隣にあるブロックへ届き、その点灯色を反転させる。さっきまで違う色だったブロックが、次の瞬間には隣と同じ色になる——自分が狙って起こした爆発が、狙っていなかった爆発まで呼び込んでいく。",
+        "Endless・Stage Clear・Time Limit・Score Race、そしてオフラインのローカル対戦Battle——5つのモードはどれも同じ連鎖の仕組みを、違う制約の下で走らせる。決まった盤面をクリアするのか、時計と競うのか、スコアを追うのか、それとも相手より先に爆破するのか。連鎖という一つの発想に、そのたびごとに違う種類のプレッシャーを重ねてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "軸に固定されたブロックをスライドさせ、同じ面同士を接触させて消す——『パズニック』のその核が好きで、パズニックには無かった仕組み——爆発の衝撃が隣を塗り替え、次の爆発を自分で呼び込む——に受け継がれた形を見たい人",
+        "あらかじめ置かれたコンボではなく、本物の連鎖反応を軸にしたパズルゲームが欲しい人——Endless・Stage Clear・Time Limit・Score Race、オフラインのローカル対戦Battleの5モード、それぞれ3段階の難易度でテストされている",
+        "個人規模と見られる自社セルフパブリッシュの日本のサークルによる一本を早めに触りたい人——好評率100%、レビュー数(現在22件)がもっと大きな注目を集める前に触れる",
+      ],
+      bad: [
+        "西側にすでにはっきり見つかっている作品が欲しい人(レビューの約45.5%はすでに英語だが、それは22件中10件に過ぎず、『発見済み』と呼ぶには母数が小さすぎる。見つけられた海外での言及も、米国のインディーゲームブログの短いラウンドアップ記事程度で、専用レビューや西側大手メディアの掲載は無い)",
+        "大手パブリッシャーのヒット作、無料タイトル、あるいは複数人体制が確認されたスタジオを期待する人(NEOタケトンボは隅々まで個人サークルと読めるが、人数を断定する情報は無い。本作は無料ではない有料作で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steamのディスクリプタ上、性的な要素もない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6443,6 +6544,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Snipperclips: Cut It Out, Together! is a puzzle game developed by the British studio SFB Games, with additional work by Nintendo Software Technology, and published by Nintendo, released worldwide as a Nintendo Switch launch title on March 3, 2017. Its two characters, Snip and Clip, are each shaped like a distinct cardboard-cutout silhouette, and its signature 'snipping' mechanic lets one character cut a piece out of the other's body, reshaping them into whatever tool-like form, a hook, a wedge, a key, the current puzzle calls for, whether that means catching a falling object, cutting a rope, or fitting through a gap; it can be played solo, switching between the two shapes, or cooperatively with a second player controlling the other. By making the act of physically reshaping a character, together, the core of how a puzzle is solved, it is the origin of the lineage of games in which two characters with different traits become one shared tool through deliberate transformation.",
       ja: "いっしょにチョキッと スニッパーズ(英題: Snipperclips - Cut It Out, Together!)は、イギリスのゲーム開発会社 SFB Games が開発(追加開発に Nintendo Software Technology が参加)し、任天堂が発売したパズルゲームで、2017年3月3日、Nintendo Switchのローンチタイトルとして世界同時発売された。登場する2人のキャラクター、スニップとクリップは、それぞれ紙を切り抜いたような固有のシルエットを持ち、代表的な「チョキッと」システムでは、一方がもう一方の体を切り取り、フック・くさび・鍵など、いまのパズルが必要とする形へと作り変えられる——落ちてくる物を受け止めたり、ロープを切ったり、隙間をくぐり抜けたりするために。1人では2つの形を切り替えながら、2人では1人がもう一方を操作して協力プレイできる。キャラクターを物理的に、しかも2人がかりで作り変えることそのものをパズルを解く核に据えたことで、違う特性を持つ2キャラが、意図的な変形を通して1つの道具になる——その系譜の原点である。",
+    },
+  },
+  // 原点候補(開発者未確認) Puzznic(パズニック), タイトー開発・販売, 1989(アーケード)。ブロックが軸に
+  //   固定されてスライドし、同じ面同士を接触させて消す仕組みの原点。SINGOU BREAKA の「シグナルブロック」
+  //   (縦向きは縦方向のみ・横向きは横方向のみへスライド)が最も色濃く受け継ぐ核だが、「衝撃で隣接
+  //   ブロックの色が反転し連鎖する」独自要素は開発者オリジナルで、開発者本人からの直接的な言明は
+  //   確認できていない(lineage_anchor_key=wikidata_qid, Q2182742 で同定。Wikidata実測: label="Puzznic",
+  //   developer=Taito, 公開1989年)。公式 Steam 版は確認できず → wikidata で同定(Steam id を捏造しない・
+  //   twilight-syndrome 型 href 破損の回避)。established 側と wikidata URL の完全一致で逆引き成立。
+  "puzznic": {
+    wikidata: "https://www.wikidata.org/wiki/Q2182742",
+    blurb: {
+      en: "Puzznic is an arcade puzzle game developed and published by Taito, released in 1989 and later ported to home systems including the NES, Game Boy, Sega Genesis, and Amiga. Each block sits fixed to a single axis, some sliding only left and right, others only up and down, and a stage clears when the player slides two or more blocks that share the same face into direct contact, making them vanish, all within a limited number of moves per stage. That core, blocks locked to one axis of slide, cleared by matching same faces into contact, is a likely, though not developer-confirmed, root of games like SINGOU BREAKA, whose own signal blocks slide the same way along a fixed axis and detonate on same-color contact, while adding a shockwave-driven color flip and chain reaction of its own that Puzznic never had.",
+      ja: "パズニック(Puzznic)は、タイトーが開発・販売したアーケードパズルゲームで、1989年に発売され、後にファミコン、ゲームボーイ、メガドライブ、Amigaなど複数の家庭用機種へ移植された。それぞれのブロックは一つの軸に固定されていて、左右にしか動かせないものと、上下にしか動かせないものがあり、同じ面を持つブロックを2つ以上隣接させて消す——それを限られた手数の中で行うことでステージをクリアする。この核——一つの軸に固定されたブロックを、同じ面同士を接触させて消すという仕組み——は、SINGOU BREAKAのようなゲーム群の、開発者による確認は取れていないものの、もっとも近しい原点候補だ。SINGOU BREAKAの「シグナルブロック」も同じように固定された軸に沿ってスライドし、同色の接触で爆発するが、そこに衝撃で色が反転して連鎖するという、パズニックには無かった独自の仕組みを加えている。",
     },
   },
 } as const;
