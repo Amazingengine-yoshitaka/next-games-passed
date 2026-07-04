@@ -6204,6 +6204,101 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dyping-escape": {
+    published: "2026-07-10",
+    publishAt: "2026-07-10",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "meta-typing-horror"(メタタイピングホラー): 既存の "horror-novel"/"psychological-horror"/
+    //   "exploration-horror" では捉えきれない、本作を定義する核——ゲームマスターの"目玉"が指示する言葉を
+    //   タイピングするだけの単純な入力が、そのまま第四の壁を破ってプレイヤーの実PC(であるかのような画面)に
+    //   反映されるという、タイピングを唯一の動詞にしたメタホラー——を専用ラベルとして立てる
+    //   (hand-me-down-mecha-fps 等と同型の細粒度ラベル追加・ui.ts en/ja 追加済み)。
+    // 系譜は Imscared(IMSCARED, Ivan Zanotti, 2012年に無料公開・2016年2月3日に有料完全版としてSteam発売)——
+    //   「画面の出来事がプレイヤーの実際のPCに起きているように見せる」第四の壁破壊型メタホラーの原点
+    //   (lineage_anchor_key=steam, appid 429720 の新規 anchor "imscared" で同定)。この帰属は開発者本人の
+    //   言明ではなく、共通するメカニクスからの当サイト独自の比較のため自信度: 中(捏造しない・
+    //   chikyu-boueigun/lofi-girl 型)。obscurity は "deep"(noEnglish=false、Steam自身が英語対応済みだが
+    //   西への到達がまだ薄いタイプ・devil-blade-reboot/the-last-salvage-squad 型と異なり英語レビュー比率が
+    //   過半数に遠く及ばないため reachState を立てる判断)。reachState="unreached_west" は、553件のレビュー
+    //   のうち英語が73件・約13.2%と実測(Steam appreviews API実測)に基づく。AUTOMATON WEST(英語圏メディア)
+    //   による記事化、BitSummit・INDIE Live Expo 2025でのOfficial Selectionは既に確認済みだが、母数の大半が
+    //   日本語圏である実測を誇張せず、"西側が本格的に出会い始める前"の段階として reachState を立てる
+    //   (誇張しない正直さ)。content_descriptors は ids=[]・notes=null(API実測)。
+    meta: { genre: "meta-typing-horror", lineage: "imscared", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 553, positivePct: 92, noEnglish: false } },
+    games: [
+      {
+        name_en: "Dyping Escape",
+        name_ja: "Dyping Escape",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3406810/Dyping_Escape/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A first-person meta horror typing game whose 'game master' is an unsettling floating eyeball: it dictates the exact words you must type, and per Steam's own listing, whatever you type is reflected straight back onto what looks like your own real desktop. Developed by the solo Japanese creator behind Heaviside Creations, a Tokyo University graduate and former game-company planner who left to make games full time (his wife composes the music), and published by PLAYISM, the Japanese indie-focused label run by Active Gaming Media. There is no puzzle in what to type, only in what happens once you have: unwanted programs appear to run, a fake 'hack' plays out exactly as dictated, and at one point you are walked keystroke by keystroke into typing your own signature onto an unreasonable contract you never agreed to. Per Steam's own feature list it leans entirely on psychological and environmental dread rather than gore or jump scares, and layers a typing-rank scoring system on top, aiming players at a clean S rank even as the same sequence keeps unsettling them. It is a substantial upgrade of the creator's own earlier work, the free browser game DYPING, released in December 2024 and played more than 500,000 times on unityroom; per a developer interview, a roguelike mode was considered and dropped once PLAYISM judged it unnecessary, so nothing here regenerates procedurally. Released March 13, 2026, it is Very Positive at 92 percent per Steam's own store page (510 of 553 reviews positive per Steam's review API), a paid, fully launched title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports English, Japanese, and Simplified Chinese, but only about 73 of its 553 reviews, roughly 13.2 percent, are in English so far. The English-language outlet AUTOMATON WEST has already written about it, and it carried Official Selection status at both BitSummit and INDIE Live Expo 2025, alongside coverage from Japanese outlets including 4Gamer and Game*Spark, so calling it a game the West has never heard of would not be honest. What is true is that the overwhelming majority of its audience and its praise so far is Japanese-speaking, and its reach beyond that is only just beginning.",
+        desc_ja: "一人称視点のメタホラー・タイピングゲーム。「ゲームマスター」は不気味に浮遊する”目玉”で、プレイヤーに打つべき言葉を指示してくる——そしてSteam自身のストア表記によれば、入力した言葉はそのまま、あなた自身の実際のデスクトップであるかのような画面へ反映される。開発は日本のソロクリエイター、Heaviside Creations(高荒大明、東京大学卒・元ゲーム会社プランナーで専業インディーへ転向、音楽は妻が担当)、発売は日本のインディー専門レーベル PLAYISM(運営はActive Gaming Media Inc.)。何を打つかにパズルはなく、打った後に何が起きるかにこそ恐怖がある——望んでもいないプログラムが実行されたように見え、指示された通りの「ハッキング」が偽装されて進行し、あるところではキー入力一つひとつを通じて、同意していない理不尽な契約書へ自らの署名を打ち込まされる。Steam自身の機能紹介によれば、グロテスクやジャンプスケアに頼らず、心理的・環境的な恐怖だけで押し切る設計であり、その上にタイピングのスコア/ランク機能を重ね、Sランクを目指したくなる仕掛けが、恐怖そのものを何度も再演させる。本作は、開発者自身の前作、2024年12月に無料公開されunityroomで50万回以上プレイされたブラウザゲーム『DYPING』の大幅なアップグレード版であり、開発者インタビューによれば、ローグライクモードは検討されたものの、パブリッシャーのPLAYISMが「不要」と判断して見送られた——つまり本作には手続き生成で再生成される要素はない。2026年3月13日にリリースされ、Steam自身のストア表記で好評率92%の「非常に好評」(Steamのレビューデータでは553件中510件が好評)。無料ではない有料の正式リリース済みタイトルで、アーリーアクセスではなく、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。対応言語は英語・日本語・簡体字中国語だが、553件のレビューのうち英語は約73件、約13.2%に留まる。英語圏メディアのAUTOMATON WESTがすでに記事化しており、BitSummitおよびINDIE Live Expo 2025では「Official Selection」に選出、4Gamer・Game*Sparkなど国内メディアの掲載もある——だから「西側がまったく知らない一本」と呼ぶのは正直ではない。本当なのは、その支持のほとんどが今なお日本語圏に偏っているということで、それより先への広がりはまだ始まったばかりだ。",
+      },
+      {
+        name_en: "Imscared",
+        name_ja: "Imscared",
+        status: "established",
+        steam: "https://store.steampowered.com/app/429720/IMSCARED/",
+        tag_en: "The likely origin",
+        tag_ja: "系譜上の原点(推定)",
+        desc_en: "A likely, though not developer-confirmed, root of this taste: Imscared (stylized IMSCARED), a first-person horror game created by the solo Italian developer Ivan Zanotti, first released for free in 2012 and expanded into a full paid release, IMSCARED: A Pixelated Nightmare, on Steam on February 3, 2016. To finish it, the player has to outwit two entities, White Face and HER, that reach past the game's own fiction to act on what looks like the player's real computer, creating files on the desktop and faking crashes, and folding its ending into a file the player has to find and delete on their own machine to beat the game. That premise, staging what happens on screen as something happening to your actual PC rather than to a character, is widely credited with helping define the fourth-wall-breaking strand of meta horror, and both its 2012 and 2016 releases went viral for exactly that reason, praised at the time by PC Gamer, Polygon, and Rock Paper Shotgun, and later named by IGN as one of the best horror games on PC. Dyping Escape's floating eyeball game master, which reflects your typed words back onto what looks like your own desktop and walks you into signing a contract you never agreed to, carries that same premise forward with typing as its sole verb. We found no statement from the developer behind Heaviside Creations naming Imscared as an influence; this lineage is our own reading of a shared taste, not a confirmed statement from either side.",
+        desc_ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——Imscared(表記はIMSCARED)。イタリアのソロ開発者 Ivan Zanotti が制作した一人称ホラーゲームで、2012年に無料で最初に公開され、2016年2月3日には有料の完全版『IMSCARED: A Pixelated Nightmare』としてSteamでリリースされた。クリアするにはプレイヤーは White Face と HER という2体の存在を出し抜く必要があり、彼らはゲームというフィクションの外側にまで手を伸ばし、プレイヤーの実際のパソコンであるかのような画面上でファイルを作成したり、偽のクラッシュを起こしたりする——そしてエンディングは、プレイヤーが自分のPC上で実際に見つけて削除しなければならない1つのファイルへと折り込まれている。「画面で起きていることは、キャラクターにではなく、あなたの実際のPCに起きているように見せる」というこの前提は、第四の壁を破るメタホラーというジャンルの一系統を定義したと広く評価されており、2012年版・2016年版とも、まさにその理由でバイラルヒットとなった。当時PC Gamer・Polygon・Rock Paper Shotgunが賞賛し、後にIGNは2016年版を「PC向けベストホラーゲーム」の1本に選んでいる。『Dyping Escape』の浮遊する目玉のゲームマスターは、打ち込んだ言葉をそのまま自分自身のデスクトップであるかのような画面へ反映し、同意していない契約書への署名へとプレイヤーを導く——同じ前提を、「タイピング」だけを唯一の動詞として引き継いでいる。Heaviside Creations の開発者本人がImscaredを影響源として名指しした言明は見つかっておらず、この系譜は、共通する味わいについての当サイト独自の読み解きであり、どちらの側からも確認された事実ではない。",
+      },
+    ],
+    en: {
+      title: "Dyping Escape - a meta horror typing game where every phrase the eyeball game master dictates is reflected straight onto what looks like your own real desktop, from solo Japanese developer Heaviside Creations via PLAYISM, an upgrade of the free browser hit DYPING (500,000+ plays), Very Positive at 92 percent over 553 reviews though still only about 13 percent English",
+      description: "A meta horror typing game by the solo Japanese developer behind Heaviside Creations, published by PLAYISM. An unsettling floating eyeball dictates the words you type, and whatever you enter is reflected straight back onto what looks like your own real desktop, up to and including signing your name on a contract you never agreed to. An upgrade of the free browser hit DYPING (500,000+ plays). Very Positive at 92 percent over 553 reviews, still only about 13.2 percent English.",
+      h1a: "You type exactly what the eyeball tells you to. ",
+      h1flip: "What you just typed is already happening on your own real desktop",
+      h1b: ".",
+      lede: "A first-person meta horror typing game developed by the solo Japanese creator behind Heaviside Creations and published by PLAYISM. An unsettling floating eyeball serves as your game master, dictating the exact words you must type, and per Steam's own listing, whatever you enter is reflected straight back onto what looks like your own real desktop, an unwanted program run here, a faked hack there, building toward the moment you are walked keystroke by keystroke into signing your own name on a contract you never agreed to. It leans entirely on psychological and environmental dread rather than gore or jump scares, with a typing-rank scoring system layered on top chasing you toward a clean S rank. It is a substantial upgrade of the creator's own free browser game DYPING (500,000-plus plays on unityroom). Released March 13, 2026, it is Very Positive at 92 percent over 553 reviews, and while AUTOMATON WEST has already covered it and it carried Official Selection status at BitSummit and INDIE Live Expo 2025, only about 13.2 percent of those reviews are in English so far, so its reach beyond Japan and Chinese-reading players is only just beginning.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every phrase the eyeball dictates asks nothing of your judgment, only your typing accuracy, so the moment you finish it and watch it play out on what looks like your own desktop, obedience itself becomes the thing that frightens you.",
+        "Partway through, the words you are told to type stop being commands to a character and become your own signature going down on a contract you never agreed to, one keystroke at a time, so the horror is not what is chasing you but what you are actively making true.",
+        "A typing-rank meter sits on top of all of it, chasing you toward a clean S rank, so even after a sequence has unsettled you, you find yourself re-running it anyway, this time typing faster, cleaner, for a score you should not still care about.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love IMSCARED's fourth-wall-breaking premise, that what happens on screen is staged to look like it is happening to your own real PC, and want that same dread rebuilt specifically around typing, where every phrase you enter is the thing that makes it happen",
+        "You want horror that earns its scares through psychological and environmental dread rather than gore or jump scares, and still want a genuine skill layer, a typing-rank system chasing you toward S rank, sitting right on top of that dread",
+        "You want an early look at a solo Japanese developer's full realization of an idea, an upgrade of the free browser hit DYPING (500,000-plus plays), Very Positive at 92 percent over 553 reviews, before AUTOMATON WEST's early coverage and Official Selection slots at BitSummit and INDIE Live Expo 2025 turn into wider Western attention",
+      ],
+      bad: [
+        "You want a game the West has never touched; the English-language outlet AUTOMATON WEST has already covered it and it carried Official Selection status at BitSummit and INDIE Live Expo 2025, so calling it fully undiscovered would not be honest. What is true is that only about 13.2 percent of its 553 reviews are in English so far, so its audience remains overwhelmingly Japanese-speaking",
+        "You want a roguelike run structure layered over the horror; per the developer's own interview a roguelike mode was considered and dropped once the publisher judged it unnecessary, and this is a paid, fully launched title, not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Dyping Escape - ゲームマスターである”目玉”が指示する言葉をすべて、そのまま自分自身の実際のデスクトップであるかのような画面へ反映するメタホラー・タイピングゲーム。日本のソロ開発者Heaviside CreationsがPLAYISMから発売、無料ブラウザ版『DYPING』(50万回以上プレイ)の大幅アップグレード版で、553件のレビューで好評率92%の『非常に好評』ながら英語レビューはまだ約13%",
+      description: "日本のソロ開発者Heaviside Creationsが開発し、PLAYISMが発売するメタホラー・タイピングゲーム。不気味に浮遊する”目玉”が指示する言葉を打つと、その言葉はそのまま自分自身の実際のデスクトップであるかのような画面へ反映され、最後には同意していない契約書への署名まで打たされる。無料ブラウザ版『DYPING』(50万回以上プレイ)の大幅アップグレード版。553件のレビューで好評率92%の『非常に好評』、英語レビューはまだ約13.2%。",
+      h1a: "目玉が指示する言葉を、そのまま打つ。",
+      h1flip: "打ち終えた瞬間、それはもう自分自身の実際のデスクトップで起きている",
+      h1b: "。",
+      lede: "日本のソロ開発者Heaviside Creationsが開発し、PLAYISMが発売する、一人称視点のメタホラー・タイピングゲーム。ゲームマスターは不気味に浮遊する”目玉”で、打つべき言葉を正確に指示してくる。Steam自身のストア表記によれば、入力した言葉はそのまま、自分自身の実際のデスクトップであるかのような画面へ反映される——ここで望んでもいないプログラムが動き、あそこで偽のハッキングが進行し、やがてキー入力一つひとつを通じて、同意していない理不尽な契約書へ自らの署名を打ち込まされる瞬間へと向かっていく。グロテスクやジャンプスケアに頼らず、心理的・環境的な恐怖だけで押し切る設計で、その上にSランクを目指すタイピングのスコア機能が重ねられている。開発者自身の無料ブラウザゲーム『DYPING』(unityroomで50万回以上プレイ)の大幅なアップグレード版だ。2026年3月13日にリリースされ、553件のレビューで好評率92%の『非常に好評』。AUTOMATON WESTがすでに記事化し、BitSummitとINDIE Live Expo 2025でOfficial Selectionにも選ばれているが、そのレビューのうち英語はまだ約13.2%に留まり、日本と中国語圏の外への広がりはまだ始まったばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "目玉が指示してくる言葉は、判断力ではなく、ただ正確に打てるかどうかだけを問うてくる。だからそれを打ち終え、自分自身のデスクトップであるかのような画面でその結果が起きるのを見た瞬間、恐ろしいのは「従ってしまったこと」そのものになる。",
+        "途中から、打たされる言葉はキャラクターへの命令ではなくなり、同意していない契約書への自分自身の署名へと、一打ずつ変わっていく。だから怖いのは追ってくる何かではなく、自分がまさに今、それを本当にしてしまっているということだ。",
+        "その恐怖の上に、タイピングのランク計測が重ねられていて、Sランクという綺麗な結果へと追い立ててくる。だから一度その場面に怯えたはずなのに、気づけばもう一度、今度はもっと速く、もっと正確に打とうとして、同じ場面へ戻ってしまう。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "IMSCAREDの、「画面の出来事が自分の実際のPCに起きているように見せる」第四の壁破壊という前提が好きで、その同じ恐怖を、今度は「タイピング」という一点だけに組み替えたものが欲しい人——打ち込む一言一言こそが、それを本当に起こしてしまう行為になる",
+        "グロテスクやジャンプスケアではなく、心理的・環境的な恐怖で押し切るホラーが欲しく、それでいてSランクを目指すタイピングのランク計測という本物のスキル要素も、その恐怖の上にちゃんと欲しい人",
+        "個人開発者が一つのアイデアを完成させた形を早めに触りたい人——本作は無料ブラウザ版『DYPING』(50万回以上プレイ)の大幅アップグレード版で、553件のレビューで好評率92%の『非常に好評』。AUTOMATON WESTの早期記事化や、BitSummit・INDIE Live Expo 2025でのOfficial Selectionが、より広い西側の注目に変わっていく前に触れる",
+      ],
+      bad: [
+        "西側がまったく触れていない、完全未発見の一本が欲しい人(英語圏メディアのAUTOMATON WESTがすでに記事化しており、BitSummitおよびINDIE Live Expo 2025でOfficial Selectionにも選ばれている。だから「完全に未発見」と呼ぶのは正直ではない。本当なのは、553件のレビューのうち英語はまだ約13.2%に留まり、支持のほとんどは今なお日本語圏に偏っているということだ)",
+        "恐怖の上にローグライク的な周回構造が欲しい人(開発者本人のインタビューによれば、ローグライクモードは検討されたもののパブリッシャーが「不要」と判断し見送られている。また無料ではない有料の正式リリース済みタイトルで、アーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6805,6 +6900,23 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "A likely, but not developer-confirmed, root of this taste: THE 地球防衛軍 (Chikyu Boueigun), an action-shooting game developed by Sandlot and released as SIMPLE2000 Series Vol. 31, published in Japan by D3 Publisher for the PlayStation 2 on June 26, 2003 (and in Europe on February 27, 2004, published by Agetec under the title Monster Attack). Rather than one giant hero facing down a single kaiju, it drops the player into repeated short skirmishes as one soldier among many, ordinary-scale defenders holding a city against a relentless, overwhelming alien invasion, mission after mission. It became the first entry in what grew into the long-running Earth Defense Force series, whose later installments carried that name internationally, and it set a template that lineage has repeated ever since: a small, mortal defender thrown again and again at a threat too large for any one of them to end alone. The Last Salvage Squad's CogrinaUnits carry that same premise, city-scale swarms of alien war machines met one short encounter at a time, into their own distinct core: a unit that falls is simply replaced by the next one, armed with whatever weapon its predecessor managed to salvage. We found no statement from Sunfish Kumano naming Chikyu Boueigun or the Earth Defense Force series as an influence; this lineage is a comparison independent reviewers, including the Japanese blog banshu-doukoukai.com, have drawn, not one either side has confirmed.",
       ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——THE 地球防衛軍。サンドロットが開発し、SIMPLE2000シリーズ Vol.31としてディースリー・パブリッシャーが日本国内向けに発売したアクションシューティングで、PlayStation 2向けに2003年6月26日に発売された(欧州では2004年2月27日、Agetecの販売により「Monster Attack」のタイトルで発売)。一人の巨大なヒーローが単体の怪獣に立ち向かうのではなく、プレイヤーを、都市を蹂躙する圧倒的なエイリアンの侵略に立ち向かう、大勢の中の一兵士——等身大の防衛者として、短い遭遇戦へ繰り返し送り込む。本作は、後に長寿シリーズとなる「地球防衛軍」シリーズの第1作となり、後続作は海外でもその名で展開されていく。そしてこの作品が確立したのは、以後この系譜が繰り返すことになる型——一人では終わらせられないほど大きな脅威に、小さく命ある防衛者が何度も何度も投げ込まれる、という型だ。『最終回収SQUAD』のコグリナユニットは、この同じ前提——都市規模のエイリアン兵器の大群に、短い遭遇戦を一つずつ挑んでいく——を受け継ぎながら、そこに本作独自の核を据える——倒れたユニットは、ただちに次のユニットに置き換わり、前任者が回収できた武器を受け継いで出撃する。Sunfish Kumano がTHE地球防衛軍や地球防衛軍シリーズを影響源として名指しした言明は見つかっておらず、この系譜は、日本のブログ banshu-doukoukai.com を含む独立したレビュアーたちが読み取った比較であり、どちらの側からも確認された事実ではない。",
+    },
+  },
+  // 原点候補(開発者未確認) Imscared(IMSCARED), Ivan Zanotti(イタリアのソロ開発者), 2012年に無料公開・
+  //   2016年2月3日に有料完全版『A Pixelated Nightmare』としてSteam発売(appid 429720, Steam appdetails API
+  //   実測)。White Face/HER という存在がゲームのフィクションの外へ手を伸ばし、プレイヤーの実際のPCである
+  //   かのようにファイルを作成しクラッシュを偽装する——「画面の出来事が自分の実際のPCに起きているように
+  //   見せる」第四の壁破壊型メタホラーの原点として新規 anchor 化。Dyping Escape の目玉のゲームマスター
+  //   (打った言葉がそのまま実PCであるかのような画面に反映され、契約書への署名まで打たされる)は、この
+  //   前提を「タイピング」という動詞一つに絞って引き継ぐ子孫と読む(lineage_anchor_key=steam, appid 429720
+  //   で同定)。この帰属は開発者本人の言明ではなく、共通するメカニクスからの当サイト独自の比較に基づく
+  //   推定のため自信度: 中(捏造しない・chikyu-boueigun/lofi-girl 型)。公式 Steam 版があるため steam で
+  //   同定(established 側と /app/429720/ で完全一致・href 破損回避)。
+  "imscared": {
+    steam: "429720",
+    blurb: {
+      en: "A likely, though not developer-confirmed, root of this taste: Imscared (stylized IMSCARED), a first-person horror game created by the solo Italian developer Ivan Zanotti, first released for free in 2012 and expanded into a full paid release, IMSCARED: A Pixelated Nightmare, on Steam on February 3, 2016. To finish it, the player has to outwit two entities, White Face and HER, that reach past the game's own fiction to act on what looks like the player's real computer, creating files on the desktop and faking crashes, and folding its ending into a file the player has to find and delete on their own machine to beat the game. That premise, staging what happens on screen as something happening to your actual PC rather than to a character, is widely credited with helping define the fourth-wall-breaking strand of meta horror, and both its 2012 and 2016 releases went viral for exactly that reason, praised at the time by PC Gamer, Polygon, and Rock Paper Shotgun, and later named by IGN as one of the best horror games on PC. Dyping Escape's floating eyeball game master, which reflects your typed words back onto what looks like your own desktop and walks you into signing a contract you never agreed to, carries that same premise forward with typing as its sole verb. We found no statement from the developer behind Heaviside Creations naming Imscared as an influence; this lineage is our own reading of a shared taste, not a confirmed statement from either side.",
+      ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——Imscared(表記はIMSCARED)。イタリアのソロ開発者 Ivan Zanotti が制作した一人称ホラーゲームで、2012年に無料で最初に公開され、2016年2月3日には有料の完全版『IMSCARED: A Pixelated Nightmare』としてSteamでリリースされた。クリアするにはプレイヤーは White Face と HER という2体の存在を出し抜く必要があり、彼らはゲームというフィクションの外側にまで手を伸ばし、プレイヤーの実際のパソコンであるかのような画面上でファイルを作成したり、偽のクラッシュを起こしたりする——そしてエンディングは、プレイヤーが自分のPC上で実際に見つけて削除しなければならない1つのファイルへと折り込まれている。「画面で起きていることは、キャラクターにではなく、あなたの実際のPCに起きているように見せる」というこの前提は、第四の壁を破るメタホラーというジャンルの一系統を定義したと広く評価されており、2012年版・2016年版とも、まさにその理由でバイラルヒットとなった。当時PC Gamer・Polygon・Rock Paper Shotgunが賞賛し、後にIGNは2016年版を「PC向けベストホラーゲーム」の1本に選んでいる。『Dyping Escape』の浮遊する目玉のゲームマスターは、打ち込んだ言葉をそのまま自分自身のデスクトップであるかのような画面へ反映し、同意していない契約書への署名へとプレイヤーを導く——同じ前提を、「タイピング」だけを唯一の動詞として引き継いでいる。Heaviside Creations の開発者本人がImscaredを影響源として名指しした言明は見つかっておらず、この系譜は、共通する味わいについての当サイト独自の読み解きであり、どちらの側からも確認された事実ではない。",
     },
   },
 } as const;
