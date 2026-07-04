@@ -6605,6 +6605,106 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "core-awaken-rurumus-will": {
+    published: "2026-07-12",
+    publishAt: "2026-07-12",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "character-switch-action-rpg": Steam自身のジャンルタグは Action/Adventure/Casual/
+    //   Indie/RPG(appdetails実測確認済み)、人気ユーザータグには Action RPG/Side Scroller/Third-Person
+    //   Shooter等も並ぶが、本作を定義する核はストア本文が明記する「2人の playable character が異なる
+    //   戦闘スタイルを状況に応じて切り替える」設計(Steam本文実測: "The characters can switch between
+    //   different fighting styles that have respective features, Choose your style tactically to counter
+    //   various situations!")。既存の "action"(rhythm型2件で使用中)や "dungeon-rpg" 等では捉えきれない
+    //   ため hand-me-down-mecha-fps 型の細粒度ラベルを追加(ui.ts en/ja 追加済み)。
+    // 系譜は「扫雷冒险谭2 ~露露姆的冒险~」(Minesweeper Adventure Tale 2、CelLab開発、2021年3月19日発売、
+    //   OTAKU Plan発売、appid 1549240、Steam appdetails実測確認済み)。ジャンル上の原点ではなく、同一開発元
+    //   CelLab(両appdetailsのdevelopers実測が完全一致)による、同一キャラクター「ルルム」主演の前作という
+    //   系譜(自己参照型の直系続編・monster-rancher型の開発者言明より一段強い、Steam実測データそのものが
+    //   示す一次情報)。さらに両作のストア本文がともに舞台を「Noruru Village(诺鲁鲁村)」と明記しており
+    //   (前作の中文ストア本文、本作の英語ストア本文いずれもappdetails実測確認済み)、キャラクターだけでなく
+    //   世界設定も引き継がれていることを確認済み。自信度: 高(発言ベースでなく公式メタデータの実測一致)。
+    //   前作はSteam自身の表記で対応言語が簡体字中国語のみ(appdetails実測確認済み・英語/日本語なし)。
+    // obscurity は "deep"(noEnglish=false、Steam自身が繁体字中国語/英語/日本語で対応済み)。reachState は
+    //   "unreached_west" を立てる: 英語レビュー比率18.8%(18/96、Steam appreviews API実測、正確には18.75%)
+    //   と過半数に遠く及ばず、IGDB/Metacritic/Kotaku/Backloggdには自動集計ページが存在するのみでレビュー
+    //   本文や特集記事は確認できず、インディートラッカー PixelWave 以外に西側編集メディアの実質的な取材は
+    //   見当たらないため(誇張しない・mamon-king型の判断基準)。reviewBand は持たせない: 96件は数百に満たず
+    //   "hundreds" と言い切れない(誇張しない)。content_descriptors は ids=[]・notes=null(API実測)。
+    meta: { genre: "character-switch-action-rpg", lineage: "minesweeper-adventure-tale-2", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 96, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "Core Awaken Rurumu's will",
+        name_ja: "機核覚醒～ルルムの決意～",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2963320/Core_Awaken_Rurumus_will/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A side-scrolling action RPG about a maid robot named Rurumu whose own core awakened the moment she wished to 'live happily ever after with the Village Head,' only to find that awakening got in the way of the goal it was chasing in the first place: understanding what actually makes people happy, by becoming more human herself. After she fails to keep the Village Head safe in an incident and discovers just how incompetent she is in a fight, she sets out to protect Noruru Village and find her own 'Fighting Style,' developed and published by the small Japanese studio CelLab (セルレ部) together with the label 072 Project / 072 News. She shares the mission, and the controls, with Kitsunetsuki Koharu, a War Shrine Maiden of the Demon Slayer Institution trained since childhood, who has already had to end more of her own corrupted fellow shrine maidens than actual demons and privately wishes she could just become a heartless demon-slaying robot herself. Per Steam's own store page, the two of them switch between distinct fighting styles mid-mission, and the game is built around reading each situation and picking whichever style counters it, while missions run you through a variety of enemies and treasure toward mission challenges and a high score (one of the game's own Steam achievements is literally named 'Perfect Chain Destruction'), with RPG-style equipment and upgrades layered on top for each of them. Its achievement list also confirms a chapter structure that includes a dedicated 'Koharu Chapter,' three explorable areas (Village Outskirts, Snow Mountain, and an Underground Passage), and a bonus 'Infinite Tower' you can climb floor by floor once the story's demon-clan plot is foiled. Released April 30, 2026 per Steam's own listing on both its Japanese and English storefronts, it is Very Positive at 98 percent per Steam's own store page (94 of 96 reviews positive per Steam's review API), a paid title at $12.99 in the US (¥1,980 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports Traditional Chinese, English, and Japanese text and interface only (no Simplified Chinese, no Korean), and while pages for it already exist on aggregators like IGDB, Metacritic, Kotaku, and Backloggd, and the indie tracker PixelWave has covered it, we found no substantial Western editorial review or feature to point to; only about 18 of its 96 reviews, roughly 18.8 percent, are in English so far, so calling this discovered by the West would not be honest. What is true is that its recognition outside Japan is only just getting started.",
+        desc_ja: "「ご主人様を幸せにする」という自らの使命を果たすため、より人間らしくなることで「人類の幸せ」とは何かを理解しようとしているロボット、ルルム。「村長様といつまでも幸せに暮らしたい」と願ったことをきっかけに機核(コア)が覚醒し意識を持つに至ったが、その覚醒こそが本来の目的の妨げになってしまっていた。ある事件で村長を守り切れず、自分の戦闘能力のなさを思い知ったルルムは、「村を守る」ことを新たな目標に掲げ、自分自身の「戦い方」を探す旅に出る。開発・発売は日本の小規模スタジオ CelLab(セルレ部)と、レーベル 072 Project / 072 News。ルルムがこの任務と操作を分け合う相棒は、退魔機関に属する戦巫女コハル(狐憑コハル)——幼い頃から鍛えられ、実際の鬼よりも堕ちてしまった仲間の巫女を手にかけてきた経験の方が多く、いっそ心を持たない退魔ロボットになれたらと密かに思っている人物だ。Steam自身のストア表記によれば、この2人はミッション中に異なる戦闘スタイルを切り替えて使い分けられ、目の前の状況を読んでどちらが有利かを選ぶ設計になっている。ミッションでは多様な敵と宝物が待ち構え、ミッションチャレンジの達成とハイスコアを狙う作りで(実績の一つはそのまま「Perfect Chain Destruction」という名前が付いている)、そこに2人それぞれ独立したRPG的な装備・強化が重なる。実績一覧からは、「コハル編」という専用チャプターを含む章立て構成、3つの探索エリア(村外れ・雪山・地下通路)、そして本編の鬼一党の陰謀を阻止した後に階層ごとに挑めるおまけモード「無限の塔」の存在も確認できる。Steam自身の表記(日本語版・英語版ストアとも一致)によれば2026年4月30日にリリースされ、Steam自身のストアページで好評率98%の「非常に好評」(Steamのレビューデータでは96件中94件が好評)。無料ではない有料タイトル(米国12.99ドル、日本では1,980円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。対応言語は繁体字中国語・英語・日本語のテキストとインターフェースのみ(簡体字中国語・韓国語は非対応)。IGDB・Metacritic・Kotaku・Backloggdといったサイトにはすでにページが存在し、インディートラッカーのPixelWaveも取り上げているが、実質的な西側編集メディアのレビューや特集記事は見当たらない——96件のレビューのうち英語はまだ約18件、約18.8%に留まり、「西側に発見された」と呼ぶのは正直ではない。本当なのは、日本国外での認知はまだ始まったばかりだということだ。",
+      },
+      {
+        name_en: "Minesweeper Adventure Tale 2: Rurumu's Adventure",
+        name_ja: "扫雷冒险谭2 ~露露姆的冒险~",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1549240/2/",
+        tag_en: "Same heroine's earlier game",
+        tag_ja: "同じヒロインの前作",
+        desc_en: "Not a defining-mechanic ancestor but the game this heroine headlined before this one: Minesweeper Adventure Tale 2: Rurumu's Adventure (扫雷冒险谭2 ~露露姆的冒险~), a minesweeper-based adventure game (Steam's own genre tags list it as Adventure, RPG, and Strategy) developed by the same studio, CelLab, and published in the China market by OTAKU Plan, released March 19, 2021 with Simplified Chinese as its only supported language per Steam's own listing (no English or Japanese version exists). It stars the same robot heroine, Rurumu, on the same mission she is still on in Core Awaken Rurumu's will: getting the people of Noruru Village home safely, in this case after a disaster leaves their route home buried in landmines. Per its own store page, the number revealed on a swept tile tells you how many mines surround it, so you mark them by deduction across more than a hundred stages, picking up items and dodging traps that help or hinder that read along the way, and leveling up equipped skills using stars earned as stage-clear rewards. Core Awaken Rurumu's will keeps Rurumu and her drive to protect that same village, but hands her a completely different kind of game: real-time, switchable combat alongside a second playable heroine, Kitsunetsuki Koharu, in place of a number-reading minesweeper puzzle.",
+        desc_ja: "ジャンル上の原点ではなく、このヒロインが本作より前に主演していた一本——扫雷冒险谭2 ~露露姆的冒险~(Minesweeper Adventure Tale 2: Rurumu's Adventure)。Steam自身のジャンルタグでは Adventure・RPG・Strategy に分類される、数字を読んで地雷を見極めるアドベンチャーで、開発は本作と同じ CelLab、発売(中国市場向けローカライズ)は OTAKU Plan、2021年3月19日にリリースされた。Steam自身の表記によれば対応言語は簡体字中国語のみで、英語版・日本語版は存在しない。主人公は本作『機核覚醒～ルルムの決意～』と同じロボットのルルムで、目指すゴールも変わらない——ノルル村(诺鲁鲁村)の人々を無事に村へ帰すこと。前作では、ある事件で村への帰り道が地雷原と化してしまい、ルルムが地雷除去の旅に出る。ストアページによれば、開いたマスに表示される数字が周囲の地雷数を示し、その数字を手がかりに100を超えるステージで地雷を見極めてマークしていく——道中には手助けとなるアイテムや妨害となる罠もあり、ステージクリア報酬で得られる「星」を使って装備したスキルを強化していく。『機核覚醒～ルルムの決意～』は、同じルルムと同じ「村を守る」という動機を受け継ぎながら、数字を読んで地雷を見極めるパズルを、リアルタイムで切り替え可能な戦闘と、もう一人の操作キャラクター、コハルとの二人体制へとまるごと置き換えている。",
+      },
+    ],
+    en: {
+      title: "Core Awaken Rurumu's will - a side-scrolling action RPG where a maid robot finding her own fighting style and a demon-slaying shrine maiden switch combat styles mid-mission, made by the small Japanese studio CelLab as a direct sequel to its own 2021 minesweeper-adventure starring the same heroine, Very Positive at 98 percent over 96 reviews though only about 19 percent of them are English",
+      description: "A side-scrolling action RPG by the small Japanese studio CelLab (セルレ部). Maid robot Rurumu and demon-slaying shrine maiden Kitsunetsuki Koharu switch fighting styles mid-mission to counter each fight, layering independent RPG equipment and upgrades on top. It is CelLab's direct sequel to its own 2021 minesweeper-adventure starring the same Rurumu. Very Positive at 98 percent over 96 reviews, still only about 18.8 percent English.",
+      h1a: "Every fight in front of you is asking which of two styles you should become. ",
+      h1flip: "switch mid-mission, and picking wrong is the only threat that actually matters",
+      h1b: ".",
+      lede: "A side-scrolling action RPG developed and published by the small Japanese studio CelLab (セルレ部) together with the label 072 Project / 072 News, released April 30, 2026. Maid robot Rurumu's core awakened after she wished to live happily ever after with her Village Head, but that same awakening got in the way of her real goal, understanding what makes humans happy in the first place; when she failed to keep the Village Head safe and discovered just how bad she was in a fight, she set out to protect Noruru Village and find her own 'Fighting Style.' She shares the mission, and the game, with Kitsunetsuki Koharu, a War Shrine Maiden of the Demon Slayer Institution who has ended more of her own corrupted fellow shrine maidens than actual demons and privately wishes she could just become a heartless demon-slaying robot herself. You switch between the two of them and their distinct fighting styles mid-mission, picking whichever counters the fight in front of you, while missions send you through a variety of enemies and treasure to chase mission challenges and a high score (one of its Steam achievements is literally named 'Perfect Chain Destruction'), and RPG-style equipment and upgrades carry independently for each of them. It is CelLab's own direct sequel, not a reboot: the studio's earlier game, a minesweeper-based adventure released in 2021, starred this same robot heroine on this same mission to protect this same Noruru Village, per both games' own Steam listings. It is Very Positive at 98 percent per Steam's own store page (94 of 96 reviews positive per Steam's review API), a paid title at $12.99 in the US (¥1,980 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports Traditional Chinese, English, and Japanese text and interface only, and while aggregator pages for it already exist on sites like IGDB, Metacritic, Kotaku, and Backloggd, and the indie tracker PixelWave has covered it, we found no substantial Western editorial review or feature; only about 18 of its 96 reviews, roughly 18.8 percent, are in English so far, so its reach into the West has barely begun.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Rurumu and Koharu fight in genuinely different styles, and Steam's own listing is explicit that you are meant to read each situation and switch mid-mission to whichever one counters it, so the same enemy pattern can demand two different answers depending on which of the two you happen to be when you meet it.",
+        "Missions run you past a variety of enemies and treasure while you chase mission challenges and a high score, and one of the game's own Steam achievements is literally named 'Perfect Chain Destruction,' so clearing a stage cleanly and clearing it for score turn out to be two different goals stacked on the same run.",
+        "Equipment and upgrades carry independently for each of the two fighting styles, and the achievement list confirms three separate areas to explore (Village Outskirts, Snow Mountain, an Underground Passage) plus a bonus 'Infinite Tower' you can keep climbing floor by floor once the story's demon-clan plot is done, so the build you settle into during the campaign is the same one you carry into whatever comes after it.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a side-scrolling action RPG built around switching between two distinctly different playable heroines mid-mission, a maid robot finding her own 'Fighting Style' and a demon-slaying shrine maiden who has killed more of her own corrupted friends than actual demons, each carrying independent equipment and upgrades",
+        "You want a small Japanese studio's direct sequel to its own earlier game, not a reboot: developed by CelLab, it keeps the same robot heroine Rurumu and her drive to protect the same Noruru Village from its 2021 minesweeper-adventure predecessor, but replaces that puzzle loop entirely with real-time, switchable combat and a second playable character",
+        "You want to catch a very fresh Very Positive release before its English-language audience arrives: 98 percent over 96 reviews as of this writing, with only about 18.8 percent of them in English so far and no substantial Western editorial coverage found yet",
+      ],
+      bad: [
+        "You want a slow, puzzle-first game like the developer's own earlier minesweeper-adventure title; this is real-time action built around switching fighting styles under pressure, and it is a paid, fully launched title at $12.99 (¥1,980 in Japan), not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+        "You want full Simplified Chinese or Korean support; Steam's own listing offers Traditional Chinese, English, and Japanese only, and with just 96 reviews total and roughly 18.8 percent of them in English, this is about as unproven-in-the-West as a release gets right now",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "機核覚醒～ルルムの決意～ - 自分の戦い方を探すメイドロボと、退魔機関の戦巫女がミッション中に戦闘スタイルを切り替える横スクロールアクションRPG。開発は小規模スタジオCelLab、同じヒロイン主演の2021年発売の前作(数字を読む地雷アドベンチャー)の正統な続編。96件のレビューで好評率98%の「非常に好評」ながら、英語レビューはまだ約19%",
+      description: "日本の小規模スタジオ CelLab(セルレ部)による横スクロールアクションRPG。自分の戦い方を探すメイドロボのルルムと、退魔機関の戦巫女コハルが、ミッション中に戦闘スタイルを切り替えて状況に対応し、それぞれ独立したRPG的な装備・強化を積んでいく。同じヒロイン・ルルムが主演した2021年発売の前作(数字を読んで地雷を見極めるアドベンチャー)の正統な続編にあたる。96件のレビューで好評率98%の「非常に好評」、英語レビューはまだ約18.8%。",
+      h1a: "目の前の敵が、二つの戦闘スタイルのどちらになるべきかを突きつけてくる。",
+      h1flip: "ミッション中に切り替える——選び間違えることだけが、本当の脅威になる",
+      h1b: "。",
+      lede: "日本の小規模スタジオ CelLab(セルレ部)と、レーベル 072 Project / 072 News が開発・発売する横スクロールアクションRPGで、2026年4月30日にリリースされた。ロボットのルルムは、「村長様といつまでも幸せに暮らしたい」と願ったことをきっかけに機核(コア)が覚醒し意識を持つに至ったが、その覚醒こそが本来の目的——より人間らしくなることで「人類の幸せ」とは何かを理解する——の妨げになってしまっていた。ある事件で村長を守り切れず、自分の戦闘能力のなさを思い知ったルルムは、「村を守る」ことを新たな目標に掲げ、自分自身の「戦い方」を探す旅に出る。この任務と操作を分け合う相棒は、退魔機関に属する戦巫女コハル(狐憑コハル)——実際の鬼よりも堕ちてしまった仲間の巫女を手にかけてきた経験の方が多く、いっそ心を持たない退魔ロボットになれたらと密かに思っている人物だ。この2人はミッション中に異なる戦闘スタイルを切り替えて使い分けられ、目の前の状況を読んでどちらが有利かを選ぶ設計になっており、ミッションでは多様な敵と宝物が待ち構え、ミッションチャレンジの達成とハイスコアを狙う作りで(実績の一つはそのまま「Perfect Chain Destruction」という名前が付いている)、そこに2人それぞれ独立したRPG的な装備・強化が重なる。焼き直しではなく CelLab 自身による正統な続編でもある——両作のSteam自身の表記によれば、同じロボットのヒロイン・ルルムが、同じノルル村を守るという同じ目標で主演した、2021年発売の数字読み型地雷アドベンチャーが前作にあたる。Steam自身のストアページで好評率98%の「非常に好評」(Steamのレビューデータでは96件中94件が好評)。無料ではない有料タイトル(米国12.99ドル、日本では1,980円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。対応言語は繁体字中国語・英語・日本語のテキストとインターフェースのみ。IGDB・Metacritic・Kotaku・Backloggdといったサイトにはすでにページが存在し、インディートラッカーのPixelWaveも取り上げているが、実質的な西側編集メディアのレビューや特集記事は見当たらない——96件のレビューのうち英語はまだ約18件、約18.8%に留まり、西側への広がりはまだ始まったばかりだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ルルムとコハルは根本的に違う戦い方をする。Steam自身の表記は、目の前の状況を読んでミッション中にどちらへ切り替えるかを選ぶ設計だと明言している——だから同じ敵の並びでも、その瞬間どちらのスタイルでいるかによって、正解の動き方そのものが変わってくる。",
+        "ミッションでは多様な敵と宝物の間を進みながら、ミッションチャレンジの達成とハイスコアの両方を狙わされる。実績の一つはそのまま「Perfect Chain Destruction」という名前を持つ——だから「綺麗にクリアする」ことと「高スコアで倒す」ことは、同じ一回のプレイの中で別々の目標として積み重なっていく。",
+        "装備と強化は2つの戦闘スタイルそれぞれに独立して積み上がっていく。実績一覧からは、探索できる3つのエリア(村外れ・雪山・地下通路)に加え、本編の鬼一党の陰謀を阻止した後に階層ごとに挑めるおまけモード「無限の塔」の存在も確認できる——だから本編で仕上げたビルドが、そのままその先のやり込みにも持ち越される。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "2人のまったく違うプレイアブルヒロインをミッション中に切り替える横スクロールアクションRPGが欲しい人——自分の「戦い方」を探すメイドロボと、実際の鬼よりも仲間の巫女を手にかけてきた経験の方が多い退魔の戦巫女、それぞれ独立した装備・強化を積める",
+        "焼き直しではなく、小規模な日本スタジオが自作を正統に継いだ続編が欲しい人——開発は CelLab、2021年発売の前作(数字読み型の地雷アドベンチャー)と同じロボットのヒロイン・ルルムと、同じ「ノルル村を守る」という動機を受け継ぎながら、そのパズルループを丸ごとリアルタイムの切り替え式戦闘と2人目の操作キャラクターへ置き換えている",
+        "とても新しい「非常に好評」タイトルを、英語圏の注目が追いつく前に掴みたい人——執筆時点で96件のレビューのうち好評率98%、英語はまだ約18.8%に留まり、実質的な西側編集メディアの取材もまだ見当たらない",
+      ],
+      bad: [
+        "開発元自身の前作のような、じっくりしたパズル主体のゲームが欲しい人(本作はプレッシャーの中で戦闘スタイルを切り替えるリアルタイムアクション)。また、無料ではない有料タイトル(米国12.99ドル、日本では1,980円)の正式リリース済みでアーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない",
+        "簡体字中国語や韓国語の完全対応が欲しい人(Steam自身の表記では繁体字中国語・英語・日本語のみ)。レビュー総数はまだ96件、そのうち英語は約18.8%に留まり、いま現在としては西側でまだほとんど検証されていない一本だ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7270,6 +7370,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Gradius is a horizontally scrolling shoot 'em up developed and published by Konami, released in Japanese arcades in May 1985 (and internationally as Nemesis). Rather than have the player's ship pick up isolated power-up items, it introduced the 'power meter': collecting capsules advances a highlighted option along a row of upgrades at the bottom of the screen, and pressing the power-up button locks in whichever option is currently lit, an idea the development team modeled on a keyboard's function keys so players could choose their own build on the fly instead of having it chosen for them. Widely credited alongside Namco's Xevious as one of the shooters that defined the genre, it is the origin of a lineage of shoot 'em ups that hand the player a menu of upgrades to spend deliberately rather than collect automatically.",
       ja: "グラディウスは、コナミが開発・発売した横スクロールシューティングで、1985年5月に日本のアーケードで稼働を開始した(海外では『Nemesis』の名で展開)。自機が個別のパワーアップアイテムを拾う方式ではなく、「パワーメーター」という仕組みを導入した——カプセルを取ると画面下に並ぶ強化項目のハイライトが進み、パワーアップボタンを押すと今光っている項目がその場でロックインされる。開発チームはこれをキーボードのファンクションキーになぞらえて発想したもので、強化を一方的に押し付けられるのではなく、プレイヤーが自分の好きなタイミングで自分のビルドを選べる自由を生んだ。ナムコの『ゼビウス』と並び、このジャンルを定義した作品の一つとして広く評価されており、強化を自動で拾うのではなく、メニューから狙って選び取らせるシューティングというジャンルの系譜の原点である。",
+    },
+  },
+  // 原点 扫雷冒险谭2 ~露露姆的冒险~(Minesweeper Adventure Tale 2: Rurumu's Adventure)、CelLab開発、
+  //   OTAKU Plan発売(中国市場向けローカライズ)、2021年3月19日リリース(appid 1549240、Steam appdetails
+  //   実測確認済み)。ジャンル上の原点ではなく、同一開発元 CelLab・同一キャラクター(ルルム)・同一舞台
+  //   (Noruru Village/诺鲁鲁村)による自己参照型の直系前作(両appdetailsの developers/ストア本文の実測が
+  //   完全一致・自信度高)。対応言語は簡体字中国語のみ(appdetails実測確認済み・英語/日本語版は存在しない)。
+  "minesweeper-adventure-tale-2": {
+    steam: "1549240",
+    blurb: {
+      en: "Not a defining-mechanic ancestor, but the earlier game this heroine headlined: Minesweeper Adventure Tale 2: Rurumu's Adventure (扫雷冒险谭2 ~露露姆的冒险~), a minesweeper-based adventure game developed by CelLab, the same studio behind Core Awaken Rurumu's will, and published in the China market by OTAKU Plan, released March 19, 2021 with Simplified Chinese as its only supported language per Steam's own listing. It stars the same robot heroine, Rurumu, on the same mission she is still on in Core Awaken Rurumu's will: getting the people of Noruru Village home safely, in this case after a disaster leaves their route buried in landmines. Per its own store page, the number revealed on a swept tile tells you how many mines surround it, so you mark them by deduction across more than a hundred stages, picking up items and dodging traps along the way, and leveling up equipped skills using stars earned as stage-clear rewards. Core Awaken Rurumu's will keeps Rurumu and her drive to protect that same village, but replaces that number-reading minesweeper puzzle entirely with real-time, switchable combat and a second playable heroine of her own.",
+      ja: "ジャンル上の原点ではなく、このヒロインが本作より前に主演していた一本——扫雷冒险谭2 ~露露姆的冒险~(Minesweeper Adventure Tale 2: Rurumu's Adventure)。『機核覚醒～ルルムの決意～』と同じ開発元 CelLab による、数字を読んで地雷を見極めるアドベンチャーで、発売(中国市場向けローカライズ)は OTAKU Plan、2021年3月19日にリリースされた。Steam自身の表記によれば対応言語は簡体字中国語のみ。主人公は本作と同じロボットのルルムで、目指すゴールも変わらない——ノルル村(诺鲁鲁村)の人々を無事に村へ帰すこと。この前作では、ある事件で村への帰り道が地雷原と化してしまい、ルルムが地雷除去の旅に出る。ストアページによれば、開いたマスに表示される数字が周囲の地雷数を示し、その数字を手がかりに100を超えるステージで地雷を見極めてマークしていく——道中には手助けとなるアイテムや妨害となる罠もあり、ステージクリア報酬で得られる「星」を使って装備したスキルを強化していく。『機核覚醒～ルルムの決意～』は、同じルルムと同じ「村を守る」という動機を受け継ぎながら、この数字読み型の地雷パズルを、リアルタイムで切り替え可能な戦闘と、もう一人の操作キャラクターへとまるごと置き換えている。",
     },
   },
 } as const;
