@@ -6099,6 +6099,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "the-last-salvage-squad": {
+    published: "2026-07-09",
+    publishAt: "2026-07-09",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "hand-me-down-mecha-fps"(お下がりメカFPS): 既存の "shoot-em-up"/"shooting-novel"/
+    //   "action" では捉えきれない、本作を定義する核——限られた装備の中、撃破された僚機が落とした武器を
+    //   「お下がり」として回収しながら進み、死亡即・次のユニットが出撃するライフ制のループ——を専用ラベルと
+    //   して立てる(shape-craft-co-op-puzzle 等と同型の細粒度ラベル追加・ui.ts en/ja 追加済み)。系譜は
+    //   THE 地球防衛軍(サンドロット開発・ディースリー・パブリッシャー発売、2003年PS2)——「等身大の防衛者が
+    //   圧倒的なエイリアンの侵略に一戦ずつ挑む」味の原点(lineage_anchor_key=wikidata_qid, Q5570229 の
+    //   新規 anchor "chikyu-boueigun" で同定)。この帰属は開発者本人の言明ではなく独立レビュアー
+    //   (banshu-doukoukai.com)の比較に基づく推定のため自信度: 中(捏造しない)。既出の "ultraman" アンカー
+    //   (単体の巨大ヒーローvs単体の怪獣という一騎打ちの味)とは別物で重複なし。
+    //   【wikidata QIDの内部矛盾に関する注記】Q5570229 は jawiki サイトリンクが「THE 地球防衛軍」(2003年、
+    //   本作の原点として正しい対象)を指す一方、enwiki サイトリンクは「Global Defence Force」(2005年発売の
+    //   続編『地球防衛軍2』)を指し、英語版記事本文には2003年版への言及が一切ない(curl実測で確認済み・
+    //   Wikidata側のクロスリンク不整合と判断)。そのため本文は jawiki が指す2003年版の事実のみを記載し、
+    //   確認の取れない「西タイトルGlobal Defence Force」という帰属は書かない(捏造しない・正直さ)。
+    //   obscurity は "deep"(総レビュー405件は西側ヒット作と比べればまだ小規模)。reachState は意図的に
+    //   持たせない: 英語レビュー比率53.6%(217/405、Steam自身のレビューAPIで実測確認済み)は過半数に達して
+    //   おり、Kotaku・Noisy Pixel・Game Critixなど西側メディアがすでにレビュー済みのため
+    //   reachState="unreached_west" は立てない(devil-blade-reboot/sonokuni型・誇張しない正直さ)。西到達が
+    //   一定進んでいる一方、総レビュー数405件自体はまだ小規模である点は本文で両論併記する。開発元は日本の
+    //   個人開発者 Sunfish Kumano、発売元は代表大柳竜児氏一人による"一人パブリッシャー"わくわくゲームズ
+    //   合同会社(Waku Waku Games)——大手性なし、is_doujin_indie=true。release_date は Steam appdetails
+    //   実測の発売日(2026年6月17日、日本語版・英語版とも一致)を正として採用。4Gamer/GAME Watch等一部国内
+    //   メディアは発売日を6月18日と報じており1日のズレがあるが(Steamの太平洋時間基準表記の可能性)、
+    //   二次情報として両論併記しSteamの記載日を正とする(捏造しない)。content_descriptors は
+    //   ids=[]・notes=null(API実測)。
+    meta: { genre: "hand-me-down-mecha-fps", lineage: "chikyu-boueigun", obscurity: "deep", reviewBand: "hundreds", rarity: { reviews: 405, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "The Last Salvage Squad",
+        name_ja: "最終回収SQUAD",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3551190/The_Last_Salvage_Squad/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A single-player 2.5D FPS in which you pilot CogrinaUnits, 12-meter-tall autonomous humanoid units built to keep fighting after a gargantuan alien warship all but wiped out human civilization in a single stroke, developed by the Japanese solo creator Sunfish Kumano and published by Waku Waku Games, a one-person publishing company whose sole representative is Ryuji Oyanagi. Missions play out as short, hard-edged skirmishes against alien war machines styled after the multi-legged combatants of classic Japanese sci-fi and tokusatsu, and per Steam's own feature list, every one of them opens with the same choice: use the terrain to pick the enemy apart from range, or close the distance and finish it up close. Equipment stays scarce by design. When your unit is defeated, the next one is sent out immediately, and it inherits whatever weapon the fallen unit managed to drop, a 'hand-me-down' salvage loop that re-arms you out of your own losses rather than a shop or a levelling system. Between fights, the game settles into lighter conversation scenes with fellow units, plus, per Steam's own listing, 'a shiba inu'; one of its eight Steam achievements, 'A Bone to Pick,' appears to nod to that same dog. This is the full version of Sunfish Kumano's earlier prototype Hand-Me-Down, which established that same weapon-salvage core, and this release carries it forward with new pickups, among them a katana and a rocket launcher, and built-out presentation. Released June 17, 2026 per Steam's own listing in both its Japanese and English pages; some Japanese outlets, including 4Gamer and GAME Watch, reported June 18, a one-day gap we read as most likely a Pacific-time listing quirk rather than a correction, and note here rather than silently pick a side. It sits at Very Positive, 98 percent per Steam's own store page (399 of 405 reviews positive per Steam's review API), single-player only with full controller support, a paid title at ¥1,500, not free, fully launched and not in Early Access, with no AI-generated assets and, by Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports Japanese, English, Simplified Chinese, and Traditional Chinese, and about 217 of its 405 reviews, roughly 53.6 percent, are already in English, a clear majority; outlets including Kotaku, Noisy Pixel, and Game Critix have already reviewed it, so calling this a gem the West has not found yet would not be honest. What is true is that its total review count, 405, is still a small, early number next to any Western hit, so this reads less as a game the West has missed and more as one it has only just started properly meeting.",
+        desc_ja: "人類文明をほぼ一撃で壊滅させた超巨大エイリアン宇宙船襲来の後、それでも戦い続けるために作られた全高12mの自律型人型ユニット「コグリナユニット」を操作する、シングルプレイの2.5D FPS。開発は日本の個人開発者 Sunfish Kumano、発売は代表大柳竜児氏ただ一人による「一人パブリッシャー」、わくわくゲームズ合同会社(Waku Waku Games)。各ミッションは、往年の日本のSF・特撮作品に登場するような多脚型のエイリアン兵器を相手にした、短く歯ごたえのある遭遇戦として展開し、Steam自身の機能紹介によれば、そのどれもが同じ選択から始まる——地形を活かして遠距離から敵を切り崩すか、距離を詰めて肉薄で仕留めるか。装備はあえて限られている。ユニットが撃破されると次のユニットが即座に出撃し、倒れたユニットが落とした武器をそのまま受け継ぐ——ショップやレベリングではなく、自分自身の損失から再武装していく「お下がり」回収のループだ。戦闘の合間には僚機との軽い会話シーンが挟まり、Steamのストア表記によれば「柴犬も登場」する。8つあるSteam実績のひとつ「A Bone to Pick(骨の落とし前)」は、その柴犬を指しているようだ。本作は、同じ武器お下がり回収の核をすでに確立していた Sunfish Kumano の前作プロトタイプ「Hand-Me-Down」の完全版にあたり、刀やロケットランチャーなど新たな回収武器と、作り込まれた演出を加えて引き継いでいる。Steam自身の表記(日本語版・英語版とも一致)によれば2026年6月17日にリリースされたが、4Gamer・GAME Watchなど一部の国内メディアは発売日を6月18日と報じており、この1日のズレは太平洋時間基準の表記によるものである可能性が高いと見て、どちらか一方を黙って採用せずここに両論併記しておく。レビューはSteam自身のストアページ表記で好評率98%の「非常に好評」(Steamのレビューデータでは405件中399件が好評)。シングルプレイ専用でフルコントローラー対応、無料ではない有料作(1,500円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)、性的な要素もない。対応言語は日本語・英語・簡体字中国語・繁体字中国語で、405件のレビューのうち英語は約217件、約53.6%とすでに過半数を占める。Kotaku・Noisy Pixel・Game Critixといったメディアがすでにレビューを掲載しており、「西側がまだ見つけていない一本」と呼ぶのは正直ではない。本当なのは、405件という総レビュー数はまだ西側のヒット作と比べれば小さな早い段階の数字だということで、これは「西に見逃された作品」というより「西がようやくきちんと出会い始めた作品」と読むべきものだ。",
+      },
+      {
+        name_en: "Chikyu Boueigun",
+        name_ja: "THE 地球防衛軍",
+        status: "established",
+        homepage: "https://ja.wikipedia.org/wiki/THE_%E5%9C%B0%E7%90%83%E9%98%B2%E8%A1%9B%E8%BB%8D",
+        wikidata: "https://www.wikidata.org/wiki/Q5570229",
+        tag_en: "The likely origin",
+        tag_ja: "系譜上の原点(推定)",
+        desc_en: "A likely, but not developer-confirmed, root of this taste: THE 地球防衛軍 (Chikyu Boueigun), an action-shooting game developed by Sandlot and released as SIMPLE2000 Series Vol. 31, published in Japan by D3 Publisher for the PlayStation 2 on June 26, 2003 (and in Europe on February 27, 2004, published by Agetec under the title Monster Attack). Rather than one giant hero facing down a single kaiju, it drops the player into repeated short skirmishes as one soldier among many, ordinary-scale defenders holding a city against a relentless, overwhelming alien invasion, mission after mission. It became the first entry in what grew into the long-running Earth Defense Force series, whose later installments carried that name internationally, and it set a template that lineage has repeated ever since: a small, mortal defender thrown again and again at a threat too large for any one of them to end alone. The Last Salvage Squad's CogrinaUnits carry that same premise, city-scale swarms of alien war machines met one short encounter at a time, into their own distinct core: a unit that falls is simply replaced by the next one, armed with whatever weapon its predecessor managed to salvage. We found no statement from Sunfish Kumano naming Chikyu Boueigun or the Earth Defense Force series as an influence; this lineage is a comparison independent reviewers, including the Japanese blog banshu-doukoukai.com, have drawn, not one either side has confirmed.",
+        desc_ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——THE 地球防衛軍。サンドロットが開発し、SIMPLE2000シリーズ Vol.31としてディースリー・パブリッシャーが日本国内向けに発売したアクションシューティングで、PlayStation 2向けに2003年6月26日に発売された(欧州では2004年2月27日、Agetecの販売により「Monster Attack」のタイトルで発売)。一人の巨大なヒーローが単体の怪獣に立ち向かうのではなく、プレイヤーを、都市を蹂躙する圧倒的なエイリアンの侵略に立ち向かう、大勢の中の一兵士——等身大の防衛者として、短い遭遇戦へ繰り返し送り込む。本作は、後に長寿シリーズとなる「地球防衛軍」シリーズの第1作となり、後続作は海外でもその名で展開されていく。そしてこの作品が確立したのは、以後この系譜が繰り返すことになる型——一人では終わらせられないほど大きな脅威に、小さく命ある防衛者が何度も何度も投げ込まれる、という型だ。『最終回収SQUAD』のコグリナユニットは、この同じ前提——都市規模のエイリアン兵器の大群に、短い遭遇戦を一つずつ挑んでいく——を受け継ぎながら、そこに本作独自の核を据える——倒れたユニットは、ただちに次のユニットに置き換わり、前任者が回収できた武器を受け継いで出撃する。Sunfish Kumano がTHE地球防衛軍や地球防衛軍シリーズを影響源として名指しした言明は見つかっておらず、この系譜は、日本のブログ banshu-doukoukai.com を含む独立したレビュアーたちが読み取った比較であり、どちらの側からも確認された事実ではない。",
+      },
+    ],
+    en: {
+      title: "The Last Salvage Squad - a single-player 2.5D FPS where a fallen squadmate's dropped weapon is the only way the next CogrinaUnit re-arms, sent out immediately against alien war machines styled after classic tokusatsu sci-fi, the full version of solo developer Sunfish Kumano's prototype Hand-Me-Down, Very Positive at 98 percent over 405 reviews already more than half English",
+      description: "A single-player 2.5D FPS by Japanese solo developer Sunfish Kumano, published by the one-person Waku Waku Games. Pilot a 12-meter autonomous CogrinaUnit against alien war machines styled after classic tokusatsu sci-fi; when your unit falls, the next one is sent out immediately, inheriting whatever weapon the fallen one managed to drop. Very Positive at 98 percent over 405 reviews, and already about 53.6 percent English.",
+      h1a: "Your CogrinaUnit falls. ",
+      h1flip: "The next one is already walking out, carrying whatever weapon it just salvaged off the wreck",
+      h1b: ".",
+      lede: "A single-player 2.5D FPS developed by the Japanese solo creator Sunfish Kumano and published by Waku Waku Games, a one-person publishing company. You pilot a CogrinaUnit, one of the 12-meter-tall autonomous humanoids still fighting after a gargantuan alien warship all but wiped out human civilization, through short, hard-edged skirmishes against alien war machines styled after classic tokusatsu sci-fi, choosing each time whether to use the terrain at range or close in and finish the fight by hand. Equipment stays scarce on purpose: when your unit falls, the next is sent out immediately, inheriting whatever weapon the last one managed to salvage. It is the full version of Sunfish Kumano's earlier prototype Hand-Me-Down. Released in June 2026, it is Very Positive at 98 percent over 405 reviews, and with outlets like Kotaku, Noisy Pixel, and Game Critix already reviewing it, the West has already started to meet it, even if the review count itself is still small.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every mission starts you scarce: only the weapons that survived the last fight are on hand, so picking up what a fallen CogrinaUnit dropped is never a side objective, it is how you stay armed at all.",
+        "Getting taken down is not a stopping point. The next unit is already walking out to relieve it, inheriting whatever gun or blade its predecessor managed to salvage, so a loss becomes the very upgrade that lets you keep fighting.",
+        "Every multi-legged war machine offers the same fork before you fire a shot: use the terrain to take it apart from range, or close the distance and finish it up close, and which one you choose decides what you will have left to salvage when it is over.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love the Earth Defense Force taste of grunt-scale defenders throwing themselves at an overwhelming alien invasion one skirmish at a time, but want that swarm reframed around a single unit you pilot, one whose death simply sends the next one out, armed with whatever the last one dropped",
+        "You want a tactical choice on every single encounter rather than a menu before it: use the terrain to pick a multi-legged war machine apart from range, or close the gap and finish it by hand, with equipment so scarce that a fallen ally's gun is the only upgrade you get",
+        "You want an early look at a solo Japanese developer's full realization of an idea: this is the complete version of Sunfish Kumano's earlier prototype Hand-Me-Down, Very Positive at 98 percent over 405 reviews, before a bigger audience catches up to what Kotaku, Noisy Pixel, and Game Critix have already started writing about",
+      ],
+      bad: [
+        "You want an undiscovered game the West has not touched yet; about 53.6 percent of its 405 reviews are already in English, and outlets like Kotaku, Noisy Pixel, and Game Critix have already reviewed it, so calling this hidden from the West would not be honest. What is true is that 405 total reviews is still a small, early number next to any Western hit",
+        "You want a squad you command as a group, or an online co-op shooter; Steam lists this as single-player only, one CogrinaUnit at a time, and it is a paid, fully launched title, not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "最終回収SQUAD - 倒れた僚機が落とした武器だけが次のコグリナユニットの再武装手段になる、シングルプレイ2.5D FPS。往年の特撮・SF風エイリアン兵器を相手に即座に出撃していく。個人開発者 Sunfish Kumano のプロトタイプ「Hand-Me-Down」の完全版で、405件のレビューで好評率98%の「非常に好評」、すでに英語レビューが半数を超える",
+      description: "日本の個人開発者 Sunfish Kumano が開発し、一人パブリッシャーのわくわくゲームズ合同会社(Waku Waku Games)が発売するシングルプレイ2.5D FPS。全高12mの自律型ユニット「コグリナユニット」を操作し、往年の特撮・SF風のエイリアン兵器と戦う。ユニットが倒れると次のユニットが即座に出撃し、倒れたユニットが落とした武器をそのまま受け継ぐ。405件のレビューで好評率98%の「非常に好評」、すでに英語レビューは約53.6%を占める。",
+      h1a: "コグリナユニットが、倒れる。",
+      h1flip: "次の一機はもう出撃していて、その手には、たったいま回収した武器が握られている",
+      h1b: "。",
+      lede: "日本の個人開発者 Sunfish Kumano が開発し、一人パブリッシャーのわくわくゲームズ合同会社(Waku Waku Games)が発売するシングルプレイ2.5D FPS。超巨大エイリアン宇宙船が人類文明をほぼ一撃で壊滅させたのち、それでも戦い続ける全高12mの自律型人型ユニット「コグリナユニット」を操作し、往年の特撮・SF作品を思わせるエイリアン兵器との、短く歯ごたえのある遭遇戦に挑む。地形を活かして遠距離から崩すか、距離を詰めて肉薄で仕留めるか——そのたびに選ぶことになる。装備はあえて限られていて、ユニットが倒れると次のユニットが即座に出撃し、前任者が回収できた武器をそのまま受け継ぐ。Sunfish Kumano の前作プロトタイプ「Hand-Me-Down」の完全版にあたる。2026年6月にリリースされ、405件のレビューで好評率98%の「非常に好評」。Kotaku・Noisy Pixel・Game Critixといったメディアがすでにレビューを掲載しており、レビュー数そのものはまだ小さいものの、西側はすでにこの作品と出会い始めている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "どのミッションも、手持ちの武器が心もとない状態から始まる——前の戦いを生き延びた武器しか手元にないから、倒れたコグリナユニットが落としたものを拾うことは、寄り道ではなく、武装を保つための唯一の手段になる。",
+        "撃破されることは、そこで終わりを意味しない。倒れたユニットを引き継ぐ次の一機がもう出撃していて、前任者が回収できた銃や刃をそのまま受け継ぐ。だから一つの喪失が、そのまま次を戦うための強化そのものになる。",
+        "多脚型のエイリアン兵器はどれも、撃ち始める前に同じ分岐を突きつけてくる——地形を活かして遠距離から崩すか、距離を詰めて肉薄で仕留めるか。どちらを選ぶかが、その戦いの後に何を回収できるかまで決めていく。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "圧倒的なエイリアンの侵略に、等身大の防衛者たちが一戦一戦、身を投げ出していく「地球防衛軍」的な味が好きで、それを「自分が操るのは常に一機」「倒れれば、前任者の落とした武器を受け継いだ次の一機が出撃する」という形に据え替えたものが欲しい人",
+        "戦う前の分岐そのものが毎回の勝負になるゲームが欲しい人——地形を活かして多脚型の兵器を遠距離から崩すか、距離を詰めて肉薄で仕留めるか。装備は極端に限られていて、倒れた僚機の武器だけが唯一のアップグレードになる",
+        "個人開発者が一つのアイデアを完成させた形を早めに触りたい人——本作は Sunfish Kumano の前作プロトタイプ「Hand-Me-Down」の完全版で、405件のレビューで好評率98%の『非常に好評』。Kotaku・Noisy Pixel・Game Critixがすでに書いている一本に、より大きな注目が集まる前に触れる",
+      ],
+      bad: [
+        "西側がまだ触れていない、完全に未発見の一本が欲しい人(405件のレビューのうち約53.6%はすでに英語で、Kotaku・Noisy Pixel・Game Critixといったメディアもすでにレビューを掲載している。だから「西側が見つけていない」と呼ぶのは正直ではない。本当なのは、405件という総レビュー数は、西側のヒット作と比べればまだ小さく早い段階の数字だということだ)",
+        "複数人で操るチーム編成や、オンライン協力プレイが欲しい人(Steam上ではシングルプレイ専用で、常に1機のコグリナユニットを操作する形式。無料ではない有料の正式リリース済みタイトルで、アーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -6677,6 +6782,29 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Lofi Girl (formerly ChilledCow) is a French YouTube channel and music label created by Dimitri Somoguy, launched as ChilledCow on 18 March 2015. On 25 February 2017 it began the 24/7 lo-fi hip hop livestream it is now known for, branded from the start as relaxation music for people working or studying, and the channel took the name Lofi Girl in 2021. Its mascot, a girl wearing headphones bent over a desk beside a window with a cat on the sill, animated by Juan Pablo Machado since March 2018, turned sitting down to work with quiet lo-fi music and the sense of someone working alongside you into a specific, recognizable ritual. It is the origin of the lineage that turns working alongside lo-fi music and a quiet companion into the whole experience.",
       ja: "Lofi Girl(旧ChilledCow)は、Dimitri Somoguyが制作したフランスのYouTubeチャンネル/音楽レーベルで、2015年3月18日に「ChilledCow」として開設された。2017年2月25日、現在知られる24時間ノンストップのLo-Fi Hip Hopライブ配信を開始し、当初から「作業や勉強をする人のためのリラックスミュージック」と銘打っていた。チャンネルは2021年に「Lofi Girl」へ改称する。2018年3月から起用された、ヘッドホンをつけ猫のいる窓辺のそばで机に向かう少女のマスコット(アニメーションはJuan Pablo Machadoが担当)は、静かなLo-Fiと共に、誰かが隣で作業している気配を感じながら机に向かうことを、一つの認識できる儀式に変えてみせた。Lo-Fi音楽と静かな相棒とともに作業することそのものを体験に変えた、その系譜の原点である。",
+    },
+  },
+  // 原点候補(開発者未確認) THE 地球防衛軍(Chikyu Boueigun), サンドロット開発・ディースリー・パブリッシャー
+  //   発売, SIMPLE2000シリーズ Vol.31, PlayStation 2, 2003年6月26日(欧州は2004年2月27日, Agetec販売,
+  //   タイトル"Monster Attack")。一人の巨大ヒーローが単体の怪獣と一騎打ちする"ultraman"とは別に、等身大の
+  //   防衛者が圧倒的なエイリアン侵略に一戦ずつ挑む味の原点として新規 anchor 化。The Last Salvage Squad の
+  //   コグリナユニット(僚機が倒れると次のユニットが即座に出撃し、回収した武器を受け継ぐ)は、この
+  //   "等身大の防衛者を繰り返し投入する"前提を受け継ぐ子孫と読む(lineage_anchor_key=wikidata_qid,
+  //   Q5570229 で同定)。この帰属は開発者本人の言明ではなく独立レビュアー(banshu-doukoukai.com)の比較に
+  //   基づく推定のため自信度: 中(捏造しない)。
+  //   【wikidata QIDの内部矛盾に関する注記】Q5570229 は jawiki サイトリンクが「THE 地球防衛軍」(2003年、
+  //   本作の原点として正しい対象)を指す一方、enwiki サイトリンクは「Global Defence Force」(2005年発売の
+  //   続編『地球防衛軍2』)を指しており、英語版記事本文には2003年版への言及が一切ない(curl実測で確認済み・
+  //   Wikidata側のクロスリンク不整合と判断)。そのため本文には jawiki が指す2003年版の事実(サンドロット
+  //   開発・ディースリー・パブリッシャー発売・欧州名"Monster Attack")のみを記載し、確認の取れない
+  //   「西タイトルGlobal Defence Force」という帰属は書かない(捏造しない・正直さ)。homepage も2003年版を
+  //   記す jawiki 記事を採用し、続編を記す enwiki 記事は使わない(href の参照先と本文事実の食い違いを
+  //   避けるため)。公式 Steam 版は無い → wikidata で同定(twilight-syndrome 型 href 破損の回避)。
+  "chikyu-boueigun": {
+    wikidata: "https://www.wikidata.org/wiki/Q5570229",
+    blurb: {
+      en: "A likely, but not developer-confirmed, root of this taste: THE 地球防衛軍 (Chikyu Boueigun), an action-shooting game developed by Sandlot and released as SIMPLE2000 Series Vol. 31, published in Japan by D3 Publisher for the PlayStation 2 on June 26, 2003 (and in Europe on February 27, 2004, published by Agetec under the title Monster Attack). Rather than one giant hero facing down a single kaiju, it drops the player into repeated short skirmishes as one soldier among many, ordinary-scale defenders holding a city against a relentless, overwhelming alien invasion, mission after mission. It became the first entry in what grew into the long-running Earth Defense Force series, whose later installments carried that name internationally, and it set a template that lineage has repeated ever since: a small, mortal defender thrown again and again at a threat too large for any one of them to end alone. The Last Salvage Squad's CogrinaUnits carry that same premise, city-scale swarms of alien war machines met one short encounter at a time, into their own distinct core: a unit that falls is simply replaced by the next one, armed with whatever weapon its predecessor managed to salvage. We found no statement from Sunfish Kumano naming Chikyu Boueigun or the Earth Defense Force series as an influence; this lineage is a comparison independent reviewers, including the Japanese blog banshu-doukoukai.com, have drawn, not one either side has confirmed.",
+      ja: "この味の、開発者による確認は取れていないものの、もっとも近しい原点候補——THE 地球防衛軍。サンドロットが開発し、SIMPLE2000シリーズ Vol.31としてディースリー・パブリッシャーが日本国内向けに発売したアクションシューティングで、PlayStation 2向けに2003年6月26日に発売された(欧州では2004年2月27日、Agetecの販売により「Monster Attack」のタイトルで発売)。一人の巨大なヒーローが単体の怪獣に立ち向かうのではなく、プレイヤーを、都市を蹂躙する圧倒的なエイリアンの侵略に立ち向かう、大勢の中の一兵士——等身大の防衛者として、短い遭遇戦へ繰り返し送り込む。本作は、後に長寿シリーズとなる「地球防衛軍」シリーズの第1作となり、後続作は海外でもその名で展開されていく。そしてこの作品が確立したのは、以後この系譜が繰り返すことになる型——一人では終わらせられないほど大きな脅威に、小さく命ある防衛者が何度も何度も投げ込まれる、という型だ。『最終回収SQUAD』のコグリナユニットは、この同じ前提——都市規模のエイリアン兵器の大群に、短い遭遇戦を一つずつ挑んでいく——を受け継ぎながら、そこに本作独自の核を据える——倒れたユニットは、ただちに次のユニットに置き換わり、前任者が回収できた武器を受け継いで出撃する。Sunfish Kumano がTHE地球防衛軍や地球防衛軍シリーズを影響源として名指しした言明は見つかっておらず、この系譜は、日本のブログ banshu-doukoukai.com を含む独立したレビュアーたちが読み取った比較であり、どちらの側からも確認された事実ではない。",
     },
   },
 } as const;
