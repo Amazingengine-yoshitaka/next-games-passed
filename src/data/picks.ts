@@ -6503,6 +6503,108 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "crimzon-clover-world-explosion": {
+    published: "2026-07-11",
+    publishAt: "2026-07-11",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存 "shoot-em-up"(縦スクロール弾幕シューティング、Steam自身のジャンルタグは Action/Indie だが
+    //   専用タグが無いための表面上の分類。実体は Wikipedia 実測確認済みの vertically scrolling bullet-hell
+    //   shooter)。devil-blade-reboot / revolgear-zero と同じ genre を採用。
+    // 系譜は Gradius(グラディウス、コナミ、1985年アーケード稼働)。原作単体の Steam 版は無いため、収録
+    //   コンピレーション『GRADIUS ORIGINS』(コナミ発売、2025年8月、appid 2897590、Steam appdetails実測
+    //   確認済み)を established 側の steam URL として採用(devil-blade-reboot/raystorm型・代替アンカー)。
+    //   ただし lineage anchor 自体の同定は steam ではなく wikidata QID(Q1324646、Wikidata実測確認済み=
+    //   "Gradius"/1985 arcade game)を採用: 本作 ARRANGE モードの新設ギミック(スコアアイテムでマルチゲージを
+    //   充填し、任意のタイミングでサポートポッド/スピードアップ等へ変換する仕組み)を、Nintendo Life と
+    //   コミュニティ参照wiki shmups.wiki がそれぞれ独立に Gradius 自身の「パワーメーター」(カプセルで
+    //   画面下の強化メニューを進め、パワーアップボタンで任意のタイミングでロックインする選択制、Wikipedia
+    //   実測確認済み)になぞらえており、これが唯一特定できた系譜アンカー。開発元 YOTSUBANE 本人がこの関連を
+    //   直接述べた言明は見つかっていないため developer-confirmed ではなく press-drawn(imscared 型・
+    //   確信度は中)。established 側は steam(GRADIUS ORIGINS)と homepage(Wikipedia "Gradius (video game)"
+    //   記事)を併記し、wikidata QID を anchor 同定に使う場合でも href が壊れないようにする。
+    // obscurity は "deep"(noEnglish=false、Steam自身が英語対応済み)。reviewBand は "hundreds"(376件は
+    //   数百の範囲・誇張しない)。reachState は持たせない: 英語レビュー比率72.6%(273/376、Steam appreviews
+    //   API実測)は過半数を超え、PC Gamer の特集記事「Revisiting Crimzon Clover, a shmup that rivals the
+    //   genre's best」に加え Nintendo Life・shmups.wiki もすでに言及済みで、コア弾幕シューター層には一定の
+    //   カルト的認知があるため(revolgear-zero/the-last-salvage-squad型・複数媒体到達済みは誇張しない判断で
+    //   reachStateを立てない)。content_descriptors は ids=[]・notes=null(API実測)。
+    meta: { genre: "shoot-em-up", lineage: "gradius", obscurity: "deep", reviewBand: "hundreds", rarity: { reviews: 376, positivePct: 96, noEnglish: false } },
+    games: [
+      {
+        name_en: "Crimzon Clover World EXplosion",
+        name_ja: "Crimzon Clover World EXplosion",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1718160/Crimzon_Clover_World_EXplosion/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A vertically scrolling bullet-hell shooter built entirely around point-blank risk: fly close enough to an enemy and you gain energy faster, lock on faster, and deal more damage, the same proximity that could get you killed. Holding the lock-on button paints a target line across everything in range, up to 24 enemies at once (28 in Break Mode, 32 in Double Break), and releasing it fires a spread of homing lasers whose count feeds a score chain multiplier. Fill the Break Gauge and Break Mode kicks in, spiking damage, speed, lock-on speed, and the value of the gold stars enemies drop; keep it full and Double Break stacks on top, adding an extra Option pod and doubling the bonus again. The new ARRANGE mode reworks that same escalation into a build you choose yourself: picking up score items charges a shared multi-gauge you can spend at any moment on support pods, speed-ups, and other power-ups, rather than have them assigned to you automatically. Three difficulty tiers, NOVICE, ARCADE, and ARRANGE, each branch into several modes of their own. Developed by the Japanese doujin circle Yotsubane, also known by its circle name CLOVER-TAC, which first showed the game at Comiket 79 in December 2010 before releasing it for Windows in January 2011; Adventure Planning Service, a Tokyo studio founded in 1987, joined as co-developer from the Nintendo Switch version onward. Published by KOMODO, a small Tokyo-based label spun out of Degica Games' game division in 2021. The previous Steam version, World Ignition, was discontinued at the publisher's request in December 2021, the same window in which this successor, World EXplosion (first released on Switch in October 2020), arrived on Steam on December 6, 2021. It is Very Positive at 96 percent per Steam's own store page (364 of 376 reviews positive per Steam's review API). It supports English, French, Italian, German, Spanish, Portuguese, Polish, Japanese, Simplified Chinese, and Traditional Chinese, yet only about 273 of those 376 reviews, roughly 72.6 percent, are in English so far. PC Gamer has already run a feature on it, 'Revisiting Crimzon Clover, a shmup that rivals the genre's best,' and both Nintendo Life and the community reference wiki shmups.wiki have covered it, so calling it a game the West has never touched would not be honest; what is true is that its recognition still sits mostly with the core bullet-hell audience, and it has yet to reach a wider, non-shooter crowd. It is a paid title at ¥1,980 in Japan ($19.99), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none).",
+        desc_ja: "敵に至近距離まで飛び込むほど有利になる——エネルギー獲得が早まり、ロックオンも速まり、与ダメージも上がる。だがその同じ近さが、自分を殺しかねない危険地帯でもある。そんな「ポイントブランク」のリスクだけで組み立てられた、縦スクロールの弾幕シューティング。ロックオンボタンを押し続けると射程内の敵すべてに照準線が伸び(通常最大24体、BREAK中28体、DOUBLE BREAK中32体)、離すとその数だけ追尾レーザーが放たれ、まとめてロックした数がそのままスコアのチェイン倍率になる。ブレイクゲージが満タンになるとBREAKモードが発動し、与ダメ・速度・ロックオン速度・敵が落とす金の星の獲得量が跳ね上がる。満タンを維持したままさらに溜め続けるとDOUBLE BREAKへ移行し、追加のオプションが増え、ボーナスがさらに倍になる。新規モード「ARRANGE」は、この同じ高揚の階段を、自分で選べるビルドへと組み替えたもの——スコアアイテムを取ると共有のマルチゲージが溜まり、好きなタイミングでサポートポッドやスピードアップなどのパワーアップへ変換できる、押し付けではない拡張だ。難易度は「NOVICE」「ARCADE」「ARRANGE」の3段階、それぞれがさらに複数モードへ枝分かれする。開発は日本の同人サークル YOTSUBANE(サークル名義 CLOVER-TAC)——2010年12月のコミケ79で初出展し、2011年1月にWindows版を発売。Nintendo Switch版以降は、1987年設立の東京の開発会社 Adventure Planning Service が共同開発として加わっている。発売はKOMODO——2021年にDegica Gamesのゲーム部門が独立してできた、東京拠点の小規模レーベルだ。前作『World Ignition』のSteam版は2021年12月、パブリッシャーの要請でストアから取り下げとなり、同じタイミングで、この後継版『World EXplosion』(2020年10月にNintendo Switch版として先行発売)が2021年12月6日にSteamへ登場した。Steam自身のストア表記で好評率96%の「非常に好評」(Steamのレビューデータでは376件中364件が好評)。対応言語は英語・フランス語・イタリア語・ドイツ語・スペイン語・ポルトガル語・ポーランド語・日本語・簡体字/繁体字中国語だが、376件のレビューのうち英語はまだ約273件、約72.6%に留まる。PC Gamerはすでに特集記事「Revisiting Crimzon Clover, a shmup that rivals the genre's best」を組んでおり、Nintendo Lifeとコミュニティ参照wikiのshmups.wikiも取り上げている——だから「西側がまったく触れていない一本」と呼ぶのは正直ではない。本当なのは、その認知が今なお弾幕シューティングのコアなファン層に留まっており、シューター以外の幅広い層へはまだ届いていないということだ。日本では1,980円(海外は19.99ドル)の有料タイトルで無料ではなく、正式リリース済みでアーリーアクセスではなく、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。",
+      },
+      {
+        name_en: "Gradius",
+        name_ja: "グラディウス",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2897590/GRADIUS_ORIGINS/",
+        wikidata: "https://www.wikidata.org/wiki/Q1324646",
+        homepage: "https://en.wikipedia.org/wiki/Gradius_(video_game)",
+        tag_en: "The likely origin",
+        tag_ja: "系譜上の原点(推定)",
+        desc_en: "A likely, though not developer-confirmed, root of one piece of this taste: Gradius, a horizontally scrolling shoot 'em up developed and published by Konami, released in Japanese arcades in May 1985 (and internationally as Nemesis). Rather than have its ship, the Vic Viper, pick up isolated power-ups, it built the 'power meter': collecting capsules advances a highlighted option along a row of upgrades at the screen's bottom, and pressing the power-up button locks in whichever option is currently lit, a selection-bar idea its team modeled on a keyboard's function keys so players could choose their own build in real time rather than have it chosen for them. Widely credited alongside Namco's Xevious as one of the shooters that defined the genre, it has no standalone Steam release of its own; the only current PC form is GRADIUS ORIGINS, a 2025 collection published by Konami that gathers the arcade original alongside later entries. Crimzon Clover World EXplosion's new ARRANGE mode, in which picking up score items charges a shared gauge you can spend at will on support pods, speed-ups, and other power-ups, has been independently likened by Nintendo Life and the community reference wiki shmups.wiki to that same power-up selection design, though Yotsubane has not stated the connection directly.",
+        desc_ja: "この味の一部について、開発者本人による確認は取れていないものの、もっとも近しい原点候補——グラディウス。コナミが開発・発売した横スクロールシューティングで、1985年5月に日本のアーケードで稼働を開始した(海外では『Nemesis』の名で展開)。自機「ビックバイパー」が個別のパワーアップを拾う方式ではなく、「パワーメーター」という仕組みを築いた——カプセルを取ると画面下に並ぶ強化項目のハイライトが進み、パワーアップボタンを押すと今光っている項目がその場でロックインされる。この選択バーの発想は、開発チームがキーボードのファンクションキーになぞらえて考案したもので、強化を一方的に押し付けられるのではなく、プレイヤー自身がその場で選び取れる自由を生んだ。ナムコの『ゼビウス』と並び、このジャンルを定義した作品の一つとして広く評価されている。1985年のアーケード原作単体のSteam版は無く、今日PCで入手できる唯一の形は、コナミが発売した2025年のコレクション『GRADIUS ORIGINS』で、アーケード原作が後続作とともに収録されている。『Crimzon Clover World EXplosion』の新規モード「ARRANGE」——スコアアイテムの取得で共有ゲージを充填し、サポートポッドやスピードアップなどのパワーアップへ好きなタイミングで変換できる仕組み——について、Nintendo Lifeと、コミュニティによる参照wiki「shmups.wiki」がそれぞれ独立に、この同じパワーアップ選択の設計になぞらえている。ただし開発元 YOTSUBANE がこの関連を直接述べたことは確認されていない。",
+      },
+    ],
+    en: {
+      title: "Crimzon Clover World EXplosion - a vertically scrolling bullet-hell shooter where flying close enough to lock onto everything in range chains into a multiplier, and stacking two full Break Gauges triggers Double Break for a short burst of overpowered destruction, Very Positive at 96 percent over 376 reviews though only about 73 percent of them are English",
+      description: "A vertically scrolling bullet-hell shooter by the Japanese doujin circle Yotsubane (CLOVER-TAC). Flying close enough to graze an enemy feeds energy, lock-on speed, and damage, and chains into a score multiplier; a full Break Gauge triggers Break Mode, and stacking a second sends it into Double Break. The new ARRANGE mode lets you charge a shared gauge and spend it on power-ups of your choosing. Very Positive at 96 percent over 376 reviews, still only about 72.6 percent English.",
+      h1a: "Get close enough to lock onto everything in reach, ",
+      h1flip: "and the same risk that could kill you chains into a multiplier that keeps climbing",
+      h1b: ".",
+      lede: "A vertically scrolling bullet-hell shooter developed by the Japanese doujin circle Yotsubane, also known by its circle name CLOVER-TAC, first shown at Comiket 79 in December 2010, with Adventure Planning Service, a Tokyo studio founded in 1987, joining as co-developer from the Nintendo Switch version onward, and published by the small Tokyo label KOMODO. Flying close enough to graze an enemy feeds you energy faster, speeds up your lock-on, and raises your damage, the same proximity that could get you killed; holding the lock-on button paints a line across everything in range, up to 24 enemies at once (28 in Break Mode, 32 in Double Break), and releasing it fires a spread of homing lasers that chains into a score multiplier. Fill the Break Gauge and Break Mode spikes your damage, speed, lock-on speed, and the value of the gold stars enemies drop; keep it full and Double Break stacks on top with an extra Option pod and a doubled bonus again. The new ARRANGE mode reworks that same escalation into a build of your own choosing: score items charge a shared gauge you can spend at any moment on support pods, speed-ups, and other power-ups rather than have them assigned to you automatically. It is Very Positive at 96 percent over 376 reviews, and while PC Gamer has run a feature on it and both Nintendo Life and the community wiki shmups.wiki have covered it, only about 72.6 percent of those reviews are in English so far, so its recognition still sits mostly with the core bullet-hell crowd.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Standard shmup instinct says keep your distance, but here energy, lock-on speed, and damage all scale with how close you dare to fly, so the safe read of any encounter flips: the graze that could kill you is also the fuel you need most.",
+        "Holding the lock-on button paints a line across everything in range, and every enemy you catch adds to the chain when you let go, up to 24 at once, 28 in Break Mode, 32 in Double Break, so the closer and greedier you play, the bigger the multiplier waiting on the other side of the same held breath.",
+        "All of that aggression fills the same Break Gauge, and once it is full a second full gauge does not just extend Break Mode, it stacks into Double Break, an extra Option pod and a doubled bonus on top of a doubled bonus, so the run rewards you for finding a way to stay in the danger zone even after it should have already killed you.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a bullet-hell built entirely around point-blank risk, where energy, lock-on speed, and damage all rise the closer you fly, with a lock-on chain topping out at 24 to 32 targets and a two-stage Break and Double Break gauge that snowballs your own aggression into overkill",
+        "You want a genre veteran's new ARRANGE mode that hands you a Gradius-style power-up selection bar of your own, charging a shared gauge from score items and spending it on support pods and speed-ups whenever you choose, a design Nintendo Life and shmups.wiki have both likened to Konami's 1985 power meter",
+        "You want a cult favorite the core bullet-hell scene already knows, praised in a PC Gamer feature and Very Positive at 96 percent over 376 reviews, before the small slice of English-reading players, about 72.6 percent of its reviews, grows into something wider",
+      ],
+      bad: [
+        "You want a slow, cautious shooter where staying at range is the correct play; the entire design pays you for closing distance and gambling on when to trigger Break and Double Break, and it is a paid, fully launched title at ¥1,980 ($19.99), not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+        "You want a game the West has never heard of at all; PC Gamer, Nintendo Life, and shmups.wiki have all already covered it, so calling it fully undiscovered would not be honest. What is true is that only about 72.6 percent of its 376 reviews are in English so far, and its audience still leans heavily Japanese",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Crimzon Clover World EXplosion - 敵に近づくほどロックオンできる数が増え、そのままチェイン倍率になる弾幕シューティング。ブレイクゲージを二段積むと「DOUBLE BREAK」へ突入し束の間の暴走状態に。376件のレビューで好評率96%の「非常に好評」ながら、英語レビューはまだ約73%",
+      description: "日本の同人サークル YOTSUBANE(CLOVER-TAC)による縦スクロールの弾幕シューティング。敵に近づくほどエネルギー・ロックオン速度・与ダメージが伸び、そのままスコアのチェイン倍率になる。ブレイクゲージが満タンになるとBREAKモード、さらに積むとDOUBLE BREAKへ突入。新規モード「ARRANGE」では共有ゲージを好きなパワーアップへ自由に変換できる。376件のレビューで好評率96%の「非常に好評」、英語レビューはまだ約72.6%。",
+      h1a: "敵に近づくほど、ロックオンできる数が増えていく。",
+      h1flip: "殺されかねないその近さが、そのままチェイン倍率になって伸びていく",
+      h1b: "。",
+      lede: "日本の同人サークル YOTSUBANE(サークル名義 CLOVER-TAC)が手がけ、2010年12月のコミケ79で初出展、1987年設立の東京の開発会社 Adventure Planning Service が Nintendo Switch版以降で共同開発として加わり、東京拠点の小規模レーベル KOMODO が発売する縦スクロールの弾幕シューティング。敵に至近距離まで近づくほどエネルギー獲得が早まり、ロックオンも速まり、与ダメージも上がる——だがその同じ近さが、自分を殺しかねない危険地帯でもある。ロックオンボタンを押し続けると射程内の敵すべてに照準線が伸び(通常最大24体、BREAK中28体、DOUBLE BREAK中32体)、離すとその数だけ追尾レーザーが放たれ、そのままスコアのチェイン倍率になる。ブレイクゲージが満タンになるとBREAKモードが発動し、与ダメ・速度・ロックオン速度・敵が落とす金の星の獲得量が跳ね上がる。満タンを維持したまま溜め続けるとDOUBLE BREAKへ移行し、追加のオプションが増え、ボーナスがさらに倍になる。新規モード「ARRANGE」は、この同じ高揚の階段を自分で選べるビルドへと組み替えたもの——スコアアイテムで共有ゲージを溜め、好きなタイミングでサポートポッドやスピードアップなどのパワーアップへ変換できる。376件のレビューで好評率96%の「非常に好評」。PC Gamerの特集記事があり、Nintendo Lifeとshmups.wikiも取り上げているが、そのうち英語はまだ約72.6%に留まり、認知は今なお弾幕シューティングのコアなファン層が中心だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "普通のシューティングなら安全なのは敵から離れること。でもここではエネルギー・ロックオン速度・与ダメージのすべてが、どれだけ危険な距離まで飛び込めるかに比例する。だから「危ない」はずのかすりが、そのまま一番欲しい燃料になる——安全の読みそのものがひっくり返る。",
+        "ロックオンボタンを押し続けると、射程内のすべてに照準線が伸びる。離した瞬間、捕まえた数がそのままチェインになる——通常最大24体、BREAK中28体、DOUBLE BREAK中32体。だから近づいて欲張るほど、息を止めたその先で待つ倍率も大きくなっていく。",
+        "その攻めっ気のすべてが、同じブレイクゲージを満たしていく。満タンになった上でもう一段満たすと、BREAKモードが延びるだけでは終わらない——DOUBLE BREAKへ移行し、追加のオプションと、二重に膨らんだボーナスが手に入る。だから、とっくに死んでいてもおかしくない危険地帯に踏みとどまり続けたことそのものが、報われる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "至近距離のリスクだけで組み立てられた弾幕シューティングが欲しい人——近づくほどエネルギー・ロックオン速度・与ダメージが伸び、ロックオン数は最大24〜32体まで積み上がり、自分の攻めっ気そのものが二段構えのBREAK/DOUBLE BREAKへ雪だるま式に変わっていく",
+        "老舗タイトルが新たに積んだ「ARRANGE」モードで、自分だけのグラディウス的パワーアップ選択バーが欲しい人——スコアアイテムで共有ゲージを溜め、好きなタイミングでサポートポッドやスピードアップへ変換できる。この設計をNintendo Lifeとshmups.wikiがそれぞれ、コナミの1985年「パワーメーター」になぞらえている",
+        "コアな弾幕シューティング層にはすでに知られたカルト的人気作を、広い層に届く前に触りたい人——PC Gamerの特集記事もあり、376件のレビューで好評率96%の「非常に好評」。英語レビューはまだ約72.6%に留まる",
+      ],
+      bad: [
+        "距離を取るのが正解の、ゆっくり慎重なシューティングが欲しい人(本作は距離を詰め、BREAK・DOUBLE BREAKをいつ発動させるかの賭けそのものに報酬を与えるよう作られている)。また、日本では1,980円(海外は19.99ドル)の無料ではない有料タイトルで、正式リリース済みでアーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない",
+        "西側がまったく知らない一本が欲しい人(PC Gamer・Nintendo Life・shmups.wikiがすでに取り上げており、「完全未発見」と呼ぶのは正直ではない。本当なのは、376件のレビューのうち英語はまだ約72.6%に留まり、支持は今なお日本語圏に大きく偏っているということだ)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7150,6 +7252,24 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "RayStorm is a vertically scrolling shoot 'em up developed and published by Taito, released in Japanese arcades in 1996 as the sequel to RayForce (also known abroad as Layer Section or Gunlock). Rendered with 3D polygon enemies over scrolling 2D backgrounds, it is best known for its lock-on laser: holding a button paints a reticle across multiple enemies at once, and releasing it fires a spread of homing lasers that clears them out in a single strike, letting the player neutralize threats before they can even return fire. The 1996 arcade original has no standalone Steam release; its only form available today is Ray'z Arcade Chronology, a collection developed by M2 Co., Ltd. and published by Taito that gathers RayStorm alongside RayForce and RayCrisis with HD-remastered visuals. It is the origin of a lineage built around locking onto and erasing threats in bulk rather than weaving between them one at a time.",
       ja: "RayStorm(レイストーム)は、タイトーが開発・発売した縦スクロールシューティングで、『レイフォース』(海外名Layer Section / Gunlock)の続編として1996年に日本のアーケードで稼働を開始した。スクロールする2Dの背景に3Dポリゴンの敵を描画する作りで知られ、代名詞は「ロックオンレーザー」——ボタンを押し続けて複数の敵に同時に照準を合わせ、放つと追尾レーザーの束が一気に敵を消し去り、反撃を受ける前に脅威を無力化できる。1996年のアーケード原作単体のSteam版は存在せず、今日唯一入手できる形は、M2が開発しタイトーが発売したコレクション『Ray'z Arcade Chronology』で、レイフォース・レイクライシスとともにHDリマスターされた本作が収録されている。一体ずつ避けるのではなく、まとめてロックオンして消し去るという系譜の原点である。",
+    },
+  },
+  // 原点候補(開発者未確認・press-drawn) Gradius(グラディウス), コナミ開発・発売, 1985年5月アーケード稼働
+  //   (海外名 Nemesis, Wikidata実測確認済み Q1324646="Gradius"/1985 arcade game)。Crimzon Clover World
+  //   EXplosion の新規モード「ARRANGE」(スコアアイテムでマルチゲージを充填し任意のタイミングでパワーアップへ
+  //   変換する仕組み)を、Nintendo Life とコミュニティ参照wiki shmups.wiki がそれぞれ独立に Gradius 自身の
+  //   「パワーメーター」(カプセルで画面下の強化メニューを進め、パワーアップボタンで任意の項目をロックインする
+  //   選択制、en.wikipedia.org/wiki/Gradius_(video_game) 実測確認済み)になぞらえており、これが唯一特定できた
+  //   系譜アンカー。開発元 YOTSUBANE 本人がこの関連を直接述べた言明は無いため developer-confirmed ではなく
+  //   press-drawn(imscared型・確信度は中)。1985年のアーケード原作単体のSteam版は無いため lineage_anchor_key
+  //   には steam ではなく wikidata QID を採用(raystorm/devil-blade-reboot型と異なり steam を anchor 自体には
+  //   持たせない・established側の games[] で steam(GRADIUS ORIGINS)と homepage(Wikipedia)を併記して href
+  //   破損を防ぐのは picks 側の責務)。
+  "gradius": {
+    wikidata: "https://www.wikidata.org/wiki/Q1324646",
+    blurb: {
+      en: "Gradius is a horizontally scrolling shoot 'em up developed and published by Konami, released in Japanese arcades in May 1985 (and internationally as Nemesis). Rather than have the player's ship pick up isolated power-up items, it introduced the 'power meter': collecting capsules advances a highlighted option along a row of upgrades at the bottom of the screen, and pressing the power-up button locks in whichever option is currently lit, an idea the development team modeled on a keyboard's function keys so players could choose their own build on the fly instead of having it chosen for them. Widely credited alongside Namco's Xevious as one of the shooters that defined the genre, it is the origin of a lineage of shoot 'em ups that hand the player a menu of upgrades to spend deliberately rather than collect automatically.",
+      ja: "グラディウスは、コナミが開発・発売した横スクロールシューティングで、1985年5月に日本のアーケードで稼働を開始した(海外では『Nemesis』の名で展開)。自機が個別のパワーアップアイテムを拾う方式ではなく、「パワーメーター」という仕組みを導入した——カプセルを取ると画面下に並ぶ強化項目のハイライトが進み、パワーアップボタンを押すと今光っている項目がその場でロックインされる。開発チームはこれをキーボードのファンクションキーになぞらえて発想したもので、強化を一方的に押し付けられるのではなく、プレイヤーが自分の好きなタイミングで自分のビルドを選べる自由を生んだ。ナムコの『ゼビウス』と並び、このジャンルを定義した作品の一つとして広く評価されており、強化を自動で拾うのではなく、メニューから狙って選び取らせるシューティングというジャンルの系譜の原点である。",
     },
   },
 } as const;
