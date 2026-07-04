@@ -6814,6 +6814,110 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dungeon-antiqua": {
+    published: "2026-07-13",
+    publishAt: "2026-07-13",
+    kind: "find",
+    leadIndex: 0,
+    // reachState は意図的に持たせない: 英語対応済み(English/Japanese/Simplified Chinese、appdetails
+    //   実測確認済み)なので "lang_walled" は rarityStamps の「英語にまだ非対応」を誤って立てる(正直さ)。
+    //   英語レビュー比率約38.6%(144/373、appreviews API実測)に加え、Niche Gamer("Japanese dungeon
+    //   RPG Dungeon Antiqua coming to consoles")・Automaton West("Japanese indie dev on how their
+    //   game was wrongly flagged as a virus, and blocked on Steam")の実記事を直接WebFetchで実測確認
+    //   済み、かつコンソール移植予定日にAMATA GamesがNintendo Switch/PlayStation 5/Xbox Series X|S
+    //   へ同時コンソール移植すると自社発表済み(Niche Gamer記事本文 "Publisher Amata Games and
+    //   developer Shiromofu Factory have announced console ports...on July 30th"で直接確認済み)で
+    //   あるため、"unreached_west"(西未到達)は実態を誇張する(誇張しない・dungeon-antiqua-2型の判断)。
+    //   obscurity は "wall"(高評価だが言語/地域の壁)で正直に表す。stamp は 91%好評 + レビュー373件
+    //   のみ立てる。
+    // genre は既存 "dungeon-rpg"(dungeon-antiqua-2 で使用中)を再利用: Steam自身のジャンルタグは
+    //   Indie/RPG(appdetails実測確認済み)で、続編と同じ核を持つダンジョンクロール型RPG。
+    // lineage は既存 anchor "wizardry-proving-grounds"(potato-flowers pick で使用中、steam app
+    //   2518960)を再利用する。新規 anchor は追加しない(同一実体の二重登録を避ける・SSOT)。ストア
+    //   公式short_descriptionは「inspired by the Wizardry and Final Fantasy games of the 1980s and
+    //   1990s」とWizardryとFinal Fantasyを同格で明記する(appdetails実測確認済み)が、続編 Dungeon
+    //   Antiqua 2(dungeon-antiqua-2 pick)が既に "final-fantasy-v" を系譜アンカーに採用済みのため、
+    //   重複を避け本作(初代)は "wizardry-proving-grounds" 側を採用する。中核メカニクス——キャラクター
+    //   の視界に応じて拡張する2Dマップ探索、複数職業による自由なパーティ編成——は、パーティ制ダンジョン
+    //   クロールRPGを定義した Wizardry(Sir-Tech、Andrew Greenberg / Robert Woodhead設計、wikidata
+    //   Q1886140実測確認済み)へ直接遡る。正直な開示: ストア文言はFF系譜を排除しておらず、本作がFF系譜
+    //   でないという主張ではない。あくまでDA2との重複回避と、事実整合性に基づく選択。
+    // content_descriptors は ids=[]・notes=null(API実測)。
+    meta: { genre: "dungeon-rpg", lineage: "wizardry-proving-grounds", obscurity: "wall", reviewBand: "hundreds", rarity: { reviews: 373, positivePct: 91, noEnglish: false } },
+    games: [
+      {
+        name_en: "Dungeon Antiqua",
+        name_ja: "Dungeon Antiqua",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3198540/Dungeon_Antiqua/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A Super Famicom-styled 2D dungeon crawl RPG by Shiromofu Factory, the work of the Japanese solo creator frenchbread, with pixel art and chiptune sound cast in an 80s-90s mold. Per Steam's own listing, its 2D map is described as expanding 'to match the character's field of view,' so the dungeon is never handed to you all at once; a wide variety of professions plus free party formation, paired with auto-generated maps, are built to be 'played over and over again,' while progression stays focused on 'hacking and exploration, with no redundant scenarios or direction,' carried by 'fast-paced, modern and comfortable controls' that reach down to full DualShock and DualSense support. It runs on Pyxel, the Japanese retro game engine by Takashi Kitao, and even ships a 'dungeon-antiqua.pyxapp' file for handheld consoles that support it. Released October 9, 2024, it is Very Positive at 91 percent over 373 reviews (338 positive, 35 negative), a paid title at $6.99 in the US (¥800 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports English, Japanese, and Simplified Chinese, and with 144 of its 373 reviews in English (about 38.6 percent), the West has already begun to notice it: outlets including Niche Gamer and Automaton West have covered it, and publisher AMATA Games has announced it is bringing the game to Nintendo Switch, PlayStation 5, and Xbox Series X|S on July 30, 2026, alongside its existing PC release, so calling it purely undiscovered would not be honest, even though most of its audience still reads in Japanese. It is also the game that came first: Dungeon Antiqua 2 carries this same jobs-and-dungeons formula into a 10-job sequel. One note to clear up: this Shiromofu Factory / frenchbread is a completely unrelated namesake to the fighting-game studio French-Bread (Melty Blood, UNDER NIGHT IN-BIRTH).",
+        desc_ja: "スーパーファミコン風のピクセルアートとチップチューンサウンドで作られた、2Dダンジョンクロール型RPG。開発元は Shiromofu Factory——日本の個人クリエイター frenchbread（ふれんち）の手による一本だ。Steam自身のストア表記によれば、マップは「キャラクターの視界にあわせて広がる2Dマップ」——だからダンジョンの全体像が最初から見えていることはない。豊富な職業と自由なパーティ編成、自動生成マップにより「何度でも遊べるゲーム設計」を掲げ、進行は「冗長なシナリオや演出のない、ハクスラと探索に特化した」ものに徹し、操作性は「テンポが良く、現代的で快適」——DualShock・DualSenseを含むフルコントローラ対応まで届く。開発には日本製のレトロゲームエンジン Pyxel（北尾崇 作）が使われ、対応するハンドヘルド機向けに「dungeon-antiqua.pyxapp」という実行ファイルまで同梱されている。2024年10月9日リリース、373件のレビュー(好評338・不評35)で好評率91%の「非常に好評」。無料ではない有料タイトル(米国6.99ドル、日本では800円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。英語・日本語・簡体字中国語に対応し、373件のうち144件(約38.6%)が英語レビュー——西はすでにこの一本に気づき始めている。Niche GamerやAutomaton WESTといった媒体がすでに取り上げ、パブリッシャーのAMATA Gamesは2026年7月30日にNintendo Switch・PlayStation 5・Xbox Series X|Sへ本作を展開すると発表済みで、既存のPC版と並んで届けられる——だから「まったくの未発見」と呼ぶのは正直ではない。それでも観客の中心は、まだ日本語圏だ。本作はまた、続編 Dungeon Antiqua 2 が同じジョブとダンジョンの設計を10ジョブへと受け継ぐ、その前作でもある。一つだけ補足を——この Shiromofu Factory / frenchbread は、格闘ゲームのスタジオ French-Bread(Melty Blood、UNDER NIGHT IN-BIRTH)とは完全に無関係の同名別者だ。",
+      },
+      {
+        name_en: "Wizardry: Proving Grounds of the Mad Overlord",
+        name_ja: "ウィザードリィ 狂王の試練場",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2518960/Wizardry_Proving_Grounds_of_the_Mad_Overlord/",
+        wikidata: "https://www.wikidata.org/wiki/Q1886140",
+        tag_en: "The dungeon-crawl origin",
+        tag_ja: "ダンジョンクロールの原点",
+        desc_en: "The origin of this taste: Wizardry: Proving Grounds of the Mad Overlord, the first entry in Sir-Tech's Wizardry series, designed by Andrew Greenberg and Robert Woodhead and originally released for the Apple II in 1981. Steam's own listing for its faithful modern remake calls it 'the first party-based RPG video game ever released' and says it was 'a direct inspiration to series like Final Fantasy and Dragon Quest' that followed in Japan: you assemble your own multi-class party of adventurers, then descend a maze in first person one careful step at a time, mapping every trap and monster encounter by hand since none of it is shown to you in advance. That core, a freely composed party working its way, blind, through a dungeon that must be read rather than shown, is the root Dungeon Antiqua grows from: it keeps the free party composition across a wide roster of professions, but replaces the original's blank, hand-mapped maze with a 2D map that automatically expands to match your own line of sight as you explore. The 1981 original is anchored here to Digital Eclipse's remake, built, in Steam's own words, 'directly on top of the original 1981 game's code.'",
+        desc_ja: "この味の原点——Wizardry: Proving Grounds of the Mad Overlord(ウィザードリィ 狂王の試練場)。Sir-Tech の Wizardry シリーズ第1作で、Andrew Greenberg と Robert Woodhead が設計し、1981年にApple II向けに発売された。忠実な現代リメイク版のSteam自身の表記によれば、本作は「パーティー制を導入した世界初のRPG」であり、「後の国産RPGにも多大なる影響を与えました」——プレイヤーは複数クラスからなる自分だけの冒険者パーティを編成し、罠もモンスターの遭遇もあらかじめ何一つ示されない一人称視点の迷宮を、自分の手で地図を描きながら一歩ずつ慎重に降りていく。自由に編成したパーティが、何も見せてもらえないまま迷宮を手探りで進んでいく——この核こそ、Dungeon Antiqua が育つ根だ。本作は複数職業による自由なパーティ編成をそのまま受け継ぎながら、原作が求めた「白紙から自分で地図を描く」迷宮を、キャラクターの視界に応じて自動的に広がっていく2Dマップへと置き換えている。1981年の原作は、Steam自身の表記で「1981年のオリジナル版のプログラムを流用して作られています」とするDigital Eclipseによるリメイク版で同定する。",
+      },
+    ],
+    en: {
+      title: "Dungeon Antiqua - a Super Famicom-style 2D dungeon crawl RPG whose map only expands as far as your own line of sight, free party composition across a wide roster of professions in procedurally generated dungeons, an heir to Wizardry's original party-based dungeon crawl, Very Positive at 91 percent over 373 reviews as it heads to Switch, PS5, and Xbox this July",
+      description: "A Super Famicom-styled 2D dungeon crawl RPG by Shiromofu Factory, the solo creator frenchbread. Its 2D map expands only as far as your character's own line of sight, and free party composition across a wide roster of professions plus auto-generated maps keep exploring and building your characters center stage, with no padded story. Very Positive at 91 percent over 373 reviews; only about 38.6 percent are English, though a console port lands on July 30, 2026.",
+      h1a: "You are not given the dungeon's map. ",
+      h1flip: "it only grows as far as your own line of sight has actually walked",
+      h1b: ".",
+      lede: "A Super Famicom-styled 2D dungeon crawl RPG by Shiromofu Factory, the work of the Japanese solo creator frenchbread, with pixel art and chiptune sound cast in an 80s-90s mold. Per Steam's own listing, the 2D map is described as expanding 'to match the character's field of view,' so the dungeon is never handed to you all at once, and a wide variety of professions plus free party formation, paired with auto-generated maps, are built to be 'played over and over again'; progression stays focused on 'hacking and exploration, with no redundant scenarios or direction,' carried by 'fast-paced, modern and comfortable controls' that reach down to full DualShock and DualSense support. It runs on Pyxel, the Japanese retro game engine by Takashi Kitao, and even ships a 'dungeon-antiqua.pyxapp' file for handheld consoles that support it. Released October 9, 2024, it is Very Positive at 91 percent over 373 reviews (338 positive, 35 negative), a paid title at $6.99 in the US (¥800 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports English, Japanese, and Simplified Chinese, and with 144 of its 373 reviews in English (about 38.6 percent), the West has already begun to notice it: outlets including Niche Gamer and Automaton West have covered it, and publisher AMATA Games has announced it is bringing the game to Nintendo Switch, PlayStation 5, and Xbox Series X|S on July 30, 2026, alongside its existing PC release, so calling it purely undiscovered would not be honest, even though most of its audience still reads in Japanese. It is also the game that came before Dungeon Antiqua 2, which carries this same jobs-and-dungeons formula into a 10-job sequel.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, the map is only described as expanding 'to match the character's field of view,' so you are never handed the dungeon's shape in advance; every corridor you have not physically walked into is still blank, and reading how far you can safely push forward becomes the entire rhythm of exploring.",
+        "A wide roster of professions and free party formation sit on top of auto-generated dungeons, so the party you would bring into one crawl can look nothing like the one you would want for the next regenerated layout, turning composition into a puzzle you keep re-solving rather than settling once.",
+        "Steam's own text is explicit that progression stays on 'hacking and exploration, with no redundant scenarios or direction,' and that same focus, carried by 'fast-paced, modern and comfortable controls' down to full DualShock and DualSense support plus a Pyxel handheld export, turns an 80s-90s dungeon crawl into something you can pick up, push through, and finish without a script standing between you and the maze.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a 2D dungeon crawl where the map itself withholds information, revealing only what your character can actually see, layered on top of procedurally generated dungeons that keep every run different",
+        "You want free party composition across a wide roster of professions, replayed through auto-generated maps, in a game built to stay focused on exploring and growing your characters rather than carrying you through a long, scripted story",
+        "You want to catch a Japanese solo-made Very Positive gem, 91 percent over 373 reviews, right as the West starts to notice it: already covered by outlets including Niche Gamer and Automaton West, with publisher AMATA Games bringing it to Switch, PS5, and Xbox Series X|S on July 30, 2026, and it is also the predecessor to the newer, further-along Dungeon Antiqua 2",
+      ],
+      bad: [
+        "You want a huge, modern, fully 3D RPG or a long, heavily scripted story; this is a deliberately retro, Super Famicom-style 2D dungeon crawl built around hacking and exploration with, per Steam's own words, no redundant scenarios, a paid title at $6.99 (¥800 in Japan), not free and not in Early Access, with no AI-generated assets and nothing sexual by Steam's own descriptors",
+        "You expect a big-studio blockbuster, or you are looking for the fighting-game studio French-Bread of Melty Blood and UNDER NIGHT IN-BIRTH; this is a completely unrelated namesake solo doujin developer, and even with a console launch approaching, only about 38.6 percent of its 373 reviews are in English so far",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Dungeon Antiqua - キャラクターの視界にあわせてしか広がらない2Dマップを、豊富な職業による自由なパーティ編成と自動生成ダンジョンで踏破するスーパーファミコン風ダンジョンクロールRPG。パーティ制ダンジョンクロールの原点Wizardryの系譜。373件のレビューで好評率91%の「非常に好評」、この7月末にはSwitch・PS5・Xboxへも展開",
+      description: "Shiromofu Factory(個人クリエイター frenchbread)による、スーパーファミコン風の2DダンジョンクロールRPG。マップはキャラクターの視界にあわせてしか広がらず、豊富な職業による自由なパーティ編成と自動生成マップが、冗長なシナリオを排した探索と育成を主役に据える。373件のレビューで好評率91%の「非常に好評」、英語レビューは約38.6%に留まるが、2026年7月30日にはコンソール版も展開される。",
+      h1a: "ダンジョンの地図は、最初から渡されない。",
+      h1flip: "自分の視界が実際に歩いた分だけ、そのマップは広がっていく",
+      h1b: "。",
+      lede: "日本の個人クリエイター frenchbread(ふれんち)が手がける Shiromofu Factory による、スーパーファミコン風のピクセルアートとチップチューンサウンドの2DダンジョンクロールRPG。Steam自身のストア表記によれば、マップは「キャラクターの視界にあわせて広がる2Dマップ」——だからダンジョンの全体像が最初から見えていることはない。豊富な職業と自由なパーティ編成、自動生成マップにより「何度でも遊べるゲーム設計」を掲げ、進行は「冗長なシナリオや演出のない、ハクスラと探索に特化した」ものに徹し、操作性は「テンポが良く、現代的で快適」——DualShock・DualSenseを含むフルコントローラ対応まで届く。開発には日本製のレトロゲームエンジン Pyxel(北尾崇 作)が使われ、対応するハンドヘルド機向けに「dungeon-antiqua.pyxapp」という実行ファイルまで同梱されている。2024年10月9日リリース、373件のレビュー(好評338・不評35)で好評率91%の「非常に好評」。無料ではない有料タイトル(米国6.99ドル、日本では800円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。英語・日本語・簡体字中国語に対応し、373件のうち144件(約38.6%)が英語レビュー——西はすでにこの一本に気づき始めている。Niche GamerやAutomaton WESTといった媒体がすでに取り上げ、パブリッシャーのAMATA Gamesは2026年7月30日にNintendo Switch・PlayStation 5・Xbox Series X|Sへ本作を展開すると発表済みで、既存のPC版と並んで届けられる——だから「まったくの未発見」と呼ぶのは正直ではない。それでも観客の中心は、まだ日本語圏だ。本作はまた、続編 Dungeon Antiqua 2 が同じジョブとダンジョンの設計を10ジョブへと受け継ぐ、その前作でもある。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身のストア表記どおり、マップは「キャラクターの視界にあわせて広がる」だけだ——だからダンジョンの形は前もって渡されない。まだ自分の足で踏み入れていない通路は、いつまでも白紙のまま。どこまでなら踏み込んで安全かを読むこと、それ自体が探索のリズムのすべてになる。",
+        "豊富な職業と自由なパーティ編成が、自動生成されるダンジョンの上に乗っている。だから、ある一回の探索に連れていった編成は、次に生成されるレイアウトにはまるで合わないこともある——パーティ編成は一度決めて終わりではなく、何度でも解き直すパズルになる。",
+        "Steam自身の表記は、進行を「冗長なシナリオや演出のない、ハクスラと探索に特化した」ものだと明言している。その同じ焦点が、DualShock・DualSenseを含むフルコントローラ対応まで届く「テンポが良く、現代的で快適な」操作性と、Pyxelによるハンドヘルド書き出しに支えられ、80〜90年代のダンジョンクロールを、台本に立ち止まらされることなく、手に取ってそのまま遊び切れる一本に変えている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "自分が実際に見た分しか描かれない2Dマップで組み立てられたダンジョンクロールが欲しい人——それがプロシージャル生成のダンジョンの上に乗っていて、毎回の探索が違う顔を見せる",
+        "豊富な職業から自由にパーティを編成し、自動生成マップで何度でも遊び直したい人——長い台本に付き合わされるのではなく、探索とキャラクター育成そのものを主役に据えたゲーム設計",
+        "西側がようやく気づき始めた、日本の個人制作の「非常に好評」タイトル(373件のレビューで好評率91%)を掴みたい人——Niche GamerやAutomaton WESTがすでに取り上げ、パブリッシャーのAMATA Gamesが2026年7月30日にSwitch・PS5・Xbox Series X|Sへ展開予定。より西に近づいた続編 Dungeon Antiqua 2 の前作でもある",
+      ],
+      bad: [
+        "大規模で現代的な、フル3DのRPGや長い台本を期待する人(本作はあえてレトロな、スーパーファミコン風の2Dダンジョンクロールで、Steam自身の表記どおり冗長なシナリオは無い。無料ではない有料タイトル(米国6.99ドル、日本では800円)の正式リリース済みでアーリーアクセスではなく、AI生成アセットはなく、Steam自身のディスクリプタ上、性的な要素もない)",
+        "大手スタジオの大作を期待する人、あるいは Melty Blood や UNDER NIGHT IN-BIRTH の格闘ゲームスタジオ French-Bread を探している人(本作はそれとは完全に無関係の同名の個人同人開発者で、コンソール展開が近づいてもなお、373件のレビューのうち英語は約38.6%に留まる)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
