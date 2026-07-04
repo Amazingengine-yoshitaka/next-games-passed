@@ -7023,6 +7023,114 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "enjoy-the-diner": {
+    published: "2026-07-14",
+    publishAt: "2026-07-14",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "diner-mystery-adv"(ファミレスミステリーADV): 既存の "loop-mystery-adv"(周回前提の
+    //   短時間マルチエンド構造・aiai-kissaten で使用中)や "riddle-adventure"(キーワード探索型の謎解き)
+    //   では捉えきれない、本作を定義する核——一度も閉まらない永遠のファミレス「ムーンパレス」という単一の
+    //   場に留まり続け、コマンド選択式+軽いポイント&クリックで常連客と会話しながら「なぜここから出られ
+    //   ないのか」を解き明かしていく構造(Steam appdetails実測: ジャンルタグはAdventureのみ)——を専用
+    //   ラベルとして立てる(livestream-horror/loop-mystery-adv と同型の細粒度ラベル追加・ui.ts en/ja
+    //   追加済み)。
+    // 系譜は開発者本人による自己参照: itch.ioで無料公開された同名の原型『ファミレスを享受せよ』(制作
+    //   月刊湿地帯、ハンドル名 oissisui、Godotエンジン)を新規 anchor "moonpalace" として採用する
+    //   (lineage_anchor_key=itch.io_url, https://oissisui.itch.io/moonpalace。直接WebFetchで200応答・
+    //   タイトル/本文/schema.org AggregateRatingを実測確認済み)。Steam版は Studio Dragonet(せきやdn、
+    //   福岡拠点)がUnityで一から再構築した全面リメイクで(appdetails about_the_game実測: "This game has
+    //   been ported from Godot to Unity, meaning it's been completely remade")、kageroh(影廊)型の
+    //   自己参照origin判断と同型。公式Steam版・Wikidata QIDを持たない itch.io限定の無料版のため、
+    //   established側は itchio のみを積む(fish-in-the-bottle pick の freem-only established と同型・
+    //   href破損なし)。
+    // obscurity は "deep" + reachState "unreached_west": 英語レビュー比率は約10.5%(118/1,125、appreviews
+    //   API実測)で、Steamコミュニティの英語レビューやBackloggd掲載は存在し完全未到達ではないが、Kotaku/
+    //   PC Gamer/RPS等の西側主要メディアの掲載は確認できず、批評家レビューはIGN Japanの1件(スコア80)
+    //   のみで日本語メディア中心(dungeon-antiqua型の閾値判断: 英語比率38.6%+西側メディア複数実績+
+    //   コンソール移植発表があった同作は reachState を持たせなかったが、本作はそれより英語比率が低く
+    //   西側メディア実績も確認できないため unreached_west を正直に立てる)。noEnglish は false(appdetails
+    //   実測: 英語テキスト対応済み。ただし全言語ともテキストのみでフルボイス無し・player reviews実測)。
+    // reviewBand は "around_1k"(1,125件は数百でも数千でもない約千のスケール、after-burner/single-turn-
+    //   deckbuilder 等と同スケール)。
+    // content_descriptors は ids=[]・notes=null(appdetails実測、EN/JA両ロケール一致)。is_early_access=
+    //   false・is_free=false(appdetails実測確認済み)。好評率は appreviews API実測(1,125件・positive
+    //   1,093・negative 32・97.16%)を正とし、review_score=9="Overwhelmingly Positive"(Steam自身の
+    //   スコア区分)を採用する。
+    meta: { genre: "diner-mystery-adv", lineage: "moonpalace", obscurity: "deep", reviewBand: "around_1k", reachState: "unreached_west", rarity: { reviews: 1125, positivePct: 97, noEnglish: false } },
+    games: [
+      {
+        name_en: "Enjoy the Diner",
+        name_ja: "ファミレスを享受せよ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2336980/Enjoy_the_Diner/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Steam's own text frames it with a wink: \"Why not enjoy the diner? The moon is as full as it'll ever be, and there's even a drink fountain.\" Its own about_the_game text describes Enjoy the Diner as following \"a multiple-choice format with point-and-click elements,\" a relatively short adventure that \"typically takes 2-2.5 hours to complete,\" branching into one of two endings and telling players outright to save before what it calls your \"fateful decision.\" Per Steam player reviews, the setting itself carries the hook: one calls Moon Palace an \"extradimensional diner,\" another spends the runtime \"uncovering the mystery of who the people at the moon palace are and why they're here,\" and a third describes a tone that starts out \"grounded\" before it \"snowballs into showing you how absurd you were to think that.\" It began life as a free browser game: built in the Godot engine and released for free on itch.io by 月刊湿地帯 (Gekkan Shicchitai), a two-person Japanese doujin circle working under the handle oissisui, whose own itch.io page still links straight through to this Steam edition. For Steam, it was rebuilt from the ground up in Unity by Studio Dragonet, the one-person Fukuoka studio of せきやdn, adding, per Steam's own listing, new customer chit-chat, a Sound Gallery, an Illustration Gallery, full controller support, and Steam Achievements (nine of them, including one for trying every drink at the soda fountain) on top of the free original, and published by Waku Waku Games (わくわくゲームズ合同会社), a small Tokyo-based indie publisher with ¥1.5 million in capital. Released July 31, 2023, it is Overwhelmingly Positive at 97 percent over 1,125 reviews (1,093 positive, 32 negative per Steam's own review API), a paid title at $10.99 in the US (¥1,500 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports Japanese, English, Simplified Chinese, Traditional Chinese, and Korean, all as text only with no voice acting in any of them, and while 118 of its 1,125 reviews, about 10.5 percent, are already in English, and both an active Steam community discussion and a Backloggd listing exist, so calling it entirely unreached would not be honest, that reach still falls short of the West's usual gatekeepers: no coverage from outlets such as Kotaku, PC Gamer, or Rock Paper Shotgun turns up, and the one critic review on record, from IGN Japan at a score of 80, was written in Japanese, so this overwhelmingly positive small diner remains, for now, a conversation held almost entirely in Japanese.",
+        desc_ja: "Steam自身のストア文言は、こう茶目っ気たっぷりに掲げる——「なあ君、ファミレスを享受せよ。月は満ちに満ちているしドリンクバーだってあるんだ。」Steam自身のゲーム説明本文によれば、『ファミレスを享受せよ』は「コマンド選択式（一部ポイント＆クリック）を採用したアドベンチャーゲーム」で、通常プレイでエンディングを見るまでは「2時間〜2時間半程度」、用意されたエンディングは2種類、「ある選択をする前にあらかじめセーブしておくことをおすすめします」とSteam自身がプレイヤーに直接忠告している。プレイヤーレビューによれば、この舞台設定そのものが仕掛けだ——あるレビューはムーンパレスを「異次元のファミレス」と呼び、別のレビューはプレイ時間の大半を「ムーンパレスにいる人々が何者で、なぜそこにいるのかという謎を解き明かす」ことに費やしたと記し、三つ目のレビューは、最初は地に足のついた状況に見えるが「そう思っていたこと自体がいかに的外れだったかを、じわじわと見せつけてくる」と評している。本作はもともと無料のブラウザゲームとして生まれた——Godotエンジンで制作し、itch.ioで無料公開したのは、ハンドル名oissisuiで活動する日本の2名同人サークル月刊湿地帯で、その同じitch.ioページは今もこのSteam版へ直接リンクを貼っている。Steam版はStudio Dragonet——福岡拠点のひとり開発者せきやdnによるスタジオ——がUnityでゼロから作り直した一本で、Steam自身の表記によれば、無料版に新規の雑談・サウンドギャラリー・イラストギャラリー・フルコントローラー対応・Steam実績（9個、ドリンクバーの飲み物を全種制覇する実績を含む）が加えられている。発行は、わくわくゲームズ（わくわくゲームズ合同会社）——資本金150万円の東京の小規模インディーパブリッシャーだ。リリース日は2023年7月31日、1,125件のレビュー(Steam自身のレビューAPIでは1,093件が好評・32件が不評)で好評率97%の「圧倒的に好評」。無料ではない有料タイトル(米国10.99ドル、日本では1,500円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。日本語・英語・簡体字中国語・繁体字中国語・韓国語に対応するが、いずれもテキストのみでボイスは一切なく、1,125件のうち118件、約10.5%はすでに英語レビューで、Steamコミュニティでの議論やBackloggdへの掲載も存在する——だから「西に一切届いていない」と言い切るのは正直ではない。それでも、その届き方は西側の主要な窓口にはまだ至っていない——Kotaku・PC Gamer・Rock Paper Shotgunといった媒体の記事は見当たらず、記録に残る唯一の批評家レビューはIGN Japanによるスコア80で、日本語で書かれている。この圧倒的に好評な小さなファミレスは、今のところほぼ日本語だけで交わされる会話のままだ。",
+      },
+      {
+        name_en: "ファミレスを享受せよ (itch.io free original, no official English title)",
+        name_ja: "ファミレスを享受せよ（itch.io無料版）",
+        status: "established",
+        itchio: "https://oissisui.itch.io/moonpalace",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The free original this grew from: ファミレスを享受せよ (\"Enjoy the Family Restaurant\"), a free browser adventure the Japanese two-person doujin circle 月刊湿地帯, working under the handle oissisui, built in the Godot engine and released for free on itch.io. Per its own itch.io page, it already drops you into the eternal family restaurant Moon Palace, drink bar included, played with nothing but a left click, running about thirty minutes to one of two endings. Enjoy the Diner on Steam is not a new work borrowing that DNA from the outside; it is oissisui's and Studio Dragonet's own ground-up commercial remake of this same free game, keeping the same eternal diner and its two endings while adding, per Steam's own listing, new customer chit-chat, a Sound Gallery, an Illustration Gallery, and Steam Achievements. That same itch.io page still carries an update note pointing straight to the finished Steam edition.",
+        desc_ja: "本作が育った、その無料版の原点——『ファミレスを享受せよ』。ハンドル名oissisuiで活動する日本の2名同人サークル月刊湿地帯が、Godotエンジンで制作し、itch.ioで無料公開したブラウザアドベンチャーだ。itch.io自身の配信ページ本文によれば、この時点ですでに「永遠のファミレス『ムーンパレス』」に迷い込み、ドリンクバーもあり、操作は左クリックのみ、エンディングは2種で、推定プレイ時間は30分〜という骨格を備えていた。Steam版『ファミレスを享受せよ(Enjoy the Diner)』は、外部からこのDNAを借りた新作ではない——oissisui本人とStudio Dragonetによる、この同じ無料ゲームのゼロからの商業リメイクだ。同じ「閉まらない永遠のファミレス」と2種のエンディングを保ったまま、Steam自身の表記によれば新規の雑談・サウンドギャラリー・イラストギャラリー・Steam実績を加えている。その同じitch.ioページには今も、完成した商業版のSteamページへ直接誘導する追記が残っている。",
+      },
+    ],
+    en: {
+      title: "Enjoy the Diner - a multiple-choice, point-and-click mystery adventure set entirely inside an eternal family restaurant where the moon never stops being full, rebuilt in Unity from a free itch.io original by the two-person Japanese doujin circle 月刊湿地帯, published by Waku Waku Games, Overwhelmingly Positive at 97 percent over 1,125 reviews though only about 10.5 percent of reviews are in English",
+      description: "A multiple-choice, point-and-click adventure set entirely inside the eternal family restaurant Moon Palace, where talking with an odd cast of regulars slowly uncovers why none of you can leave. Rebuilt in Unity for Steam from a free itch.io original by the two-person Japanese doujin circle 月刊湿地帯, published by the small Tokyo indie publisher Waku Waku Games. Overwhelmingly Positive at 97 percent over 1,125 reviews, with English readers still only around 10.5 percent.",
+      h1a: "A family restaurant that has never once closed its doors, ",
+      h1flip: "and the more its regulars tell you, the less sure you are why neither of you can leave",
+      h1b: ".",
+      lede: "A multiple-choice, point-and-click adventure originally built as a free itch.io browser game by 月刊湿地帯 (Gekkan Shicchitai), a two-person Japanese doujin circle working under the handle oissisui, then rebuilt from the ground up in Unity for Steam by the one-person studio Studio Dragonet and published by Waku Waku Games, a small Tokyo-based indie publisher. Steam's own text frames it with a wink: \"Why not enjoy the diner? The moon is as full as it'll ever be, and there's even a drink fountain.\" Per Steam's own listing, it typically takes 2-2.5 hours to see one of two endings, and it tells you outright to save before your \"fateful decision.\" Per Steam player reviews, the setting itself is the hook: Moon Palace is described as an \"extradimensional diner\" where the moon never actually sets, and much of the runtime goes toward, as one reviewer put it, \"uncovering the mystery of who the people at the moon palace are and why they're here.\" Released July 31, 2023, it is Overwhelmingly Positive at 97 percent over 1,125 reviews (1,093 positive, 32 negative), a paid title at $10.99 in the US (¥1,500 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports Japanese, English, Simplified and Traditional Chinese, and Korean, all as text only with no voice acting, and while 118 of its 1,125 reviews, about 10.5 percent, are already in English, and both Steam community discussion and a Backloggd listing exist, its reach still falls short of the West's usual gatekeepers: no coverage from outlets like Kotaku, PC Gamer, or Rock Paper Shotgun turns up, and the one critic review on record, from IGN Japan at a score of 80, was written in Japanese.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Steam's own listing frames Moon Palace as a diner where 'the moon is as full as it'll ever be,' and per player reviews that is structural, not scenery: it is described as an 'extradimensional diner' that cannot close, so every friendly, mundane exchange with its regulars quietly doubles as a clue toward why none of you, including you, can walk back out its door.",
+        "The whole game runs on a multiple-choice format with light point-and-click, and per Steam's own text the two endings fork from a single moment it calls your 'fateful decision,' telling you outright to save beforehand, so one choice about who you keep talking to, and how, decides which of two very different nights you end up living.",
+        "Clearing the game with a certain ending unlocks a Sound Gallery and an Illustration Gallery holding, per Steam's own listing, character notes 'not found in the main game,' so the mystery of who is actually sitting across from you at Moon Palace keeps resolving itself after the credits, rather than closing the moment you put the tray down.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a quiet, dialogue-only mystery ADV that never leaves a single room for its entire 2-2.5 hour runtime, an eternally open family restaurant whose regulars you talk to rather than fight, forking to one of two endings on a single choice",
+        "You want a small, doujin-scale Japanese production carried to Steam: a free itch.io original by the two-person circle 月刊湿地帯, rebuilt from scratch in Unity by the one-person studio Studio Dragonet with new conversations, galleries, and Steam Achievements, published through the small Tokyo indie house Waku Waku Games",
+        "You want to catch an Overwhelmingly Positive title (97 percent over 1,125 reviews) while the West is still mostly absent: only about 10.5 percent of its reviews are in English, and the one critic review on record is from IGN Japan rather than a Western outlet",
+      ],
+      bad: [
+        "You want combat, exploration, or a long game; this is text and light point-and-click only, running about 2-2.5 hours across two endings, with nothing to fight",
+        "You want voice acting in any language; all five supported languages (Japanese, English, Simplified and Traditional Chinese, Korean) are text-only, and it is a paid title at $10.99 (¥1,500 in Japan), not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none)",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ファミレスを享受せよ - 月が満ち続けたまま閉まらない永遠のファミレスを舞台にした、コマンド選択式＋一部ポイント＆クリックのミステリーアドベンチャー。無料のitch.io版を2名同人サークル月刊湿地帯からUnityで作り直しSteamへ、発行はわくわくゲームズ。1,125件のレビューで好評率97%の「圧倒的に好評」ながら、英語レビューはまだ約10.5%",
+      description: "月が満ち続けたまま閉まらない永遠のファミレス『ムーンパレス』を舞台に、奇妙な常連客たちと会話しながら、なぜ誰も出られないのかを少しずつ解き明かしていく、コマンド選択式＋一部ポイント＆クリックのアドベンチャー。無料のitch.io版を2名同人サークル月刊湿地帯からUnityで作り直しSteamへ。発行は東京の小規模インディーパブリッシャー、わくわくゲームズ。1,125件のレビューで好評率97%の「圧倒的に好評」、英語レビューはまだ約10.5%に留まる。",
+      h1a: "一度も閉まったことのないファミレスがある。",
+      h1flip: "常連客と話せば話すほど、なぜ自分もここから出られないのか分からなくなっていく",
+      h1b: "。",
+      lede: "もとは無料のitch.ioブラウザゲームとして、ハンドル名oissisuiで活動する日本の2名同人サークル月刊湿地帯が制作。Steam版はStudio Dragonet(福岡拠点のひとり開発者せきやdnのスタジオ)がUnityでゼロから作り直し、発行はわくわくゲームズ——東京の小規模インディーパブリッシャーだ。Steam自身のストア文言は、こう茶目っ気たっぷりに掲げる——「なあ君、ファミレスを享受せよ。月は満ちに満ちているしドリンクバーだってあるんだ。」Steam自身の表記によれば、通常プレイでエンディングを見るまでは2時間〜2時間半程度、用意されたエンディングは2種類で、「ある選択をする前にあらかじめセーブしておくこと」を直接勧めてくる。プレイヤーレビューによれば、その舞台設定そのものが仕掛けだ——ムーンパレスは「異次元のファミレス」で月は実質沈むことがなく、プレイ時間の多くは、あるレビューの言葉を借りれば「ムーンパレスにいる人々が何者で、なぜそこにいるのかという謎を解き明かす」ことに費やされる。リリース日は2023年7月31日、1,125件のレビュー(好評1,093件・不評32件)で好評率97%の「圧倒的に好評」。無料ではない有料タイトル(米国10.99ドル、日本では1,500円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。日本語・英語・簡体字/繁体字中国語・韓国語に対応するが、いずれもテキストのみでボイスは無く、1,125件のうち118件、約10.5%はすでに英語レビューで、Steamコミュニティでの議論やBackloggdへの掲載も存在するが、その届き方は西側の主要な窓口にはまだ至っていない——Kotaku・PC Gamer・Rock Paper Shotgunの記事は見当たらず、記録に残る唯一の批評家レビューはIGN Japanによるスコア80で、日本語で書かれている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身のストア文言は、ムーンパレスを「月は満ちに満ちている」ファミレスとして描くが、プレイヤーレビューによればそれは背景の飾りではなく構造そのものだ——「異次元のファミレス」と呼ばれるほど、この店は閉まりようがない。だから常連客とのどんな他愛ない会話も、静かに「なぜ自分たちが誰も、この扉から出られないのか」という手がかりを兼ねてしまう。",
+        "ゲーム全体はコマンド選択式＋軽いポイント＆クリックで進み、Steam自身の表記によれば2種のエンディングはたった一つの瞬間——本作が「あなたの運命の選択」と呼ぶ場面——で分岐し、あらかじめセーブしておくことを直接勧めてくる。だから、誰と、どう話し続けるかという一つの選択が、まったく違う二つの夜のどちらを生きることになるかを決めてしまう。",
+        "あるエンディングでクリアすると、サウンドギャラリーとイラストギャラリーが解放され、Steam自身の表記によれば「本編内で説明することがなかったキャラクター解説」が手に入る。だから、ムーンパレスで実際に向き合っていた相手が何者だったのかという謎は、エンドロールの後も解け続ける——トレイを置いた瞬間に終わる話ではない。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "戦闘ではなく会話だけで進む、静かなミステリーADVが欲しい人——2〜2.5時間の全編がたった一つの部屋、閉まらない永遠のファミレスの中で完結し、常連客との会話とたった一つの選択で2種のエンディングへ分岐する",
+        "Steamへ届いた小規模な日本の同人発プロダクションが欲しい人——2名同人サークル月刊湿地帯による無料のitch.io版を、福岡のひとり開発スタジオStudio Dragonetが新規の会話・ギャラリー・Steam実績を加えてUnityでゼロから作り直し、東京の小規模インディーパブリッシャー わくわくゲームズが発行した一本",
+        "西側がまだほとんど到達していない「圧倒的に好評」タイトル(1,125件のレビューで97%)を掴みたい人——英語レビューはまだ約10.5%で、記録に残る唯一の批評家レビューも西側メディアではなくIGN Japanによるもの",
+      ],
+      bad: [
+        "戦闘・探索や長時間のボリュームが欲しい人——本作はテキストと軽いポイント＆クリックのみで、2種のエンディングまで約2〜2.5時間、戦う相手は一切いない",
+        "自分の言語での音声(ボイス)が欲しい人——対応する日本語・英語・簡体字/繁体字中国語・韓国語のすべてがテキストのみで音声は無く、無料ではない有料タイトル(米国10.99ドル、日本では1,500円)の正式リリース済みでアーリーアクセスではなく、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7735,6 +7843,26 @@ const LINEAGE_ANCHOR = {
       ja: "パーフェクトブルーは、今敏監督、マッドハウス制作による1997年の日本のアニメーション心理サスペンス映画で、竹内義和の同名小説を原案としている。あるアイドルグループのメンバーが歌手活動を引退して女優に転身するが、熱狂的なファンに付け纏われるようになり、凄惨な殺人事件が起こり始めるなかで、現実の彼女と演じる役柄との境界が溶け崩れていく。「エンターテイナーを見つめる観客が、遠くから眺めるだけでは止まらず、その実生活そのものへ手を伸ばし始める」という、日本的なホラーの一系統を結晶化させた作品であり、観客そのものが脅威に変わる作品・ゲーム群の系譜の原点である。",
     },
   },
+  // 原点 ファミレスを享受せよ(itch.io無料版)、日本の同人サークル 月刊湿地帯(作者ハンドル oissisui)が
+  //   Godotエンジンで制作し itch.io で無料公開した原型(2022年)。ジャンル上の外部原点ではなく、開発者
+  //   本人による自己参照のフリー版原典(enjoy-the-diner pick の全面リメイクの前身・kageroh型の判断)。
+  //   itch.ioページ本体(https://oissisui.itch.io/moonpalace)を直接WebFetchで実測確認済み: タイトル
+  //   "ファミレスを享受せよ by oissisui"、本文「永遠のファミレス『ムーンパレス』に迷い込むアドベンチャー
+  //   ゲームです」「なんとドリンクバーもあります」「操作方法 左クリック」「推定プレイ時間 30分〜」
+  //   「エンディング 2種」「制作 月刊湿地帯/おいし水」「開発ツール Godot」の記載、および評価4.9(65件)の
+  //   schema.org AggregateRating を確認済み。同ページにはSteam版リリース直後の追記で、追加要素(イラスト
+  //   ギャラリー等)を備えたSteam版(本pickの主役 enjoy-the-diner、appid 2336980)へのリンクが直接
+  //   貼られており、この無料版がSteam商業版の前身であることを開発者自身のページが裏付けている。公式
+  //   Steam版・Wikidata QIDを持たない itch.io 限定の無料ブラウザ版のため、lineage_anchor_key には
+  //   steam でも wikidata でもなく itchio(itch.io_url)を新規フィールドとして採用する(fish-in-the-bottle
+  //   pick の freem-only established と同型判断: 単一の生きた配信ページ URL のみで同定し、href 破損なし)。
+  "moonpalace": {
+    itchio: "https://oissisui.itch.io/moonpalace",
+    blurb: {
+      en: "The free original this grew from: ファミレスを享受せよ (\"Enjoy the Family Restaurant\"), a free browser adventure game the Japanese two-person doujin circle 月刊湿地帯 (Gekkan Shicchitai), under the handle oissisui, built in the Godot engine and released for free on itch.io. Per its own itch.io page, it drops you into the eternal family restaurant Moon Palace, drink bar included, played with nothing but a left click, running about thirty minutes to one of two endings. That same itch.io page carries its own update note, posted right after the Steam release went live, pointing players to the finished commercial edition: Enjoy the Diner on Steam, rebuilt from the ground up in Unity by Studio Dragonet with new customer chit-chat, a Sound Gallery, an Illustration Gallery, and Steam Achievements. This is not an outside influence but the developer's own free demo, later remade as the paid Steam edition.",
+      ja: "本作が育った、その無料版の原点——『ファミレスを享受せよ』。日本の2名同人サークル 月刊湿地帯(ハンドル名 oissisui)が Godot エンジンで制作し、itch.io で無料公開したブラウザアドベンチャーだ。itch.io の配信ページ本文によれば、「永遠のファミレス『ムーンパレス』に迷い込むアドベンチャーゲーム」で、ドリンクバーもあり、操作は左クリックのみ、推定プレイ時間は30分〜、エンディングは2種。その同じitch.ioページには、Steam版リリース直後に追記された一文があり、追加要素を備えた完成形の商業版——Steam版『ファミレスを享受せよ(Enjoy the Diner)』——へのリンクが直接貼られている。Steam版は Studio Dragonet がUnityでゼロから作り直した一本で、新規の雑談・サウンドギャラリー・イラストギャラリー・Steam実績が加わっている。これは外部からの影響ではなく、開発者本人によるこの無料デモが、後に有料のSteam版として作り直されたものだ。",
+    },
+  },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
@@ -7743,7 +7871,7 @@ export type LineageId = keyof typeof LINEAGE_ANCHOR;
 // ゲーム名の二重定義を避ける(SSOT)。見つからなければ null(捏造しない)。
 //   同定は多態: anchor.steam があれば Steam URL で、anchor.wikidata があれば wikidata で逆引きする。
 export function lineageName(id: string, lang: "en" | "ja"): string | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string }>)[id];
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string }>)[id];
   if (!anchor) return null;
   const isJa = lang === "ja";
   for (const key of Object.keys(picks)) {
@@ -7763,6 +7891,11 @@ export function lineageName(id: string, lang: "en" | "ja"): string | null {
       // Freem 同定(Steam 版/wikidata QID が無いフリーゲーム発の原点): g.freem の完全一致で逆引き。
       if (anchor.freem) {
         if (g.freem !== anchor.freem) continue;
+        return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      }
+      // itch.io 同定(Steam 版/wikidata QID/freem のいずれも無い itch.io 発の原点): g.itchio の完全一致で逆引き。
+      if (anchor.itchio) {
+        if (g.itchio !== anchor.itchio) continue;
         return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
       }
     }
@@ -7792,16 +7925,17 @@ export function lineageBlurb(id: string, lang: "en" | "ja"): string | null {
   return lang === "ja" ? anchor.blurb.ja : anchor.blurb.en;
 }
 
-// 原点 id の外部実体識別子(steam app id / wikidata QID URL)を返す(計算だけ・副作用なし)。
+// 原点 id の外部実体識別子(steam app id / wikidata QID URL / itch.io URL)を返す(計算だけ・副作用なし)。
 //   原点ページの出典リンクと JSON-LD sameAs が LINEAGE_ANCHOR を直読みせず一様に参照する入口(SSOT)。
-//   anchor 無しは null。steam / wikidata は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
-export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string } | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string }>)[id];
+//   anchor 無しは null。steam / wikidata / freem / itchio は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
+export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string; itchio?: string } | null {
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string }>)[id];
   if (!anchor) return null;
-  const out: { steam?: string; wikidata?: string; freem?: string } = {};
+  const out: { steam?: string; wikidata?: string; freem?: string; itchio?: string } = {};
   if (anchor.steam) out.steam = anchor.steam;
   if (anchor.wikidata) out.wikidata = anchor.wikidata;
   if (anchor.freem) out.freem = anchor.freem;
+  if (anchor.itchio) out.itchio = anchor.itchio;
   return out;
 }
 
