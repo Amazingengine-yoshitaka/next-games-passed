@@ -6918,6 +6918,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "parasocial": {
+    published: "2026-07-13",
+    publishAt: "2026-07-13",
+    kind: "find",
+    leadIndex: 0,
+    // 正直さ・西到達の誇張禁止(motionrec型の判断): 英語レビューは852/1,675=約50.9%とすでに過半数に
+    //   達しており(Steam appreviews API実測、english/all両方確認済み)、GamesRadar+の単独レビュー
+    //   (見出し"The scariest game I've played all year")・Dualshockers・Gayming Magazine・
+    //   Tokyo Weekenderのスタジオ特集・TV Tropesページ・登録者数の大きい英語圏実況者による複数の
+    //   Let's Playが確認できる。ゆえに rarity/reviewBand/reachState は一切持たせない:
+    //   これらを立てると PickPage が「西側がまだほとんど見つけていない」を無条件で後置し、過半数が
+    //   英語という実測と矛盾する誇張になる(motionrec pickの先例と同型判断)。obscurity も
+    //   "deep"/"wall"はいずれも西未到達を含意するため none とする(正直さ)。好評率94%(1,574/1,675、
+    //   101件が不評)・英語比率50.9%は本文(散文)で正直に述べる。
+    // genre は新設 "livestream-horror"(配信ホラー): 既存の "exploration-horror"/"psychological-horror"
+    //   では捉えきれない、本作を定義する核——Steam自身の公式スクリーンショット(ストア掲載の一次資産、
+    //   直接確認済み)が示す、VTuber「千羅ニナ」のデュアルモニタ配信卓、実際に流れるライブチャット、
+    //   HEALTH/DANGERゲージ・視聴者数・高評価/低評価ボタン付きの「配信中のゲーム画面」という三層構造
+    //   ——を専用ラベルとして立てる(hand-me-down-mecha-fps等と同型の細粒度ラベル追加・ui.ts en/ja
+    //   追加済み)。Steam自身のジャンルタグはIndieのみ(appdetails実測確認済み・専用ホラータグは無い)。
+    // 系譜は Perfect Blue(パーフェクトブルー、今敏監督、マッドハウス制作、1997年)——アイドルが
+    //   女優に転身し熱狂的なファンに付け纏われ、現実と虚構の境界が溶け崩れていく「メディア×ストーカー
+    //   恐怖」の日本的原型を、新規anchor "perfect-blue" として採用する(lineage_anchor_key=wikidata_qid、
+    //   Q1205051。Wikidata実測: 監督Q333643=Satoshi Kon、制作会社Q650867=Madhouse。Wikipedia要約
+    //   実測で原作/主演も確認済み)。この帰属は開発者本人の言明ではなく批評記事による主題比較のため
+    //   自信度: 中(捏造しない・imscared/chikyu-boueigun型の判断)。公式Steam版が無い1997年の映画の
+    //   ため、established側の games[] で wikidata + homepage(Wikipedia)を併記しhref破損を防ぐ
+    //   (picks側の責務・gradius/mother-3型)。
+    // content_descriptors は ids=[]・notes=null(API実測、en/ja両ロケール一致)。is_early_access=false・
+    //   is_free=false(appdetails実測確認済み)。
+    meta: { genre: "livestream-horror", lineage: "perfect-blue", obscurity: "none" },
+    games: [
+      {
+        name_en: "[Chilla's Art] Parasocial | パラソーシャル",
+        name_ja: "[Chilla's Art] Parasocial | パラソーシャル",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2314720/Chillas_Art_Parasocial__/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A first-person Japanese horror game that Steam's own listing describes simply as being 'about a live streamer,' built around a VHS-and-CRT-emulated visual filter (phosphor screen-trail bleed, tape noise, interlacing, jitter) that can be switched off in the options menu, wrapped around what Steam's own bullet points literally label 'Psychological horror,' text that in the Japanese-language store page says the game is built to make you feel like someone is standing behind you. Steam's own screenshots show the shape of that hook: you play as a small-scale VTuber, 千羅ニナ (Sennra Niina, her name printed on a poster over her own desk), running a dual-monitor streaming setup with a ring-light webcam, while a live chat scrolls real viewer messages beside a stream window that carries its own HEALTH and DANGER meters, a view count, and like/dislike buttons, as she plays a horror game inside this horror game (one screenshot frames a segment built around the Japanese urban legend Aka Manto). Outside that stream window you also move through her ordinary life in first person: checking a phone's messaging app (contacts include her mother, a friend, and, as a wink at its own maker, an entry literally named 'Chilla's Café'), wandering an apartment stacked with unopened moving boxes at night, or stepping into a convenience store where a faceless clerk in a black suit browses a magazine rack. Beyond what Steam's own store text says, fan wikis and walkthroughs (not the official store description) describe the plot that frames all of this: a viewer account pushes Sennra Niina toward going face-cam, and what began as a parasocial relationship curdles into stalking, branching across multiple endings depending on your choices. Developed and self-published by Chilla's Art, a small Japan-based studio with no external publisher, released August 25, 2023, it is Very Positive at 94 percent over 1,675 reviews (1,574 positive, 101 negative per Steam's own review API), a paid title at $7.99 in the US (¥920 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports thirteen languages including English, Japanese (with full voiced audio), Korean, Simplified and Traditional Chinese, Vietnamese, and more, and its reach into the West is already real, not merely beginning: 852 of its 1,675 reviews, about 50.9 percent, are already in English, GamesRadar+ gave it a standalone review under the headline 'The scariest game I've played all year,' and outlets including Dualshockers, Gayming Magazine, and Tokyo Weekender, plus a TV Tropes page and sizable English-language Let's Plays, have all covered it, so calling this an undiscovered gem the West hasn't found would not be honest. What is true is that it remains a small, self-published horror short next to the site's usual buried-and-silent finds.",
+        desc_ja: "Steam自身のストア表記が「ライブ配信者を題材にしたジャパニーズホラーゲーム」とだけ説明する一人称ホラー。VHSエフェクト・CRT画面のエミュレーション(蛍光体スクリーントレイル、VHSテープノイズ、インターレース、ジッター)はオプションメニューでオフにでき、Steam自身が公式の特徴として掲げる「心理的ホラー」――日本語版ストア文言では「ゲームプレイ時に後ろに誰かがいるような気持ちを抱かせます」――を核に据える。Steam自身の公式スクリーンショットは、その仕掛けの姿をそのまま映し出す――プレイヤーが操るのは小規模VTuber「千羅ニナ」(本人の配信卓に掲げたポスターに名前がある)。リングライト付きウェブカメラを備えたデュアルモニタの配信環境で、実際に流れるライブチャットの隣には、HEALTH・DANGERゲージ、視聴者数、高評価/低評価ボタンを備えた「配信中のゲーム画面」があり、その中でさらに別のホラーゲームをプレイしている(あるスクリーンショットは日本の都市伝説「赤マント」を題材にした一場面を映す)。配信画面の外でも、彼女の日常を一人称で歩く――スマートフォンのメッセージアプリを確認したり(連絡先には母親、友人、そして開発元自身への軽い自己言及である「チラズカフェ」という一件が含まれる)、夜、開封していない引っ越し用の段ボール箱が積まれたアパートを歩き回ったり、黒いスーツ姿の顔のない店員が雑誌棚を眺めるコンビニに足を踏み入れたりする。Steam自身のストア文言を超える範囲――ファンによるWikiや攻略記事(公式のストア説明文そのものではない)は、これら全体を縁取る筋書きとして、ある視聴者アカウントが千羅ニナに顔出し配信を迫り、パラソーシャルな関係として始まったものがストーキングへと変質し、選択次第で複数のエンディングへ分岐していく、と記している。開発・自社セルフパブリッシュ(外部パブリッシャーなし)は日本拠点の小規模スタジオ Chilla's Art、2023年8月25日リリース。1,675件のレビュー(Steam自身のレビューAPIでは1,574件が好評・101件が不評)で好評率94%の「非常に好評」。無料ではない有料タイトル(米国7.99ドル、日本では920円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。英語、日本語(フル音声吹替)、韓国語、簡体字・繁体字中国語、ベトナム語など13言語に対応し、西側への到達はすでに「始まったばかり」ではなく現実のものだ――1,675件のレビューのうち852件、約50.9%がすでに英語で、GamesRadar+は「The scariest game I've played all year」という見出しで単独レビューを掲載し、Dualshockers・Gayming Magazine・Tokyo Weekenderといったメディアに加えTV Tropesのページ、登録者数の大きい英語圏実況者による複数のプレイ動画もすでに存在する――だから「西側がまだ見つけていない一本」と呼ぶのは正直ではない。本当なのは、このサイトが普段扱う「埋もれて静かなままの発掘」と比べれば、これは今も小規模な自社パブリッシュのホラー短編だということだ。",
+      },
+      {
+        name_en: "Perfect Blue",
+        name_ja: "パーフェクトブルー",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q1205051",
+        homepage: "https://en.wikipedia.org/wiki/Perfect_Blue",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Perfect Blue, a 1997 Japanese animated psychological horror film directed by Satoshi Kon and produced by Madhouse, loosely based on the novel by Yoshikazu Takeuchi. A member of a Japanese idol group retires from singing to become an actress, and is stalked by an obsessive fan as gruesome murders begin and the line between her real life and the role she performs starts to dissolve; it crystallized a distinctly Japanese strand of horror in which an entertainer's own audience stops watching from a distance and reaches into her actual life. Parasocial is not an official Perfect Blue work, and this lineage is a comparison drawn in outside critical commentary, not a stated influence from developer Chilla's Art, but it carries the same theme forward into a new frame: a small-scale VTuber livestreaming to a real, scrolling chat, whose audience's attention curdles into stalking once, per fan wikis and walkthroughs, a viewer pushes her toward showing her actual face. There is no Steam release of this 1997 film, so its origin here is anchored to its Wikidata entry.",
+        desc_ja: "この味の原点――パーフェクトブルー。今敏監督、マッドハウス制作による1997年の日本のアニメーション心理サスペンス映画で、竹内義和の同名小説を原案としている。あるアイドルグループのメンバーが歌手活動を引退して女優に転身するが、熱狂的なファンに付け纏われるようになり、凄惨な殺人事件が起こり始め、現実の彼女と演じる役柄との境界が溶け崩れていく――「エンターテイナーを見つめる観客が、遠くから眺めるだけでは止まらず、その実生活そのものへ手を伸ばし始める」という、日本的なホラーの一系統を結晶化させた作品だ。Parasocial は公式のパーフェクトブルー作品ではなく、この系譜は開発元Chilla's Artが明言した影響ではなく外部の批評による比較だが、同じテーマを新しい枠組みへと引き継いでいる――小規模なVTuberが実際に流れるライブチャットに向けて配信し、その観客の関心が、ファンWikiや攻略記事によれば、ある視聴者が顔出しを迫ることをきっかけにストーキングへと変わっていく。1997年のこの映画にSteam版は存在しないため、その原点はここではWikidataのエントリで同定する。",
+      },
+    ],
+    en: {
+      title: "Parasocial - a first-person Japanese horror game about a small-scale VTuber whose stream chat, HEALTH/DANGER-metered game-within-a-game, and a viewer's escalating attention all bleed into her own apartment, made and self-published by Chilla's Art, Very Positive at 94 percent over 1,675 reviews with English readers already at 50.9 percent",
+      description: "A first-person Japanese horror game about a VTuber livestreamer, built around a VHS/CRT visual filter and a psychological horror hook Steam's own text says is meant to make you feel like someone is behind you. Made and self-published by the small Japan-based studio Chilla's Art. Very Positive at 94 percent over 1,675 reviews, with English readers already close to half at 50.9 percent and press coverage from outlets like GamesRadar+ already in place.",
+      h1a: "You go live, the chat starts scrolling, and whatever is hunting you on screen ",
+      h1flip: "turns out not to be the only one who has been watching you play",
+      h1b: ".",
+      lede: "A first-person Japanese horror game developed and self-published by Chilla's Art, a small Japan-based studio with no external publisher, released August 25, 2023. Steam's own listing describes it simply as being 'about a live streamer,' and Steam's own screenshots show what that means: you play a small-scale VTuber, 千羅ニナ (Sennra Niina, her name printed on a poster above her own desk), sitting at a dual-monitor rig with a ring-light webcam, a live chat scrolling real viewer messages beside a stream window that carries its own HEALTH and DANGER meters, view count, and like/dislike buttons, while she plays a horror game inside this horror game. Outside that stream window, you carry an ordinary phone into an ordinary apartment stacked with moving boxes and an ordinary convenience store with a faceless clerk in a suit, so the dread is not sealed inside the frame Steam's screenshots show; per fan wikis and walkthroughs, not the official store text, it is a single viewer's escalating attention, pushing Sennra Niina toward showing her face on camera, that walks out of the chat and into that same apartment, branching across multiple endings. The VHS-and-CRT visual filter can be switched off entirely in the options menu, and Steam's own words call the core hook 'Psychological horror,' text that in the Japanese store page says the game is built to make you feel like someone is standing behind you. It is Very Positive at 94 percent over 1,675 reviews (1,574 positive, 101 negative per Steam's own review API), a paid title at $7.99 in the US (¥920 in Japan), not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). And it is only honest to say the West has already arrived, not merely started to notice: 852 of its 1,675 reviews, about 50.9 percent, are already in English, GamesRadar+ reviewed it under the headline 'The scariest game I've played all year,' and Dualshockers, Gayming Magazine, Tokyo Weekender, and a TV Tropes page have all covered it. This is not a gem the West hasn't found; it is a small, self-published horror short that the West has already partly found.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Steam's own screenshots put a HEALTH and DANGER meter, a view count, and a scrolling live chat directly onto the horror game you are playing inside the game, so a single glance has to do triple duty: read the threat in front of you, read how many strangers are currently watching you fail at it, and read what they are typing about it, all before you decide your next move.",
+        "The VHS-and-CRT filter, screen-trail bleed, tape noise, interlacing, jitter, is entirely optional per the options menu, so the unease Steam's own text promises, built 'to make you feel like someone is behind you,' is designed to survive with the filter switched off entirely; the dread sits in what the game shows you, not just in how grainy the picture looks while it shows it.",
+        "Between livestream segments you carry an ordinary phone into an ordinary apartment stacked with unopened moving boxes and an ordinary convenience store with a faceless clerk in a suit, so the horror is not sealed inside the stream window Steam's own screenshots frame; per fan wikis and walkthroughs, it is a single viewer's escalating attention that walks out of the chat and into that same apartment.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want first-person horror built specifically around the mechanics of livestreaming itself: a VTuber avatar, a scrolling live chat, and a HEALTH/DANGER-metered game-within-the-game, all rendered exactly as Steam's own screenshots show them, rather than a generic haunted-house walk",
+        "You want VHS/CRT-styled psychological horror that Steam's own text frames as built to make you feel watched, from a small Japan-based studio, Chilla's Art, that develops and self-publishes without an external publisher",
+        "You want to catch a Very Positive horror short (94 percent over 1,675 reviews) while its Western audience is still forming rather than already saturated: 852 of those reviews, about 50.9 percent, are already in English, and outlets like GamesRadar+ have already reviewed it, so you are not first, but you are still early",
+      ],
+      bad: [
+        "You want the site's usual completely undiscovered pick; with English reviews already at 50.9 percent and press coverage from GamesRadar+, Dualshockers, Gayming Magazine, and Tokyo Weekender already in place, calling this unreached by the West would not be honest, even though it remains a small, self-published horror short rather than a big-studio production",
+        "You want a long game, or you want a violent or sexual one; it is a paid, fully launched title at $7.99 (¥920 in Japan), not free and not in Early Access, structured into short, autosaved chapters, and by Steam's own content descriptors it carries nothing sexual (ids: none, notes: none), with the psychological unease being the entire point rather than a side effect",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "パラソーシャル - VTuberの配信卓、実際に流れるライブチャット、HEALTH/DANGERゲージ付きの配信中ゲーム画面、視聴者の付き纏いが彼女自身のアパートまで侵食してくる一人称ジャパニーズホラー。開発・自社パブリッシュはChilla's Art。1,675件のレビューで好評率94%の「非常に好評」、英語レビューはすでに50.9%",
+      description: "VTuberのライブ配信者を題材にした一人称ジャパニーズホラー。VHS/CRTの映像フィルターと、Steam自身が「後ろに誰かがいるような気持ちを抱かせる」と説明する心理的ホラーを核に据える。開発・自社セルフパブリッシュは日本拠点の小規模スタジオChilla's Art。1,675件のレビューで好評率94%の「非常に好評」、英語レビューはすでに50.9%と半数近くに達し、GamesRadar+など西側メディアの取材もすでに存在する。",
+      h1a: "配信が始まり、チャットが流れ出す——だが画面の中であなたを追ってくるその何かは、",
+      h1flip: "あなたのプレイを見ている唯一の目ではないかもしれない",
+      h1b: "。",
+      lede: "開発・自社セルフパブリッシュ(外部パブリッシャーなし)は日本拠点の小規模スタジオ Chilla's Art による一人称ジャパニーズホラーで、2023年8月25日にリリースされた。Steam自身のストア表記は「ライブ配信者を題材にしたジャパニーズホラーゲーム」とだけ説明するが、Steam自身の公式スクリーンショットはその意味をそのまま見せる――プレイヤーが操るのは小規模VTuber「千羅ニナ」(本人の配信卓に掲げたポスターに名前がある)。リングライト付きウェブカメラを備えたデュアルモニタの配信環境に座り、隣では実際に流れるライブチャットが視聴者のメッセージを映し、HEALTH・DANGERゲージ、視聴者数、高評価/低評価ボタンを備えた「配信中のゲーム画面」の中で、彼女はさらに別のホラーゲームをプレイしている。配信画面の外では、ごく普通のスマートフォンを手に、開封していない段ボール箱が積まれたごく普通のアパートを、そして顔のない店員がいるごく普通のコンビニを歩く――だから恐怖は、Steamのスクリーンショットが縁取るその画面の中だけに閉じてはいない。公式のストア文言ではなく、ファンによるWikiや攻略記事によれば、それはある視聴者の付き纏いが顔出し配信を迫るところから始まり、チャットの中からその同じアパートの中まで歩み出て、選択次第で複数のエンディングへ分岐していく。VHS/CRTの映像フィルターはオプションメニューで完全にオフにでき、Steam自身の言葉が核として掲げる「心理的ホラー」――日本語版ストア文言では「ゲームプレイ時に後ろに誰かがいるような気持ちを抱かせます」――として設計されている。1,675件のレビュー(Steam自身のレビューAPIでは1,574件が好評・101件が不評)で好評率94%の「非常に好評」。無料ではない有料タイトル(米国7.99ドル、日本では920円)で、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。そして正直に言えば、西側はすでに「気づき始めた」段階を超えている――1,675件のレビューのうち852件、約50.9%がすでに英語で、GamesRadar+は「The scariest game I've played all year」という見出しでレビューを掲載し、Dualshockers・Gayming Magazine・Tokyo Weekenderといったメディア、そしてTV Tropesのページもすでに本作を取り上げている。これは「西側がまだ見つけていない原石」ではない。西側がすでに一部見つけている、小規模な自社パブリッシュのホラー短編だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の公式スクリーンショットは、HEALTH・DANGERゲージ、視聴者数、そして実際に流れるライブチャットを、プレイ中のゲーム画面へじかに重ねて見せる――だから一目で三つのことを同時に読まなければならない。目の前の脅威、いま自分の失敗を見ている見知らぬ視聴者の数、そして彼らがそれについて何を打ち込んでいるか。次の一手を決める前に、そのすべてを読む必要がある。",
+        "VHS/CRTの映像フィルター――蛍光体のスクリーントレイル、テープノイズ、インターレース、ジッター――はオプションメニューで完全にオフにできる。だからSteam自身の言葉が約束する不穏さ、「後ろに誰かがいるような気持ちを抱かせる」設計は、フィルターを切った状態でも成立するように作られている。恐怖はザラついた映像の見た目そのものではなく、その映像が何を見せているかの側にある。",
+        "配信のあいだの合間には、ごく普通のスマートフォンを手に、開封していない段ボール箱が積まれたごく普通のアパートを、顔のない店員がいるごく普通のコンビニを歩く。だから恐怖は、Steamの公式スクリーンショットが縁取る配信画面の中だけに閉じてはいない。ファンによるWikiや攻略記事によれば、それはある視聴者の付き纏いがチャットの中から歩み出て、その同じアパートの中まで入り込んでくることそのものだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "配信という仕組みそのものを核に据えた一人称ホラーが欲しい人――VTuberのアバター、実際に流れるライブチャット、HEALTH/DANGERゲージ付きの配信中ゲーム画面を、Steam自身の公式スクリーンショットどおりそのまま体験する。ありふれた「幽霊屋敷探索」ではない",
+        "「後ろに誰かがいる」ことを狙って作られたと本人が明言するVHS/CRT風の心理的ホラーが欲しい人――開発・自社セルフパブリッシュ(外部パブリッシャーなし)は日本拠点の小規模スタジオChilla's Art",
+        "西側の観客がまだ形成されつつある段階の「非常に好評」タイトル(1,675件のレビューで好評率94%)を掴みたい人――そのうち852件、約50.9%はすでに英語で、GamesRadar+などがすでにレビュー済み。一番乗りではないが、まだ早い段階ではある",
+      ],
+      bad: [
+        "このサイトがいつも扱うような「完全な未発見」を期待する人――英語レビューがすでに50.9%に達し、GamesRadar+・Dualshockers・Gayming Magazine・Tokyo Weekenderの取材もすでに存在する以上、「西側がまだ見つけていない」と呼ぶのは正直ではない。それでも本作は大手スタジオの作品ではなく、小規模な自社パブリッシュのホラー短編であることに変わりはない",
+        "長時間のゲームや、暴力的・性的な内容が欲しい人――無料ではない有料タイトル(米国7.99ドル、日本では920円)の正式リリース済みでアーリーアクセスではなく、短いチャプターごとのオートセーブ構成。Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素はなく、心理的な不穏さそのものが狙いであって副産物ではない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7611,6 +7716,23 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "影廊 -Shadow Corridor- (Kageroh: Shadow Corridor) is a free Japanese indie horror game, released for free on the freeware platform Freem with a release date of June 21, 2017, made by the solo developer Kazuki Shiroma. Shiroma first posted footage of a Western-styled horror project on Niconico Douga in February 2016 under the handle Kagetsu (花月), reworked it into a Japanese-styled one that April, and the finished free game went on to win the Gold Award in the Horror category at Freem's 13th game contest. It set the template this lineage grows from: creep through the corridors of a traditional Japanese building using only whatever light and items you can find, and survive by evading, not fighting, the Noh-mask apparitions that hunt you by sight and sound. Shiroma later rebuilt it from the ground up as the commercial Shadow Corridor on Steam, which keeps that same loop while adding, per its own store listing, 'more than ten times' the free original's content, on top of a new story and additional mechanics.",
       ja: "影廊 -Shadow Corridor-は、日本のフリーゲーム配信サイト「ふりーむ！」でリリース日2017年6月21日に無料公開された、ソロ開発者 城間一樹 による日本産インディーホラーゲームだ。城間は2016年2月、当時の旧HN「花月」名義で洋風テイストのホラーゲームの制作映像をニコニコ動画に投稿し始め、同年4月には和風ホラーへと方向転換、完成したフリー版は第13回ふりーむ！ゲームコンテストのホラー部門で金賞を受賞した。和風建築の回廊を、手持ちの明かりと見つけたアイテムだけを頼りに歩き、視覚と聴覚で追う能面の徘徊者を、戦うのではなく避けてやり過ごして生き延びる——この系譜のひな型を作った一本だ。城間は後に、この同じ作品をゼロから作り直し、Steamで商業版『Shadow Corridor』としてリリースした。同じループを保ったまま、新規のストーリーと追加のゲームシステムを加え、Steam自身のストア表記によれば、そのボリュームは無料版の「何と10倍以上」になっている。",
+    },
+  },
+  // 原点 パーフェクトブルー(Perfect Blue), 今敏監督, マッドハウス制作, 1997年公開。竹内義和の同名小説を
+  //   原案とする(Wikipedia要約実測: 脚本 村井貞之、声の主演 岩男潤子)。アイドルグループのメンバーが
+  //   歌手を引退し女優へ転身するが、熱狂的なファンに付け纏われ、凄惨な殺人事件が起こるなかで現実と
+  //   演じる虚構の境界が溶け崩れていく——「エンターテイナーを見つめる観客が、遠くから眺めるだけでは
+  //   止まらず実生活そのものへ手を伸ばす」というメディア×ストーカー恐怖の日本的原型(Wikidata実測:
+  //   監督P57=Q333643=Satoshi Kon、制作会社P272=Q650867=Madhouse、公開日P577=1997年で確認済み)。
+  //   Parasocial とのこの帰属は GamesRadar+ 等の批評記事が主題的近似を指摘する当サイト独自の比較で
+  //   あり、開発元 Chilla's Art による直接の言明ではないため自信度: 中(捏造しない・imscared/
+  //   chikyu-boueigun 型の判断)。公式Steam版は無い1997年の映画のため lineage_anchor_key には steam
+  //   ではなく wikidata QID(Q1205051)を採用する。
+  "perfect-blue": {
+    wikidata: "https://www.wikidata.org/wiki/Q1205051",
+    blurb: {
+      en: "Perfect Blue is a 1997 Japanese animated psychological horror film directed by Satoshi Kon and produced by Madhouse, loosely based on the novel by Yoshikazu Takeuchi. A member of a Japanese idol group retires from singing to become an actress, and is stalked by an obsessive fan as gruesome murders begin and the line between her real life and the role she performs starts to dissolve. It crystallized a distinctly Japanese strand of horror in which an entertainer's own audience stops watching from a distance and reaches into her actual life, the origin of the lineage of games and stories where a performer's audience becomes the threat.",
+      ja: "パーフェクトブルーは、今敏監督、マッドハウス制作による1997年の日本のアニメーション心理サスペンス映画で、竹内義和の同名小説を原案としている。あるアイドルグループのメンバーが歌手活動を引退して女優に転身するが、熱狂的なファンに付け纏われるようになり、凄惨な殺人事件が起こり始めるなかで、現実の彼女と演じる役柄との境界が溶け崩れていく。「エンターテイナーを見つめる観客が、遠くから眺めるだけでは止まらず、その実生活そのものへ手を伸ばし始める」という、日本的なホラーの一系統を結晶化させた作品であり、観客そのものが脅威に変わる作品・ゲーム群の系譜の原点である。",
     },
   },
 } as const;
