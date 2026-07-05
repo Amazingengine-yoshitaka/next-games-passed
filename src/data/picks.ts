@@ -7711,6 +7711,103 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "kung-fu-beat": {
+    published: "2026-07-17",
+    publishAt: "2026-07-17",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「ノーツに合わせて移動/ジャンプ/攻撃するリズム格闘」を捉える語がないため
+    //   新設 "rhythm-battle-action"(もぐらゲームス記事自身の呼称「リズムバトルアクション」に準拠)。
+    // developer/publisher ブルーオニキス(自社発売・第三者パブリッシャーなし)は、indie-freaks記事
+    //   本文実読で「"ブルーオニキス"は個人開発者のサークル」「本作を2年ほどかけて完成させ」を直接
+    //   引用確認済み。2024年1月開催の東京都内インディーイベント「東京ゲームダンジョン4」(東京都立
+    //   産業貿易センター浜松町館)へ現地出展した実績があり、対応言語も日本語のみ(Steam appdetails API
+    //   実測)。国籍の直接一次証言(本人の国籍表明)までは確認できず、対応言語・現地出展・日本語媒体
+    //   複数掲載という状況証拠に基づく判断である旨は正直に自覚する(your-letter-has-been-rejected型の
+    //   確度)。発売元不在(自社発売)のため大手資本提携先リスクそのものが存在しない。
+    // 系譜はSlay the Spire系や既存shoot-em-up系譜ではなく、リズムに合わせて行動しないと成立しない
+    //   戦闘という着想を定義したCrypt of the NecroDancer(Brace Yourself Games、2015年)を新規anchor
+    //   "necrodancer" として採用する。この帰属は開発元ブルーオニキス自身の言明ではなく当サイト独自の
+    //   批評的比較のため自信度: 中(捏造しない・parasocial/perfect-blue/papers-please/book-of-demons型)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false。
+    // west_unreached: 対応言語は日本語のみ(API実測、l=englishでも本文は日本語のまま)。英語レビューは
+    //   0件(appreviews API実測、language=englishでtotal_reviews:0)。よって「言語そのものが壁」である
+    //   ことを本文で正直に述べる(your-letter-has-been-rejected/guild-explorers型のprecedent)。
+    meta: { genre: "rhythm-battle-action", lineage: "necrodancer", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 17, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Kung Fu Beat",
+        name_ja: "カンフービート",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3421830/_/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own Japanese-language store text (translated here, since the store page carries no official English version at all), a girl sets out to become the strongest kung-fu fighter there is, and the whole fight rides on rhythm: press the right button in time with the notes to move, jump, and attack, reading an enemy's actions and slamming a fist into the opening it leaves. Landing hits fills a tension gauge that, once full, unleashes a heavy-damage 'technique,' and stances you acquire along the way raise your max health or make that gauge fill faster, letting you carry momentum from one fight into the next. Made and self-published by the solo developer circle ブルーオニキス (Blue Onyx), who spent about two years building it and exhibited it in person at Tokyo Game Dungeon 4, a Japan-based indie showcase, before its solo Steam release. Released February 19, 2025 at a striking ¥470, it is Positive at 100 percent over 17 reviews (17 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with no English-language text anywhere in the game or its store page, and, unsurprisingly, zero of its reviews are in English: the language itself is the wall keeping it from the West.",
+        desc_ja: "Steam自身の表記によれば、少女が最強の拳法家を目指し、戦いのすべてがリズムに乗っている——タイミングよくボタンを押してノーツに合わせ、移動し、ジャンプし、攻撃する。相手の行動を見切り、その隙に拳を叩き込む。攻撃を当てるとテンションゲージが溜まり、満タンになると大ダメージを与える「技」を繰り出せるほか、道中で獲得する「構え」で体力最大値を上げたりゲージを溜まりやすくしたりでき、勢いを次の戦いへとつなげていく。制作・自社発売は個人開発者のサークル、ブルーオニキス。約2年をかけて完成させ、単独でのSteam発売に先立ち、日本国内のインディーイベント「東京ゲームダンジョン4」に現地出展した実績がある。発売日は2025年2月19日、価格は目を引く¥470。17件のレビュー(好評17件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、ゲーム本編にもストアページにも公式の英語テキストは一切存在せず、当然ながら英語レビューも0件——言語そのものが、この作品を西側から隔てる壁になっている。",
+      },
+      {
+        name_en: "Crypt of the NecroDancer",
+        name_ja: "Crypt of the NecroDancer",
+        status: "established",
+        steam: "https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Crypt of the NecroDancer, a 2015 roguelike by Brace Yourself Games whose own store text sums it up as a game where you 'move to the music and deliver beatdowns to the beat,' every step and swing locked to the rhythm of its soundtrack rather than free timing. Kung Fu Beat is not an official NecroDancer work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer ブルーオニキス, but it carries the same core idea into a new frame: that a fight only truly works if you act exactly on the beat, not just eventually.",
+        desc_ja: "この味の原点——Crypt of the NecroDancer。Brace Yourself Games制作による2015年のローグライクで、Steam自身のストア文言は「音楽に乗って動き、リズムに合わせて打ちのめせ」と本作を要約する。あらゆる一歩と一撃が自由なタイミングではなくサウンドトラックのリズムに固定されている。カンフービートは公式のNecroDancer作品ではなく、この系譜は開発元ブルーオニキス自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ核心的な着想を新しい枠組みへと引き継いでいる——戦いは「いつかやればいい」ではなく「ちょうどそのビートで」行動して初めて成立するという発想だ。",
+      },
+    ],
+    en: {
+      title: "Kung Fu Beat - a rhythm battle-action game where a girl becomes the strongest kung-fu fighter by moving, jumping, and attacking exactly on the beat, made solo and self-published by the two-person-free circle ブルーオニキス over two years, Positive at 100 percent over 17 reviews though it has no English support at all",
+      description: "A rhythm battle-action game: press the right button in time with the notes to move, jump, and attack, reading an enemy's rhythm and landing your own hits to fill a gauge for a heavy 'technique.' Made and self-published by the solo developer circle ブルーオニキス (Blue Onyx) over about two years, first shown in person at a Japan-based indie showcase before its solo Steam release. Positive at 100 percent over 17 reviews, though the game has no English-language support at all.",
+      h1a: "A girl who wants to be the strongest kung-fu fighter alive throws every punch, jump, and dodge exactly on the beat, ",
+      h1flip: "and the fight simply does not work if you're a half-step off the rhythm",
+      h1b: ".",
+      lede: "A rhythm battle-action game made and self-published by the solo developer circle ブルーオニキス (Blue Onyx), who spent about two years building it and showed it in person at Tokyo Game Dungeon 4, a Japan-based indie showcase, before its solo Steam release. Per Steam's own store text, translated here since no official English version exists, a girl sets out to become the strongest kung-fu fighter there is, and the whole fight rides on rhythm: press the right button in time with the notes to move, jump, and attack, reading an enemy's actions and slamming a fist into the opening it leaves. Landing hits fills a tension gauge that, once full, unleashes a heavy-damage 'technique,' and stances acquired along the way raise your max health or make that gauge fill faster. Released February 19, 2025 at a striking ¥470, it is Positive at 100 percent over 17 reviews (17 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with no English text anywhere in the game, and zero of its reviews are in English: the language itself is the wall keeping it from the West.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, every move, jump, and attack has to land in time with the notes, so a fight stops being about reacting fast and becomes about reading an opponent's pattern one beat ahead, then committing a punch to the exact moment the rhythm and the opening line up.",
+        "Landing hits fills a tension gauge that unleashes a heavy 'technique' once it's full, so the rhythm you're keeping isn't just about survival, it is quietly building toward a single decisive strike you get to choose the timing of.",
+        "This exists because a solo developer circle spent about two years building it, then carried it in person to a Tokyo indie showcase before ever putting it on Steam, so the ¥470 price tag sitting under a 100 percent positive score reads less like an accident and more like someone who priced a two-year labor of love to be found rather than to profit from it.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a rhythm game where the beat isn't a mini-game layered on top of combat, it is the combat: every move, jump, and attack locked to the notes",
+        "You want a genuinely solo, self-published Japanese production: a two-year labor of love shown in person at a Tokyo indie event before its own creator put it on Steam with no publisher at all",
+        "You want a Positive title (100 percent, though only 17 reviews) that could not be more unreached by the West: no English support anywhere, and literally zero English reviews",
+      ],
+      bad: [
+        "You want a long game or a large cast; this is a tight, score-and-technique-focused rhythm brawler built around one core loop",
+        "You want to actually read it without Japanese; it supports no other language at all, so the wall here is the language itself, and it is a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Kung Fu Beat - 少女が最強の拳法家を目指し、移動もジャンプも攻撃もすべてビートに乗せて繰り出すリズムバトルアクション。制作・自社発売は個人サークルのブルーオニキス、約2年をかけて完成。17件のレビューで好評率100%ながら、公式の英語対応が一切ない",
+      description: "少女が最強の拳法家を目指すリズムバトルアクション。タイミングよくボタンを押してノーツに合わせ、移動・ジャンプ・攻撃を繰り出し、相手の行動を見切って隙にヒットを重ねゲージを溜め、大ダメージの「技」を放つ。制作・自社発売は個人開発者のサークル、ブルーオニキス。約2年をかけて完成させ、単独でのSteam発売に先立ち日本国内のインディーイベントに現地出展した。17件のレビューで好評率100%の「好評」、ただし公式の英語対応は一切ない。",
+      h1a: "最強の拳法家を目指す少女は、パンチもジャンプも回避も、すべてをビートに正確に乗せて繰り出す。",
+      h1flip: "リズムから半歩でもずれれば、その戦いは端的に成立しなくなる",
+      h1b: "。",
+      lede: "制作・自社発売は個人開発者のサークル、ブルーオニキス。約2年をかけて本作を完成させ、単独でのSteam発売に先立ち、日本国内のインディーイベント「東京ゲームダンジョン4」に現地出展した実績がある。Steam自身のストア文言(公式の英語版が存在しないためここでは翻訳して紹介する)によれば、少女が最強の拳法家を目指し、戦いのすべてがリズムに乗っている——タイミングよくボタンを押してノーツに合わせ、移動し、ジャンプし、攻撃する。相手の行動を見切り、その隙に拳を叩き込む。攻撃を当てるとテンションゲージが溜まり、満タンになると大ダメージを与える「技」を繰り出せるほか、道中で獲得する「構え」で体力最大値を上げたりゲージを溜まりやすくしたりできる。発売日は2025年2月19日、価格は目を引く¥470。17件のレビュー(好評17件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみでゲーム本編に英語テキストは一切なく、レビューも英語は0件——言語そのものが、この作品を西側から隔てる壁になっている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、移動もジャンプも攻撃もすべてノーツに合わせて繰り出さなければならない。だから戦いは単純な反応速度の勝負ではなく、相手のパターンを一拍先読みし、リズムと隙が重なるちょうどその瞬間にパンチを撃ち込む、という読み合いになる。",
+        "ヒットを重ねるとテンションゲージが溜まり、満タンで大ダメージの「技」が放てる。だから刻み続けるリズムは単なる生存の手段ではなく、自分でタイミングを選べる決定打へと静かに積み上がっていく。",
+        "このゲームは、個人開発者のサークルが約2年をかけて作り上げ、Steamに出す前にまず東京のインディーイベントへ現地出展した、という経緯から生まれている。だから好評率100%の下に付いた¥470という価格は、事故ではなく、2年間の情熱の結晶を「稼ぐため」ではなく「見つけてもらうため」に値付けした人の意思のように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "リズムが戦闘に乗っかるミニゲームではなく戦闘そのものであるリズムゲームが欲しい人——移動もジャンプも攻撃もすべてノーツに固定されている",
+        "本当にソロで、自社発売の日本のプロダクションが欲しい人——2年間の情熱作を、開発者自身がSteamに出す前にまず東京のインディーイベントへ現地出展した一本で、発売元は存在しない",
+        "「好評」タイトル(17件で100%)ながら、これ以上ないほど西側に届いていないものを掴みたい人——公式の英語対応は一切なく、レビューも文字通り英語0件",
+      ],
+      bad: [
+        "長時間のボリュームや多数の登場人物が欲しい人——本作はスコアと技の習得に絞り込まれた短時間のリズム格闘アクションで、単一の核ループを軸にしている",
+        "日本語なしで実際に読みたい人——他言語には一切対応しておらず、言語そのものが壁になっている。無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8513,6 +8610,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Book of Demons is a 2018 hack-and-slash by Thing Trunk in which, per its own store text, you 'wield magic cards instead of weapons' to slay the armies of darkness beneath the Old Cathedral, replacing a traditional action-RPG's skill bar with a deck of cards you build before a run and play out with a click in real time. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a deck of cards can stand in for a weapon in real-time combat, while dodging and parrying stay a matter of the player's own reflexes rather than another card to draw.",
       ja: "Book of Demonsは、Thing Trunk制作による2018年のハック&スラッシュで、Steam自身のストア文言によれば「武器の代わりに魔法カードを操り」古き大聖堂の地下で闇の軍勢を打ち倒す一本だ。従来のアクションRPGのスキルバーを、事前に組んだカードのデッキに置き換え、実際のプレイでは1クリックでそれをリアルタイムに発動させる。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——カードのデッキがリアルタイム戦闘における武器の代わりになりうるという着想、その原点にあたる一本であり、回避とパリィは引くべき別のカードではなく、あくまでプレイヤー自身の反射神経に委ねられている。",
+    },
+  },
+  // 原点 Crypt of the NecroDancer(Brace Yourself Games、2015年)。Kung Fu Beat pick の系譜として
+  //   新規採用。この帰属は開発元ブルーオニキスの言明ではなく当サイト独自の批評的比較(自信度: 中・
+  //   parasocial/perfect-blue/papers-please/book-of-demons型の判断)。現行Steamで販売中のため
+  //   steam URLで同定する。
+  "necrodancer": {
+    steam: "247080",
+    blurb: {
+      en: "Crypt of the NecroDancer is a 2015 roguelike by Brace Yourself Games whose own store text sums it up as a game where you 'move to the music and deliver beatdowns to the beat,' every step and swing locked to the rhythm of its soundtrack rather than free timing. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a fight only truly works if you act exactly on the beat, not just eventually.",
+      ja: "Crypt of the NecroDancerは、Brace Yourself Games制作による2015年のローグライクで、Steam自身のストア文言は「音楽に乗って動き、リズムに合わせて打ちのめせ」と本作を要約する。あらゆる一歩と一撃が自由なタイミングではなくサウンドトラックのリズムに固定されている。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——戦いは「いつかやればいい」ではなく「ちょうどそのビートで」行動して初めて成立するという発想、その原点にあたる一本だ。",
     },
   },
 } as const;
