@@ -7616,6 +7616,101 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "code-reactors": {
+    published: "2026-07-17",
+    publishAt: "2026-07-17",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「デッキ構築のスペルカードをリアルタイムのアクション(回避・パリィ)と
+    //   組み合わせるローグライク」を捉える語がないため新設 "card-action-roguelike"。
+    // developer Studio Act One(個人・愛称「おにどら」)は、2023年開始のCAMPFIREクラウドファンディング
+    //   ページ本文実読で「業務系システム開発のSESで生計を立てていましたが、今は貯金を切り崩しながら
+    //   ゲーム開発に本腰を入れています」という本人談を直接確認済み(目標30万円→達成101.5万円・108人支援)。
+    //   4Gamer/ファミ通/AUTOMATON/gamebiz/indiegamesjapan等国内媒体の報道実績も確認済み。
+    // publisher Waku Waku Games(東京都品川区、2022年コーラス・ワールドワイドから独立した一人
+    //   パブリッシャー、代表大柳竜児)は既に5omeday pickで非大手パブリッシャーと確認済み。今回改めて
+    //   公式サイト・代表インタビューでKOEI/TECMO・Cygames・Key・ANIPLEX・CAPCOM・Idea Factory・FURYU・
+    //   Embracer等との資本関係の記載が無いことを確認(消極証拠に留まる旨は正直に自覚)。
+    // 系譜はSlay the Spire等の既存デッキ構築系譜ではなく、スペルカードを武器代わりに使うリアルタイム
+    //   ハック&スラッシュBook of Demons(Thing Trunk、2018年)を新規anchor "book-of-demons" として
+    //   採用する。この帰属は開発元Studio Act One自身の言明ではなく当サイト独自の批評的比較のため
+    //   自信度: 中(捏造しない・parasocial/perfect-blue/papers-please型の判断)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false。
+    meta: { genre: "card-action-roguelike", lineage: "book-of-demons", obscurity: "deep", reviewBand: "hundreds", rarity: { reviews: 33, positivePct: 91, noEnglish: false } },
+    games: [
+      {
+        name_en: "Code Reactors",
+        name_ja: "Code Reactors（コードリアクターズ）",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2171640/Code_Reactors/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, the sorceress girl Himari wanders into a world created by five witches and, together with a devil girl named Eve, descends into dungeons to unravel the mystery of the world's 'first magic.' It fuses deckbuilding with 2D action: casting a spell takes no complex command, just building a deck of 'spell cards' suited to the fight ahead and releasing it with a single button, though timing that release against an enemy's opening is entirely up to you, with a fire deck for burn damage over time, a lightning deck for raised critical rates, and an ice deck for freezing enemies before a heavy finisher. Each dungeon run reshuffles the layout, the cards on offer, and the enemies, and 'relics' can synergize into combos strong enough to break the game's own balance by design, while attack stays deck-driven but defense and dodging remain entirely a matter of the player's own reflexes, reading enemy patterns for a just-in-time dodge or parry. Made by the solo developer Studio Act One, working under the handle おにどら (Onidora), and published by Waku Waku Games, a one-person independent publisher based in Tokyo's Shinagawa ward, it began as a 2023 CAMPFIRE crowdfunding campaign that set out to raise ¥300,000 and drew ¥1,015,000 from 108 backers; on that same campaign page, in the creator's own words, 'I'd been making a living through SES contract systems-development work, but now I'm burning through savings to focus fully on making this game.' Released February 12, 2025 at ¥1,800, it is Positive at about 91 percent over 33 reviews (30 positive, 3 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English, Japanese, and Simplified and Traditional Chinese, and only about 5 of its 33 reviews, some 15 percent, are in English, leaving it still largely unfound outside Japan more than a year after release.",
+        desc_ja: "Steam自身の表記によれば、魔法使いの少女「ヒマリ」は5人の魔女によって創り出された世界に迷い込み、悪魔の少女「イブ」と共に、世界を巡る「最初の魔法」の謎を解き明かすためダンジョンの最深部を目指す。デッキ構築と2Dアクションを融合させた一本で、魔法の発動に複雑なコマンドは不要——戦況に合わせて「スペルカード」でデッキを組み、ボタンひとつで解き放つだけだが、いつ放つかは完全にプレイヤー次第で、燃やしてスリップダメージを与える炎デッキ、クリティカル率を高める雷デッキ、凍らせてから強力な一撃を叩き込む氷デッキがある。ダンジョンに入るたびに地形も手に入るカードも敵の配置も変化するローグライク構造で、「レリック」同士のシナジーがゲームバランスを崩壊させるほどの「壊れコンボ」を生み出す一方、攻撃はデッキ任せでも防御と回避は完全にプレイヤーの腕次第——敵の攻撃パターンを見切ってジャスト回避やパリィでチャンスを作る。制作は個人開発者Studio Act One、愛称「おにどら」によるソロブランドで、発売元は東京都品川区拠点の一人パブリッシャー、わくわくゲームズ。本作は2023年開始のCAMPFIREクラウドファンディングから始まり、目標30万円に対し108人の支援者から101万5000円を集めた。同じキャンペーンページで、制作者本人は「業務系システム開発のSESで生計を立てていましたが、今は貯金を切り崩しながらゲーム開発に本腰を入れています」と語っている。発売日は2025年2月12日、価格¥1,800。33件のレビュー(好評30件・不評3件、Steam自身のレビューAPI実測)で好評率約91%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。英語・日本語・簡体字/繁体字中国語に対応するが、33件のうち英語レビューは約5件、15%程度に留まり、発売から1年以上経った今もなお、日本の外ではほとんど見つかっていない。",
+      },
+      {
+        name_en: "Book of Demons",
+        name_ja: "Book of Demons",
+        status: "established",
+        steam: "https://store.steampowered.com/app/449960/Book_of_Demons/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Book of Demons, a 2018 hack-and-slash by Thing Trunk in which, per its own store text, you 'wield magic cards instead of weapons' to slay the armies of darkness beneath the Old Cathedral, replacing a traditional action-RPG's skill bar with a deck of cards you build before a run and play out with a click in real time. Code Reactors is not an official Book of Demons work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer Studio Act One, but it carries the same shape forward into a new frame: a deck of elemental spell cards standing in for a weapon, released at a moment the player alone chooses, while dodging and parrying stay entirely a matter of the player's own reflexes rather than another card to draw.",
+        desc_ja: "この味の原点——Book of Demons。Thing Trunk制作による2018年のハック&スラッシュで、Steam自身のストア文言によれば「武器の代わりに魔法カードを操り」古き大聖堂の地下で闇の軍勢を打ち倒す一本だ。従来のアクションRPGのスキルバーを、事前に組んだカードのデッキに置き換え、実際のプレイでは1クリックでそれをリアルタイムに発動させる。Code Reactorsは公式のBook of Demons作品ではなく、この系譜は開発元Studio Act One自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ形を新しい枠組みへと引き継いでいる——属性別のスペルカードのデッキが武器の代わりとなり、それを解き放つ瞬間はプレイヤー自身だけが選び取る一方、回避とパリィは引くべき別のカードではなく、あくまでプレイヤー自身の反射神経に委ねられている。",
+      },
+    ],
+    en: {
+      title: "Code Reactors - a deckbuilding 2D action roguelike where a sorceress girl builds elemental spell-card decks and releases them with one button while dodging and parrying entirely on her own reflexes, made solo by Studio Act One's Onidora, who quit an SES contract-programming job and crowdfunded it on CAMPFIRE, published by the one-person label Waku Waku Games, Positive at 91 percent over 33 reviews and still barely found outside Japan a year after release",
+      description: "A deckbuilding 2D action roguelike: build a deck of elemental 'spell cards' suited to the fight ahead and release it with a single button, timed entirely at your own discretion, while dodging and parrying enemy attacks stays a pure test of reflexes rather than another card to draw. Made solo by Studio Act One (handle: Onidora), funded through a 2023 CAMPFIRE crowdfunding campaign, and published by the one-person label Waku Waku Games. Positive at about 91 percent over 33 reviews, with English readers still only around 15 percent.",
+      h1a: "A sorceress builds a deck of fire, lightning, and ice, and releases it with one button whenever she alone decides, ",
+      h1flip: "while every dodge and parry against what comes back is a card she never gets to draw",
+      h1b: ".",
+      lede: "A deckbuilding 2D action roguelike made solo by Studio Act One, working under the handle おにどら (Onidora), and published by Waku Waku Games, a one-person independent publisher based in Tokyo's Shinagawa ward. Per Steam's own listing, the sorceress girl Himari wanders into a world created by five witches and, with a devil girl named Eve, descends into dungeons to unravel the mystery of the world's 'first magic,' building a deck of elemental spell cards, fire for burn damage, lightning for raised crit rates, ice for freezing enemies before a heavy finisher, and releasing it with a single button whenever the timing is right, while defense and dodging stay entirely a matter of the player's own reflexes. Each run reshuffles the dungeon layout, cards, and enemies, and relics can combine into combos strong enough to break the game's own balance by design. The project began as a 2023 CAMPFIRE crowdfunding campaign that set out to raise ¥300,000 and drew ¥1,015,000 from 108 backers; on that same page, in the creator's own words, 'I'd been making a living through SES contract systems-development work, but now I'm burning through savings to focus fully on making this game.' Released February 12, 2025 at ¥1,800, it is Positive at about 91 percent over 33 reviews (30 positive, 3 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. Only about 5 of its 33 reviews, some 15 percent, are in English, leaving it still largely unfound outside Japan more than a year after release.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, casting a spell takes no complex command, just a deck you built ahead of time and a single button, so all the actual thinking happens beforehand, in which cards you chose to carry, and in the half-second read of an enemy's opening where you decide this is the moment to spend them.",
+        "Attack is entirely deck-driven, but defense is not: dodging and parrying stay a pure test of the player's own reflexes, so the game keeps splitting your attention between a strategist's slow deckbuilding choices and an action player's split-second reads, and neither half ever gets to cover for the other.",
+        "The project exists because a solo developer working under the handle Onidora funded it through backers after leaving SES contract programming work behind, per his own words on the CAMPFIRE page, burning through savings to see it made, which sits underneath every relic-fueled 'broken combo' the game invites you to go build.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a deckbuilding roguelike where attack is card-driven but defense is pure action-game reflexes: dodge and parry timing that no card can substitute for",
+        "You want a genuinely solo, crowdfunded Japanese production: Studio Act One's Onidora, funded through a 2023 CAMPFIRE campaign after leaving contract programming work, published by the one-person label Waku Waku Games",
+        "You want a Positive title (91 percent over 33 reviews) still barely found outside Japan a year after release, with only about 15 percent of its reviews in English",
+      ],
+      bad: [
+        "You want a purely turn-based deckbuilder with no action-game reflex component; here defense and dodging are entirely real-time and skill-based, not card-driven",
+        "You want a title that's already built a large audience; this is a small, solo, crowdfunded production, paid and not free, not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Code Reactors - 魔法使いの少女が属性別のスペルカードでデッキを組み、ボタンひとつで解き放ちながら回避とパリィは完全に自分の腕で戦う、デッキ構築×2Dアクションローグライク。制作はStudio Act Oneのおにどら氏、SESのシステム開発を辞めCAMPFIREでクラウドファンディングし、発売は一人パブリッシャーのわくわくゲームズ。33件のレビューで好評率91%、発売から1年経った今も日本の外ではほとんど見つかっていない",
+      description: "デッキ構築×2Dアクションローグライク。戦況に合わせた属性別の「スペルカード」でデッキを組み、タイミングは完全に自分次第でボタンひとつで解き放つ一方、敵の攻撃を回避・パリィする防御は引くカードではなく純粋な反射神経の勝負になる。制作は個人開発者Studio Act One(愛称おにどら)、2023年開始のCAMPFIREクラウドファンディングで資金を集め、発売は一人パブリッシャーのわくわくゲームズ。33件のレビューで好評率約91%の「好評」、英語レビューはまだ約15%に留まる。",
+      h1a: "魔法使いの少女が炎・雷・氷のデッキを組み、それをいつ解き放つかは彼女自身だけが決める。",
+      h1flip: "だが跳ね返ってくる一撃への回避とパリィは、彼女が決して引くことのできないカードだ",
+      h1b: "。",
+      lede: "制作は個人開発者Studio Act One、愛称「おにどら」によるソロブランドで、発売元は東京都品川区拠点の一人パブリッシャー、わくわくゲームズ。Steam自身の表記によれば、魔法使いの少女「ヒマリ」は5人の魔女によって創り出された世界に迷い込み、悪魔の少女「イブ」と共に、世界を巡る「最初の魔法」の謎を解き明かすためダンジョンへ挑む。燃やしてスリップダメージを与える炎デッキ、クリティカル率を高める雷デッキ、凍らせてから強力な一撃を叩き込む氷デッキ——戦況に応じたスペルカードのデッキを組み、タイミングが来たらボタンひとつで解き放つ一方、防御と回避は完全にプレイヤー自身の反射神経に委ねられている。ダンジョンに入るたびに地形もカードも敵の配置も変化し、レリック同士のシナジーがゲームバランスを意図的に崩壊させるほどの「壊れコンボ」を生む。本作は2023年開始のCAMPFIREクラウドファンディングから始まり、目標30万円に対し108人の支援者から101万5000円を集めた。同じキャンペーンページで、制作者本人は「業務系システム開発のSESで生計を立てていましたが、今は貯金を切り崩しながらゲーム開発に本腰を入れています」と語っている。発売日は2025年2月12日、価格¥1,800。33件のレビュー(好評30件・不評3件)で好評率約91%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。33件のうち英語レビューは約5件、15%程度に留まり、発売から1年以上経った今もなお日本の外ではほとんど見つかっていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、魔法の発動に複雑なコマンドは不要——あらかじめ組んだデッキとボタンひとつだけだ。だから本当の思考はすべて事前に済んでおり、どのカードを持ち込むかという選択と、敵の隙を読んで「今がその瞬間だ」と見極める一瞬の判断に集約される。",
+        "攻撃は完全にデッキ任せだが、防御はそうではない——回避とパリィは純粋にプレイヤー自身の反射神経が試される。だからこのゲームは、戦略家のようにじっくりデッキを組む時間と、アクションゲーマーのように一瞬を読む時間との間で、常にプレイヤーの意識を引き裂き続け、どちらも決して相手をかばってくれない。",
+        "このプロジェクトは、愛称「おにどら」で活動するソロ開発者が、SESの受託プログラミングを辞めた後に支援者を募って実現したものだ。CAMPFIREページ本人の言葉によれば、貯金を切り崩しながら完成させたという——その事実は、このゲームが誘う「壊れコンボ」というレリック頼みの派手さの、その足元に静かに横たわっている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "攻撃はカード任せでも防御は純粋なアクションゲームの反射神経で戦う、デッキ構築ローグライクが欲しい人——回避とパリィのタイミングは、どんなカードでも代わりが利かない",
+        "本当にソロで、クラウドファンディングで実現した日本のプロダクションが欲しい人——受託プログラミングを辞めたStudio Act Oneのおにどら氏が2023年のCAMPFIREキャンペーンで資金を集め、一人パブリッシャーのわくわくゲームズが発行した一本",
+        "「好評」タイトル(33件で91%)ながら、発売から1年経った今も日本の外ではほとんど見つかっていない、英語レビュー約15%程度の一本を掴みたい人",
+      ],
+      bad: [
+        "純粋なターン制デッキ構築で、アクションゲーム的な反射神経の要素は無いものが欲しい人——本作の防御と回避は完全にリアルタイム・スキル依存で、カード任せではない",
+        "すでに大きな支持層を築いたタイトルが欲しい人——本作は小規模でソロ・クラウドファンディング発のプロダクションで、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8407,6 +8502,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Zanac EX is the MSX2 edition of Compile's Zanac, released in Japan in 1987 per Steam's own listing, a shooter whose enemy waves adapt in real time to how the player is performing, one of the genre's earliest experiments in a reactive, dynamic-difficulty shmup. It is not a new Compile production but the same 1987 game preserved and republished on Steam by D4Enterprise's EGGCONSOLE label, a legal emulation-based reissue service for classic Japanese computer games; Compile itself went bankrupt and dissolved in the early 2000s, and D4Enterprise operates under license to the IP. Creator Junichi Terayama of TERARIN GAMES named Zanac, alongside Compile's Aleste, as a direct inspiration in an interview with Game*Spark; Blaze of Storm does not reuse this game's assets or code, only the shmup lineage he says he grew up on.",
       ja: "ザナックEXは、コンパイルの『ザナック』のMSX2版で、Steam自身の表記によれば1987年に日本でリリースされた。プレイヤーの腕前にリアルタイムで反応して敵の出現パターンが変化する、シューティングというジャンルの中でも早期に「動的難易度」を実験した作品のひとつだ。コンパイルによる新作ではなく、この1987年当時のゲームがそのまま保存され、D4Enterprise社の「EGGCONSOLE」レーベル(クラシックな日本産コンピュータゲームを合法的にエミュレーションで復刻配信するサービス)経由でSteamに再配信されたもの。コンパイル自体は2000年代初頭に経営破綻し解散しており、D4EnterpriseはそのIPのライセンスを得て運営している。TERARIN GAMESの制作者・寺山淳一氏は、Game*Sparkのインタビューでコンパイルの『アレスタ』と並べて本作を直接の影響作として名指ししている。『Blaze of Storm』はこの作品の素材やコードを流用しているわけではなく、寺山氏が「育った」と語るシューティングの系譜そのものを受け継いでいる。",
+    },
+  },
+  // 原点 Book of Demons(Thing Trunk、2018年)。Code Reactors pick の系譜として新規採用。
+  //   この帰属は開発元Studio Act Oneの言明ではなく当サイト独自の批評的比較(自信度: 中・
+  //   parasocial/perfect-blue/papers-please型の判断)。Book of Demons自体が現行Steamで販売中の
+  //   ためsteam URLで同定する。
+  "book-of-demons": {
+    steam: "449960",
+    blurb: {
+      en: "Book of Demons is a 2018 hack-and-slash by Thing Trunk in which, per its own store text, you 'wield magic cards instead of weapons' to slay the armies of darkness beneath the Old Cathedral, replacing a traditional action-RPG's skill bar with a deck of cards you build before a run and play out with a click in real time. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a deck of cards can stand in for a weapon in real-time combat, while dodging and parrying stay a matter of the player's own reflexes rather than another card to draw.",
+      ja: "Book of Demonsは、Thing Trunk制作による2018年のハック&スラッシュで、Steam自身のストア文言によれば「武器の代わりに魔法カードを操り」古き大聖堂の地下で闇の軍勢を打ち倒す一本だ。従来のアクションRPGのスキルバーを、事前に組んだカードのデッキに置き換え、実際のプレイでは1クリックでそれをリアルタイムに発動させる。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——カードのデッキがリアルタイム戦闘における武器の代わりになりうるという着想、その原点にあたる一本であり、回避とパリィは引くべき別のカードではなく、あくまでプレイヤー自身の反射神経に委ねられている。",
     },
   },
 } as const;
