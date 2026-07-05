@@ -8417,6 +8417,107 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "old-coin-pusher-friends-2": {
+    published: "2026-07-21",
+    publishAt: "2026-07-21",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「江戸時代の妖怪退治を題材にした、最大4人オンライン協力プレイの
+    //   コインプッシャー」を捉える語がないため新設 "coop-coin-pusher"。
+    // developer/publisher STP WORKS(自社発売・第三者パブリッシャーなし)は、GameSparkの開発者
+    //   インタビュー記事本文実読で、本人「ダンおじ」氏の一人称発言として「ちょうど2年前に友人と
+    //   ゲーム会社を起業しまして、2人でゲーム開発と販売を行っています。友人は開発で、私が
+    //   マーケティングや会社運営関連をしています。会社の代表は友人です。」を直接引用確認済み。
+    //   友人2人で起業した独立系の小規模ベンチャーであり、大手企業の子会社・資本提携先である旨の
+    //   記述は確認できなかった(記事に言及が無いという消極的確認である旨は正直に自覚する)。
+    // クラウドファンディングはCAMPFIREで2023年4月28日〜5月12日実施、目標1万円に対し達成額
+    //   644,500円(達成率6,445%・支援者346人、CAMPFIRE公式ページ実測)。GameSpark記事は
+    //   「60万円超」の達成を報じている。前作『古銭プッシャーフレンズ』(appid 1722020)は2021年
+    //   10月7日発売で、本作はそのシリーズ2作目にあたる。
+    // 系譜は特定のインディー原点ではなく、実世界の縁日・ゲームセンターにあるコインプッシャー
+    //   (メダル落とし)機を初期にPCゲームとしてデジタル化したCoin Pusher(RewindApp、2019年)を
+    //   新規anchor "coin-pusher-og" として採用する。本作はその一人用アーケード機の概念を、江戸
+    //   時代×妖怪退治というテーマと最大4人のオンライン協力プレイへ拡張している。この帰属は開発元
+    //   STP WORKS自身の言明ではなく当サイト独自の系譜整理のため自信度: 中(捏造しない・
+    //   parasocial/perfect-blue/papers-please等と同型の判断)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・Steam実績/クラウドあり。
+    // west_unreached: 英語レビュー比率は約9.4%(44/469、appreviews API実測)。好評率90.6%は最低ライン
+    //   (88%程度)は満たすが理想の95%以上には届かない旨を正直に開示する。
+    meta: { genre: "coop-coin-pusher", lineage: "coin-pusher-og", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 469, positivePct: 91, noEnglish: false } },
+    games: [
+      {
+        name_en: "Old Coin Pusher Friends 2",
+        name_ja: "古銭プッシャーフレンズ２",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2281360/Old_Coin_Pusher_Friends_2/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is an online cooperative coin pusher game set in the Edo period: up to four players push coins together to defeat yokai, repel swarms of skulls, and chase the jackpot, upgrading abilities and equipment as they go, with random matchmaking for one-time encounters, friends-only matchmaking for private sessions, and solo play all supported. Cooperative events include yokai-defeating rounds and a coin-tossing minigame styled after a traditional ball-toss game, with yokai scaling in strength to match the players' own power and stronger yokai paying out bigger rewards; players also collect Edo-period-themed prizes that accumulate prize points, eventually spawning magatama, the comma-shaped beads of ancient Japanese ornament, and equipment such as secondary launchers and flags, along with coin attack power and fire-rate upgrades, are bought with old coins earned in play or the magatama earned from prizes. It is the second entry in a series that began with Old Coin Pusher Friends (2021). Made and self-published by STP WORKS, a small independent company its own developer, going by the handle Danoji, describes in a Game*Spark interview as being run by two friends who started the company together roughly two years earlier, one handling development and Danoji himself handling marketing and operations, with the friend serving as company representative; the game itself launched through a CAMPFIRE crowdfunding campaign that ran April 28 to May 12, 2023, with a ¥10,000 goal drawing ¥644,500 from 346 backers, more than 60 times its target. Released May 18, 2023 at ¥470, it is Very Positive at about 90.6 percent over 469 reviews (425 positive, 44 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements and Cloud support, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English, Japanese, and Simplified and Traditional Chinese, and only about 44 of its 469 reviews, some 9.4 percent, are in English, leaving the great majority of its audience still in Japan.",
+        desc_ja: "Steam自身の表記によれば、本作は江戸時代を舞台にしたオンライン協力プレイ型のコインプッシャーゲームで、最大4人のプレイヤーが協力してコインを押し出し、妖怪を退治したり、どくろの大群を退けたり、ジャックポットを目指したりする。ゲームを進めると様々な強化や装備で能力アップでき、一期一会のランダムマッチング、フレンドだけのフレンドマッチング、ソロプレイのいずれにも対応する。協力イベントには妖怪を退治するイベントや、玉入れのように桶にコインを入れる桶入れゲームがあり、妖怪はプレイヤーの強さに応じてより強くなり、強い妖怪ほど報酬額も増加する。江戸時代らしい景品もいろいろ収集でき、獲得した景品に応じて景品ポイントが加算され、一定以上のポイントで勾玉が出現する。副射出機や旗などの装備品、コインの攻撃力アップや連射速度アップは、プレイで得た古銭や景品で得た勾玉を消費して購入する。2021年発売の前作『古銭プッシャーフレンズ』から続くシリーズの2作目にあたる。制作・自社発売はSTP WORKS、小規模な独立系企業で、Game*Sparkのインタビューで開発者本人「ダンおじ」氏は「ちょうど2年前に友人とゲーム会社を起業しまして、2人でゲーム開発と販売を行っています。友人は開発で、私がマーケティングや会社運営関連をしています。会社の代表は友人です」と語っている。本作自体はCAMPFIREでのクラウドファンディングを経て発売され、2023年4月28日〜5月12日の実施で、目標1万円に対し644,500円、346人の支援者を集めた——目標額の60倍以上にあたる。発売日は2023年5月18日、価格¥470。469件のレビュー(好評425件・不評44件、Steam自身のレビューAPI実測)で好評率約90.6%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績・クラウド対応あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。英語・日本語・簡体字/繁体字中国語に対応するが、469件のうち約44件、9.4%程度が英語レビューに留まり、支持層の大半はいまも日本にある。",
+      },
+      {
+        name_en: "Coin Pusher",
+        name_ja: "Coin Pusher",
+        status: "established",
+        steam: "https://store.steampowered.com/app/827420/Coin_Pusher/",
+        tag_en: "The digital origin",
+        tag_ja: "デジタル化の原点",
+        desc_en: "The digital origin of this taste: Coin Pusher, RewindApp's 2019 PC recreation of the real-world funfair and arcade machine of the same name, in which coins slide across a moving shelf and every coin you feed it might, or might not, tip a stack of others over the edge. Old Coin Pusher Friends 2 does not reuse this game's code or assets, but it takes the same physical concept, coins pushed by a moving shelf toward an edge, and builds an Edo-period, yokai-fighting, up-to-four-player cooperative game on top of it, turning a solitary arcade machine into something you sit down to push together.",
+        desc_ja: "この味のデジタル化の原点——Coin Pusher。RewindApp制作による2019年のPC作品で、縁日やゲームセンターにある実物のコインプッシャー(メダル落とし)機を同名のままデジタル再現した一本だ。コインは動く棚の上を滑り、投入した一枚一枚が、積み重なった他のコインを縁から落とすかもしれないし、落とさないかもしれない。古銭プッシャーフレンズ２はこの作品のコードや素材を流用してはいないが、「動く棚がコインを縁へと押し出す」という同じ物理的な着想を受け継ぎ、その上に江戸時代・妖怪退治・最大4人協力プレイという要素を築き上げ、一人で遊ぶアーケード機を、みんなで座って一緒に押し出すものへと作り変えている。",
+      },
+    ],
+    en: {
+      title: "Old Coin Pusher Friends 2 - an up-to-4-player online co-op coin pusher set in the Edo period where you push coins together to defeat yokai and chase the jackpot, made by the two-person independent studio STP WORKS after a CAMPFIRE crowdfunding campaign that raised over 60 times its goal, Very Positive at about 90.6 percent over 469 reviews with the great majority of its audience still in Japan",
+      description: "An online cooperative coin pusher set in the Edo period: up to four players push coins together to defeat yokai, repel skull swarms, and chase the jackpot, upgrading abilities and equipment along the way. Made and self-published by STP WORKS, a two-person independent studio, launched through a CAMPFIRE crowdfunding campaign that raised over 60 times its goal. Very Positive at about 90.6 percent over 469 reviews, with English readers still only around 9 percent.",
+      h1a: "Up to four players lean over the same coin-pushing machine, feeding it together, ",
+      h1flip: "and whether that pays off in a jackpot or a swarm of yokai closing in depends on how well you push as one",
+      h1b: ".",
+      lede: "An online cooperative coin pusher made and self-published by STP WORKS, a two-person independent studio. Per Steam's own listing, up to four players push coins together in an Edo-period setting to defeat yokai, repel swarms of skulls, and chase the jackpot, upgrading abilities and equipment as they go, with random matchmaking, friends-only matchmaking, and solo play all supported. Cooperative events include yokai-defeating rounds and a coin-tossing minigame styled after a traditional ball-toss game, with yokai scaling in strength to match the players' own power and stronger yokai paying out bigger rewards; players also collect Edo-period-themed prizes that eventually spawn magatama, the comma-shaped beads of ancient Japanese ornament, spent alongside old coins on equipment and upgrades. It is the second entry in a series that began with Old Coin Pusher Friends (2021). In a Game*Spark interview, the developer, going by the handle Danoji, described the studio as run by two friends who started the company together roughly two years earlier, one handling development and Danoji himself handling marketing and operations; the game itself launched through a CAMPFIRE crowdfunding campaign that ran April 28 to May 12, 2023, with a ¥10,000 goal drawing ¥644,500 from 346 backers, more than 60 times its target. Released May 18, 2023 at ¥470, it is Very Positive at about 90.6 percent over 469 reviews (425 positive, 44 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements and Cloud support, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. Only about 44 of its 469 reviews, some 9.4 percent, are in English, leaving the great majority of its audience still in Japan.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, up to four players push coins into the same machine at once, so the tension of a coin pusher, will this one push the stack over the edge, becomes a shared bet everyone at the table is making together rather than a solitary arcade habit.",
+        "Yokai scale in strength to match the players' own power, and stronger yokai pay out bigger rewards, so the game's own difficulty curve is a direct answer to how good your group has actually gotten, not a fixed ladder set in advance.",
+        "This exists because two friends started a company together roughly two years before this launch and then ran a CAMPFIRE campaign that cleared its funding goal more than 60 times over, so the jackpot fantasy the game sells to its players is, underneath it, a real one its own makers already lived through once.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a physics-based coin pusher built for cooperation, not solitude: up to four players sharing the same machine, the same yokai fights, and the same jackpot chase",
+        "You want a genuinely small, independent Japanese studio with a real founding story: two friends, a company started about two years before launch, and a crowdfunding campaign that raised more than 60 times its goal",
+        "You want a Very Positive title (about 90.6 percent over 469 reviews) whose audience is still overwhelmingly Japanese, with English readers only around 9 percent",
+      ],
+      bad: [
+        "You want a single-player-only experience; this is built around cooperative play, though solo is supported",
+        "You want a score closer to the site's ideal 95 percent; 90.6 percent clears the bar but isn't the strongest score featured here, and it is a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "古銭プッシャーフレンズ２ - 江戸時代を舞台に、最大4人でコインを押し合い妖怪を退治しジャックポットを目指すオンライン協力コインプッシャー。制作は2人体制の独立系スタジオSTP WORKS、CAMPFIREで目標額の60倍超を集めたクラウドファンディングを経て発売。469件のレビューで好評率約90.6%、支持層はいまも大半が日本",
+      description: "江戸時代を舞台にしたオンライン協力プレイ型のコインプッシャー。最大4人のプレイヤーが協力してコインを押し出し、妖怪を退治したり、どくろの大群を退けたり、ジャックポットを目指したりしながら能力や装備を強化していく。制作・自社発売は2人体制の独立系スタジオSTP WORKS、目標額の60倍超を集めたCAMPFIREクラウドファンディングを経て発売された。469件のレビューで好評率約90.6%の「非常に好評」、英語レビューはまだ約9%に留まる。",
+      h1a: "最大4人が同じコインプッシャーの機体に身を寄せ、一緒にコインを押し出していく。",
+      h1flip: "それがジャックポットになるか、迫りくる妖怪の群れになるかは、どれだけ一体となって押せたかにかかっている",
+      h1b: "。",
+      lede: "制作・自社発売は2人体制の独立系スタジオSTP WORKSによるオンライン協力プレイ型コインプッシャー。Steam自身の表記によれば、最大4人のプレイヤーが江戸時代を舞台に協力してコインを押し出し、妖怪を退治したり、どくろの大群を退けたり、ジャックポットを目指したりしながら能力や装備を強化していく。一期一会のランダムマッチング、フレンドだけのフレンドマッチング、ソロプレイのいずれにも対応する。協力イベントには妖怪を退治するイベントや、玉入れのように桶にコインを入れる桶入れゲームがあり、妖怪はプレイヤーの強さに応じてより強くなり、強い妖怪ほど報酬額も増加する。江戸時代らしい景品も収集でき、獲得した景品ポイントが一定以上たまると勾玉が出現し、古銭や勾玉を消費して装備や能力を強化していく。2021年発売の前作『古銭プッシャーフレンズ』から続くシリーズの2作目にあたる。Game*Sparkのインタビューで、開発者本人「ダンおじ」氏は「ちょうど2年前に友人とゲーム会社を起業しまして、2人でゲーム開発と販売を行っています。友人は開発で、私がマーケティングや会社運営関連をしています」と語っている。本作自体はCAMPFIREでのクラウドファンディングを経て発売され、2023年4月28日〜5月12日の実施で、目標1万円に対し644,500円、346人の支援者を集めた——目標額の60倍以上にあたる。発売日は2023年5月18日、価格¥470。469件のレビュー(好評425件・不評44件)で好評率約90.6%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績・クラウド対応あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。469件のうち約44件、9.4%程度が英語レビューに留まり、支持層の大半はいまも日本にある。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、最大4人が同じ機体に同時にコインを押し込む。だからコインプッシャー特有の緊張感——このコインが積み重なったコインを縁から落とすか否か——が、一人の習慣ではなく、テーブルを囲む全員で共有する賭けに変わる。",
+        "妖怪はプレイヤーの強さに応じてより強くなり、強い妖怪ほど報酬額も増加する。だからゲーム自体の難度曲線は、あらかじめ決められた固定の梯子ではなく、実際にそのグループがどれだけ上達したかへの直接の応答になる。",
+        "本作は、2人の友人が発売のおよそ2年前に一緒に会社を起業し、CAMPFIREのキャンペーンで目標額を60倍以上上回る資金を集めたことから生まれている。だからこのゲームがプレイヤーに売っているジャックポットの夢は、その足元で、作り手自身がすでに一度実際に経験した夢でもある。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "一人でなく協力プレイのために作られた物理演算コインプッシャーが欲しい人——最大4人が同じ機体、同じ妖怪戦、同じジャックポットの夢を共有する",
+        "本当に小規模で独立系の、実在する創業ストーリーを持つ日本のスタジオが欲しい人——2人の友人が発売のおよそ2年前に起業し、目標額を60倍以上上回るクラウドファンディングを達成した",
+        "「非常に好評」タイトル(469件で約90.6%)ながら、支持層がいまも圧倒的に日本国内という一本を掴みたい人——英語レビューはまだ約9%程度",
+      ],
+      bad: [
+        "一人用だけの体験が欲しい人——本作は協力プレイを軸に設計されているが、ソロプレイにも対応している",
+        "当サイトの理想である好評率95%に近い作品が欲しい人——90.6%は最低ラインは満たすがここで扱う中では最も高い数値ではない。無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9299,6 +9400,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Desktop Dungeons is QCF Design's roguelike that established the template of the tightly-designed, bite-sized dungeon crawl, a single small dungeon solvable in minutes, every resource and encounter placed with a puzzle designer's precision rather than left to sprawling randomness. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a roguelike RPG can be stripped down to a fixed, small shape and still deliver real depth, betting on tight design over sheer size.",
       ja: "Desktop Dungeonsは、QCF Design制作のローグライクで、緻密に設計された短時間ダンジョン攻略という型を確立した一本だ——一つの小さなダンジョンを数分で攻略できるよう、あらゆる資源と遭遇が、際限のないランダム性ではなくパズルデザイナーの精密さで配置されている。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——ローグライクRPGを固定された小さな形まで削ぎ落としても、真の奥深さを届けられるという発想、規模の大きさではなく設計の緊密さに賭けるという着想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Coin Pusher(RewindApp、2019年)。Old Coin Pusher Friends 2 pick の系譜として新規採用。
+  //   実世界の縁日・ゲームセンターのコインプッシャー機を初期にPCゲームとしてデジタル化した一本。
+  //   この帰属は開発元STP WORKSの言明ではなく当サイト独自の系譜整理(自信度: 中)。現行Steamで
+  //   販売中のためsteam URLで同定する。
+  "coin-pusher-og": {
+    steam: "827420",
+    blurb: {
+      en: "Coin Pusher is RewindApp's 2019 PC recreation of the real-world funfair and arcade machine of the same name, in which coins slide across a moving shelf and every coin you feed it might, or might not, tip a stack of others over the edge. This lineage is a comparison drawn by this site to note a genuine mechanical ancestor rather than a developer-stated influence; it is an early digitization of the physical coin-pusher concept that Old Coin Pusher Friends 2 builds on top of, turning a solitary arcade machine into an Edo-period, yokai-fighting, up-to-four-player cooperative game.",
+      ja: "Coin Pusherは、RewindApp制作による2019年のPC作品で、縁日やゲームセンターにある実物のコインプッシャー(メダル落とし)機を同名のままデジタル再現した一本だ。コインは動く棚の上を滑り、投入した一枚一枚が、積み重なった他のコインを縁から落とすかもしれないし、落とさないかもしれない。この系譜は、開発元が明言した影響ではなく、当サイトが確認した本物の機構上の祖先を示すための整理である——古銭プッシャーフレンズ２が土台とする、物理的なコインプッシャーという着想の早期デジタル化であり、一人で遊ぶアーケード機を、江戸時代・妖怪退治・最大4人協力プレイのゲームへと作り変えている。",
     },
   },
 } as const;
