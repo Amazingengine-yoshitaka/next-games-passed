@@ -7420,6 +7420,104 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "your-letter-has-been-rejected": {
+    published: "2026-07-16",
+    publishAt: "2026-07-16",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「架空の圧政国家で手紙を検閲し、偽装を見抜いて承認/破棄を選ぶ」を
+    //   捉える語がないため新設 "letter-censor-sim"。
+    // 系譜は自己参照: 2023年12月24日にunityroomで無料公開されたUnity1週間ゲームジャム(お題「おくる」)
+    //   参加作『Your letter has been rejected. -unityroom edition-』を新規anchor
+    //   "your-letter-original" として採用する(kageroh/moonpalace/5omeday型の判断)。無料版ページ自体の
+    //   meta descriptionに「Steam版発売中」の告知文とSteamストアURLへの直接リンクが実測確認済みで、
+    //   この無料版が商業版の前身であることを開発者自身のページが裏付けている。unityroom型なので
+    //   既存の unityroom フィールドをそのまま再利用(新規プラミング不要)。
+    // developer/publisher MONAZ.(個人制作サークル、プログラマー「AZ.」氏)は自社発売(自己出版)で
+    //   大手企業との関与なし。AZ.氏のnote投稿(unity1week常連参加者)・過去作(るる子の事件簿!!、
+    //   落ち葉掃除シミュレーター)・AUTOMATON/4Gamer/ファミ通等国内媒体の継続的な報道から日本の
+    //   個人開発と裏付け済み。
+    // content_descriptors は ids=[5](General Mature Content)・notes="Alcohol/Drugs/Suicide/Strong
+    //   Language"(API実測、性的コンテンツの記述なし)。AI Generated Content Disclosure欄はストア
+    //   ページに存在せず非AI。is_free=false・Steam実績あり。
+    // west_unreached: supported_languagesはJapaneseのみ(API実測、l=englishでも本文は日本語のまま
+    //   =公式英語版テキストが存在しない)。英語レビューは0件(appreviews API実測、language=english
+    //   でtotal_reviews:0)。よってobscurity="wall"・reachState="lang_walled"・noEnglish=trueとし、
+    //   「言語そのものが壁」であることを本文で正直に述べる(guild-explorers pick の precedent と同型)。
+    meta: { genre: "letter-censor-sim", lineage: "your-letter-original", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 20, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Your letter has been rejected.",
+        name_ja: "Your letter has been rejected.",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2841740/Your_letter_has_been_rejected/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own Japanese-language store text (translated here, since the store page carries no official English version at all), you are appointed a censor of the oppressive Grutzana People's Republic, reading letters passing between its citizens and a neighboring country and deciding, one at a time, whether to let each one through or destroy it. A girl chasing a dream of becoming a singer, someone worried about a friend across the border, a couple caught in a love triangle: whose future gets sealed, and in some cases the fate of the nation itself, comes down to your judgment, and some letters are disguised to slip past you, so you strike them with a lighter to reveal hidden text and check small print with a magnifying glass, watching for other tricks besides. Expanded by solo creator AZ., working under the one-person circle MONAZ. (also its own publisher), from a free Unity1Week jam original posted December 24, 2023, this commercial edition renews nearly every letter in the game, more than doubling their number, lets a letter's content shift depending on how you censored it, adds a new magnifying-glass tool, and expands the story across multiple endings. Released August 4, 2025, priced at ¥800, it is Positive at 100 percent over 20 reviews (20 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual (ids: General Mature Content only, notes citing alcohol, drugs, suicide, and strong language). It supports Japanese only, with no English-language text anywhere in the game or its store page, and, unsurprisingly, zero of its reviews are in English: the language itself is the wall keeping it from the West.",
+        desc_ja: "Steam自身の表記によれば、あなたは圧政を敷く社会主義国家、グルツァナ人民共和国の検閲官に任命され、自国から隣国へ送られる人々の手紙に目を通し、一通ずつ、通すか破棄するかを決めていく。歌手を夢見る少女の手紙、国境の向こうにいる友人を気遣う手紙、三角関係に陥った男女の手紙——誰の未来が閉ざされるか、時には国家の行く末さえも、あなたの判断ひとつにかかっている。なかには検閲の目を欺くため偽装が施された手紙もあり、ライターで炙って隠された文章を炙り出し、ルーペで小さな文字を確認し、それ以外の偽装にも注意を払わなければならない。個人制作サークルMONAZ.(発売元も同じくMONAZ.)の制作者AZ.が、2023年12月24日にunityroomで無料公開したUnity1週間ゲームジャム(お題「おくる」)参加作から拡張した本作は、作中の手紙をほぼ全て刷新し数を倍以上に増やし、検閲の結果によって手紙の内容が変化するようになり、新ツール「ルーペ」を追加し、ストーリーを大幅に追加して複数のエンディングを用意している。発売日は2025年8月4日、価格¥800。20件のレビュー(好評20件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:一般成人向けのみ、notesに飲酒・薬物・自殺・強い言葉遣いへの言及)性的な要素もない。対応言語は日本語のみで、ゲーム本編にもストアページにも公式の英語テキストは一切存在せず、当然ながら英語レビューも0件——言語そのものが、この作品を西側から隔てる壁になっている。",
+      },
+      {
+        name_en: "Your letter has been rejected. -unityroom edition- (free Unity1Week jam original, December 2023)",
+        name_ja: "Your letter has been rejected. -unityroom edition-（unityroom無料版）",
+        status: "established",
+        unityroom: "https://unityroom.com/games/az_your_letter_has_been_rejected",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The free original this grew from: posted free on the Japanese game jam site unityroom on December 24, 2023, for the Unity1Week jam's \"send\" theme, by creator AZ. Per its own page, it already carries the same premise this lineage grows from: you play a censor deciding whether letters may pass. That same unityroom page now carries its own update note, announcing the Steam commercial edition is on sale and linking straight to its store page, describing what that edition adds on top of it: nearly every letter renewed and more than doubled in number, letter content that shifts with your censorship decisions, a new magnifying-glass tool, and an expanded story with multiple endings. Your letter has been rejected. on Steam is not a new work borrowing that DNA from outside; it is the developer's own commercial expansion of this same free jam game.",
+        desc_ja: "本作が育った、その無料版の原点——2023年12月24日、日本のゲームジャムサイト「unityroom」で、Unity1週間ゲームジャムの「おくる」お題に応じて、制作者AZ.が無料公開した。その配信ページ自体によれば、この時点ですでにこの系譜のひな型——手紙を通すか通さないかを判断する検閲官を演じる——を備えていた。その同じunityroomページには今、Steam商業版が発売中であることを告げる追記があり、ストアページへ直接リンクしたうえで、その商業版で加わった要素——手紙をほぼ全て刷新し数を倍以上に増やしたこと、検閲の結果で手紙の内容が変化するようになったこと、新ツール「ルーペ」の追加、複数のエンディングへ拡張されたストーリー——を記している。Steam版『Your letter has been rejected.』は、外部からこのDNAを借りた新作ではない——開発者本人による、この同じ無料ジャムゲームの商業拡張版だ。",
+      },
+    ],
+    en: {
+      title: "Your letter has been rejected. - a censor sim where you read intercepted letters in a fictional oppressive socialist state and decide, by spotting disguised messages, whose futures and whose nation's fate you seal, expanded by solo Japanese creator AZ. of MONAZ. from a free December 2023 Unity1Week jam original, Positive at 100 percent over 20 reviews though it has no English support at all",
+      description: "A censor simulation: in the fictional oppressive Grutzana People's Republic, you read letters passing between citizens and a neighboring country and decide, one at a time, whether to pass them or destroy them, using a lighter to reveal hidden text and a magnifying glass to catch small print on letters disguised to slip past you. Expanded by solo creator AZ., working under the circle name MONAZ., from a free Unity1Week jam original posted in December 2023. Positive at 100 percent over 20 reviews, though the game has no English-language support at all.",
+      h1a: "Between you and every letter that crosses your desk in the Grutzana People's Republic there is only a lighter, a magnifying glass, and a stamp of approval, ",
+      h1flip: "so whose future gets sealed, and whether the nation itself survives what you let through, comes down to what you notice",
+      h1b: ".",
+      lede: "A censor simulation originally released free on December 24, 2023, on the Japanese game jam site unityroom for the Unity1Week jam's \"send\" theme, by solo creator AZ., then expanded into this commercial Steam edition under the one-person circle MONAZ. (also its own publisher). Per Steam's own store text, translated here since no official English version exists, you are appointed a censor of the oppressive Grutzana People's Republic, reading letters passing between its citizens and a neighboring country and deciding, one at a time, whether to let each through or destroy it: a girl chasing a dream of becoming a singer, someone worried about a friend across the border, a couple caught in a love triangle, and some letters disguised to slip past you, checked with a lighter for hidden text and a magnifying glass for small print. This edition renews nearly every letter, more than doubling their number, lets content shift with your censorship decisions, adds the magnifying glass, and expands the story across multiple endings. Released August 4, 2025 at ¥800, it is Positive at 100 percent over 20 reviews (20 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with no English text anywhere in the game, and zero of its reviews are in English: the language itself is the wall keeping it from the West.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, every letter you open carries someone else's whole private drama, a girl chasing a singing career, a worried note to a friend across the border, a love triangle unraveling in ink, and your only response to any of it is a single, small bureaucratic act: let it through, or destroy it.",
+        "Some letters are disguised specifically to get past you, so striking them with a lighter to bring out hidden text, or bringing a magnifying glass to their small print, turns every routine letter into a tiny detective puzzle layered directly on top of a moral one, since missing the trick and catching it can point to opposite verdicts.",
+        "The game tells you upfront that your decisions may shape more than one person's fate, and per Steam's own text, in some cases the nation's own future, so an evening of stamping ordinary-looking mail can end in one of several very different outcomes depending on which small judgments you made along the way.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a short, Papers-Please-flavored censor sim: small bureaucratic power over strangers' letters in a fictional oppressive socialist state, with disguised text to catch and endings that branch on your calls",
+        "You want a genuinely small-scale solo Japanese production: creator AZ.'s free December 2023 Unity1Week jam original, expanded by the same one-person circle, MONAZ., into this self-published Steam edition",
+        "You want a Positive title (100 percent, though only 20 reviews) that is about as unreached by the West as a game can be: it has no English-language support at all, and literally zero of its reviews are in English",
+      ],
+      bad: [
+        "You want a long game or a large cast; this is a short-session letter-inspection sim built around one core loop of reading, checking, and stamping, with no combat or exploration",
+        "You want to actually read it without Japanese; it supports no other language at all, so the wall here is the language itself, and it is a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Your letter has been rejected. - 架空の圧政国家で手紙を検閲し、偽装を見抜きながら通すか破棄するかを選ぶ検閲官シム。制作は個人サークルMONAZ.の制作者AZ.、2023年12月のUnity1週間ジャム無料版から拡張。20件のレビューで好評率100%ながら、公式の英語対応が一切ない",
+      description: "架空の圧政国家グルツァナ人民共和国で、自国から隣国へ送られる手紙に目を通し、一通ずつ通すか破棄するかを選ぶ検閲官シム。ライターで隠された文章を炙り出し、ルーペで小さな文字を確認しながら、検閲の目を欺く偽装を見抜く。制作は個人サークルMONAZ.の制作者AZ.が、2023年12月公開の無料Unity1週間ジャム版から拡張したもの。20件のレビューで好評率100%の「好評」、ただし公式の英語対応は一切ない。",
+      h1a: "グルツァナ人民共和国であなたの机を通り過ぎる一通一通と、あなたの間にあるのはライターとルーペと承認印だけ。",
+      h1flip: "誰の未来が閉ざされるか、そして国家そのものがあなたの見逃しに耐えられるかは、あなたが何に気づくかだけで決まる",
+      h1b: "。",
+      lede: "2023年12月24日、日本のゲームジャムサイト「unityroom」でUnity1週間ゲームジャムの「おくる」お題に応じて、制作者AZ.が無料公開した検閲官シムを、個人サークルMONAZ.(発売元も同じ)がSteam商業版へと拡張した一本。Steam自身のストア文言(公式の英語版が存在しないためここでは翻訳して紹介する)によれば、あなたは圧政を敷く社会主義国家、グルツァナ人民共和国の検閲官に任命され、自国から隣国へ送られる人々の手紙に一通ずつ目を通し、通すか破棄するかを決めていく——歌手を夢見る少女の手紙、国境の向こうの友人を気遣う手紙、三角関係に陥った男女の手紙。なかには検閲の目を欺く偽装が施された手紙もあり、ライターで隠された文章を炙り出し、ルーペで小さな文字を確認する。本エディションでは、手紙をほぼ全て刷新し数を倍以上に増やし、検閲の結果によって手紙の内容が変化するようになり、新ツール「ルーペ」を追加、ストーリーを大幅に追加して複数のエンディングを用意している。発売日は2025年8月4日、価格¥800。20件のレビュー(好評20件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみでゲーム本編に英語テキストは一切なく、レビューも英語は0件——言語そのものが、この作品を西側から隔てる壁になっている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、開くひとつひとつの手紙が、誰かのまるごとの人生ドラマを綴っている——歌手を目指す少女、国境の向こうの友人を気遣う一言、三角関係のもつれ。それに対してあなたが返せるのは、通すか破棄するかという、たったひとつの小さな官僚的行為だけだ。",
+        "なかには検閲の目を欺くために偽装された手紙もあり、ライターで炙って隠し文字を浮かび上がらせたり、ルーペで小さな文字を確かめたりする——見た目には普通の手紙一通一通が、小さな探偵パズルとして道徳的な重みの上に積み重なっていく。トリックを見逃すか見抜くかで、下す判定が正反対になることもある。",
+        "このゲームは、あなたの決断が一人の運命だけでなく、Steam自身の表記によれば時には国家の未来さえも左右しうると、あらかじめ告げてくる。だから一見何でもない手紙にスタンプを押し続ける一夜が、積み重ねた小さな判断ひとつひとつによって、まったく異なる結末のどれかへとたどり着くことになる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Papers, Please風の検閲シムが欲しい人——架空の圧政社会主義国家で見知らぬ相手の手紙に対する小さな官僚的権力を握り、偽装文字を見抜き、判断次第でエンディングが分岐する",
+        "本当に小規模な日本の個人発プロダクションが欲しい人——制作者AZ.による2023年12月のUnity1週間無料ジャム版を、同じ一人サークルMONAZ.が自社発売のSteam版へと拡張した一本",
+        "「好評」タイトル(20件で100%)ながら、これ以上ないほど西側に届いていないものを掴みたい人——公式の英語対応は一切なく、レビューも文字通り英語0件",
+      ],
+      bad: [
+        "長時間のボリュームや多数の登場人物が欲しい人——本作は読む・確認する・スタンプを押すという一つの核ループを軸にした短時間の手紙検閲シムで、戦闘や探索は無い",
+        "日本語なしで実際に読みたい人——他言語には一切対応しておらず、言語そのものが壁になっている。無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8188,6 +8286,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Papers, Please is a 2013 procedural thriller by Lucas Pope in which the player, a border inspector in the fictional state of Arstotzka, reduces each stranger crossing the checkpoint to a stack of paperwork and, under a ticking clock, decides only to approve or reject them, a small repeated act of bureaucratic power that branches the story across more than twenty endings depending entirely on how it was exercised. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that placing total, mundane power over a vulnerable stranger's fate into the player's hands, exercised through nothing more than small repeated interactions against a timer, can carry real weight.",
       ja: "Papers, Pleaseは、Lucas Pope制作による2013年の書類審査スリラーで、プレイヤーは架空の国家アルストツカの国境審査官として、検問所を通る一人ひとりを「書類の束」として扱い、時間制限のなかで承認するか却下するかだけを選び続ける。その官僚的な権力の小さな反復行為が、行使のされ方次第で20種を超えるエンディングへと枝分かれしていく。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——見知らぬ弱い立場の相手の運命を、プレイヤーの手のなかの小さな反復行為だけに委ねるという着想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Your letter has been rejected. -unityroom edition-、リリース日2023年12月24日、日本のゲームジャム
+  //   サイト「unityroom」でUnity1週間ゲームジャム「おくる」お題の投稿作として制作者AZ.が無料公開した原型。
+  //   ジャンル上の外部原点ではなく、開発者本人による自己参照のフリー版原典(your-letter-has-been-
+  //   rejected pick の商業拡張版の前身・kageroh/moonpalace/5omeday型の判断)。無料版ページ自体の
+  //   meta descriptionにSteam版発売中の告知とストアURLへの直接リンクを実測確認済み(WebFetch)。
+  "your-letter-original": {
+    unityroom: "https://unityroom.com/games/az_your_letter_has_been_rejected",
+    blurb: {
+      en: "The free original this grew from: posted free on the Japanese game jam site unityroom on December 24, 2023, for the Unity1Week jam's \"send\" theme, by creator AZ. Per its own page, it already carries the same premise this lineage grows from: you play a censor deciding whether letters may pass. That same unityroom page now carries its own update note, announcing the Steam commercial edition is on sale and linking straight to its store page, describing what that edition adds: nearly every letter renewed and more than doubled in number, letter content that shifts with your censorship decisions, a new magnifying-glass tool, and an expanded story with multiple endings. Your letter has been rejected. on Steam is not a new work borrowing that DNA from outside; it is the developer's own commercial expansion of this same free jam game.",
+      ja: "本作が育った、その無料版の原点——2023年12月24日、日本のゲームジャムサイト「unityroom」で、Unity1週間ゲームジャムの「おくる」お題に応じて、制作者AZ.が無料公開した。その配信ページ自体によれば、この時点ですでにこの系譜のひな型——手紙を通すか通さないかを判断する検閲官を演じる——を備えていた。その同じunityroomページには今、Steam商業版が発売中であることを告げる追記があり、ストアページへ直接リンクしたうえで、その商業版で加わった要素——手紙をほぼ全て刷新し数を倍以上に増やしたこと、検閲の結果で手紙の内容が変化するようになったこと、新ツール「ルーペ」の追加、複数のエンディングへ拡張されたストーリー——を記している。Steam版『Your letter has been rejected.』は、外部からこのDNAを借りた新作ではない——開発者本人による、この同じ無料ジャムゲームの商業拡張版だ。",
     },
   },
 } as const;
