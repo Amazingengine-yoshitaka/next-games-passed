@@ -8718,6 +8718,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "kinki-spiritual-affairs-bureau": {
+    published: "2026-07-22",
+    publishAt: "2026-07-22",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「銃と徒手格闘とステルスで幽霊に反撃できるTPSホラー」を捉える語が
+    //   ないため新設 "fight-back-horror-tps"。開発元自身のストア文言が「銃弾とか拳とか一切効かない
+    //   理不尽な幽霊にうんざりした貴方に」と明言しており、命名は開発元の自己認識に沿う。
+    // developer/publisher Noto Muteki(霧笛ノト)は、日本語版Wikipedia実読で「本作は…霧笛ノトによって
+    //   開発された」「人数：1人」を直接確認済み(4Gamer・ファミ通も個人開発作品と独立に確認)。国籍そのもの
+    //   の直接言明は3ソースとも確認できず(X本人プロフィールはHTTP 402で到達不能)、Japanese Wikipedia/
+    //   4Gamer/ファミ通という日本語メディアのみでの報道・日本語オンリーでない対応言語構成という状況証拠
+    //   のみに基づく(自信度: 中)。
+    // Wikipediaのインフォボックスは発売元を「霧笛ノト、あまた株式会社」と2者併記するが、Steam自身の
+    //   appdetails APIはdeveloper/publisherともに"Noto Muteki"単独。専任の裏取りエージェントで
+    //   あまた株式会社(2008年設立・資本金1億円・2025年4月に株式会社ジーゼの完全子会社化)を調査した結果、
+    //   同社の関与はPS5/Xbox Series X|S版・Nintendo Switch 2版(今後)・コミカライズに限られ、本Steam版
+    //   には及ばないと確認。よってこのSteam版自体は霧笛ノト単独の自社発売という事実を維持する。
+    // 開発経緯: Wikipediaによれば、本作は元々「架空の大手Vtuber事務所のスキャンダルを銃火器で解決する
+    //   TPS」として『AKASPA』というタイトルで開発が始まっていたが、開発に時間がかかりそうなことに加え、
+    //   制作者が光熱費や奨学金の返済で困窮していたため、より短いホラーゲームへと転換した。困窮は明記された
+    //   2つの理由のうち一方であり、唯一の動機ではない——この機微をそのまま保つ。また同Wikipediaは、
+    //   霧笛ノト自身がホラーゲームが得意ではないと述べていることも明記している。
+    // content_descriptors は ids=[2,5](Frequent Violence or Gore・General Mature Content)・notes
+    //   "This game may contain content: Gunfight, blood, and violence."(API実測)。1/3/4を含まないため
+    //   性的コンテンツなしと確認。AI Generated Content Disclosure欄はストアページに存在せず非AI。
+    //   is_free=false・購入可能(Add to Cartボタン実測)・アーリーアクセスではなく正式リリース済み
+    //   (発売日2024年10月4日)。
+    // west_unreached: 対応言語は英語・簡体字中国語・日本語・韓国語・繁体字中国語で英語にも対応済みだが、
+    //   appreviews API実測で全2833件のうち英語レビューは307件(10.8%)のみ——「言語の壁」ではなく
+    //   「英語に対応していてもまだ西へ組織的に届いていない」状態として obscurity: "deep" を採用する。
+    meta: { genre: "fight-back-horror-tps", lineage: "resident-evil", obscurity: "deep", reviewBand: "around_1k", reachState: "unreached_west", rarity: { reviews: 2833, positivePct: 93, noEnglish: false } },
+    games: [
+      {
+        name_en: "Kinki Spiritual Affairs Bureau",
+        name_ja: "近畿霊務局",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2956820/__Kinki_Spiritual_Affairs_Bureau/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own store text, this is a third-person action horror set in a parallel Japan where exorcism is a government function. The player is Shiraishi Mizuki, 27, a licensed exorcist of the Ministry of Spiritual Affairs' own Kinki Spiritual Affairs Bureau, sent to investigate Saigawa Village in Nara Prefecture, a village that has vanished from the internet entirely: no residents anywhere, power, phone, and internet all cut, and sealed behind a barrier holding in an abnormally large number of illegal spirits. Guided by radio from section chief Kohinata and junior colleague Marugawa, the player fights back with hand-to-hand combat, gunfights, and stealth action, and the developer's own pitch names exactly what it is reacting against, calling it 'a horror game where you finally get to fight back,' aimed at anyone tired of the genre convention in which bullets and fists do nothing against unreasonable ghosts. Made and self-published solo by developer Noto Muteki (per Japanese Wikipedia's own infobox, a one-person team), who per the same source personally finds horror games not to their taste and originally set out to build a different, gun-based TPS called AKASPA about a fictional VTuber agency scandal, before pivoting to this shorter horror game, a choice Wikipedia attributes to both AKASPA's likely-longer development time and, in part, Noto Muteki's own financial hardship at the time (utility bills and loan repayments), one of two stated reasons, not the sole one. Japanese Wikipedia also names Amata K.K. as a co-publisher, but a dedicated check of that company found its confirmed role limited to the PlayStation 5, Xbox Series X|S, and upcoming Nintendo Switch 2 ports plus a manga adaptation, not this Steam release, which Steam's own API lists as developed and published by Noto Muteki alone. Released October 4, 2024 at ¥1,200, it is Very Positive at 93 percent over 2,833 reviews (2,625 positive, 208 negative, per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors (gunfight, blood, and violence), nothing sexual. It supports English along with Japanese, Korean, Simplified Chinese, and Traditional Chinese, yet only 307 of its 2,833 reviews, 10.8 percent, are in English: the game is playable in English and still has not organically reached the West in real numbers, a fact worth stating plainly.",
+        desc_ja: "Steam自身の表記によれば、本作は「祓魔が国家の職務となった並行世界の日本」を舞台にする三人称視点のアクションホラーだ。プレイヤーは霊務省近畿霊務局所属の公認祓魔師・白石瑞希(27)となり、インターネット上から完全に消え去った奈良県の村・賽河村の調査に赴く——住民は誰一人おらず、電気・電話・インターネットすべてが遮断され、異常なまでに多数の不正霊を封じ込める巨大な結界に閉ざされている。上司の小日向係長と後輩の丸岡から無線で指示を受けながら、徒手格闘・ガンシューティング・ステルスアクションで反撃していく。開発元自身の売り文句は、まさにこのジャンルが定義してきた慣習への意識を名指ししており、「日本風ホラーゲームにありがちな、銃弾とか拳とか一切効かない理不尽な幽霊にうんざりした貴方に贈る、『思いっきりやり返せるホラーゲーム』です」と謳う。制作・自社発売は個人開発者・霧笛ノト(日本語版Wikipediaのインフォボックスによれば人数1人)で、同ソースによれば本人はホラーゲームが得意ではないと述べており、本作はもともと架空の大手Vtuber事務所のスキャンダルを銃火器で解決するTPS『AKASPA』として開発が始まっていたが、開発に時間がかかりそうなことに加え、制作者本人が光熱費や奨学金の返済で困窮していたことから、より短いホラーゲームへと転換した——困窮は明記された2つの理由のうち一方であり、唯一の動機ではない。日本語版Wikipediaは発売元として「あまた株式会社」も併記しているが、同社を個別に調べたところ、その確認できる関与はPlayStation 5・Xbox Series X|S版、および今後のNintendo Switch 2版・コミカライズに限られ、本Steam版には及ばない。Steam自身のAPIでは開発・発売元とも霧笛ノト単独である。発売日は2024年10月4日、価格¥1,200。2,833件のレビュー(好評2,625件・不評208件、Steam自身のレビューAPI実測)で好評率93%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ(銃撃・流血・暴力)上性的な要素もない。対応言語は日本語・英語・韓国語・簡体字中国語・繁体字中国語で英語にも対応済みだが、2,833件のうち英語レビューはわずか307件(10.8%)——英語で遊べる状態にありながら、実数としてはまだ西へ組織的に届いていない、という事実を飾らずそのまま伝える。",
+      },
+      {
+        name_en: "Resident Evil",
+        name_ja: "biohazard HD REMASTER",
+        status: "established",
+        steam: "https://store.steampowered.com/app/304240/Resident_Evil/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Resident Evil, CAPCOM's foundational 1996 survival horror, available on Steam as the 2015 biohazard HD REMASTER, which established the template still associated with the genre, a mansion full of the undead where firearms are scarce, fragile, and precious, but they work, so every encounter is a real, winnable fight over how to spend a shrinking stock of ammunition rather than a puzzle about how to run away. Kinki Spiritual Affairs Bureau is not an official Resident Evil work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer Noto Muteki, but the newer game's own store text names exactly the genre convention this lineage represents and pitches itself as a return to it: a horror game where the guns actually work.",
+        desc_ja: "この味の原点——Resident Evil(バイオハザード)。CAPCOMによる1996年のサバイバルホラーの原点で、Steamでは2015年配信のbiohazard HD REMASTERとして入手できる。屋敷を埋め尽くすアンデッドに対し、銃器は乏しく脆く貴重だが、確かに効く——だからあらゆる遭遇は「どう逃げるか」のパズルではなく、残り少ない弾薬をどう配分するかという、勝ち筋のある本物の戦いになる、というジャンルの型を確立した一本だ。近畿霊務局は公式のResident Evil作品ではなく、この系譜は開発元霧笛ノト自身が明言した影響ではなく当サイト独自の批評的比較だが、近畿霊務局自身のストア文言は、まさにこの系譜が体現するジャンルの慣習を名指しし、そこへの回帰——銃が本当に効くホラーゲーム——を自ら掲げている。",
+      },
+    ],
+    en: {
+      title: "Kinki Spiritual Affairs Bureau - a third-person horror where guns, fists, and stealth actually work on the ghosts, built by solo developer Noto Muteki, who says horror games aren't personally to their taste and pivoted into one partly out of financial hardship. Very Positive at 93 percent over 2,833 reviews, only 10.8 percent in English",
+      description: "A third-person action horror where you finally get to fight back: hand-to-hand combat, gunfights, and stealth against the ghosts overrunning a Nara village that vanished from every record. Made and self-published solo by developer Noto Muteki, who per Japanese Wikipedia personally finds horror games not to their taste. Very Positive at 93 percent over 2,833 reviews, only 10.8 percent of them in English.",
+      h1a: "You are a licensed exorcist sent to investigate a village that vanished from the internet, its power and phone lines cut, sealed behind a barrier holding in an abnormal number of ghosts, ",
+      h1flip: "and for once in this genre, your gun actually works on them",
+      h1b: ".",
+      lede: "A third-person action horror made and self-published solo by developer Noto Muteki (霧笛ノト), who per Japanese Wikipedia's own infobox is a one-person team and who, per the same source, personally finds horror games not to their taste. Wikipedia's account has them originally building a different project entirely, a firearms-based TPS called AKASPA about a fictional VTuber agency scandal, before pivoting to this shorter horror game, a choice attributed to both AKASPA's likely-longer development time and, in part, Noto Muteki's own financial hardship at the time (utility bills and loan repayments), one of two stated reasons, not the sole one, a nuance worth keeping intact. The result imagines a parallel Japan where exorcism is a government function: licensed exorcist Shiraishi Mizuki, 27, of the Ministry of Spiritual Affairs' own Kinki Spiritual Affairs Bureau, is sent to investigate Saigawa Village in Nara Prefecture, a village that has vanished from the internet entirely, power, phone, and internet all cut, sealed behind a barrier holding in an abnormally large number of illegal spirits, no residents anywhere to be found. Guided by radio from section chief Kohinata and junior colleague Marugawa, the player fights back with hand-to-hand combat, gunfights, and stealth, per Steam's own store text, and the developer's own pitch names exactly what it is reacting against: a horror game where you finally get to fight back, aimed at anyone tired of the genre convention in which guns and fists do nothing against unreasonable ghosts. Released October 4, 2024 at ¥1,200, self-published solely by Noto Muteki on Steam; Japanese Wikipedia also lists Amata K.K. as a co-publisher, but that company's own confirmed role is limited to the PlayStation 5, Xbox Series X|S, and upcoming Nintendo Switch 2 ports plus a manga adaptation, not this Steam release, which Steam's own API lists as developed and published by Noto Muteki alone. It is Very Positive at 93 percent over 2,833 reviews (2,625 positive, 208 negative, per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors (gunfight, blood, and violence), nothing sexual. It supports English along with Japanese, Korean, and both Chinese variants, yet only 307 of its 2,833 reviews, 10.8 percent, are in English: the game is playable in English and still has not organically reached the West in real numbers, a fact this pick states plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per the developer's own pitch, this is a horror game built specifically against the genre convention where bullets and fists do nothing, so the tension stops being about whether you can survive by running and becomes about whether you can win the fight in front of you with the ammunition and stamina you actually have left.",
+        "Investigating a village erased from every record, guided the whole way by radio from a section chief and a junior colleague, turns the horror into something closer to a case file: every locked door and cut power line is a fact you are reporting back on, not just an obstacle in front of you.",
+        "This is a project that, per Japanese Wikipedia's own account, started as something else entirely, a gun-based TPS about a VTuber scandal, before financial hardship helped push its solo developer, someone who says horror isn't personally their taste, into finishing a shorter horror game instead, and once you know that, the fight-back premise reads less like a marketing hook and more like someone building the thing they actually had the time and money to finish.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a horror game where your weapons genuinely work: hand-to-hand combat, gunfights, and stealth against ghosts that can actually be beaten, not just outrun",
+        "You want a bureaucratic, procedural framing on horror: a licensed government exorcist reporting to a chief over the radio while investigating a village that vanished from every record",
+        "You want a Very Positive title (93 percent over 2,833 reviews) that supports English yet still hasn't organically reached the West: only 10.8 percent of its reviews are in English",
+      ],
+      bad: [
+        "You want a large, ambitious scope; Wikipedia's own account frames this as a smaller pivot from a bigger shelved project, made under real time and financial pressure, and the shape of the final game reflects that reset rather than a shrunken masterpiece",
+        "You want something bloodless; per Steam's own content descriptors it contains gunfights, blood, and violence, though nothing sexual by the same descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "近畿霊務局 - 銃も拳もステルスも幽霊に本当に効く三人称視点ホラー。制作は個人開発者・霧笛ノト、本人はホラーゲームが得意ではないと述べており、光熱費や奨学金返済の困窮も転換の一因だった。2,833件のレビューで好評率93%「非常に好評」、英語レビューは10.8%",
+      description: "三人称視点のアクションホラーで、ようやく本当に反撃できる——記録から消えた奈良の村を覆う幽霊たちに、徒手格闘・ガンシューティング・ステルスで立ち向かう。制作・自社発売は個人開発者・霧笛ノト、日本語版Wikipediaによれば本人はホラーゲームが得意ではないという。2,833件のレビューで好評率93%「非常に好評」、英語レビューはそのうち10.8%。",
+      h1a: "インターネットから消え去った村へ送られる、公認祓魔師。電気も電話も断たれ、異常な数の幽霊を封じる結界に閉ざされたその村で、",
+      h1flip: "このジャンルでは珍しく、銃が本当に効く",
+      h1b: "。",
+      lede: "制作・自社発売は個人開発者・霧笛ノト(日本語版Wikipediaのインフォボックスによれば人数1人)による三人称視点のアクションホラー。同ソースによれば本人はホラーゲームが得意ではないと述べている。Wikipediaの記述では、本作はもともと架空の大手Vtuber事務所のスキャンダルを銃火器で解決するTPS『AKASPA』として開発が始まっていたが、開発に時間がかかりそうなことに加え、制作者本人が光熱費や奨学金の返済で困窮していたことから、より短いホラーゲームへと転換した——困窮は明記された2つの理由のうち一方であり、唯一の動機ではない、という機微をそのまま保っておく。物語は「祓魔が国家の職務となった並行世界の日本」を描く。霊務省近畿霊務局所属の公認祓魔師・白石瑞希(27)は、インターネット上から完全に消え去った奈良県の村・賽河村の調査に赴く——電気・電話・インターネットすべてが遮断され、異常なまでに多数の不正霊を封じ込める巨大な結界に閉ざされ、住民は誰一人見当たらない。上司の小日向係長と後輩の丸岡から無線で指示を受けながら、Steam自身の表記によれば徒手格闘・ガンシューティング・ステルスアクションで反撃していく。開発元自身の売り文句は、まさにこのジャンルが定義してきた慣習への意識を名指ししており、「日本風ホラーゲームにありがちな、銃弾とか拳とか一切効かない理不尽な幽霊にうんざりした貴方に贈る、『思いっきりやり返せるホラーゲーム』です」と謳う。発売日は2024年10月4日、価格¥1,200。自社発売は霧笛ノト単独。日本語版Wikipediaは発売元として「あまた株式会社」も併記しているが、同社を個別に調べたところ確認できる関与はPlayStation 5・Xbox Series X|S版、および今後のNintendo Switch 2版・コミカライズに限られ、本Steam版には及ばない——Steam自身のAPIでは開発・発売元とも霧笛ノト単独である。2,833件のレビュー(好評2,625件・不評208件、Steam自身のレビューAPI実測)で好評率93%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ(銃撃・流血・暴力)上性的な要素もない。対応言語は日本語・英語・韓国語・簡体字中国語・繁体字中国語で英語にも対応済みだが、2,833件のうち英語レビューはわずか307件(10.8%)——英語で遊べる状態にありながら、実数としてはまだ西へ組織的に届いていない、という事実を飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "開発元自身の売り文句によれば、本作は「銃弾も拳も一切効かない」というジャンルの慣習そのものに対抗して作られている。だから緊張感は「逃げ切れるか」ではなく、「今残っている弾薬とスタミナで、目の前の戦いに勝てるか」へと変わる。",
+        "記録から完全に消えた村を、上司と後輩からの無線指示を受けながら調査するという構造は、ホラーをどこか事件調書に近いものへ変える——閉ざされた扉も断たれた電線も、ただの障害物ではなく、報告すべき一つの事実として積み上がっていく。",
+        "日本語版Wikipediaの記述によれば、本作はもともと別のプロジェクト——Vtuber事務所のスキャンダルを銃で解決するTPS『AKASPA』——として始まっていた。ホラーが得意ではないと自認する開発者を、経済的な困窮が(理由の一つとして)この短いホラーゲームの完成へと押した、と知ったうえで触れると、「反撃できる」というコンセプトは宣伝文句というより、実際に完成させられる形へと着地させた結果のように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "武器が本当に効くホラーゲームが欲しい人——徒手格闘・ガンシューティング・ステルスで、逃げるだけでなく実際に打ち倒せる幽霊たち",
+        "官公庁的・調書的な語り口のホラーが欲しい人——無線で上司に報告しながら、記録から消えた村を調査する公認祓魔師という枠組み",
+        "「非常に好評」タイトル(2,833件で93%)ながら、英語に対応していてもまだ西へ組織的に届いていないものを掴みたい人——レビューのうち英語はわずか10.8%",
+      ],
+      bad: [
+        "壮大で野心的なスケールが欲しい人——Wikipediaの記述自体が、これをより大きな棚上げプロジェクトからの縮小転換であり、実際の時間的・経済的制約の下で作られたと伝えており、完成形の規模はその再出発を映したものであって、切り詰められた大作ではない",
+        "血の気のないものが欲しい人——Steam自身のコンテンツディスクリプタによれば銃撃・流血・暴力を含む(ただし同ディスクリプタ上、性的な要素はない)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9621,6 +9726,19 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "METAL SLUG is SNK's 1996 arcade classic, per its own store text 'the very first title in SNK's legendary 2D run & gun action shooting game series where it all began,' which established the template of switchable weapon pickups, one-hit-fragile soldiers under constant fire, and escalating enemy waves built for high-score chasing rather than narrative pacing. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a run-and-gun without continues or cushions can still be built around a rifle you swap for something better and a line of enemies you have to survive to reach.",
       ja: "METAL SLUGは、SNKによる1996年のアーケードクラシックで、Steam自身のストア文言によれば「SNKの伝説的な2Dラン&ガン・アクションシューティングシリーズの、すべてが始まった記念すべき第一作」であり、切り替え可能な武器の拾得・絶え間ない銃撃に晒される一撃で脆い兵士・物語のペース配分ではなくハイスコア追求のために組まれた敵の波、という型を確立した一本だ。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——コンティニューも緩衝材もないラン&ガンでも、より良い武器へと持ち替えるライフルと、そこへたどり着くために生き延びなければならない敵の列を軸に組み立てられるという発想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Resident Evil(CAPCOM、Steam版はbiohazard HD REMASTER・2015年配信)。近畿霊務局 pick の
+  //   系譜として新規採用。この帰属は開発元霧笛ノト自身の言明ではなく当サイト独自の批評的比較(自信度:
+  //   中・parasocial/perfect-blue/papers-please/book-of-demons等と同型の判断)。近畿霊務局のストア文言
+  //   自身が「銃弾とか拳とか一切効かない理不尽な幽霊にうんざりした貴方に」と、まさにこの系譜が定義した
+  //   「銃器が化物に通用するサバイバルホラー」への回帰を明言しているため、対比ではなく直系として採用。
+  //   現行Steamで販売中のためsteam URLで同定する。
+  "resident-evil": {
+    steam: "304240",
+    blurb: {
+      en: "Resident Evil is CAPCOM's foundational 1996 survival horror, available on Steam as the 2015 biohazard HD REMASTER, which established the template still associated with the genre: a mansion full of the undead where firearms are scarce, fragile, and precious, but they work, so every encounter is a real, winnable fight over how to spend a shrinking stock of ammunition rather than a puzzle about how to run away. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer Noto Muteki, but it is the direct genre convention that game's own store text names and reacts against.",
+      ja: "Resident Evil(バイオハザード)は、CAPCOMによる1996年のサバイバルホラーの原点で、Steamでは2015年配信のbiohazard HD REMASTERとして入手できる。屋敷を埋め尽くすアンデッドに対し、銃器は乏しく脆く貴重だが、確かに効く——だからあらゆる遭遇は「どう逃げるか」のパズルではなく、残り少ない弾薬をどう配分するかという、勝ち筋のある本物の戦いになる、というジャンルの型を確立した一本だ。この系譜は、ここで結びつける開発元霧笛ノト自身が明言した関連性ではなく、当サイト独自の批評的比較だが、近畿霊務局自身のストア文言が名指しで意識し、そこへの回帰を掲げているジャンルの型そのものである。",
     },
   },
 } as const;
