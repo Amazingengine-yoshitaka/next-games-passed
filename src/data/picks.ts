@@ -7321,6 +7321,105 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "batterynote": {
+    published: "2026-07-15",
+    publishAt: "2026-07-15",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「充電で会話するか高電圧で罰するかを選ぶ、寿命の短いロボットとの
+    //   SFノベル」を捉える語がないため新設 "robot-deathbed-novel"。開発者本人がharf-wayの取材で
+    //   本作を「看取りのようなゲーム」と形容していること(実測・引用元明記)を踏まえた命名。
+    // 系譜は Papers, Please(Lucas Pope, 2013, Steam appid 239030)——弱い立場の相手の運命を、
+    //   タイマー付きの小さな反復行為(承認/却下)だけに委ねる、という着想を定義した一本——を新規
+    //   anchor "papers-please" として採用する。この帰属は開発者本人の言明ではなく当サイト独自の
+    //   批評的比較のため自信度: 中(捏造しない・parasocial/perfect-blue型の判断)。Papers, Please
+    //   自体がSteamで現行販売中のため、games[]のestablished側はsteam URLで同定する(wikidata等の
+    //   フォールバックは不要)。
+    // developer 72studio(個人・愛称「ななにい」、本業の傍らで開発)/ publisher room6(京都拠点・
+    //   資本金500万円・社員28名の独立系インディーパブリッシャー)は、いずれも公式サイト・
+    //   gamebiz企業情報・京都府企業紹介・denfaminicogamerインタビューで裏取り済み。room6が
+    //   2022年にマーベラス・ジー・モードと結んだのは資本提携ではなく業務提携(株式取得を伴わない)
+    //   ことをマーベラスIR開示で確認済み・大手資本提携除外条件には抵触しない。
+    // content_descriptors は ids=[]・notes=null(API実測、en/ja両ロケール一致・性的コンテンツなし)。
+    //   AI Generated Content Disclosure欄はストアページに存在せず非AI。is_free=false・Steam実績あり。
+    // west_unreached: 英語レビュー比率は約18.1%(40/221、appreviews API実測)。Metacriticにページは
+    //   存在するが批評家レビューは0件("tbd")、OpenCriticにページ自体なし、Kotakuの専用ページは
+    //   実記事を含まない自動生成ハブページ、西側での言及はTime ExtensionとNoisy Pixel(いずれも
+    //   中小メディア)の2件のニュース記事のみでレビューではないことを独立WebFetchで確認済み。
+    meta: { genre: "robot-deathbed-novel", lineage: "papers-please", obscurity: "wall", reviewBand: "hundreds", rarity: { reviews: 221, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "BatteryNote",
+        name_ja: "BatteryNote",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3005930/BatteryNote/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, you are a mechanic who has picked up three robots from a scrapyard, and in a dimly lit garage you charge and revive them one at a time within a time limit: talk with them to peek into their memories, or throw a high-voltage switch just to enjoy their reaction, and how you treat them shapes both their fate and the game's ending, since their batteries only have a short lifespan left. The three are J.S.C.A, a robot waitress at a diner; Surverry, a security robot built for monitoring offices; and Devind R7, a combat robot that seems to have been developed for military use. In an interview with the Japanese indie-game outlet HARF-WAY, solo developer 72studio (handle: Nananii) described the game's own core as wanting players to grow fond of these characters rather than simply destroy them, calling it, in the developer's own words translated here, 'a game like keeping watch at someone's deathbed.' Released October 9, 2025 and published by room6, a small, independent Kyoto-based indie publisher (about 28 staff, no capital ties to any major publisher confirmed), it is Very Positive at 98 percent over 221 reviews (218 positive, 3 negative per Steam's own review API), a paid title at ¥1,372, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and, per Steam's own content descriptors, nothing sexual (ids: none, notes: none). It supports Japanese, English, Simplified and Traditional Chinese, and Korean, and while about 40 of its 221 reviews, some 18.1 percent, are already in English, its reach into the West stays thin: Metacritic carries a page for it but lists critic reviews as not yet available, OpenCritic has no page for it at all, Kotaku's page turns out to be an auto-generated hub with no actual article, and the only Western coverage found is two news pieces, from Time Extension and Noisy Pixel, neither of which is a review.",
+        desc_ja: "Steam自身の表記によれば、あなたはコールドスリープから目を覚ました「メカニックくずれ」で、薄暗いガレージのなか、壊れかけの3体のロボットを1体ずつ充電して呼び戻す。対話によって記憶をのぞいてもよいし、高電圧を流して反応を楽しんでもよい——彼らのバッテリーの寿命はあとわずかで、どう扱うかによって彼らの運命とゲームのエンディングが変わっていく。3体は、ダイナーのウェイターロボット「ジェシカ」、オフィスを監視するためのセキュリティロボット「サーベリー」、軍事用に開発されたと思しき戦闘ロボット「デバインドR7」。日本のインディーゲームメディアHARF-WAYの取材に対し、個人開発者72studio(愛称「ななにい」)は、本作の核は彼らを壊すことではなくキャラクターを好きになってもらうことにあると述べ、「相手の深淵を覗く」「看取りのようなゲーム」と形容している(実際の取材記事から引用・翻訳)。発売日は2025年10月9日、発行は京都拠点の独立系インディーパブリッシャー room6(社員約28名、大手企業との資本関係は確認されず)。221件のレビュー(好評218件・不評3件、Steam自身のレビューAPI実測)で好評率98%の「非常に好評」。¥1,372の有料タイトルで無料ではなく、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上(ids:なし、notes:なし)性的な要素もない。日本語・英語・簡体字/繁体字中国語・韓国語に対応するが、221件のうち約40件、18.1%程度がすでに英語レビューである一方、西側への到達は薄いままだ——Metacriticにはページがあるものの批評家レビューは「まだ利用不可」のまま、OpenCriticにはページ自体が存在せず、Kotakuの専用ページは実記事を含まない自動生成ハブページで、見つかった西側の言及はTime ExtensionとNoisy Pixelの2件のニュース記事のみ、いずれもレビューではない。",
+      },
+      {
+        name_en: "Papers, Please",
+        name_ja: "Papers, Please",
+        status: "established",
+        steam: "https://store.steampowered.com/app/239030/Papers_Please/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Papers, Please, Lucas Pope's 2013 procedural thriller in which the player, a border inspector in the fictional state of Arstotzka, reduces each stranger crossing the checkpoint to a stack of paperwork and, under a ticking clock, decides only to approve or reject them, a small repeated act of bureaucratic power that branches the story across more than twenty endings depending entirely on how it was exercised. BatteryNote is not an official Papers, Please work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer 72studio, but it carries the same shape of tension into a new frame: a charging switch and a high-voltage switch standing in for a stamp of approval or rejection, held over three strangers whose fate, and whose ending, depends entirely on how that small, repeated power is used against a clock.",
+        desc_ja: "この味の原点——Papers, Please。Lucas Pope制作による2013年の書類審査スリラーで、プレイヤーは架空の国家アルストツカの国境審査官として、検問所を通る一人ひとりを「書類の束」として扱い、時間制限のなかで承認するか却下するかだけを選び続ける。その官僚的な権力の小さな反復行為が、行使のされ方次第で20種を超えるエンディングへと枝分かれしていく。BatteryNoteは公式のPapers, Please作品ではなく、この系譜は開発元72studioが明言した影響ではなく当サイト独自の批評的比較だが、同じ形の緊張感を新しい枠組みへと引き継いでいる——承認/却下のスタンプの代わりに充電スイッチと高電圧スイッチがあり、その小さな反復する権力がタイマーに追われながらどう使われるかだけで、3人の見知らぬ相手の運命とエンディングが決まる。",
+      },
+    ],
+    en: {
+      title: "BatteryNote - a sci-fi visual novel where you recharge three dying, scrapped robots and decide, one high-voltage switch at a time, whether their last moments are kindness or punishment, made by solo Japanese developer 72studio and published by the small Kyoto indie room6, Very Positive at 98 percent over 221 reviews though almost untouched by Western press",
+      description: "A sci-fi visual novel: you charge up three broken robots pulled from a scrapyard and, one at a time, either talk with them to learn their memories or throw the high-voltage switch just to see how they react, deciding how what little life they have left gets spent. Made by solo developer 72studio and published by the small Kyoto-based indie label room6. Very Positive at 98 percent over 221 reviews, with English readers still only around 18 percent.",
+      h1a: "Three broken robots sit in front of you, and between you and each one there is only a charging cable and a high-voltage switch, ",
+      h1flip: "so whether their last moments are spent talking or screaming comes down to which one you choose to throw",
+      h1b: ".",
+      lede: "A sci-fi visual novel originally released October 9, 2025, made by solo developer 72studio (handle: Nananii) and published by room6, a small, independent Kyoto-based indie publisher. Per Steam's own listing, you play a mechanic who has picked up three robots from a scrapyard, and in a dimly lit garage you charge and revive them one at a time within a time limit: talk with them to peek into their memories, or throw a high-voltage switch just to enjoy their reaction, and how you treat them shapes both their fate and the game's ending, since their batteries only have a short lifespan left. In an interview with the Japanese outlet HARF-WAY, 72studio described the game's real core as wanting players to grow fond of these characters rather than simply destroy them, calling it, translated here, 'a game like keeping watch at someone's deathbed.' It is Very Positive at 98 percent over 221 reviews (218 positive, 3 negative), a paid title at ¥1,372, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese, English, Simplified and Traditional Chinese, and Korean, and while about 40 of its 221 reviews, some 18.1 percent, are already in English, its reach into the West stays thin: Metacritic lists critic reviews as not yet available, OpenCritic has no page for it, Kotaku's page is an auto-generated hub with no actual article, and the only Western coverage found is two news pieces, from Time Extension and Noisy Pixel, neither of which is a review.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, the entire loop comes down to one switch: charge a robot and talk with it to learn its memories, or throw the high-voltage switch just to watch it react, and every choice you make toward something that is dying regardless carries that same small, total power over how its last moments go.",
+        "72studio himself frames the real hook not as destruction but as curiosity, telling HARF-WAY that his own hang-up is wanting to communicate with these non-human characters and grow to like them, so the high-voltage switch reads less like an execution button and more like teasing someone you are already fond of, right up until you decide otherwise.",
+        "Each of the three robots, J.S.C.A the diner waitress, Surverry the office security unit, and Devind R7 the combat model, was already scrapped as broken or dangerous before you found them, so every conversation is also an exhumation of exactly why they were thrown away, and whether that verdict was ever fair.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a short, morally charged sci-fi visual novel about holding total, mundane power over something fragile and already dying, told through nothing more than a charging cable and a high-voltage switch",
+        "You want a small-scale solo Japanese production reaching Steam through a small publisher: 72studio's one-person hobby project, published by the 28-person Kyoto indie label room6 with no confirmed capital ties to any major publisher",
+        "You want a Very Positive title (98 percent over 221 reviews) that Western press has barely touched: Metacritic lists no critic reviews yet, OpenCritic has no page, and the only English-language coverage is two news pieces, not reviews",
+      ],
+      bad: [
+        "You want a long game or a large cast; this is a short-session visual novel built around three robots and one switch, with no combat or exploration",
+        "You want a story already validated by Western critics; it carries no AI-generated assets and, per Steam's own content descriptors, nothing sexual, but it is a paid title, not free and not in Early Access, and remains functionally unreviewed by any major Western outlet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "BatteryNote - 廃棄された寿命の短い3体のロボットを充電し、高電圧スイッチひとつで最期を優しさにするか罰にするかを選ぶSFノベル。制作は個人開発者72studio、発行は京都の小規模インディーroom6。221件のレビューで好評率98%の「非常に好評」ながら、西側メディアにはほぼ触れられていない",
+      description: "廃品置き場から拾った壊れかけの3体のロボットを充電し、1体ずつ、対話で記憶をのぞくか、高電圧スイッチを押して反応を楽しむか——彼らに残されたわずかな余生をどう過ごさせるかを決めるSFビジュアルノベル。制作は個人開発者72studio、発行は京都拠点の小規模インディーレーベル room6。221件のレビューで好評率98%の「非常に好評」、英語レビューはまだ約18%に留まる。",
+      h1a: "目の前に3体の壊れかけのロボットが座り、二人の間にあるのは充電ケーブルと高電圧スイッチだけ。",
+      h1flip: "その最期が会話になるか悲鳴になるかは、あなたがどちらを選ぶかだけで決まる",
+      h1b: "。",
+      lede: "2025年10月9日にリリースされたSFビジュアルノベル。制作は個人開発者72studio(愛称「ななにい」)、発行は京都拠点の独立系インディーパブリッシャー room6。Steam自身の表記によれば、あなたはコールドスリープから目を覚ました「メカニックくずれ」で、薄暗いガレージのなか、壊れかけの3体のロボットを1体ずつ、制限時間内に充電して呼び戻す。対話によって記憶をのぞいてもよいし、高電圧を流して反応を楽しんでもよい——彼らのバッテリーの寿命はあとわずかで、どう扱うかによって彼らの運命とゲームのエンディングが変わっていく。日本のゲームメディアHARF-WAYの取材に対し、72studioは本作の核は彼らを壊すことではなくキャラクターを好きになってもらうことにあると述べ、「看取りのようなゲーム」と形容している。221件のレビュー(好評218件・不評3件)で好評率98%の「非常に好評」。¥1,372の有料タイトルで無料ではなく、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上は性的な要素もない。日本語・英語・簡体字/繁体字中国語・韓国語に対応するが、221件のうち約40件、18.1%程度がすでに英語レビューである一方、西側への到達は薄いままだ——Metacriticの批評家レビューは「まだ利用不可」、OpenCriticにはページ自体が存在せず、Kotakuの専用ページは実記事を含まない自動生成ハブページで、見つかった西側の言及はTime ExtensionとNoisy Pixelの2件のニュース記事のみ、いずれもレビューではない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、このゲームの核はたった一つのスイッチに集約される——充電して対話し記憶をのぞくか、高電圧を流して反応を楽しむか。どちらにせよ死にゆく相手に向けて下すその選択のひとつひとつに、最期の過ごし方を握る小さくも絶対的な権力が宿る。",
+        "72studio本人はこのフックの本質を「破壊」ではなく「好奇心」だとHARF-WAYの取材で語っている——人外キャラとコミュニケーションを重ねて好きになることこそ自分の「癖」なのだと。だから高電圧スイッチは処刑ボタンというより、すでに好きになった相手にちょっかいを掛けたくなる衝動に近く、それでも最後には自分でその境界線を決めることになる。",
+        "ダイナーのウェイターロボット「ジェシカ」、オフィス監視ロボット「サーベリー」、戦闘ロボット「デバインドR7」——3体はいずれも、あなたが見つける前にすでに「壊れている」か「危険」だと判定され廃棄されていた。だから交わす一言一言が、なぜ彼らが捨てられたのか、その判定は本当に正しかったのかを掘り起こす作業にもなる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "壊れかけで死にゆく脆いものに対して、絶対的で日常的な権力を握るという、道徳的に重いSFビジュアルノベルが欲しい人——充電ケーブルと高電圧スイッチだけでそれを語る",
+        "小規模パブリッシャー経由でSteamへ届いた、日本の個人発プロダクションが欲しい人——72studioの一人称の趣味プロジェクトを、大手企業との資本関係が確認されない社員28名の京都インディーレーベル room6 が発行した一本",
+        "西側メディアにほとんど触れられていない「非常に好評」タイトル(221件のレビューで98%)を掴みたい人——Metacriticの批評家レビューはまだ無く、OpenCriticにはページすら無く、英語圏の言及は2件のニュース記事のみでレビューではない",
+      ],
+      bad: [
+        "長時間のボリュームや多数の登場人物が欲しい人——本作は3体のロボットとひとつのスイッチを軸にした短時間のビジュアルノベルで、戦闘や探索は無い",
+        "西側の批評家にすでに評価された作品が欲しい人——AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もないが、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済みであり、いまだ西側の大手メディアには実質的にレビューされていない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8079,6 +8178,16 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "The free original this grew from: イツカノヨル, released free on the Japanese game jam site unityroom in October 2023 for the Unity1Week jam's \"one button\" theme, by creator Indigo Ingots (script, planning, and programming) working with artist polaritia and composer Kazura's MUSIC. Per its own game page, it already carries the same premise and structure this lineage grows from: a five-minute, click-only story branching across your choice of whether and when to press the execution button in front of you. 5omeday on Steam is not a new work borrowing that DNA from outside; it is a commercial edition of this same free jam game, adding full voice acting, extra endings, and English and Chinese language support on top of it.",
       ja: "本作が育った、その無料版の原点——『イツカノヨル』。2023年10月、日本のゲームジャムサイト「unityroom」で、Unity1Weekゲームジャムの「1ボタン」お題に応じて、制作者Indigo Ingots(企画・シナリオ・プログラム)がイラストpolaritia・サウンドかずら's MUSICと組んで無料公開した。その配信ページ自体によれば、この時点ですでにこの系譜のひな型——5分・クリックのみで進み、目の前の処刑ボタンを押すか押さないか、いつ押すかで分岐する物語——を備えていた。Steam版『イツカノヨル(5omeday)』は、外部からこのDNAを借りた新作ではない——この同じ無料ジャムゲームの商業版であり、フルボイス化・エンディング追加・英語/中国語対応を加えている。",
+    },
+  },
+  // 原点 Papers, Please(Lucas Pope, 2013, Steam appid 239030)。BatteryNote pick の系譜として新規採用。
+  //   この帰属は開発元72studioの言明ではなく当サイト独自の批評的比較(自信度: 中・parasocial/
+  //   perfect-blue型の判断)。Papers, Please自体が現行Steamで販売中のためsteam URLで同定する。
+  "papers-please": {
+    steam: "239030",
+    blurb: {
+      en: "Papers, Please is a 2013 procedural thriller by Lucas Pope in which the player, a border inspector in the fictional state of Arstotzka, reduces each stranger crossing the checkpoint to a stack of paperwork and, under a ticking clock, decides only to approve or reject them, a small repeated act of bureaucratic power that branches the story across more than twenty endings depending entirely on how it was exercised. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that placing total, mundane power over a vulnerable stranger's fate into the player's hands, exercised through nothing more than small repeated interactions against a timer, can carry real weight.",
+      ja: "Papers, Pleaseは、Lucas Pope制作による2013年の書類審査スリラーで、プレイヤーは架空の国家アルストツカの国境審査官として、検問所を通る一人ひとりを「書類の束」として扱い、時間制限のなかで承認するか却下するかだけを選び続ける。その官僚的な権力の小さな反復行為が、行使のされ方次第で20種を超えるエンディングへと枝分かれしていく。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——見知らぬ弱い立場の相手の運命を、プレイヤーの手のなかの小さな反復行為だけに委ねるという着想、その原点にあたる一本だ。",
     },
   },
 } as const;
