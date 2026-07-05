@@ -8620,6 +8620,104 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "cloudsea-frontier": {
+    published: "2026-07-22",
+    publishAt: "2026-07-22",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「1990年代JRPGの名作へのオマージュを明言する、サイドビュー・コマンド
+    //   バトル・メイン/サブクラス自由付替え・30〜40時間規模の王道長編RPG」を捉える語がないため
+    //   新設 "retro-jrpg-homage"。
+    // developer/publisher New RPG Project(個人名義・砂川赳氏、自社発売・第三者パブリッシャーなし)
+    //   は、もぐらゲームス2記事本文実読で「砂川赳氏は…『New RPG Project』という名義で活動して
+    //   おり」「本作は昨年8月よりDLsiteで販売中」を直接引用確認済み(DLsiteは日本国内の同人
+    //   プラットフォーム)。国籍の直接一次証言までは確認できず、DLsite先行配信・日本語ブログ・
+    //   Steam自身の日本語のみのストア文言・もぐらゲームス複数回掲載という状況証拠に基づく判断で
+    //   ある旨は正直に自覚する(kung-fu-beat/your-letter-has-been-rejected/auto-rogue/maxwells-
+    //   puzzling-demon/horoboshihime型の確度)。
+    // 系譜は新規アンカーではなく、既存のFinal Fantasy V(dungeon-antiqua-2 pickが既に採用済み、
+    //   appid 1173810)を再利用する。本作のストア文言自身が「メインクラスとサブクラスの二種類を
+    //   自由に付け替えできます」と明記しており、FFVが確立したジョブシステムの系譜に直接連なる
+    //   メカニクス上の一致のため、新規批評的比較ではなく既存アンカーの再利用として扱う。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI(将来的なAI翻訳追加予定の記載はあるが、現時点の
+    //   コンテンツ自体はAI生成ではない)。is_free=false・Steam実績/クラウドあり。
+    // west_unreached: 英語レビューは0件(appreviews API実測、10件中)。レビュー総数10件は絶対条件の
+    //   最低ラインぎりぎりであり、統計的信頼性が限定的であることを正直に開示する。
+    meta: { genre: "retro-jrpg-homage", lineage: "final-fantasy-v", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 10, positivePct: 90, noEnglish: true } },
+    games: [
+      {
+        name_en: "Cloudsea Frontier",
+        name_ja: "雲海のフロンティア",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4396290/Cloudsea_Frontier/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a classic long-form RPG inspired by the masterpieces of the 1990s JRPG era, unfolding a story of adventure through the Cloud Sea world and saving it. Combat is sideview and command-based, with faster characters acting more often; a class-change system lets the party freely swap between a main class and a sub class, and each character has a unique 'blue' technique alongside a class-specific 'red' technique capable of turning a battle around when used well. Abundant sidequests all carry their own narrative weight, and the game leans on quality-of-life features, message speed-up, auto-heal, and fast travel, across a scope Steam's own text estimates at 30 to 40 hours to clear on normal difficulty with sidequests done and towns and dungeons reasonably explored. The story follows a boy named Levin, from a powerful imperial noble family but framed for a crime he didn't commit, whose journey begins as he's taken to a prison island floating in a world of islands above a cloud sea; there he bonds with a cloud pirate named Zanad, and the two resolve to escape together. Made and self-published by developer New RPG Project (going by Takeshi Sunakawa per Mogura Games' own coverage), the game had been sold on DLsite, Japan's doujin platform, since the previous August before this Steam release. Built in RPG Maker MZ, released June 28, 2026 at ¥2,300, it is Positive at 90 percent over 10 reviews (9 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements and Cloud support, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, and zero of its 10 reviews are in English; with a review count this thin, the statistical confidence here is genuinely limited, a fact worth stating plainly.",
+        desc_ja: "Steam自身の表記によれば、本作は1990年代の名作JRPGに影響を受けた王道長編RPGで、雲海の世界を巡る冒険と、その世界を救う物語を描く。戦闘はサイドビューのコマンド入力型で、素早いキャラクターほど多く行動できる。クラスチェンジシステムにより、メインクラスとサブクラスの二種類を自由に付け替えられ、キャラクター固有の「青奥義」とクラス固有の「赤奥義」があり、うまく使えば大きく戦況を変えられる。豊富なサブクエストはいずれもストーリー性のあるものになっており、メッセージ高速化・自動回復・ファストトラベルなど快適設計を備える。規模はSteam自身の表記によれば、難易度ノーマルで全てのサブクエストをクリアし町やダンジョンをそれなりに探索した場合で30〜40時間程度。物語は、帝国の有力貴族の出身ながら無実の罪を負わされた少年レヴィンが、雲海の上に島々が浮かぶ世界の監獄島へ連行されるところから始まり、そこで出会った雲賊ザナッドと意気投合し、島からの脱出を決意する。制作・自社発売は個人開発者New RPG Project(もぐらゲームス自身の記事によれば砂川赳氏名義)。本作は今回のSteamリリースに先立ち、前年8月より日本の同人プラットフォームDLsiteで販売されていた。RPGツクールMZで制作され、発売日は2026年6月28日、価格¥2,300。10件のレビュー(好評9件・不評1件、Steam自身のレビューAPI実測)で好評率90%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績・クラウド対応あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、10件のうち英語レビューは0件——これだけレビュー数が薄いと統計的な確からしさは正直かなり限定的であり、その点も飾らずそのまま伝える。",
+      },
+      {
+        name_en: "Final Fantasy V",
+        name_ja: "ファイナルファンタジーV",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1173810/FINAL_FANTASY_V/",
+        tag_en: "The origin",
+        tag_ja: "原典",
+        desc_en: "The origin of this taste: Final Fantasy V, the fifth entry in Square's role-playing series, released for the Super Famicom in Japan in 1992, widely credited with crystallizing the Job System, freely reassignable classes whose learned abilities carry over into other jobs, turning the deliberate composition of a party into the core of play. Cloudsea Frontier's own store text describes a main-class-and-sub-class system players can freely swap between, a direct mechanical descendant of the lineage Final Fantasy V helped define, rather than a comparison this site is drawing on its own.",
+        desc_ja: "この味の原点——ファイナルファンタジーV。スクウェアのロールプレイングシリーズ第5作で、1992年に日本でスーパーファミコン向けに発売された。「ジョブシステム」を結晶化させた作品として広く評価されている——自由に組み替えられるクラスと、そこで習得したアビリティを他のジョブへ持ち越せる仕組みにより、パーティを意図して編成すること自体を遊びの核に据えた。雲海のフロンティア自身のストア文言は、メインクラスとサブクラスを自由に付け替えられるシステムを説明しており、これはファイナルファンタジーVが定義づけた系譜の直接のメカニクス上の子孫であり、当サイトが独自に引いた比較ではない。",
+      },
+    ],
+    en: {
+      title: "Cloudsea Frontier - a classic long-form JRPG homage with a Final-Fantasy-V-style main-class-and-sub-class system, 30 to 40 hours long, made and self-published solo by developer New RPG Project after a year on Japan's DLsite platform, Positive at 90 percent over 10 reviews with zero of them in English",
+      description: "A classic long-form RPG homage to 1990s JRPGs: sideview command battles, a freely swappable main-class-and-sub-class system, character and class-specific ultimate techniques, and abundant story-driven sidequests across a 30-to-40-hour adventure through a world of islands above a cloud sea. Made and self-published solo by developer New RPG Project, first sold on Japan's DLsite platform before this Steam release. Positive at 90 percent over 10 reviews, zero of them in English.",
+      h1a: "A boy framed for a crime he didn't commit escapes a prison island with a cloud pirate at his side, ",
+      h1flip: "and thirty to forty hours later, the class you swapped into an hour ago might be the one that saves you",
+      h1b: ".",
+      lede: "A classic long-form RPG made and self-published solo by developer New RPG Project (going by Takeshi Sunakawa per Mogura Games' own coverage), first sold on DLsite, Japan's doujin platform, for a year before this Steam release. Per Steam's own listing, it is inspired by the masterpieces of the 1990s JRPG era: sideview command battles where faster characters act more often, a class-change system letting the party freely swap between a main class and a sub class, character-specific 'blue' techniques alongside class-specific 'red' techniques capable of turning a battle around, and abundant sidequests that all carry their own narrative weight, backed by quality-of-life features like message speed-up, auto-heal, and fast travel. The story follows Levin, from a powerful imperial noble family but framed for a crime he didn't commit, taken to a prison island floating in a world of islands above a cloud sea, where he bonds with a cloud pirate named Zanad and the two resolve to escape together. Built in RPG Maker MZ, Steam's own text estimates the scope at 30 to 40 hours to clear on normal difficulty with sidequests done. Released June 28, 2026 at ¥2,300, it is Positive at 90 percent over 10 reviews (9 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements and Cloud support, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, and zero of its 10 reviews are in English; with a review count this thin, the statistical confidence here is genuinely limited, a fact worth stating plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, the main-class-and-sub-class system can be freely reassigned at any point, so the party you're carrying into the next dungeon is never quite the same party you built an hour ago, and the game trusts you to notice when it's time to swap again.",
+        "Every character carries a unique 'blue' technique and every class its own 'red' one, and Steam's own text says either can turn a battle around when used well, so the tension of a fight often comes down to remembering you were holding the right tool the whole time.",
+        "This is a game one solo developer sold for a year on Japan's own doujin platform before ever bringing it to Steam, and once you know that, its unhurried 30-to-40-hour scope, sidequests included, reads less like padding and more like someone who was never in a rush to finish telling this particular story.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a classic long-form JRPG homage: sideview command battles, a Final-Fantasy-V-style freely swappable class system, and 30 to 40 hours of story-driven sidequests",
+        "You want a genuinely solo, self-published Japanese production: developer New RPG Project's own DLsite-to-Steam release, with no external publisher at any stage",
+        "You want a Positive title (90 percent over 10 reviews) that is about as unfound as a game can be: zero of its reviews are in English",
+      ],
+      bad: [
+        "You want a large, statistically settled review base before you trust a score; 10 reviews is about as thin as a sample gets, and this pick says so plainly",
+        "You want to actually read it without Japanese; it supports no other language at all, and it is a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "雲海のフロンティア - ファイナルファンタジーV風のメイン/サブクラス自由付替えシステムを備える、30〜40時間の王道長編JRPGオマージュ。制作は個人開発者New RPG Project、日本のDLsiteでの1年間の販売を経てSteamへ。10件のレビューで好評率90%、英語レビューは0件",
+      description: "1990年代JRPGへの王道長編オマージュ。サイドビューのコマンドバトル、自由に付け替えられるメイン/サブクラスシステム、キャラクター・クラス固有の奥義、ストーリー性豊かなサブクエストの数々を、雲海の上に浮かぶ島々の世界で30〜40時間かけて描く。制作・自社発売は個人開発者New RPG Project、Steamリリースに先立ち日本のDLsiteで1年間販売されていた。10件のレビューで好評率90%、英語レビューは0件。",
+      h1a: "無実の罪を着せられた少年が、雲賊とともに監獄島からの脱出を決意する。",
+      h1flip: "そして30〜40時間後、1時間前に付け替えたそのクラスが、あなたを救うことになるかもしれない",
+      h1b: "。",
+      lede: "制作・自社発売は個人開発者New RPG Project(もぐらゲームス自身の記事によれば砂川赳氏名義)による王道長編RPG。今回のSteamリリースに先立ち、日本の同人プラットフォームDLsiteで1年間販売されていた。Steam自身の表記によれば、1990年代の名作JRPGに影響を受けており、サイドビューのコマンドバトル(素早いキャラクターほど多く行動できる)、メインクラスとサブクラスを自由に付け替えられるクラスチェンジシステム、キャラクター固有の「青奥義」とクラス固有の「赤奥義」(うまく使えば戦況を大きく変えられる)、そしていずれもストーリー性のある豊富なサブクエストを備え、メッセージ高速化・自動回復・ファストトラベルなど快適設計を支えとする。物語は、帝国の有力貴族の出身ながら無実の罪を負わされた少年レヴィンが、雲海の上に島々が浮かぶ世界の監獄島へ連行されるところから始まり、そこで出会った雲賊ザナッドと意気投合し、島からの脱出を決意する。RPGツクールMZで制作され、Steam自身の表記による規模は難易度ノーマルでサブクエストをクリアした場合30〜40時間程度。発売日は2026年6月28日、価格¥2,300。10件のレビュー(好評9件・不評1件)で好評率90%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績・クラウド対応あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、10件のうち英語レビューは0件——これだけレビュー数が薄いと統計的な確からしさは正直かなり限定的であり、その点も飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、メインクラスとサブクラスはいつでも自由に組み替えられる。だから次のダンジョンへ連れて行くパーティは、1時間前に組んだパーティとまったく同じではいられず、ゲームは付け替え時を自分で気づくことを信頼してくる。",
+        "すべてのキャラクターが固有の「青奥義」を、すべてのクラスが固有の「赤奥義」を持ち、Steam自身の表記によればどちらもうまく使えば戦況を大きく変えられる。だから戦いの緊張感は、しばしば「自分がずっと正しい道具を握っていたことを思い出せるかどうか」に懸かってくる。",
+        "これは、一人の開発者が日本の同人プラットフォームで1年間販売した後にようやくSteamへ持ち込んだゲームだ。それを知ったうえで触れると、サブクエストを含む30〜40時間という急がない規模は、水増しというより、この物語を語り終えることを急いでいなかった人の仕事のように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "王道長編JRPGオマージュが欲しい人——サイドビューのコマンドバトル、ファイナルファンタジーV風の自由に付け替えられるクラスシステム、ストーリー性豊かな30〜40時間のサブクエスト群",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——個人開発者New RPG Projectが、外部発売元を一切介さずDLsiteからSteamへ届けた一本",
+        "「好評」タイトル(10件で90%)ながら、これ以上ないほどまだ見つかっていないものを掴みたい人——レビューのうち英語は0件",
+      ],
+      bad: [
+        "スコアを信頼する前に統計的に安定した母数が欲しい人——10件はこれ以上ないほど小さな母数で、この記事はそれを飾らずそのまま伝えている",
+        "日本語なしで実際に読みたい人——他言語には一切対応しておらず、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
