@@ -8113,6 +8113,106 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "kuro-rekishi-fighters": {
+    published: "2026-07-19",
+    publishAt: "2026-07-19",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「ガチャで36体のキャラを集め、36連戦のボスラッシュだけを戦う」を捉える
+    //   語がないため新設 "gacha-boss-rush"。
+    // developer/publisher ジェッドム(自社発売・第三者パブリッシャーなし)は、4Gamer記事本文実読で
+    //   「作者のXでは…」という単数的表現、Game*Sparkの著名インディーレビュアー吉田輝和氏による
+    //   単独記事掲載を確認済み。X(@jeddom、Steamストアページからリンク確認)はプロフィール本文まで
+    //   アクセスできず(402エラー)、国籍の直接一次証言は確認できていない。日本語ゲームメディア複数
+    //   掲載という状況証拠に基づく判断である旨は正直に自覚する(kung-fu-beat/your-letter-has-been-
+    //   rejected/auto-rogue型の確度)。自社発売のため大手資本提携先リスクそのものが存在しない。
+    // 正直さの徹底: Game*Spark記事の「登場キャラクター全員黒歴史！子どもの頃にノートに描いた
+    //   オリキャラたちが戦う」という見出しは、著者・吉田輝和氏自身の少年時代の回想に基づく比喩表現
+    //   であり、開発者ジェッドム氏本人が「実際に子供の頃のノートを元にキャラを制作した」という
+    //   公式設定・一次証言ではないことを独立WebFetchで確認済み(Steam自身の説明文にはノート由来の
+    //   制作経緯への言及なし)。本文では吉田氏の解釈だと明示して紹介し、開発者の公式設定と混同しない。
+    // 系譜はボスラッシュのみで構成される純粋な型を定義したFuri(The Game Bakers、2016年)を新規
+    //   anchor "furi" として採用する。この帰属は開発元ジェッドム自身の言明ではなく当サイト独自の
+    //   批評的比較のため自信度: 中(捏造しない・parasocial/perfect-blue/papers-please/book-of-demons/
+    //   necrodancer/orcs-must-die/factorio型の判断)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・Steam実績あり。
+    // west_unreached: 英語レビューは0件相当(appreviews API実測、language=englishで空)。レビュー総数
+    //   13件と薄いことは正直に開示する(統計的信頼性は限定的)。
+    meta: { genre: "gacha-boss-rush", lineage: "furi", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 13, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Kuro Rekishi Fighters",
+        name_ja: "黒歴史ファイターズ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3902220/_/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is an action game built around nothing but a boss rush: choose freely among 36 playable characters and fight your way through 36 consecutive boss battles to clear it. New characters are drawn through a summon system paid for with tickets earned by winning battles, and pulling a duplicate of a character you already have levels that character up instead of going to waste. It runs 2 to 6 hours to a single ending, set in a world where humanity's brains learned to interface with dark matter before science ever explained it, an ability people came to call 'magic,' turning modern society into a sword-and-sorcery fantasy centered on a boy named Saja who may save this chaotic world or push it further into ruin. Per 4Gamer's own coverage, the character reveal posts from the creator's own account read like the kind of over-the-top, self-consciously edgy designs that feel like they belong in someone's own embarrassing teenage notebook (their words for it: 'kuro rekishi,' or 'black history,' Japanese slang for a cringeworthy personal past), and in a separate feature, veteran indie reviewer Teruwaka Yoshida of Game*Spark drew his own comparison to the original characters he used to sketch and write profiles for in his notebooks as a kid, though that specific framing is his own nostalgic reading of the cast, not an official backstory stated by developer ジェッドム (Jeddom). Made and self-published solo, it released October 23, 2025 at ¥500, and is Positive at 100 percent over 13 reviews (13 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese and English, yet none of its 13 reviews are in English, leaving it, with a review count this small, genuinely unfound rather than simply overlooked.",
+        desc_ja: "Steam自身の表記によれば、本作はボスラッシュのみで構成されたアクションゲームで、36体のプレイアブルキャラから自由に選び、36戦のボスラッシュを勝ち抜けばクリアとなる。新しいキャラクターはバトルの勝利で得た召喚チケットを使って「召喚」で入手し、すでに持っているキャラと重複した場合はそのキャラのレベルが上がる仕組みで無駄にならない。想定プレイ時間は2〜6時間、エンディングは1種類。舞台は、ダークマターが科学的に解明される前に人類の脳がそれへの干渉に成功してしまった世界——このダークマター認識爆発は一人の少年を中心に全世界へ広がり、多くの人間がやがてそれを「魔法」と呼ぶようになり、現代社会は剣と魔法のファンタジーへと変貌した。その中心となった少年「サジャ」が、世界を混乱から救うのか、さらなる混沌へ突き進むのか、という物語だ。4Gamer自身の取材記事によれば、作者のXで公開されているキャラクター紹介の投稿は、どれも誰かの黒歴史に存在していそうな厨二病な設定になっているという。また別記事では、Game*Sparkの古参インディーレビュアー吉田輝和氏が、自身が子供の頃ノートにオリジナルキャラクターのイラストやプロフィールを描いていたことになぞらえて紹介しているが、これは吉田氏本人の少年時代を懐かしむ読み解きであり、開発者ジェッドム氏が公式に述べた制作経緯ではないことをここで明確にしておく。制作・自社発売はソロ開発者、リリース日は2025年10月23日、価格¥500。13件のレビュー(好評13件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語・英語に対応するが、13件のうち英語レビューは0件——これだけレビュー数が少ないことも踏まえれば、見過ごされているというより、単純にまだ見つかっていないというのが正直なところだ。",
+      },
+      {
+        name_en: "Furi",
+        name_ja: "Furi",
+        status: "established",
+        steam: "https://store.steampowered.com/app/423230/Furi/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Furi, The Game Bakers' 2016 action game that strips a boss-rush down to its purest form, nothing but a sequence of unique, one-on-one duels against distinct opponents, with no regular enemies or exploration to pad the space between them. Kuro Rekishi Fighters is not an official Furi work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer ジェッドム (Jeddom), but it carries the same core structure into a new frame: a game built entirely out of consecutive boss fights, where the choice of who to face next, and what you bring into that fight, is the whole design.",
+        desc_ja: "この味の原点——Furi。The Game Bakers制作による2016年のアクションゲームで、ボスラッシュを最も純粋な形まで削ぎ落とした一本だ——通常の雑魚敵や探索でその間を埋めることなく、個性的な相手との一対一の決闘だけが連続する。黒歴史ファイターズは公式のFuri作品ではなく、この系譜は開発元ジェッドム自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ核心的な構造を新しい枠組みへと引き継いでいる——連続するボス戦だけで構成されたゲームであり、次に誰と戦うか、その戦いに何を持ち込むかだけが、設計のすべてになるという発想だ。",
+      },
+    ],
+    en: {
+      title: "Kuro Rekishi Fighters - a pure boss-rush action game where you choose among 36 gacha-summoned playable characters and fight through 36 consecutive boss battles, made and self-published solo by developer ジェッドム (Jeddom), Positive at 100 percent over 13 reviews with zero of them in English",
+      description: "A pure boss-rush action game: choose freely among 36 playable characters, drawn through a battle-funded summon system, and fight your way through 36 consecutive boss battles to a single ending. Made and self-published solo by developer ジェッドム (Jeddom). Positive at 100 percent over 13 reviews, none of them in English.",
+      h1a: "You summon your way to 36 playable fighters and choose freely among them, ",
+      h1flip: "and the only thing left standing between you and the ending is 36 consecutive boss fights, one after another, with nothing in between",
+      h1b: ".",
+      lede: "A pure boss-rush action game made and self-published solo by developer ジェッドム (Jeddom). Per Steam's own listing, you choose freely among 36 playable characters and fight your way through 36 consecutive boss battles to clear it; new characters are drawn through a summon system paid for with tickets earned by winning battles, and pulling a duplicate of a character you already have levels that character up instead of going to waste. It runs 2 to 6 hours to a single ending, set in a world where humanity's brains learned to interface with dark matter before science ever explained it, an ability people came to call 'magic,' turning modern society into a sword-and-sorcery fantasy centered on a boy named Saja. Per 4Gamer's own coverage, the character reveal posts from the creator's own account read like the kind of self-consciously edgy designs that feel like they belong in someone's own embarrassing teenage notebook, which is exactly what the title means: 'kuro rekishi,' Japanese slang for a cringeworthy personal past. Game*Spark's veteran indie reviewer Teruwaka Yoshida drew his own nostalgic comparison to the original characters he sketched as a kid, though that framing is his own reading of the cast, not an official backstory from the developer. Released October 23, 2025 at ¥500, it is Positive at 100 percent over 13 reviews (13 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese and English, yet none of its 13 reviews are in English, leaving it, with a review count this small, genuinely unfound rather than simply overlooked.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, the entire game is 36 consecutive boss fights and nothing else, so every ounce of pacing rests on the fight itself, no trash mobs, no corridors, no filler standing between one distinct opponent and the next.",
+        "New fighters arrive through a summon system paid for with tickets earned by winning, and per Steam's own text a duplicate pull still levels up a character you already have, so every victory quietly reshapes who you can bring to the next of the 36 fights still ahead.",
+        "4Gamer's own coverage describes the character reveals as reading like something out of somebody's own embarrassing teenage notebook, which the title says outright: 'kuro rekishi,' black history, the Japanese phrase for a cringeworthy personal past, so every over-the-top design you fight or summon is already in on its own joke.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a boss-rush stripped to its purest form: no filler, just 36 consecutive fights and a roster of 36 characters to choose your way through them with",
+        "You want a genuinely solo, self-published Japanese production covered by name in Japanese indie press: 4Gamer's own writeup and a dedicated feature from Game*Spark's veteran reviewer Teruwaka Yoshida",
+        "You want a Positive title (100 percent over 13 reviews) that is about as unfound as a game can be: zero of its reviews are in English despite the game itself supporting it",
+      ],
+      bad: [
+        "You want a large, statistically settled review base before you trust a score; 13 reviews is a small sample, and this pick says so plainly rather than dressing it up",
+        "You want a long story-driven campaign; this is a lean 2-to-6-hour boss gauntlet with one ending, a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "黒歴史ファイターズ - ガチャで召喚した36体のプレイアブルキャラから選び、36連戦のボスラッシュだけを戦い抜く純粋なアクションゲーム。制作・自社発売はソロ開発者ジェッドム。13件のレビューで好評率100%、しかもすべて日本語レビュー",
+      description: "ボスラッシュのみで構成された純粋なアクションゲーム。バトルで得たチケットで召喚した36体のプレイアブルキャラから自由に選び、36戦のボスラッシュを勝ち抜けばクリア。制作・自社発売はソロ開発者ジェッドム。13件のレビューで好評率100%の「好評」、しかもすべて日本語レビュー。",
+      h1a: "召喚で36体のファイターを揃え、そこから自由に選ぶ。",
+      h1flip: "あとに残るのは、間に何も挟まない36連戦のボスラッシュだけだ",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者ジェッドムによる、ボスラッシュのみで構成された純粋なアクションゲーム。Steam自身の表記によれば、36体のプレイアブルキャラから自由に選び、36戦のボスラッシュを勝ち抜けばクリアとなる。新しいキャラクターはバトルの勝利で得た召喚チケットを使って入手し、すでに持っているキャラと重複した場合はそのキャラのレベルが上がる。想定プレイ時間は2〜6時間、エンディングは1種類。舞台は、ダークマターが科学的に解明される前に人類の脳がそれへの干渉に成功してしまい、やがて人々がそれを「魔法」と呼ぶようになった世界——現代社会は少年「サジャ」を中心に剣と魔法のファンタジーへと変貌する。4Gamer自身の取材記事によれば、作者のXで公開されているキャラクター紹介は、どれも誰かの黒歴史に存在していそうな厨二病な設定になっているといい、それはまさにタイトルが示す通り——「黒歴史」とは、恥ずかしい過去を指す日本語のスラングだ。Game*Sparkの古参インディーレビュアー吉田輝和氏は、自身が子供の頃ノートにオリジナルキャラクターを描いていたことになぞらえて紹介しているが、これは吉田氏本人の懐かしむ読み解きであり、開発者が公式に述べた制作経緯ではない。発売日は2025年10月23日、価格¥500。13件のレビュー(好評13件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語・英語に対応するが、13件のうち英語レビューは0件——これだけレビュー数が少ないことも踏まえれば、見過ごされているというより、単純にまだ見つかっていないというのが正直なところだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、ゲーム全体が36連戦のボス戦だけで構成されている。だからペース配分のすべてが戦闘そのものに懸かっており、雑魚敵も通路も、個性的な相手同士の間を埋めるための水増しは一切ない。",
+        "新しいファイターはバトルの勝利で得たチケットを使う召喚システムで手に入り、Steam自身の表記によれば重複した召喚でもすでに持っているキャラのレベルが上がる。だから一回一回の勝利が、残る36戦のうち次に誰を連れて行けるかを静かに組み替えていく。",
+        "4Gamer自身の取材記事は、キャラクター紹介の投稿がまるで誰かの恥ずかしい十代のノートから出てきたようだと描写する。それはタイトルがそのまま示している通りだ——「黒歴史」とは、恥ずかしい過去を指す日本語のスラング。だから戦うことになる、あるいは召喚することになる、どのやりすぎなデザインも、すでにその冗談を自覚している。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "水増しを削ぎ落としたボスラッシュが欲しい人——36連戦のボス戦と、そこを選び抜く36体のキャラクターだけで構成されている",
+        "日本のインディーメディアに名前入りで取り上げられた、本当にソロ・自社発売の日本のプロダクションが欲しい人——4Gamer自身の記事と、Game*Sparkの古参レビュアー吉田輝和氏による特集記事",
+        "「好評」タイトル(13件で100%)ながら、これ以上ないほどまだ見つかっていないものを掴みたい人——ゲーム自体は英語対応済みなのに、レビューは文字通り0件が英語",
+      ],
+      bad: [
+        "スコアを信頼する前に統計的に安定した母数が欲しい人——13件は小さな母数で、この記事はそれを飾らずそのまま伝えている",
+        "長時間の物語主導のキャンペーンが欲しい人——本作は2〜6時間で終わる引き締まったボス戦の連続で、エンディングは1種類。無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8962,6 +9062,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "The origin of this series: HER TREES: First Puzzle, released free on itch.io by solo creator Stone, whose own credits on the page state plainly, 'This is the first work in the HER TREES series.' It already carries the core idea this lineage grows from: a point-and-click puzzle solved entirely by moving and combining objects rather than collecting an inventory. Per 4Gamer's own coverage, HER TREES: THE PUZZLE HOUSE on Steam is explicitly the sequel to this free release; unlike some of this site's other self-referential picks, this is not the same content later sold as a paid upgrade, but an independent, separately-built second entry in a series Stone has continued building.",
       ja: "このシリーズの原点——HER TREES: First Puzzle。ソロ制作者Stoneがitch.ioで無料公開した一本で、ページ本体のクレジット欄自身が「今作はHER TREESシリーズ１作目です」と率直に記している。この系譜のひな型となる核心——アイテムを集めるのではなく物を動かし組み合わせることで解くポイント&クリックパズル——を、この時点ですでに備えていた。4Gamer自身の取材記事によれば、Steam版『HER TREES : THE PUZZLE HOUSE』はこの無料版の続編と明記されている。当サイトの他の自己参照系pickとは異なり、これは同じ内容が後に有料版として売り出されたものではなく、Stoneが作り続けているシリーズの、独立して作られた2作目にあたる。",
+    },
+  },
+  // 原点 Furi(The Game Bakers、2016年)。Kuro Rekishi Fighters pick の系譜として新規採用。
+  //   この帰属は開発元ジェッドムの言明ではなく当サイト独自の批評的比較(自信度: 中・parasocial/
+  //   perfect-blue/papers-please/book-of-demons/necrodancer/orcs-must-die/factorio型の判断)。
+  //   現行Steamで販売中のためsteam URLで同定する。
+  "furi": {
+    steam: "423230",
+    blurb: {
+      en: "Furi is a 2016 action game by The Game Bakers that strips a boss-rush down to its purest form, nothing but a sequence of unique, one-on-one duels against distinct opponents, with no regular enemies or exploration to pad the space between them. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that an entire game can be built out of consecutive boss fights alone, where the choice of who to face next is the whole design.",
+      ja: "Furiは、The Game Bakers制作による2016年のアクションゲームで、ボスラッシュを最も純粋な形まで削ぎ落とした一本だ——通常の雑魚敵や探索でその間を埋めることなく、個性的な相手との一対一の決闘だけが連続する。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——連続するボス戦だけでゲーム全体を構成できるという着想、次に誰と戦うかだけが設計のすべてになるという発想、その原点にあたる一本だ。",
     },
   },
 } as const;
