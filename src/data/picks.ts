@@ -7518,6 +7518,104 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "blaze-of-storm": {
+    published: "2026-07-16",
+    publishAt: "2026-07-16",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存 "shoot-em-up" をそのまま使う(新設不要・素直な縦スクロールSTG)。
+    // developer/publisher TERARIN GAMES(自社発売・大手提携なし確認済み)は、Game*Sparkの開発者
+    //   インタビュー(デジゲー博2025取材)本文実読で氏名「Junichi Terayama」・
+    //   体制「基本的には私1人でして…音楽は別の2人…3人ですね」・経歴「活動を始めて10年」「10作目」を
+    //   直接引用確認済み。独立の英語圏インタビュー(Tech-Gaming)でも「the one-man force behind
+    //   TERARIN GAMES」「left my previous corporate job」という符合する証言を確認。Steamストア本体の
+    //   告知文でも「This title marks the 10th anniversary of TERARIN GAMES, a solo developer who has
+    //   continued to release new shmups every year.」と実測確認済み(自己言及・捏造なし)。
+    // 系譜は開発者自身がGame*Sparkインタビューで名指しした影響作「コンパイルのシューティングゲームが
+    //   好きで、『ザナック』や『アレスタ』その影響を受けた作品です」の一次発言に基づき、Zanac(コンパイル、
+    //   リリース日1987年、MSX2版Zanac EXとしてD4EnterpriseのEGGCONSOLEレーベル経由でSteam現行販売中・
+    //   appid 4402830)を新規anchor "zanac-ex" として採用する。D4Enterpriseは開発元ではなく合法
+    //   エミュレーション復刻配信元であり、原開発はコンパイル(Steam自身の説明文が"released in Japan by
+    //   COMPILE in 1987"と明記)。Aleste(アレスタ)は現行Steam版が存在しないため見送り。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・Steam実績/ランキングあり。
+    // west_unreached: 英語レビュー比率は約47.4%(18/38、appreviews API実測)で、当サイトの他記事より
+    //   高め。西未到達を誇張せず、英語圏インタビュー(Tech-Gaming)や英語対応自体は既にある事実を正直に
+    //   本文で述べる(motionrec/parasocial型の判断・obscurity/reachStateは軽めのdeepに留める)。
+    meta: { genre: "shoot-em-up", lineage: "zanac-ex", obscurity: "deep", reviewBand: "hundreds", rarity: { reviews: 38, positivePct: 95, noEnglish: false } },
+    games: [
+      {
+        name_en: "Blaze of Storm",
+        name_ja: "Blaze of Storm",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3513070/Blaze_of_Storm/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, in the year 794 of the Cyber Century, the nation was run by a giant computer called Elixia, which had ended war and poverty by controlling politics, economy, and the military, until unidentified enemies appeared in cyberspace and began eroding its systems; cyberdiver Ayame Crow, one of the rare people who can connect their consciousness directly into cyberspace, boards the cyber fighter Image Striker to investigate and finds a human calling himself Phantom, who uploaded his own mind into cyberspace to seize Elixia and drag humanity into a chaos he calls freedom. Built around that story, it is an arcade-style vertical-scrolling shmup where you fly through cyberspace facing more than 20 unique bosses across 7 stages, choosing among five distinct sub-weapons, satellite, diagonal napalm, an enemy-piercing charge shot, and a directional shot among them, each suited to different situations, and per Steam's own text, every sub-weapon hit detonates an explosion that keeps dealing damage, so chaining that explosion well is the key to clearing a stage. Made and self-published by TERARIN GAMES, the solo alias of creator Junichi Terayama working with two composers, it marks, per Steam's own announcement text, 'the 10th anniversary of TERARIN GAMES, a solo developer who has continued to release new shmups every year,' this being his 10th title after ten years of solo development following a prior corporate job; in an interview with Game*Spark at the 2025 Digige-Haku indie expo, Terayama named Compile's shmups, specifically Zanac and Aleste, as his direct inspirations. It supports online leaderboards and lets you switch between two music modes, original or Mega Drive-sound-chip chiptune. Released February 18, 2026 at ¥1,700, it is Positive at about 95 percent over 38 reviews (36 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English, French, Italian, German, Spanish, Portuguese, and Japanese, and while about 18 of its 38 reviews, some 47 percent, are already in English, and an English-language interview site (Tech-Gaming) has covered Terayama directly, it remains a small, self-published solo shmup with barely three dozen reviews to its name, run by a developer whose main audience so far has stayed niche shmup circles rather than mainstream Western press.",
+        desc_ja: "Steam自身の表記によれば、電脳世紀794年、国家は巨大コンピュータ「エリクシア」によって管理され、政治・経済・軍事の統制によって戦争と貧困を過去のものとしていたが、電脳空間に正体不明の敵が現れシステムを侵食し始める。電脳空間に直接意識を接続できる特殊能力者、サイバーダイバー「アヤメ・クロウ」が電脳戦闘機「イメージストライカー」に搭乗して調査に乗り出すと、その裏には電脳空間に自らの精神をアップロードした人間「ファントム」がおり、彼はエリクシアを支配し人類を自由と称する混沌へ導こうと企んでいた。この物語を軸に据えたアーケードスタイルの縦スクロールシューティングで、7ステージにわたって20体以上の個性豊かなボスと戦い、サテライト・斜め発射のナパーム・敵を貫通するチャージ・移動方向に発射するダイレクトなど5種類のサブウェポンを場面に応じて選ぶ。Steam自身の表記によれば、サブウェポンが敵に接触すると爆風が発生し持続的にダメージを与え、この爆風をうまく連鎖させることが攻略の鍵になる。制作・自社発売はTERARIN GAMES、制作者・寺山淳一氏がソロで(音楽担当2名と組み)手がけるひとりブランドで、Steam自身の告知文によれば本作は「TERARIN GAMES、10周年を迎える節目の一本——毎年新しいシューティングをリリースし続けてきたソロ開発者」であり、元は会社員だった寺山氏が10年間ソロ開発を続けた10作目にあたる。デジゲー博2025取材でのGame*Sparkインタビューでは、コンパイルのシューティングゲーム、特に『ザナック』や『アレスタ』を直接の影響作として名指ししている。オンラインランキングに対応し、オリジナル音楽とメガドライブ音源風チップチューンの2種類を切り替えられる。発売日は2026年2月18日、価格¥1,700。38件のレビュー(好評36件・不評2件、Steam自身のレビューAPI実測)で好評率約95%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。英語・フランス語・イタリア語・ドイツ語・スペイン語・ポルトガル語・日本語に対応し、38件のうち約18件、47%程度がすでに英語レビューで、英語圏のインタビューサイト(Tech-Gaming)も寺山氏を直接取材しているが、それでもまだレビュー数40件に満たない、小規模な自社発売のソロシューティングであり、これまでの主な支持層はマスメディアというよりシューティング愛好家コミュニティに留まっている。",
+      },
+      {
+        name_en: "Zanac EX (MSX2, Compile, 1987)",
+        name_ja: "ザナックEX（MSX2、コンパイル、1987年）",
+        status: "established",
+        steam: "https://store.steampowered.com/app/4402830/EGGCONSOLE_ZANAC_EX_MSX2/",
+        tag_en: "A named influence",
+        tag_ja: "名指しされた影響作",
+        desc_en: "One of the two Compile shmups creator Junichi Terayama named directly as an inspiration in his Game*Spark interview: Zanac EX, the MSX2 edition of Compile's Zanac, released in Japan in 1987 per Steam's own listing, a shooter whose enemy waves adapt in real time to how the player is performing, one of the genre's earliest experiments in a reactive, dynamic-difficulty shmup. Zanac EX is not a new Compile production, but the same 1987 game preserved and republished on Steam by D4Enterprise's EGGCONSOLE label, a legal emulation-based reissue service for classic Japanese computer games; Compile itself went bankrupt and dissolved in the early 2000s, and D4Enterprise operates under license to the IP. Blaze of Storm does not reuse this game's assets or code, only the shmup lineage Terayama says he grew up on.",
+        desc_ja: "制作者・寺山淳一氏がGame*Sparkのインタビューで直接名指しした、コンパイルの2本のシューティングのうちの一本——ザナックEX。コンパイルの『ザナック』のMSX2版で、Steam自身の表記によれば1987年に日本でリリースされた。プレイヤーの腕前にリアルタイムで反応して敵の出現パターンが変化する、シューティングというジャンルの中でも早期に「動的難易度」を実験した作品のひとつだ。ザナックEXはコンパイルによる新作ではなく、この1987年当時のゲームがそのまま保存され、D4Enterprise社の「EGGCONSOLE」レーベル(クラシックな日本産コンピュータゲームを合法的にエミュレーションで復刻配信するサービス)経由でSteamに再配信されたものだ。コンパイル自体は2000年代初頭に経営破綻し解散しており、D4EnterpriseはそのIPのライセンスを得て運営している。『Blaze of Storm』はこの作品の素材やコードを流用しているわけではなく、寺山氏が「育った」と語るシューティングの系譜そのものを受け継いでいる。",
+      },
+    ],
+    en: {
+      title: "Blaze of Storm - an arcade-style vertical shmup where a cyberdiver fights over 20 unique bosses across 7 stages with five switchable sub-weapons, made solo by TERARIN GAMES's Junichi Terayama as his 10th shmup in a 10-year solo career inspired directly by Compile's Zanac and Aleste, Positive at 95 percent over 38 reviews",
+      description: "An arcade-style vertical-scrolling shmup: as a cyberdiver, you fly through cyberspace against more than 20 unique bosses across 7 stages, switching between five distinct sub-weapons whose explosions chain into continuous damage. Made and self-published by TERARIN GAMES, the solo alias of creator Junichi Terayama, marking his 10th shmup after a 10-year solo career following a prior corporate job. Positive at about 95 percent over 38 reviews.",
+      h1a: "A cyberdiver falls into a computer-run world with five sub-weapons and a chain of explosions, ",
+      h1flip: "and more than twenty bosses stand between her and whoever is trying to turn the machine that ended war into a weapon again",
+      h1b: ".",
+      lede: "An arcade-style vertical-scrolling shmup made and self-published by TERARIN GAMES, the solo alias of creator Junichi Terayama, who left a corporate job about ten years ago to make shmups full time; this is his 10th title, and per Steam's own announcement text, its release 'marks the 10th anniversary of TERARIN GAMES, a solo developer who has continued to release new shmups every year.' Per Steam's own listing, in the year 794 of the Cyber Century, the nation was run by a giant computer called Elixia that had ended war and poverty, until unidentified enemies began eroding its systems from within cyberspace; cyberdiver Ayame Crow boards the cyber fighter Image Striker to investigate, and finds a man calling himself Phantom who uploaded his own mind into cyberspace to seize Elixia and drag humanity into a chaos he calls freedom. You fight through more than 20 unique bosses across 7 stages, switching between five distinct sub-weapons, each suited to different situations, whose explosions chain into continuous damage when they connect. In an interview with Game*Spark at the 2025 Digige-Haku indie expo, Terayama named Compile's Zanac and Aleste as his direct inspirations. It supports online leaderboards and a choice between original music or Mega Drive-sound-chip chiptune. Released February 18, 2026 at ¥1,700, it is Positive at about 95 percent over 38 reviews (36 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. About 18 of its 38 reviews, some 47 percent, are already in English, and an English-language site has interviewed Terayama directly, but it remains a small, self-published solo shmup whose audience so far has stayed largely within niche shmup circles.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, every sub-weapon detonates into an explosion that keeps dealing damage on contact, so clearing a stage becomes less about a single well-aimed shot and more about reading the room and chaining hits so those explosions overlap and carry you through a wave.",
+        "More than 20 unique bosses appear across just 7 stages, so almost every level change resets what you're up against, and per Steam's own text, five switchable sub-weapons each suited to different situations means a run is really a series of small decisions about which tool the next fight actually calls for.",
+        "Steam's own announcement text calls this Terayama's 10th shmup in as many years, and once you know that, the choice between original music or Mega Drive-sound-chip chiptune reads less like a nostalgia gimmick and more like a craftsman quietly showing you the exact hardware sound that shaped the genre he has spent a decade building toward.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a classic-style arcade vertical shmup: 7 stages, 20-plus unique bosses, and five sub-weapons whose chained explosions are the actual skill expression",
+        "You want a solo craftsman's tenth entry in a long personal shmup lineage: TERARIN GAMES's Junichi Terayama, a decade in, naming Compile's Zanac and Aleste as his direct influences and giving you a period-accurate chiptune mode to hear where that came from",
+        "You want a Positive title (95 percent over 38 reviews) that has drawn a little English attention (about 47 percent of reviews, one English interview) but is still small enough that its main audience remains niche shmup circles rather than mainstream coverage",
+      ],
+      bad: [
+        "You want a long campaign or a large cast; this is a tight, score-chasing arcade shmup across 7 stages built around one core loop",
+        "You want a title still totally unseen in English; nearly half its reviews are already English, and it is a paid game, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Blaze of Storm - サイバーダイバーが7ステージ・20体以上のボスと戦う、5種のサブウェポン切替式アーケードスタイル縦スクロールシューティング。制作はTERARIN GAMESの寺山淳一氏、10年間のソロ開発10作目で、コンパイルの『ザナック』『アレスタ』を直接の影響作に挙げる。38件のレビューで好評率95%",
+      description: "アーケードスタイルの縦スクロールシューティング。サイバーダイバーとして電脳空間を飛び、7ステージにわたり20体以上の個性豊かなボスと戦い、爆風が持続ダメージへと連鎖する5種類のサブウェポンを使い分ける。制作・自社発売はTERARIN GAMES、制作者・寺山淳一氏がソロで手がけるひとりブランドで、元会社員から10年間のソロ開発を経た10作目にあたる。38件のレビューで好評率約95%の「好評」。",
+      h1a: "サイバーダイバーが、5種のサブウェポンと連鎖する爆風を携えて、コンピュータが統べる世界へ飛び込む。",
+      h1flip: "戦争を終わらせたはずの機械を再び武器に変えようとする者との間には、20体を超えるボスが立ちはだかる",
+      h1b: "。",
+      lede: "制作・自社発売はTERARIN GAMES、制作者・寺山淳一氏がソロで手がけるひとりブランドで、約10年前に会社員を辞めシューティング制作に専念してきた。本作はその10作目で、Steam自身の告知文によれば「TERARIN GAMES、10周年を迎える節目の一本——毎年新しいシューティングをリリースし続けてきたソロ開発者」だという。Steam自身の表記によれば、電脳世紀794年、国家は戦争と貧困を過去のものとした巨大コンピュータ「エリクシア」によって管理されていたが、電脳空間の内側からシステムを侵食する正体不明の敵が現れる。サイバーダイバー「アヤメ・クロウ」が電脳戦闘機「イメージストライカー」に搭乗して調査に乗り出すと、その裏には電脳空間に自らの精神をアップロードし、エリクシアを支配して人類を自由と称する混沌へ導こうと企む「ファントム」という人間の存在があった。7ステージにわたって20体以上の個性豊かなボスと戦い、場面に応じた5種類のサブウェポンを使い分け、接触すると持続ダメージを与える爆風を連鎖させていく。デジゲー博2025取材でのGame*Sparkインタビューで、寺山氏はコンパイルの『ザナック』『アレスタ』を直接の影響作として名指ししている。オンラインランキングに対応し、オリジナル音楽とメガドライブ音源風チップチューンを切り替えられる。発売日は2026年2月18日、価格¥1,700。38件のレビュー(好評36件・不評2件)で好評率約95%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。38件のうち約18件、47%程度がすでに英語レビューで、英語圏のサイトが寺山氏を直接取材してもいるが、それでもまだ主な支持層はマスメディアというよりシューティング愛好家コミュニティに留まる小規模な自社発売タイトルだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、サブウェポンは接触すると持続ダメージを与える爆風を起こす。だから1ステージを抜けるということは、一発の正確な射撃よりも、状況を読んで爆風同士が重なるように連鎖させ、敵の波を押し流していく作業に近くなる。",
+        "20体以上の個性豊かなボスがわずか7ステージの中に登場するため、ステージが切り替わるたびに向き合う相手がほぼ一新される。Steam自身の表記によれば5種類の切替式サブウェポンはそれぞれ場面に適性があり、1プレイは実質的に「次の戦いにはどの武器が要るか」という小さな判断の連続になる。",
+        "Steam自身の告知文は本作を寺山氏の10年間・10作目のシューティングと呼んでいる。それを知ったうえでオリジナル音楽とメガドライブ音源風チップチューンの切り替えに触れると、単なる懐古ギミックというより、この10年間かけて育んできたジャンルを形作った当時のハードのサウンドを、職人が静かに聴かせてくれているように感じられる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "クラシックなアーケード式縦スクロールシューティングが欲しい人——7ステージ・20体超の個性的なボス、爆風の連鎖こそが腕前を試す5種のサブウェポン",
+        "長年のシューティング系譜を歩んできたソロ職人の10作目が欲しい人——TERARIN GAMESの寺山淳一氏が10年を経て、コンパイルの『ザナック』『アレスタ』を直接の影響作に挙げ、その出自を体感できる当時風チップチューンモードまで用意している",
+        "「好評」タイトル(38件で95%)ながら、英語の注目(レビュー約47%・英語インタビュー1件)を少し浴びつつも、主な支持層がまだシューティング愛好家コミュニティに留まる規模感を掴みたい人",
+      ],
+      bad: [
+        "長い物語や多数の登場人物が欲しい人——本作は7ステージのスコアアタック型アーケードシューティングで、単一の核ループに絞り込まれている",
+        "英語圏にまったく知られていないタイトルが欲しい人——レビューの半数近くはすでに英語で、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8298,6 +8396,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "The free original this grew from: posted free on the Japanese game jam site unityroom on December 24, 2023, for the Unity1Week jam's \"send\" theme, by creator AZ. Per its own page, it already carries the same premise this lineage grows from: you play a censor deciding whether letters may pass. That same unityroom page now carries its own update note, announcing the Steam commercial edition is on sale and linking straight to its store page, describing what that edition adds: nearly every letter renewed and more than doubled in number, letter content that shifts with your censorship decisions, a new magnifying-glass tool, and an expanded story with multiple endings. Your letter has been rejected. on Steam is not a new work borrowing that DNA from outside; it is the developer's own commercial expansion of this same free jam game.",
       ja: "本作が育った、その無料版の原点——2023年12月24日、日本のゲームジャムサイト「unityroom」で、Unity1週間ゲームジャムの「おくる」お題に応じて、制作者AZ.が無料公開した。その配信ページ自体によれば、この時点ですでにこの系譜のひな型——手紙を通すか通さないかを判断する検閲官を演じる——を備えていた。その同じunityroomページには今、Steam商業版が発売中であることを告げる追記があり、ストアページへ直接リンクしたうえで、その商業版で加わった要素——手紙をほぼ全て刷新し数を倍以上に増やしたこと、検閲の結果で手紙の内容が変化するようになったこと、新ツール「ルーペ」の追加、複数のエンディングへ拡張されたストーリー——を記している。Steam版『Your letter has been rejected.』は、外部からこのDNAを借りた新作ではない——開発者本人による、この同じ無料ジャムゲームの商業拡張版だ。",
+    },
+  },
+  // 原点 Zanac EX(MSX2、コンパイル、リリース日1987年)。Blaze of Storm pick の開発者・寺山淳一氏が
+  //   Game*Sparkインタビューで直接名指しした影響作。現行版はD4EnterpriseのEGGCONSOLEレーベル経由の
+  //   合法エミュレーション復刻でSteam現行販売中(appid 4402830)。原開発はコンパイル(Steam自身の
+  //   説明文が"released in Japan by COMPILE in 1987"と明記)、D4Enterpriseは復刻配信元。
+  "zanac-ex": {
+    steam: "4402830",
+    blurb: {
+      en: "Zanac EX is the MSX2 edition of Compile's Zanac, released in Japan in 1987 per Steam's own listing, a shooter whose enemy waves adapt in real time to how the player is performing, one of the genre's earliest experiments in a reactive, dynamic-difficulty shmup. It is not a new Compile production but the same 1987 game preserved and republished on Steam by D4Enterprise's EGGCONSOLE label, a legal emulation-based reissue service for classic Japanese computer games; Compile itself went bankrupt and dissolved in the early 2000s, and D4Enterprise operates under license to the IP. Creator Junichi Terayama of TERARIN GAMES named Zanac, alongside Compile's Aleste, as a direct inspiration in an interview with Game*Spark; Blaze of Storm does not reuse this game's assets or code, only the shmup lineage he says he grew up on.",
+      ja: "ザナックEXは、コンパイルの『ザナック』のMSX2版で、Steam自身の表記によれば1987年に日本でリリースされた。プレイヤーの腕前にリアルタイムで反応して敵の出現パターンが変化する、シューティングというジャンルの中でも早期に「動的難易度」を実験した作品のひとつだ。コンパイルによる新作ではなく、この1987年当時のゲームがそのまま保存され、D4Enterprise社の「EGGCONSOLE」レーベル(クラシックな日本産コンピュータゲームを合法的にエミュレーションで復刻配信するサービス)経由でSteamに再配信されたもの。コンパイル自体は2000年代初頭に経営破綻し解散しており、D4EnterpriseはそのIPのライセンスを得て運営している。TERARIN GAMESの制作者・寺山淳一氏は、Game*Sparkのインタビューでコンパイルの『アレスタ』と並べて本作を直接の影響作として名指ししている。『Blaze of Storm』はこの作品の素材やコードを流用しているわけではなく、寺山氏が「育った」と語るシューティングの系譜そのものを受け継いでいる。",
     },
   },
 } as const;
