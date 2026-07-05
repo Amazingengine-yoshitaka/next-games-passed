@@ -8823,6 +8823,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dungeon-bomber": {
+    published: "2026-07-23",
+    publishAt: "2026-07-23",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Casual/Indie/RPG)がゲーム性を捉えていないため新設 "bomb-chain-roguelite"
+    //   (毎ターン爆弾を設置・誘爆させ、コインでデッキを強化し、爆弾同士を合成してダンジョンを掘り進む
+    //   ターン制ローグライト)。
+    // developer/publisher TUKUCHAU-OJISAN(作っちゃうおじさん/hothukurou、自社発売・第三者パブリッシャー
+    //   なし)は個人開発者。専任の裏取りエージェントがhothukurou.com(公式サイト)・0en-game.com(日本の
+    //   フリーゲーム投稿コミュニティ)・note.com本人アカウント・4gamer発売元データベースを一次確認し、
+    //   会社を辞めてゲーム制作一本で生計を立てられるか検証しながら、10年以上にわたりほぼ日本語のみで
+    //   ブラウザゲームを月1ペース前後で公開し続けてきた人物であることを確認済み。国籍そのものの直接
+    //   明言はないが、発信がすべて日本語のみ・日本の大学制度に基づく言い回し・日本語フリーゲーム
+    //   コミュニティでの継続活動、という状況証拠の複合による判断(自信度: 中)。
+    // 西側での知名度: 専任の裏取りエージェントがAUTOMATON(日本語版・WEST版とも)・Kotaku・PC Gamer・
+    //   Rock Paper Shotgun・IndieGamesPlus・Thinky Gamesを個別に確認し、実質的な編集記事・レビューは
+    //   一件も発見できなかった(KotakuはIGDB由来の自動生成ページのみ)。開発者本人も前作も西側では
+    //   ほぼ無名という、Öoo/NamaTakahashi氏の事案(開発者自身が海外著名人から称賛された前作を持つため
+    //   見送った)とは対照的な、より徹底した無名性を確認できたため採用する。
+    // 前作『Dungeon Destroyer』(appid 3596100、使用済みリスト外)との関係: 同一開発者作。開発者自身の
+    //   note記事で「ローグライク+道繋ぎパズル」は面白さに気づくまで時間がかかるという反省から、
+    //   わかりやすい爆発と連鎖の楽しさを軸に新規開発した独立作品と明言しており、単純な続編ではない。
+    //   Steam上は同一開発者の「フランチャイズ」としてまとめられ、軽い橋渡し要素はある。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・購入可能(Add to Cartボタン実測)、
+    //   アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は英語含む3言語だが、appreviews API実測で全25件のうち英語レビューは
+    //   4件(16%)、日本語レビューは21件(84%)——英語対応済みでも西へ未到達の典型例として obscurity:
+    //   "deep" を採用する。レビュー総数25件は好評率100%だが、Steamの表示仕様上50件未満のため
+    //   「圧倒的に好評」ラベルは付与されず「好評」表示に留まる点も正直に開示する。
+    meta: { genre: "bomb-chain-roguelite", lineage: "bomberman", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 25, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "Dungeon Bomber",
+        name_ja: "ダンジョンボンバー",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4207690/Dungeon_Bomber/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a chain-reaction bomb-placing roguelite: each turn, you place a bomb from your hand and set it off, blasting coin blocks for money, defeating enemies, and digging deeper into the dungeon. Bombs vary in power, blast range, and special traits, coins collected let you level up and unlock stronger ones, and fusing bombs together increases blast radius or passes on special effects, letting you build toward a single custom 'ultimate bomb.' Monsters buried in the dungeon gradually advance, and if they reach the bottom, you take damage; the goal is destroying the required number of blocks before your HP hits zero. Made and self-published solo by developer TUKUCHAU-OJISAN (also known as hothukurou), a prolific individual creator who, per their own official site and Japanese indie-game community listings, has spent over a decade publishing free browser games in Japanese at a near-monthly pace, while quitting a company job to test whether making games could support them full time. Their previous game, Dungeon Destroyer, used different mechanics, a roguelike crossed with a path-connecting puzzle, and per the developer's own account was reworked into this more immediately satisfying bomb-and-chain-reaction design as a deliberately independent follow-up, not a direct sequel. Released at ¥625, it is Positive at 100 percent over 25 reviews (25 positive, 0 negative per Steam's own review API); Steam's display rules mean a title needs at least 50 reviews before an 'Overwhelmingly Positive' label can appear, so a perfect score this early still shows as plain 'Positive,' a fact this pick states plainly. It is a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English along with Japanese and Simplified Chinese, and of its 25 reviews, 21 (84 percent) are in Japanese against just 4 (16 percent) in English; a dedicated check of English-language outlets, including AUTOMATON WEST, Kotaku, PC Gamer, Rock Paper Shotgun, IndieGamesPlus, and Thinky Games, turned up no editorial coverage of this game or its developer at all.",
+        desc_ja: "Steam自身の表記によれば、本作は爆弾を設置して誘爆させる“爆破連鎖ローグライト”だ。ルールはシンプルで、毎ターン手札から爆弾を設置して爆発させ、コインブロックを爆破してお金を稼ぎ、敵を倒しながらダンジョンを掘り進める。爆弾ごとに攻撃力・爆破範囲・特性が異なり、集めたコインでレベルアップすれば新たな強力爆弾を獲得でき、爆弾同士を合成すれば爆破範囲アップや特殊効果の継承といったさらなる強化が可能で、自分だけの「最強爆弾」を作り出せる。ダンジョン内には徐々に近づいてくるモンスターが埋まっており、最下段に到達するとダメージを受ける——攻撃でHPが0になるまでに指定された数のブロックを破壊するのが目標だ。制作・自社発売はソロ開発者・TUKUCHAU-OJISAN(hothukurouとしても知られる)。公式サイトや日本のフリーゲームコミュニティの紹介記事によれば、会社を辞めてゲーム制作一本で生計を立てられるか検証しながら、10年以上にわたりほぼ日本語のみで無料ブラウザゲームを月1ペース前後で公開し続けてきた多作な個人開発者だ。前作『Dungeon Destroyer』は「ローグライク+道繋ぎパズル」という異なるゲーム性だったが、開発者自身のnote記事によれば「面白さに気づくまで時間がかかる」という反省から、より直感的に楽しい爆発と連鎖を軸にした本作を、単純な続編ではなく意図的に独立した新作として作り直したという。価格¥625で、25件のレビュー(好評25件・不評0件、Steam自身のレビューAPI実測)で好評率100%。Steamの表示仕様上、レビュー総数50件に満たないと「圧倒的に好評」ラベルは付与されないため、この時点での満点評価も表示上は「好評」に留まる点を正直に開示する。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は英語・日本語・簡体字中国語で、25件のうち21件(84%)が日本語レビューである一方、英語レビューは4件(16%)に留まる。AUTOMATON WEST・Kotaku・PC Gamer・Rock Paper Shotgun・IndieGamesPlus・Thinky Gamesを個別に確認したが、本作・開発者いずれについても実質的な編集記事は一件も見つからなかった。",
+      },
+      {
+        name_en: "SUPER BOMBERMAN COLLECTION",
+        name_ja: "SUPER BOMBERMAN COLLECTION",
+        status: "established",
+        steam: "https://store.steampowered.com/app/3756010/SUPER_BOMBERMAN_COLLECTION/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Bomberman, Konami's genre-defining series about placing bombs and triggering chain-reaction blasts, available on Steam as SUPER BOMBERMAN COLLECTION, an official compilation gathering seven classic SUPER BOMBERMAN titles across their Japanese, European, and American versions. It established, long before any roguelike deckbuilder existed, the basic idea that a single planted bomb detonating into a chain reaction could be the entire core of a game. Dungeon Bomber is not an official Bomberman work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer TUKUCHAU-OJISAN, but it carries that same founding idea into a new frame: turn-by-turn bomb placement and chain-reaction blasts through a dungeon, wrapped in a card-collecting, bomb-fusing roguelite structure.",
+        desc_ja: "この味の原点——Bomberman。爆弾を設置して誘爆の連鎖を起こすという、コナミによるジャンル定義的なシリーズで、Steamでは往年のSUPER BOMBERMANシリーズ7作を日本版・欧州版・北米版横断で収録した公式コレクション「SUPER BOMBERMAN COLLECTION」として入手できる。ローグライク・デッキビルダーというジャンルが存在するはるか以前から、「置いた一つの爆弾が誘爆連鎖を起こす」という発想だけでゲームの核が成立する、という着想を確立した一本だ。ダンジョンボンバーは公式のBomberman作品ではなく、この系譜は開発元TUKUCHAU-OJISAN自身が明言した関連性ではなく当サイト独自の批評的比較だが、同じ発祥の着想を新しい枠組みへと引き継いでいる——ターン制の爆弾設置とダンジョンを貫く誘爆連鎖を、カード収集と爆弾合成のローグライト構造で包み直したものだ。",
+      },
+    ],
+    en: {
+      title: "Dungeon Bomber - a turn-by-turn chain-reaction bomb-placing roguelite where you fuse bombs and blast through a dungeon, made solo by a prolific, decade-plus Japanese browser-game creator with no editorial coverage anywhere in the West. Positive at 100 percent over 25 reviews, only 16 percent in English",
+      description: "A chain-reaction bomb-placing roguelite: each turn, place a bomb from your hand, blast coin blocks and enemies, and fuse bombs together to dig deeper into the dungeon. Made and self-published solo by developer TUKUCHAU-OJISAN, a prolific creator with over a decade of free Japanese browser games behind them. Positive at 100 percent over 25 reviews, with no editorial coverage found anywhere in Western game media.",
+      h1a: "Each turn you place one bomb from your hand and set it off, chaining blast into blast to dig through the dungeon, ",
+      h1flip: "and a solo developer with over a decade of free browser games behind them has never once been written about in the West",
+      h1b: ".",
+      lede: "A chain-reaction bomb-placing roguelite made and self-published solo by developer TUKUCHAU-OJISAN (also known as hothukurou), a prolific individual creator who, per their own official site and Japanese indie-game community listings, has spent over a decade publishing free browser games in Japanese at a near-monthly pace, while quitting a company job to test whether making games could support them full time. Per Steam's own listing, each turn you place a bomb from your hand and set it off, blasting coin blocks for money, defeating enemies, and digging deeper into the dungeon; bombs vary in power, blast range, and special traits, coins let you level up and unlock stronger ones, and fusing bombs together increases blast radius or passes on special effects, letting you build toward a single custom 'ultimate bomb.' Monsters buried in the dungeon gradually advance, and if they reach the bottom, you take damage; the goal is destroying the required number of blocks before your HP hits zero. Their previous game, Dungeon Destroyer, used different mechanics, a roguelike crossed with a path-connecting puzzle, and per the developer's own account was reworked into this more immediately satisfying bomb-and-chain-reaction design as a deliberately independent follow-up, not a direct sequel. Priced at ¥625, it is Positive at 100 percent over 25 reviews (25 positive, 0 negative); Steam's display rules mean a title needs at least 50 reviews before an 'Overwhelmingly Positive' label can appear, so a perfect score this early still shows as plain 'Positive,' a fact this pick states plainly. It is a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English along with Japanese and Simplified Chinese, and of its 25 reviews, 21 (84 percent) are in Japanese against just 4 (16 percent) in English; a dedicated check of English-language outlets, including AUTOMATON WEST, Kotaku, PC Gamer, Rock Paper Shotgun, IndieGamesPlus, and Thinky Games, turned up no editorial coverage of this game or its developer at all, a more thorough kind of unfound than most picks on this site, and a deliberate contrast with an earlier candidate this site passed on for having a developer already known in Western indie circles through a previous, celebrated game.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, the entire loop reduces to one action, place a bomb and set it off, so the strategy lives entirely in which bomb from your hand you commit to a spot, and in watching one detonation clip into the next.",
+        "Fusing bombs to inherit range and special effects toward a single custom 'ultimate bomb' turns the deck itself into the thing you're slowly building, so the dungeon underneath starts to feel less like an obstacle and more like the proving ground for whatever you've fused together.",
+        "This is a solo creator's second attempt at a bomb-roguelite after a first one they say was hard to enjoy until you were already deep into it, and knowing they rebuilt it around a simpler, more immediately satisfying core recolors every 'place a bomb, watch it chain' turn as a design lesson already learned.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a turn-by-turn bomb-placement roguelite where deck-building means fusing explosives into a single ultimate bomb, not drawing cards",
+        "You want a genuinely solo Japanese production from a decade-plus prolific creator, self-published with no external publisher at any stage",
+        "You want a Positive title (100 percent over 25 reviews) that no Western outlet has written a word about: this pick checked AUTOMATON WEST, Kotaku, PC Gamer, Rock Paper Shotgun, IndieGamesPlus, and Thinky Games directly and found nothing",
+      ],
+      bad: [
+        "You want a large, statistically settled review base before you trust a perfect score; 25 reviews is thin enough that Steam itself won't yet call it 'Overwhelmingly Positive,' and this pick says so plainly",
+        "You want real-time action; this is turn-based, and per Steam's own content descriptors it has nothing sexual, is fully launched, not Early Access, and not free",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ダンジョンボンバー - 爆弾を合成して誘爆連鎖でダンジョンを掘り進む、ターン制の爆破連鎖ローグライト。制作は10年以上ブラウザゲームを作り続けるソロ開発者で、西側での編集記事はどこにも見つからない。25件のレビューで好評率100%、英語レビューは16%",
+      description: "爆破連鎖ローグライト——毎ターン手札から爆弾を設置し、コインブロックや敵を爆破し、爆弾同士を合成しながらダンジョンを掘り進む。制作・自社発売はソロ開発者・TUKUCHAU-OJISAN、10年以上にわたり無料ブラウザゲームを作り続けてきた多作な個人開発者だ。25件のレビューで好評率100%、西側のゲームメディアでは編集記事が一件も見つからなかった。",
+      h1a: "毎ターン、手札から爆弾を一つ置いて爆発させる。爆破が爆破へと連鎖しながらダンジョンを掘り進む——",
+      h1flip: "10年以上ブラウザゲームを作り続けてきたそのソロ開発者は、西側では一度も記事にされたことがない",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者・TUKUCHAU-OJISAN(hothukurouとしても知られる)による爆破連鎖ローグライト。公式サイトや日本のフリーゲームコミュニティの紹介記事によれば、会社を辞めてゲーム制作一本で生計を立てられるか検証しながら、10年以上にわたりほぼ日本語のみで無料ブラウザゲームを月1ペース前後で公開し続けてきた多作な個人開発者だ。Steam自身の表記によれば、毎ターン手札から爆弾を設置して爆発させ、コインブロックを爆破してお金を稼ぎ、敵を倒しながらダンジョンを掘り進める。爆弾ごとに攻撃力・爆破範囲・特性が異なり、集めたコインでレベルアップすれば新たな強力爆弾を獲得でき、爆弾同士を合成すれば爆破範囲アップや特殊効果の継承といったさらなる強化が可能で、自分だけの「最強爆弾」を作り出せる。ダンジョン内には徐々に近づいてくるモンスターが埋まっており、最下段に到達するとダメージを受ける——攻撃でHPが0になるまでに指定された数のブロックを破壊するのが目標だ。前作『Dungeon Destroyer』は「ローグライク+道繋ぎパズル」という異なるゲーム性だったが、開発者自身のnote記事によれば「面白さに気づくまで時間がかかる」という反省から、より直感的に楽しい爆発と連鎖を軸にした本作を、単純な続編ではなく意図的に独立した新作として作り直したという。価格¥625で、25件のレビュー(好評25件・不評0件)で好評率100%。Steamの表示仕様上、レビュー総数50件に満たないと「圧倒的に好評」ラベルは付与されないため、この時点での満点評価も表示上は「好評」に留まる点を正直に開示する。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は英語・日本語・簡体字中国語で、25件のうち21件(84%)が日本語レビューである一方、英語レビューは4件(16%)に留まる。AUTOMATON WEST・Kotaku・PC Gamer・Rock Paper Shotgun・IndieGamesPlus・Thinky Gamesを個別に確認したが、本作・開発者いずれについても実質的な編集記事は一件も見つからなかった——これは、前回このサイトが見送った候補(海外の著名人から称賛された前作を持つ開発者)とは対照的な、より徹底した無名性だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、ループの全体は「爆弾を置いて爆発させる」というたった一つの行為に集約される。だから戦略のすべては、手札のどの爆弾をどこに置くか、そして一つの爆発が次の爆発へと連鎖していくのを見届けることに宿る。",
+        "爆弾を合成して範囲や特殊効果を継承させ、自分だけの「最強爆弾」を目指す構造は、デッキそのものをゆっくり育てていく感覚を生む。だから足元のダンジョンは障害物というより、これまで合成してきたものを試す実験場のように感じられてくる。",
+        "本作は、ソロ開発者が「面白さに気づくまで時間がかかった」と自ら語る前作の反省を経て挑んだ、爆弾ローグライトの2作目だ。よりシンプルで直感的に楽しい核へと作り直したと知ったうえで触れると、「爆弾を置いて連鎖を見守る」という一手一手が、すでに学ばれた設計の教訓のように見えてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ターン制の爆弾設置ローグライトが欲しい人——デッキ構築はカードを引くことではなく、爆弾同士を合成して最強の一発を作ることで進む",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——10年以上作り続けてきた多作な個人開発者が、外部発売元を一切介さず届けた一本",
+        "「好評」タイトル(25件で100%)ながら、西側のどのメディアも一言も触れていないものを掴みたい人——AUTOMATON WEST・Kotaku・PC Gamer・Rock Paper Shotgun・IndieGamesPlus・Thinky Gamesを直接確認しても何も見つからなかった",
+      ],
+      bad: [
+        "満点評価を信頼する前に統計的に安定した母数が欲しい人——25件はSteam自身が「圧倒的に好評」を名乗るにはまだ足りない薄さで、この記事はそれを飾らずそのまま伝えている",
+        "リアルタイムアクションが欲しい人——本作はターン制で、Steam自身のコンテンツディスクリプタ上性的な要素もなく、アーリーアクセスではなく正式リリース済みの有料タイトルだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9739,6 +9844,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Resident Evil is CAPCOM's foundational 1996 survival horror, available on Steam as the 2015 biohazard HD REMASTER, which established the template still associated with the genre: a mansion full of the undead where firearms are scarce, fragile, and precious, but they work, so every encounter is a real, winnable fight over how to spend a shrinking stock of ammunition rather than a puzzle about how to run away. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer Noto Muteki, but it is the direct genre convention that game's own store text names and reacts against.",
       ja: "Resident Evil(バイオハザード)は、CAPCOMによる1996年のサバイバルホラーの原点で、Steamでは2015年配信のbiohazard HD REMASTERとして入手できる。屋敷を埋め尽くすアンデッドに対し、銃器は乏しく脆く貴重だが、確かに効く——だからあらゆる遭遇は「どう逃げるか」のパズルではなく、残り少ない弾薬をどう配分するかという、勝ち筋のある本物の戦いになる、というジャンルの型を確立した一本だ。この系譜は、ここで結びつける開発元霧笛ノト自身が明言した関連性ではなく、当サイト独自の批評的比較だが、近畿霊務局自身のストア文言が名指しで意識し、そこへの回帰を掲げているジャンルの型そのものである。",
+    },
+  },
+  // 原点 Bomberman(コナミ、Steamでは往年のSUPER BOMBERMANシリーズ7作を収録した公式コレクションで
+  //   入手可能)。Dungeon Bomber pick の系譜として新規採用。この帰属は開発元TUKUCHAU-OJISAN自身の言明
+  //   ではなく当サイト独自の批評的比較(自信度: 中・parasocial/perfect-blue/papers-please等と同型の
+  //   判断)。爆弾を置いて誘爆させる、というアイデアそのものを世界的に定義した先行作として選定。
+  //   現行Steamで販売中のためsteam URLで同定する。
+  "bomberman": {
+    steam: "3756010",
+    blurb: {
+      en: "Bomberman is Konami's genre-defining series about placing bombs and triggering chain-reaction blasts, available on Steam as SUPER BOMBERMAN COLLECTION, a 2026 official compilation gathering seven classic SUPER BOMBERMAN titles across their Japanese, European, and American versions, including the previously Japan-only SUPER BOMBERMAN 4 and 5. It established, decades before any roguelike deckbuilder existed, the basic idea that a single planted bomb detonating into a chain reaction could be the entire core of a game. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer TUKUCHAU-OJISAN, but Dungeon Bomber's own turn-by-turn bomb placement and chain-reaction blasts through a dungeon carry that same founding idea into a card-collecting, bomb-fusing roguelite frame.",
+      ja: "Bombermanは、爆弾を設置して誘爆の連鎖を起こすという、コナミによるジャンル定義的なシリーズで、Steamでは2026年配信の公式コレクション「SUPER BOMBERMAN COLLECTION」として入手できる。日本版・欧州版・北米版を横断する往年のSUPER BOMBERMANシリーズ7作を収録し、これまで日本国内版のみだったSUPER BOMBERMAN 4・5の待望のローカライズ版も含む。ローグライク・デッキビルダーというジャンルが存在するはるか以前から、「置いた一つの爆弾が誘爆連鎖を起こす」という発想だけでゲームの核が成立する、という着想を確立した一本だ。この系譜は、ここで結びつける開発元TUKUCHAU-OJISAN自身が明言した関連性ではなく、当サイト独自の批評的比較だが、Dungeon Bomberのターン制の爆弾設置とダンジョンを貫く誘爆連鎖は、まさにこの原点の発想を、カード収集と爆弾合成のローグライトという新しい枠組みへと引き継いでいる。",
     },
   },
 } as const;
