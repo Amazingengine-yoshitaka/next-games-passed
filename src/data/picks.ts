@@ -8012,6 +8012,107 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "her-trees-the-puzzle-house": {
+    published: "2026-07-19",
+    publishAt: "2026-07-19",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「物を動かし重ね合わせて解く非言語のポイント&クリックパズル」を捉える語が
+    //   ないため新設 "object-overlay-puzzle"。
+    // developer/publisher Stone(個人・自社発売・第三者パブリッシャーなし)は、4Gamer記事本文実読で
+    //   「個人ゲーム開発者のstone氏」と明記されていることを確認済み。X(@stonetreebook)の発信が一貫
+    //   して日本語であること、日本のゲームメディア(4Gamer)のみが継続取材している点を状況証拠として
+    //   採用する。国籍の直接一次証言までは確認できず、これはkung-fu-beat/your-letter-has-been-
+    //   rejected/auto-rogue型の確度である旨を正直に自覚する。
+    // 系譜は自己参照: Stone氏がitch.ioで無料公開した『HER TREES: First Puzzle』(シリーズ1作目、
+    //   itch.io本体のcredits欄に"This is the first work in the HER TREES series"と明記)を新規anchor
+    //   "her-trees-first-puzzle" として採用する。ただしkageroh/moonpalace/5omeday/your-letter-
+    //   original型(同一内容を無料版→商業拡張)とは異なり、本作Steamストア自身の文言も"This is the
+    //   second installment in the series"と明記する通り、同一シリーズの独立した続編(ポータル→
+    //   ポータル2型)である。無料版itch.ioページ自体に商業版への直接リンクは確認できなかったため、
+    //   その正直な区別を踏まえた上で採用する(4Gamer記事が「itch.ioで配信されたHER TREES: First
+    //   Puzzleの続編」と明記していることを一次裏付けとする)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI(なお同開発者の次作PUZZLE DREAM、appid 3300800には
+    //   AI開示があり別作品として明確に区別する)。is_free=false。
+    // west_unreached: 英語レビュー比率は約29.5%(281/952、appreviews API実測)。同開発者の続編『HER
+    //   TREES: PUZZLE DREAM』のKotakuページは実測確認の結果、編集記事ではなく自動生成のゲームDB
+    //   ページに過ぎないことを独立WebFetchで確認済み(パズル専門メディアThinky Gamesのみが実質的な
+    //   特集記事を掲載)。本作THE PUZZLE HOUSE自体は西側大手メディアに未だレビューされていない。
+    meta: { genre: "object-overlay-puzzle", lineage: "her-trees-first-puzzle", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 952, positivePct: 95, noEnglish: false } },
+    games: [
+      {
+        name_en: "HER TREES : THE PUZZLE HOUSE",
+        name_ja: "HER TREES : THE PUZZLE HOUSE",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2725090/HER_TREES__THE_PUZZLE_HOUSE/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a point-and-click puzzle game where every solution comes from moving and combining objects rather than collecting an inventory, uncovering the mysteries of one peculiar room; it is the second installment in the HER TREES series, though the store text says outright you can start here without any issues. Every puzzle is built to be intuitive, needing no tedious calculation or note-taking, hints and answers are available if you get stuck, and the whole game runs about an hour through a dark storybook-like, dreamlike world in unique hand-drawn monochrome art with calm ambient sound. It is explicitly non-verbal by design, so no language is required to play, and per Steam's own text, since everything is monochrome there are no puzzles that depend on color perception, and none depend on sound either. Made and self-published solo by developer Stone, whom 4Gamer's own coverage describes plainly as 'a solo game developer,' calling this the sequel to Stone's free itch.io release HER TREES: First Puzzle. Released February 29, 2024 at ¥235, it is Very Positive at about 94.7 percent over 952 reviews (902 positive, 50 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports over a hundred languages by design (being wordless), and while about 281 of its 952 reviews, some 29.5 percent, are already in English, no major Western outlet has reviewed this specific game; even Stone's own later, more widely covered sequel has only a database-style listing on Kotaku, not an actual review, with real editorial coverage so far limited to the puzzle-specialist site Thinky Games.",
+        desc_ja: "Steam自身の表記によれば、本作はポイント&クリック式のパズルゲームで、アイテムを集めるのではなく物を動かし組み合わせることで謎を解き、この奇妙な部屋の謎を解き明かしていく。HER TREESシリーズの2作目にあたるが、ストア文言自身が「ここからプレイしても大丈夫」と明言している。すべてのパズルは面倒な計算やメモが不要な「ひらめき系」で作られており、詰まった時にはヒントと答えを見ることもできる。プレイ時間は約1時間、暗い絵本のような夢の中の世界観を、手書きの独特なモノクロームグラフィックと落ち着いたアンビエントサウンドで描く。設計上明確に非言語で、言語を必要とせずに遊べ、Steam自身の表記によれば全てモノクロームなので色覚に依存するパズルは存在せず、音に依存するパズルも存在しない。制作・自社発売はソロ開発者Stone。4Gamerの取材記事は本人を率直に「個人ゲーム開発者のstone氏」と紹介し、本作をStone氏がitch.ioで無料公開した『HER TREES: First Puzzle』の続編と明記している。発売日は2024年2月29日、価格¥235。952件のレビュー(好評902件・不評50件、Steam自身のレビューAPI実測)で好評率約94.7%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。非言語設計ゆえ100を超える言語に対応するが、952件のうち約281件、29.5%程度がすでに英語レビューである一方、この本作自体はまだ西側大手メディアにレビューされていない——Stone氏のより広く知られた後続作でさえ、Kotakuには実記事ではなくデータベース的な掲載があるのみで、実質的な特集記事はパズル専門メディアThinky Gamesに留まっている。",
+      },
+      {
+        name_en: "HER TREES : First Puzzle (free itch.io original, 2022)",
+        name_ja: "HER TREES : First Puzzle（itch.io無料版・シリーズ1作目）",
+        status: "established",
+        itchio: "https://stonetreebook.itch.io/her-trees",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The origin of this series: HER TREES: First Puzzle, released free on itch.io by solo creator Stone, whose own credits on the page state plainly, 'This is the first work in the HER TREES series.' It already carries the core idea this lineage grows from: a point-and-click puzzle solved entirely by moving and combining objects rather than collecting an inventory. Per 4Gamer's own coverage, HER TREES: THE PUZZLE HOUSE on Steam is explicitly the sequel to this free release; unlike some of this site's other self-referential picks, this is not the same content later sold as a paid upgrade, but an independent, separately-built second entry in a series Stone has continued building, one free puzzle box followed by another.",
+        desc_ja: "このシリーズの原点——HER TREES: First Puzzle。ソロ制作者Stoneがitch.ioで無料公開した一本で、ページ本体のクレジット欄自身が「今作はHER TREESシリーズ１作目です」と率直に記している。この系譜のひな型となる核心——アイテムを集めるのではなく物を動かし組み合わせることで解くポイント&クリックパズル——を、この時点ですでに備えていた。4Gamer自身の取材記事によれば、Steam版『HER TREES : THE PUZZLE HOUSE』はこの無料版の続編と明記されている。当サイトの他の自己参照系pickとは異なり、これは同じ内容が後に有料版として売り出されたものではなく、Stoneが作り続けているシリーズの、独立して作られた2作目にあたる——ひとつの無料パズル箱の後に、また別のパズル箱が続いた、という関係だ。",
+      },
+    ],
+    en: {
+      title: "HER TREES : THE PUZZLE HOUSE - a wordless point-and-click puzzle game where you solve everything by moving and combining objects rather than collecting an inventory, made solo by developer Stone as the sequel to a free itch.io original, Very Positive at about 94.7 percent over 952 reviews though not yet reviewed by a single major Western outlet",
+      description: "A wordless point-and-click puzzle game: every solution comes from moving and combining objects, not collecting an inventory, told through hand-drawn monochrome art and calm ambient sound, with no puzzle that depends on color perception or sound. Made and self-published solo by developer Stone as the sequel to a free itch.io original. Very Positive at about 94.7 percent over 952 reviews, with English readers still under 30 percent.",
+      h1a: "Every puzzle in this peculiar house is solved the same way, by moving and combining objects with no words at all, ",
+      h1flip: "and the whole hour-long mystery is built so that color blindness or deafness never once blocks a single answer",
+      h1b: ".",
+      lede: "A wordless point-and-click puzzle game made and self-published solo by developer Stone, the sequel to a free itch.io original released under the same series. Per Steam's own listing, every solution comes from moving and combining objects rather than collecting an inventory, uncovering the mysteries of one peculiar room, and the store text says outright you can start here without any issues even as the series' second installment. Every puzzle is built to be intuitive, hints and answers are available if you get stuck, and the whole game runs about an hour through a dark storybook-like, dreamlike world in unique hand-drawn monochrome art with calm ambient sound; it is explicitly non-verbal by design, and per Steam's own text, since everything is monochrome there are no puzzles that depend on color perception, and none depend on sound either. 4Gamer's own coverage describes Stone plainly as 'a solo game developer' and calls this the sequel to Stone's free itch.io release HER TREES: First Puzzle. Released February 29, 2024 at ¥235, it is Very Positive at about 94.7 percent over 952 reviews (902 positive, 50 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. About 281 of its 952 reviews, some 29.5 percent, are already in English, but no major Western outlet has reviewed this specific game; even Stone's later, more widely covered sequel has only a database-style listing on Kotaku, not an actual review, with real editorial coverage so far limited to the puzzle-specialist site Thinky Games.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, nothing here is collected into an inventory to be used later; every solution comes from physically moving and combining the objects already in front of you, so a puzzle stops being a search for the right item and becomes a question of what this thing looks like once it's touching that one.",
+        "The game is non-verbal and entirely monochrome by design, and per Steam's own text this specifically means no puzzle depends on color perception or sound, so the whole mystery is built, quietly and without announcing it, to never once lock out a player for reasons that have nothing to do with how well they think.",
+        "4Gamer's own coverage calls Stone plainly a solo developer, and this is the second small puzzle box built alone under the same series name as a free itch.io original, so the roughly hour-long mystery you're solving is also, in miniature, one person's second attempt at the same idea, done again on their own.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a puzzle game where the whole language is moving and combining objects, no inventory, no text, no sound-dependent or color-dependent tricks",
+        "You want a genuinely solo Japanese production carried across a series: developer Stone's second entry, built on a free itch.io original under the same name",
+        "You want a Very Positive title (about 94.7 percent over 952 reviews) that no major Western outlet has reviewed yet, not even Kotaku, which lists it only as an auto-generated database entry",
+      ],
+      bad: [
+        "You want a long game; this one runs about an hour, built around a single peculiar room and one core puzzle language",
+        "You want a title already covered by major English-language press; it is a paid game, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual, but real Western coverage so far belongs to a niche puzzle-specialist site, not a household name",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "HER TREES : THE PUZZLE HOUSE - アイテムを集めるのではなく物を動かし組み合わせて解く、非言語のポイント&クリックパズル。制作はソロ開発者Stone、無料itch.io原作の続編。952件のレビューで好評率約94.7%ながら、西側大手メディアにはまだ一本もレビューされていない",
+      description: "非言語のポイント&クリックパズル。アイテムを集めるのではなく、目の前の物を動かし組み合わせることですべての謎を解く。手書きモノクロームの世界観と落ち着いたアンビエントサウンドで綴られ、色覚にも音にも依存しないパズル設計。制作・自社発売はソロ開発者Stone、無料itch.io原作の続編にあたる。952件のレビューで好評率約94.7%の「非常に好評」、英語レビューはまだ約30%未満。",
+      h1a: "この奇妙な家のすべてのパズルは、言葉を一切使わず物を動かし組み合わせるという、たった一つの方法だけで解かれる。",
+      h1flip: "約1時間の謎解き全体が、色覚も聴覚も一度たりとも答えの壁にならないよう組まれている",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者Stoneによる、無料itch.io原作の続編にあたる非言語のポイント&クリックパズル。Steam自身の表記によれば、すべての解法はアイテムを集めるのではなく物を動かし組み合わせることから生まれ、この奇妙な部屋の謎を解き明かしていく。シリーズ2作目にあたるが、ストア文言は「ここからプレイしても大丈夫」と率直に述べている。すべてのパズルは「ひらめき系」で作られ、詰まった時にはヒントと答えも見られる。プレイ時間は約1時間、暗い絵本のような夢の中の世界観を、手書きの独特なモノクロームグラフィックと落ち着いたアンビエントサウンドで描く。設計上明確に非言語で、Steam自身の表記によれば全てモノクロームなので色覚に依存するパズルは存在せず、音に依存するパズルも存在しない。4Gamer自身の取材記事はStoneを率直に「個人ゲーム開発者」と紹介し、本作をStoneがitch.ioで無料公開した『HER TREES: First Puzzle』の続編と明記している。発売日は2024年2月29日、価格¥235。952件のレビュー(好評902件・不評50件)で好評率約94.7%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。952件のうち約281件、29.5%程度がすでに英語レビューだが、この本作自体はまだ西側大手メディアに一本もレビューされていない——Stoneのより広く知られた後続作でさえ、Kotakuには実記事ではなく自動生成のデータベース的な掲載があるのみで、実質的な特集記事はパズル専門メディアThinky Gamesに留まっている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、ここでは何も後で使うためにインベントリへ集めることはない——すべての解法は、目の前にすでにある物を実際に動かし組み合わせることから生まれる。だからパズルは「正しいアイテムを探す」作業ではなく、「この物があれあれに触れたら何になるか」という問いに変わる。",
+        "本作は設計上、非言語かつ完全にモノクロームだ。Steam自身の表記によれば、これは具体的に「色覚に依存するパズルは無く、音に依存するパズルも無い」ことを意味する。だからこの謎解き全体は、声高に謳うことなく静かに、プレイヤーの考える力とは無関係な理由でつまずかせない設計になっている。",
+        "4Gamer自身の取材記事はStoneを率直にソロ開発者と呼んでいる。そしてこれは、無料itch.io原作と同じシリーズ名のもとで一人で作られた、2つ目の小さなパズル箱だ。だから約1時間の謎解きは、同じ着想への一人の作り手による「二度目の挑戦」を、その規模のまま体現してもいる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "物を動かし組み合わせることだけが言語のパズルゲームが欲しい人——インベントリなし、テキストなし、音や色に依存するトリックもない",
+        "シリーズを通して続けられている、本当にソロの日本のプロダクションが欲しい人——制作者Stoneの2作目で、同じ名を冠した無料itch.io原作の上に成り立っている",
+        "「非常に好評」タイトル(952件で約94.7%)ながら、西側大手メディアにまだ一本もレビューされていないものを掴みたい人——Kotakuでさえ自動生成のデータベース掲載があるのみ",
+      ],
+      bad: [
+        "長時間のボリュームが欲しい人——本作は約1時間、一つの奇妙な部屋とひとつの核心的なパズル言語に絞り込まれている",
+        "すでに英語圏の大手メディアに取り上げられた作品が欲しい人——無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もないが、実質的な西側報道はまだニッチなパズル専門メディアに留まる",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8847,6 +8948,20 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Factorio is a 2020 game by Wube Software whose own store text sums it up as being about 'building and creating automated factories to produce items of increasing complexity,' where the real skill lies not in any single click but in designing a system correctly beforehand and then watching it run entirely on its own. This lineage is a comparison drawn by this site in outside critical commentary, echoing one already made by a Japanese blog covering the game, not a connection stated by developer 定期的な宝物; it is the origin of the idea that something set up correctly in advance can be left to run itself, with the designer's judgment doing all the real work before it ever starts moving.",
       ja: "Factorioは、Wube Software制作による2020年のゲームで、Steam自身のストア文言によれば「複雑さを増す製品を生産する自動化工場を建設し創造する」ことが核であり、真の腕前はどの一手にもなく、あらかじめ仕組みを正しく設計し、あとは完全に手を離れて動くのを見守る点にある。この系譜は、本作を紹介する日本語ブログがすでに挙げていた比較を追認する形の、当サイト独自の批評的比較であり、開発元「定期的な宝物」自身が明言した関連性ではない——正しく事前に組み上げられた何かは、動き出す前にすでに設計者の判断力がすべての仕事を終えており、あとは手を離れて勝手に動き続けられるという発想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 HER TREES: First Puzzle(ソロ制作者Stone、itch.io無料公開、シリーズ1作目)。her-trees-
+  //   the-puzzle-house pick の系譜として新規採用。kageroh/moonpalace/5omeday/your-letter-original
+  //   型(同一内容の無料版→商業拡張)とは異なり、本作は独立して作られた同一シリーズの続編(ポータル→
+  //   ポータル2型)。itch.io本体のcredits欄に"This is the first work in the HER TREES series"と
+  //   明記されていることをWebFetchで実測確認。無料版ページ自体に商業版への直接リンクは確認できな
+  //   かったため、4Gamer記事(「itch.ioで配信されたHER TREES: First Puzzleの続編」と明記)を一次
+  //   裏付けとして採用する。
+  "her-trees-first-puzzle": {
+    itchio: "https://stonetreebook.itch.io/her-trees",
+    blurb: {
+      en: "The origin of this series: HER TREES: First Puzzle, released free on itch.io by solo creator Stone, whose own credits on the page state plainly, 'This is the first work in the HER TREES series.' It already carries the core idea this lineage grows from: a point-and-click puzzle solved entirely by moving and combining objects rather than collecting an inventory. Per 4Gamer's own coverage, HER TREES: THE PUZZLE HOUSE on Steam is explicitly the sequel to this free release; unlike some of this site's other self-referential picks, this is not the same content later sold as a paid upgrade, but an independent, separately-built second entry in a series Stone has continued building.",
+      ja: "このシリーズの原点——HER TREES: First Puzzle。ソロ制作者Stoneがitch.ioで無料公開した一本で、ページ本体のクレジット欄自身が「今作はHER TREESシリーズ１作目です」と率直に記している。この系譜のひな型となる核心——アイテムを集めるのではなく物を動かし組み合わせることで解くポイント&クリックパズル——を、この時点ですでに備えていた。4Gamer自身の取材記事によれば、Steam版『HER TREES : THE PUZZLE HOUSE』はこの無料版の続編と明記されている。当サイトの他の自己参照系pickとは異なり、これは同じ内容が後に有料版として売り出されたものではなく、Stoneが作り続けているシリーズの、独立して作られた2作目にあたる。",
     },
   },
 } as const;
