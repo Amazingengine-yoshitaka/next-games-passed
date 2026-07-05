@@ -35,14 +35,15 @@ const originName = lineageName(anchor, lang) ?? anchor;
 const blurb = lineageBlurb(anchor, lang);
 
 // 出典: anchor の識別子から壊れないリンクだけを組む。steam appid → 正準 store URL、wikidata → QID 表示、
-//   freem → ふりーむ 配信ページ URL、itchio → itch.io 配信ページ URL。持っていないものはリンクごと
-//   出さない(href 破損ゼロ・rel=noopener のみ・nofollow なし)。
+//   freem → ふりーむ 配信ページ URL、itchio → itch.io 配信ページ URL、unityroom → unityroom 配信ページ URL。
+//   持っていないものはリンクごと出さない(href 破損ゼロ・rel=noopener のみ・nofollow なし)。
 const identity = lineageAnchorIdentity(anchor);
 const steamHref = identity && identity.steam ? steamStoreUrl(identity.steam) : null;
 const wdQid = identity ? wikidataQid(identity.wikidata) : null;
 const wdHref = identity ? (identity.wikidata ?? null) : null;
 const freemHref = identity ? (identity.freem ?? null) : null;
 const itchioHref = identity ? (identity.itchio ?? null) : null;
+const unityroomHref = identity ? (identity.unityroom ?? null) : null;
 
 // JSON-LD は現在時刻(UTC ms)を渡し、未公開の子孫を出さない(脳が判定・SSOT)。SSR ビルド時刻基準。
 const jsonld = originJsonLd(anchor, lang, pageUrl, t("nav.home"), Date.now());
@@ -83,7 +84,7 @@ const title = originName + t("origin.h1suffix");
 
     <!-- 出典: 持っている識別子だけをリンク化。壊れリンク(href 破損)を物理的に作らない(北極星)。
          rel=noopener のみ(nofollow は付けない=出典への信頼リンク)。 -->
-    {(steamHref || (wdHref && wdQid) || freemHref || itchioHref) && (
+    {(steamHref || (wdHref && wdQid) || freemHref || itchioHref || unityroomHref) && (
       <>
         <h2><span class="num">02</span>{t("origin.sources")}</h2>
         <ul class="feel">
@@ -98,6 +99,9 @@ const title = originName + t("origin.h1suffix");
           )}
           {itchioHref && (
             <li><a href={itchioHref} target="_blank" rel="noopener">{t("origin.source.itchio")}</a></li>
+          )}
+          {unityroomHref && (
+            <li><a href={unityroomHref} target="_blank" rel="noopener">{t("origin.source.unityroom")}</a></li>
           )}
         </ul>
       </>

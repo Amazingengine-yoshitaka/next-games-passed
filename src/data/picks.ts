@@ -7225,6 +7225,102 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "5omeday": {
+    published: "2026-07-15",
+    publishAt: "2026-07-15",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「1クリック分岐×処刑ボタンの5分ノベル」を捉える語がないため新設
+    //   "instant-branch-novel"。系譜は開発者本人による自己参照: 2023年10月にunityroomで無料公開
+    //   された原作『イツカノヨル』(Unity1Week「1ボタン」お題参加作)を established anchor として
+    //   採用する(lineage_anchor_key=itchio と同型のURL直参照だが unityroom のため専用フィールド
+    //   unityroom を新設。Steam版・Wikidata QIDを持たない無料ゲームのため、既存の freem/itchio
+    //   パターンに倣いURLのみ積む)。Steam商業版はStudio名義"Indigo Ingots, Starlit Chronicles
+    //   Studio"だが、Starlit Chronicles Studioの実体(Indigo Ingots本人の商業リリース名義か別チーム
+    //   か)は独立情報源で確認できず不明のため、断定せずSteam自身のクレジット表記のみを事実として書く。
+    // content_descriptors は ids=[5](General Mature Content)のみ・notes に "It does not contain
+    //   bleeding, violence or sexual content"とSteam自身が明記(実測、外部注記不採用)。AI生成コンテンツ
+    //   開示欄はストアページに存在せず非AI。発売元 Waku Waku Games は東京の小規模インディーパブリッシャー
+    //   で既出多数(sonokuni/one-turn-kill等)・非大手確定済み。
+    // west_unreached: 英語レビュー比率は約29.3%(90/307、appreviews API実測)。AUTOMATON WEST(売上1万本
+    //   突破のニュース記事)とNiche Gamer(処刑ボタン設定への批判記事)の2件が西側メディアで見つかったが、
+    //   いずれも作品レビューではなく話題性・炎上ニュースであることをWebFetchで確認。Kotakuの専用ページは
+    //   IGDB由来の自動生成データベースページで編集記事ではない。批評家レビューはMetacriticで"not available
+    //   yet"。よって「西側メディアの話題にはなったが、レビューでは語られていない」と正直に書く。
+    meta: { genre: "instant-branch-novel", lineage: "5omeday-original", obscurity: "wall", reviewBand: "hundreds", rarity: { reviews: 307, positivePct: 89, noEnglish: false } },
+    games: [
+      {
+        name_en: "5omeday",
+        name_ja: "イツカノヨル",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3030980/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, if she moves strangely or seems about to hurt you, you press the button in front of you right away, and the execution happens immediately. A single playthrough runs about five minutes, played with nothing but clicks, and whether you press the button, when you press it, and which dialogue choices you make branch the story across 13 different endings shaped by your curiosity and guilt. It began life free on the Japanese game jam site unityroom in October 2023, made for the Unity1Week jam's \"one button\" theme by creator Indigo Ingots (script, planning, and programming) working with artist polaritia and composer Kazura's MUSIC. Steam's own developer credit lists Indigo Ingots and Starlit Chronicles Studio; whether the latter is a separate team or Indigo Ingots' own commercial-release name could not be independently confirmed, so this is stated as-is rather than guessed at. This commercial edition adds full voice acting for the dragon girl Mira (voiced by Nako Natsuki), additional endings with new music, stills, and character art, Steam Achievements, a gallery mode, and English and Chinese (Simplified and Traditional) language support on top of the free original. Published by Waku Waku Games, a small Tokyo-based indie publisher, it released January 28, 2026 and sits at Very Positive, 89 percent over 307 reviews (274 positive, 33 negative per Steam's own review API). A paid title, not free, fully launched and not in Early Access, with no AI-generated assets; per Steam's own content descriptors it carries only a General Mature Content tag, with Steam's own notes stating outright that it 'does not contain bleeding, violence or sexual content.' It supports Japanese (full audio), English, and Simplified and Traditional Chinese, and while about 90 of its 307 reviews, some 29.3 percent, are already in English, and it did draw two pieces of Western press — AUTOMATON WEST reporting it had sold over 10,000 copies, and Niche Gamer covering backlash over its execution-button premise — neither is a review: Kotaku's page for it turns out to be an auto-generated database listing with no byline, and Metacritic lists critic reviews as not yet available, so this stays a game the West has talked about without yet actually reviewing.",
+        desc_ja: "Steam自身の表記によれば、目の前の少女が怪しい動きをしたり危害を加えてくると感じたら、すぐに目の前のボタンを押す——処刑はただちに実行される。1プレイは約5分、操作は基本的にクリックのみで、ボタンを押すか押さないか・押すタイミング・選択肢によって物語が枝分かれし、プレイヤーの好奇心と罪悪感の在り方で全13種類のエンディングへ分岐する。本作は2023年10月、日本のゲームジャムサイト「unityroom」でUnity1Week「1ボタン」お題の参加作として、制作者Indigo Ingots(企画・シナリオ・プログラム)がイラストpolaritia・サウンドかずら's MUSICと組んで無料公開したのが始まりだ。Steam自身の開発者クレジットは「Indigo Ingots, Starlit Chronicles Studio」と並記しているが、後者が別チームなのかIndigo Ingots本人の商業リリース名義なのかは独立した情報源で確認できず、推測せずそのまま事実として記す。この商業版では、ドラゴン娘ミラ(声:菜月なこ)のフルボイス化・エンディング追加とそれに伴うBGM/スチル/立ち絵差分の追加・Steam実績・ギャラリー機能・英語と中国語(繁体字/簡体字)対応が、無料版に加えられている。発行は東京の小規模インディーパブリッシャー、わくわくゲームズ。リリース日は2026年1月28日、307件のレビュー(好評274件・不評33件)で好評率89%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上は「一般成人向け」のみで、Steam自身の注記が「流血・暴力・性的表現は含まれません」と明記している。日本語(フルボイス)・英語・簡体字/繁体字中国語に対応するが、307件のうち約90件、29.3%程度がすでに英語レビューで、西側メディアでも2件話題になった——AUTOMATON WESTが売上1万本突破を報じ、Niche Gamerが「処刑ボタン」という設定への反発を報じている——が、どちらもレビューではない。Kotakuの専用ページはIGDB由来の自動生成データベースページで著者名が無く、Metacriticの批評家レビューは「まだ利用不可」のまま。つまりこれは、西側で話題にはなったが、まだレビューでは語られていないゲームということになる。",
+      },
+      {
+        name_en: "イツカノヨル (unityroom free original, Unity1Week 2023, no official English title)",
+        name_ja: "イツカノヨル（unityroom無料版）",
+        status: "established",
+        unityroom: "https://unityroom.com/games/fivedaysnight",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The free original this grew from: released free on unityroom in October 2023 for the Unity1Week game jam's \"one button\" theme, by creator Indigo Ingots working with artist polaritia and composer Kazura's MUSIC. Per its own game page, it already carries the same premise and structure — a five-minute, click-only story branching across your choice of whether and when to press the execution button in front of you. 5omeday on Steam is not a new work borrowing that DNA from outside; it is a commercial edition of this same free jam game, per Steam's own listing, adding full voice acting, extra endings, and English and Chinese language support on top of it.",
+        desc_ja: "本作が育った、その無料版の原点——2023年10月、Unity1Weekゲームジャムの「1ボタン」お題に応じて、制作者Indigo Ingotsがイラストpolaritia・サウンドかずら's MUSICと組み、unityroomで無料公開した。その配信ページ自体によれば、この時点ですでに同じ骨格——5分・クリックのみで進み、目の前の処刑ボタンを押すか押さないか、いつ押すかで分岐する物語——を備えていた。Steam版『イツカノヨル(5omeday)』は、外部からこのDNAを借りた新作ではない——Steam自身の表記によれば、この同じ無料ジャムゲームの商業版であり、フルボイス化・エンディング追加・英語/中国語対応を加えている。",
+      },
+    ],
+    en: {
+      title: "5omeday - a five-minute, one-click branching novel where you decide whether and when to press the execution button on a dragon girl accused of a crime, expanded by creator Indigo Ingots from a free 2023 Unity1Week jam original into a fully-voiced Steam edition published by Waku Waku Games, Very Positive at 89 percent over 307 reviews though the West has only talked about it, not reviewed it yet",
+      description: "A five-minute, click-only branching novel: a dragon girl suspected of a crime sits across from you, and whether you press the execution button in front of you, and when, forks the story across 13 endings. Expanded by creator Indigo Ingots from a free 2023 Unity1Week jam original into this fully-voiced Steam edition, published by the small Tokyo indie publisher Waku Waku Games. Very Positive at 89 percent over 307 reviews, with English readers still only around 29 percent.",
+      h1a: "A dragon girl sits across from you, and a red button waits between you, ",
+      h1flip: "and the thirteen ways this ends all come down to whether, and when, you press it",
+      h1b: ".",
+      lede: "A five-minute, click-only branching novel originally released free in October 2023 for the Unity1Week game jam's \"one button\" theme, by creator Indigo Ingots working with artist polaritia and composer Kazura's MUSIC, then expanded into this fully-voiced Steam edition published by Waku Waku Games, a small Tokyo-based indie publisher. Per Steam's own listing, if the dragon girl across from you moves strangely or seems about to hurt you, you press the button in front of you right away, and the execution happens immediately; whether you press it, when, and which dialogue choices you make branch the story across 13 different endings shaped by your curiosity and guilt. This edition adds full voice acting for the dragon girl Mira, additional endings with new music, stills, and character art, Steam Achievements, and a gallery mode on top of the free original. Released January 28, 2026, it is Very Positive at 89 percent over 307 reviews (274 positive, 33 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets; per Steam's own content descriptors it carries only a General Mature Content tag, with Steam's own notes stating it 'does not contain bleeding, violence or sexual content.' It supports Japanese, English, and Simplified and Traditional Chinese, and while about 90 of its 307 reviews, some 29.3 percent, are already in English, and it drew two pieces of Western press (AUTOMATON WEST on its 10,000-copy sales milestone, Niche Gamer on backlash over its premise), neither is a review — Kotaku's page is an auto-generated database listing, and Metacritic lists critic reviews as not yet available.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Steam's own listing frames the premise bluntly: if she moves strangely or seems about to hurt you, press the button, and the execution happens immediately, so every line of small talk with the dragon girl across from you doubles as evidence you have to weigh in real time, with the button always sitting right there as an option you never stop being aware of.",
+        "The entire game runs about five minutes on clicks alone, and per Steam's own listing whether you press the button, when, and which dialogue choices you make together fork the story across 13 different endings, so a single hesitation or a single moment of curiosity can be the difference between which of thirteen very different nights you end up living.",
+        "This Steam edition adds full voice acting for the dragon girl Mira on top of the free jam original, so a story a solo creator once told through text and a single button now carries a voice performance across every line you're weighing evidence against, changing how much each small gesture of hers lands before you decide.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want an extremely short, high-tension branching novel you can finish in about five minutes, built around a single button and the moral weight of if and when you press it, forking across 13 endings",
+        "You want a small, jam-scale Japanese production carried to Steam: a free October 2023 Unity1Week original by creator Indigo Ingots, expanded into a fully-voiced paid edition published by the small Tokyo indie publisher Waku Waku Games",
+        "You want a Very Positive title (89 percent over 307 reviews) that Western press has only talked about, not reviewed: AUTOMATON WEST and Niche Gamer both covered it as news, but no outlet has published an actual review, and only about 29 percent of its reviews are in English",
+      ],
+      bad: [
+        "You want a long game or a big cast; this is a five-minute, single-scene branching novel with one other character and no combat or exploration",
+        "You want a story that has already been reviewed by Western outlets; per Steam's own content descriptors it carries only a General Mature Content tag and explicitly no bleeding, violence, or sexual content, but the two English-language mentions it has received are news coverage, not reviews, and it is a paid title, not free and not in Early Access, with no AI-generated assets",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "イツカノヨル - 罪を疑われたドラゴン娘の処刑ボタンを、押すか・いつ押すかだけで進む5分の1クリック分岐ノベル。制作者Indigo Ingotsが2023年のUnity1Weekジャム無料版からフルボイス化しSteamへ、発行はわくわくゲームズ。307件のレビューで好評率89%の「非常に好評」ながら、西側ではまだ話題になっただけでレビューはされていない",
+      description: "罪を疑われたドラゴン娘が目の前に座り、目の前の処刑ボタンを押すか、いつ押すかだけで物語が13種のエンディングへ分岐する、5分・クリックのみの分岐ノベル。制作者Indigo Ingotsが2023年のUnity1Weekジャム無料版からフルボイス化し、このSteam版へ拡張。発行は東京の小規模インディーパブリッシャー、わくわくゲームズ。307件のレビューで好評率89%の「非常に好評」、英語レビューはまだ約29%に留まる。",
+      h1a: "目の前にドラゴン娘が座り、二人の間には赤いボタンがある。",
+      h1flip: "この結末が13通りに分かれる理由は、それを押すか、いつ押すか、それだけだ",
+      h1b: "。",
+      lede: "もとは2023年10月、Unity1Weekゲームジャムの「1ボタン」お題に応じて、制作者Indigo Ingotsがイラストpolaritia・サウンドかずら's MUSICと組んで無料公開した、5分・クリックのみの分岐ノベル。Steam版は東京の小規模インディーパブリッシャー、わくわくゲームズが発行するフルボイス版へ拡張されている。Steam自身の表記によれば、目の前のドラゴン娘が怪しい動きをしたり危害を加えてくると感じたら、すぐに目の前のボタンを押す——処刑はただちに実行される。ボタンを押すか押さないか・押すタイミング・選択肢によって物語は全13種類のエンディングへ分岐し、プレイヤーの好奇心と罪悪感が試される。本エディションでは、ドラゴン娘ミラのフルボイス化・エンディング追加とそれに伴う新規BGM/スチル/立ち絵差分・Steam実績・ギャラリー機能が、無料版に加えられている。リリース日は2026年1月28日、307件のレビュー(好評274件・不評33件)で好評率89%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上は「一般成人向け」のみで、Steam自身の注記は「流血・暴力・性的表現は含まれません」と明記する。日本語・英語・簡体字/繁体字中国語に対応するが、307件のうち約90件、29.3%程度がすでに英語レビューで、西側メディアでも2件話題になった(AUTOMATON WESTが売上1万本突破のニュース、Niche Gamerが設定への反発のニュース)が、どちらもレビューではない——Kotakuのページは自動生成データベースリストで、Metacriticの批評家レビューは「まだ利用不可」のままだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記は前提を率直に示す——目の前の少女が怪しい動きをしたり危害を加えてくると感じたら、ボタンを押せば処刑がただちに実行される。だから彼女との何気ない会話の一言一言が、リアルタイムで天秤にかける証拠にもなり、ボタンは常にそこにある選択肢として意識され続ける。",
+        "ゲーム全体はクリックのみで約5分、Steam自身の表記によればボタンを押すか押さないか・タイミング・選択肢が組み合わさって全13種のエンディングへ分岐する。だから一瞬のためらいや一瞬の好奇心が、13通りの夜のうちどれを生きることになるかを分けてしまう。",
+        "このSteam版は無料のジャム版にドラゴン娘ミラのフルボイスを新たに加えており、ソロ制作者がかつてテキストと一つのボタンだけで語っていた物語が、今は証拠を天秤にかける一言一言に声の存在感を伴うようになった。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "約5分で完結する、極めて短く緊張感の高い分岐ノベルが欲しい人——たった一つのボタンと、それを押すか・いつ押すかという道徳的な重みを軸に、13種のエンディングへ分岐する",
+        "Steamへ届いた小規模な日本のジャム発プロダクションが欲しい人——制作者Indigo Ingotsによる2023年10月のUnity1Week無料版を、フルボイス化した有料版に拡張し、東京の小規模インディーパブリッシャー わくわくゲームズが発行した一本",
+        "西側ではまだ話題になっただけでレビューされていない「非常に好評」タイトル(307件のレビューで89%)を掴みたい人——AUTOMATON WESTとNiche Gamerはニュースとして報じたが、実際のレビューを出した媒体はまだなく、英語レビューもまだ約29%に留まる",
+      ],
+      bad: [
+        "長時間のボリュームや多数の登場人物が欲しい人——本作は5分・単一シーンの分岐ノベルで、登場人物はもう一人だけ、戦闘や探索は無い",
+        "西側メディアにすでにレビューされた作品が欲しい人——Steam自身のコンテンツディスクリプタ上は「一般成人向け」のみで流血・暴力・性的表現は明示的に含まれないが、英語圏で受けた2件の言及はニュース報道でありレビューではなく、無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -7969,6 +8065,22 @@ const LINEAGE_ANCHOR = {
       ja: "本作が育った、その無料版の原点——『ファミレスを享受せよ』。日本の2名同人サークル 月刊湿地帯(ハンドル名 oissisui)が Godot エンジンで制作し、itch.io で無料公開したブラウザアドベンチャーだ。itch.io の配信ページ本文によれば、「永遠のファミレス『ムーンパレス』に迷い込むアドベンチャーゲーム」で、ドリンクバーもあり、操作は左クリックのみ、推定プレイ時間は30分〜、エンディングは2種。その同じitch.ioページには、Steam版リリース直後に追記された一文があり、追加要素を備えた完成形の商業版——Steam版『ファミレスを享受せよ(Enjoy the Diner)』——へのリンクが直接貼られている。Steam版は Studio Dragonet がUnityでゼロから作り直した一本で、新規の雑談・サウンドギャラリー・イラストギャラリー・Steam実績が加わっている。これは外部からの影響ではなく、開発者本人によるこの無料デモが、後に有料のSteam版として作り直されたものだ。",
     },
   },
+  // 原点 イツカノヨル(unityroom無料版)、2023年10月、日本のゲームジャムサイト「unityroom」で
+  //   Unity1Week「1ボタン」お題の参加作として制作者Indigo Ingots(企画・シナリオ・プログラム)が
+  //   イラストpolaritia・サウンドかずら's MUSICと組んで無料公開した原型(unityroom配信ページ本体
+  //   https://unityroom.com/games/fivedaysnight をWebFetchでHTTP 200到達確認済み)。ジャンル上の
+  //   外部原点ではなく、開発者本人による自己参照のフリー版原典(5omeday pick の商業リメイクの前身・
+  //   kageroh/moonpalace型の判断)。公式Steam版・Wikidata QIDを持たない unityroom 限定の無料
+  //   ブラウザ版のため、lineage_anchor_key には steam でも wikidata でもなく unityroom(配信ページ
+  //   URL)を新規フィールドとして採用する(itchio-only の moonpalace と同型判断: 単一の生きた配信
+  //   ページ URL のみで同定し、href 破損なし)。
+  "5omeday-original": {
+    unityroom: "https://unityroom.com/games/fivedaysnight",
+    blurb: {
+      en: "The free original this grew from: イツカノヨル, released free on the Japanese game jam site unityroom in October 2023 for the Unity1Week jam's \"one button\" theme, by creator Indigo Ingots (script, planning, and programming) working with artist polaritia and composer Kazura's MUSIC. Per its own game page, it already carries the same premise and structure this lineage grows from: a five-minute, click-only story branching across your choice of whether and when to press the execution button in front of you. 5omeday on Steam is not a new work borrowing that DNA from outside; it is a commercial edition of this same free jam game, adding full voice acting, extra endings, and English and Chinese language support on top of it.",
+      ja: "本作が育った、その無料版の原点——『イツカノヨル』。2023年10月、日本のゲームジャムサイト「unityroom」で、Unity1Weekゲームジャムの「1ボタン」お題に応じて、制作者Indigo Ingots(企画・シナリオ・プログラム)がイラストpolaritia・サウンドかずら's MUSICと組んで無料公開した。その配信ページ自体によれば、この時点ですでにこの系譜のひな型——5分・クリックのみで進み、目の前の処刑ボタンを押すか押さないか、いつ押すかで分岐する物語——を備えていた。Steam版『イツカノヨル(5omeday)』は、外部からこのDNAを借りた新作ではない——この同じ無料ジャムゲームの商業版であり、フルボイス化・エンディング追加・英語/中国語対応を加えている。",
+    },
+  },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
@@ -7977,7 +8089,7 @@ export type LineageId = keyof typeof LINEAGE_ANCHOR;
 // ゲーム名の二重定義を避ける(SSOT)。見つからなければ null(捏造しない)。
 //   同定は多態: anchor.steam があれば Steam URL で、anchor.wikidata があれば wikidata で逆引きする。
 export function lineageName(id: string, lang: "en" | "ja"): string | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string }>)[id];
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string }>)[id];
   if (!anchor) return null;
   const isJa = lang === "ja";
   for (const key of Object.keys(picks)) {
@@ -8002,6 +8114,11 @@ export function lineageName(id: string, lang: "en" | "ja"): string | null {
       // itch.io 同定(Steam 版/wikidata QID/freem のいずれも無い itch.io 発の原点): g.itchio の完全一致で逆引き。
       if (anchor.itchio) {
         if (g.itchio !== anchor.itchio) continue;
+        return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      }
+      // unityroom 同定(Steam 版/wikidata QID/freem/itchio のいずれも無い unityroom 発の原点): g.unityroom の完全一致で逆引き。
+      if (anchor.unityroom) {
+        if (g.unityroom !== anchor.unityroom) continue;
         return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
       }
     }
@@ -8031,17 +8148,18 @@ export function lineageBlurb(id: string, lang: "en" | "ja"): string | null {
   return lang === "ja" ? anchor.blurb.ja : anchor.blurb.en;
 }
 
-// 原点 id の外部実体識別子(steam app id / wikidata QID URL / itch.io URL)を返す(計算だけ・副作用なし)。
+// 原点 id の外部実体識別子(steam app id / wikidata QID URL / itch.io URL / unityroom URL)を返す(計算だけ・副作用なし)。
 //   原点ページの出典リンクと JSON-LD sameAs が LINEAGE_ANCHOR を直読みせず一様に参照する入口(SSOT)。
-//   anchor 無しは null。steam / wikidata / freem / itchio は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
-export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string; itchio?: string } | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string }>)[id];
+//   anchor 無しは null。steam / wikidata / freem / itchio / unityroom は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
+export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string } | null {
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string }>)[id];
   if (!anchor) return null;
-  const out: { steam?: string; wikidata?: string; freem?: string; itchio?: string } = {};
+  const out: { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string } = {};
   if (anchor.steam) out.steam = anchor.steam;
   if (anchor.wikidata) out.wikidata = anchor.wikidata;
   if (anchor.freem) out.freem = anchor.freem;
   if (anchor.itchio) out.itchio = anchor.itchio;
+  if (anchor.unityroom) out.unityroom = anchor.unityroom;
   return out;
 }
 
