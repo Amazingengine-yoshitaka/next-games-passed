@@ -8213,6 +8213,108 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "maxwells-puzzling-demon": {
+    published: "2026-07-20",
+    publishAt: "2026-07-20",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「熱を持つブロックを冷たいブロックにぶつけて冷ましながらゴールへ運ぶ、
+    //   物理学の思考実験『マクスウェルの悪魔』を題材にしたパズル」を捉える語がないため新設
+    //   "thermo-puzzle"(ゲーム自身のストア文言"Thermodynamic puzzle"に準拠)。
+    // developer/publisher muratsubo Games(自社発売・第三者パブリッシャーなし)は、4Gamer情報
+    //   まとめページ本文実読で開発元・発売元とも一致することを確認済み。開発者muratsubo氏の個人
+    //   はてなブログ(muratsubo.hatenadiary.com)でパズルゲームジャム参加作『A Magical Hat』・自主
+    //   パズル企画『EnigMarch 2024』等の活動歴を確認し、チームを示す記載が無いことからソロ開発者と
+    //   判断した。なお当初X(旧Twitter)プロフィールに「開発者 日本」との記載があるという情報を
+    //   得ていたが、独立した再検証でその文言は確認できず(実際のbioは「パズルゲームがすき niconico
+    //   やYouTubeでも活動しています」という趣旨のみ)、本文には採用しない。国籍はニコニコ動画上の
+    //   活動・日本語はてなブログでの発信・Steam自身の日本語ストア文言・4Gamer掲載という状況証拠に
+    //   基づく判断である旨を正直に自覚する(kung-fu-beat/your-letter-has-been-rejected/auto-rogue型
+    //   の確度)。自社発売のため大手資本提携先リスクそのものが存在しない。
+    // 系譜は特定の日本語原作ではなく、ブロックの特性を操作して思いがけない相互作用を生む着想を
+    //   確立したBaba Is You(Hempuli Oy、2019年)を新規anchor "baba-is-you" として採用する。この
+    //   帰属は開発元muratsubo Games自身の言明ではなく当サイト独自の批評的比較のため自信度: 中
+    //   (捏造しない・parasocial/perfect-blue/papers-please/book-of-demons/necrodancer/
+    //   orcs-must-die/factorio/furi型の判断)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・Steam実績/クラウドあり。
+    // west_unreached: 英語レビュー比率は約22.1%(89/402、appreviews API実測)。IOSYS Gamingが本作を
+    //   特集したという情報は独立検証で動画IDの矛盾があり実在を確証できなかったため本文には採用しない
+    //   (正直さの徹底・未確認情報を掲載しない)。
+    meta: { genre: "thermo-puzzle", lineage: "baba-is-you", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 402, positivePct: 98, noEnglish: false } },
+    games: [
+      {
+        name_en: "Maxwell's puzzling demon",
+        name_ja: "マクスウェルのパズルな悪魔",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2770160/Maxwells_puzzling_demon/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, you play as Maxwell's demon, whose job is to push blocks to a goal, except every block carries heat, hot or cold, and while the demon can't stand touching a hot one, slamming a cold block into a hot one cools it down. The game spans 10 thematic worlds and more than 350 levels, and each world is itself a puzzle: reaching its far end and clearing it, using solutions carried over from levels you've already solved, is what opens the next world, with side paths off the main route leading to harder extra levels for players looking for more of a challenge, and a built-in hint system ready to explain any level's solution or a world's specific gimmick if you get stuck. Made and self-published solo by developer muratsubo, whose own Hatena blog shows a history of entering puzzle game jams (including an entry called A Magical Hat) and running an independent matrix-deduction puzzle event called EnigMarch, it released August 29, 2024 at ¥1,700 and is Very Positive at about 98 percent over 402 reviews (394 positive, 8 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements and Cloud support, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese, English, Simplified and Traditional Chinese, and Korean, and while about 89 of its 402 reviews, some 22.1 percent, are already in English, the great majority of its audience is still in Japan.",
+        desc_ja: "Steam自身の表記によれば、あなたが操るのはマクスウェルの悪魔くん。その仕事はブロックをゴールまでせっせと運ぶことだが、ブロックはそれぞれ熱を持っていて、熱かったり冷たかったりする。さすがの悪魔でも熱いのは苦手だが、冷たいブロックをぶつければ熱を冷ますことができる。ゲームはテーマごとに10個のワールドに分類された350問超のレベルで構成され、各ワールドそれ自体もパズルになっている——それまでに解いてきたレベルの解法を使って道を切り開き、ワールドの最後まで進んでクリアすることで、次のワールドへ進めるようになる。本筋とは特に関係ない脇道の先には、より歯応えのある挑戦者向けのエクストラレベルが待ち、詰まった時には各レベルの解法やワールド固有のギミックを説明してくれる強力なヒント機能も備える。制作・自社発売はソロ開発者muratsubo氏。本人の個人はてなブログには、パズルゲームジャムへの参加作『A Magical Hat』や、独自開催のマトリックス推理パズル企画『EnigMarch』といった活動歴が確認できる。発売日は2024年8月29日、価格¥1,700。402件のレビュー(好評394件・不評8件、Steam自身のレビューAPI実測)で好評率約98%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績・クラウド対応あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語・英語・簡体字/繁体字中国語・韓国語に対応するが、402件のうち約89件、22.1%程度がすでに英語レビューである一方、支持層の大半はいまも日本にある。",
+      },
+      {
+        name_en: "Baba Is You",
+        name_ja: "Baba Is You",
+        status: "established",
+        steam: "https://store.steampowered.com/app/736260/Baba_Is_You/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Baba Is You, Hempuli Oy's 2019 puzzle game where, per its own store text, 'the rules you have to follow are present as blocks you can interact with,' so manipulating an ordinary-looking object can change how the whole level works and cause surprising interactions the player has to discover for themselves. Maxwell's puzzling demon is not an official Baba Is You work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer muratsubo, but it carries the same core idea into a new frame: an ordinary block-pushing task where a hidden property, in this case heat, quietly rewrites what happens when two objects meet.",
+        desc_ja: "この味の原点——Baba Is You。Hempuli Oy制作による2019年のパズルゲームで、Steam自身のストア文言によれば「従うべきルールそのものが、操作可能なブロックとして存在する」——ごく普通に見える物体を動かすだけでレベル全体の仕組みが変わり、プレイヤー自身が発見しなければならない意外な相互作用を引き起こす。マクスウェルのパズルな悪魔は公式のBaba Is You作品ではなく、この系譜は開発元muratsubo自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ核心的な着想を新しい枠組みへと引き継いでいる——ごく普通に見えるブロック運びの課題に、熱という隠れた属性が、二つの物体が出会った時に何が起きるかを静かに書き換えているという発想だ。",
+      },
+    ],
+    en: {
+      title: "Maxwell's puzzling demon - a thermodynamic puzzle game where you push hot and cold blocks to cool them down and clear a path across 350-plus levels in 10 worlds, made and self-published solo by developer muratsubo, Very Positive at about 98 percent over 402 reviews with the great majority of its audience still in Japan",
+      description: "A thermodynamic puzzle game: push blocks that carry heat, hot or cold, slamming cold into hot to cool it down, across 10 thematic worlds and more than 350 levels where each world is itself a puzzle you clear using solutions carried over from levels already solved. Made and self-published solo by developer muratsubo. Very Positive at about 98 percent over 402 reviews, with English readers still only around 22 percent.",
+      h1a: "Maxwell's demon just wants to push a block to its goal, but every block carries its own heat, ",
+      h1flip: "and the only way through 350-plus levels across 10 worlds is learning exactly which cold block cools which hot one",
+      h1b: ".",
+      lede: "A thermodynamic puzzle game made and self-published solo by developer muratsubo, whose own Hatena blog shows a history of entering puzzle game jams and running an independent matrix-deduction puzzle event called EnigMarch. Per Steam's own listing, you play as Maxwell's demon, whose job is to push blocks to a goal, except every block carries heat, hot or cold, and while the demon can't stand touching a hot one, slamming a cold block into a hot one cools it down. The game spans 10 thematic worlds and more than 350 levels, and each world is itself a puzzle: reaching its far end, using solutions carried over from levels you've already solved, is what opens the next world, with side paths leading to harder extra levels and a built-in hint system ready to explain any level's solution if you get stuck. Released August 29, 2024 at ¥1,700, it is Very Positive at about 98 percent over 402 reviews (394 positive, 8 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements and Cloud support, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. About 89 of its 402 reviews, some 22.1 percent, are already in English, but the great majority of its audience is still in Japan.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, a hot block and a cold block resolve into something new the instant they touch, so what starts as an ordinary sokoban-style push becomes a running question of which block you're actually allowed to bring into contact with which, and in what order.",
+        "Each of the 10 worlds is itself a puzzle you clear using solutions from levels you've already solved, so progress never resets to zero; every earlier answer becomes a tool you're still carrying, right up until a side path drops you into an extra level that assumes you've mastered all of it.",
+        "The demon at the center of all this can't stand the heat it's constantly asked to handle, which turns a simple physics pun, Maxwell's demon from real thermodynamics, into the actual emotional texture of play: a small, put-upon creature doing an uncomfortable job, one careful cold block at a time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a puzzle game where a hidden property, heat, quietly rewrites an ordinary block-pushing task, across 10 worlds and 350-plus levels with harder optional extras",
+        "You want a genuinely solo, self-published Japanese production: developer muratsubo's own puzzle-jam and puzzle-event history shows up directly in their personal blog",
+        "You want a Very Positive title (about 98 percent over 402 reviews) whose audience is still mostly in Japan, with English readers only around 22 percent",
+      ],
+      bad: [
+        "You want a short game; 350-plus levels across 10 worlds is a real commitment, even with a hint system available for when you're stuck",
+        "You want a title already found by a large English-speaking audience; it is a paid game, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual, but its reach into English remains modest",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "マクスウェルのパズルな悪魔 - 熱いブロックと冷たいブロックをぶつけて冷まし、10ワールド350問超を切り拓く熱力学パズル。制作・自社発売はソロ開発者muratsubo。402件のレビューで好評率約98%、支持層はいまも大半が日本",
+      description: "熱力学パズルゲーム。熱を持つブロックを冷たいブロックにぶつけて冷ましながら、10のテーマ別ワールド・350問超のレベルを、それまでに解いた解法を使って切り拓いていく。各ワールドそれ自体もパズルになっている。制作・自社発売はソロ開発者muratsubo。402件のレビューで好評率約98%の「非常に好評」、英語レビューはまだ約22%に留まる。",
+      h1a: "マクスウェルの悪魔は、ただブロックをゴールへ運びたいだけだ。だがブロックはそれぞれ自分の熱を持っている。",
+      h1flip: "10ワールド350問超を渡り切る唯一の方法は、どの冷たいブロックがどの熱いブロックを冷ますのかを正確に学ぶことだけだ",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者muratsubo氏による熱力学パズルゲーム。本人の個人はてなブログには、パズルゲームジャムへの参加や、独自開催のマトリックス推理パズル企画『EnigMarch』といった活動歴が確認できる。Steam自身の表記によれば、あなたが操るのはマクスウェルの悪魔くん。その仕事はブロックをゴールまでせっせと運ぶことだが、ブロックはそれぞれ熱を持っていて、熱かったり冷たかったりする。さすがの悪魔でも熱いのは苦手だが、冷たいブロックをぶつければ熱を冷ますことができる。ゲームはテーマごとに10個のワールドに分類された350問超のレベルで構成され、各ワールドそれ自体もパズルになっている——それまでに解いてきたレベルの解法を使って道を切り開き、ワールドの最後まで進むことで次のワールドへ進めるようになる。脇道の先にはより歯応えのあるエクストラレベルが待ち、詰まった時には強力なヒント機能も使える。発売日は2024年8月29日、価格¥1,700。402件のレビュー(好評394件・不評8件)で好評率約98%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績・クラウド対応あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。402件のうち約89件、22.1%程度がすでに英語レビューである一方、支持層の大半はいまも日本にある。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、熱いブロックと冷たいブロックは触れた瞬間に新しい何かへと解決される。だから最初はただのソコバン式の押し運びに見えたものが、「どのブロックをどの順番で、どれに触れさせていいのか」という絶え間ない問いへと変わっていく。",
+        "10のワールドはそれぞれ、それまでに解いてきたレベルの解法を使って攻略するパズルそのものだ。だから進捗はゼロに戻ることがなく、以前の答えのすべてが今も持ち運べる道具になり続ける——脇道の先で、その全てを使いこなせることを前提としたエクストラレベルに放り込まれるまで。",
+        "この物語の中心にいる悪魔は、絶えず扱わされる熱に耐えられない。それが、実在の熱力学における「マクスウェルの悪魔」というただの物理ネタを、プレイの感情的な手触りそのものへと変える——小さくて割を食わされている存在が、慎重に一つずつ冷たいブロックを扱う、居心地の悪い仕事をこなしている、という手触りだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "熱という隠れた属性が、ごく普通のブロック運びの課題を静かに書き換えるパズルが欲しい人——10ワールド・350問超に加え、より難しい任意のエクストラも用意されている",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——制作者muratsubo氏自身のパズルジャム・パズルイベントの活動歴が、本人のブログにそのまま残っている",
+        "「非常に好評」タイトル(402件で約98%)ながら、支持層がいまも大半日本国内に留まる一本を掴みたい人——英語レビューはまだ約22%程度",
+      ],
+      bad: [
+        "短時間で終わるゲームが欲しい人——10ワールド・350問超はヒント機能があってもかなりの分量になる",
+        "すでに大きな英語圏の支持層に見つかった作品が欲しい人——無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もないが、英語への到達はまだ控えめだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9073,6 +9175,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Furi is a 2016 action game by The Game Bakers that strips a boss-rush down to its purest form, nothing but a sequence of unique, one-on-one duels against distinct opponents, with no regular enemies or exploration to pad the space between them. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that an entire game can be built out of consecutive boss fights alone, where the choice of who to face next is the whole design.",
       ja: "Furiは、The Game Bakers制作による2016年のアクションゲームで、ボスラッシュを最も純粋な形まで削ぎ落とした一本だ——通常の雑魚敵や探索でその間を埋めることなく、個性的な相手との一対一の決闘だけが連続する。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——連続するボス戦だけでゲーム全体を構成できるという着想、次に誰と戦うかだけが設計のすべてになるという発想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Baba Is You(Hempuli Oy、2019年)。Maxwell's puzzling demon pick の系譜として新規採用。
+  //   この帰属は開発元muratsubo Gamesの言明ではなく当サイト独自の批評的比較(自信度: 中・parasocial/
+  //   perfect-blue/papers-please/book-of-demons/necrodancer/orcs-must-die/factorio/furi型の判断)。
+  //   現行Steamで販売中のためsteam URLで同定する。
+  "baba-is-you": {
+    steam: "736260",
+    blurb: {
+      en: "Baba Is You is a 2019 puzzle game by Hempuli Oy where, per its own store text, 'the rules you have to follow are present as blocks you can interact with,' so manipulating an ordinary-looking object can change how the whole level works and cause surprising interactions the player has to discover for themselves. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that an ordinary block-pushing task can be quietly rewritten by a hidden property, turning simple movement into a puzzle about what happens when two things meet.",
+      ja: "Baba Is Youは、Hempuli Oy制作による2019年のパズルゲームで、Steam自身のストア文言によれば「従うべきルールそのものが、操作可能なブロックとして存在する」——ごく普通に見える物体を動かすだけでレベル全体の仕組みが変わり、プレイヤー自身が発見しなければならない意外な相互作用を引き起こす。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——ごく普通のブロック運びの課題が、隠れた属性によって静かに書き換えられ、単純な移動が「二つの物が出会ったら何が起きるか」を問うパズルへと変わるという発想、その原点にあたる一本だ。",
     },
   },
 } as const;
