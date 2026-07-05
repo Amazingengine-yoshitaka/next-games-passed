@@ -8518,6 +8518,108 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "front-line": {
+    published: "2026-07-21",
+    publishAt: "2026-07-21",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「継続なし・残機なしのワンライフ、武器切替と盾/手榴弾戦術で前線を
+    //   突き進む横スクロールアクションシューティング」を捉える語がないため新設
+    //   "one-life-run-and-gun"(ストア文言自身の「ゲームオーバーは一度きり」に準拠)。
+    // developer/publisher D.IKUSHIMA(自社発売・第三者パブリッシャーなし)は、itch.ioプロフィール
+    //   本文実読で「1977年兵庫県生まれ。専門学校の教員を本業として、3Dゲームプログラミングの授業や
+    //   就職活動の指導をメインに受け持ってきました」を直接確認済み。本業を持つ個人開発者である。
+    // リリース日2003年の無料公開フリーゲームで、Steam自身の「Awards」欄に"Nominated for FREE GAME
+    //   AWARDS 2003"・"Nominated for FREE GAME AWARDS 2004"・"Nominated for Madonomori Award
+    //   2003"(窓の杜大賞2003ノミネート)と実測確認済み。開発者本人のブログ(mclover.hateblo.jp)には
+    //   「旧配布サイトでのダウンロード数：1,027,157」と明記されており、AUTOMATON自身の報道
+    //   「累計ダウンロード数100万件を超えている」と符合する。本作のSteamリリースは2019年以来
+    //   約7年ぶりとなる大型アップデート(Ver.1.39、固定だった640×480解像度を可変化)を経たもの。
+    //   同時期に同開発者の『ネイビーミッション』(リリース日2026年7月1日)、CESA GAME AWARDS(第8回)
+    //   インディーズ部門大賞受賞歴を持つ『バーガーメーカー』(リリース日2026年7月9日)もリリースされて
+    //   いるが、3作は同日発売ではなくそれぞれ発売日が異なる点は正直に区別する。
+    // 系譜は特定の原作ではなく、武器切替・一撃死の緊張感・スコアアタックという型を確立した
+    //   METAL SLUG(SNK、1996年)を新規anchor "metal-slug" として採用する。この帰属は開発元
+    //   D.IKUSHIMA自身の言明ではなく当サイト独自の批評的比較のため自信度: 中(捏造しない・
+    //   parasocial/perfect-blue/papers-please等と同型の判断)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false。
+    // west_unreached: 英語レビューは1件のみ(appreviews API実測、10件中)。レビュー総数10件は絶対
+    //   条件の最低ラインぎりぎりであり、統計的信頼性が極めて限定的であることを正直に開示する。
+    meta: { genre: "one-life-run-and-gun", lineage: "metal-slug", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 10, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Front Line",
+        name_ja: "フロントライン",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4846480/Front_Line/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a side-scrolling action shooter where you aim with the mouse and click to fire, pushing through enemy lines while switching between a handgun, machine gun, shotgun, and sniper rifle depending on the situation, backed by shield defense and grenade-fueled breakthrough tactics; the difficulty escalates the further you advance, and merit points feed a rank system built for score-attack replay, all wrapped in a battlefield rendered down to soldier movement, gunfire, and rain. There is exactly one game over: no extra lives, no continues, which is exactly what makes every single enemy bullet frightening, and exactly what the store text says makes you want to try 'one more time.' The game itself dates to 2003 as a free release, per Steam's own Awards section nominated that year for FREE GAME AWARDS 2003, FREE GAME AWARDS 2004, and the Madonomori Award 2003; the developer's own blog cites 1,027,157 downloads from its original distribution site, matching AUTOMATON's own coverage of 'over a million cumulative downloads.' This Steam release follows the game's first major update since 2019, letting a resolution once locked at 640x480 be freely changed. Made and self-published solo by developer D.IKUSHIMA, who per his own itch.io profile was born in 1977 in Hyogo Prefecture and works as a vocational school teacher, mainly instructing 3D game programming and job-hunting guidance, this arrived the same week as two sibling releases, Navy Mission (July 1, 2026) and Burger Maker (July 9, 2026, winner of the Indie category Grand Prize at the 8th CESA GAME AWARDS), though the three were not released simultaneously. Released July 2, 2026 at ¥200, it is Positive at 100 percent over 10 reviews (10 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, and only 1 of its 10 reviews is in English; with a review count this thin, the statistical confidence here is genuinely limited, a fact worth stating plainly rather than dressing up.",
+        desc_ja: "Steam自身の表記によれば、本作はマウスで照準を合わせてクリックで撃つ横スクロールアクションシューティングで、状況に応じてハンドガン・マシンガン・ショットガン・スナイパーライフルを使い分けながら前線を突き進む。盾による防御、手榴弾による強行突破など多彩な戦術も備え、進めば進むほど難易度が上がり、功績点が階級制度に反映されスコアアタックのやり込みを支える——兵士の細かい動き、銃声、雨まで作り込まれた戦場の中で。ゲームオーバーは一度きり。残機もコンティニューもない、だからこそ敵の一弾一弾が怖く、ストア文言自身が言う「もう一回」を誘う。本作自体はリリース日2003年の無料公開フリーゲームに遡り、Steam自身の「Awards」欄には同年のFREE GAME AWARDS 2003・FREE GAME AWARDS 2004・窓の杜大賞2003(Madonomori Award 2003)へのノミネートが実測確認できる。開発者本人のブログには「旧配布サイトでのダウンロード数：1,027,157」と明記されており、AUTOMATON自身の「累計ダウンロード数100万件を超えている」という報道と符合する。今回のSteamリリースは、2019年以来初となる大型アップデートを経たもので、固定だった640×480の解像度が自由に変更できるようになった。制作・自社発売はソロ開発者D.IKUSHIMA。本人のitch.ioプロフィールによれば1977年兵庫県生まれ、専門学校の教員を本業とし、3Dゲームプログラミングの授業や就職活動の指導を主に担当している。同じ週に同開発者の『ネイビーミッション』(リリース日2026年7月1日)、第8回CESA GAME AWARDSインディーズ部門大賞を受賞した『バーガーメーカー』(リリース日2026年7月9日)もリリースされているが、3作は同日発売ではなくそれぞれ発売日が異なる点は正直に区別しておく。発売日は2026年7月2日、価格¥200。10件のレビュー(好評10件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、10件のうち英語レビューはわずか1件——これだけレビュー数が薄いと統計的な確からしさは正直かなり限定的であり、その点も飾らずそのまま伝える。",
+      },
+      {
+        name_en: "METAL SLUG",
+        name_ja: "METAL SLUG",
+        status: "established",
+        steam: "https://store.steampowered.com/app/366250/METAL_SLUG/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: METAL SLUG, SNK's 1996 arcade classic, per its own store text 'the very first title in SNK's legendary 2D run & gun action shooting game series where it all began,' which established the template of switchable weapon pickups, one-hit-fragile soldiers under constant fire, and escalating enemy waves built for high-score chasing rather than narrative pacing. Front Line is not an official METAL SLUG work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer D.IKUSHIMA, but it carries the same core tension into a new frame: no continues, no cushion, just a rifle you switch out for something better and a line of enemies you have to survive to reach.",
+        desc_ja: "この味の原点——METAL SLUG。SNKによる1996年のアーケードクラシックで、Steam自身のストア文言によれば「SNKの伝説的な2Dラン&ガン・アクションシューティングシリーズの、すべてが始まった記念すべき第一作」であり、切り替え可能な武器の拾得・絶え間ない銃撃に晒される一撃で脆い兵士・物語のペース配分ではなくハイスコア追求のために組まれた敵の波、という型を確立した一本だ。フロントラインは公式のMETAL SLUG作品ではなく、この系譜は開発元D.IKUSHIMA自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ核心的な緊張感を新しい枠組みへと引き継いでいる——コンティニューも緩衝材もなく、より良い武器へと持ち替えるライフルと、そこへたどり着くために生き延びなければならない敵の列だけがある、という発想だ。",
+      },
+    ],
+    en: {
+      title: "Front Line - a one-life side-scrolling run-and-gun with no continues where every enemy bullet is a real threat, made solo by developer D.IKUSHIMA as a Steam release of a free 2003 game with over a million cumulative downloads, Positive at 100 percent over 10 reviews with only 1 of them in English",
+      description: "A one-life run-and-gun: switch between handgun, machine gun, shotgun, and sniper rifle while pushing through enemy lines, with no extra lives and no continues to soften a single mistake. Made and self-published solo by developer D.IKUSHIMA, this Steam release follows a free game first released in 2003 with over a million cumulative downloads. Positive at 100 percent over 10 reviews, only 1 of them in English.",
+      h1a: "There are no extra lives and no continues, so every enemy bullet is a real threat the moment it leaves the barrel, ",
+      h1flip: "and the only real choice you get is which of four weapons you're holding when it does",
+      h1b: ".",
+      lede: "A one-life side-scrolling run-and-gun made and self-published solo by developer D.IKUSHIMA, whose own itch.io profile says he was born in 1977 in Hyogo Prefecture and works as a vocational school teacher, mainly instructing 3D game programming and job-hunting guidance. Per Steam's own listing, you aim with the mouse and click to fire, pushing through enemy lines while switching between a handgun, machine gun, shotgun, and sniper rifle depending on the situation, backed by shield defense and grenade-fueled breakthrough tactics; there is exactly one game over, no extra lives, no continues, and merit points feed a rank system built for score-attack replay. The game itself dates to 2003 as a free release, nominated that year, per Steam's own Awards section, for FREE GAME AWARDS 2003, FREE GAME AWARDS 2004, and the Madonomori Award 2003; the developer's own blog cites 1,027,157 downloads from its original distribution site, matching AUTOMATON's own coverage of over a million cumulative downloads. This Steam release follows the game's first major update since 2019. It arrived the same week as two sibling releases by the same developer, Navy Mission and Burger Maker (winner of the Indie category Grand Prize at the 8th CESA GAME AWARDS), though the three were not released simultaneously. Released July 2, 2026 at ¥200, it is Positive at 100 percent over 10 reviews (10 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, and only 1 of its 10 reviews is in English; with a review count this thin, the statistical confidence here is genuinely limited, a fact worth stating plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, there are no extra lives and no continues, so the tension of a run-and-gun stops being about managing a health bar and becomes about a single bullet you genuinely cannot afford to take, one time, for the whole run.",
+        "Switching between four weapons depending on the situation means the real skill on display isn't your aim, it's your judgment about which gun the next few seconds actually call for, made under fire, with a shield and a grenade as your only backup plans.",
+        "This is a 2003 free game a solo teacher built and kept alive for over two decades, and once you know that a rank system built for score-attack replay is what it's always offered, its return to Steam reads less like a rerelease and more like a quiet insistence that the original design was already worth chasing a high score in.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a run-and-gun with real stakes: no extra lives, no continues, four weapons to switch between, and a shield and grenade as your only cushion",
+        "You want a genuinely solo Japanese production with two decades of history: a free 2003 game with over a million cumulative downloads, still made and maintained by the same teacher-by-day developer",
+        "You want a Positive title (100 percent, though only 10 reviews) that could not be more unfound: only 1 of its reviews is in English",
+      ],
+      bad: [
+        "You want a large, statistically settled review base before you trust a score; 10 reviews is about as thin as a sample gets, and this pick says so plainly",
+        "You want to actually read it without Japanese; it supports no other language at all, and it is a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "フロントライン - 残機もコンティニューもない、敵の一弾一弾が本物の脅威になる横スクロールラン&ガン。制作は本業を持つソロ開発者D.IKUSHIMA、2003年公開の無料ゲームの23年越しSteam化で累計100万DL超。10件のレビューで好評率100%、英語レビューはわずか1件",
+      description: "残機もコンティニューもないラン&ガン。ハンドガン・マシンガン・ショットガン・スナイパーライフルを使い分けながら前線を突き進み、一度のミスを緩和する仕組みは無い。制作・自社発売はソロ開発者D.IKUSHIMA、本作は2003年に無料公開され累計100万DL超を記録した作品の23年越しSteam化にあたる。10件のレビューで好評率100%、英語レビューはわずか1件。",
+      h1a: "残機もコンティニューもない。だから敵の一弾一弾が、銃口を離れた瞬間から本物の脅威になる。",
+      h1flip: "唯一許された選択は、その瞬間にどの4種の武器を握っているか、それだけだ",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者D.IKUSHIMAによる、残機もコンティニューもない横スクロールラン&ガン。本人のitch.ioプロフィールによれば1977年兵庫県生まれ、専門学校の教員を本業とし、3Dゲームプログラミングの授業や就職活動の指導を主に担当している。Steam自身の表記によれば、マウスで照準を合わせてクリックで撃ち、状況に応じてハンドガン・マシンガン・ショットガン・スナイパーライフルを使い分けながら前線を突き進む。盾による防御、手榴弾による強行突破も備え、ゲームオーバーは一度きり、残機もコンティニューもなく、功績点が階級制度に反映されスコアアタックのやり込みを支える。本作自体はリリース日2003年の無料公開フリーゲームに遡り、Steam自身の「Awards」欄には同年のFREE GAME AWARDS 2003・FREE GAME AWARDS 2004・窓の杜大賞2003へのノミネートが確認できる。開発者本人のブログには「旧配布サイトでのダウンロード数：1,027,157」と明記されており、AUTOMATON自身の「累計ダウンロード数100万件を超えている」という報道と符合する。今回のSteamリリースは2019年以来初となる大型アップデートを経たものだ。同じ週に同開発者の『ネイビーミッション』、第8回CESA GAME AWARDSインディーズ部門大賞を受賞した『バーガーメーカー』もリリースされているが、3作は同日発売ではない。発売日は2026年7月2日、価格¥200。10件のレビュー(好評10件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、10件のうち英語レビューはわずか1件——これだけレビュー数が薄いと統計的な確からしさは正直かなり限定的であり、その点も飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、残機もコンティニューもない。だからラン&ガンの緊張感は、体力ゲージの管理ではなく、このプレイ全体を通して本当に一度も食らってはいけないたった一発の弾へと変わる。",
+        "状況に応じて4種の武器を切り替えるということは、本当に試されているのは照準の腕前ではなく、次の数秒に本当はどの銃が要るかという判断力だ——それを盾と手榴弾だけを頼りに、銃火の下で下し続ける。",
+        "これは、本業を持つ一人の教員が2003年に作り、20年以上維持し続けてきた無料ゲームだ。スコアアタックのやり込みを支える階級制度が最初からそこにあったと知ったうえで触れると、このSteam復帰は単なる再販というより、この設計は最初からハイスコアを追いかける価値があったのだと静かに言い張っているように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "本物の緊張感を持つラン&ガンが欲しい人——残機もコンティニューもなく、切り替える4種の武器と、盾と手榴弾だけが頼り",
+        "20年以上の歴史を背負った、本当にソロの日本のプロダクションが欲しい人——2003年に無料公開され累計100万DLを超えた作品を、教員業を本業とする同じ開発者が今も作り続けている",
+        "「好評」タイトル(10件で100%)ながら、これ以上ないほどまだ見つかっていないものを掴みたい人——レビューのうち英語はわずか1件",
+      ],
+      bad: [
+        "スコアを信頼する前に統計的に安定した母数が欲しい人——10件はこれ以上ないほど小さな母数で、この記事はそれを飾らずそのまま伝えている",
+        "日本語なしで実際に読みたい人——他言語には一切対応しておらず、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9411,6 +9513,16 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Coin Pusher is RewindApp's 2019 PC recreation of the real-world funfair and arcade machine of the same name, in which coins slide across a moving shelf and every coin you feed it might, or might not, tip a stack of others over the edge. This lineage is a comparison drawn by this site to note a genuine mechanical ancestor rather than a developer-stated influence; it is an early digitization of the physical coin-pusher concept that Old Coin Pusher Friends 2 builds on top of, turning a solitary arcade machine into an Edo-period, yokai-fighting, up-to-four-player cooperative game.",
       ja: "Coin Pusherは、RewindApp制作による2019年のPC作品で、縁日やゲームセンターにある実物のコインプッシャー(メダル落とし)機を同名のままデジタル再現した一本だ。コインは動く棚の上を滑り、投入した一枚一枚が、積み重なった他のコインを縁から落とすかもしれないし、落とさないかもしれない。この系譜は、開発元が明言した影響ではなく、当サイトが確認した本物の機構上の祖先を示すための整理である——古銭プッシャーフレンズ２が土台とする、物理的なコインプッシャーという着想の早期デジタル化であり、一人で遊ぶアーケード機を、江戸時代・妖怪退治・最大4人協力プレイのゲームへと作り変えている。",
+    },
+  },
+  // 原点 METAL SLUG(SNK、1996年)。Front Line pick の系譜として新規採用。この帰属は開発元
+  //   D.IKUSHIMAの言明ではなく当サイト独自の批評的比較(自信度: 中・parasocial/perfect-blue/
+  //   papers-please等と同型の判断)。現行Steamで販売中のためsteam URLで同定する。
+  "metal-slug": {
+    steam: "366250",
+    blurb: {
+      en: "METAL SLUG is SNK's 1996 arcade classic, per its own store text 'the very first title in SNK's legendary 2D run & gun action shooting game series where it all began,' which established the template of switchable weapon pickups, one-hit-fragile soldiers under constant fire, and escalating enemy waves built for high-score chasing rather than narrative pacing. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a run-and-gun without continues or cushions can still be built around a rifle you swap for something better and a line of enemies you have to survive to reach.",
+      ja: "METAL SLUGは、SNKによる1996年のアーケードクラシックで、Steam自身のストア文言によれば「SNKの伝説的な2Dラン&ガン・アクションシューティングシリーズの、すべてが始まった記念すべき第一作」であり、切り替え可能な武器の拾得・絶え間ない銃撃に晒される一撃で脆い兵士・物語のペース配分ではなくハイスコア追求のために組まれた敵の波、という型を確立した一本だ。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——コンティニューも緩衝材もないラン&ガンでも、より良い武器へと持ち替えるライフルと、そこへたどり着くために生き延びなければならない敵の列を軸に組み立てられるという発想、その原点にあたる一本だ。",
     },
   },
 } as const;
