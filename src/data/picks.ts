@@ -7808,6 +7808,109 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "pull-stay": {
+    published: "2026-07-18",
+    publishAt: "2026-07-18",
+    kind: "find",
+    leadIndex: 0,
+    // 正直さ・西到達の誇張禁止(motionrec/parasocial型の判断): 英語レビューは125/146=約85.6%と
+    //   すでに大多数が英語(Steam appreviews API実測、english/all両方確認済み)、TechRaptor・
+    //   esports.netの記事、開発者本人が出演したScene World Podcast(タイトルが本人を"a Japanese
+    //   solo dev"と明記)、単独の高評価YouTubeレビューが確認できる。ゆえに rarity/reviewBand/
+    //   reachState は一切持たせない: これらを立てるとPickPageが「西側がまだほとんど見つけていない」
+    //   を無条件で後置し、8割超が英語という実測と矛盾する誇張になる。obscurity も"deep"/"wall"は
+    //   いずれも西未到達を含意するため none とする(正直さ)。ただしKotaku/IGN/PC Gamer/Polygon等の
+    //   西側大手メディアでのレビューは確認できず、Metacriticも批評家レビュー0件("tbd")である旨は
+    //   本文(散文)で正直に述べる。
+    // genre は既存ラベルに「拳か罠かで家に迫る敵を撃退するベルトスクロールアクション×タワー
+    //   ディフェンス」を捉える語がないため新設 "brawler-tower-defense"。
+    // developer/publisher Nito Souji(自社発売・第三者パブリッシャーなし)は、Steam自身の英語版
+    //   about_the_game本文で開発者本人が一人称で「I can relate to Susumu so badly because I'm also
+    //   a Hikikomori(私もひきこもりだから、進に強く共感できる)」「I'm making this game solo just
+    //   trying to reflect my own situation(自分の状況を映すため一人で作っている)」と明言している
+    //   ことを実測確認済み(ストア本文自身の一次証言・捏造なし)。日本特有の社会現象「ひきこもり」への
+    //   当事者言及であり、対応言語の多さ(英語含む8言語)とは別に、開発者自身の告白がそのまま国籍・
+    //   経験の一次証拠になっている。
+    // 系譜はSlay the Spire系やBook of Demons型ではなく、拠点防衛と罠設置という着想を定義した
+    //   Orcs Must Die!(Robot Entertainment、2011年)を新規anchor "orcs-must-die" として採用する。
+    //   この帰属は開発元Nito Souji自身の言明ではなく当サイト独自の批評的比較のため自信度: 中
+    //   (捏造しない・parasocial/perfect-blue/papers-please/book-of-demons/necrodancer型の判断)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・Steam実績あり。
+    meta: { genre: "brawler-tower-defense", lineage: "orcs-must-die", obscurity: "none" },
+    games: [
+      {
+        name_en: "Pull Stay",
+        name_ja: "Pull Stay",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1179890/Pull_Stay/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, you play a guardian robot defending Susumu, a young man who has shut himself inside his room for years, a hikikomori, as enemies come to reach out to him, whether out of worry, mockery, or simple curiosity; if any of them reaches him, the game ends. Defense comes two ways: beat-em-up brawling where every enemy type you smack teaches you a new move, and fifteen kinds of deliberately absurd traps, a baked-fish missile, a toothpaste turret, a watermelon bazooka among them, built by breaking your neighbors' houses for resources and using them to arm rooms or expand the house. Susumu himself can craft power-up items when signaled, or be given 'some loving punishment' in a minigame if he starts slacking off, and quirky, oddly designed bosses eventually force you out of the house to counter them directly. Made and self-published solo by developer Nito Souji, the game's own English store text carries a first-person admission: 'I can relate to Susumu so badly because I'm also a Hikikomori. I'm making this game solo just trying to reflect my own situation with this game.' Its demo dates to June 2020, and the full game released March 31, 2025 at ¥1,900; it is Very Positive at about 99 percent over 146 reviews (144 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports eight languages including English, and its reach is real but modest: about 125 of its 146 reviews, some 86 percent, are already in English, and it has drawn coverage from TechRaptor and esports.net plus a single glowing YouTube review and an appearance on the Scene World Podcast (billed there as 'a Japanese solo dev'), but no outlet among Kotaku, IGN, PC Gamer, Rock Paper Shotgun, Polygon, Eurogamer, PCGamesN, TheGamer, or Destructoid has reviewed it, and Metacritic lists its critic score as 'tbd.'",
+        desc_ja: "Steam自身の表記によれば、あなたは何年も自室に引きこもる青年「進(すすむ)」を守る守護ロボットとなる。心配してか、からかいたくてか、あるいは単なる好奇心からか、敵たちが進のもとへたどり着こうとし、たどり着かれてしまえばゲームオーバーだ。防衛手段は二つ——敵の種類ごとに叩けば新たな技を覚えるベルトスクロールアクションの格闘と、さんまミサイル・歯磨き粉タレット・すいかバズーカなど15種類のあえて馬鹿げた罠。ご近所の家を壊して集めたリソースで、罠を仕掛けたり部屋を増築したりする。進本人も、合図すれば回復アイテムを作ってくれるが、サボりだしたらミニゲームで「愛のおしおき」を与えることになり、癖の強い奇妙なボスたちが現れれば、家を出て直接迎え撃つ必要も出てくる。制作・自社発売はソロ開発者Nito Souji。Steam自身の英語版ストア文言には、開発者本人による一人称の告白がそのまま載っている——「私もひきこもりだから、進(すすむ)に強く共感できる。自分の状況をこのゲームに映そうとして、一人で作っている」。体験版は2020年6月に遡り、製品版は2025年3月31日に¥1,900でリリースされた。146件のレビュー(好評144件・不評2件、Steam自身のレビューAPI実測)で好評率約99%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。英語を含む8言語に対応し、その到達度は実質的だが規模は控えめだ——146件のうち約125件、86%程度がすでに英語レビューで、TechRaptorとesports.netの記事、単独の高評価YouTubeレビュー、Scene World Podcastへの出演(そこでは「日本人のソロ開発者」と紹介されている)はあるが、Kotaku・IGN・PC Gamer・Rock Paper Shotgun・Polygon・Eurogamer・PCGamesN・TheGamer・Destructoidのいずれもレビューしておらず、Metacriticの批評家スコアは「tbd」のままだ。",
+      },
+      {
+        name_en: "Orcs Must Die!",
+        name_ja: "Orcs Must Die!",
+        status: "established",
+        steam: "https://store.steampowered.com/app/102600/Orcs_Must_Die/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Orcs Must Die!, a 2011 action-strategy game by Robot Entertainment whose own store text sums it up simply as 'slice them, burn them, skewer them, and launch them,' defining the modern template of arming a chokepoint with absurd, deadly traps and wading in with melee weapons of your own when the traps alone aren't enough. Pull Stay is not an official Orcs Must Die! work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer Nito Souji, but it carries the same core idea into a new frame: a home under siege, defended by a mix of hands-on brawling and gleefully ridiculous traps, with someone genuinely vulnerable standing behind the choke point instead of a treasure room.",
+        desc_ja: "この味の原点——Orcs Must Die!。Robot Entertainment制作による2011年のアクション・ストラテジーで、Steam自身のストア文言は「切り刻め、焼き払え、串刺しにしろ、打ち上げろ」と本作を簡潔に要約する。狭い通路に馬鹿げた必殺の罠を仕掛け、それだけでは足りない時には自ら近接武器で乱入する、という現代的な型を定義した一本だ。Pull Stayは公式のOrcs Must Die!作品ではなく、この系譜は開発元Nito Souji自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ核心的な着想を新しい枠組みへと引き継いでいる——宝物庫の代わりに、本当に守るべき弱い存在が通路の先に立っている、素手の乱闘と嬉々とした馬鹿げた罠が入り混じる籠城戦だ。",
+      },
+    ],
+    en: {
+      title: "Pull Stay - a beat-em-up tower defense where you play a guardian robot defending a hikikomori shut-in with fists and fifteen absurd traps, made solo by a developer who says in Steam's own text 'I'm also a Hikikomori,' Very Positive at about 99 percent over 146 reviews",
+      description: "A beat-em-up tower defense: defend Susumu, a young man who has shut himself in his room for years, using brawler combat that teaches new moves and fifteen absurd traps built from resources scavenged by breaking neighbors' houses. Made and self-published solo by developer Nito Souji, whose own Steam store text admits, 'I'm also a Hikikomori. I'm making this game solo just trying to reflect my own situation.' Very Positive at about 99 percent over 146 reviews.",
+      h1a: "A guardian robot stands between a shut-in named Susumu and every stranger who wants to reach him, ",
+      h1flip: "and fending them off comes down to your own fists and fifteen kinds of deliberately absurd traps",
+      h1b: ".",
+      lede: "A beat-em-up tower defense made and self-published solo by developer Nito Souji, whose demo dates to June 2020 and whose full release came March 31, 2025. Per Steam's own listing, you play a guardian robot defending Susumu, a young man who has shut himself inside his room for years, a hikikomori, as enemies come to reach out to him out of worry, mockery, or simple curiosity; if any of them reaches him, the game ends. Defense comes two ways: beat-em-up brawling where every enemy type you smack teaches you a new move, and fifteen kinds of deliberately absurd traps, a baked-fish missile, a toothpaste turret, a watermelon bazooka among them, built by breaking your neighbors' houses for resources. Susumu himself can craft power-up items when signaled, or be given 'some loving punishment' in a minigame if he starts slacking off, and quirky bosses eventually force you out of the house to counter them directly. The game's own English store text carries a first-person admission from its creator: 'I can relate to Susumu so badly because I'm also a Hikikomori. I'm making this game solo just trying to reflect my own situation with this game.' Priced at ¥1,900, it is Very Positive at about 99 percent over 146 reviews (144 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with Steam Achievements, no AI-generated assets, and per Steam's own content descriptors, nothing sexual. Its reach into the West is real but modest: about 125 of its 146 reviews, some 86 percent, are already in English, and it has drawn coverage from TechRaptor and esports.net plus a single glowing YouTube review and an appearance on the Scene World Podcast, but no outlet among Kotaku, IGN, PC Gamer, Rock Paper Shotgun, Polygon, Eurogamer, PCGamesN, TheGamer, or Destructoid has reviewed it, and Metacritic lists its critic score as 'tbd.'",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, the whole game turns on one fact stated plainly up front: if any enemy reaches Susumu, it's over, so every trap you place and every punch you throw is measured against a single, unmovable stake rather than an abstract health bar.",
+        "The fifteen traps are deliberately, gleefully absurd, a baked-fish missile, a toothpaste turret, a watermelon bazooka, so the tone keeps swinging between slapstick comedy and the real dread of watching something get closer to the person you're supposed to be protecting.",
+        "Steam's own store text carries the developer's own words, 'I can relate to Susumu so badly because I'm also a Hikikomori,' so underneath the wacky trap names sits a solo creator's own account of shutting himself away, which recolors every encounter where strangers claim to be reaching out to Susumu out of concern.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a beat-em-up crossed with tower defense: brawler combat that teaches new moves alongside fifteen deliberately absurd traps built from scavenged resources",
+        "You want a genuinely solo Japanese production carried by a personal stake: developer Nito Souji's own admission, in Steam's own store text, of being a hikikomori himself and building the game to reflect that",
+        "You want a Very Positive title (about 99 percent over 146 reviews) that has found a real if modest following abroad (TechRaptor, esports.net, one enthusiastic YouTube review) without yet landing a review from any major Western outlet",
+      ],
+      bad: [
+        "You want a title still completely unknown to English-speaking players; about 86 percent of its reviews are already in English, so this isn't a purely undiscovered find",
+        "You want something validated by major outlets; Metacritic still lists its critic score as 'tbd,' and it is a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Pull Stay - ひきこもりの青年を、拳と15種の馬鹿げた罠で守る守護ロボットになるベルトスクロールアクション×タワーディフェンス。制作・自社発売はソロ開発者、Steam自身のストア文言で「私もひきこもりだから」と明かす。146件のレビューで好評率約99%の「非常に好評」",
+      description: "ベルトスクロールアクション×タワーディフェンス。何年も自室に引きこもる青年「進」を、技を覚えていく格闘と、ご近所を壊して集めた素材で作る15種類の馬鹿げた罠で守る。制作・自社発売はソロ開発者Nito Souji。Steam自身のストア文言で「私もひきこもりだから、自分の状況を映すために一人で作っている」と明かしている。146件のレビューで好評率約99%の「非常に好評」。",
+      h1a: "守護ロボットは、ひきこもりの青年「進」と、彼のもとへたどり着こうとするあらゆる他人との間に立つ。",
+      h1flip: "撃退できるかどうかは、自分の拳と15種類のあえて馬鹿げた罠だけにかかっている",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者Nito Souji。体験版は2020年6月に遡り、製品版は2025年3月31日にリリースされた。Steam自身の表記によれば、あなたは何年も自室に引きこもる青年「進(すすむ)」を守る守護ロボットとなる。心配してか、からかいたくてか、単なる好奇心からか、敵たちが進のもとへたどり着こうとし、たどり着かれてしまえばゲームオーバーだ。防衛手段は二つ——敵の種類ごとに叩けば新たな技を覚えるベルトスクロールアクションの格闘と、さんまミサイル・歯磨き粉タレット・すいかバズーカなど15種類のあえて馬鹿げた罠。ご近所の家を壊して集めたリソースで罠を仕掛ける。進本人も、合図すれば回復アイテムを作ってくれるが、サボりだしたらミニゲームで「愛のおしおき」を与えることになり、癖の強いボスたちが現れれば家を出て直接迎え撃つ必要も出てくる。ゲーム自身の英語版ストア文言には、開発者本人による一人称の告白がそのまま載っている——「私もひきこもりだから、進に強く共感できる。自分の状況をこのゲームに映そうとして、一人で作っている」。価格は¥1,900、146件のレビュー(好評144件・不評2件)で好評率約99%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam実績あり、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。西側への到達は実質的だが規模は控えめだ——146件のうち約125件、86%程度がすでに英語レビューで、TechRaptorとesports.netの記事、単独の高評価YouTubeレビュー、Scene World Podcastへの出演はあるが、Kotaku・IGN・PC Gamer・Rock Paper Shotgun・Polygon・Eurogamer・PCGamesN・TheGamer・Destructoidのいずれもレビューしておらず、Metacriticの批評家スコアは「tbd」のままだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、このゲームの全ては最初に平然と告げられる一つの事実に懸かっている——敵の誰か一人でも進にたどり着けば、そこで終わりだ。だから仕掛けるすべての罠、繰り出すすべてのパンチが、抽象的な体力ゲージではなく動かせない一点の賭け金に対して測られる。",
+        "15種類の罠はさんまミサイル・歯磨き粉タレット・すいかバズーカと、あえて嬉々として馬鹿げている。だからこのゲームの空気は、スラップスティックな笑いと、守るべき相手に何かが迫ってくるという本物の恐れとの間を行き来し続ける。",
+        "Steam自身のストア文言には開発者本人の言葉——「私もひきこもりだから、進に強く共感できる」——がそのまま載っている。だから馬鹿げた罠の名前の裏側には、自分の引きこもり経験を語るソロ開発者本人の告白が横たわっており、それが「心配して」進に手を伸ばそうとする見知らぬ他人たちとの遭遇一つひとつの色合いを変えてしまう。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ベルトスクロールアクションとタワーディフェンスの掛け合わせが欲しい人——技を覚えていく格闘戦闘と、拾い集めた素材で作る15種類のあえて馬鹿げた罠",
+        "個人的な切実さを背負った、本当にソロの日本のプロダクションが欲しい人——開発者Nito Souji本人がSteam自身のストア文言で、自分もひきこもりでありその経験を映すために作ったと明かしている",
+        "「非常に好評」タイトル(146件で約99%)ながら、海外で実質的だが控えめな支持(TechRaptor・esports.net・熱のこもったYouTubeレビュー1件)を得つつ、西側大手メディアのレビューにはまだ届いていない一本を掴みたい人",
+      ],
+      bad: [
+        "英語圏でまったく知られていないタイトルが欲しい人——レビューの約86%はすでに英語で、純粋な未発見作とは言えない",
+        "大手メディアにお墨付きをもらった作品が欲しい人——Metacriticの批評家スコアは今も「tbd」のままで、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8621,6 +8724,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Crypt of the NecroDancer is a 2015 roguelike by Brace Yourself Games whose own store text sums it up as a game where you 'move to the music and deliver beatdowns to the beat,' every step and swing locked to the rhythm of its soundtrack rather than free timing. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a fight only truly works if you act exactly on the beat, not just eventually.",
       ja: "Crypt of the NecroDancerは、Brace Yourself Games制作による2015年のローグライクで、Steam自身のストア文言は「音楽に乗って動き、リズムに合わせて打ちのめせ」と本作を要約する。あらゆる一歩と一撃が自由なタイミングではなくサウンドトラックのリズムに固定されている。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——戦いは「いつかやればいい」ではなく「ちょうどそのビートで」行動して初めて成立するという発想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Orcs Must Die!(Robot Entertainment、2011年)。Pull Stay pick の系譜として新規採用。
+  //   この帰属は開発元Nito Soujiの言明ではなく当サイト独自の批評的比較(自信度: 中・parasocial/
+  //   perfect-blue/papers-please/book-of-demons/necrodancer型の判断)。現行Steamで販売中のため
+  //   steam URLで同定する。
+  "orcs-must-die": {
+    steam: "102600",
+    blurb: {
+      en: "Orcs Must Die! is a 2011 action-strategy game by Robot Entertainment whose own store text sums it up simply as 'slice them, burn them, skewer them, and launch them,' defining the modern template of arming a chokepoint with absurd, deadly traps and wading in with melee weapons of your own when the traps alone aren't enough. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a home, a corridor, or anything worth guarding can be defended through a mix of hands-on combat and gleefully ridiculous traps.",
+      ja: "Orcs Must Die!は、Robot Entertainment制作による2011年のアクション・ストラテジーで、Steam自身のストア文言は「切り刻め、焼き払え、串刺しにしろ、打ち上げろ」と本作を簡潔に要約する。狭い通路に馬鹿げた必殺の罠を仕掛け、それだけでは足りない時には自ら近接武器で乱入する、という現代的な型を定義した一本だ。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——家であれ通路であれ、守る価値のある何かを、素手の戦闘と嬉々とした馬鹿げた罠の組み合わせで守り抜けるという発想、その原点にあたる一本だ。",
     },
   },
 } as const;
