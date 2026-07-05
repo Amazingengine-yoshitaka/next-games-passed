@@ -7911,6 +7911,107 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "auto-rogue": {
+    published: "2026-07-18",
+    publishAt: "2026-07-18",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「戦闘中は一切操作せず、事前にスキルと発動条件を組んで自動戦闘を眺める
+    //   ローグライク」を捉える語がないため新設 "auto-battler-roguelike"(ゲーム自身のストア文言
+    //   「戦闘自動化ローグライク」に準拠)。
+    // developer/publisher 定期的な宝物(自社発売・第三者パブリッシャーなし)は、AUTOMATON年末特集
+    //   「2025年よかった国産小規模開発ゲーム11本」(リリース日2025-12-29掲載)本文で本作が取り上げ
+    //   られていることを直接引用確認済み——記事自身が本作を「国産小規模開発ゲーム」と分類している。
+    //   加えてTGS2025インディーセレクション80への出展実績(GameMakers.jp/4Gamer記事で確認)、個人
+    //   ブログ「アイ・スー」が「個人開発者」と明記している点も裏付けとして採用する。国籍の直接一次
+    //   証言(本人の国籍表明)までは確認できず、日本語媒体複数掲載・TGS現地出展という状況証拠に基づく
+    //   判断である旨は正直に自覚する(kung-fu-beat/your-letter-has-been-rejected型の確度)。自社発売
+    //   のため大手資本提携先リスクそのものが存在しない。
+    // 系譜はSlay the Spire系(すでに5回以上使用)ではなく、個人ブログ「アイ・スー」が本作の着想元として
+    //   挙げているFactorio(Wube Software、2020年正式版)を新規anchor "factorio" として採用する。
+    //   この帰属は開発元「定期的な宝物」自身の言明ではなく当サイト独自の批評的比較のため自信度: 中
+    //   (捏造しない・parasocial/perfect-blue/papers-please/book-of-demons/necrodancer/orcs-must-die
+    //   型の判断)。「あらかじめ組んだ仕組みが、手を離れた後に勝手に動き続ける」という着想の原点として
+    //   採用する。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false。
+    // west_unreached: 英語レビュー比率は約29.8%(214/718、appreviews API実測)。同時期候補nophenia
+    //   (appid 3979330)は英語比率52%と既に西側到達が進んでいたため見送り、より西未到達の優先軸に
+    //   合致する本作を採用した。
+    meta: { genre: "auto-battler-roguelike", lineage: "factorio", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 718, positivePct: 92, noEnglish: false } },
+    games: [
+      {
+        name_en: "Auto Rogue",
+        name_ja: "オートローグ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3553210/Auto_Rogue/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, you never touch the fight itself: everything is decided beforehand, combining base skills with trigger conditions to invent new effects, a skill that costs HP but gets cheaper, one that permanently raises your max HP on a killing blow, one that costs double to fire twice in a row, then sitting back with a coffee to watch the battle you designed play out. Every run reshuffles the enemies, the skills on offer, and the events you meet, and what actually grows stronger from one run to the next is not your character but your own judgment and strategy. Made and self-published by the solo circle 定期的な宝物 (Teikiteki na Takaramono), it was covered in AUTOMATON's own year-end roundup of 'good small-scale domestically-made games of 2025,' praised there for the satisfaction of trial-and-error optimization and floated as a title that could even carry educational value now that programming is a required subject in Japanese schools, and it was shown in person at Tokyo Game Show 2025's Indie Selection 80. Released May 23, 2025 at ¥690, it is Very Positive at about 92 percent over 718 reviews (660 positive, 58 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English and Japanese, and only about 214 of its 718 reviews, some 29.8 percent, are in English, leaving the majority of its audience still in Japan.",
+        desc_ja: "Steam自身の表記によれば、戦闘そのものにはいっさい手を触れない——すべては事前に決まっている。基本スキルに発動条件を組み合わせて新たな効果を生み出す。HPを消費する代わりコストが下がるスキル、とどめを刺すと最大HPが永続的に増えるスキル、コストは倍になるが二回連続で発動できるスキル。そうして組み上げた自動戦闘を、コーヒーでも飲みながら眺める。ダンジョンに入るたびに敵もスキルの選択肢も出会うイベントも変化し、繰り返すごとに強くなるのはキャラクターではなくプレイヤー自身の判断力と戦略だ。制作・自社発売は個人サークル「定期的な宝物」。AUTOMATONの年末特集「2025年よかった国産小規模開発ゲーム11本」で取り上げられ、試行錯誤して最適化していく快感と、プログラミングが必修科目になった今の教育現場でも役立つのではという評価を受けた。東京ゲームショウ2025のインディーセレクション80にも現地出展している。発売日は2025年5月23日、価格¥690。718件のレビュー(好評660件・不評58件、Steam自身のレビューAPI実測)で好評率約92%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。英語と日本語に対応するが、718件のうち約214件、29.8%程度が英語レビューに留まり、支持層の大半はいまも日本国内にある。",
+      },
+      {
+        name_en: "Factorio",
+        name_ja: "Factorio",
+        status: "established",
+        steam: "https://store.steampowered.com/app/427520/Factorio/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Factorio, Wube Software's 2020 game about, per its own store text, 'building and creating automated factories to produce items of increasing complexity,' where the real skill lies not in any single click but in designing a system correctly beforehand and then watching it run on its own. Auto Rogue is not an official Factorio work, and this lineage is a comparison drawn by this site in outside critical commentary (echoing one already made by a Japanese blog covering the game), not a connection stated by developer 定期的な宝物, but it carries the same core idea into a new frame: a combat encounter, not a factory, built entirely in advance and then left to run itself.",
+        desc_ja: "この味の原点——Factorio。Wube Software制作による2020年のゲームで、Steam自身のストア文言によれば「複雑さを増す製品を生産する自動化工場を建設し創造する」ことが核であり、真の腕前はどの一手にもなく、あらかじめ仕組みを正しく設計し、あとは手を離れて勝手に動き続けるのを見守る点にある。Auto Rogueは公式のFactorio作品ではなく、この系譜は当サイト独自の批評的比較(本作を紹介する日本語ブログがすでに同じ比較を挙げていたことへの追認)であり、開発元「定期的な宝物」自身が明言した関連性ではないが、同じ核心的な着想を新しい枠組みへと引き継いでいる——工場ではなく戦闘そのものを、すべて事前に組み立て、あとは手を離れて動くに任せる、という発想だ。",
+      },
+    ],
+    en: {
+      title: "Auto Rogue - a roguelike where you never touch the fight itself, combining skills and trigger conditions beforehand and watching the battle you designed play out, made solo and self-published by the circle 定期的な宝物, Very Positive at about 92 percent over 718 reviews and still mostly found in Japan",
+      description: "An auto-battler roguelike: combine base skills with trigger conditions to invent new effects, then sit back and watch the battle you designed unfold without touching it once. Made and self-published solo by the circle 定期的な宝物 (Teikiteki na Takaramono). Very Positive at about 92 percent over 718 reviews, with English readers still only around 30 percent.",
+      h1a: "You spend every run designing skills and the exact conditions that trigger them, then let go completely, ",
+      h1flip: "and the fight plays out on its own, exactly as well or as badly as you actually planned it",
+      h1b: ".",
+      lede: "An auto-battler roguelike made and self-published solo by the circle 定期的な宝物 (Teikiteki na Takaramono). Per Steam's own listing, you never touch the fight itself: everything is decided beforehand, combining base skills with trigger conditions to invent new effects, a skill that costs HP but gets cheaper, one that permanently raises your max HP on a killing blow, one that costs double to fire twice in a row, then sitting back with a coffee to watch the battle you designed play out. Every run reshuffles the enemies, the skills on offer, and the events you meet, and what actually grows stronger from one run to the next is not your character but your own judgment and strategy. AUTOMATON covered it in its own year-end roundup of 'good small-scale domestically-made games of 2025,' praised there for the satisfaction of trial-and-error optimization and floated as a title with real educational value now that programming is a required subject in Japanese schools, and it was shown in person at Tokyo Game Show 2025's Indie Selection 80. Released May 23, 2025 at ¥690, it is Very Positive at about 92 percent over 718 reviews (660 positive, 58 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English and Japanese, and only about 214 of its 718 reviews, some 29.8 percent, are in English, leaving the majority of its audience still in Japan.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, the entire game is decided before a single enemy appears: you spend a run combining skills and the exact conditions that fire them, then step back completely, so the tension isn't in reacting to a fight, it's in the quiet certainty (or dread) of watching your own planning get tested in real time.",
+        "Every combination changes the math in a small but real way, a skill that costs HP but gets cheaper, one that permanently raises max HP on a kill, one that fires twice for double cost, so a run becomes a running argument with yourself about which tradeoff is actually correct, settled only by watching the automated fight play out.",
+        "AUTOMATON's own year-end coverage floated this as something worth trying in a classroom now that programming is mandatory in Japanese schools, and once you know that, the game reads less like a roguelike wearing a programming skin and more like an actual argument that designing a system well is its own distinct, satisfying skill.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a roguelike where you never touch combat directly, only the skills and trigger conditions you design beforehand, and the payoff is watching your own plan succeed or fail",
+        "You want a genuinely small-scale, self-published Japanese production: a solo circle's title AUTOMATON itself filed under 'good small-scale domestically-made games of 2025,' shown in person at Tokyo Game Show",
+        "You want a Very Positive title (about 92 percent over 718 reviews) that is still genuinely under-discovered in the West: only about 30 percent of its reviews are in English",
+      ],
+      bad: [
+        "You want direct, hands-on combat control; here your only input happens before the fight starts, and once it begins you are purely watching",
+        "You want a title already validated by a large English-speaking audience; it is a paid game, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual, but its audience so far remains mostly Japanese",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Auto Rogue - 戦闘そのものには一切触れず、事前にスキルと発動条件を組んで見守るローグライク。制作・自社発売は個人サークル「定期的な宝物」。718件のレビューで好評率約92%、支持層はいまも大半が日本国内",
+      description: "戦闘自動化ローグライク。基本スキルに発動条件を組み合わせて新たな効果を生み出し、あとはコーヒーでも飲みながら自分の組んだ戦闘が展開するのを一切手を触れずに見守る。制作・自社発売は個人サークル「定期的な宝物」。718件のレビューで好評率約92%の「非常に好評」、英語レビューはまだ約30%に留まる。",
+      h1a: "あなたはスキルと、それを発動させる条件だけを組み上げ、あとは完全に手を離す。",
+      h1flip: "戦いはあなたが本当に計画した通りの出来で、良くも悪くも勝手に展開していく",
+      h1b: "。",
+      lede: "制作・自社発売は個人サークル「定期的な宝物」による戦闘自動化ローグライク。Steam自身の表記によれば、戦闘そのものにはいっさい手を触れない——すべては事前に決まっている。基本スキルに発動条件を組み合わせて新たな効果を生み出す。HPを消費する代わりコストが下がるスキル、とどめを刺すと最大HPが永続的に増えるスキル、コストは倍になるが二回連続で発動できるスキル。そうして組み上げた自動戦闘を、コーヒーでも飲みながら眺める。ダンジョンに入るたびに敵もスキルの選択肢も出会うイベントも変化し、繰り返すごとに強くなるのはキャラクターではなくプレイヤー自身の判断力と戦略だ。AUTOMATONの年末特集「2025年よかった国産小規模開発ゲーム11本」で取り上げられ、試行錯誤して最適化していく快感と、プログラミングが必修科目になった今の教育現場でも役立つのではという評価を受けた。東京ゲームショウ2025のインディーセレクション80にも現地出展している。発売日は2025年5月23日、価格¥690。718件のレビュー(好評660件・不評58件)で好評率約92%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。英語と日本語に対応するが、718件のうち約214件、29.8%程度が英語レビューに留まり、支持層の大半はいまも日本国内にある。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、敵が現れるより前にすべてが決まっている——1回のプレイでスキルとそれを発動させる条件を組み合わせ、あとは完全に手を離す。だから緊張感は戦闘への反応にではなく、自分の設計がリアルタイムで試される様を見守る、静かな確信(あるいは不安)のなかにある。",
+        "組み合わせひとつひとつが計算を小さくも確実に変える——HPを消費する代わりコストが下がるスキル、とどめで最大HPが永続的に増えるスキル、コストは倍だが二回発動できるスキル。だから1プレイは、どのトレードオフが本当に正しいかを自分自身と言い争い続ける作業になり、その決着は自動化された戦闘を見守ることでしか付かない。",
+        "AUTOMATONの年末特集は、プログラミングが日本の学校で必修科目になった今、教室で試す価値さえあるのではと本作を評している。それを知ったうえで触れると、これはプログラミングの皮をかぶったローグライクというより、仕組みをうまく設計することそれ自体が独立した満足感のあるスキルなのだ、という本物の主張のように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "戦闘に直接手を触れないローグライクが欲しい人——組むのは事前のスキルと発動条件だけで、その先にあるのは自分の計画が成功するか失敗するかを見届けることだけ",
+        "本当に小規模で自社発売の日本のプロダクションが欲しい人——AUTOMATON自身が「2025年よかった国産小規模開発ゲーム」に分類した個人サークルの一本で、東京ゲームショウにも現地出展している",
+        "「非常に好評」タイトル(718件で約92%)ながら、本当にまだ西側で発掘されていないものを掴みたい人——英語レビューはまだ約30%に留まる",
+      ],
+      bad: [
+        "戦闘を直接操作したい人——本作の入力は戦闘開始前だけで、始まってしまえばあとは見守るのみ",
+        "すでに大きな英語圏の支持層に検証された作品が欲しい人——無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もないが、支持層はいまも大半が日本国内に留まる",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -8735,6 +8836,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Orcs Must Die! is a 2011 action-strategy game by Robot Entertainment whose own store text sums it up simply as 'slice them, burn them, skewer them, and launch them,' defining the modern template of arming a chokepoint with absurd, deadly traps and wading in with melee weapons of your own when the traps alone aren't enough. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a home, a corridor, or anything worth guarding can be defended through a mix of hands-on combat and gleefully ridiculous traps.",
       ja: "Orcs Must Die!は、Robot Entertainment制作による2011年のアクション・ストラテジーで、Steam自身のストア文言は「切り刻め、焼き払え、串刺しにしろ、打ち上げろ」と本作を簡潔に要約する。狭い通路に馬鹿げた必殺の罠を仕掛け、それだけでは足りない時には自ら近接武器で乱入する、という現代的な型を定義した一本だ。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——家であれ通路であれ、守る価値のある何かを、素手の戦闘と嬉々とした馬鹿げた罠の組み合わせで守り抜けるという発想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Factorio(Wube Software、2020年正式版)。Auto Rogue pick の系譜として新規採用。個人ブログ
+  //   「アイ・スー」が本作の着想元として挙げていた比較を追認する形で、当サイト独自の批評的比較として
+  //   採用(自信度: 中・parasocial/perfect-blue/papers-please/book-of-demons/necrodancer/
+  //   orcs-must-die型の判断)。現行Steamで販売中のためsteam URLで同定する。
+  "factorio": {
+    steam: "427520",
+    blurb: {
+      en: "Factorio is a 2020 game by Wube Software whose own store text sums it up as being about 'building and creating automated factories to produce items of increasing complexity,' where the real skill lies not in any single click but in designing a system correctly beforehand and then watching it run entirely on its own. This lineage is a comparison drawn by this site in outside critical commentary, echoing one already made by a Japanese blog covering the game, not a connection stated by developer 定期的な宝物; it is the origin of the idea that something set up correctly in advance can be left to run itself, with the designer's judgment doing all the real work before it ever starts moving.",
+      ja: "Factorioは、Wube Software制作による2020年のゲームで、Steam自身のストア文言によれば「複雑さを増す製品を生産する自動化工場を建設し創造する」ことが核であり、真の腕前はどの一手にもなく、あらかじめ仕組みを正しく設計し、あとは完全に手を離れて動くのを見守る点にある。この系譜は、本作を紹介する日本語ブログがすでに挙げていた比較を追認する形の、当サイト独自の批評的比較であり、開発元「定期的な宝物」自身が明言した関連性ではない——正しく事前に組み上げられた何かは、動き出す前にすでに設計者の判断力がすべての仕事を終えており、あとは手を離れて勝手に動き続けられるという発想、その原点にあたる一本だ。",
     },
   },
 } as const;
