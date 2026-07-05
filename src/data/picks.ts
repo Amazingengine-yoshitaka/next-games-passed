@@ -8315,6 +8315,108 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "horoboshihime": {
+    published: "2026-07-20",
+    publishAt: "2026-07-20",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「100歩進んでラスボスを倒せばクリア、スキル・アビリティともに全部で
+    //   10個だけという徹底した小ささのローグライクRPG」を捉える語がないため新設
+    //   "compact-roguelike-rpg"(ストア文言自身の「小さくて深い」に準拠)。
+    // developer/publisher Steppers' Stop(自社発売・第三者パブリッシャーなし)は、もぐらゲームス・
+    //   AUTOMATON両記事本文実読で、個人クリエイター「ポーン氏」による創作サイト名であることを確認
+    //   済み。AUTOMATON記事によれば、ポーン氏は2011年までフリーゲーム『雪道』『たゆみ。』等を公開、
+    //   2013年以降は商業アナログゲーム(1人用カードゲーム『シェフィ』、対戦カードゲーム『Blade
+    //   Rondo』シリーズ等)を多数手がけ、本作がその後の久々のデジタルゲームとなる。「13年ぶり」という
+    //   表現はもぐらゲームス記事のみに存在し、AUTOMATON記事は同じ文言こそ使わないが2011年からの
+    //   経歴年数と符合することを確認した(両者を混同せず出典を分けて記載)。国籍は日本語媒体複数
+    //   掲載・.jpドメインという状況証拠に基づく判断であり、本人の国籍明言は確認できていないことを
+    //   正直に自覚する(kung-fu-beat/your-letter-has-been-rejected/auto-rogue/maxwells-puzzling-
+    //   demon型の確度)。自社発売のため大手資本提携先リスクそのものが存在しない。
+    // 系譜は特定の原作ではなく、短時間・高密度に削ぎ落とされたローグライクRPGという型を確立した
+    //   Desktop Dungeons(QCF Design、2013年)を新規anchor "desktop-dungeons" として採用する。この
+    //   帰属は開発元Steppers' Stop自身の言明ではなく当サイト独自の批評的比較のため自信度: 中
+    //   (捏造しない・parasocial/perfect-blue/papers-please/book-of-demons/necrodancer/
+    //   orcs-must-die/factorio/furi/baba-is-you型の判断)。
+    // content_descriptors は ids=[2,5](暴力・ゴア/一般成人向けのみ)・性的コンテンツを示す1/3/4は
+    //   含まれない(API実測)。AI Generated Content Disclosure欄はストアページに存在せず非AI。
+    //   is_free=false。
+    // west_unreached: 英語レビューは1件のみ(appreviews API実測、39件中)。レビュー総数39件と薄い
+    //   ことは正直に開示する(統計的信頼性は限定的)。
+    meta: { genre: "compact-roguelike-rpg", lineage: "desktop-dungeons", obscurity: "deep", rarity: { reviews: 39, positivePct: 95, noEnglish: false } },
+    games: [
+      {
+        name_en: "Princess of Destruction",
+        name_ja: "滅ぼし姫",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2953030/Princess_of_Destruction/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a small, dense roguelike RPG that ends the moment you advance 100 steps and beat the final boss, built to deliver tough, rewarding battles and powerful growth without wasted time; the protagonist grows through leveling up and buying equipment, an orthodox RPG shape stripped of excess in pursuit of its own depth. Leveling grants random 'skills' and 'abilities,' only 10 of each existing in the entire game, each capable of dramatic effect depending on how you use it, so which ones you happen to draw and choose to equip reshapes your whole strategy. It carries the genre's usual traits, randomness (varied skill and ability draws and shifting situations make every run different) and permadeath (lose a fight and lose everything, with improvement paying off in better results), told through a fast-paced, non-branching story about a world facing annihilation from overwhelming monsters, a resistance organization called the Counter's Guild, and a girl named Ayame who joined it for reasons of her own, carrying the fates of many people until an unexpected encounter makes her waver and a single event forces her to decide. Made and self-published by Steppers' Stop, the creative alias of a solo creator known as Pawn who, per AUTOMATON's own coverage, released freeware titles including 雪道 (Yukimichi) through 2011 before moving into commercial analog card games such as Cheffy and the Blade Rondo series from 2013 onward, with this marking a return to digital games; a separate feature from Mogura Games specifically calls it his 'first digital game in 13 years.' Released September 22, 2024 at ¥580, it is Positive at about 95 percent over 39 reviews (37 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, ids limited to violence and gore plus general mature content, nothing sexual. It supports Japanese and English, yet only 1 of its 39 reviews is in English, leaving it, with a review count this small, genuinely unfound.",
+        desc_ja: "Steam自身の表記によれば、本作は小さくて濃密なローグライクRPGで、100歩進んでラスボスを倒すだけでクリアとなる——無駄な時間を挟まず、歯ごたえのある戦闘と力強い成長を届ける設計だ。主人公はレベルアップと装備の購入で強くなる、オーソドックスなスタイルのRPGだが、無駄を削ぎ落として独自の奥深さを追求している。レベルを上げると「スキル」と「アビリティ」をランダムに習得するが、それぞれ全部で10個しか存在せず、どちらも使い方次第で劇的な効果を発揮するため、たまたま手にして装備を選んだものが戦略全体を組み替える。ジャンルらしい性質も備える——「ランダム性」(スキルとアビリティのランダムな習得やさまざまな状況変化で毎回違う展開になる)と「パーマデス」(負ければ全てを失うが、上達すれば良い結果が出る)。物語はハイテンポで分岐なし、圧倒的な怪物によって滅びの危機に瀕した世界、それに抗う組織「カウンターズギルド」、独自の目的でギルドに入った少女「アヤメ」が多くの人の運命を背負いながら、想定外の存在との出会いで立場に迷い、ある出来事をきっかけに決断を下す、という筋書きだ。制作・自社発売はSteppers' Stop、個人クリエイター「ポーン」氏による創作名義で、AUTOMATON自身の取材記事によれば同氏は2011年までフリーゲーム『雪道』等を公開し、2013年以降は1人用カードゲーム『シェフィ』や対戦カードゲーム『Blade Rondo』シリーズなど商業アナログゲームを多数手がけてきた——本作はそこからのデジタルゲームへの復帰にあたる。もぐらゲームスの別記事は本作を明確に「13年ぶりのデジタルゲーム作品」と呼んでいる。発売日は2024年9月22日、価格¥580。39件のレビュー(好評37件・不評2件、Steam自身のレビューAPI実測)で好評率約95%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上は暴力・ゴアと一般成人向けのみに限られ、性的な要素はない。日本語・英語に対応するが、39件のうち英語レビューはわずか1件——これだけレビュー数が少ないことも踏まえれば、正真正銘まだ見つかっていない一本だ。",
+      },
+      {
+        name_en: "Desktop Dungeons",
+        name_ja: "Desktop Dungeons",
+        status: "established",
+        steam: "https://store.steampowered.com/app/226620/Desktop_Dungeons/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Desktop Dungeons, QCF Design's roguelike that established the template of the tightly-designed, bite-sized dungeon crawl, a single small dungeon solvable in minutes, every resource and encounter placed with a puzzle designer's precision rather than left to sprawling randomness. Princess of Destruction is not an official Desktop Dungeons work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from creator Steppers' Stop, but it carries the same core idea into a new frame: a roguelike RPG stripped down to a fixed length and a strictly limited pool of tools, betting that depth comes from tight design rather than sheer size.",
+        desc_ja: "この味の原点——Desktop Dungeons。QCF Design制作によるローグライクで、緻密に設計された短時間ダンジョン攻略という型を確立した一本だ——一つの小さなダンジョンを数分で攻略できるよう、あらゆる資源と遭遇が、際限のないランダム性ではなくパズルデザイナーの精密さで配置されている。滅ぼし姫は公式のDesktop Dungeons作品ではなく、この系譜は開発元Steppers' Stop自身が明言した影響ではなく当サイト独自の批評的比較だが、同じ核心的な着想を新しい枠組みへと引き継いでいる——固定された長さと厳密に限定された道具の組み合わせにまで削ぎ落とされたローグライクRPGであり、奥深さは規模の大きさではなく設計の緊密さから生まれる、という賭けだ。",
+      },
+    ],
+    en: {
+      title: "Princess of Destruction - a small, dense roguelike RPG that ends the moment you advance 100 steps and beat the final boss, with only 10 skills and 10 abilities in the entire game, made by solo creator Pawn under the alias Steppers' Stop as his first digital game in 13 years, Positive at about 95 percent over 39 reviews with only 1 of them in English",
+      description: "A small, dense roguelike RPG: advance 100 steps and beat the final boss to clear it, growing through leveling and equipment while drawing from only 10 total skills and 10 total abilities in the entire game, each reshaping your strategy depending on how you use it. Made and self-published by Steppers' Stop, the alias of solo creator Pawn, marking his first digital game in 13 years. Positive at about 95 percent over 39 reviews, only 1 of them in English.",
+      h1a: "One hundred steps stand between you and the final boss, and the entire game is built around never wasting one of them, ",
+      h1flip: "with only 10 skills and 10 abilities in existence deciding whether that walk ends in victory or permadeath",
+      h1b: ".",
+      lede: "A small, dense roguelike RPG made and self-published by Steppers' Stop, the creative alias of a solo creator known as Pawn. Per Steam's own listing, the game ends the moment you advance 100 steps and beat the final boss, built to deliver tough, rewarding battles and powerful growth without wasted time; the protagonist grows through leveling up and buying equipment, an orthodox RPG shape stripped of excess in pursuit of its own depth. Leveling grants random skills and abilities, only 10 of each existing in the entire game, so which ones you happen to draw and choose to equip reshapes your whole strategy, carrying the genre's usual traits of randomness and permadeath through a fast-paced, non-branching story about a world facing annihilation, a resistance organization called the Counter's Guild, and a girl named Ayame who carries the fates of many people until an unexpected encounter makes her waver. Per AUTOMATON's own coverage, Pawn released freeware titles including 雪道 (Yukimichi) through 2011 before moving into commercial analog card games from 2013 onward, and a separate feature from Mogura Games calls this his first digital game in 13 years. Released September 22, 2024 at ¥580, it is Positive at about 95 percent over 39 reviews (37 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, ids limited to violence and gore plus general mature content, nothing sexual. It supports Japanese and English, yet only 1 of its 39 reviews is in English, leaving it, with a review count this small, genuinely unfound.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own listing, the entire game resolves in 100 steps, so there is no room to waste on a wrong build; every one of the only 10 skills and 10 abilities that exist has to be evaluated for what it actually does the moment it's offered, not what it might do eventually.",
+        "Permadeath means a single loss costs everything, and with such a tightly limited toolset, that loss reads less like bad luck and more like a specific, nameable mistake in how you combined what little you were given, which is exactly what makes improving at it feel earned.",
+        "This is Steppers' Stop's first digital game in over a decade after years spent designing commercial card games, and once you know that, the game's own insistence on cutting every wasted moment reads like a card designer's instinct for tight, load-bearing rules applied directly to an RPG.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a roguelike RPG stripped to a fixed length and a strictly limited toolset: 100 steps, one final boss, and only 10 skills plus 10 abilities in the whole game",
+        "You want a genuinely solo Japanese production with a real career behind it: creator Pawn's return to digital games after a decade spent designing commercial analog card games, confirmed in AUTOMATON's own coverage",
+        "You want a Positive title (about 95 percent over 39 reviews) that is about as unfound as a game can be: only 1 of its 39 reviews is in English",
+      ],
+      bad: [
+        "You want a long, branching story; this one is fast-paced and linear by design, built to never waste your time",
+        "You want a large, statistically settled review base before you trust a score; 39 reviews is a small sample, and this pick says so plainly. It is also a paid title, not free and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "滅ぼし姫 - 100歩進んでラスボスを倒せばクリア、スキルもアビリティも全部で10個だけという小さくて深いローグライクRPG。制作は個人クリエイター「ポーン」氏、創作名義Steppers' Stopによる13年ぶりのデジタルゲーム。39件のレビューで好評率約95%、英語レビューはわずか1件",
+      description: "小さくて深いローグライクRPG。100歩進んでラスボスを倒せばクリアとなり、レベルアップと装備で成長しながら、ゲーム全体で10個しかないスキルと10個しかないアビリティを組み合わせて戦略を組み立てる。制作・自社発売はSteppers' Stop、個人クリエイター「ポーン」氏による創作名義で、13年ぶりのデジタルゲームにあたる。39件のレビューで好評率約95%の「好評」、英語レビューはわずか1件。",
+      h1a: "ラスボスまでの道のりはたった100歩。そのすべてを無駄にしないよう、ゲーム全体が組み立てられている。",
+      h1flip: "その歩みが勝利で終わるかパーマデスで終わるかを決めるのは、存在するたった10個のスキルと10個のアビリティだけだ",
+      h1b: "。",
+      lede: "制作・自社発売はSteppers' Stop、個人クリエイター「ポーン」氏による創作名義の、小さくて濃密なローグライクRPG。Steam自身の表記によれば、本作は100歩進んでラスボスを倒すだけでクリアとなり、無駄な時間を挟まず歯ごたえのある戦闘と力強い成長を届ける設計だ。主人公はレベルアップと装備の購入で強くなる、オーソドックスなスタイルのRPGだが、無駄を削ぎ落として独自の奥深さを追求している。レベルを上げるとランダムにスキルとアビリティを習得するが、それぞれ全部で10個しか存在せず、たまたま手にして装備を選んだものが戦略全体を組み替える。ジャンルらしい「ランダム性」と「パーマデス」を、圧倒的な怪物によって滅びの危機に瀕した世界、それに抗う組織「カウンターズギルド」、多くの人の運命を背負う少女「アヤメ」が想定外の存在との出会いで立場に迷う、というハイテンポで分岐のない物語に乗せて描く。AUTOMATON自身の取材記事によれば、ポーン氏は2011年までフリーゲーム『雪道』等を公開し、2013年以降は商業アナログカードゲームを手がけてきた。もぐらゲームスの別記事は本作を明確に「13年ぶりのデジタルゲーム作品」と呼んでいる。発売日は2024年9月22日、価格¥580。39件のレビュー(好評37件・不評2件)で好評率約95%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上は暴力・ゴアと一般成人向けのみに限られ、性的な要素はない。日本語・英語に対応するが、39件のうち英語レビューはわずか1件——これだけレビュー数が少ないことも踏まえれば、正真正銘まだ見つかっていない一本だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、ゲーム全体はたった100歩で決着がつく。だから間違ったビルドに費やす余裕は無く、存在するたった10個のスキルと10個のアビリティのすべてを、「いつか役立つかもしれない」ではなく「差し出された瞬間に何をするか」で評価しなければならない。",
+        "パーマデスは一度の敗北ですべてを失うことを意味する。これほど厳密に限定された道具立てでは、その敗北は単なる不運というより、与えられた少ないものをどう組み合わせたかという具体的で名指しできる失敗として跳ね返ってくる——だからこそ上達したという実感が生まれる。",
+        "本作は、商業カードゲームの設計に何年も費やしたSteppers' Stopが、10年以上ぶりに手がけたデジタルゲームだ。それを知ったうえで触れると、無駄な瞬間をひとつも許さないという本作の姿勢そのものが、カードデザイナーとして培われた「引き締まった、機能するルール」への嗅覚を、そのままRPGに応用したもののように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "固定された長さと厳密に限定された道具立てまで削ぎ落とされたローグライクRPGが欲しい人——100歩、ラスボス一体、ゲーム全体でスキル10個・アビリティ10個だけ",
+        "本当の経歴を背負った、本当にソロの日本のプロダクションが欲しい人——AUTOMATON自身の取材記事で裏付けられた、商業アナログカードゲームの設計を10年以上手がけたポーン氏によるデジタルゲームへの復帰作",
+        "「好評」タイトル(39件で約95%)ながら、これ以上ないほどまだ見つかっていないものを掴みたい人——39件のうち英語レビューはわずか1件",
+      ],
+      bad: [
+        "長い分岐する物語が欲しい人——本作はハイテンポで直線的な設計で、時間を無駄にしないことを徹底している",
+        "スコアを信頼する前に統計的に安定した母数が欲しい人——39件は小さな母数で、この記事はそれを飾らずそのまま伝えている。無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9186,6 +9288,17 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Baba Is You is a 2019 puzzle game by Hempuli Oy where, per its own store text, 'the rules you have to follow are present as blocks you can interact with,' so manipulating an ordinary-looking object can change how the whole level works and cause surprising interactions the player has to discover for themselves. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that an ordinary block-pushing task can be quietly rewritten by a hidden property, turning simple movement into a puzzle about what happens when two things meet.",
       ja: "Baba Is Youは、Hempuli Oy制作による2019年のパズルゲームで、Steam自身のストア文言によれば「従うべきルールそのものが、操作可能なブロックとして存在する」——ごく普通に見える物体を動かすだけでレベル全体の仕組みが変わり、プレイヤー自身が発見しなければならない意外な相互作用を引き起こす。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——ごく普通のブロック運びの課題が、隠れた属性によって静かに書き換えられ、単純な移動が「二つの物が出会ったら何が起きるか」を問うパズルへと変わるという発想、その原点にあたる一本だ。",
+    },
+  },
+  // 原点 Desktop Dungeons(QCF Design、2013年)。Princess of Destruction pick の系譜として新規採用。
+  //   この帰属は開発元Steppers' Stopの言明ではなく当サイト独自の批評的比較(自信度: 中・parasocial/
+  //   perfect-blue/papers-please/book-of-demons/necrodancer/orcs-must-die/factorio/furi/
+  //   baba-is-you型の判断)。現行Steamで販売中のためsteam URLで同定する。
+  "desktop-dungeons": {
+    steam: "226620",
+    blurb: {
+      en: "Desktop Dungeons is QCF Design's roguelike that established the template of the tightly-designed, bite-sized dungeon crawl, a single small dungeon solvable in minutes, every resource and encounter placed with a puzzle designer's precision rather than left to sprawling randomness. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by any developer whose games trace back to it here; it is the origin of the idea that a roguelike RPG can be stripped down to a fixed, small shape and still deliver real depth, betting on tight design over sheer size.",
+      ja: "Desktop Dungeonsは、QCF Design制作のローグライクで、緻密に設計された短時間ダンジョン攻略という型を確立した一本だ——一つの小さなダンジョンを数分で攻略できるよう、あらゆる資源と遭遇が、際限のないランダム性ではなくパズルデザイナーの精密さで配置されている。この系譜は、ここで結びつける開発元自身が明言した関連性ではなく、当サイト独自の批評的比較である——ローグライクRPGを固定された小さな形まで削ぎ落としても、真の奥深さを届けられるという発想、規模の大きさではなく設計の緊密さに賭けるという着想、その原点にあたる一本だ。",
     },
   },
 } as const;
