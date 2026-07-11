@@ -10734,6 +10734,129 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "niconico-san": {
+    published: "2026-07-31",
+    publishAt: "2026-07-31",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Action / Adventure / Indie / Simulation)が広すぎるため新設
+    //   "urban-legend-chase-horror"。ストア本文自身が「一人称視点のハイスピードホラーゲーム」
+    //   「徘徊するニコニコさんとのチェイスがメイン」と書いており、実体は都市伝説の存在から
+    //   逃げ続ける短編チェイスホラー。
+    // lineage は新規anchorを作らず既存の "kageroh"(影廊 -Shadow Corridor-)を再利用する。
+    //   共有しているのは「徘徊する追跡者から逃げながら、脱出に必要なものを空間の中から
+    //   拾い集める」という日本産インディーホラーの形。ただし舞台は異なり、影廊が和風の
+    //   異界であるのに対し本作は現代日本の住宅街とその裏側である。影響を公言されたものでは
+    //   ない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=TI-BA(ちぃば) / publisher=同一で完全な自主出版。Steamのdeveloper検索を自分で
+    //   叩き、この名義の登録は本作1本のみ(total_count=1)であることを確認した。
+    //   検証エージェントはさらに、スカウトが「過去作ゼロ」と断定したのは Steam 内だけの
+    //   結論であると指摘し、開発者ブログ(ti-banoblog.hatenablog.com)から
+    //   「うねうねもへじ村」というスマホ作品のプライバシーポリシーを発見している。ただし
+    //   運営者はti-ba本人・問い合わせ先も同じ個人Gmailで、publisherの記載は一切なく自主
+    //   リリース。基準(6)(17)は発火しない。
+    // 国籍は日本(自信度: 高)。AUTOMATON日本版が「国内個人開発者のTI-BA氏」と明記しており、
+    //   YouTubeチャンネル名は「ちぃば / TI-BA」、ブログのプロフィールは「主にUnityを使って
+    //   ホラーゲームを作っています」、連絡先は個人Gmail。法人ドメインも法人登記の痕跡もない。
+    //   中華圏の関与も検証済みで、游民星空のDBページは「制作发行: TI-BA」のみ、失格対象の
+    //   Gamersky Games の関与は無い。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   Mature Content Description セクションそのものが無い。ユーザータグ全19件
+    //   (Exploration / Dogs / Immersive Sim / Hidden Object / Walking Simulator / 3D / Horror /
+    //   Simulation / FMV / Action / Multiple Endings / Realistic / Demons / Mystery / Adventure /
+    //   Atmospheric / Dark / Singleplayer / Indie)にも性的表現関連は皆無。
+    // 【AI開示があるので定型句で隠さない】開示欄は存在し、日本語原文は「ゲーム内に登場する
+    //   架空の広告にAI生成による人物写真を使用しています。」英語版は "We use AI-generated images
+    //   of fictional characters in certain parts of the game."——ゲーム内の架空広告に写る人物写真
+    //   という単一カテゴリの限定的な用途で、基準(5)の「単一カテゴリ限定の補助的開示は許容」に
+    //   該当する。ただし当サイトの運用どおり、原文をそのまま記事本文に載せる。
+    // is_free=false・Add to Cart実測・game_area_early_accessバナー無しで正式リリース済み。
+    // west_unreached: 対応言語は英語・簡体字中国語・日本語の3言語で英語UIは実装済み。
+    //   appreviews API実測で全69件のうち日本語25件・英語15件・韓国語13件・簡体字11件・繁体字0件。
+    //   基準(15)の japanese > english は満たすが、英語15件(21.7%)は当サイトの過去採用作より
+    //   多い。西側の実況者経由でいくらか届いている一方、編集記事はゼロという状態なので、
+    //   obscurity: "deep" / reachState: "unreached_west" を採りつつ、英語15件という数字を
+    //   記事本文にそのまま書いて誇張しない。
+    // 西側編集記事はゼロ。検証エージェントが Kotaku の該当ページ(/games/niconico-san)を実際に
+    //   開き、バイライン無し・公開日無し・独自批評無し・Developer/Publisher が "N/A" 表記・
+    //   「powered by IGDB.com」表記ありの自動生成DBページであることを確認。Siliconera は
+    //   サイト内検索で明示的に "0 results"、Metacritic は critic レビューもユーザーレビューも
+    //   ゼロ。ただし AUTOMATON WEST は取得HTMLが truncate され確度がやや低い(未検証寄り)と
+    //   正直に申告されている。
+    meta: { genre: "urban-legend-chase-horror", lineage: "kageroh", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 69, positivePct: 95 } },
+    games: [
+      {
+        name_en: "Niconico-san",
+        name_ja: "ニコニコさん | Niconico-san",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3174810/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "It starts as a rumour going around school, and the store page words it the way a rumour actually gets worded: down a certain alley there is a warehouse, and a smiling man stands there beckoning. Anyone who sees him is drawn to the warehouse and goes missing. Then one day, on your way home, you have no choice but to take that alley. You get close to the warehouse, the door opens by itself, a hand comes out, and by the time you wake up you are somewhere else. What follows is a first-person chase horror in the other side of a Japanese residential neighbourhood: you look for the items you need to get out while the smiling man walks the place looking for you. The store calls it high-speed horror, and the reason it can is the energy drink, a consumable you spend to run, so the resource you manage is not ammunition or health but how long you are allowed to be faster than the thing behind you. It is thirty minutes to an hour, with two endings and three branching ending movies, at ¥420. Steam's user tags catch the texture better than the official genre does, putting Walking Simulator, Hidden Object, Immersive Sim, FMV and Dogs next to Horror. Made by TI-BA, one person; AUTOMATON's Japanese edition describes them plainly as a domestic solo developer, their YouTube channel is under the name Chiiba, and their blog profile says they mostly make horror games in Unity, with a personal Gmail as the only contact. Steam's developer search under that name returns exactly one title. Released April 24, 2025, it is at 95 percent across 69 reviews (66 positive, 3 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. Steam's content descriptors are completely empty, there is no mature content section, and nothing in its nineteen user tags is sexual. There is an AI disclosure, and here is its full text: the developers say they use AI-generated images of fictional characters in certain parts of the game, which the Japanese version specifies as photographs of people appearing in the fictional in-game advertisements. English and Simplified Chinese are supported alongside Japanese. Of the 69 reviews, 25 are Japanese, 15 English, 13 Korean and 11 Simplified Chinese, and not one editorial article about it exists in English.",
+        desc_ja: "始まりは学校でささやかれる噂で、ストアページはそれを、噂が実際に語られるとおりの形で書いている——「とある路地の先にある倉庫で、笑顔の男が手招きしている」。その姿を見た者は倉庫に引き寄せられ、行方不明になるという。そしてある日、あなたは帰り道にどうしてもその路地を通らなければならなくなる。倉庫に近づくと突然ドアが開き、中から手が伸びてきた。その手に引き込まれた瞬間に意識が遠のき、目を覚ますとそこは裏世界だった。以降は、日本の住宅街の裏側を舞台にした一人称のチェイスホラーである。脱出に必要なアイテムを探して回り、その間、徘徊するニコニコさんがこちらを探している。ストアがこれを「ハイスピードホラー」と名乗れる理由はエナジードリンクにある。走るために消費する道具で、つまり管理する資源は弾でも体力でもなく「背後にいるものより速くいられる時間」だ。プレイ時間は30分〜1時間、エンディングは2つ、分岐エンディングムービーは3つ、価格は¥420。手触りについては公式ジャンル表記よりSteamのユーザータグのほうが正確で、Horrorの隣に Walking Simulator、Hidden Object、Immersive Sim、FMV、そして Dogs が並んでいる。制作はTI-BA氏ひとり。AUTOMATONの日本版は「国内個人開発者のTI-BA氏」と端的に書いており、YouTubeチャンネル名は「ちぃば / TI-BA」、ブログのプロフィールには「主にUnityを使ってホラーゲームを作っています」とあって、連絡先は個人のGmailひとつだけだ。この名義でSteamのdeveloper検索を叩くと、返ってくるのはちょうど1件である。発売日は2025年4月24日。69件のレビュー(好評66件・不評3件、Steam自身のレビューAPI実測)で好評率95%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steamのコンテンツディスクリプタは完全に空で、大人向けコンテンツの説明欄も存在せず、19件のユーザータグにも性的なものは一つもない。AI生成コンテンツの開示欄は存在する。その全文はこうだ——「ゲーム内に登場する架空の広告にAI生成による人物写真を使用しています。」対応言語は日本語に加えて英語と簡体字中国語。69件の内訳は日本語25件・英語15件・韓国語13件・簡体字中国語11件で、そして英語で書かれた編集記事は一本も存在しない。",
+      },
+      {
+        name_en: "Kageroh: Shadow Corridor",
+        name_ja: "影廊 -Shadow Corridor-",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q97198038",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Kageroh: Shadow Corridor, the Japanese indie horror that came out of the free-game scene and set the shape this pick inherits. Its contribution was to make the horror a matter of movement through a space rather than a sequence of set pieces: something walks the map looking for you, you walk the same map looking for what you need, and the game is the overlap between those two searches. You are never fighting; you are managing where you are. Niconico-san is not an official Shadow Corridor work, and this lineage is a comparison drawn by this site rather than a stated influence. The two part on setting, which is the interesting bit. Shadow Corridor's world is a traditional Japanese elsewhere, deliberately unplaceable. Niconico-san puts the same chase into a present-day residential neighbourhood and the back side of it, so the thing walking the map is walking somewhere you could give directions to.",
+        desc_ja: "この味の原点——影廊 -Shadow Corridor-。日本のフリーゲームの土壌から出てきた和製インディーホラーで、本作が受け継いでいる形を作った作品である。その貢献は、恐怖を「見せ場の連続」ではなく「空間の中の移動」の問題にしたことだ。何かがマップを歩いてこちらを探している。こちらも同じマップを歩いて、必要なものを探している。ゲームとは、その二つの捜索が重なる部分のことである。戦ってはいない。管理しているのは「自分が今どこにいるか」だ。『ニコニコさん』は公式の影廊作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。両者が分かれるのは舞台のほうで、そこが面白い。影廊の世界は和風の異界であり、意図的にどこでもない場所として作られている。ニコニコさんは同じチェイスを、現代の住宅街とその裏側に置いた。つまりマップを歩き回っているものは、道順を説明できてしまう場所を歩いている。",
+      },
+    ],
+    en: {
+      title: "Niconico-san - a school rumour says a smiling man beckons from a warehouse down a certain alley, and anyone who sees him goes missing. Today you have to take that alley. Made alone by TI-BA for ¥420. 95 percent over 69 reviews, and no English article about it exists",
+      description: "A first-person chase horror in the back side of a Japanese residential neighbourhood. A rumour at school says a smiling man beckons from a warehouse; you take the alley anyway, a hand pulls you through, and now you are looking for the items to get out while he looks for you. Energy drinks are the resource you spend to run. Thirty to sixty minutes, two endings. Made alone by TI-BA. 95 percent over 69 reviews.",
+      h1a: "A smiling man stands in a warehouse down that alley, beckoning, and everyone who has seen him is missing. ",
+      h1flip: "Today you have no choice but to take that alley",
+      h1b: ".",
+      lede: "It starts as a rumour going around school, and the store page words it the way a rumour actually gets worded: down a certain alley there is a warehouse, and a smiling man stands there beckoning. Anyone who sees him is drawn to the warehouse and goes missing. Then one day, on your way home, you have no choice but to take that alley. You get close to the warehouse, the door opens by itself, a hand comes out, and by the time you wake up you are somewhere else. What follows is a first-person chase horror in the other side of a Japanese residential neighbourhood: you look for the items you need to get out while the smiling man walks the place looking for you. The store calls it high-speed horror, and the reason it can is the energy drink, a consumable you spend to run, so the resource you manage is not ammunition or health but how long you are allowed to be faster than the thing behind you. It is thirty minutes to an hour, with two endings and three branching ending movies, at ¥420. Steam's user tags catch the texture better than the official genre does, putting Walking Simulator, Hidden Object, Immersive Sim, FMV and Dogs next to Horror. Made by TI-BA, one person; AUTOMATON's Japanese edition describes them plainly as a domestic solo developer, their YouTube channel is under the name Chiiba, and their blog profile says they mostly make horror games in Unity, with a personal Gmail as the only contact. Steam's developer search under that name returns exactly one title, though a check of their blog turns up a phone game they self-released earlier with no publisher attached to it either. Released April 24, 2025, it is at 95 percent across 69 reviews (66 positive, 3 negative), a paid title, not free, fully launched and not in Early Access. Steam's content descriptors are completely empty, there is no mature content section, and nothing in its nineteen user tags is sexual. There is an AI disclosure and this site does not paper over those, so here is the whole of it: the developers say they use AI-generated images of fictional characters in certain parts of the game, which the Japanese version specifies as photographs of people appearing in the fictional in-game advertisements. That is the extent of it; the disclosure covers no other category. English and Simplified Chinese are supported alongside Japanese, and of the 69 reviews, 25 are Japanese, 15 English, 13 Korean and 11 Simplified Chinese. Fifteen English reviews is more Western pickup than most picks on this site have, and it is worth saying plainly: some streamers have found this. What has not happened is a single editorial article in English.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Spending an energy drink to run is a strange thing to make the core resource, because it converts fear into a budget. You are not asking whether you can escape; you are asking whether this is the corner worth being fast at, and being wrong about that is how the run ends.",
+        "The premise does the work that a jump scare cannot. Everyone who saw him is missing, you knew that before you set out, and you took the alley anyway because you had to. The horror is already agreed to before the game starts.",
+        "It is a residential neighbourhood, not a haunted elsewhere. The back side you are dropped into is built out of a place with house numbers and a route home, and that is a different discomfort from a castle or an abandoned hospital.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Shadow Corridor shape in a modern setting: something walks the map looking for you while you walk it looking for the way out, with no fighting anywhere in the design",
+        "You want the small, complete kind of thing: one person, one title on all of Steam, thirty to sixty minutes, two endings, ¥420, and a store page that says streaming is welcome with no need to ask first",
+        "You want a clean content record: Steam's content descriptors are completely empty on this one, with no mature content section at all",
+      ],
+      bad: [
+        "You object to any AI-generated asset. There is a disclosure here, narrow but real: AI-generated photographs of people used in the fictional advertisements inside the game. Nothing else is covered by it, but if that alone is a dealbreaker, this is not your pick",
+        "You want something genuinely untouched by Western players; 15 of its 69 reviews are in English, which is more than most finds here, and the claim this site is making is narrower than usual: streamers have found it, editors have not",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ニコニコさん - 「あの路地の先の倉庫で、笑顔の男が手招きしている」。見た者は行方不明になる。そして今日、どうしてもその路地を通らなければならない。TI-BA氏がひとりで制作、価格¥420。69件で好評率95%、英語の記事は一本も無い",
+      description: "日本の住宅街の裏側を舞台にした一人称チェイスホラー。学校の噂で聞いた笑顔の男の倉庫に引き込まれ、脱出アイテムを探す間、向こうもこちらを探している。走るために消費するのはエナジードリンク。プレイ時間30分〜1時間、エンディング2種。TI-BA氏がひとりで制作。69件のレビューで好評率95%。",
+      h1a: "あの路地の先の倉庫に笑顔の男が立っていて、手招きしている。見た者は全員行方不明だ。",
+      h1flip: "そして今日、どうしてもその路地を通らなければならない",
+      h1b: "。",
+      lede: "始まりは学校でささやかれる噂で、ストアページはそれを、噂が実際に語られるとおりの形で書いている——「とある路地の先にある倉庫で、笑顔の男が手招きしている」。その姿を見た者は倉庫に引き寄せられ、行方不明になるという。そしてある日、あなたは帰り道にどうしてもその路地を通らなければならなくなる。倉庫に近づくと突然ドアが開き、中から手が伸びてきた。その手に引き込まれた瞬間に意識が遠のき、目を覚ますとそこは裏世界だった。以降は、日本の住宅街の裏側を舞台にした一人称のチェイスホラーである。脱出に必要なアイテムを探して回り、その間、徘徊するニコニコさんがこちらを探している。ストアがこれを「ハイスピードホラー」と名乗れる理由はエナジードリンクにある。走るために消費する道具で、つまり管理する資源は弾でも体力でもなく「背後にいるものより速くいられる時間」だ。プレイ時間は30分〜1時間、エンディングは2つ、分岐エンディングムービーは3つ、価格は¥420。手触りについては公式ジャンル表記よりSteamのユーザータグのほうが正確で、Horrorの隣に Walking Simulator、Hidden Object、Immersive Sim、FMV、そして Dogs が並んでいる。制作はTI-BA氏ひとり。AUTOMATONの日本版は「国内個人開発者のTI-BA氏」と端的に書いており、YouTubeチャンネル名は「ちぃば / TI-BA」、ブログのプロフィールには「主にUnityを使ってホラーゲームを作っています」とあって、連絡先は個人のGmailひとつだけだ。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど1件だが、ブログを辿ると以前に自主リリースしたスマホ作品が1本見つかる。そちらにも発売元は付いていない。発売日は2025年4月24日。69件のレビュー(好評66件・不評3件)で好評率95%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steamのコンテンツディスクリプタは完全に空で、大人向けコンテンツの説明欄も存在せず、19件のユーザータグにも性的なものは一つもない。AI生成コンテンツの開示欄は存在する。当サイトはそこを定型句で覆わない方針なので、全文をそのまま置く——「ゲーム内に登場する架空の広告にAI生成による人物写真を使用しています。」開示の範囲はこれだけで、他のカテゴリは一切含まれていない。対応言語は日本語に加えて英語と簡体字中国語。69件の内訳は日本語25件・英語15件・韓国語13件・簡体字中国語11件だ。英語15件は当サイトの他の発掘より西側に届いているほうで、そこは飾らずに書いておく——実況者は何人か見つけている。起きていないのは、英語で書かれた編集記事が一本も無い、ということのほうだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "走るためにエナジードリンクを消費する、というのを中核資源に据えたのは妙な選択で、これは恐怖を予算に変換してしまう。「逃げ切れるか」ではなく「ここは速くなる価値のある角か」を問われることになり、その判断を間違えた時に一周が終わる。",
+        "この前提は、驚かせでは作れない仕事をしている。見た者は全員行方不明——それを出発前から知っていて、それでも通らなければならなかったから通った。恐怖はゲームが始まる前に、既に合意されている。",
+        "舞台は幽霊屋敷ではなく住宅街だ。落とされる裏側は、番地があって帰り道がある場所から組み立てられている。城や廃病院とは別種の居心地の悪さがそこにある。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "影廊の形を現代の舞台で欲しい人——何かがマップを歩いてこちらを探し、こちらは出口を探して同じマップを歩く。設計のどこにも戦闘は無い",
+        "小さくて完結したものが欲しい人——ひとり、Steam全体で1本、30分〜1時間、エンディング2種、¥420、そしてストアページに「実況・配信は歓迎です！事前連絡も不要です」と書いてある",
+        "内容の記録がきれいなものが欲しい人——本作はSteamのコンテンツディスクリプタが完全に空で、大人向けコンテンツの説明欄そのものが存在しない",
+      ],
+      bad: [
+        "AI生成アセットが一切許せない人。開示はある。狭いが実在する——ゲーム内の架空広告に使われている、AI生成の人物写真だ。それ以外は開示の対象外だが、それ一点でも駄目なら、この記事は向いていない",
+        "西側プレイヤーに本当に触られていないものが欲しい人——69件のうち15件が英語で、これは当サイトの他の発掘より多い。今回の主張はいつもより狭い。実況者は見つけている。編集者が見つけていない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
