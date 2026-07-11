@@ -9545,6 +9545,125 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "days-like-a-nightmare": {
+    published: "2026-07-26",
+    publishAt: "2026-07-26",
+    kind: "find",
+    leadIndex: 0,
+    // 【探索方針の転換で見つけた一本】直前3ラウンドのスカウトは「発売から1〜6ヶ月の新作」に絞った結果
+    //   いずれも0件だった。このサイトの条件に「新作であること」は含まれていない(既出のIb=2012年、
+    //   Front Line=リリース日2003年公開フリーゲームの移植など)。そこで発売時期の制限を外し、
+    //   「時間が経っても西側に発見されないまま残っている」作品へ狙いを変えたラウンドで発見した。
+    //   本作はリリース日2023年12月31日発売で、2年以上経った現在も西側の編集記事はゼロ——古い作品は
+    //   レビューが蓄積して最低件数を満たしやすく、かつ長期間発見されていないこと自体が「西未到達」の
+    //   強い証拠になる、という仮説が実際に効いた事例として記録しておく。
+    // genre はSteam公式タグ(Action/Casual/Indie)がゲーム性を捉えていないため新設
+    //   "sensor-deduction-horror"(密室にセンサーを配置し、その表示を読んで感染者を論理的に特定する
+    //   推理ゲームに、ジャンプスケアと襲撃時のアクションが組み合わさる形式)。
+    // lineageは新規anchorを作らず既存の"scp-foundation"を再利用する。本作のストア文言自身が
+    //   「サイト72へようこそ。ここは世界でも最大のヒト収容所……から数えて72番めの施設です」と始まり、
+    //   センサーの電波で気分が悪くなる件を「健康上、問題はないんですよ」と流す無機質な業務案内の声、
+    //   噂として否定される「クイーン」の存在など、閉ざされた施設・官僚的な語り口・異常存在という
+    //   SCP財団系のanomalous horrorの型が全面に出ているため(既存picksのうち psychological-horror
+    //   ジャンルの1本が同じrootを持つ。ジャンルは異なるが同じ根という、系譜図の趣旨に沿う再利用)。
+    // developer/publisher 727 Not Hound(自社発売・第三者パブリッシャーなし)について、国籍は今回
+    //   状況証拠ではなく第三者メディアによる直接明言を確認できた——AUTOMATON(日本語版)が
+    //   「本作を開発しているのは、国内の個人ゲーム開発者である座間氏だ。727 NOT HOUNDは、同氏の名義と
+    //   なる。」と明記している(自信度: 高。これまでの多くのpicksが状況証拠止まりだったのに対し例外的)。
+    //   日本のフリーゲーム投稿サイト「ふりーむ！」にもブランドページがあり自己紹介は日本語。
+    // 西側での知名度: スカウトがSiliconera/Kotaku/PC Gamer/AUTOMATON WEST/Destructoid/GameSpot/
+    //   Game Developerをドメイン限定で確認し編集記事ゼロ。検索に出たKotakuのURLは実際に開いた結果
+    //   IGDB由来の自動生成データベースページで記事は1本もないことを確認済み(誤失格の回避)。唯一
+    //   見つかった英語圏の言及は個人WordPressブログのインタビュー1件で、これは著名メディアではないが
+    //   隠さず記録しておく(かつ対象は本作ではなく同開発者の別作品)。
+    // 開発者は2019年から2025年まで10本前後をすべて自社発売しており、大手・海外配信専門パブリッシャー
+    //   (PLAYISM/Phoenixx/集英社ゲームズ/Gamersky Games/No More Robots/Gotcha Gotcha Games等)との
+    //   関与は全点確認して一件も無し。Switch版も本人名義での発売。
+    // content_descriptors は ids=[]・notes=null(API実測)。ストアページにMature Content Description
+    //   ボックス自体が存在せず、タグにも性的表現関連は一切なし。AI Generated Content Disclosure欄も
+    //   存在しない(ただし本作はSteamのAI開示義務化より前の発売である点は正直に付記する。なお同開発者は
+    //   2024年以降の作品には実際に開示を付けており、開示する意思のある開発者だという傍証にはなる)。
+    //   is_free=false・購入可能(Add to Cartボタン実測)、アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は日本語・英語の2言語で英語にも対応済みだが、appreviews API実測で
+    //   全29件のうち英語レビューは2件(6.9%)、日本語18件(62.1%)、簡体字中国語6件(20.7%)、韓国語3件
+    //   (10.3%)——日本語が単独主体で、中国語合算(6件)も日本語を下回るため「隠れ中国市場ヒット」型
+    //   ではない。英語で遊べる状態で2年以上経っても西へ届いていない典型例として obscurity: "deep"
+    //   を採用する。レビュー総数29件は統計的にはまだ薄く、その点も正直に開示する。
+    meta: { genre: "sensor-deduction-horror", lineage: "scp-foundation", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 29, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "Days Like A Nightmare",
+        name_ja: "悪夢のような日々でした",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2563180/Days_Like_A_Nightmare/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a logic game played in small rooms: somewhere among the humans living here is one whose heart has been colonized by a parasite called Rubyuk, and your job is to work out which. You are handed sensors, told no expertise is required, just place them and send power, then read what the displays say. The store text delivers all of this in the flat, cheerful voice of a workplace orientation, including the part where the sensor's waves make some people nauseous or hallucinate: 'there's no health problem, you know. Every job has things you have to put up with, doesn't it.' Useless mutant strains of Rubyuk are mixed in and also trip the sensors, so the deduction gets muddier as new variants appear; the game runs DAY1 through DAY7, with everything up to DAY4 close to a tutorial and DAY7 a special customizable mode. You can take your time thinking, but surviving the assault of the 'Nightmare' asks for some action from you. The title itself comes from graffiti on a wall, which your guide brushes off, surprised you can even read Arabic, insisting it's meaningless, just something scrawled out of boredom. Made and self-published solo by 727 Not Hound; AUTOMATON's Japanese edition states outright that the developer is 'a domestic individual game developer, Mr. Zama, and 727 NOT HOUND is his handle,' a rare case where this site has a third-party outlet stating nationality directly rather than circumstantial evidence alone. The developer has shipped roughly ten titles between 2019 and 2025, every one self-published with no external publisher at any stage, including the Switch versions. Released December 31, 2023 at ¥600, it is Positive at 100 percent over 29 reviews (29 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets disclosed and no Mature Content box at all, and per Steam's own content descriptors, nothing sexual. It supports English alongside Japanese, and yet after more than two years only 2 of its 29 reviews are in English against 18 in Japanese; a dedicated check of Siliconera, Kotaku, PC Gamer, AUTOMATON WEST, Destructoid, GameSpot, and Game Developer turned up no editorial coverage at all.",
+        desc_ja: "Steam自身の表記によれば、本作は小さな部屋で行う論理ゲームだ。ここに暮らすヒトのうち、心臓を「ルビウク」という寄生虫に侵されているのは誰なのか——それを突き止めるのがあなたの仕事になる。専門知識は必要ない、配置して電力を送るだけだ、とセンサーを手渡され、あとはその表示を読む。ストア文言はこれらすべてを、朗らかな業務案内の声で伝えてくる。センサーの電波で気分が悪くなったり幻覚を見る人がいる件についてさえ、こう続く——「健康上、問題はないんですよ。仕事には我慢しなきゃいけないことってあるでしょう？どうしてもね」。必要のないルビウクの変異種も紛れ込んでおりセンサーに反応してしまうため、新しい変種が現れるほど推論は混乱していく。レベルはDAY1からDAY7まであり、DAY4まではチュートリアルに近く、DAY7はカスタムして遊べる特殊モードだ。思考自体はゆっくり行えるが、「ナイトメア」の襲撃に耐える際には多少のアクションが要る。タイトルそのものは壁の落書きから来ており、案内役はそれを読めるあなたに驚いたうえで、いたずらで暇つぶしに書いたものでしょう、意味はない、と流してみせる。制作・自社発売はソロ開発者の727 Not Hound。AUTOMATON(日本語版)は「本作を開発しているのは、国内の個人ゲーム開発者である座間氏だ。727 NOT HOUNDは、同氏の名義となる。」と明記しており、当サイトの記事としては珍しく、状況証拠ではなく第三者メディアによる国籍の直接明言が取れている。同開発者は2019年から2025年にかけて10本前後を送り出しており、Switch版を含め、そのすべてが外部発売元を介さない自社発売だ。発売日は2023年12月31日、価格¥600。29件のレビュー(好評29件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示は一切なくMature Contentの注意書き自体が存在せず、Steam自身のコンテンツディスクリプタ上も性的な要素はない。日本語に加えて英語にも対応しているにもかかわらず、発売から2年以上経った今も29件のうち英語レビューはわずか2件、日本語は18件だ。Siliconera・Kotaku・PC Gamer・AUTOMATON WEST・Destructoid・GameSpot・Game Developerを個別に確認したが、編集記事は一件も見つからなかった。",
+      },
+      {
+        name_en: "SCP Foundation",
+        name_ja: "SCP財団",
+        status: "established",
+        homepage: "https://en.wikipedia.org/wiki/SCP_Foundation",
+        wikidata: "https://www.wikidata.org/wiki/Q17439649",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: the SCP Foundation, a web-based collaborative fiction project begun in 2007, in which anonymous writers document fictional anomalous entities and phenomena as the classified files of a secret agency that Secures, Contains, and Protects them. Told in the flat, clinical voice of incident reports, with no single author and no fixed canon, it turned the bureaucratic record of the anomalous, and the dread of being sealed in with something inexplicable, into a shared modern mythology. Days Like A Nightmare is not an official SCP work, and this lineage is a comparison drawn by this site rather than a stated influence, but the fit is on the surface of its own store text: a numbered containment facility called Site 72, a workplace-orientation voice assuring you the sensor radiation is harmless, an anomalous parasite catalogued down to its useless mutant strains, and a rumored 'Queen' waved away as just a rumor. This document-driven, closed-facility dread is what the pick inherits; the logical deduction is how it plays.",
+        desc_ja: "この味の原点——SCP財団。2007年に始まったwebベースの共同創作プロジェクトで、匿名の書き手たちが、架空の異常な存在や現象を、それらを確保・収容・保護する秘密機関の機密報告書という体裁で記録していく。特定の作者も固定された正典も持たないまま、感情を排した報告書の無機質な文体で書かれ、「異常を官僚的に記録する」営みと、「説明のつかない何かと密室に閉じ込められる」恐怖を、共有された現代の神話へと変えた。悪夢のような日々でしたは公式のSCP作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較だが、その一致は本作自身のストア文言の表面に出ている——「サイト72」という番号を振られた収容施設、センサーの電波は健康上問題ないと請け合う業務案内の声、必要のない変異種まで分類された異常な寄生虫、そして噂として片付けられる「クイーン」。文書的で閉ざされた施設の恐怖こそがこの発掘が受け継いだものであり、論理的な推理はその遊び方の側にある。",
+      },
+    ],
+    en: {
+      title: "Days Like A Nightmare - place sensors in a sealed room, read the displays, and deduce which human is carrying the parasite, while a cheerful workplace voice assures you the radiation is harmless. Made solo by developer 727 Not Hound. Positive at 100 percent over 29 reviews, only 2 of them in English after two years",
+      description: "A logic game in small rooms: somewhere among the humans here is one whose heart has been colonized by a parasite, and your job is to place sensors, read the displays, and work out which. Made and self-published solo by 727 Not Hound, confirmed by AUTOMATON as a Japanese individual developer. Positive at 100 percent over 29 reviews, with only 2 in English more than two years after release and no Western editorial coverage at all.",
+      h1a: "Place the sensors, send the power, read what the displays say, and work out which of the humans in this room is carrying the parasite. ",
+      h1flip: "The voice guiding you insists the sensor waves are harmless, and that the graffiti on the wall means nothing at all",
+      h1b: ".",
+      lede: "A sensor-deduction horror game made and self-published solo by 727 Not Hound. Per Steam's own listing, somewhere among the humans living at Site 72 is one whose heart has been colonized by a parasite called Rubyuk, and your job is to work out which; you are handed sensors, told no expertise is required, just place them and send power, then read what the displays say. The store text delivers all of this in the flat, cheerful voice of a workplace orientation, including the part where the sensor's waves make some people nauseous or hallucinate: 'there's no health problem, you know. Every job has things you have to put up with, doesn't it.' Useless mutant strains of Rubyuk are mixed in and also trip the sensors, so the deduction gets muddier as new variants appear; the game runs DAY1 through DAY7, with everything up to DAY4 close to a tutorial and DAY7 a special customizable mode. You can take your time thinking, but surviving the assault of the 'Nightmare' asks for some action from you. The title itself comes from graffiti on a wall, which your guide brushes off, surprised you can even read Arabic, insisting it's meaningless, just something scrawled out of boredom. AUTOMATON's Japanese edition states outright that the developer is 'a domestic individual game developer, Mr. Zama, and 727 NOT HOUND is his handle,' a rare case where this site has a third-party outlet stating nationality directly rather than circumstantial evidence alone; the developer has shipped roughly ten titles between 2019 and 2025, every one self-published with no external publisher at any stage, including the Switch versions. Released December 31, 2023 at ¥600, it is Positive at 100 percent over 29 reviews (29 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets disclosed and no Mature Content box at all, and per Steam's own content descriptors, nothing sexual. It supports English alongside Japanese, and yet after more than two years only 2 of its 29 reviews are in English against 18 in Japanese; a dedicated check of Siliconera, Kotaku, PC Gamer, AUTOMATON WEST, Destructoid, GameSpot, and Game Developer turned up no editorial coverage at all. With 29 reviews the sample is still thin, and this pick says so plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, you are told no expertise is required, just place the sensors and send power, and that reassurance is doing a lot of work: the sensors are the only thing standing between you and a wrong answer about which body in front of you is host to something.",
+        "Useless mutant strains also trip the sensors, so the readings stop being a clean signal and become something you have to argue with, and the game's difficulty curve is really the curve of how much you can no longer take an instrument at face value.",
+        "The voice guiding you through all of it never drops its workplace-orientation cheer, not when explaining that the waves cause nausea and hallucinations, not when brushing off the graffiti that gives the game its name, and that gap between tone and content is the whole horror.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want deduction where the evidence itself is unreliable: sensor readings muddied by mutant strains that trip the same detectors",
+        "You want a genuinely solo Japanese production whose nationality is confirmed by a named outlet rather than inferred, from a developer who has self-published roughly ten titles without ever taking an external publisher",
+        "You want a Positive title (100 percent over 29 reviews) that supports English and still, more than two years on, has drawn no Western editorial coverage whatsoever",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 29 reviews is thin enough that a single negative review would move the percentage, and this pick says so plainly",
+        "You want pure puzzling with no interruptions; there are jump scares, and surviving the 'Nightmare' assault requires some action alongside the deduction",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "悪夢のような日々でした - 密室にセンサーを置き、表示を読み、目の前のヒトの誰に寄生虫が宿っているかを推理する。案内の声はその電波を無害だと請け合う。制作はソロ開発者727 Not Hound。29件のレビューで好評率100%、2年経っても英語レビューはわずか2件",
+      description: "小さな部屋で行う論理ゲーム——ここに暮らすヒトのうち、心臓を寄生虫に侵されているのは誰か。センサーを配置し、その表示を読んで突き止める。制作・自社発売はソロ開発者727 Not Hound、AUTOMATONが国内の個人開発者と明記している。29件のレビューで好評率100%、発売から2年以上経っても英語レビューは2件のみで、西側の編集記事は一件も存在しない。",
+      h1a: "センサーを配置し、電力を送り、その表示を読む。この部屋のヒトの誰に、寄生虫が宿っているのか。",
+      h1flip: "案内の声は、その電波は無害だと請け合い、壁の落書きには意味などないと言う",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者727 Not Houndによるセンサー推理ホラー。Steam自身の表記によれば、サイト72に暮らすヒトのうち、心臓を「ルビウク」という寄生虫に侵されているのは誰なのか——それを突き止めるのがあなたの仕事だ。専門知識は必要ない、配置して電力を送るだけだ、とセンサーを手渡され、あとはその表示を読む。ストア文言はこれらすべてを、朗らかな業務案内の声で伝えてくる。センサーの電波で気分が悪くなったり幻覚を見る人がいる件についてさえ、こう続く——「健康上、問題はないんですよ。仕事には我慢しなきゃいけないことってあるでしょう？どうしてもね」。必要のないルビウクの変異種も紛れ込んでおりセンサーに反応してしまうため、新しい変種が現れるほど推論は混乱していく。レベルはDAY1からDAY7まであり、DAY4まではチュートリアルに近く、DAY7はカスタムして遊べる特殊モードだ。思考自体はゆっくり行えるが、「ナイトメア」の襲撃に耐える際には多少のアクションが要る。タイトルそのものは壁の落書きから来ており、案内役はそれを読めるあなたに驚いたうえで、いたずらで暇つぶしに書いたものでしょう、意味はない、と流してみせる。AUTOMATON(日本語版)は「本作を開発しているのは、国内の個人ゲーム開発者である座間氏だ。727 NOT HOUNDは、同氏の名義となる。」と明記しており、当サイトの記事としては珍しく、状況証拠ではなく第三者メディアによる国籍の直接明言が取れている。同開発者は2019年から2025年にかけて10本前後を送り出しており、Switch版を含め、そのすべてが外部発売元を介さない自社発売だ。発売日は2023年12月31日、価格¥600。29件のレビュー(好評29件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示は一切なくMature Contentの注意書き自体が存在せず、Steam自身のコンテンツディスクリプタ上も性的な要素はない。日本語に加えて英語にも対応しているにもかかわらず、発売から2年以上経った今も29件のうち英語レビューはわずか2件、日本語は18件だ。Siliconera・Kotaku・PC Gamer・AUTOMATON WEST・Destructoid・GameSpot・Game Developerを個別に確認したが、編集記事は一件も見つからなかった。29件という母数はまだ薄く、その点も飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、専門知識は必要ない、配置して電力を送るだけだと告げられる。その安心させる言葉はずいぶん多くを担っている——目の前のどの体に何かが宿っているのか、その答えを間違えないための唯一の頼りが、そのセンサーなのだから。",
+        "必要のない変異種もセンサーに反応してしまう。だから表示は綺麗な信号ではなくなり、こちらが疑ってかからねばならない何かに変わる。難易度の曲線とは実のところ、計器をそのまま信じられなくなっていく度合いの曲線だ。",
+        "案内の声は最後まで業務案内の朗らかさを崩さない。電波が吐き気や幻覚を起こすと説明する時も、このゲームの題名になった落書きを流す時も。その口調と中身のずれこそが、この作品のホラーのすべてだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "証拠そのものが信用できない推理が欲しい人——同じ検出器に反応してしまう変異種によって、センサーの表示は濁っていく",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——国籍が推測ではなく実名メディアによって明記されており、外部発売元を一度も介さずに10本前後を送り出してきた開発者",
+        "「好評」タイトル(29件で100%)ながら、英語に対応していてなお2年以上、西側の編集記事が一件も存在しないものを掴みたい人",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——29件は不評が1件付くだけでも好評率が動く薄さで、この記事はそれを飾らずそのまま伝えている",
+        "邪魔の入らない純粋な思考パズルが欲しい人——ジャンプスケアがあり、「ナイトメア」の襲撃を凌ぐには推理と並行して多少のアクションが要る",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
