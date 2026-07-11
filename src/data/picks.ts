@@ -9134,6 +9134,106 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "journey-of-reincarnation": {
+    published: "2026-07-24",
+    publishAt: "2026-07-24",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam自身の紹介文言「Roguelike + Auto-Battle + NES-Style Retro」を捉える語として新設
+    //   "auto-battle-reincarnation-rpg"(完全自動戦闘・宝石による強化・周回ごとに変わるダンジョンの
+    //   転生ローグライクRPG)。lineageは新規anchor "rogue-legacy"を採用(死んで子孫に転生し、
+    //   ダンジョンが周回ごとに再生成され、恒久強化が引き継がれる、というアイデアの世界的な原点)。
+    // developer/publisher はSteam自身のAPI表記でdeveloper="MSBgamadev"・publisher="MSBgamedev"と
+    //   1文字だけ綴りが異なる(自社発売・第三者パブリッシャーなし)。専任の裏取りエージェントがX
+    //   (Twitter)・Steamコミュニティ投稿を一次確認した結果、"MSBgamedev"(まさぼっくり氏名義)が
+    //   本人のX・Steamコミュニティ投稿と一致し、developer欄の"MSBgamadev"は入力ミスの可能性が高いと
+    //   判断(自信度: 中)。国籍について、開発者本人がXで「わたしは日本のインディーゲーム開発者です」
+    //   と国旗絵文字付きで直接自己申告している一次発言を確認済み(第三者による裏付けはないため自己
+    //   申告に基づく判断であることを明記する。自信度: 中)。
+    // 西側メディア: 専任の裏取りエージェントがSiliconera/Kotaku/PC Gamer/AUTOMATON(日本語版)を
+    //   個別確認したが、本作・開発者いずれについても言及は一件も見つからなかった。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・購入可能(Add to Cartボタン実測)、
+    //   アーリーアクセスではなく正式リリース済み(第三者集計サイトが誤ってEarly Access表記していたが
+    //   Steam公式APIのcoming_soon=falseおよびストアページ本体の表記と矛盾するため誤りと判断)。
+    // west_unreached: 対応言語は現状日本語のみ(英語版はローカライズ作業中で「Steam Auto Battler
+    //   RPG Fest」というイベントに合わせた公開予定と開発者自身がコミュニティ投稿で表明)。appreviews
+    //   API実測で全27件のうち英語レビューは0件、日本語レビューは26件(96.3%)、韓国語1件——言語の壁
+    //   により西へ未到達の典型例として obscurity: "wall" を採用する。
+    meta: { genre: "auto-battle-reincarnation-rpg", lineage: "rogue-legacy", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 27, positivePct: 93, noEnglish: true } },
+    games: [
+      {
+        name_en: "Journey of Reincarnation",
+        name_ja: "リンカネーション・ジャーニー",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3001440/journey_of_reincarnation/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a roguelike, auto-battle, NES-style retro RPG in one: a protagonist who died an unfortunate death is granted mercy in the heavenly realm and a chance at a new life, then descends into a dungeon that reshuffles with every attempt, its battles fully automatic, characters thinking for themselves and choosing their own best moves. Growth comes through 'Jewels' dropped by monsters or bought in shops, Armor Gems for defense, Weapon Gems for attack, and Skill Gems that determine which abilities a character's class can use, layered with a Chain system that raises damage on consecutive hits and a Chain Burst that upgrades magic attacks landed mid-chain. Each ending is reachable in roughly 2 to 3 hours, with optional difficulty-boosting items and secret bosses for players who want more, and an original chiptune soundtrack of over 20 tracks by Aomo Akane styled after late-1980s NES music. Made and self-published by MSBgamedev (rendered as MSBgamadev in Steam's own developer field, a one-letter discrepancy from the same publisher name used everywhere else, including the developer's own X account and Steam community posts), a creator who has stated directly on X, 'I am a Japanese indie game developer,' alongside a Japanese flag emoji. Released at ¥920, it is Positive at about 93 percent over 27 reviews (25 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with an English localization still in progress and no set date confirmed beyond the developer's own plan to time it to a Steam Auto Battler RPG Fest event; of its 27 reviews, 26 are in Japanese and not one is in English. A dedicated check of Siliconera, Kotaku, PC Gamer, and AUTOMATON's Japanese edition turned up no coverage of this game or its creator at all.",
+        desc_ja: "Steam自身の表記によれば、本作はローグライク・オートバトル・ファミコン風レトロを一つに束ねたRPGだ。不遇の死を遂げた主人公は、天界で慈悲を与えられ新たな人生を始める機会を得て、挑戦のたびにレイアウトが組み替わるダンジョンへと降りていく。戦闘は完全自動で、キャラクターは自分で考え最善の行動を選んで実行する。成長は、モンスターがドロップするか店で購入できる「宝石」がもたらす——防御力を高める防具用の宝石、攻撃力を高める武器用の宝石、使用可能なスキルを決めるスキル用の宝石があり、連続攻撃でダメージが上がる「チェイン」システムと、チェイン中に魔法攻撃が命中すると発動する強化版「チェインバースト」が重なり合う。1周のエンディング到達には約2〜3時間、より歯応えを求めるプレイヤー向けの難易度上昇アイテムや隠しボスも用意されている。書き下ろしのチップチューンサウンドトラックは、青藻茜氏による1980年代後半のファミコン風楽曲を20曲以上収録。制作・自社発売はMSBgamedev(Steam自身のdeveloper欄では「MSBgamadev」と1文字だけ異なる表記だが、開発者本人のX・Steamコミュニティ投稿ではpublisher欄と同じ「MSBgamedev」名義=まさぼっくり氏で一致している)。開発者本人はXで「わたしは日本のインディーゲーム開発者です」と日本国旗の絵文字とともに直接発言している。発売日は2025年6月26日、価格¥920。27件のレビュー(好評25件・不評2件、Steam自身のレビューAPI実測)で好評率約93%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は現状日本語のみで、英語版は現在ローカライズ作業中(開発者自身のコミュニティ投稿によれば「Steam Auto Battler RPG Fest」というイベントに合わせた公開を予定)、27件のうち26件が日本語レビューで英語レビューは1件もない。Siliconera・Kotaku・PC Gamer・AUTOMATON(日本語版)を個別に確認したが、本作・開発者いずれについても報道は一件も見つからなかった。",
+      },
+      {
+        name_en: "Rogue Legacy",
+        name_ja: "Rogue Legacy",
+        status: "established",
+        steam: "https://store.steampowered.com/app/241600/Rogue_Legacy/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Rogue Legacy, Cellar Door Games' 2013 roguelike platformer, in which dying doesn't end a run so much as pass it on, a randomly generated heir inherits whatever permanent upgrades gold has already bought, and sets off into a castle that regenerates its layout with every attempt. It established the idea that reincarnation and death itself could be the core progression system of a game rather than a loss condition to avoid. journey of reincarnation is not an official Rogue Legacy work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer MSBgamedev, but a hero granted a second life who grows stronger through gems across dungeons that reshuffle with every run carries that same founding idea into a fully automatic, retro-styled battle system.",
+        desc_ja: "この味の原点——Rogue Legacy。Cellar Door Gamesによる2013年のローグライク・プラットフォーマーで、死ぬことはランの終わりというより継承の始まりだ——ランダム生成される跡継ぎが、それまでに集めた金で買った恒久強化を引き継ぎ、挑戦のたびにレイアウトが再生成される城へと再び挑む。転生と死そのものが、避けるべき敗北条件ではなくゲームの核となる成長システムになりうる、という着想を確立した一本だ。journey of reincarnationは公式のRogue Legacy作品ではなく、この系譜は開発元MSBgamedev自身が明言した関連性ではなく当サイト独自の批評的比較だが、第二の人生を与えられた英雄が、周回ごとに組み替わるダンジョンを宝石で強くなりながら進む、という発想は、まさに同じ着想を完全自動戦闘のレトロ風味へと引き継いでいる。",
+      },
+    ],
+    en: {
+      title: "Journey of Reincarnation - a roguelike auto-battle NES-style RPG where a hero granted a second life grows through Jewels across dungeons that reshuffle every run, made solo by a developer who says on X 'I am a Japanese indie game developer.' Positive at about 93 percent over 27 reviews, 0 of them in English",
+      description: "A roguelike, auto-battle, NES-style retro RPG: a hero granted a second life descends into a dungeon that reshuffles with every attempt, battles fully automatic, growth driven by Jewels for armor, weapons, and skills. Made and self-published solo by MSBgamedev, who has stated directly on X, 'I am a Japanese indie game developer.' Positive at about 93 percent over 27 reviews, every one of them in Japanese but one, which is in Korean; none are in English.",
+      h1a: "A hero who died an unfortunate death is granted mercy and a second life, sent into a dungeon that reshuffles itself with every attempt, ",
+      h1flip: "and every battle from there on plays out on its own, no commands required",
+      h1b: ".",
+      lede: "A roguelike, auto-battle, NES-style retro RPG made and self-published solo by MSBgamedev (rendered as MSBgamadev in Steam's own developer field, a one-letter discrepancy from the same name used on the developer's own X account and in Steam community posts), who has stated directly on X, 'I am a Japanese indie game developer,' alongside a Japanese flag emoji. Per Steam's own listing, a protagonist who died an unfortunate death is granted mercy in the heavenly realm and a chance at a new life, then descends into a dungeon that reshuffles with every attempt; battles are fully automatic, with characters thinking for themselves and choosing their own best moves. Growth comes through 'Jewels' dropped by monsters or bought in shops, Armor Gems for defense, Weapon Gems for attack, and Skill Gems that determine which abilities a character's class can use, layered with a Chain system that raises damage on consecutive hits and a Chain Burst that upgrades magic attacks landed mid-chain. Each ending is reachable in roughly 2 to 3 hours, with optional difficulty-boosting items and secret bosses for players who want more, and an original chiptune soundtrack of over 20 tracks by Aomo Akane styled after late-1980s NES music. Released at ¥920, it is Positive at about 93 percent over 27 reviews (25 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with an English localization still in progress and no confirmed date beyond the developer's own plan to time it to a Steam Auto Battler RPG Fest event; of its 27 reviews, 26 are in Japanese and not one is in English. A dedicated check of Siliconera, Kotaku, PC Gamer, and AUTOMATON's Japanese edition turned up no coverage of this game or its creator at all.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, characters think for themselves and choose their own best move, so the tension shifts entirely away from input timing and onto the build you handed them before the fight started, every Jewel a decision you made in advance and now have to trust.",
+        "The Chain and Chain Burst systems reward attacks landing close together, so a fully automatic battle still has a rhythm worth watching for, the quiet satisfaction of seeing a party you built actually click into that rhythm on its own.",
+        "This is a hero granted a second life after an unfortunate death, and knowing the developer built an entire progression system, not just a story beat, around getting another chance turns every dungeon that reshuffles itself into less of a punishment and more of another try worth taking.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want an auto-battle roguelike RPG where the strategy lives entirely in party composition and gem builds, not in real-time input",
+        "You want a genuinely solo Japanese production, self-published with no external publisher, from a developer who says so directly",
+        "You want a Positive title (about 93 percent over 27 reviews) that Western game media has never once covered: not one of its reviews is in English",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 27 reviews is thin enough that a couple of outlier reviews would move the percentage, and this pick says so plainly",
+        "You want direct command over combat; every fight here plays out automatically once it starts, with your choices made beforehand through gems and party setup",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "リンカネーション・ジャーニー - 第二の人生を与えられた英雄が、周回ごとに組み替わるダンジョンを宝石で強くなりながら進む、ローグライク×オートバトルのファミコン風レトロRPG。制作はXで「わたしは日本のインディーゲーム開発者です」と明言するソロ開発者。27件のレビューで好評率約93%、英語レビューは0件",
+      description: "ローグライク×オートバトルのファミコン風レトロRPG——第二の人生を与えられた英雄が、周回ごとに組み替わるダンジョンへ降り立ち、戦闘は完全自動、防具・武器・スキル用の宝石で成長していく。制作・自社発売はソロ開発者・MSBgamedev、Xで「わたしは日本のインディーゲーム開発者です」と直接発言している。27件のレビューで好評率約93%、韓国語1件を除きすべて日本語レビュー、英語レビューは0件。",
+      h1a: "不遇の死を遂げた英雄が、天界で慈悲を与えられ第二の人生を歩み出す。挑戦のたびに組み替わるダンジョンへと降りたその先で、",
+      h1flip: "戦闘のすべては、コマンド入力なしで自動的に繰り広げられる",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者・MSBgamedev(Steam自身のdeveloper欄では「MSBgamadev」と1文字だけ異なる表記だが、開発者本人のX・Steamコミュニティ投稿ではpublisher欄と同じ「MSBgamedev」名義で一致している)によるローグライク×オートバトルのファミコン風レトロRPG。開発者本人はXで「わたしは日本のインディーゲーム開発者です」と日本国旗の絵文字とともに直接発言している。Steam自身の表記によれば、不遇の死を遂げた主人公は、天界で慈悲を与えられ新たな人生を始める機会を得て、挑戦のたびにレイアウトが組み替わるダンジョンへと降りていく。戦闘は完全自動で、キャラクターは自分で考え最善の行動を選んで実行する。成長は、モンスターがドロップするか店で購入できる「宝石」がもたらす——防御力を高める防具用の宝石、攻撃力を高める武器用の宝石、使用可能なスキルを決めるスキル用の宝石があり、連続攻撃でダメージが上がる「チェイン」システムと、チェイン中に魔法攻撃が命中すると発動する強化版「チェインバースト」が重なり合う。1周のエンディング到達には約2〜3時間、より歯応えを求めるプレイヤー向けの難易度上昇アイテムや隠しボスも用意されている。書き下ろしのチップチューンサウンドトラックは、青藻茜氏による1980年代後半のファミコン風楽曲を20曲以上収録。発売日は2025年6月26日、価格¥920。27件のレビュー(好評25件・不評2件)で好評率約93%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は現状日本語のみで、英語版は現在ローカライズ作業中(開発者自身のコミュニティ投稿によれば「Steam Auto Battler RPG Fest」というイベントに合わせた公開を予定)、27件のうち26件が日本語レビューで英語レビューは1件もない。Siliconera・Kotaku・PC Gamer・AUTOMATON(日本語版)を個別に確認したが、本作・開発者いずれについても報道は一件も見つからなかった。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、キャラクターは自分で考え最善の行動を選んで実行する。だから緊張感は入力タイミングから完全に離れ、戦いが始まる前に手渡したビルドへと移る——一つ一つの宝石が、事前に下した判断であり、今はそれを信じるしかない。",
+        "チェインとチェインバーストは攻撃が近いタイミングで重なることを報酬とするため、完全自動の戦闘にも見届ける価値のあるリズムが生まれる。組み上げたパーティが、自らそのリズムに噛み合っていく様を見る静かな満足感だ。",
+        "本作は、不遇の死を遂げた後に第二の人生を与えられた英雄の物語だ。開発者が、これを単なる筋書きの一場面ではなく成長システムそのものとして組み上げたと知ったうえで触れると、組み替わるダンジョンの一つ一つが、罰というより、もう一度挑む価値のある機会のように見えてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "オートバトルのローグライクRPGが欲しい人——戦略はリアルタイムの入力ではなく、パーティ編成と宝石ビルドに宿る",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——開発者本人がそう直接発言している",
+        "「好評」タイトル(27件で約93%)ながら、西側ゲームメディアがまだ一度も取り上げていないものを掴みたい人——レビューのうち英語は0件",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——27件は数件の外れ値でも比率が動く程度に薄く、この記事はそれを飾らずそのまま伝えている",
+        "戦闘を直接操作したい人——本作の戦いはすべて自動で進み、選択は宝石とパーティ編成を通じて事前に済ませておくものだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -10086,6 +10186,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Hidden Folks is Adriaan de Jongh and Sylvain Tegroeg's 2017 search-and-find game, in which hand-drawn, black-and-white miniature landscapes are full of tent flaps to unfurl, bushes to cut through, and doors to slam, all in service of tracking down the small hidden figures the game names itself after. It established a template that carried the old paper hidden-picture book into something genuinely interactive: a world built from hand-drawn art where every object can be manipulated, and the search itself, not a timer or a score, is the entire point. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer asaha, but Heartreasure: Stellar Journey's own hand-drawn planets full of levers, slot machines, and hidden hearts tucked into the background art carry that same founding idea into a gentler, ballpoint-pen-illustrated cosmos.",
       ja: "Hidden Folksは、Adriaan de JonghとSylvain Tegroegによる2017年の探し物ゲームで、手描きの白黒ミニチュア風景いっぱいに広がるテントの幕をめくり、茂みを切り開き、扉を叩きつけながら、タイトルにもなっている小さな隠れキャラクターたちを探していく。古き紙の絵探し絵本を、本当にインタラクティブなものへと持ち込んだ型を確立した一本だ——手描きの絵で作られた世界のあらゆる物を操作でき、タイマーもスコアもなく、探すこと自体が目的のすべてになる。この系譜は、ここで結びつける開発元asaha自身が明言した関連性ではなく、当サイト独自の批評的比較だが、Heartreasure: Stellar Journeyの、レバーやスロットマシンで満ちた手描きの惑星と、背景アートに隠されたハートは、まさに同じ発想を、ボールペンで描かれたより優しい宇宙へと引き継いでいる。",
+    },
+  },
+  // 原点 Rogue Legacy(Cellar Door Games、2013年)。journey of reincarnation pick の系譜として
+  //   新規採用。この帰属は開発元MSBgamedev自身の言明ではなく当サイト独自の批評的比較(自信度: 中・
+  //   parasocial/perfect-blue/papers-please等と同型の判断)。死んで子孫に転生し、城(ダンジョン)が
+  //   周回ごとに再生成され、恒久強化が引き継がれる、というアイデアを世界的に定義した先行作として選定。
+  //   現行Steamで販売中のためsteam URLで同定する。
+  "rogue-legacy": {
+    steam: "241600",
+    blurb: {
+      en: "Rogue Legacy is Cellar Door Games' 2013 roguelike platformer, in which dying doesn't end a run so much as pass it on: your character's heir, a randomly generated descendant with their own quirks and class, inherits whatever permanent upgrades gold has already bought, and sets off into a castle that regenerates its layout with every attempt. It established the idea that reincarnation and death itself could be the core progression system of a game, rather than a loss condition to avoid. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer MSBgamedev, but journey of reincarnation's own premise, a hero granted a second life who grows stronger through gems across dungeons that reshuffle with every run, carries that same founding idea into a fully automatic, retro-styled battle system.",
+      ja: "Rogue Legacyは、Cellar Door Gamesによる2013年のローグライク・プラットフォーマーで、死ぬことはランの終わりというより継承の始まりだ——キャラクターの跡継ぎである、それぞれ固有の特性とクラスを持つランダム生成の子孫が、それまでに集めた金で買った恒久強化を引き継ぎ、挑戦のたびにレイアウトが再生成される城へと再び挑む。転生と死そのものが、避けるべき敗北条件ではなくゲームの核となる成長システムになりうる、という着想を確立した一本だ。この系譜は、ここで結びつける開発元MSBgamedev自身が明言した関連性ではなく、当サイト独自の批評的比較だが、第二の人生を与えられた英雄が、周回ごとに組み替わるダンジョンを宝石で強くなりながら進む、というjourney of reincarnation自身の前提は、まさに同じ発想を、完全自動戦闘のレトロ風味へと引き継いでいる。",
     },
   },
 } as const;
