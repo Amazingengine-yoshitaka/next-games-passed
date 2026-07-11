@@ -10857,6 +10857,129 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "international-anomaly-123": {
+    published: "2026-08-01",
+    publishAt: "2026-08-01",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Action / Indie)が本作の形を捉えていないため新設
+    //   "four-body-escape-horror"。ユーザータグは Action / Roguelike / Roguelite / 3D / Horror /
+    //   Singleplayer / Procedural Generation / Indie で、実体は「1人で4人を受け持つ15分の
+    //   ランダム生成脱出ホラー」。
+    // lineage は新規anchor "lost-vikings"(Wikidata Q1052386)を作る。Steam版が存在しない原点なので
+    //   steam ではなく wikidata で同定する。Wikidata実測値は developer=Blizzard Entertainment
+    //   (Q178824) / publisher=Interplay Entertainment(Q628249) / リリース日 1993年4月29日 /
+    //   platform=SNES・Mega Drive・DOS・Amiga・Windows。日本語題は「バイキングの大迷惑」。
+    //   一致点は「プレイヤーが1人で複数の身体を受け持ち、全員を通さないと終わらない」という形。
+    //   分かれる点も明確で、Lost Vikingsの3人は能力が違うから全員必要なのに対し、本作の4人は
+    //   ただ全員生きていてほしいから必要で、しかも1人ずつ失われていく前提で設計されている。
+    //   影響を公言されたものではない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=727 Not Hound / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の
+    //   登録16件すべてを個別のappdetailsで確認した結果、全件 developers=publishers=727 Not Hound
+    //   だった。大手・海外展開代行・親会社関係の混入はゼロ。
+    // 【条件(17) コンソール版publisherの確認結果を明記する】本作にはSwitch版が告知された経緯が
+    //   ある。2021年11月にSwitch版の開発開始が報じられ、開発者本人も「パブリッシャーからお声が
+    //   かかり、こんな感じになりました」と述べている。しかし当方でNintendo日本の公式検索APIを
+    //   「廃村」「東京廃村」「国際指定怪異」「727」「Not Hound」「Lost Village」「ロストビレッジ」
+    //   「ドオルズ」「Exorcist」「Victors Test」の10通りで叩いた結果、727 Not Hound名義の
+    //   タイトルは1件も存在しない(同APIは対照実験でマリオ221件・ホラー90件・怪異10件を返す
+    //   正常動作を確認済み)。4Gamerの124号ページも発売元・開発元ともに727 Not Houndで、PC単独
+    //   表記。開発者は2023年10月に「124号 東京廃村をもってシーズン１終了」と述べており、Switch版が
+    //   出荷された形跡は日英どちらの情報源にも無い。したがって「publisherが付いた製品は存在しない」
+    //   と判断する。ただし記事では「一度も外部publisherと組んでいない」とは書かず、告知はされたが
+    //   出荷されなかった、という事実どおりに書く。
+    // 国籍は日本(自信度: 高)。ストア本文が日本語一次、対応言語も日本語のみ、AUTOMATON日本版・
+    //   4Gamer・Game*Spark・電ファミニコゲーマー・電撃オンラインが日本語で報じており、原型は
+    //   日本のフリーゲーム配信サイト「ふりーむ！」で無料公開されたものである。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   Mature Content Description セクションそのものが無い。ユーザータグ全8件にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・Add to Cart実測。
+    //   game_area_early_accessバナー無しで正式リリース済み。
+    // 【同一開発者の重複を隠さない】当サイトは既に同じ727 Not Houndの『悪夢のような日々でした』
+    //   (2563180 / slug: days-like-a-nightmare)を掲載している。同一開発者の重複は既存運用にも
+    //   前例があり(LIFE0 / トトメトリ / PenGames / Shiromofu Factory の4例)、失格事由ではないが、
+    //   記事本文で同じ作り手であることを明示する。
+    // west_unreached: supported_languages は日本語のみで英語オプションが存在しない。appreviews
+    //   API実測で全27件のうち日本語17件・英語わずか2件。言語の壁の典型なので obscurity: "wall" /
+    //   reachState: "lang_walled" を採る。西側編集記事は当方でも検索し、日本のインディーを扱う
+    //   英語ブログ goodorevengreat.games のサイト内検索が "Nothing Found" を返すこと、英語検索で
+    //   出てくるのが全て日本語媒体か自動生成DBであることを確認した。
+    // 数字の脆さ: 25/27=92.6%は当サイトの理想95%に届かず、母数27件も薄い。プレイ時間が
+    //   1周15分である点とあわせて先に開示する。
+    meta: { genre: "four-body-escape-horror", lineage: "lost-vikings", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 27, positivePct: 92, noEnglish: true } },
+    games: [
+      {
+        name_en: "International Designated Anomaly No.123: Abandoned Village",
+        name_ja: "国際指定怪異123号 廃村",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2001460/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page lays out the situation in four lines and then stops. Every year a strange uninhabited village called the Abandoned Village appears. Every year exactly one girl is confined inside it as a sacrifice. Three special forces operatives go in. You control all four of them. That is the whole design, and it is stranger than it sounds, because the three going in and the one already trapped are not a squad you switch between for tactical variety, they are four people you are personally responsible for keeping alive at the same time. The store puts the consequence plainly: each time you let your guard down, one more of them becomes a victim of the anomaly. The village is generated randomly each run, the whole thing is fifteen minutes, and the question the game asks is simply whether you get out in that window or you do not. The graphics are deliberately classic-3D so it runs light. There is no official English title; Steam's own name field is in Japanese and the canonical URL it generated just says 123. Made by 727 Not Hound, a prolific Japanese solo horror developer with sixteen titles on Steam; a direct check of every one of those sixteen shows developer and publisher identical on all of them. A Switch version of this game was announced back in 2021, with the developer saying a publisher had approached them, but a search of Nintendo's official Japanese catalogue across ten different query forms returns no title under this name at all, and the developer wrapped up the series in 2023 calling it the end of season one. The console version never shipped. This is also not the first time this site has covered this developer, and it says so rather than pretending otherwise. Released July 25, 2022 at ¥800, it is at 92 percent across 27 reviews (25 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It grew out of a free version released on the Japanese freeware site Freem. It supports Japanese only, and of its 27 reviews exactly 2 are in English.",
+        desc_ja: "ストアページは状況を4行で並べて、そこで止まる。毎年出現する「廃村」と呼ばれる奇妙な無人村がある。そこには必ず1人の少女が生贄として幽閉される。廃村に突入する特殊部隊が3人いる。あなたはその4人を操作する。設計はそれで全部で、しかも字面より奇妙だ——突入する3人と、既に監禁されている1人は、戦術的な使い分けのために切り替える部隊ではない。同時に生かしておく責任を、こちらが個人的に負っている4人である。その帰結もストアははっきり書いている。「油断するたびに１人また１人と怪異の犠牲になる」。村は一周ごとにランダムに作られ、全体で15分。ゲームが問うのは、その窓の中で脱出できるか、できないか、それだけだ。グラフィックは意図的にクラシック3D風で、そのぶん動作が軽い。公式の英題は存在しない。Steamのname欄自体が日本語のままで、Steamが自動生成した正準URLはただ「123」とだけ言っている。制作は727 Not Hound——Steamに16本を並べる多作な日本のソロホラー開発者で、その16本すべてを個別に確認したところ、全件で開発元と発売元が同一だった。本作にはSwitch版が2021年に告知された経緯があり、開発者本人も「パブリッシャーからお声がかかり」と述べている。しかしNintendo日本の公式カタログを10通りの検索語で当たっても、この名義のタイトルは1件も存在しない。そして開発者は2023年に「シーズン１終了」と区切りをつけている。コンソール版は出荷されなかった。なお当サイトがこの開発者を取り上げるのは今回が初めてではなく、そこも隠さず書いておく。発売日は2022年7月25日、価格¥800。27件のレビュー(好評25件・不評2件、Steam自身のレビューAPI実測)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。原型は日本のフリーゲーム配信サイト「ふりーむ！」で無料公開されたものだ。対応言語は日本語のみで、27件のレビューのうち英語はちょうど2件である。",
+      },
+      {
+        name_en: "The Lost Vikings",
+        name_ja: "バイキングの大迷惑 (The Lost Vikings)",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q1052386",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: The Lost Vikings, released April 29, 1993, developed by the studio that would become Blizzard Entertainment and published by Interplay, and known in Japan as Viking no Daimeiwaku. Its invention was to hand one player three bodies at once. Erik runs and jumps, Baleog fights, Olaf holds the shield, none of them can finish a level alone, and none of them can be left behind, so the puzzle is never about a character's skill but about the fact that your attention is divisible and their safety is not. It is the origin of the lineage of games where you are not a protagonist but a person responsible for several protagonists simultaneously. International Designated Anomaly No.123 is not an official Lost Vikings work, and this lineage is a comparison drawn by this site rather than a stated influence. The two part on something worth naming: the Vikings need each other because their abilities differ, and the game is confident all three will make it if you are clever enough. Here the four need each other because they are people, the abilities barely differ, and the design states up front that they will be picked off one at a time.",
+        desc_ja: "この味の原点——The Lost Vikings(バイキングの大迷惑)。1993年4月29日発売、開発は後にBlizzard Entertainmentとなるスタジオ、発売はInterplay。この作品の発明は、1人のプレイヤーに3つの身体を同時に持たせたことだった。エリックは走って跳び、バレオグは戦い、オーラフは盾を構える。誰ひとり単独でステージを終えられず、誰ひとり置いていけない。だからパズルの本体はキャラクターの技能ではなく、「こちらの注意力は分割できるが、彼らの安全は分割できない」という事実のほうにある。自分が主人公なのではなく、複数の主人公に対して同時に責任を負う人間になる——そういうゲーム群の系譜の原点である。『国際指定怪異123号 廃村』は公式のLost Vikings作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。両者が分かれる点は、名指ししておく価値がある。バイキングたちが互いを必要とするのは能力が違うからで、あのゲームはプレイヤーが賢くありさえすれば3人とも通れると確信している。こちらの4人が互いを必要とするのは彼らが人間だからで、能力はほとんど変わらず、そして設計のほうが最初から「1人ずつ削られていく」と宣言している。",
+      },
+    ],
+    en: {
+      title: "International Designated Anomaly No.123: Abandoned Village - every year a village appears and one girl is sealed inside it as a sacrifice. Three operatives go in. You control all four people at once, and each lapse costs you one of them. Fifteen minutes, randomly generated, ¥800. 92 percent over 27 reviews, Japanese-only",
+      description: "A fifteen-minute randomly generated escape horror where one player controls four people at once: three special forces operatives entering an anomalous village, and the girl already sealed inside it as its yearly sacrifice. Each lapse in attention costs one of them. Made by 727 Not Hound, self-published, grown from a free Japanese release. 92 percent over 27 reviews.",
+      h1a: "A village appears every year, and every year one girl is sealed inside it as a sacrifice. Three operatives go in after her. ",
+      h1flip: "You are playing all four of them at once, and every lapse costs you one",
+      h1b: ".",
+      lede: "The store page lays out the situation in four lines and then stops. Every year a strange uninhabited village called the Abandoned Village appears. Every year exactly one girl is confined inside it as a sacrifice. Three special forces operatives go in. You control all four of them. That is the whole design, and it is stranger than it sounds, because the three going in and the one already trapped are not a squad you switch between for tactical variety, they are four people you are personally responsible for keeping alive at the same time. The store puts the consequence plainly: each time you let your guard down, one more of them becomes a victim of the anomaly. The village is generated randomly each run, the whole thing is fifteen minutes, and the question the game asks is simply whether you get out in that window or you do not. The graphics are deliberately classic-3D so it runs light. There is no official English title; Steam's own name field is in Japanese and the canonical URL it generated just says 123. Made by 727 Not Hound, a prolific Japanese solo horror developer with sixteen titles on Steam, and a direct check of every one of those sixteen shows developer and publisher identical on all of them. One thing needs saying rather than glossing: a Switch version of this game was announced back in 2021, and the developer said at the time that a publisher had approached them. So this site checked. Nintendo's official Japanese catalogue, queried ten different ways, returns no title under this developer's name at all, while the same search returns 221 results for Mario and 90 for horror, so the search works and the absence is real. The developer wrapped the series up in 2023 calling it the end of season one. The console version never shipped, and no publisher relationship ever reached a released product. This is also not the first time this site has covered this developer, and it says so rather than pretending otherwise. Released July 25, 2022 at ¥800, it is at 92 percent across 27 reviews (25 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It grew out of a free version released on the Japanese freeware site Freem. It supports Japanese only, and of its 27 reviews exactly 2 are in English. At 27 reviews and 92 percent this is a thinner and lower number than most picks here, and a run lasts fifteen minutes; both are said here rather than buried.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Four people and one attention span is the entire horror. Nothing is chasing your character, because you do not have a character; something is moving through a village where four of your responsibilities are standing in four different places, and you can only be looking at one of them.",
+        "The girl is already inside before you start. She is not a rescue objective you reach at the end, she is a fourth thing you are playing from the first second, which means the failure state is not that you did not save her but that you were somewhere else when it mattered.",
+        "Fifteen minutes and a randomly generated village means the knowledge you carry between runs is not the map but the shape of your own lapses, and the game is short enough that going again costs you nothing except the admission that you know exactly which one you stopped watching.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want The Lost Vikings turned into a horror premise: several bodies, one player, and a design that states in advance they will be taken one at a time",
+        "You want short and repeatable rather than long: fifteen minutes a run, a village generated fresh each time, and classic-3D visuals chosen so it runs light",
+        "You want a clean content record and a self-published Japanese developer: content descriptors completely empty, no AI disclosure, and sixteen Steam titles all carrying the same name as developer and publisher",
+      ],
+      bad: [
+        "You do not read Japanese. There is no English option and no official English title at all, and only 2 of its 27 reviews are in that language",
+        "You want a settled number or a substantial runtime; 92 percent over 27 reviews is both thinner and lower than most finds here, and a full run is fifteen minutes",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "国際指定怪異123号 廃村 - 毎年現れる村に、毎年ひとりの少女が生贄として幽閉される。突入する特殊部隊は3人。あなたはその4人を同時に操作し、油断するたびに1人ずつ失う。1周15分・ランダム生成・¥800。27件で好評率92%、日本語のみ",
+      description: "1人で4人を同時に操作する15分のランダム生成脱出ホラー。怪異である廃村に突入する特殊部隊3人と、その年の生贄として既に幽閉されている少女1人。油断するたびに1人ずつ怪異の犠牲になる。727 Not Houndによる自主出版で、原型は日本のフリーゲーム。27件のレビューで好評率92%。",
+      h1a: "毎年、村が現れる。そして毎年、ひとりの少女が生贄として幽閉される。追って突入する特殊部隊は3人。",
+      h1flip: "あなたはその4人を同時に操作している。そして油断するたび、1人ずつ失う",
+      h1b: "。",
+      lede: "ストアページは状況を4行で並べて、そこで止まる。毎年出現する「廃村」と呼ばれる奇妙な無人村がある。そこには必ず1人の少女が生贄として幽閉される。廃村に突入する特殊部隊が3人いる。あなたはその4人を操作する。設計はそれで全部で、しかも字面より奇妙だ——突入する3人と、既に監禁されている1人は、戦術的な使い分けのために切り替える部隊ではない。同時に生かしておく責任を、こちらが個人的に負っている4人である。その帰結もストアははっきり書いている。「油断するたびに１人また１人と怪異の犠牲になる」。村は一周ごとにランダムに作られ、全体で15分。ゲームが問うのは、その窓の中で脱出できるか、できないか、それだけだ。グラフィックは意図的にクラシック3D風で、そのぶん動作が軽い。公式の英題は存在しない。Steamのname欄自体が日本語のままで、Steamが自動生成した正準URLはただ「123」とだけ言っている。制作は727 Not Hound——Steamに16本を並べる多作な日本のソロホラー開発者で、その16本すべてを個別に確認したところ、全件で開発元と発売元が同一だった。ここは誤魔化さずに書いておくべき点がある。本作にはSwitch版が2021年に告知された経緯があり、開発者本人も当時「パブリッシャーからお声がかかり」と述べていた。だから当サイトで確認した。Nintendo日本の公式カタログを10通りの検索語で当たっても、この開発者名義のタイトルは1件も出てこない。同じ検索がマリオでは221件、ホラーでは90件を返すので、検索は動いていて、この不在は本物である。そして開発者は2023年に「シーズン１終了」と区切りをつけた。コンソール版は出荷されず、publisherとの関係が製品として世に出たことは一度もない。なお当サイトがこの開発者を取り上げるのは今回が初めてではなく、そこも取り繕わずに書いておく。発売日は2022年7月25日、価格¥800。27件のレビュー(好評25件・不評2件)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。原型は日本のフリーゲーム配信サイト「ふりーむ！」で無料公開されたものだ。対応言語は日本語のみで、27件のレビューのうち英語はちょうど2件。27件で92%は当サイトの他の発掘より母数も数字も薄く、1周は15分である。どちらも埋めずにここに書いておく。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "4人の人間と、1つぶんの注意力。恐怖の本体はそこにある。何かが「自分のキャラクター」を追ってくるのではない——そもそも自分のキャラクターというものが無いからだ。村の中を何かが動いていて、その村の別々の場所に、こちらの責任が4つ立っている。そして見ていられるのは一度に1つだけである。",
+        "少女は始まる前から中にいる。最後に辿り着いて助ける目標ではなく、1秒目から操作している4つ目の存在だ。つまり失敗の形は「助けられなかった」ではなく、「肝心なとき、自分は別の場所を見ていた」になる。",
+        "15分とランダム生成の村という組み合わせは、周回で持ち越せる知識を「地図」ではなく「自分の油断の癖」にする。しかも短いので、もう一周する代償は何もない——どれを見ていなかったか自分で分かっている、と認めること以外は。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "The Lost Vikings をホラーの前提に置き換えたものが欲しい人——複数の身体、1人のプレイヤー、そして「1人ずつ持っていかれる」と先に宣言してくる設計",
+        "長さより短さと反復が欲しい人——1周15分、毎回新しく生成される村、そして軽く動くように選ばれたクラシック3D風の絵",
+        "内容の記録がきれいで自主出版の日本の開発者が欲しい人——コンテンツディスクリプタは完全に空、AI開示も無し、Steamの16本すべてが開発元と発売元に同じ名前を載せている",
+      ],
+      bad: [
+        "日本語が読めない人。英語オプションも公式英題も存在せず、27件のレビューのうち英語はわずか2件である",
+        "安定した数字とボリュームが欲しい人——27件で92%は当サイトの他の発掘より母数も数字も薄く、1周は15分で終わる",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -11874,6 +11997,13 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Don't Starve, developed and published by Klei Entertainment and released April 23, 2013, took hunger, which survival games had generally treated as one status effect among several, and promoted it to the clock that drives everything else. It is the reason you leave camp, the reason you accept a risk you would otherwise refuse, and the reason a day in the game has a shape at all; the wilderness is dangerous, but it is the meter that makes you walk into it. Paired with a hand-inked Gorey-esque presentation that made deprivation look characterful rather than punishing, it established the modern form of the survival game in which the body's requirements, not the enemies, set the tempo. It is the origin of the lineage of games where staying alive is an act of scheduling, and of the design insight that a need arriving on a timer produces better decisions than a threat arriving at random.",
       ja: "Don't Starveは、開発・発売ともにKlei Entertainmentにより2013年4月23日に発売された作品で、それまでのサバイバルゲームがおおむね「いくつかある状態異常のひとつ」として扱っていた空腹を、他のすべてを駆動する時計の位置まで引き上げた。拠点を出る理由も、本来なら断るはずの危険を受け入れる理由も、そもそもゲーム内の一日という単位に形がある理由も、すべてそこから来る。荒野は確かに危険だが、そこへ足を踏み出させるのはメーターのほうだ。手描きのインク画のような、ゴーリーを思わせる見た目——欠乏を、罰ではなく作品の個性に見せる絵——と組み合わさることで、敵ではなく身体の要求がテンポを決めるという、サバイバルゲームの現代形を確立した。生き延びることが「予定を組む行為」になるゲーム群の系譜の原点であり、タイマーで到来する欠乏はランダムに到来する脅威よりも良い判断を生む、というデザイン上の洞察の原点でもある。",
+    },
+  },
+  "lost-vikings": {
+    wikidata: "https://www.wikidata.org/wiki/Q1052386",
+    blurb: {
+      en: "The Lost Vikings, released April 29, 1993 by the studio that would become Blizzard Entertainment and published by Interplay, handed one player three bodies at the same time and refused to let any of them be spare. Erik runs and jumps, Baleog fights, Olaf carries the shield, and a level is only finished when all three are standing at the exit, so every room has to be solved three times over in the same breath. What makes it an origin rather than a gimmick is the pressure that arrangement creates: your attention is divisible and their safety is not, and the moment you are absorbed in getting one of them past an obstacle is exactly the moment the other two are unattended. It is the origin of the lineage of games in which the player is not a protagonist but a person answerable for several protagonists at once, and of the insight that a party you must personally keep alive is a fundamentally different feeling from a party that fights for you.",
+      ja: "The Lost Vikings(バイキングの大迷惑)は、1993年4月29日、後にBlizzard Entertainmentとなるスタジオが開発しInterplayが発売した作品で、1人のプレイヤーに3つの身体を同時に持たせ、そのどれ一つも予備として扱わせなかった。エリックは走って跳び、バレオグは戦い、オーラフは盾を担ぐ。そしてステージは3人全員が出口に立って初めて終わる。つまりどの部屋も、同じ一息のうちに3回解かなければならない。これを小手先ではなく原点にしているのは、その配置が生む圧のほうだ——こちらの注意力は分割できるが、彼らの安全は分割できない。1人を障害物の向こうへ通すことに没頭している瞬間とは、残り2人が放置されている瞬間そのものである。プレイヤーが主人公なのではなく、複数の主人公に対して同時に責任を負う人間になる——そうしたゲーム群の系譜の原点であり、「自分が生かしておかねばならない仲間」は「自分のために戦ってくれる仲間」とは根本的に別の感触だ、という洞察の原点でもある。",
     },
   },
 } as const;
