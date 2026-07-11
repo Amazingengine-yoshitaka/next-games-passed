@@ -9335,6 +9335,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "cure-for-danmaku-synd": {
+    published: "2026-07-25",
+    publishAt: "2026-07-25",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam自身の売り文句「Parry action only top-down shooter!」を捉える語として新設
+    //   "parry-reflect-shmup"(射撃できず、あえて被弾してバリアで弾幕を吸収し反撃に転じるトップダウン
+    //   シューティング)。lineageは新規anchor "ikaruga"を採用(あえて被弾して敵弾を吸収し攻撃に転じる、
+    //   というアイデアの世界的な原点)。
+    // developer ToAge(自社発売に近い形、発売元表記はMk.Ⅲ)は、専任の裏取りエージェントがfreem!の
+    //   ブランドページ本文("個人制作者だよ！"という一人称の自己紹介)・itch.ioプロフィール("I used to
+    //   design mainly board games..."という一人称記述)を一次確認した個人開発者。以前はボードゲーム
+    //   制作サークル「とあるゲーマー工房」として活動しており(BoardGameGeekにパブリッシャー登録あり)、
+    //   そこからデジタルゲーム制作へ移行したと本人が述べている。発売元Mk.Ⅲについては独立した企業実体を
+    //   示す一次情報が見つからず、ToAgeの過去作以外の発売実績も確認できなかった(不明・大手資本の兆候は
+    //   見当たらず)。国籍そのものの直接明言はないが、報道媒体(4Gamer・gamebiz・Gamer.ne.jp・
+    //   Game*Spark)が全て日本語メディア・配布/出店プラットフォームがfreem!/BOOTHという日本国内向け
+    //   サービスである状況証拠の複合による判断(自信度: 中)。個人ブログに開発者を「現役の医師」とする
+    //   記述があったが二次情報のみで一次確認できなかったため本文には採用しない。
+    // 過去作『To my forever Love』(2023年、マウスクリックのみの1入力ジャンプフックプラットフォーマー)
+    //   と未発売『Hack the Babel Inc.』(マインスイーパー着想のパズルローグライク)はitch.ioプロフィール
+    //   で同一開発者の作品と確認済み。専任エージェントがSiliconera/Kotaku/PC Gamer/AUTOMATON WEST/
+    //   Rock Paper Shotgunを個別確認したが、本作・過去作いずれについても西側メディアの言及は一件も
+    //   見つからなかった。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・購入可能(Add to Cartボタン実測)、
+    //   アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は英語含む3言語だが、appreviews API実測で全16件のうち英語レビューは
+    //   0件、日本語レビューは16件(100%)——英語対応済みでも西へ未到達の典型例として obscurity: "deep"
+    //   を採用する。レビュー総数16件は絶対条件の最低ライン付近であり、統計的な確からしさが限定的である
+    //   ことも正直に開示する。
+    meta: { genre: "parry-reflect-shmup", lineage: "ikaruga", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 16, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "Cure for Danmaku Synd",
+        name_ja: "弾幕病の特効薬",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4328580/Cure_for_Danmaku_Synd/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a top-down shooter where you cannot shoot at all: decades after medical nanomachines made every disease curable, a newly discovered illness causes infections, malignant growths, and parasites to manifest inside a patient's body as bullet patterns that instantly destroy any nanomachine sent in to treat them. Entering through the mouth toward the body's center, the player's only real tool is a barrier: deliberately flying into same-colored bullets absorbs them instead of causing damage, and reflecting them back becomes the attack, though absorbing too many at once breaks the barrier and leaves you exposed. Every stage runs against a time limit, with the disease worsening toward stage failure if it isn't treated efficiently, and per-run customization lets you adjust your loadout before each attempt; streaming and monetized video coverage are explicitly welcomed. Made by developer ToAge, a solo creator who describes themself in the first person as an individual maker on the Japanese freeware site freem! and who, per their own itch.io bio, previously designed board games before being drawn into digital game development; the game is published under the name Mk.III, an entity with no independent public presence found beyond ToAge's own releases. ToAge's two other known works, To my forever Love (a 2023 single-input jump-hook platformer) and the unreleased puzzle roguelike Hack the Babel Inc., turned up no coverage at all in a dedicated check of Siliconera, Kotaku, PC Gamer, AUTOMATON WEST, and Rock Paper Shotgun. Released at ¥800, it is Positive at 100 percent over 16 reviews (16 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese, English, and Simplified Chinese, and every one of its 16 reviews is in Japanese; not one is in English, though this pick states plainly that 16 reviews is thin enough to sit right at the edge of statistical meaning.",
+        desc_ja: "Steam自身の表記によれば、本作は一切射撃できないトップダウンシューティングだ。医療ナノマシンによってあらゆる疾患が治療可能になってから数十年、新たに発見された疾患が、感染症・悪性新生物・寄生虫などを患者の体内に「弾幕」として展開させ、治療に送り込んだナノマシンを片っ端から破壊してしまう。口から入って体の中心へ向かうプレイヤーの唯一の武器はバリアだ——同色の弾へあえて突っ込むことでダメージではなく吸収に変わり、それを跳ね返すことが攻撃になる。ただし一度に吸収しすぎるとバリアが壊れて無防備になってしまう。各ステージには時間制限があり、効率よく治療しないと病状が進行してステージクリア失敗になるほか、挑戦前に機体のカスタマイズを調整できる。実況・動画化とその収益化は自由と明記されている。制作は開発者ToAge。日本のフリーゲームサイトfreem!のブランドページ本文で「個人制作者だよ！」と一人称で自己紹介しており、本人のitch.ioプロフィールによれば以前はボードゲームを主に手がけていたが、デジタルゲーム制作の自由さに惹かれて移行したという。発売元表記は「Mk.Ⅲ」だが、ToAgeの作品以外に発売実績が見当たらず、独立した企業実体を示す一次情報も見つからなかった。ToAgeの他の既知作品——2023年の1入力ジャンプフックプラットフォーマー『To my forever Love』と、未発売のマインスイーパー着想パズルローグライク『Hack the Babel Inc.』——について、専任の裏取りエージェントがSiliconera・Kotaku・PC Gamer・AUTOMATON WEST・Rock Paper Shotgunを個別に確認したが、報道は一件も見つからなかった。価格¥800で、16件のレビュー(好評16件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語・英語・簡体字中国語で、16件すべてが日本語レビューであり英語レビューは1件もないが、16件という数はこのサイトが扱う絶対条件の最低ラインぎりぎりであり、統計的な確からしさは限定的であることも正直に開示する。",
+      },
+      {
+        name_en: "Ikaruga",
+        name_ja: "Ikaruga",
+        status: "established",
+        steam: "https://store.steampowered.com/app/253750/Ikaruga/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Ikaruga, TREASURE's 2001 vertical shoot-'em-up, released on Steam in 2014, whose own store text sums up its whole idea in three words, 'Shoot! Dodge! and... Get Hit!?' Switching your ship's polarity lets you deliberately fly into same-colored enemy bullets and absorb them instead of dying, turning what would be a hit into fuel for a devastating counterattack. Cure for Danmaku Synd is not an official Ikaruga work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer ToAge, but its own core mechanic, deliberately absorbing enemy bullet patterns behind a barrier and reflecting them back as an attack, carries that same founding idea into a body-horror medical setting.",
+        desc_ja: "この味の原点——Ikaruga。TREASUREによる2001年の縦スクロールシューティングで、2014年にSteam配信された。ストア文言自身が「撃て！避けろ！そして……被弾しろ！？」というたった三語でこの発想の全体を要約している。自機の極性を切り替えることで、同色の敵弾へあえて突っ込んで吸収でき、被弾するはずだった一撃を強烈な反撃へと変える。弾幕病の特効薬は公式のIkaruga作品ではなく、この系譜は開発元ToAge自身が明言した関連性ではなく当サイト独自の批評的比較だが、あえてバリアで敵の弾幕を吸収し反撃に転じるという本作自身の核心的な仕組みは、まさに同じ発想を、体内を舞台にした医療モチーフの世界へと引き継いでいる。",
+      },
+    ],
+    en: {
+      title: "Cure for Danmaku Synd - a top-down shmup where you can't shoot, only deliberately get hit to absorb enemy bullet patterns behind a barrier and reflect them back, exploring a patient's body to cure a disease from the inside. Made solo by developer ToAge. Positive at 100 percent over 16 reviews, 0 of them in English",
+      description: "A top-down shooter where you can't shoot: deliberately take hits to absorb enemy bullet patterns behind a barrier, then reflect them back as an attack, while exploring a patient's body from the inside to cure a mysterious disease before time runs out. Made and self-published solo by developer ToAge. Positive at 100 percent over 16 reviews, every one of them in Japanese; none are in English.",
+      h1a: "It's a shooting game where you can't shoot. Your only weapon is deliberately flying into the enemy's own bullet pattern, ",
+      h1flip: "absorbing it behind a barrier before reflecting it straight back at them",
+      h1b: ".",
+      lede: "A top-down shooter made and self-published by solo developer ToAge, who describes themself in the first person as an individual maker on the Japanese freeware site freem! and who, per their own itch.io bio, previously designed board games (running a circle called A Gamer's Studio, listed on BoardGameGeek) before being drawn into digital game development; the game is published under the name Mk.III, an entity with no independent public presence found beyond ToAge's own releases. Per Steam's own listing, decades after medical nanomachines made every disease curable, a newly discovered illness causes infections, malignant growths, and parasites to manifest inside a patient's body as bullet patterns that instantly destroy any nanomachine sent in to treat them. Entering through the mouth toward the body's center, the player's only real tool is a barrier: deliberately flying into same-colored bullets absorbs them instead of causing damage, and reflecting them back becomes the attack, though absorbing too many at once breaks the barrier and leaves you exposed. Every stage runs against a time limit, with the disease worsening toward stage failure if it isn't treated efficiently, and per-run customization lets you adjust your loadout before each attempt; streaming and monetized video coverage are explicitly welcomed. ToAge's two other known works, To my forever Love (a 2023 single-input jump-hook platformer) and the unreleased puzzle roguelike Hack the Babel Inc., turned up no coverage at all in a dedicated check of Siliconera, Kotaku, PC Gamer, AUTOMATON WEST, and Rock Paper Shotgun. Released at ¥800, it is Positive at 100 percent over 16 reviews (16 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese, English, and Simplified Chinese, and every one of its 16 reviews is in Japanese; not one is in English, though this pick states plainly that 16 reviews is thin enough to sit right at the edge of statistical meaning.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, the entire premise fits in three words on the store page, 'Shoot, dodge, and... get hit!?' so the moment you first choose to fly into a bullet on purpose is the moment the whole design finally clicks into place.",
+        "Absorbing too many bullets at once breaks your barrier and leaves you exposed, so the real skill isn't avoiding damage, it's judging exactly how much of the enemy's own attack you can safely swallow before turning around and handing it back.",
+        "The whole game is staged as a race against a worsening illness inside someone's body, and knowing a solo developer built an entire combat system around the idea of literally weaponizing what's trying to kill the patient gives every reflected bullet a small, dark irony worth noticing.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a shoot-'em-up that inverts the genre's core instinct: absorbing and reflecting enemy bullet patterns instead of just dodging them",
+        "You want a genuinely solo Japanese production, self-published under a name with no independent public presence beyond this developer's own work",
+        "You want a Positive title (100 percent over 16 reviews) that supports English yet remains completely unfound: every single review is in Japanese",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 16 reviews sits right at the edge of what this site treats as meaningful, and this pick says so plainly",
+        "You want a shooter where you actually fire a weapon; this one is built entirely around parrying and reflecting, with no offensive shot of your own",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "弾幕病の特効薬 - 一切射撃できないシューティング。あえて被弾してバリアで敵弾を吸収し反撃に変え、患者の体内を治療しながら進む。制作はソロ開発者ToAge。16件のレビューで好評率100%、英語レビューは0件",
+      description: "一切射撃できないトップダウンシューティング——あえて被弾してバリアで敵の弾幕を吸収し、反撃へと変えながら、患者の体内を治療して進む。制作・自社発売はソロ開発者ToAge。16件のレビューで好評率100%、全件が日本語レビューで英語は0件。",
+      h1a: "一切射撃できないシューティングゲーム。唯一の武器は、あえて敵の弾幕へ突っ込むこと——",
+      h1flip: "バリアで吸収し、そのままそっくり跳ね返す",
+      h1b: "。",
+      lede: "制作・自社発売はソロ開発者ToAgeによるトップダウンシューティング。日本のフリーゲームサイトfreem!のブランドページ本文で「個人制作者だよ！」と一人称で自己紹介しており、本人のitch.ioプロフィールによれば以前はボードゲーム制作サークル(BoardGameGeekに登録のある「とあるゲーマー工房」)を主宰していたが、デジタルゲーム制作の自由さに惹かれて移行したという。発売元表記は「Mk.Ⅲ」だが、ToAgeの作品以外に発売実績が見当たらず、独立した企業実体を示す一次情報も見つからなかった。Steam自身の表記によれば、医療ナノマシンによってあらゆる疾患が治療可能になってから数十年、新たに発見された疾患が、感染症・悪性新生物・寄生虫などを患者の体内に「弾幕」として展開させ、治療に送り込んだナノマシンを片っ端から破壊してしまう。口から入って体の中心へ向かうプレイヤーの唯一の武器はバリアだ——同色の弾へあえて突っ込むことでダメージではなく吸収に変わり、それを跳ね返すことが攻撃になる。ただし一度に吸収しすぎるとバリアが壊れて無防備になってしまう。各ステージには時間制限があり、効率よく治療しないと病状が進行してステージクリア失敗になるほか、挑戦前に機体のカスタマイズを調整できる。実況・動画化とその収益化は自由と明記されている。ToAgeの他の既知作品——2023年の1入力ジャンプフックプラットフォーマー『To my forever Love』と、未発売のマインスイーパー着想パズルローグライク『Hack the Babel Inc.』——について、専任の裏取りエージェントがSiliconera・Kotaku・PC Gamer・AUTOMATON WEST・Rock Paper Shotgunを個別に確認したが、報道は一件も見つからなかった。価格¥800で、16件のレビュー(好評16件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語・英語・簡体字中国語で、16件すべてが日本語レビューであり英語レビューは1件もないが、16件という数はこのサイトが扱う絶対条件の最低ラインぎりぎりであり、統計的な確からしさは限定的であることも正直に開示する。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、この発想の全体はストアページの三語に集約されている——「撃て、避けろ、そして……被弾しろ！？」。だから初めて弾へあえて突っ込むと決めた瞬間、この設計全体がカチッと噛み合う。",
+        "一度に吸収しすぎるとバリアが壊れて無防備になる。だから本当に試されているのは被弾を避ける腕前ではなく、敵の攻撃そのものをどこまで安全に飲み込んでから、跳ね返しに転じられるかという判断力だ。",
+        "この物語全体は、誰かの体内で悪化していく病との時間との勝負として組まれている。患者を殺そうとしているものそのものを武器化する、という発想を丸ごと戦闘システムに据えたのがソロ開発者だと知ったうえで触れると、跳ね返す一発一発に小さく黒い皮肉が宿って見えてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "避けるだけではなく、敵の弾幕を吸収して跳ね返す、ジャンルの核心を反転させたシューティングが欲しい人",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——この開発者自身の作品以外に発売実績が見当たらない名義での発売",
+        "「好評」タイトル(16件で100%)ながら、英語に対応していても完全に見つかっていないものを掴みたい人——レビューはすべて日本語",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——16件はこのサイトが意味のある水準として扱う境界ぎりぎりで、この記事はそれを飾らずそのまま伝えている",
+        "自分から撃つシューティングが欲しい人——本作はパリィと反射だけで組まれており、自前の攻撃射撃は存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -10299,6 +10404,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Rogue Legacy is Cellar Door Games' 2013 roguelike platformer, in which dying doesn't end a run so much as pass it on: your character's heir, a randomly generated descendant with their own quirks and class, inherits whatever permanent upgrades gold has already bought, and sets off into a castle that regenerates its layout with every attempt. It established the idea that reincarnation and death itself could be the core progression system of a game, rather than a loss condition to avoid. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer MSBgamedev, but journey of reincarnation's own premise, a hero granted a second life who grows stronger through gems across dungeons that reshuffle with every run, carries that same founding idea into a fully automatic, retro-styled battle system.",
       ja: "Rogue Legacyは、Cellar Door Gamesによる2013年のローグライク・プラットフォーマーで、死ぬことはランの終わりというより継承の始まりだ——キャラクターの跡継ぎである、それぞれ固有の特性とクラスを持つランダム生成の子孫が、それまでに集めた金で買った恒久強化を引き継ぎ、挑戦のたびにレイアウトが再生成される城へと再び挑む。転生と死そのものが、避けるべき敗北条件ではなくゲームの核となる成長システムになりうる、という着想を確立した一本だ。この系譜は、ここで結びつける開発元MSBgamedev自身が明言した関連性ではなく、当サイト独自の批評的比較だが、第二の人生を与えられた英雄が、周回ごとに組み替わるダンジョンを宝石で強くなりながら進む、というjourney of reincarnation自身の前提は、まさに同じ発想を、完全自動戦闘のレトロ風味へと引き継いでいる。",
+    },
+  },
+  // 原点 Ikaruga(TREASURE、2001年発表・Steam版は2014年配信)。弾幕病の特効薬 pick の系譜として
+  //   新規採用。この帰属は開発元ToAge自身の言明ではなく当サイト独自の批評的比較(自信度: 中・
+  //   parasocial/perfect-blue/papers-please等と同型の判断)。あえて被弾して敵弾を吸収し、攻撃に
+  //   転じる、というアイデアを世界的に定義した先行作として選定。現行Steamで販売中のためsteam URLで
+  //   同定する。
+  "ikaruga": {
+    steam: "253750",
+    blurb: {
+      en: "Ikaruga is TREASURE's 2001 vertical shoot-'em-up, released on Steam in 2014, in which switching your ship's polarity lets you deliberately fly into same-colored enemy bullets and absorb them instead of dying, turning what would be a hit into fuel for a devastating chain-bonus counterattack. Its own store text sums up the whole idea in three words: 'Shoot! Dodge! and... Get Hit!?' establishing the template for a shoot-'em-up where taking a bullet on purpose, not avoiding it, is the core skill. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer ToAge, but Cure for Danmaku Synd's own core mechanic, deliberately absorbing enemy bullet patterns behind a barrier and reflecting them back as an attack, carries that same founding idea into a body-horror medical setting.",
+      ja: "Ikarugaは、TREASUREによる2001年の縦スクロールシューティングで、2014年にSteam配信された。自機の極性を切り替えることで、同色の敵弾へあえて突っ込んで吸収でき、被弾するはずだった一撃を強烈な連鎖ボーナスの反撃へと変える。ストア文言自身が「撃て！避けろ！そして……被弾しろ！？」というたった三語でこの発想の全体を要約しており、避けることではなく、あえて弾を受けることこそが核心のスキルになる、というシューティングの型を確立した一本だ。この系譜は、ここで結びつける開発元ToAge自身が明言した関連性ではなく、当サイト独自の批評的比較だが、あえてバリアで敵の弾幕を吸収し反撃に転じる、という弾幕病の特効薬自身の核心的な仕組みは、まさに同じ発想を、体内を舞台にした医療モチーフの世界へと引き継いでいる。",
     },
   },
 } as const;
