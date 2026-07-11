@@ -10249,6 +10249,124 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "takoyaki-party-survival": {
+    published: "2026-07-29",
+    publishAt: "2026-07-29",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Casual / Indie / Simulation)がゲーム性を捉えていないため、ストア本文
+    //   自身の中核「タンパク質、炭水化物、脂質をバランスよく摂取して生き延びてください」に沿って
+    //   新設 "nutrition-balance-survival"。
+    // lineage は新規anchor "dont-starve"(Steam 219740)を作る。appdetails実測で developer=publisher=
+    //   Klei Entertainment、リリース日 2013年4月23日。空腹メーターを「全部を駆動する時計」に据えた
+    //   サバイバルの現代形の原点。ただし一致は部分的で、Don't Starveの空腹が単一のメーターである
+    //   のに対し、本作はそれを三大栄養素の内訳に分解したうえで、さらに「カロリー上限」という逆向きの
+    //   制約を足している——食べ過ぎると満腹で食べられなくなるので、スクワットで消費してから食べ直す。
+    //   摂取と消費が同一ループに閉じている点が原点と異なる。影響を公言されたものではない当サイト
+    //   独自の批評的比較である(自信度: 中)。
+    // developer=KIMIDORI SOFT / publisher=KIMIDORI SOFT。条件(6)は自分で全数確認した——Steamの
+    //   developer検索でKIMIDORI SOFT名義は18作あり、その18作すべてについて個別にappdetailsを叩き、
+    //   全件 developers=["KIMIDORI SOFT"] / publishers=["KIMIDORI SOFT"] であることを確認した
+    //   (LOST EGG 1-3 / LOST EGG the Hard Boiled / LOST BUBBLES / LOST BALLOONS / LOST LIGHT /
+    //   Sacabambaspis Chronicle / Yakiniku Party Survival / Tumbleweed Destiny / Just Grill the Steak! /
+    //   Forklift Load / School Paranormal Laboratory / LAST CHICK / Food Delivery Service /
+    //   Toilet paper wants to be a basketball / Bonds of Zeniarai / 本作)。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。スカウトは「18作中3作しか個別確認していない」と正直に留保していたが、
+    //   その未確認分を当方が全部潰した。
+    // 国籍は日本(自信度: 高)。ストア本文が日本語一次で書かれ、社名は日本語表記「キミドリソフト」、
+    //   自ら「キミドリソフトの300円シリーズ第九弾」と名乗るシリーズ運用、価格は円建て、日本語圏
+    //   メディアが配信開始を報じている。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   Mature Content Descriptionセクション無し、年齢ゲート無し。ユーザータグ全19件
+    //   (Time Management / Collectathon / Survival / Management / Physics / Tabletop / Board Game /
+    //   Casual / 3D / Cooking / Simulation / Realistic / Modern / Resource Management / Online Co-Op /
+    //   Singleplayer / Multiplayer / Co-op / Indie)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・Add to Cart実測。
+    //   アーリーアクセスではない(early_accessのヒットは全てレコメンド枠の別ゲームのメタデータで、
+    //   game_area_early_accessバナーもEarly Accessジャンルも本作には無い)。
+    // レビューはpurchase_type=allで実測: 全256件(好評242 / 不評14)=94%。言語内訳は日本語192・
+    //   韓国語24・英語20・繁体字中国語10・簡体字中国語9。中華圏合計19は日本語192を大きく下回り
+    //   「日本法人ラップの中華圏ヒット」には該当しない。なおストア既定表示は購入経路フィルタが
+    //   かかるため「220件中94%」と出るが、当サイトはpurchase_type=allの実数を採る。
+    // west_unreached: 英語UIは実装済み(supported_languages: English, Japanese)だが、西側の編集記事は
+    //   当方の検索でも発見できず、出てきたのはSteam公式・Steamコミュニティ・Exophase・SteamSpy・
+    //   GG.deals・completionist.me・Metacriticという自動生成アグリゲータのみ。英語レビューは256件中
+    //   20件(7.8%)で、韓国語24件のほうが多い。数百件規模で西に届いていない型なので
+    //   obscurity: "deep" / reachState: "unreached_west" / reviewBand: "hundreds" を採る。
+    meta: { genre: "nutrition-balance-survival", lineage: "dont-starve", obscurity: "deep", reachState: "unreached_west", reviewBand: "hundreds", rarity: { reviews: 256, positivePct: 94 } },
+    games: [
+      {
+        name_en: "Takoyaki Party Survival",
+        name_ja: "たこパ サバイバル",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2114370/Takoyaki_Party_Survival/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page asks the question directly: how many days can a person survive on the ingredients of a takoyaki party alone. From there it is not a joke premise but a resource system. What you put inside the takoyaki determines its balance of protein, carbohydrates and fats, and you have to keep all three in range or you die. The part that makes it a machine rather than a gag is the ceiling on the other side: go over on calories and you are too full to eat, so you squat to burn them off and then eat again. Intake and expenditure are closed into the same loop, and the skill tree you spend on is not attack power but basal metabolic rate and squat efficiency. There are over twenty ingredients, unlocked the longer you stay alive, and an all-you-can-eat event during which nothing you eat counts as calories, which is your window to fix a badly skewed balance in one go. It supports up to four players online through quick match, where strangers are each surviving at their own pace, and friend match, which needs only a keyword; you can join and leave either at any time, and you can also play the whole thing alone. In multiplayer you can cook takoyaki for other players, or take theirs away from them, and the store text names what it expects that to produce: collapsing trust, mutual suspicion, and the friendship that grows on the far side of it. It is the ninth entry in the developer's self-declared ¥300 series, and the page states outright that KIMIDORI SOFT permits monetised video and streaming of their games. Developer and publisher are both KIMIDORI SOFT; a direct check of all eighteen titles under that name on Steam found every one of them self-published with no outside company anywhere in the record. Released August 26, 2022 at ¥350, it is Very Positive at 94 percent across 256 reviews (242 positive, 14 negative per Steam's own review API with purchase type set to all), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors empty. English is implemented and works. It has still not reached the West: of those 256 reviews, 20 are in English, fewer than the 24 in Korean, and no editorial article about it turned up in any language but Japanese.",
+        desc_ja: "ストアページは、その問いを正面から書いている——たこパの食材だけで何日生き延びることができるのか。そこから先はネタの前提ではなく、資源管理のシステムになる。たこ焼きに何を入れるかでタンパク質・炭水化物・脂質のバランスが変わり、三つとも範囲に収め続けないと死ぬ。これをギャグではなく機械にしているのは、反対側にある上限のほうだ。カロリーがオーバーするとお腹いっぱいで食べられなくなるので、スクワットでカロリーを消費して、また食べる。摂取と消費が同一のループに閉じている。そしてスキルツリーで伸ばすのは攻撃力ではなく、基礎代謝アップとスクワット効率アップである。具材は20種類以上あり、長く生き延びるほど新たな具材が解放される。食べ放題イベント中はどんなに食べてもゼロカロリーで、崩れたバランスを一気に立て直す窓になる。オンラインは最大4人。世界中のサバイバーがそれぞれのペースで生き延びているクイックマッチと、キーワード一つで友達とだけ遊べるフレンドマッチがあり、どちらも入退出はいつでも自由、もちろん一人でのプレイも可能だ。マルチでは他のプレイヤーのためにたこ焼きを焼くこともできるし、逆に相手のたこ焼きを奪うこともできる。そしてストア本文は、それが何を生むと見込んでいるかを自分で名指ししている——崩壊する信頼、疑心暗鬼、それを超えた先にある友情。本作は開発元が自ら名乗る「300円シリーズ」の第九弾で、ページには「KIMIDORI SOFTは、KIMIDORI SOFTのゲームを使用した動画配信などによる収益化を許可しています」と明記されている。developerもpublisherもKIMIDORI SOFT。この名義でSteamに並ぶ18作すべてについて当方が個別にappdetailsを叩き、全件が自社出版で、記録のどこにも外部の会社が存在しないことを確認した。発売日は2022年8月26日、価格¥350。256件のレビュー(好評242件・不評14件、Steam自身のレビューAPIをpurchase_type=allで実測)で好評率94%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは空である。英語は実装済みで動く。それでも西には届いていない——256件のうち英語は20件で、韓国語の24件より少なく、日本語以外の言語で書かれた編集記事は一本も見つからなかった。",
+      },
+      {
+        name_en: "Don't Starve",
+        name_ja: "Don't Starve",
+        status: "established",
+        steam: "https://store.steampowered.com/app/219740/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Don't Starve, developed and published by Klei Entertainment and released April 23, 2013. Its contribution was to take hunger, which survival games had generally treated as one status effect among several, and promote it to the clock that drives everything else: the reason you leave camp, the reason you take the risk, the reason the day has a shape at all. Everything downstream in the genre inherits that decision. Takoyaki Party Survival is not an official Don't Starve work, and this lineage is a comparison drawn by this site rather than a stated influence, and it is a partial one. Don't Starve's hunger is a single bar falling at a known rate. This game splits that bar into three nutrients that can each go wrong independently, and then adds a constraint pointing the opposite way, a calorie ceiling that stops you from eating at all, so that the survival act is no longer only finding food but managing the body that has to receive it.",
+        desc_ja: "この味の原点——Don't Starve。開発・発売ともにKlei Entertainmentで、2013年4月23日に発売された。この作品の貢献は、それまでのサバイバルゲームがおおむね「いくつかある状態異常のひとつ」として扱っていた空腹を、他のすべてを駆動する時計の位置まで引き上げたことにある。拠点を出る理由も、危険を冒す理由も、そもそも一日という単位に形がある理由も、全部そこから来る。以後このジャンルの下流にあるものは、その決断を相続している。『たこパ サバイバル』は公式のDon't Starve作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較であり、しかも部分的な一致だ。Don't Starveの空腹は、既知の速度で減っていく一本のバーである。本作はそのバーを、それぞれ独立に破綻しうる三つの栄養素へ分解し、さらに逆を向いた制約を一つ足した——そもそも食べること自体を止めてしまうカロリーの上限だ。その結果、サバイバルという行為が「食料を見つけること」だけでなく「それを受け取る側の身体を管理すること」になっている。",
+      },
+    ],
+    en: {
+      title: "Takoyaki Party Survival - how many days can a person survive on takoyaki alone. What you put inside changes your protein, carbs and fats, and going over on calories means you are too full to eat, so you squat to burn them off. Made by KIMIDORI SOFT for ¥350. Very Positive at 94 percent over 256 reviews, with 20 of them in English",
+      description: "A survival game where the store asks how many days a person can live on takoyaki party ingredients alone. Ingredients set your protein, carbs and fats; go over on calories and you are too full to eat, so you squat to burn them off. The skill tree levels basal metabolism and squat efficiency. Four-player online where you can cook for others or steal their takoyaki. Very Positive at 94 percent over 256 reviews.",
+      h1a: "You are over on calories, which means you are too full to eat, which means you are about to starve. ",
+      h1flip: "So you squat until you have burned enough of them off to eat again",
+      h1b: ".",
+      lede: "The store page asks the question directly: how many days can a person survive on the ingredients of a takoyaki party alone. From there it stops being a joke premise and becomes a resource system. What you put inside the takoyaki determines its balance of protein, carbohydrates and fats, and you have to keep all three in range or you die. The part that makes it a machine rather than a gag is the ceiling on the other side: go over on calories and you are too full to eat, so you squat to burn them off and then eat again. Intake and expenditure are closed into the same loop, and the skill tree you spend on is not attack power but basal metabolic rate and squat efficiency. There are over twenty ingredients, unlocked the longer you stay alive, and an all-you-can-eat event during which nothing you eat counts as calories, which is your window to fix a badly skewed balance in one go. It supports up to four players online through quick match, where strangers are each surviving at their own pace, and friend match, which needs only a keyword; you can join and leave either at any time, and you can play the whole thing alone. In multiplayer you can cook takoyaki for other players, or take theirs away from them, and the store text names what it expects that to produce: collapsing trust, mutual suspicion, and the friendship that grows on the far side of it. It is the ninth entry in the developer's self-declared ¥300 series, and the page states outright that KIMIDORI SOFT permits monetised video and streaming of their games. Developer and publisher are both KIMIDORI SOFT; a direct check of all eighteen titles under that name on Steam found every one of them self-published, with no outside company anywhere in the record. Released August 26, 2022 at ¥350, it is Very Positive at 94 percent across 256 reviews (242 positive, 14 negative, measured with purchase type set to all rather than Steam's default filter, which shows a smaller sample), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors empty. English is implemented and works. It has still not reached the West: of those 256 reviews, 20 are in English, fewer than the 24 in Korean, and no editorial article about it turned up in any language other than Japanese.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The squat is the whole design in one gesture. Every other survival game asks you to go find more; this one regularly asks you to make room, which turns your own satiety into the obstacle and your own body into the thing standing between you and the food that is already in front of you.",
+        "Because the skill tree levels basal metabolism and squat efficiency, progression stops feeling like getting stronger and starts feeling like getting better at processing, and a run that is going well is one where you have engineered yourself into someone who can put more through.",
+        "The store promises collapsing trust and mutual suspicion, and the mechanic underneath that promise is very small: someone can cook for you, or take what you cooked. Four people around one hot plate, each on their own private nutrition clock, is enough structure for that to mean something.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a survival loop that is about the body rather than the map: three nutrients that can each break independently, plus a calorie ceiling that stops you eating and has to be worked off",
+        "You want a genuinely small Japanese studio: all eighteen titles under the KIMIDORI SOFT name on Steam are self-published, this is the ninth entry in their own ¥300 series, and it is ¥350",
+        "You want four-player online with a real reason to distrust each other, where cooking for someone and stealing from them are the same button's worth of effort",
+      ],
+      bad: [
+        "You want a large, serious survival game; this is a ¥350 title from a low-price series, and its scope is the loop, not the world around it",
+        "You want a clean single-player experience with no timing pressure; the calorie ceiling means the game will regularly stop you from eating at the exact moment you need to, and that is intentional",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "たこパ サバイバル - たこパの食材だけで何日生き延びられるか。具材でタンパク質・炭水化物・脂質が変わり、カロリー超過で満腹になると食べられないので、スクワットで消費する。制作はキミドリソフト、価格¥350。256件のレビューで好評率94%、うち英語は20件",
+      description: "「たこパの食材だけで何日生き延びることができるのか」とストア自身が問うサバイバル。具材でタンパク質・炭水化物・脂質のバランスが変わり、カロリーがオーバーすると満腹で食べられなくなるのでスクワットで消費する。スキルツリーで伸ばすのは基礎代謝とスクワット効率。オンライン4人で、他人のために焼くことも奪うこともできる。256件のレビューで好評率94%。",
+      h1a: "カロリーがオーバーした。つまり満腹で食べられない。つまり、このままでは餓死する。",
+      h1flip: "だからスクワットをする。また食べられるようになるまで",
+      h1b: "。",
+      lede: "ストアページは、その問いを正面から書いている——たこパの食材だけで何日生き延びることができるのか。そこから先はネタの前提であることをやめて、資源管理のシステムになる。たこ焼きに何を入れるかでタンパク質・炭水化物・脂質のバランスが変わり、三つとも範囲に収め続けないと死ぬ。これをギャグではなく機械にしているのは、反対側にある上限のほうだ。カロリーがオーバーするとお腹いっぱいで食べられなくなるので、スクワットでカロリーを消費して、また食べる。摂取と消費が同一のループに閉じている。そしてスキルツリーで伸ばすのは攻撃力ではなく、基礎代謝アップとスクワット効率アップである。具材は20種類以上あり、長く生き延びるほど新たな具材が解放される。食べ放題イベント中はどんなに食べてもゼロカロリーで、崩れたバランスを一気に立て直す窓になる。オンラインは最大4人。世界中のサバイバーがそれぞれのペースで生き延びているクイックマッチと、キーワード一つで友達とだけ遊べるフレンドマッチがあり、どちらも入退出はいつでも自由、もちろん一人でも遊べる。マルチでは他のプレイヤーのためにたこ焼きを焼くこともできるし、逆に相手のたこ焼きを奪うこともできる。そしてストア本文は、それが何を生むと見込んでいるかを自分で名指ししている——崩壊する信頼、疑心暗鬼、それを超えた先にある友情。本作は開発元が自ら名乗る「300円シリーズ」の第九弾で、ページには「KIMIDORI SOFTは、KIMIDORI SOFTのゲームを使用した動画配信などによる収益化を許可しています」と明記されている。developerもpublisherもKIMIDORI SOFT。この名義でSteamに並ぶ18作すべてについて当方が個別にappdetailsを叩き、全件が自社出版で、記録のどこにも外部の会社が存在しないことを確認した。発売日は2022年8月26日、価格¥350。256件のレビュー(好評242件・不評14件。Steam既定の購入経路フィルタではなくpurchase_type=allで実測しており、既定表示ではもっと小さい母数が出る)で好評率94%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは空である。英語は実装済みで動く。それでも西には届いていない——256件のうち英語は20件で、韓国語の24件より少なく、日本語以外の言語で書かれた編集記事は一本も見つからなかった。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "スクワットという一動作に、この設計の全部が入っている。ほかのサバイバルはたいてい「もっと探しに行け」と言うが、このゲームは定期的に「場所を空けろ」と言ってくる。自分の満腹が障害物になり、目の前にすでにある食べ物との間に立ちはだかるのが自分の身体になる。",
+        "スキルツリーで伸ばすのが基礎代謝とスクワット効率なので、成長が「強くなる」感触ではなく「処理が上手くなる」感触に寄る。調子のいい一周とは、より多く通せる人間へと自分を作り替えられた一周のことだ。",
+        "ストアは「崩壊する信頼、疑心暗鬼」を約束しているが、その下にある機構はごく小さい——誰かがあなたのために焼ける。あるいは、あなたが焼いたものを持っていける。一枚の鉄板を囲む4人が、それぞれ自分だけの栄養の時計を抱えている。それだけで、その約束は十分に意味を持つ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "マップではなく身体の話であるサバイバルのループが欲しい人——独立に破綻しうる三つの栄養素と、食べること自体を止めてしまい消費しないと解けないカロリー上限",
+        "本当に小規模な日本の開発元が欲しい人——Steam上のKIMIDORI SOFT名義18作はすべて自社出版で、本作は自ら名乗る「300円シリーズ」の第九弾、価格¥350",
+        "互いを疑う理由がちゃんとある4人オンラインが欲しい人——誰かのために焼くことと、その誰かから奪うことが、同じ一手間で並んでいる",
+      ],
+      bad: [
+        "大作の本格サバイバルが欲しい人——これは低価格シリーズの¥350タイトルで、射程はループの側にあって、その周囲の世界の側には無い",
+        "時間的な圧の無い綺麗なシングルプレイ体験が欲しい人——カロリー上限は、まさに必要な瞬間に食べることを定期的に禁止してくる。そしてそれは意図された設計である",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -11259,6 +11377,13 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Echochrome, released March 19, 2008 for PlayStation 3 and PSP, developed by Japan Studio and published by Sony Interactive Entertainment, and known in Japan as Mugen Kairou, built its world on a single concession: what you can see outranks what is there. Rotate the scene until two disconnected walkways line up on screen and they are connected, because the game has agreed to treat the flat projection, not the geometry behind it, as the truth of the matter. Guided by the Escher-like impossible figures it borrowed its look from, it moved the camera out of the role of a lens for inspecting a puzzle and into the role of the instrument that decides what the puzzle is. It is the origin of the lineage of games in which looking is not observation but an act with physical consequences, and of the design insight that a rule the player performs with the camera is felt more directly than a rule the game merely states.",
       ja: "Echochrome(無限回廊)は、2008年3月19日にPlayStation 3とPSP向けに発売され、開発はJapan Studio、発売はソニー・インタラクティブエンタテインメントによる作品で、たった一つの譲歩の上に世界を築いた——「見えているもの」は「そこにあるもの」に優先する。画面上で分断された二本の通路が繋がって見えるまで視点を回せば、それは実際に繋がる。ゲームの側が、背後の幾何ではなく平面に潰れた投影のほうを、この件の真実として扱うと合意しているからだ。エッシャー的な不可能図形から借りた見た目に導かれるようにして、この作品はカメラを「パズルを観察するためのレンズ」という役から引きずり出し、「パズルが何であるかを決定する装置」という役に据え直した。見ることが観察ではなく物理的な帰結を持つ行為になる——そうしたゲーム群の系譜の原点であり、プレイヤーがカメラで自ら遂行する規則は、ゲームが言葉で宣言するだけの規則よりも直接に体感される、というデザイン上の洞察の原点でもある。",
+    },
+  },
+  "dont-starve": {
+    steam: "219740",
+    blurb: {
+      en: "Don't Starve, developed and published by Klei Entertainment and released April 23, 2013, took hunger, which survival games had generally treated as one status effect among several, and promoted it to the clock that drives everything else. It is the reason you leave camp, the reason you accept a risk you would otherwise refuse, and the reason a day in the game has a shape at all; the wilderness is dangerous, but it is the meter that makes you walk into it. Paired with a hand-inked Gorey-esque presentation that made deprivation look characterful rather than punishing, it established the modern form of the survival game in which the body's requirements, not the enemies, set the tempo. It is the origin of the lineage of games where staying alive is an act of scheduling, and of the design insight that a need arriving on a timer produces better decisions than a threat arriving at random.",
+      ja: "Don't Starveは、開発・発売ともにKlei Entertainmentにより2013年4月23日に発売された作品で、それまでのサバイバルゲームがおおむね「いくつかある状態異常のひとつ」として扱っていた空腹を、他のすべてを駆動する時計の位置まで引き上げた。拠点を出る理由も、本来なら断るはずの危険を受け入れる理由も、そもそもゲーム内の一日という単位に形がある理由も、すべてそこから来る。荒野は確かに危険だが、そこへ足を踏み出させるのはメーターのほうだ。手描きのインク画のような、ゴーリーを思わせる見た目——欠乏を、罰ではなく作品の個性に見せる絵——と組み合わさることで、敵ではなく身体の要求がテンポを決めるという、サバイバルゲームの現代形を確立した。生き延びることが「予定を組む行為」になるゲーム群の系譜の原点であり、タイマーで到来する欠乏はランダムに到来する脅威よりも良い判断を生む、というデザイン上の洞察の原点でもある。",
     },
   },
 } as const;
