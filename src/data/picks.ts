@@ -10367,6 +10367,131 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "pomegranate-housing-complex": {
+    published: "2026-07-30",
+    publishAt: "2026-07-30",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Adventure / Indie)が本作の形を捉えていないため新設
+    //   "day-shift-guard-horror"。夜勤ではなく8:00-18:00の日勤である点自体がこの作品の設計なので
+    //   ジャンル名にも「日勤」を残す。
+    // lineage は新規anchorを作らず既存の "papers-please" を再利用する。今回の一致は過去2本のような
+    //   部分的なものではなく、かなり正確である。本作は規則を課された職務のシミュレーションで、
+    //   プレイヤーの行動が「秩序レベル(会社の望む行動をとると上がる。異常を管理会社に電話報告する等)」
+    //   と「救済レベル(住人・来客への思いやりある対応で上がる)」という別々のメーターに記録され、
+    //   その配分で物語が複数ルートに分岐する。良い従業員であることと良い人間であることが同じ軸に
+    //   乗っていない、という構造そのものがPapers, Pleaseの発明である。
+    //   しかもこれは当サイトの解釈ではなく作者本人の設計意図で、クラウドファンディングの
+    //   プロジェクト名が「『秩序と救済』がテーマの住宅警備ホラーアドベンチャー『柘榴団地』の制作支援」
+    //   である(当方でCAMPFIREページを実物確認)。
+    // developer=Korekoreshikazika(是々然々) / publisher=同一で完全な自主出版。Steamのdeveloper検索を
+    //   自分で叩き、この名義の登録は本編(3644630)と体験版(3755820・type=demo)の2件のみ、いずれも
+    //   developer=publisher=Korekoreshikazika であることを個別のappdetailsで確認した。大手・海外展開
+    //   代行・親会社関係はゼロ。
+    // 国籍は日本(自信度: 高)。当方でCAMPFIREのプロジェクトページを実物確認し、実行者「きじなご」・
+    //   募集期間2025年5月24日〜6月23日・目標30万円に対し715,000円/238%/支援者45人・
+    //   「現在は個人でゲーム制作をしており、シナリオ・演出・グラフィック・実装まで一人で制作して
+    //   います」との自己記述・企業パブリッシャーやスポンサーの記載なし、を確認した。CAMPFIREは
+    //   国内の本人確認と国内銀行口座を要するため、中華圏・韓国・台湾の実体が背後にいる線は消える。
+    //   資金源がレーベルではなくファン45人である点は、publisher不在の裏取りとしても強い。
+    // 公式英題は存在する。Steamのストア名フィールドは日本語のままだが、開発者本人が Steam の
+    //   ニュース投稿で "Pomegranate Housing Complex"(略称PHC)を用いており、当方でSteam News APIを
+    //   叩いて全20件中13件での使用を確認した。slugとname_enはこの公式英題を採る。
+    // content_descriptors は ids=[5] のみをAPI実測。1/3/4は非該当。notesは長文だが、開発者自身が
+    //   境界を明示している点が特徴で、日本語原文に「ただし、本作には性的な描写や直接的な暴力・流血
+    //   表現、極端なグロテスク描写は含まれておりません。また、自傷行為の詳細な手法や薬物使用の
+    //   描写は含まれていません。」とある。ユーザータグ全13件にも性的表現関連は皆無。required_age=0。
+    // AI開示欄は存在するが、原文は「本作の開発において、AIは主にプログラミング支援(コード作成・
+    //   デバッグ)の用途で使用されています。ゲームの核となるストーリー、キャラクター、アートワーク、
+    //   音楽などのクリエイティブコンテンツは、開発者による手作業で制作されており、AIによる生成は
+    //   行われていません。」——生成アセットが1つも無い旨の明記であり、基準(5)の「単一カテゴリ限定の
+    //   補助的開示は許容」よりさらに軽い。ただし定型句で隠さず記事本文にそのまま書く。
+    // is_free=false・Add to Cart実測・game_area_early_accessバナー無しで正式リリース済み。
+    // 【正直に開示すべき最重要点】本作は「まだ誰にも見つかっていない」作品ではない。日本国内では
+    //   AUTOMATON・電ファミニコゲーマー・4Gamer・Game*Spark・電撃オンラインが記事化しており、
+    //   実況も出ている。当サイトが主張できるのは「日本では発掘済み、英語圏では完全に無名」という
+    //   分布のほうであり、記事本文でもそう書く。国内報道の存在は検証エージェントが列挙したもので、
+    //   当方が全件を個別に開いて確認したわけではない(自信度: 中)。
+    // west_unreached: supported_languages は日本語のみ(フル音声対応)で英語オプションが存在せず、
+    //   有志英語化パッチも検出されなかった。appreviews API実測で全25件のうち日本語23件・英語0件・
+    //   繁体字中国語1件・簡体字中国語1件・韓国語0件。英語レビューがちょうど0件という言語の壁の
+    //   典型なので obscurity: "wall" / reachState: "lang_walled" を採る。
+    // 数字の脆さも隠さない: 23/25=92%は当サイトの理想95%に未達で、不評2件のうち1件は簡体字
+    //   レビュー。母数25件では不評が1件増えるだけで88.5%まで落ちる。
+    meta: { genre: "day-shift-guard-horror", lineage: "papers-please", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 25, positivePct: 92, noEnglish: true } },
+    games: [
+      {
+        name_en: "Pomegranate Housing Complex",
+        name_ja: "柘榴団地",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3644630/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A job listing, quoted from the store page: day-shift security guard wanted for a housing complex. Hours are 8:00 to 18:00, contract length ten days. There are four rules. Greet the residents without fail. Make every visitor write their real name in the visitor log. Patrol the building at 15:00 without fail. Never speak to the woman in white. In-game time runs in real time at one of three speeds, and you spend it moving between the guard room and the building: watching four camera feeds covering the first-floor common area, the second and third floor corridors and the roof; keeping the resident list, which unlocks detail as your familiarity with each person rises; taking phone calls; logging lost property; consulting the manual. Break a rule and your haunting level rises through five stages, and past five you can no longer act, with the screen itself degrading as it climbs. The part that makes it more than a rules-horror is what it records. Doing what the company wants of you, phoning in every anomaly, raises your order level. Treating residents and visitors with care raises your salvation level. They are separate meters, the story branches on the balance between them, and there are several endings. This is not a reading imposed by this site: the developer's own crowdfunding project was titled a housing-security horror adventure on the theme of order and salvation. Made alone by Kizinago under the name Korekoreshikazika, self-published; a direct check of Steam's developer search turns up exactly two entries, this game and its demo, both with no outside publisher. The crowdfunding ran May 24 to June 23, 2025 and closed at ¥715,000 against a ¥300,000 goal, 238 percent, from 45 backers, with no corporate publisher or sponsor named anywhere on the page and the developer stating that scenario, direction, graphics and implementation are all done by one person. Released December 17, 2025 at ¥1,480, it is at 92 percent across 25 reviews (23 positive, 2 negative), a paid title, not free, fully launched and not in Early Access. Steam's content descriptors list one entry, general mature content, and the developer's note is unusually precise about its own limits, stating plainly that the game contains no sexual content, no direct violence or bloodshed, no extreme gore, and no detailed depiction of self-harm methods or drug use. There is an AI disclosure, and its full text says AI was used for programming assistance, code writing and debugging, while story, characters, artwork and music were made by hand with no AI generation involved. One thing must be said before anything else: it is in Japanese only, with full Japanese voice acting and no English option, no fan translation patch was found, and exactly zero of its 25 reviews are in English.",
+        desc_ja: "求人票である。ストアページからそのまま引く——「団地アパートの日勤警備員求人募集中」。勤務時間は8時〜18時、契約期間は10日間。警備におけるルールは主に4つ。1.住人には必ず挨拶すること。2.来客には必ず来客リストに本名を記載してもらうこと。3.15時には必ずアパート内を巡回すること。4.白装束の女には絶対に声をかけないこと。ゲーム内の時間はリアルタイムで進行し、速度は低速・標準・高速の3段階から選べる。その時間を、警備室とアパート内を行き来しながら使う。監視カメラは1階共用部・2階廊下・3階廊下・屋上の4箇所。住人リストは交流で親密度を上げるとTIPSとして詳細が解禁される。ほかに電話対応、拾得物の管理、マニュアルの確認。巡回では各階と屋上、各部屋のドア前を回り、オブジェクトを調べ、落とし物を拾う。ルールに違反すると「霊障レベル」が上昇する。5段階あり、レベル5を超えるとプレイヤーは行動不能になる。上がるにつれて霊障が発生し、画面そのものに影響を及ぼす。これを規則ホラー以上のものにしているのは、何が記録されるかのほうだ。会社の望む行動——異変を見つけたら管理会社に電話報告する——をとれば「秩序レベル」が上がる。住人・来客への思いやりある対応をとれば「救済レベル」が上がる。この二つは別々のメーターで、その配分によって物語は複数のルートに分岐し、エンディングは数種類ある。これは当サイトが持ち込んだ読みではない。作者本人のクラウドファンディングのプロジェクト名が「『秩序と救済』がテーマの住宅警備ホラーアドベンチャー」だった。制作はきじなご氏がひとりで、名義は是々然々、完全な自主出版である。Steamのdeveloper検索を直接叩くと、この名義の登録は本編と体験版のちょうど2件しかなく、どちらにも外部の発売元が存在しない。クラウドファンディングは2025年5月24日から6月23日まで走り、目標30万円に対して715,000円・達成率238%・支援者45人で終わっている。ページのどこにも企業パブリッシャーやスポンサーの記載はなく、実行者は「シナリオ・演出・グラフィック・実装まで一人で制作しています」と書いている。発売日は2025年12月17日、価格¥1,480。25件のレビュー(好評23件・不評2件)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steamのコンテンツディスクリプタは1件のみで、開発者自身による注記が自分の限界について異例なほど正確だ——「ただし、本作には性的な描写や直接的な暴力・流血表現、極端なグロテスク描写は含まれておりません。また、自傷行為の詳細な手法や薬物使用の描写は含まれていません。」AI生成コンテンツの開示欄は存在する。その全文はこうだ——「本作の開発において、AIは主にプログラミング支援（コード作成・デバッグ）の用途で使用されています。ゲームの核となるストーリー、キャラクター、アートワーク、音楽などのクリエイティブコンテンツは、開発者による手作業で制作されており、AIによる生成は行われていません。」そして何よりも先に言っておくべきことが一つある。対応言語は日本語のみ——しかもフル音声対応——で英語オプションは存在せず、有志の英語化パッチも見つからなかった。25件のレビューのうち、英語はちょうど0件である。",
+      },
+      {
+        name_en: "Papers, Please",
+        name_ja: "Papers, Please",
+        status: "established",
+        steam: "https://store.steampowered.com/app/239030/Papers_Please/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Papers, Please, made by Lucas Pope and released in 2013, in which you process entrants at a border checkpoint according to a rulebook that grows a page longer every morning. Its invention was to put doing the job correctly and doing right by the person in front of you into direct, mechanical opposition, and then to keep score of both. The rules are not evil; they are simply indifferent, and the game's pressure comes from the fact that following them competently is a skill you can be proud of even as it costs someone their day. Pomegranate Housing Complex is not an official Papers, Please work, and this lineage is a comparison drawn by this site rather than a stated influence. Unlike most such comparisons, though, this one is not partial: the guard's actions here are recorded on two separate meters, an order level raised by doing what the company wants and a salvation level raised by treating people with care, and the endings branch on how those two came out. The developer's own crowdfunding page named order and salvation as the theme before the game existed.",
+        desc_ja: "この味の原点——Papers, Please。ルーカス・ポープ制作、2013年発売。国境検問所で入国者をさばく仕事で、規則書は毎朝1ページずつ厚くなっていく。この作品の発明は、「仕事を正確にこなすこと」と「目の前の人間に対して正しくあること」を直接的に、しかも機構として対立させ、そのうえで両方に点数をつけたことだ。規則は邪悪ではない。ただ無関心なだけである。そしてこのゲームの圧は、その規則を的確に守れることが誇ってよい技能でありながら、同時に誰かの一日を奪っている、という事実から生まれる。『柘榴団地』は公式のPapers, Please作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。ただし、この種の比較としては珍しく部分的ではない——本作で警備員の行動は二つの別々のメーターに記録される。会社の望む行動で上がる「秩序レベル」と、人に思いやりを向けることで上がる「救済レベル」だ。そしてエンディングは、その二つがどう出たかで分岐する。作者自身のクラウドファンディングのページは、ゲームが完成する前から主題として「秩序と救済」を名指ししていた。",
+      },
+    ],
+    en: {
+      title: "Pomegranate Housing Complex - a ten-day day-shift security job with four rules, one of which is never speak to the woman in white. Doing what the company wants and treating people with care are tracked on two separate meters. Made alone by Kizinago for ¥1,480. 92 percent over 25 reviews, Japanese-only with zero English reviews",
+      description: "A housing-security horror adventure: ten days of 8:00 to 18:00 shifts, four rules, and a haunting level that rises when you break them. Your actions are recorded as an order level, raised by doing what the company wants, and a salvation level, raised by treating residents with care; the endings branch on the balance. Made alone, self-published, crowdfunded at 238 percent by 45 backers. Japanese-only.",
+      h1a: "Greet every resident. Make visitors write their real name. Patrol at 15:00. ",
+      h1flip: "Never speak to the woman in white",
+      h1b: ".",
+      lede: "It opens as a job listing, and the store page is quoted here directly: day-shift security guard wanted for a housing complex, hours 8:00 to 18:00, contract length ten days. There are four rules. Greet the residents without fail. Make every visitor write their real name in the visitor log. Patrol the building at 15:00 without fail. Never speak to the woman in white. In-game time runs in real time at one of three speeds, and you spend it moving between the guard room and the building: four camera feeds covering the first-floor common area, the second and third floor corridors and the roof; a resident list that unlocks detail as your familiarity with each person rises; phone calls; lost property; the manual. Break a rule and your haunting level climbs through five stages, and past five you can no longer act, with the screen itself degrading as it rises. What makes this more than rules-horror is what the game chooses to record. Doing what the company wants of you, phoning in every anomaly, raises your order level. Treating residents and visitors with care raises your salvation level. They are separate meters, the story branches on the balance between them, and there are several endings, with a security logbook unlocked afterwards that lets you look back over what you found in the ten days. This is not a reading imposed by this site: the developer's own crowdfunding project was titled a housing-security horror adventure on the theme of order and salvation. It is made alone by Kizinago under the name Korekoreshikazika and self-published; a direct check of Steam's developer search turns up exactly two entries, this game and its demo, both with no outside publisher anywhere in the record. The crowdfunding ran May 24 to June 23, 2025 and closed at ¥715,000 against a ¥300,000 goal, 238 percent, from 45 backers, with no corporate publisher or sponsor named anywhere on the page and the developer stating that scenario, direction, graphics and implementation are all done by one person. Released December 17, 2025 at ¥1,480, it sits at 92 percent across 25 reviews (23 positive, 2 negative), a paid title, not free, fully launched and not in Early Access. Steam's content descriptors list one entry, general mature content, and the developer's note is unusually precise about its own limits, stating plainly that the game contains no sexual content, no direct violence or bloodshed, no extreme gore, and no detailed depiction of self-harm methods or drug use. There is an AI disclosure, and its full text says AI was used for programming assistance, code writing and debugging, while story, characters, artwork and music were made by hand with no AI generation involved. Two things have to be said plainly. It is in Japanese only, with full Japanese voice acting, no English option, and no fan translation patch that we could find; exactly zero of its 25 reviews are in English. And it is not undiscovered: in Japan it has been written up by AUTOMATON, Denfaminicogamer, 4Gamer, Game*Spark and Dengeki Online, and streamed by large channels. What this site is claiming is narrower and, we think, more useful: found at home, invisible in English. At 25 reviews and 92 percent, with one of the two negatives coming from the single Simplified Chinese review, the sample is thin and one more negative would move it noticeably.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The two meters are the whole game in one sentence. Phoning the company about an anomaly is the correct professional act and it raises your order level; sitting with a resident who is clearly not all right raises your salvation level; nothing in the design promises that the run where you did your job well is the run where you did right by anyone.",
+        "Rule four is the one that sits with you, because it is the only one phrased as a prohibition rather than a duty, and because the game never explains it. Three rules tell you how to be a good employee. The fourth tells you there is something here that being a good employee will not help you with.",
+        "Because in-game time runs in real time and the residents keep to their own schedules on their own days, the ten days feel less like levels than like a rota you are inside of, and the horror arrives on the clock rather than when you go looking for it.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Papers, Please structure applied somewhere new: procedural compliance and human decency kept on separate scoreboards, with the endings deciding between them rather than reconciling them",
+        "You want a genuinely one-person Japanese release: scenario, direction, graphics and implementation all by the same person, funded to 238 percent by 45 backers with no publisher named anywhere",
+        "You want horror that is bounded and specific about itself; the developer's own content note says outright that there is no sexual content, no direct violence or bloodshed, no extreme gore, and no depiction of self-harm methods",
+      ],
+      bad: [
+        "You do not read Japanese. This is the hard limit, and it is worth stating first: there is no English option, no fan patch we could find, and zero English reviews. If that is you, this pick is a record of something you cannot yet play",
+        "You want a large or statistically settled review base; 92 percent over 25 reviews is thin, one of the two negatives criticised the repetition of its multi-route structure, and one more negative would move the number visibly",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "柘榴団地 - 10日間の日勤警備。ルールは4つ、うち一つは「白装束の女には絶対に声をかけないこと」。会社の望む行動と、人への思いやりが、別々のメーターに記録される。きじなご氏がひとりで制作、価格¥1,480。25件のレビューで好評率92%、日本語のみで英語レビューは0件",
+      description: "住宅警備ホラーアドベンチャー。8時〜18時の日勤を10日間、ルールは4つ、破ると霊障レベルが上がる。行動は「秩序レベル」（会社の望む行動）と「救済レベル」（住人への思いやり）として別々に記録され、その配分でエンディングが分岐する。個人制作・自主出版、クラウドファンディングは支援者45人で達成率238%。日本語のみ。",
+      h1a: "住人には必ず挨拶する。来客には本名を書かせる。15時に必ず巡回する。",
+      h1flip: "白装束の女には絶対に声をかけない",
+      h1b: "。",
+      lede: "求人票から始まる。ストアページからそのまま引く——「団地アパートの日勤警備員求人募集中」。勤務時間は8時〜18時、契約期間は10日間。警備におけるルールは主に4つ。1.住人には必ず挨拶すること。2.来客には必ず来客リストに本名を記載してもらうこと。3.15時には必ずアパート内を巡回すること。4.白装束の女には絶対に声をかけないこと。ゲーム内の時間はリアルタイムで進行し、速度は低速・標準・高速の3段階から選べる。その時間を、警備室とアパート内を行き来しながら使う。監視カメラは1階共用部・2階廊下・3階廊下・屋上の4箇所。住人リストは交流で親密度を上げるとTIPSとして詳細が解禁される。ほかに電話対応、拾得物の管理、マニュアルの確認。巡回では各階と屋上、各部屋のドア前を回り、オブジェクトを調べ、落とし物を拾う。ルールに違反すると「霊障レベル」が上昇する。5段階あり、レベル5を超えるとプレイヤーは行動不能になる。上がるにつれて霊障が発生し、画面そのものに影響を及ぼす。これを規則ホラー以上のものにしているのは、このゲームが何を記録することにしたか、のほうだ。会社の望む行動——異変を見つけたら管理会社に電話報告する——をとれば「秩序レベル」が上がる。住人・来客への思いやりある対応をとれば「救済レベル」が上がる。この二つは別々のメーターで、その配分によって物語は複数のルートに分岐し、エンディングは数種類ある。到達後には「警備日誌」が解禁され、10日間で見つけたものを振り返ることができる。これは当サイトが持ち込んだ読みではない。作者本人のクラウドファンディングのプロジェクト名が「『秩序と救済』がテーマの住宅警備ホラーアドベンチャー」だった。制作はきじなご氏がひとりで、名義は是々然々、完全な自主出版である。Steamのdeveloper検索を直接叩くと、この名義の登録は本編と体験版のちょうど2件しかなく、記録のどこにも外部の発売元が存在しない。クラウドファンディングは2025年5月24日から6月23日まで走り、目標30万円に対して715,000円・達成率238%・支援者45人で終わっている。ページのどこにも企業パブリッシャーやスポンサーの記載はなく、実行者は「シナリオ・演出・グラフィック・実装まで一人で制作しています」と書いている。発売日は2025年12月17日、価格¥1,480。25件のレビュー(好評23件・不評2件)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steamのコンテンツディスクリプタは1件のみで、開発者自身による注記が自分の限界について異例なほど正確だ——「ただし、本作には性的な描写や直接的な暴力・流血表現、極端なグロテスク描写は含まれておりません。また、自傷行為の詳細な手法や薬物使用の描写は含まれていません。」AI生成コンテンツの開示欄は存在する。その全文はこうだ——「本作の開発において、AIは主にプログラミング支援（コード作成・デバッグ）の用途で使用されています。ゲームの核となるストーリー、キャラクター、アートワーク、音楽などのクリエイティブコンテンツは、開発者による手作業で制作されており、AIによる生成は行われていません。」そして、飾らずに言っておくべきことが二つある。対応言語は日本語のみ——しかもフル音声対応——で英語オプションは存在せず、有志の英語化パッチも見つからなかった。25件のレビューのうち英語はちょうど0件である。もう一つ。本作は「まだ誰にも見つかっていない」作品ではない。国内ではAUTOMATON・電ファミニコゲーマー・4Gamer・Game*Spark・電撃オンラインが記事にしており、大手チャンネルの実況も出ている。当サイトが主張しているのはもっと狭い——そしてたぶん、そのぶん役に立つ——分布のほうだ。国内では発掘済み、英語圏では不可視。25件で92%、不評2件のうち1件は唯一の簡体字中国語レビューであり、母数は薄く、あと1件不評が付けば数字は目に見えて動く。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "二つのメーターに、このゲームの全部が一文で入っている。異変を見つけて会社に電話するのは職業人として正しい行為で、秩序レベルが上がる。明らかに様子のおかしい住人のそばに留まれば、救済レベルが上がる。そして設計のどこにも、「仕事をうまくやれた周回」が「誰かに対して正しくあれた周回」と同じものだ、という保証はない。",
+        "残るのは4番目のルールだ。4つのうちこれだけが義務ではなく禁止の形をしていて、しかもゲームは理由を説明しない。3つのルールは、良い従業員のなり方を教えている。4番目は、ここには良い従業員であることでは対処できないものが居る、と告げている。",
+        "ゲーム内時間がリアルタイムで進み、住人たちがそれぞれの日にそれぞれの予定で動いているので、10日間はステージの連なりというより、自分がその中に入っているシフト表のように感じられる。恐怖は、探しに行った時ではなく、時計のほうからやって来る。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Papers, Please の構造が別の場所に適用されたものが欲しい人——手続きの遵守と人間としての誠実さが別々の得点板に乗り、エンディングはその両立ではなく、どちらを選んだかで決まる",
+        "本当にひとりで作られた日本の作品が欲しい人——シナリオ・演出・グラフィック・実装がすべて同じ人物の手によるもので、支援者45人・達成率238%のクラウドファンディングで作られ、どこにも発売元の名前が無い",
+        "自分の範囲について正直なホラーが欲しい人——開発者自身のコンテンツ注記が、性的な描写も、直接的な暴力・流血も、極端なグロテスクも、自傷行為の手法の描写も含まないと明言している",
+      ],
+      bad: [
+        "日本語が読めない人。これが最大の壁で、先に書いておく価値がある——英語オプションは無く、有志パッチも見つからず、英語レビューは0件。当てはまるなら、この記事は「まだ遊べないものの記録」である",
+        "統計的に安定した母数が欲しい人——25件で92%は薄く、不評2件のうち1件は周回前提の構造の繰り返しを批判している。あと1件付けば数字は目に見えて動く",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
