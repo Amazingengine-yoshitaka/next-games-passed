@@ -9782,6 +9782,120 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "mahou-shoujo-cannot-transform-freely": {
+    published: "2026-07-27",
+    publishAt: "2026-07-27",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Action/Indie)がゲーム性を捉えていないため新設 "timed-transformation-tps"
+    //   (15秒ごとに強制的に変身と解除が切り替わり、変身中は無双・解除中は戦闘能力ゼロで逃げに徹する
+    //   三人称視点シューティング)。
+    // lineageは新規anchor "pac-man"を採用。「一定時間だけ捕食者と被食者が反転し、時間切れでまた
+    //   逃げる側に戻る」というループの世界的な原点はパックマンのパワーエサであり、本作の15秒サイクル
+    //   はそれを自動・強制の形にしたものと読める。この帰属は開発元デジメカ製作所自身の言明ではなく
+    //   当サイト独自の批評的比較(自信度: 中)。Steamでは初代パックマンを収録した公式コレクション
+    //   「PAC-MAN MUSEUM+」(appid 1665130)で入手可能なためそのsteam URLで同定する。
+    // developer/publisher デジメカ製作所(自社発売・第三者パブリッシャーなし)。国籍は第三者メディアに
+    //   よる直接明言を確認済み——AUTOMATON(日本語版)の記事本文を原文で実読し「本作を開発しているのは、
+    //   国内のゲーム開発者デジメカ製作所だ」と明記されていることを確認した(自信度: 高)。加えて
+    //   ふりーむ！のブランドページ・DLsite・BOOTHでの日本語活動、東京の同人即売会デジゲー博2020での
+    //   頒布実績も確認済み。Steam上の3作品(本作/実録パワフル野球拳スラッガー山田/Call of Ponchy)は
+    //   すべてdeveloper=publisher=デジメカ製作所の完全自主流通で、大手・海外配信専門パブリッシャーの
+    //   関与は一件もなし。傍証として、AUTOMATONの年間コラム「パブリッシャーがいなくても、宣伝されて
+    //   いなくても。」が同開発元の別作品を選出しており、媒体側も「パブリッシャーなし」と認識している。
+    // 【制作実態の開示】AUTOMATON記事の原文に「本作に使用されている素材は、Epic Gamesによる無料配布の
+    //   アセットが9割ほどを占めており、主人公のボイスにはフリー素材、杖のボイスには結月ゆかりが使用
+    //   されている」とある。これは隠さず本文に書く。なおStreamのAI Generated Content Disclosure欄は
+    //   存在せず、結月ゆかりは2012年から市販されている音声合成製品(商用利用ライセンス品)であって
+    //   生成AIアセットではないため、条件(5)「AI生成アセットが主体」には該当しないと判断した。
+    // 西側での知名度: 専任エージェントがSiliconera/PC Gamer/Rock Paper Shotgun/Destructoid/GameSpot/
+    //   IndieGamesPlus/Gematsuを確認し編集記事ゼロ。Kotakuにヒットしたページは実際に開いた結果、
+    //   バイライン・日付・独自コメントがなくフッターに「Games metadata is powered by IGDB.com」と
+    //   ある自動生成DBページと判定した(誤失格の回避)。AUTOMATON WEST(英語版)は検索ページの取得に
+    //   失敗したため掲載有無は「不明」と正直に記録しておく。
+    // content_descriptors は ids=[]・notes=null(API実測)。ストアのユーザータグ全11件(Action/Shooter/
+    //   Third-Person Shooter/3D/Magic/Mechs/Score Attack/Female Protagonist/Tutorial/Indie/
+    //   Singleplayer)にも性的表現関連は皆無で、Mature Contentボックスも年齢ゲートも存在しない。
+    //   is_free=false・購入可能(Add to Cartボタン実測)、アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は日本語のみ(フル音声つき・英語オプション自体が存在しない)。appreviews
+    //   API実測で全59件のうち日本語38件(64.4%)、簡体字中国語9件、英語6件(10.2%)、繁体字中国語3件、
+    //   韓国語2件——中国語合算12件も日本語38件を下回るため「隠れ中国市場ヒット」型ではない。リリース
+    //   から5年経ってなお西へ未到達という、今回の探索方針(旧作まで対象を広げる)が狙ったとおりの例
+    //   として obscurity: "wall" を採用する。
+    meta: { genre: "timed-transformation-tps", lineage: "pac-man", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 59, positivePct: 98, noEnglish: true } },
+    games: [
+      {
+        name_en: "The Magical Girl Cannot Transform Freely",
+        name_ja: "魔法少女は自由に変身できない。",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1574330/_/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a magical-girl third-person shooter in which you can only stay transformed for fifteen seconds, and per AUTOMATON's own reporting the premise is that this is not a choice: Yoshida Kaoru is an ordinary, easygoing high school girl until something falls out of the sky and explodes near her one morning, and the wand that caused it, feeling guilty, offers her a contract to save her life. She accepts without reading the terms. Having become a magical girl by accident and never having learned to control it, she now flips between transformed and untransformed automatically, every fifteen seconds, for the rest of the game. Transformed, she carries a gatling gun with unlimited ammunition and a main cannon whose shells refill on every transformation, and weak monsters simply evaporate. Untransformed she is exactly what she was before, a normal teenager: both weapons gone, movement speed dropped, and enemies that were beneath notice a moment ago now cornering her. What she does have out of transformation is scavenged: blue objects on the field grant summons, a wall to block a corridor, a timed bomb, a decoy to pull attention, while magic circles call in support bombardment or a shikigami that attacks a set number of times. An instant-death line advances from behind, so even while helpless she cannot simply hide and wait; she has to keep moving forward and spend her items to buy the seconds. Clearing stages at S rank unlocks new summons, new circles, upgrades to Kaoru herself, and eventually the ability to hire modern soldiers and bring them into a stage. Made and self-published by Dejimeka Seisakusho, whom AUTOMATON's Japanese edition describes outright as 'a domestic game developer'; the game was sold on DLsite and handed out at the Tokyo doujin event Digige-haku 2020 before reaching Steam, and all three of the developer's Steam titles are self-published with no external publisher at any stage. The developer is also candid about how it was built: per AUTOMATON, roughly ninety percent of the assets are Epic Games' free giveaway assets, the protagonist's voice uses free material, and the wand is voiced with the commercial voice-synthesis product Yuzuki Yukari. Priced at ¥110, it is Very Positive at about 98 percent over 59 reviews (58 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page at all, no Mature Content box, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with full voice and no English option whatsoever, and five years after release 38 of its 59 reviews are in Japanese against just 6 in English; a dedicated check of Siliconera, PC Gamer, Rock Paper Shotgun, Destructoid, GameSpot, IndieGamesPlus, and Gematsu turned up no editorial coverage, and the one Kotaku URL that surfaced proved on inspection to be an auto-generated database page carrying no article at all.",
+        desc_ja: "Steam自身の表記によれば、本作は15秒しか変身できない魔法少女3Dアクションシューティングだ。そしてAUTOMATONの報道によれば、それは彼女が選んだことではない。主人公・吉田かおるは軽いノリが特徴の平凡なJKだったが、ある朝、街を歩いていると上空から「何か」が落下して爆発し、巻き込まれて生命の危機に瀕する。罪悪感を覚えたその杖が命を救うため契約を持ちかけ、吉田は契約内容を確認せずに承認してしまう。偶然に魔法少女になっただけで不慣れなため変身を制御できず、以降ゲーム中ずっと、15秒ごとに自動的に変身と解除を繰り返す羽目になる。変身中の彼女は弾薬無制限のガトリングガンと、変身のたびに弾が回復する主砲を持ち、弱い魔物は一掃できる。解除されれば元の平凡なJKそのもので、2種類の魔砲は使えず、移動速度も落ち、さっきまで取るに足らなかった雑魚に追い詰められる。変身していない間の手札は拾い集めたものだけだ——フィールド上の青いオブジェクトを取れば、道を塞ぐ封壁、一定時間後に爆発する時限爆弾、敵の注意を引きつけるデコイといった召喚が使え、魔法陣を取れば支援爆撃や、式神が一定回数魔物を攻撃してくれる支援がその場で受けられる。さらに後方からは即死ラインが迫るため、無力な間もただ隠れて待つことはできず、アイテムをやりくりして前進し続け、次の変身までの秒を買わなければならない。各ステージでSランクを取れば新しい召喚や魔法陣、吉田かおる自身の強化が解禁され、やがて現代的な兵士を雇ってステージに連れて行けるようにもなる。制作・自社発売はデジメカ製作所。AUTOMATON(日本語版)は記事本文で「本作を開発しているのは、国内のゲーム開発者デジメカ製作所だ」と明記している。本作はSteamに来る前にDLsiteで販売され、東京の同人即売会デジゲー博2020でも頒布されていた。同開発元のSteam3作品はいずれも外部発売元を介さない完全自主流通だ。制作の実態についても開発元は率直で、AUTOMATONによれば「本作に使用されている素材は、Epic Gamesによる無料配布のアセットが9割ほどを占めており、主人公のボイスにはフリー素材、杖のボイスには結月ゆかりが使用されている」という。価格¥110。59件のレビュー(好評58件・不評1件、Steam自身のレビューAPI実測)で好評率約98%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は存在せず、Mature Contentの注意書きもなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみでフル音声つき、英語オプションは一切存在しない。発売から5年経った今も、59件のうち38件が日本語レビューで英語はわずか6件だ。Siliconera・PC Gamer・Rock Paper Shotgun・Destructoid・GameSpot・IndieGamesPlus・Gematsuを個別に確認したが編集記事は一件もなく、唯一浮上したKotakuのURLは実際に開いたところ記事を一本も含まない自動生成のデータベースページだった。",
+      },
+      {
+        name_en: "PAC-MAN",
+        name_ja: "パックマン",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1665130/PACMAN_MUSEUM/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: PAC-MAN, whose power pellet invented the shape of every timed role reversal that followed. For most of the maze you are prey, running from ghosts you cannot touch; swallow a pellet and for a few seconds the entire relationship inverts, the ghosts turn and flee, and you spend that window hunting them for everything it is worth, knowing precisely that it will end. On Steam the original is available inside the official PAC-MAN MUSEUM+ collection. The Magical Girl Cannot Transform Freely is not an official PAC-MAN work, and this lineage is a comparison drawn by this site rather than a stated influence, but it takes that same bargain and removes the pellet: Kaoru does not choose when her fifteen seconds of overwhelming power begin or end, the clock simply flips her between hunter and hunted, and the whole game is what you do with the half of the cycle where you are the one being chased.",
+        desc_ja: "この味の原点——パックマン。そのパワーエサこそが、以後あらゆる「時限つきの役割反転」の型を作った。迷路にいる時間の大半、あなたは触れることもできないゴーストから逃げる被食者だ。だがエサを一つ飲み込めば、数秒間だけ関係が丸ごと反転する。ゴーストは向きを変えて逃げ出し、あなたはその窓の間だけ、必ず終わると分かっていながら全力で狩る側にまわる。Steamでは初代が公式コレクション「PAC-MAN MUSEUM+」に収録されて入手できる。魔法少女は自由に変身できない。は公式のパックマン作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較だが、本作は同じ取引からエサそのものを取り上げている——かおるは15秒の圧倒的な力がいつ始まりいつ終わるかを選べず、時計が勝手に彼女を狩る側と狩られる側の間で反転させる。そしてこのゲームの本体は、追われる側にまわっているもう半分のサイクルで何をするか、という部分にある。",
+      },
+    ],
+    en: {
+      title: "The Magical Girl Cannot Transform Freely - fifteen seconds of unlimited gatling fire, then you are just a high school girl again, fleeing the same enemies with a wall and a decoy while an instant-death line pushes you forward. Made solo by Dejimeka Seisakusho for ¥110. Very Positive at 98 percent over 59 reviews, Japanese-only five years on",
+      description: "A magical-girl third-person shooter where the transformation flips on and off automatically every fifteen seconds and you never get to choose. Transformed: unlimited gatling and a cannon. Untransformed: an ordinary teenager with a summonable wall, a timed bomb, and a decoy, running from an instant-death line. Made and self-published by Dejimeka Seisakusho, whom AUTOMATON calls a domestic Japanese developer. Very Positive at 98 percent over 59 reviews, Japanese-only with no English option at all.",
+      h1a: "For fifteen seconds she has a gatling gun with unlimited ammunition and enemies simply evaporate. Then the transformation drops, ",
+      h1flip: "and she is an ordinary high school girl again, cornered by the same trash mobs she was ignoring a moment ago",
+      h1b: ".",
+      lede: "A magical-girl third-person shooter made and self-published by Dejimeka Seisakusho, whom AUTOMATON's Japanese edition describes outright, in its own article text, as 'a domestic game developer.' Per Steam's own listing you can only stay transformed for fifteen seconds, and per AUTOMATON's reporting this is not a choice: Yoshida Kaoru is an ordinary, easygoing high school girl until something falls out of the sky and explodes near her one morning, and the wand that caused it, feeling guilty, offers her a contract to save her life. She accepts without reading the terms. Having become a magical girl by accident and never having learned to control it, she now flips between transformed and untransformed automatically, every fifteen seconds, for the rest of the game. Transformed, she carries a gatling gun with unlimited ammunition and a main cannon whose shells refill on every transformation, and weak monsters simply evaporate. Untransformed she is exactly what she was before: both weapons gone, movement speed dropped, and enemies that were beneath notice a moment ago now cornering her. What she does have out of transformation is scavenged, blue objects on the field grant summons, a wall to block a corridor, a timed bomb, a decoy, while magic circles call in support bombardment or a shikigami that attacks a set number of times. An instant-death line advances from behind, so even while helpless she cannot simply hide and wait; she has to keep moving forward and spend her items to buy the seconds. Clearing stages at S rank unlocks new summons and circles, upgrades to Kaoru herself, and eventually the ability to hire modern soldiers and bring them into a stage. The game was sold on DLsite and handed out at the Tokyo doujin event Digige-haku 2020 before reaching Steam, and all three of the developer's Steam titles are self-published with no external publisher at any stage; AUTOMATON's own year-end column, titled 'even without a publisher, even without promotion,' picked another of their games. The developer is candid about how it was built: per AUTOMATON, roughly ninety percent of the assets are Epic Games' free giveaway assets, the protagonist's voice uses free material, and the wand is voiced with the commercial voice-synthesis product Yuzuki Yukari. Priced at ¥110, it is Very Positive at about 98 percent over 59 reviews (58 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page at all, no Mature Content box, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, with full voice and no English option whatsoever, and five years after release 38 of its 59 reviews are in Japanese against just 6 in English; a dedicated check of Siliconera, PC Gamer, Rock Paper Shotgun, Destructoid, GameSpot, IndieGamesPlus, and Gematsu turned up no editorial coverage, and the one Kotaku URL that surfaced proved on inspection to be an auto-generated database page carrying no article at all. With 59 reviews the sample is real but still modest, and this pick says so plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per AUTOMATON's own description, transformed combat barely asks you to think, the gatling clears trash and the cannon reloads itself every cycle, and that deliberate easiness is the setup: the game is not testing you during the strong half, it is buying your attention so the drop lands harder.",
+        "The instant-death line closing from behind means the powerless fifteen seconds cannot be spent hiding, so the real skill is spatial budgeting, deciding which corridor to wall off and where to drop the decoy while you are still strong enough not to need either.",
+        "She signed the contract without reading it, which is why she cannot control the transformation at all, and once you know that, the fifteen-second metronome stops reading as a difficulty gimmick and starts reading as the consequence of one very ordinary teenage decision.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the power-pellet inversion turned into an entire game: a fixed, unchosen fifteen-second cycle between overwhelming and helpless, with an instant-death line making retreat impossible",
+        "You want a genuinely solo Japanese production confirmed by a named outlet stating it directly, self-published on Steam after DLsite and a Tokyo doujin convention, with no external publisher at any stage",
+        "You want a Very Positive title (98 percent over 59 reviews) that has no English option at all and, five years after release, no Western editorial coverage whatsoever",
+      ],
+      bad: [
+        "You want original art and audio throughout; the developer's own reporting puts roughly ninety percent of the assets as Epic Games' free giveaway assets, with free material for the protagonist's voice and a commercial voice-synthesis product for the wand, and this pick states that plainly rather than hiding it",
+        "You want to actually play it without Japanese; there is no English option whatsoever, and at 59 reviews the sample is real but still modest enough that a couple of negatives would move the number",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "魔法少女は自由に変身できない。 - 15秒だけ弾薬無制限のガトリングで無双し、解除されればただのJKに戻って、さっきまで無視していた雑魚から逃げる。後方からは即死ラインが迫る。制作はデジメカ製作所、価格¥110。59件のレビューで好評率98%、5年経っても日本語のみ",
+      description: "15秒ごとに変身と解除が自動で切り替わり、その切り替えを一切選べない魔法少女3Dアクションシューティング。変身中は弾薬無制限のガトリングと主砲、解除中はただの女子高生で、封壁・時限爆弾・デコイを頼りに即死ラインから逃げ続ける。制作・自社発売はデジメカ製作所——AUTOMATONが「国内のゲーム開発者」と明記している。59件のレビューで好評率98%、英語オプション自体が存在しない。",
+      h1a: "15秒のあいだ、彼女は弾薬無制限のガトリングを持ち、敵はただ蒸発していく。だが変身が解ければ、",
+      h1flip: "さっきまで取るに足らなかった雑魚に追い詰められる、ただの女子高生に戻る",
+      h1b: "。",
+      lede: "制作・自社発売はデジメカ製作所による魔法少女3Dアクションシューティング。AUTOMATON(日本語版)は記事本文で「本作を開発しているのは、国内のゲーム開発者デジメカ製作所だ」と明記している。Steam自身の表記によれば変身していられるのは15秒だけで、AUTOMATONの報道によればそれは彼女が選んだことではない。主人公・吉田かおるは軽いノリが特徴の平凡なJKだったが、ある朝、街を歩いていると上空から「何か」が落下して爆発し、巻き込まれて生命の危機に瀕する。罪悪感を覚えたその杖が命を救うため契約を持ちかけ、吉田は契約内容を確認せずに承認してしまう。偶然に魔法少女になっただけで不慣れなため変身を制御できず、以降ゲーム中ずっと、15秒ごとに自動的に変身と解除を繰り返す羽目になる。変身中の彼女は弾薬無制限のガトリングガンと、変身のたびに弾が回復する主砲を持ち、弱い魔物は一掃できる。解除されれば元の平凡なJKそのもので、2種類の魔砲は使えず、移動速度も落ち、さっきまで取るに足らなかった雑魚に追い詰められる。変身していない間の手札は拾い集めたものだけだ——青いオブジェクトを取れば道を塞ぐ封壁、時限爆弾、敵の注意を引きつけるデコイが使え、魔法陣を取れば支援爆撃や、式神が一定回数魔物を攻撃してくれる支援が受けられる。さらに後方からは即死ラインが迫るため、無力な間もただ隠れて待つことはできず、アイテムをやりくりして前進し続け、次の変身までの秒を買わなければならない。各ステージでSランクを取れば新しい召喚や魔法陣、吉田かおる自身の強化が解禁され、やがて現代的な兵士を雇ってステージに連れて行けるようにもなる。本作はSteamに来る前にDLsiteで販売され、東京の同人即売会デジゲー博2020でも頒布されていた。同開発元のSteam3作品はいずれも外部発売元を介さない完全自主流通で、AUTOMATONの年間コラム「パブリッシャーがいなくても、宣伝されていなくても。」は同開発元の別作品を選出している。制作の実態についても開発元は率直だ——AUTOMATONによれば「本作に使用されている素材は、Epic Gamesによる無料配布のアセットが9割ほどを占めており、主人公のボイスにはフリー素材、杖のボイスには結月ゆかりが使用されている」という。価格¥110。59件のレビュー(好評58件・不評1件)で好評率約98%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は存在せず、Mature Contentの注意書きもなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみでフル音声つき、英語オプションは一切存在しない。発売から5年経った今も、59件のうち38件が日本語レビューで英語はわずか6件だ。Siliconera・PC Gamer・Rock Paper Shotgun・Destructoid・GameSpot・IndieGamesPlus・Gematsuを個別に確認したが編集記事は一件もなく、唯一浮上したKotakuのURLは実際に開いたところ記事を一本も含まない自動生成のデータベースページだった。59件という母数は実数として意味はあるがまだ控えめで、その点も飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "AUTOMATON自身の記述によれば、変身中の戦闘はさほど頭を使わずとも成立する。ガトリングが雑魚を掃き、主砲はサイクルごとに勝手に弾が戻る。その意図的な易しさこそが仕掛けだ——このゲームは強い側の半分であなたを試してなどおらず、落差を効かせるために注意を買っているだけなのだから。",
+        "後方から迫る即死ラインのせいで、無力な15秒を隠れてやり過ごすことはできない。だから本当に問われるのは空間の予算配分だ——まだ強くてどちらも要らないうちに、どの通路を封壁で塞ぎ、どこにデコイを落としておくかを決めておくこと。",
+        "彼女は契約内容を確認せずに承認した。だからそもそも変身を制御できない。それを知ったうえで触れると、15秒のメトロノームは難易度の仕掛けではなく、ごく平凡な十代の一つの判断がもたらした帰結として読めてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "パワーエサの反転をゲーム丸ごとに拡張したものが欲しい人——選べない15秒周期で圧倒的と無力を往復し、即死ラインが後退そのものを封じてくる",
+        "本当にソロで自社発売の日本のプロダクションが欲しい人——実名メディアが国籍を直接明記しており、DLsiteと東京の同人即売会を経てSteamへ、外部発売元は一度も介していない",
+        "「非常に好評」タイトル(59件で98%)ながら、英語オプション自体が存在せず、発売から5年経っても西側の編集記事が一件もないものを掴みたい人",
+      ],
+      bad: [
+        "アートも音もすべてオリジナルであってほしい人——開発元自身の説明として、素材の9割ほどはEpic Gamesの無料配布アセット、主人公のボイスはフリー素材、杖のボイスは市販の音声合成製品と報じられており、この記事はそれを隠さずそのまま伝えている",
+        "日本語なしで実際に遊びたい人——英語オプションは一切存在せず、59件という母数も実数として意味はあるが、不評が数件付けば数字が動く程度には控えめだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -10773,6 +10887,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Riichi City is Formirai Co., Ltd.'s 2022 free-to-play competitive mahjong game, whose own store text bills it as featuring 'beginner-friendly mahjong tutorials' built to bring real Japanese riichi mahjong to a global audience that has never played it before, wrapped in anime characters, cosmetics, and ranked online matches. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer Torara Theater, and the fit is only partial: Riichi City is a live-service game with gacha-adjacent trappings, while Torara's Mahjong Classroom is a single-purpose learning tool with no service layer at all, but both share the same underlying goal, teaching a real, complex Japanese pastime to people who currently know none of its rules.",
       ja: "Riichi Cityは、Formirai Co., Ltd.による2022年配信の基本無料対戦麻雀ゲームで、ストア文言自身が「初心者向けの麻雀チュートリアル」を掲げ、本物の日本式リーチ麻雀を、まだ一度も遊んだことのない世界中のプレイヤーに届けることを目指す一本だ——アニメ風キャラクターや装飾、ランクマッチを備えたライブサービス型で展開されている。この系譜は、ここで結びつける開発元Torara Theater自身が明言した関連性ではなく、当サイト独自の批評的比較であり、その一致は部分的にとどまる——Riichi Cityはガチャ的要素も含むライブサービスゲームである一方、とららの麻雀教室はサービス要素を一切持たない、純粋な学習専用ツールだ。それでも両者は、麻雀のルールを何も知らない人に、本物の複雑な日本の遊びを教えるという根底の目標を共有している。",
+    },
+  },
+  // 原点 PAC-MAN(ナムコ、1980年アーケード)。魔法少女は自由に変身できない。pick の系譜として新規採用。
+  //   パワーエサによって一定時間だけ捕食者と被食者が反転し、時間切れでまた逃げる側へ戻る、という
+  //   ループの世界的な原点。この帰属は開発元デジメカ製作所自身の言明ではなく当サイト独自の批評的比較
+  //   (自信度: 中)。Steamでは初代を収録した公式コレクション「PAC-MAN MUSEUM+」(appid 1665130、
+  //   開発NOW PRODUCTION・発売Bandai Namco Entertainment)で入手できるため、そのsteam URLで同定する。
+  "pac-man": {
+    steam: "1665130",
+    blurb: {
+      en: "PAC-MAN is Namco's 1980 arcade maze game, whose power pellet invented the shape of every timed role reversal that followed. For most of the maze you are prey, running from ghosts you cannot touch; swallow a pellet and for a few seconds the entire relationship inverts, the ghosts turn and flee, and you spend that window hunting them for everything it is worth, knowing precisely that it will end. On Steam the original is available inside the official PAC-MAN MUSEUM+ collection, which gathers fourteen titles from the series. It is the origin of the lineage of games built on a brief, expiring window in which the weak become overwhelming, and of the design insight that the interesting half of such a loop is the half after the window closes.",
+      ja: "PAC-MAN(パックマン)は、ナムコによる1980年のアーケード迷路ゲームで、そのパワーエサこそが、以後あらゆる「時限つきの役割反転」の型を作った。迷路にいる時間の大半、プレイヤーは触れることもできないゴーストから逃げる被食者だ。だがエサを一つ飲み込めば、数秒間だけ関係が丸ごと反転する。ゴーストは向きを変えて逃げ出し、プレイヤーはその窓の間だけ、必ず終わると分かっていながら全力で狩る側にまわる。Steamでは初代が、シリーズ14作を収録した公式コレクション「PAC-MAN MUSEUM+」で入手できる。弱い側が一時的に圧倒的になる、そしてその窓が必ず閉じる——という短い時限を核に据えたゲーム群の系譜の原点であり、この種のループで本当に面白いのは窓が閉じた後の半分である、というデザイン上の洞察の原点でもある。",
     },
   },
 } as const;
