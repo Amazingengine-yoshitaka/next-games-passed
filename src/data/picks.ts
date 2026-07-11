@@ -9234,6 +9234,107 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "harusuberiya-chronicle-25": {
+    published: "2026-07-25",
+    publishAt: "2026-07-25",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Indie/RPG)がゲーム性を捉えていないため新設 "undead-legion-deckbuilder"
+    //   (敗走しても「教訓」で不要札を破棄でき、勝利で新カードを得る、不死の少女軍団を指揮するデッキ
+    //   構築ゲーム)。lineageは新規anchorを作らず既存の"slay-the-spire"を再利用する(ランを通じてデッキを
+    //   組み替える、というローグライク・デッキビルダーの核が直接の型として当てはまるため)。
+    // developer/publisher 八潮路天涯結社(自社発売・第三者パブリッシャーなし)は、専任の裏取りエージェント
+    //   がブログ("やしおじ"名義)・Steamキュレーターページ・音楽制作者の実績ページ(第三者による取引先
+    //   実在の裏付け)を一次確認した、10年超活動する個人〜小規模の同人サークル。本作が題材とする
+    //   「ハルスベリヤ叙事詩」本編は、日本語フリーゲーム『ヴァーレントゥーガ』(ななあし氏作の国盗り型
+    //   SLG)の派生シナリオとして10年以上前から存在し、日本語掲示板のファンコミュニティ・メロンブックス
+    //   での小説版商業展開を経て、今回の「2.5」がサークル初のSteam/デジタルストア展開となる。国籍そのもの
+    //   の直接明言はないが、ブログ・掲示板・小説販売がすべて日本語のみ・母体作品自体が日本語フリーゲーム
+    //   という状況証拠の複合による判断(自信度: 中)。西側メディア・著名人による言及は確認できず、本編
+    //   自体もSteam上に存在しない(今回の外伝が唯一の展開)。
+    // content_descriptors は ids=[5](General Mature Contentのみ、性的コンテンツid 1/3/4は含まれない)。
+    //   notes原文には主人公の入浴シーンへの言及があるが、Steam自身の記述子分類上は性的コンテンツとして
+    //   フラグされていないため、この点は正直に開示しつつ除外基準(ids 1/3/4)には該当しないと判断した。
+    //   AI Generated Content Disclosure欄はストアページに存在せず非AI。is_free=false・購入可能
+    //   (Add to Cartボタン実測)、アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は日本語のみ(英語非対応)。appreviews API実測で全29件のうち英語レビューは
+    //   0件、日本語レビューは29件(100%)——言語の壁により西へ未到達の典型例として obscurity: "wall" を
+    //   採用する。好評率89.66%はSteam自身の表示ラベルでも"Positive"と一致。
+    meta: { genre: "undead-legion-deckbuilder", lineage: "slay-the-spire", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 29, positivePct: 90, noEnglish: true } },
+    games: [
+      {
+        name_en: "Harusuberiya Chronicle 2.5",
+        name_ja: "ハルスベリヤ叙事詩2.5",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3740720/25/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a deckbuilding game designed around roughly an hour of play per session, a side story set in the world of the long-running 'Harusuberiya Chronicle' series. Legion commander Capena Nostiekrocca has lost most of her forces to a battle fought in dense fog, and even forgotten what her own legion once looked like; her scattered command ability is represented as a deck of 'command cards,' with victories in battle earning new cards. Losing is survivable: defeat grants 'lessons' that let you discard unneeded cards toward a stronger deck, but lose enough that your legion's ability to keep fighting is fully spent, and the 54th Legion, nicknamed the 'Lost Legion,' is gone for good. That legion is otherwise made up of undead girls serving a necromancer titled the Black Dragon Duke, Lord of the Graveyard, and the store text is upfront about the tone it's going for: a small-scale, cheerful game about tending to an undead girls' legion and 'flirting' with enemies on the battlefield, capped with a knowingly theatrical Latin-flavored flourish. Per Steam's own content warning, light bloodshed and violence depicting the war are present in both text and art, though not the main focus, and there is a bathing scene, which Steam's own content descriptors classify only as general mature content, not sexual content. Made and self-published by doujin circle Yashioji Tenkai Kessha, whose blog and Steam curator page confirm over a decade of activity; the Harusuberiya Chronicle series itself traces back more than ten years as a fan derivative of the Japanese freeware strategy game Valentooga, with an active Japanese-language fan community and a novel spinoff sold through Melonbooks, and this '2.5' marks the circle's first release on any digital storefront. Per the developer's own note, doujin convention and personal principle mean no individual discount is ever planned for this title outside of bundles. Released at ¥1,000, it is Positive at about 90 percent over 29 reviews (26 positive, 3 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets. It supports Japanese only, no English option exists at all, and every one of its 29 reviews is in Japanese; not one is in English.",
+        desc_ja: "Steam自身の表記によれば、本作は1週のプレイ時間が約1時間ほどを想定したデッキ構築ゲームで、長く続く「ハルスベリヤ叙事詩」シリーズの世界観を元にした外伝作品だ。軍団長カペナ・ノスティークロッカは、深い霧の中での戦闘により自分の軍団の大半を失い、自分の軍団がどんな物だったかさえ忘れてしまっている。散逸した指揮能力は複数の「指揮カード」で構成されたデッキとして表現され、戦闘での勝利により新しい指揮カードを得る。敗走しても大丈夫——「教訓」を得て手札の不要なカードを破棄し、より強力なデッキを構築できる。ただし「継戦能力」が完全に失われるほど敗北を重ねると、通称「迷子軍団」たる第LIV軍団は今度こそ完全に失われてしまう。この軍団は、墓場の盟主たる黒竜大公に仕える高位不死者の女の子たちで構成されており、ストア文言自身が狙いを隠さず語っている——「小規模で明るい雰囲気のアンデッドガールズレギオンをなでなでしたり、戦場でイチャイチャしたりするゲーム」であり、ラテン語調の芝居がかった掛け声で締めくくられる。Steam自身の注意書きによれば、戦争を描写するための軽い流血・暴力表現が絵・文章双方に存在する(本作のメインではない)ほか、主人公の入浴シーンもあるが、Steam自身のコンテンツディスクリプタ上はこれを性的コンテンツではなく一般的な成人向け内容としてのみ分類している。制作・自社発売は同人サークル・八潮路天涯結社で、ブログとSteamキュレーターページから10年超の活動歴を確認済み。題材となる「ハルスベリヤ叙事詩」シリーズ自体、日本語フリーゲーム『ヴァーレントゥーガ』の派生作品として10年以上前から存在し、日本語の熱心なファンコミュニティと、メロンブックスでの小説版商業展開を経てきた。今回の「2.5」は、サークルにとって初めてのデジタルストア展開となる。開発者自身の言によれば、同人ゲームとしての慣例と製作者個人の信条に基づき、本作単品でのバンドル以外の値引きは今後も一切予定していないという。発売日は2026年1月29日、価格¥1,000。29件のレビュー(好評26件・不評3件、Steam自身のレビューAPI実測)で好評率約90%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはない。対応言語は日本語のみで英語オプション自体が存在せず、29件すべてが日本語レビューで、英語レビューは1件もない。",
+      },
+      {
+        name_en: "Slay the Spire",
+        name_ja: "Slay the Spire",
+        status: "established",
+        steam: "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+        wikidata: "https://www.wikidata.org/wiki/Q49652113",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Slay the Spire, the American indie roguelike deckbuilder that defined the loop of earning cards through victory and pruning a deck run by run. Harusuberiya Chronicle 2.5 is not an official Slay the Spire work, but its command-card deck built from combat wins, and its own twist of pruning weak cards through 'lessons' earned even in defeat, carry that same core idea into a small, cheerful story about a legion commander and her undead girls' army.",
+        desc_ja: "この味の原点——Slay the Spire。勝利でカードを得て、ランを重ねるごとにデッキを刈り込んでいく、というループを定義した米国産インディー・ローグライク・デッキビルダー。ハルスベリヤ叙事詩2.5は公式のSlay the Spire作品ではないが、戦闘の勝利で組み上がる指揮カードのデッキと、敗北からも得られる「教訓」で弱いカードを刈り込むという独自の捻りは、まさに同じ核心的な発想を、軍団長と不死の少女軍団をめぐる小規模で明るい物語へと引き継いでいる。",
+      },
+    ],
+    en: {
+      title: "Harusuberiya Chronicle 2.5 - a deckbuilding tactics game where a legion commander who has forgotten her own army rebuilds a deck of command cards from victories (and 'lessons' from defeat), commanding an undead girls' legion. Made by a doujin circle over a decade in, first-ever Steam release for a series older than that. Positive at about 90 percent over 29 reviews, all of them in Japanese",
+      description: "A deckbuilding tactics game, a side story in the long-running Harusuberiya Chronicle series: legion commander Capena Nostiekrocca has forgotten her own army, and rebuilds a deck of 'command cards' through victories, gaining 'lessons' from defeat to prune it. Made and self-published by doujin circle Yashioji Tenkai Kessha, whose Harusuberiya Chronicle series is over a decade old and appearing on Steam for the first time with this release. Positive at about 90 percent over 29 reviews, every single one in Japanese.",
+      h1a: "A legion commander has lost most of her army to a battle fought in dense fog, and even forgotten what that army once looked like, ",
+      h1flip: "so she rebuilds her deck of command cards one victory, and one lesson learned in defeat, at a time",
+      h1b: ".",
+      lede: "A deckbuilding tactics game made and self-published by doujin circle Yashioji Tenkai Kessha, designed around roughly an hour of play per session, and set as a side story in the world of their long-running Harusuberiya Chronicle series, which itself traces back more than ten years as a fan derivative of the Japanese freeware strategy game Valentooga, with an active Japanese-language fan community and a novel spinoff sold through Melonbooks; this '2.5' marks the circle's first release on any digital storefront. Per Steam's own listing, legion commander Capena Nostiekrocca has lost most of her forces to a battle fought in dense fog, and even forgotten what her own legion once looked like; her scattered command ability is represented as a deck of 'command cards,' with victories in battle earning new ones. Losing is survivable: defeat grants 'lessons' that let you discard unneeded cards toward a stronger deck, but lose enough that your legion's ability to keep fighting is fully spent, and the 54th Legion, nicknamed the 'Lost Legion,' made up of undead girls serving a necromancer titled the Black Dragon Duke, Lord of the Graveyard, is gone for good. The store text is upfront about the tone it's going for: a small-scale, cheerful game about tending to an undead girls' legion and 'flirting' with enemies on the battlefield, capped with a knowingly theatrical Latin-flavored flourish. Per Steam's own content warning, light bloodshed and violence depicting the war are present in both text and art, though not the main focus, and there is a bathing scene, which Steam's own content descriptors classify only as general mature content, not sexual content. Per the developer's own note, doujin convention and personal principle mean no individual discount is ever planned for this title outside of bundles. Released at ¥1,000, it is Positive at about 90 percent over 29 reviews (26 positive, 3 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets. It supports Japanese only, no English option exists at all, and every one of its 29 reviews is in Japanese; not one is in English.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, even losing here still gives you something, a 'lesson' that lets you cut a weak card from your deck, so the whole loop reframes defeat as one more editing pass rather than a wasted run.",
+        "The deck itself is standing in for a disoriented commander's own scattered memory of how to fight, so every 'command card' you add back reads less like loot and more like a fragment of competence she's slowly recovering.",
+        "The store text refuses to treat an undead girls' army as anything but cheerful, right down to a theatrical Latin flourish at the end of its own pitch, and that tonal choice turns what could be grim material into something that stays light on purpose.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a deckbuilding roguelite where losing still moves you forward: 'lessons' from defeat prune your deck even when a run ends badly",
+        "You want a genuinely small, self-published Japanese doujin circle with over a decade of history behind a single ongoing series, making its first-ever digital storefront appearance",
+        "You want a Positive title (about 90 percent over 29 reviews) that is completely walled off from English: every review is in Japanese, and there is no English option at all",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 29 reviews is thin enough that Steam itself won't call it anything above 'Positive,' and this pick says so plainly",
+        "You want something with zero war violence; per Steam's own content warning, light bloodshed and gore depicting battle appear in text and art, alongside a bathing scene Steam classifies as general mature content, not sexual",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ハルスベリヤ叙事詩2.5 - 自分の軍団すら忘れてしまった軍団長が、勝利と敗北からの「教訓」で指揮カードのデッキを組み直していく、不死の少女軍団を率いるデッキ構築ゲーム。制作は10年超続く同人サークルの、シリーズ初のSteam展開。29件のレビューで好評率約90%、すべて日本語レビュー",
+      description: "デッキ構築型のタクティクスゲーム——長く続く「ハルスベリヤ叙事詩」シリーズの外伝。自分の軍団すら忘れてしまった軍団長カペナ・ノスティークロッカが、勝利で「指揮カード」のデッキを組み直し、敗北からも「教訓」を得て刈り込んでいく。制作・自社発売は同人サークル・八潮路天涯結社。シリーズは10年以上続くが、今回が初のSteam展開。29件のレビューで好評率約90%、全件が日本語レビュー。",
+      h1a: "深い霧の中での戦闘で軍団の大半を失い、自分の軍団がどんな物だったかさえ忘れてしまった軍団長は、",
+      h1flip: "一つの勝利と、敗北から得た一つの教訓とで、指揮カードのデッキを少しずつ組み直していく",
+      h1b: "。",
+      lede: "制作・自社発売は同人サークル・八潮路天涯結社による、1週のプレイ時間が約1時間ほどを想定したデッキ構築型のタクティクスゲーム。長く続く「ハルスベリヤ叙事詩」シリーズの世界観を元にした外伝で、シリーズ自体、日本語フリーゲーム『ヴァーレントゥーガ』の派生作品として10年以上前から存在し、日本語の熱心なファンコミュニティと、メロンブックスでの小説版商業展開を経てきた。今回の「2.5」は、サークルにとって初めてのデジタルストア展開となる。Steam自身の表記によれば、軍団長カペナ・ノスティークロッカは、深い霧の中での戦闘により自分の軍団の大半を失い、自分の軍団がどんな物だったかさえ忘れてしまっている。散逸した指揮能力は複数の「指揮カード」で構成されたデッキとして表現され、戦闘での勝利により新しい指揮カードを得る。敗走しても大丈夫——「教訓」を得て手札の不要なカードを破棄し、より強力なデッキを構築できる。ただし「継戦能力」が完全に失われるほど敗北を重ねると、墓場の盟主たる黒竜大公に仕える高位不死者の女の子たちで構成された、通称「迷子軍団」たる第LIV軍団は今度こそ完全に失われてしまう。ストア文言自身が狙いを隠さず語っている——「小規模で明るい雰囲気のアンデッドガールズレギオンをなでなでしたり、戦場でイチャイチャしたりするゲーム」であり、ラテン語調の芝居がかった掛け声で締めくくられる。Steam自身の注意書きによれば、戦争を描写するための軽い流血・暴力表現が絵・文章双方に存在する(本作のメインではない)ほか、主人公の入浴シーンもあるが、Steam自身のコンテンツディスクリプタ上はこれを性的コンテンツではなく一般的な成人向け内容としてのみ分類している。開発者自身の言によれば、同人ゲームとしての慣例と製作者個人の信条に基づき、本作単品でのバンドル以外の値引きは今後も一切予定していないという。発売日は2026年1月29日、価格¥1,000。29件のレビュー(好評26件・不評3件)で好評率約90%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはない。対応言語は日本語のみで英語オプション自体が存在せず、29件すべてが日本語レビューで、英語レビューは1件もない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、ここでは負けてすら何かが得られる——弱いカードをデッキから切り捨てられる「教訓」だ。だからループ全体が、敗北を無駄なランではなく、もう一度の編集作業として捉え直す。",
+        "デッキそのものが、方向を見失った軍団長の散逸した戦い方の記憶を表している。だから戻ってくる「指揮カード」の一枚一枚は、戦利品というより、彼女が少しずつ取り戻していく能力の断片のように読める。",
+        "ストア文言は、不死の少女軍団という題材をあくまで明るく扱うことを譲らず、その売り文句自体をラテン語調の芝居がかった掛け声で締めくくる。この トーンの選び方が、重くなりかねない題材を、意図的に軽やかなままにしている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "負けても前に進めるデッキ構築ローグライトが欲しい人——ランがうまくいかなくても、敗北からの「教訓」がデッキを刈り込んでくれる",
+        "本当に小規模で自社発売の日本の同人サークルが欲しい人——一つのシリーズを10年以上続けてきた末に、初めてデジタルストアへ展開した一本",
+        "「好評」タイトル(29件で約90%)ながら、英語から完全に隔てられているものを掴みたい人——レビューはすべて日本語で、英語オプション自体が存在しない",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——29件はSteam自身が「好評」より上のラベルを名乗るには足りない薄さで、この記事はそれを飾らずそのまま伝えている",
+        "戦争描写を一切含まないものが欲しい人——Steam自身の注意書きによれば、戦闘を描写するための軽い流血・グロテスク表現が絵・文章に存在し、入浴シーンもあるが、Steam自身の分類上これは性的コンテンツではなく一般的な成人向け内容とされている",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
