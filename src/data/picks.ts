@@ -9029,6 +9029,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "heartreasure-stellar-journey": {
+    published: "2026-07-24",
+    publishAt: "2026-07-24",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Casual/Indie/Hidden Object)を踏まえつつ「ボールペン手描きの惑星を、
+    //   仕掛けを操作しながら巡り、背景に隠れたハートを探す絵本的探し物ゲーム」を捉える語として新設
+    //   "picturebook-heart-hunt"。lineageは新規anchor "hidden-folks"を採用
+    //   (手描きの操作可能な風景で隠れたものを探す、というアイデアの世界的な原点)。
+    // developer/publisher asaha(自社発売・第三者パブリッシャーなし)は、専任の裏取りエージェントが
+    //   公式サイト・X・BOOTH・過去の店頭展示(ラフォーレ原宿・渋谷ロフト・TOKYO PiXEL.、たまごっち公式
+    //   とのコラボ実績)を一次確認した、日本を拠点とするピクセルアート/手描きイラストのクリエイター。
+    //   SNSでの活動規模は大きいが(Instagramフォロワー多数)、これは日本国内のイラスト・キャラクター
+    //   ブランドとしての知名度であり、西側ゲームメディア(Siliconera/Kotaku/PC Gamer等)での言及は
+    //   専任エージェントが個別確認したが一件も見つからなかった——ゲーム開発者としては西側で無名という、
+    //   これまで見送ったÖoo/トガネヨビの事案(前作自体が海外パブリッシャー/著名人経由で既に西側に
+    //   届いていた)とは異なる状況のため採用する。国籍そのものの直接明言はないが、活動言語・展示会場
+    //   (東京都内)・国内ブランドとのコラボという状況証拠の複合による判断(自信度: 中)。
+    // 音楽担当の椎葉大翼氏についても、元任天堂の作曲家(『トモダチコレクション』等)で現在は東京拠点の
+    //   フリーランス作曲家であることを一次インタビュー記事で確認済み。
+    // 開発秘話: ストア文言自身が明かす通り、本作の前身にあたるフリーゲーム版は、無断で改変されて
+    //   Steamで無許可販売された過去があり(タイトル『Heart Finder』を騙る海賊版)、前身のフリー
+    //   ゲーム自体はunityroom・itch.ioで今も無料公開中。本作『Heartreasure: Stellar Journey』が
+    //   asaha自身による唯一の公式Steam版であることをストア文言自身が明記している。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。ストアタグにも
+    //   性的表現関連は一切なくFamily Friendlyタグを含む。AI Generated Content Disclosure欄は
+    //   ストアページに存在せず非AI。is_free=false・購入可能(Add to Cartボタン実測)、アーリー
+    //   アクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は英語含む3言語だが、appreviews API実測で全108件のうち英語レビューは
+    //   24件(22.2%)、日本語レビューは78件(72.2%)、簡体字中国語3件(2.8%)——英語対応済みでも西へ
+    //   未到達の典型例として obscurity: "deep" を採用する。
+    meta: { genre: "picturebook-heart-hunt", lineage: "hidden-folks", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 108, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "Heartreasure: Stellar Journey",
+        name_ja: "Heartreasure: Stellar Journey",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3530160/Heartreasure_Stellar_Journey/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a sandbox hidden-object game set in a ballpoint-pen-illustrated universe, where turning handles rotates entire stars, slot machines and instruments hide among the scenery, and hearts are tucked cleverly into the background art itself, with no timer, no score, and no fixed order to any of it; solve the right puzzle on a planet and a rocket lets you hop to the next one, the whole cosmos unfolding open-world style at your own pace. Its original piano score comes from Daisuke Shiiba, a former Nintendo composer who worked on titles including Tomodachi Collection before going independent, recorded live on reel-to-reel tape for a warm, analog sound. Made and self-published solo by asaha, a Tokyo-based hand-drawn illustrator and pixel artist with a substantial following and past pop-up exhibitions at Laforet Harajuku, Shibuya Loft, and TOKYO PiXEL., including an official Tamagotchi collaboration; per Steam's own store text, this release exists because an earlier freeware version of the same hunt-for-hearts concept was pirated and sold on Steam without permission under a different name, and this is asaha's own, sole official version, with the free original still playable on unityroom and itch.io. Released at ¥700, it is Very Positive, 100 percent over 108 reviews (108 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English along with Japanese and Simplified Chinese, and of its 108 reviews, 78 (72.2 percent) are in Japanese against 24 (22.2 percent) in English and 3 (2.8 percent) in Simplified Chinese; a dedicated check of Western game outlets, including Siliconera, Kotaku, and PC Gamer, turned up no coverage of this game or its creator at all, despite asaha's considerable profile as an illustrator within Japan.",
+        desc_ja: "Steam自身の表記によれば、本作はボールペンで描かれた宇宙を舞台にしたサンドボックス型の探し物ゲームだ。ハンドルを回せば星全体が回転し、風景の中にはスロットマシンや楽器が隠れ、ハートは背景アートそのものにこっそり溶け込んでいる。タイマーもスコアも決まった順番もなく、惑星ごとの仕掛けを解けばロケットに乗って次の星へ移動でき、オープンワールドのように広がっていく宇宙を自分のペースで巡っていく。書き下ろしのピアノ楽曲は、元任天堂の作曲家で『トモダチコレクション』等を手がけた後に独立した椎葉大翼氏によるもので、暖かみのあるアナログな響きを求めてオープンリールテープで生演奏を収録している。制作・自社発売はソロクリエイターのasaha。東京を拠点に活動する手描きイラスト・ピクセルアートのクリエイターで、相応の支持者を持ち、ラフォーレ原宿・渋谷ロフト・TOKYO PiXEL.での個展出店歴や、たまごっち公式とのコラボ実績もある。Steam自身のストア文言によれば、本作が生まれた経緯には、同じ「ハート探し」というコンセプトの前身フリーゲーム版が無断で改変され、別タイトルを騙ってSteamで無許可販売されたという過去があり、本作はasaha自身による唯一の公式版で、前身の無料版は今もunityroomとitch.ioで遊べるという。価格¥700、108件のレビュー(好評108件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は英語・日本語・簡体字中国語で、108件のうち78件(72.2%)が日本語レビューである一方、英語レビューは24件(22.2%)、簡体字中国語は3件(2.8%)に留まる。Siliconera・Kotaku・PC Gamerを個別に確認したが、asahaが日本国内のイラストレーターとして相応の知名度を持つにもかかわらず、本作・本人いずれについても西側ゲームメディアの報道は一件も見つからなかった。",
+      },
+      {
+        name_en: "Hidden Folks",
+        name_ja: "Hidden Folks",
+        status: "established",
+        steam: "https://store.steampowered.com/app/435400/Hidden_Folks/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Hidden Folks, Adriaan de Jongh and Sylvain Tegroeg's 2017 search-and-find game, in which hand-drawn, black-and-white miniature landscapes are full of tent flaps to unfurl and doors to slam, all in service of tracking down the small hidden figures the game names itself after. It established a template that carried the old paper hidden-picture book into something genuinely interactive, a world built from hand-drawn art where every object can be manipulated and the search itself is the entire point. Heartreasure: Stellar Journey is not an official Hidden Folks work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer asaha, but it carries that same founding idea into a gentler, ballpoint-pen-illustrated cosmos of planets, levers, and hidden hearts.",
+        desc_ja: "この味の原点——Hidden Folks。Adriaan de JonghとSylvain Tegroegによる2017年の探し物ゲームで、手描きの白黒ミニチュア風景いっぱいに広がるテントの幕をめくり扉を叩きつけながら、タイトルにもなっている小さな隠れキャラクターたちを探していく。古き紙の絵探し絵本を、本当にインタラクティブなものへと持ち込んだ型を確立した一本だ——手描きの絵で作られた世界のあらゆる物を操作でき、探すこと自体が目的のすべてになる。Heartreasure: Stellar Journeyは公式のHidden Folks作品ではなく、この系譜は開発元asaha自身が明言した関連性ではなく当サイト独自の批評的比較だが、同じ発祥の着想を、ボールペンで描かれた惑星・レバー・隠れたハートで満ちた、より優しい宇宙へと引き継いでいる。",
+      },
+    ],
+    en: {
+      title: "Heartreasure: Stellar Journey - a ballpoint-pen-illustrated hidden-object game where you turn handles and solve planet-sized gimmicks to find hearts tucked into the art itself, made solo by a Tokyo illustrator with a substantial Japanese following but zero Western game-press coverage. Very Positive at 100 percent over 108 reviews, only 22.2 percent in English",
+      description: "A sandbox hidden-object game set in a ballpoint-pen-illustrated universe: turn handles, solve planet-sized gimmicks, and hunt for hearts tucked into the background art itself, with no timer and no fixed order. Made and self-published solo by asaha, a Tokyo-based illustrator with a substantial following in Japan but no coverage found in Western game media. Very Positive at 100 percent over 108 reviews, with 72.2 percent of them in Japanese.",
+      h1a: "You turn a handle and an entire star rotates, revealing a slot machine, an instrument, or a heart tucked into the background art itself, ",
+      h1flip: "and the only real rule is that there is no clock and no fixed order to any of it",
+      h1b: ".",
+      lede: "A sandbox hidden-object game made and self-published solo by asaha, a Tokyo-based hand-drawn illustrator and pixel artist with a substantial following and past pop-up exhibitions at Laforet Harajuku, Shibuya Loft, and TOKYO PiXEL., including an official Tamagotchi collaboration; despite that profile within Japan, a dedicated check of Western game outlets, including Siliconera, Kotaku, and PC Gamer, found no coverage of this game or its creator at all. Per Steam's own listing, the game is set in a ballpoint-pen-illustrated universe where turning handles rotates entire stars, slot machines and instruments hide among the scenery, and hearts are tucked cleverly into the background art itself, with no timer, no score, and no fixed order to any of it; solve the right puzzle on a planet and a rocket lets you hop to the next one, the whole cosmos unfolding open-world style at your own pace. Its original piano score comes from Daisuke Shiiba, a former Nintendo composer who worked on titles including Tomodachi Collection before going independent, recorded live on reel-to-reel tape for a warm, analog sound. Per Steam's own store text, this release exists because an earlier freeware version of the same hunt-for-hearts concept was pirated and sold on Steam without permission under a different name, and this is asaha's own, sole official version, with the free original still playable on unityroom and itch.io. Released at ¥700, it is Very Positive, 100 percent over 108 reviews (108 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports English along with Japanese and Simplified Chinese, and of its 108 reviews, 78 (72.2 percent) are in Japanese against 24 (22.2 percent) in English and 3 (2.8 percent) in Simplified Chinese.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, there's no timer and no fixed order, so turning a handle to rotate a whole star isn't solving a puzzle against a clock, it's just the pleasure of watching a hand-drawn world respond to your hand.",
+        "Hearts are tucked directly into the background art itself rather than sitting in obvious hotspots, so the searching becomes an excuse to actually look at every corner of a ballpoint-pen planet instead of scanning past it.",
+        "The score was recorded live on reel-to-reel tape by a composer who spent nine years writing music inside Nintendo before going independent, and knowing that turns the soft piano under every planet into something a genuinely experienced hand chose to make sound a little imperfect on purpose.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a gentle, hand-drawn hidden-object game with no timer, no score, and no wrong order to explore its planets in",
+        "You want a genuinely solo Japanese production from an illustrator with a real following in Japan, whose work Western game media has never once covered",
+        "You want a Very Positive title (100 percent over 108 reviews) that is honestly still mostly Japanese-read: 72.2 percent of its reviews are in Japanese against 22.2 percent in English",
+      ],
+      bad: [
+        "You want time pressure, scoring, or a fixed sense of progression; this is built entirely around unhurried, self-paced exploration",
+        "You want a large, statistically settled review base; 108 is a real number but still thin enough that a single outlier review would move the percentage",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Heartreasure: Stellar Journey - ハンドルを回して惑星規模の仕掛けを解き、背景アートそのものに隠れたハートを探す、ボールペン手描きの探し物ゲーム。制作は日本国内で相応の知名度を持つ東京拠点のイラストレーターだが、西側ゲームメディアでの報道はゼロ。108件のレビューで好評率100%、英語レビューは22.2%",
+      description: "ボールペンで描かれた宇宙を舞台にしたサンドボックス型の探し物ゲーム——ハンドルを回し、惑星ごとの仕掛けを解きながら、背景アートそのものに隠れたハートを探す。タイマーも決まった順番もない。制作・自社発売はソロクリエイターのasaha、日本国内で相応の支持者を持つ東京拠点のイラストレーターだが、西側ゲームメディアでの報道は見つからなかった。108件のレビューで好評率100%、うち72.2%が日本語レビュー。",
+      h1a: "ハンドルを一つ回せば、星がまるごと回転し、スロットマシンや楽器、背景アートそのものに隠れたハートが姿を現す——",
+      h1flip: "唯一のルールは、時計も決まった順番も存在しないこと",
+      h1b: "。",
+      lede: "制作・自社発売はソロクリエイターのasahaによるサンドボックス型の探し物ゲーム。東京を拠点に活動する手描きイラスト・ピクセルアートのクリエイターで、相応の支持者を持ち、ラフォーレ原宿・渋谷ロフト・TOKYO PiXEL.での個展出店歴や、たまごっち公式とのコラボ実績もある。日本国内でのそうした知名度にもかかわらず、Siliconera・Kotaku・PC Gamerを個別に確認したが、本作・本人いずれについても西側ゲームメディアの報道は一件も見つからなかった。Steam自身の表記によれば、本作はボールペンで描かれた宇宙を舞台に、ハンドルを回せば星全体が回転し、風景の中にはスロットマシンや楽器が隠れ、ハートは背景アートそのものにこっそり溶け込んでいる。タイマーもスコアも決まった順番もなく、惑星ごとの仕掛けを解けばロケットに乗って次の星へ移動でき、オープンワールドのように広がっていく宇宙を自分のペースで巡っていく。書き下ろしのピアノ楽曲は、元任天堂の作曲家で『トモダチコレクション』等を手がけた後に独立した椎葉大翼氏によるもので、暖かみのあるアナログな響きを求めてオープンリールテープで生演奏を収録している。Steam自身のストア文言によれば、本作が生まれた経緯には、同じ「ハート探し」というコンセプトの前身フリーゲーム版が無断で改変され、別タイトルを騙ってSteamで無許可販売されたという過去があり、本作はasaha自身による唯一の公式版で、前身の無料版は今もunityroomとitch.ioで遊べるという。価格¥700、108件のレビュー(好評108件・不評0件)で好評率100%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は英語・日本語・簡体字中国語で、108件のうち78件(72.2%)が日本語レビューである一方、英語レビューは24件(22.2%)、簡体字中国語は3件(2.8%)に留まる。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、タイマーも決まった順番もない。だからハンドルを回して星をまるごと回転させるのは、時計と戦うパズルではなく、手描きの世界が自分の手に応えてくれる、その喜びそのものになる。",
+        "ハートは分かりやすいホットスポットではなく、背景アートそのものに直接溶け込んでいる。だから探すという行為が、通り過ぎるのではなく、ボールペンで描かれた惑星の隅々まで実際に見つめる口実になる。",
+        "楽曲は、任天堂の中で9年間音楽を書いた後に独立した作曲家によって、オープンリールテープで生演奏収録された。それを知ったうえで聴くと、各惑星の下で流れる柔らかいピアノは、経験を積んだ手が意図的にわずかな不完全さを選んだ音のように聞こえてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "タイマーもスコアも決まった順番もない、優しい手描きの探し物ゲームが欲しい人",
+        "日本国内で実際の支持者を持つイラストレーターによる、本当にソロの日本のプロダクションが欲しい人——西側ゲームメディアがまだ一度も取り上げていない",
+        "「非常に好評」タイトル(108件で100%)ながら、まだ主に日本語で読まれているものを正直に伝える記事が欲しい人——レビューのうち72.2%が日本語、英語は22.2%",
+      ],
+      bad: [
+        "時間的プレッシャーやスコア、決まった進行順が欲しい人——本作は完全に、急かされない自分のペースの探索を軸にしている",
+        "統計的に安定した母数が欲しい人——108件は実数として意味はあるが、1件の外れ値でも比率が動く程度にはまだ薄い",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9969,6 +10074,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "planetarian HD is Key's 2004 visual novel, remastered and published on Steam by VisualArts in 2017, in which a lone traveler wandering a war-ravaged, dying world meets a small robot still faithfully running a planetarium long after the people it was built for are gone, and the two spend a brief, quiet stretch of time together before the story's end. Built around cinematic presentation and music rather than branching choice, it established a template for the short, melancholic Japanese visual novel about spending whatever time is left in a world that is already ending. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer Shachikumazu, but Penguin Wars' own premise, a girl's free final week before her world's end, told through immersive visuals and an original soundtrack, sits inside the same idea: what you choose to do with the time that remains.",
       ja: "planetarian HDは、Keyによる2004年のビジュアルノベルで、2017年にVisualArtsがSteamでHDリマスター版を発売した。戦争で荒廃し滅びゆく世界を彷徨う一人の旅人が、作られた目的の人々がとうにいなくなった後もプラネタリウムを健気に守り続ける小さなロボットと出会い、物語の終わりが訪れるまでのわずかで静かな時間を共に過ごす。分岐選択ではなく映像美と音楽による演出を軸に据え、すでに終わりつつある世界で残された時間をどう過ごすかを描く、短編で叙情的な日本のビジュアルノベルという型を確立した一本だ。この系譜は、ここで結びつける開発元しゃちクマず自身が明言した関連性ではなく、当サイト独自の批評的比較だが、没入感のある映像とオリジナルサウンドトラックで綴られる「少女が星の滅亡までの最後の1週間を自由に過ごす」というペンギンウォーズ自身の前提は、まさに同じ発想の内側にある——残された時間で何を選ぶか、という問いだ。",
+    },
+  },
+  // 原点 Hidden Folks(Adriaan de Jongh / Sylvain Tegroeg、2017年)。Heartreasure: Stellar Journey
+  //   pick の系譜として新規採用。この帰属は開発元asaha自身の言明ではなく当サイト独自の批評的比較
+  //   (自信度: 中・parasocial/perfect-blue/papers-please等と同型の判断)。手描きのインタラクティブな
+  //   風景を操作しながら隠れたものを探す、というアイデアを世界的に定義した先行作として選定。
+  //   現行Steamで販売中のためsteam URLで同定する。
+  "hidden-folks": {
+    steam: "435400",
+    blurb: {
+      en: "Hidden Folks is Adriaan de Jongh and Sylvain Tegroeg's 2017 search-and-find game, in which hand-drawn, black-and-white miniature landscapes are full of tent flaps to unfurl, bushes to cut through, and doors to slam, all in service of tracking down the small hidden figures the game names itself after. It established a template that carried the old paper hidden-picture book into something genuinely interactive: a world built from hand-drawn art where every object can be manipulated, and the search itself, not a timer or a score, is the entire point. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer asaha, but Heartreasure: Stellar Journey's own hand-drawn planets full of levers, slot machines, and hidden hearts tucked into the background art carry that same founding idea into a gentler, ballpoint-pen-illustrated cosmos.",
+      ja: "Hidden Folksは、Adriaan de JonghとSylvain Tegroegによる2017年の探し物ゲームで、手描きの白黒ミニチュア風景いっぱいに広がるテントの幕をめくり、茂みを切り開き、扉を叩きつけながら、タイトルにもなっている小さな隠れキャラクターたちを探していく。古き紙の絵探し絵本を、本当にインタラクティブなものへと持ち込んだ型を確立した一本だ——手描きの絵で作られた世界のあらゆる物を操作でき、タイマーもスコアもなく、探すこと自体が目的のすべてになる。この系譜は、ここで結びつける開発元asaha自身が明言した関連性ではなく、当サイト独自の批評的比較だが、Heartreasure: Stellar Journeyの、レバーやスロットマシンで満ちた手描きの惑星と、背景アートに隠されたハートは、まさに同じ発想を、ボールペンで描かれたより優しい宇宙へと引き継いでいる。",
     },
   },
 } as const;
