@@ -10492,6 +10492,131 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "japanese-house-exploration": {
+    published: "2026-07-30",
+    publishAt: "2026-07-30",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Action / Indie)が本作の形を捉えていないため新設
+    //   "japanese-house-horror"。ユーザータグ側は FPS / Horror / Hidden Object /
+    //   Inventory Management / Survival Horror / Multiple Endings が同居しており、
+    //   実体は「一軒の家をアイテムで開けていく一人称の探索ホラー」。
+    // lineage は新規anchorを作らず既存の "resident-evil" を再利用する。一致しているのは
+    //   「一軒の建物がゲーム全体で、その中で見つけたアイテムが同じ建物の別の場所を開け、
+    //   複数のエンディングに分岐する」という構造そのもの。ただし決定的に違う点があり、そこが
+    //   本作の核心なので記事本文にも書いた——Resident Evilの洋館は誰も行ったことのない
+    //   ゴシックの異界だが、本作の日本家屋は「行ったことのある場所」である。廊下・押し入れ・
+    //   仏間といった間取りが、日本で育った人間の身体記憶に接続してから恐怖になる。
+    //   影響を公言されたものではない当サイト独自の批評的比較である(自信度: 中)。
+    // 【Chilla's Art との近接を隠さない】西側読者が本作を見て真っ先に想起するのは
+    //   Chilla's Art である。ただし当サイトは既に Chilla's Art の Parasocial を「発掘」側
+    //   (slug: parasocial)として掲載しており、同じ開発元を「原点」に据えるのは筋が通らない。
+    //   よって系譜には採らず、記事本文で「唯一無二」と主張せず近接を明示する方針を採った。
+    //   検証エージェントも、紹介時の最大の実務リスクは西側先行作ではなく Chilla's Art との
+    //   混同である、と基準の外側の論点として報告している。
+    // developer=Sealio(シーライオ) / publisher=同一で完全な自主出版。Steamのdeveloper検索を
+    //   自分で叩き、この名義の登録は本作1本のみ(total_count=1)であることを確認した——つまり
+    //   デビュー作。大手・海外展開代行・親会社関係はゼロ。検証エージェントはさらに、
+    //   スカウトが叩いていない経路として ストアページの Franchise リンク(curator/45816906
+    //   "Sealio's Game Collection")を開き、収録が本作1本のみであることも潰している。
+    // 国籍・制作体制は Creators Guild のインタビュー(著者 hata)を当方で実物確認した。本人の
+    //   発言は「1人で作成している為、チームに関する質問はスキップいたします。」「ゲーム業界の
+    //   経験はゼロです。」「文系卒業で、知識ゼロの状態でゲーム開発をスタートしました」
+    //   「Unreal Engine5でゲームを開発しています」「今作の日本家屋は実家をモデルにしています。」
+    //   「インディーホラーゲームの実況を見て、私も自分の作ったゲームを遊んでほしいな、と思ったのが
+    //   キッカケです。」想定約1年に対し実際は1年2ヵ月。パブリッシャーにもAI利用にも言及なし。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   Mature Content Description セクションそのものが無い。ユーザータグ全17件
+    //   (FPS / Horror / Hidden Object / Action-Adventure / Action / 3D / Multiple Endings /
+    //   Dark / Tutorial / First-Person / Dialogue Heavy / Story Rich / Indie / Realistic /
+    //   Survival Horror / Inventory Management / Singleplayer)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・Add to Cart実測。
+    //   game_area_early_accessバナー無しで正式リリース済み。
+    // west_unreached: 対応言語は英語・簡体字中国語・繁体字中国語・日本語・韓国語の5言語で、
+    //   英語UIは実装済み——西側読者はそのまま買って遊べる。それでも appreviews API実測で
+    //   全130件のうち日本語85件(65.4%)・韓国語20件・簡体字11件・英語わずか7件(5.4%)・繁体字2件。
+    //   言語の壁ではなく到達の欠落なので obscurity: "deep" / reachState: "unreached_west" を採る。
+    // 西側編集記事はゼロ。検証エージェントが Kotaku の該当ページ(/games/japanese-house-exploration)
+    //   を実際に開き、バイライン無し・公開日無し・独自コメント無し・「powered by IGDB.com」表記
+    //   ありの自動生成DBページであることを確認。Metacritic も Metascore 無し・critic レビュー0件・
+    //   user レビュー0件で、「西側の批評家が一人も触れていない」ことの陰性証拠になっている。
+    //   日本語圏では 4Gamer が記事化している(編集部：ばしょう の署名記事)が、これは日本メディア。
+    // 数字の脆さ: 125/130=96.15%は当サイトの理想95%を超える数少ない一本だが、母数130件は
+    //   まだ厚くない。プレイ時間60〜90分という短さも先に開示する。
+    meta: { genre: "japanese-house-horror", lineage: "resident-evil", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 130, positivePct: 96 } },
+    games: [
+      {
+        name_en: "Japanese House Exploration",
+        name_ja: "家屋探索 -Japanese House Exploration-",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3053390/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A friend went missing on the way home from school, with no witnesses. But you have an idea where she went, because the day before, not quite herself, she said: I am being called to that house. There was never a house there. You go anyway, half disbelieving, and a Japanese house is standing on the spot. That is the premise, quoted from the store page, and the game is a first-person puzzle horror set inside that one building: you explore it, you find things, you open the parts of it that were closed. Steam's own user tags describe the shape better than its official genre does, listing Hidden Object, Inventory Management, Multiple Endings and Survival Horror alongside First-Person. There are four endings, with a fifth added after release, and it runs sixty to ninety minutes. What makes it worth the trip is the building itself. The store text defines the house with two words that contradict each other, calling it somehow eerie and somehow nostalgic, and the second half of that pair only fires if you have been in a house like it: the corridor, the closet, the room with the altar. It is a horror design drawn on a floor plan that a certain kind of person already has in their body. That is not a coincidence. In an interview with Creators Guild the developer says plainly that the Japanese house in this game is modelled on their own family home. The same interview is worth reading for what else it says. Asked about their team, they answer that they are making it alone so they will skip the team questions. Asked about industry experience, they answer that it is zero, that they came out of a humanities degree and started game development knowing nothing. It took one year and two months against an estimate of about one year, built in Unreal Engine 5. And the reason they started: they were watching let's plays of indie horror games and thought they would like people to play one of theirs. This is that game, and it is the only one they have. A direct check of Steam's developer search under the name Sealio returns exactly one title. Released August 1, 2024 at ¥330, it is at 96 percent across 130 reviews (125 positive, 5 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page and Steam's content descriptors completely empty. English, Simplified Chinese, Traditional Chinese, Japanese and Korean are all supported, so there is nothing stopping you. And yet of those 130 reviews, 85 are in Japanese and 7 are in English.",
+        desc_ja: "友達が行方不明になった。学校からの帰り道に姿を消し、目撃者は誰もいない。だが心当たりはある。前日、様子のおかしかった彼女はこう言っていた——「あの家に呼ばれている。」そんな場所に家なんてなかったはずだ。半信半疑で向かうと、一軒の日本家屋が建っていた。以上がストアページから引いた前提で、ゲームはその一軒の建物の中で完結する一人称の謎解きホラーである。探索し、物を見つけ、閉じていた場所を開けていく。実際の形はSteamの公式ジャンル表記(アクション/インディー)より、ユーザータグのほうが正確に言い当てている——Hidden Object、Inventory Management、Multiple Endings、Survival Horror、そしてFirst-Person。エンディングは4種類で、リリース後に1つ追加された。プレイ時間は60〜90分。行く価値を作っているのは、建物そのものだ。ストア本文はこの家を、互いに矛盾する2語で定義している——「どこか不気味で懐かしい」。そして後者は、そういう家に入ったことのある人間にしか起動しない。廊下、押し入れ、仏間。これは、ある種の人間が既に身体で覚えている間取りの上に描かれた恐怖の設計図である。偶然ではない。Creators Guildのインタビューで、開発者は「今作の日本家屋は実家をモデルにしています。」とはっきり述べている。同じインタビューは、他の部分も読む価値がある。チームについて訊かれると「1人で作成している為、チームに関する質問はスキップいたします。」と答える。業界経験を訊かれると「ゲーム業界の経験はゼロです。」——「文系卒業で、知識ゼロの状態でゲーム開発をスタートしました」。想定約1年に対して実際は1年2ヵ月、Unreal Engine5製。そして始めた理由はこうだ——「インディーホラーゲームの実況を見て、私も自分の作ったゲームを遊んでほしいな、と思ったのがキッカケです。」本作がその「自分の作ったゲーム」であり、この人がSteamに出しているのはこれ1本きりである。Sealio名義でdeveloper検索を直接叩くと、返ってくるのはちょうど1件だ。発売日は2024年8月1日、価格¥330。130件のレビュー(好評125件・不評5件、Steam自身のレビューAPI実測)で好評率96%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・簡体字中国語・繁体字中国語・日本語・韓国語で、遊ぶのを止めるものは何もない。それでも130件のうち、日本語が85件、英語は7件だ。",
+      },
+      {
+        name_en: "Resident Evil",
+        name_ja: "biohazard HD REMASTER",
+        status: "established",
+        steam: "https://store.steampowered.com/app/304240/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Resident Evil, Capcom's 1996 survival horror, available on Steam as the 2015 biohazard HD REMASTER. Beyond the zombies, its lasting structural invention was to make one building the entire game. The mansion is not a level you pass through on the way to the next one; it is the whole map, and progress means finding an object in one of its rooms that opens a different room you already walked past. The building stops being scenery and becomes the puzzle. Japanese House Exploration is not an official Resident Evil work, and this lineage is a comparison drawn by this site rather than a stated influence. What they share is that shape exactly: one house, items that unlock the parts of it that were closed, and endings that branch on what you did inside. Where they part is the thing this pick is actually about. Resident Evil's mansion is a gothic elsewhere that nobody has ever visited. The house in this game is one you might have been inside as a child, and it does not become frightening until after it has become familiar.",
+        desc_ja: "この味の原点——バイオハザード。CAPCOMによる1996年のサバイバルホラーで、Steamでは2015年配信のbiohazard HD REMASTERとして入手できる。ゾンビの向こう側にある、この作品の構造上の発明で今も効いているのは、一軒の建物をゲーム全体にしたことだ。あの洋館は、次のステージへ向かう途中で通過するレベルではない。あれが地図の全部であり、進行するとは、その中のどこかの部屋で見つけた物が、さっき通り過ぎた別の部屋を開ける、ということである。建物が背景であることをやめて、パズルそのものになる。『家屋探索』は公式のバイオハザード作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。両者が共有しているのはまさにその形だ——一軒の家、閉じていた場所を開けるアイテム、そして中で何をしたかで分岐する結末。分かれるのは、この記事が本当に扱いたい一点のほうである。バイオハザードの洋館は、誰も行ったことのないゴシックの異界だ。このゲームの家は、子供の頃に上がったことがあるかもしれない場所であり、そして馴染みのある場所になったあとで、ようやく怖くなる。",
+      },
+    ],
+    en: {
+      title: "Japanese House Exploration - a friend vanished after saying she was being called to a house that was never there. You go, and the house is standing. Built alone in Unreal Engine 5 by someone with zero industry experience, modelled on their own family home. ¥330, 96 percent over 130 reviews, of which 7 are in English",
+      description: "A first-person puzzle horror set inside one Japanese house. A friend disappeared after saying she was being called to a house that did not exist; you go, and it is standing there. Four endings plus one added later, sixty to ninety minutes. Made alone in Unreal Engine 5 by a developer with no industry experience, modelled on their own family home. 96 percent over 130 reviews.",
+      h1a: "She said she was being called to that house. There was never a house there. ",
+      h1flip: "You go anyway, and it is standing on the spot",
+      h1b: ".",
+      lede: "A friend went missing on the way home from school, with no witnesses. But you have an idea where she went, because the day before, not quite herself, she said: I am being called to that house. There was never a house there. You go anyway, half disbelieving, and a Japanese house is standing on the spot. That is the premise, quoted from the store page, and the game is a first-person puzzle horror set inside that one building: you explore it, you find things, you open the parts of it that were closed. Steam's own user tags describe the shape better than its official genre does, listing Hidden Object, Inventory Management, Multiple Endings and Survival Horror alongside First-Person. There are four endings, with a fifth added after release, and it runs sixty to ninety minutes. What makes it worth the trip is the building itself. The store text defines the house with two words that contradict each other, calling it somehow eerie and somehow nostalgic, and the second half of that pair only fires if you have been in a house like it: the corridor, the closet, the room with the altar. It is a horror design drawn on a floor plan that a certain kind of person already has in their body. That is not a coincidence. In an interview with Creators Guild the developer says plainly that the Japanese house in this game is modelled on their own family home. The same interview is worth reading for what else it says. Asked about their team, they answer that they are making it alone so they will skip the team questions. Asked about industry experience, they answer that it is zero, that they came out of a humanities degree and started game development knowing nothing. It took one year and two months against an estimate of about one year, built in Unreal Engine 5. And the reason they started: they were watching let's plays of indie horror games and thought they would like people to play one of theirs. This is that game, and it is the only one they have; a direct check of Steam's developer search under the name Sealio returns exactly one title. Released August 1, 2024 at ¥330, it is at 96 percent across 130 reviews (125 positive, 5 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English, Simplified Chinese, Traditional Chinese, Japanese and Korean are all supported, so nothing is stopping you. And yet of those 130 reviews, 85 are in Japanese and 7 are in English. Two honest notes before you go. If the phrase Japanese house horror makes you think of Chilla's Art, that is a fair reflex and this site is not going to pretend otherwise; what is different here is a single continuous building with an inventory and a lock-and-key structure rather than a short scripted walk. And at 130 reviews and sixty to ninety minutes, this is a small thing that is very good, not a large thing.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The nostalgia is load-bearing, and that is the whole trick. A gothic mansion has to work to unsettle you because you have never been in one; a corridor with a closet at the end of it does not, because some part of you already knows how long that corridor is supposed to be, and the game only has to be slightly wrong about it.",
+        "It is one building and it never leaves it, so the map you are learning and the map you are afraid of are the same map. By the second ending you know the floor plan well enough to move quickly, and knowing it well is not the relief you expected.",
+        "The premise puts you there voluntarily. Nobody trapped you; a friend said she was being called and then was gone, and you walked in on purpose. That the door was open the whole time is a different kind of pressure from being locked in.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Resident Evil shape at ninety minutes and ¥330: one building, an inventory, things found in one room that open another, and endings that branch on what you did inside",
+        "You want a debut made by a person with no industry background at all, in Unreal Engine 5, over fourteen months, with the haunted house modelled on the house they grew up in",
+        "You want something with a genuinely strong number that the West has not picked up: 96 percent over 130 reviews, English fully supported, and only seven English reviews to show for it",
+      ],
+      bad: [
+        "You want length or scale; this is sixty to ninety minutes, and the replay value is four endings plus one added later rather than a large world",
+        "You want something with no visible neighbours; if you already play Chilla's Art, the surface will look familiar, and this pick would rather say that plainly than sell you a false discovery",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "家屋探索 -Japanese House Exploration- - 「あの家に呼ばれている」と言い残して友達が消えた。そんな場所に家なんてなかったはずなのに、行くと建っていた。業界経験ゼロの個人がUE5で1年2ヶ月、実家をモデルに作ったデビュー作。¥330、130件で好評率96%、うち英語レビューは7件",
+      description: "一軒の日本家屋の中で完結する一人称の謎解きホラー。存在しないはずの家に呼ばれた友達を追って中へ入る。エンディング4種＋後日追加1つ、プレイ時間60〜90分。ゲーム業界経験ゼロの個人がUnreal Engine 5で制作したデビュー作で、日本家屋は本人の実家がモデル。130件のレビューで好評率96%。",
+      h1a: "「あの家に呼ばれている。」そんな場所に家なんてなかったはずだ。",
+      h1flip: "それでも行ってみると、一軒の日本家屋が建っていた",
+      h1b: "。",
+      lede: "友達が行方不明になった。学校からの帰り道に姿を消し、目撃者は誰もいない。だが心当たりはある。前日、様子のおかしかった彼女はこう言っていた——「あの家に呼ばれている。」そんな場所に家なんてなかったはずだ。半信半疑で向かうと、一軒の日本家屋が建っていた。以上がストアページから引いた前提で、ゲームはその一軒の建物の中で完結する一人称の謎解きホラーである。探索し、物を見つけ、閉じていた場所を開けていく。実際の形はSteamの公式ジャンル表記より、ユーザータグのほうが正確に言い当てている——Hidden Object、Inventory Management、Multiple Endings、Survival Horror、そしてFirst-Person。エンディングは4種類で、リリース後に1つ追加された。プレイ時間は60〜90分。行く価値を作っているのは、建物そのものだ。ストア本文はこの家を、互いに矛盾する2語で定義している——「どこか不気味で懐かしい」。そして後者は、そういう家に入ったことのある人間にしか起動しない。廊下、押し入れ、仏間。これは、ある種の人間が既に身体で覚えている間取りの上に描かれた恐怖の設計図である。偶然ではない。Creators Guildのインタビューで、開発者は「今作の日本家屋は実家をモデルにしています。」とはっきり述べている。同じインタビューは、他の部分も読む価値がある。チームについて訊かれると「1人で作成している為、チームに関する質問はスキップいたします。」と答える。業界経験を訊かれると「ゲーム業界の経験はゼロです。」——「文系卒業で、知識ゼロの状態でゲーム開発をスタートしました」。想定約1年に対して実際は1年2ヵ月、Unreal Engine5製。そして始めた理由はこうだ——「インディーホラーゲームの実況を見て、私も自分の作ったゲームを遊んでほしいな、と思ったのがキッカケです。」本作がその「自分の作ったゲーム」であり、この人がSteamに出しているのはこれ1本きりだ。Sealio名義でdeveloper検索を直接叩くと、返ってくるのはちょうど1件である。発売日は2024年8月1日、価格¥330。130件のレビュー(好評125件・不評5件)で好評率96%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・簡体字中国語・繁体字中国語・日本語・韓国語で、遊ぶのを止めるものは何もない。それでも130件のうち、日本語が85件、英語は7件だ。最後に、飾らずに二点。「日本家屋のホラー」と聞いてChilla's Artを思い浮かべたなら、その反射は正しく、当サイトはそれを無かったことにはしない。違うのは、短い一本道の演出ではなく、持ち物と鍵の構造を持った一軒の連続した建物である、という点だ。そして130件・60〜90分という規模は、「とても良い小さなもの」であって「大きなもの」ではない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "「懐かしさ」が構造材になっている。そこが仕掛けの全部だ。ゴシックの洋館は、こちらが一度も入ったことがないぶん、不安にさせるために働かなければならない。だが突き当たりに押し入れのある廊下は働かなくていい——その廊下が本来どれくらいの長さであるべきかを、身体のどこかが既に知っているからだ。ゲームの側は、そこをほんの少しだけ間違えてみせればいい。",
+        "建物は一軒きりで、そこから出ることはない。だから覚えていく地図と、怖がっている地図が、同じ地図になる。2周目のエンディングに向かう頃には間取りを覚えて素早く動けるようになっているが、よく知っているという状態は、期待したような安心にはならない。",
+        "この前提は、プレイヤーを自分の意志でそこに立たせる。誰にも閉じ込められていない。友達が「呼ばれている」と言って消え、こちらは自分の判断で入っていった。扉がずっと開いたままである、というのは、閉じ込められているのとは別種の圧力だ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "バイオハザードの形を90分・¥330で欲しい人——一軒の建物、持ち物、ある部屋で見つけた物が別の部屋を開ける構造、そして中で何をしたかで分岐する結末",
+        "業界の下地がまるで無い人間のデビュー作が欲しい人——Unreal Engine 5、14ヶ月、そして舞台の日本家屋は本人が育った実家がモデル",
+        "数字が本当に強いのに西が拾っていないものが欲しい人——130件で96%、英語は完全対応、それでいて英語レビューは7件しかない",
+      ],
+      bad: [
+        "長さと物量が欲しい人——60〜90分で、繰り返し遊ぶ理由は広い世界ではなくエンディング4種＋後日追加の1つである",
+        "隣に似たものが無い作品が欲しい人——既にChilla's Artを遊んでいるなら表層は見慣れて見えるはずで、この記事はそれを偽の発見として売るより、先に言っておくほうを選ぶ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
