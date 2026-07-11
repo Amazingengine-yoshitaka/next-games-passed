@@ -9440,6 +9440,111 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "torara-mahjong-classroom": {
+    published: "2026-07-26",
+    publishAt: "2026-07-26",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Casual/Indie/Strategy)がゲーム性を捉えていないため新設 "mahjong-learning-sim"
+    //   (最小限のルールと牌から始め、一つずつ解説を加えながら本格的な麻雀ルールへ到達する体験学習型
+    //   ゲーム)。lineageは新規anchor "riichi-city"を採用するが、Riichi City自体はACGキャラクター・
+    //   ガチャ的要素を含むライブサービス対戦麻雀ゲームであり、とららの麻雀教室の純粋な学習特化とは
+    //   トーンが異なる部分一致である旨を正直に開示する(自信度: 低〜中)。
+    // 本記事はWorkflowツールによる3方向並列スカウト(メディア経由/同人プラットフォーム経由/Steam新着
+    //   逆引き)→候補ごとの独立事実確認+敵対的却下試行、という手順で選定した。同ラウンドで見つかった
+    //   5候補のうち3本が同一開発者「ほんわかふわふわ」名義(該当開発者の別作品は英語レビューが日本語を
+    //   上回る例もあり、開発者自身の無名性という基準に照らしてこのラウンドでは見送った)、1本(ネールの
+    //   はちゃめちゃクラフト！)はスカウト報告のレビュー数(20件)が誤りで実数はわずか2件と判明し絶対
+    //   条件(10件以上)未達のため却下、残る本作を採用した。
+    // developer/publisher Torara Theater(とら〜ら劇場、自社発売・第三者パブリッシャーなし)は、
+    //   Workflow内の裏取りエージェントが4Gamer・ファミ通・gamebiz.jp・Gamer.ne.jp・でんふぁみこがめ〜の
+    //   といった日本語メディアの報道のみを確認し、英語圏では自動集約サイト(PixelWave)の定型転載記事
+    //   1件以外に言及を発見できなかった。開発者の過去作は見当たらず、実質的なデビュー作と見られる。
+    //   国籍そのものの直接明言はないが、日本語メディアのみでの報道・日本語オンリーの対応言語・円建て
+    //   価格・「とら〜ら劇場」という日本語の屋号、という状況証拠の複合による判断(自信度: 中)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。ストアタグ全15件にも
+    //   性的・成人向け示唆は一切なし。年齢レーティングも全て最低区分。AI Generated Content Disclosure
+    //   欄はストアページに存在せず非AI。is_free=false・購入可能(Add to Cartボタン実測)、アーリー
+    //   アクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は日本語のみで英語オプション自体が存在せず(ストア自身の英語版
+    //   short_descriptionにも「【Japanese Version Only!】」と明記)。appreviews API実測で全21件の
+    //   うち英語レビューは0件、日本語レビューは19件(90.5%)、残り2件は簡体字中国語・韓国語各1件——
+    //   言語の壁により西へ未到達の典型例として obscurity: "wall" を採用する。レビュー総数21件は
+    //   統計的にはまだ薄く、1件の不評でも好評率が動きうる点も正直に開示する。
+    meta: { genre: "mahjong-learning-sim", lineage: "riichi-city", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 21, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Torara's Mahjong Classroom",
+        name_ja: "とららの麻雀教室",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4484100/_/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is an experiential learning game that teaches mahjong from absolute zero, aimed at people who know little or nothing about the game at all; its stated end goal is getting the player to a point where they can actually play mahjong in other apps, or follow along and understand a mahjong livestream. The lesson flow starts with the bare minimum of rules and tiles, then adds one explained element at a time, working up toward rules that are essentially indistinguishable from standard mahjong, guided throughout by a character named Torara. By design it does not cover real physical tile-handling knowledge like hand-building, since the stated goal is app-based play rather than in-person mahjong, and it deliberately omits some specialist terminology judged non-essential to actually playing; multiple endings and achievements reward full completion, and streaming or monetized video coverage is explicitly welcomed as long as the store page is credited. Made and self-published by Torara Theater, a developer with no prior Steam releases found, whose game has been reported on exclusively by Japanese outlets (4Gamer, Famitsu, gamebiz.jp, Gamer.ne.jp, denfaminicogamer); a dedicated check found no Western editorial coverage at all, only a single templated listing from an automated aggregator site. Released at ¥500, it is Positive at 100 percent over 21 reviews (21 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, its own English-facing short description flagging '[Japanese Version Only!]' outright, and of its 21 reviews, 19 are in Japanese; not one is in English.",
+        desc_ja: "Steam自身の表記によれば、本作は麻雀を一から学ぶ体験学習型のゲームで、麻雀を全く、あるいはほとんど知らない人を主な対象としている。最終目標として掲げられているのは、他のアプリ等で実際に麻雀がプレイできるようになること、あるいは麻雀配信を見てもある程度内容が理解できるようになることだ。学習の流れは、最低限のルールと最小限の牌からゲームを始め、そこに一つずつ解説を加えながらゆっくり要素を追加し、最終的には通常の麻雀とほぼ遜色ないルールに到達する構成で、案内役のキャラクター「とらら」が学習を導く。あくまでアプリでの麻雀プレイを最終目標としているため、リアル麻雀での牌の手積みといった知識は基本的に扱わず、学習への理解を容易にする目的で必ずしも必要ではない一部の専門用語も意図的に省略している。複数のエンディングと実績が全回収を後押しし、ストアページのURLを明記すれば実況・動画投稿・その収益化も自由と明記されている。制作・自社発売はTorara Theater(とら〜ら劇場)で、過去のSteamリリースは見当たらず、報道は4Gamer・ファミ通・gamebiz.jp・Gamer.ne.jp・でんふぁみこがめ〜のといった日本語メディアのみに限られる。西側メディアの編集記事は一件も見つからず、確認できたのは自動集約サイトの定型掲載1件のみだった。価格¥500で、21件のレビュー(好評21件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、英語向けの短い説明文自体に「【Japanese Version Only!】」と明記されている。21件のうち19件が日本語レビューで、英語レビューは1件もない。",
+      },
+      {
+        name_en: "Riichi City",
+        name_ja: "Riichi City",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1954420/Riichi_City__Japanese_Mahjong/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Riichi City, Formirai Co., Ltd.'s 2022 free-to-play competitive mahjong game, whose own store text bills it as featuring beginner-friendly mahjong tutorials built to bring real Japanese riichi mahjong to a global audience that has never played it before. Torara's Mahjong Classroom is not an official Riichi City work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer Torara Theater; the fit is only partial, since Riichi City wraps its lessons in anime characters, cosmetics, and ranked online play, while Torara's game has no service layer at all, but both share the same underlying goal of teaching a real, complex Japanese pastime to complete beginners.",
+        desc_ja: "この味の原点——Riichi City。Formirai Co., Ltd.による2022年配信の基本無料対戦麻雀ゲームで、ストア文言自身が「初心者向けの麻雀チュートリアル」を掲げ、本物の日本式リーチ麻雀を、まだ一度も遊んだことのない世界中のプレイヤーに届けることを目指す一本だ。とららの麻雀教室は公式のRiichi City作品ではなく、この系譜は開発元Torara Theater自身が明言した関連性ではなく当サイト独自の批評的比較であり、その一致は部分的にとどまる——Riichi Cityはアニメ風キャラクターや装飾、ランクマッチを備えたライブサービスである一方、とららの麻雀教室はサービス要素を一切持たない。それでも両者は、麻雀のルールを何も知らない人に本物の複雑な日本の遊びを教えるという根底の目標を共有している。",
+      },
+    ],
+    en: {
+      title: "Torara's Mahjong Classroom - an experiential learning game that teaches real mahjong from absolute zero, guided by a mascot character, until you can play it in other apps or follow a livestream. Made solo by developer Torara Theater with no prior Steam releases found. Positive at 100 percent over 21 reviews, 0 of them in English",
+      description: "An experiential learning game that teaches mahjong from absolute zero: minimal rules and tiles at first, one explained element at a time, until you reach rules essentially indistinguishable from standard mahjong. Made and self-published by developer Torara Theater, with no prior Steam releases found and no Western media coverage. Positive at 100 percent over 21 reviews, 19 of them in Japanese; none are in English.",
+      h1a: "You start knowing nothing at all, the barest handful of tiles and rules, guided one explained step at a time by a character named Torara, ",
+      h1flip: "until the rules in front of you are essentially the real thing",
+      h1b: ".",
+      lede: "An experiential learning game made and self-published by developer Torara Theater, a name with no prior Steam releases found. Per Steam's own listing, it teaches mahjong from absolute zero, aimed at people who know little or nothing about the game at all; its stated end goal is getting the player to a point where they can actually play mahjong in other apps, or follow along and understand a mahjong livestream. The lesson flow starts with the bare minimum of rules and tiles, then adds one explained element at a time, working up toward rules essentially indistinguishable from standard mahjong, guided throughout by a character named Torara. By design it does not cover real physical tile-handling knowledge like hand-building, since the stated goal is app-based play rather than in-person mahjong, and it deliberately omits some specialist terminology judged non-essential to actually playing; multiple endings and achievements reward full completion, and streaming or monetized video coverage is explicitly welcomed as long as the store page is credited. A game reported on exclusively by Japanese outlets (4Gamer, Famitsu, gamebiz.jp, Gamer.ne.jp, denfaminicogamer), a dedicated check found no Western editorial coverage at all, only a single templated listing from an automated aggregator site. Released at ¥500, it is Positive at 100 percent over 21 reviews (21 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, its own English-facing short description flagging '[Japanese Version Only!]' outright, and of its 21 reviews, 19 are in Japanese; not one is in English.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, the lesson starts with the bare minimum, barely any tiles, barely any rules, and adds exactly one explained thing at a time, so the moment the ruleset in front of you starts looking like real mahjong feels earned rather than dumped on you all at once.",
+        "The stated goal isn't winning or strategy, it's simply reaching the point where you can sit down in a different app or follow a livestream and actually know what's happening, so the whole design measures success in comprehension rather than skill.",
+        "A mascot character named Torara guides every step of it, and knowing this is a real debut release from a developer with no other Steam games behind them gives the whole project the feel of someone building the exact beginner's on-ramp they wished they'd had themselves.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want to actually learn real mahjong from zero, not play a themed puzzle game that merely borrows its imagery",
+        "You want a genuinely solo, self-published Japanese debut release with no prior Steam catalog and no Western media coverage found at all",
+        "You want a Positive title (100 percent over 21 reviews) that is completely walled off from English: every review is in Japanese or another Asian language, none in English",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 21 reviews is thin enough that a single negative review would move the percentage, and this pick says so plainly",
+        "You want to actually read it without Japanese; the game states outright that it is Japanese only, and it teaches rules rather than strategy or advanced tactics",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "とららの麻雀教室 - 麻雀を一から学ぶ体験学習ゲーム。案内役のキャラクター「とらら」に導かれ、他アプリでプレイできる、または配信を理解できるレベルまで到達する。制作はソロ開発者Torara Theaterで、過去のSteamリリースは見当たらない。21件のレビューで好評率100%、英語レビューは0件",
+      description: "麻雀を一から学ぶ体験学習ゲーム——最初は最低限のルールと牌から始め、一つずつ解説を加えながら、通常の麻雀とほぼ遜色ないルールへ到達する。制作・自社発売はTorara Theater、過去のSteamリリースは見当たらず西側メディアの報道も確認できない。21件のレビューで好評率100%、うち19件が日本語で英語は0件。",
+      h1a: "最低限の牌と最低限のルールから始まる。案内役の「とらら」に一つずつ導かれながら、",
+      h1flip: "目の前のルールはやがて本物の麻雀とほぼ変わらないものになる",
+      h1b: "。",
+      lede: "制作・自社発売はTorara Theater(とら〜ら劇場)による体験学習型ゲームで、過去のSteamリリースは見当たらない名義だ。Steam自身の表記によれば、麻雀を全く、あるいはほとんど知らない人を主な対象に、麻雀を一から学ぶ。最終目標として掲げられているのは、他のアプリ等で実際に麻雀がプレイできるようになること、あるいは麻雀配信を見てもある程度内容が理解できるようになることだ。学習の流れは、最低限のルールと最小限の牌からゲームを始め、そこに一つずつ解説を加えながらゆっくり要素を追加し、最終的には通常の麻雀とほぼ遜色ないルールに到達する構成で、案内役のキャラクター「とらら」が学習を導く。あくまでアプリでの麻雀プレイを最終目標としているため、リアル麻雀での牌の手積みといった知識は基本的に扱わず、学習への理解を容易にする目的で必ずしも必要ではない一部の専門用語も意図的に省略している。複数のエンディングと実績が全回収を後押しし、ストアページのURLを明記すれば実況・動画投稿・その収益化も自由と明記されている。報道は4Gamer・ファミ通・gamebiz.jp・Gamer.ne.jp・でんふぁみこがめ〜のといった日本語メディアのみに限られ、西側メディアの編集記事は一件も見つからず、確認できたのは自動集約サイトの定型掲載1件のみだった。価格¥500で、21件のレビュー(好評21件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで、英語向けの短い説明文自体に「【Japanese Version Only!】」と明記されている。21件のうち19件が日本語レビューで、英語レビューは1件もない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、学習は最低限の牌と最低限のルールから始まり、一度に一つの要素だけを解説付きで足していく。だから目の前のルールセットが本物の麻雀に見えてくる瞬間は、一気に押し付けられたものではなく、少しずつ勝ち取ったものとして感じられる。",
+        "掲げられている目標は勝ち方でも戦法でもなく、単に別のアプリに座っても、配信を見ても、何が起きているか実際に分かる状態にたどり着くことだ。だからこの設計全体は、腕前ではなく理解度で成功を測っている。",
+        "案内役のキャラクター「とらら」がすべての段階に付き添う。これが他のSteamタイトルを持たない開発者による本物のデビュー作だと知ったうえで触れると、この企画全体が、自分自身が欲しかったであろう「初心者への入り口」を作り上げたもののように見えてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "本物の麻雀を一から学びたい人が欲しい人——見た目だけ麻雀を借りたパズルゲームではなく",
+        "本当にソロで自社発売の日本のデビュー作が欲しい人——過去のSteamカタログがなく、西側メディアの報道も一切見つからない",
+        "「好評」タイトル(21件で100%)ながら、英語から完全に隔てられているものを掴みたい人——レビューはすべて日本語か他のアジア圏言語で、英語は0件",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——21件は不評が1件付くだけでも好評率が動く薄さで、この記事はそれを飾らずそのまま伝えている",
+        "日本語なしで実際に読みたい人——本作自身が日本語のみと明言しており、扱うのは戦法や高度な戦術ではなくルールそのものだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -10416,6 +10521,21 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Ikaruga is TREASURE's 2001 vertical shoot-'em-up, released on Steam in 2014, in which switching your ship's polarity lets you deliberately fly into same-colored enemy bullets and absorb them instead of dying, turning what would be a hit into fuel for a devastating chain-bonus counterattack. Its own store text sums up the whole idea in three words: 'Shoot! Dodge! and... Get Hit!?' establishing the template for a shoot-'em-up where taking a bullet on purpose, not avoiding it, is the core skill. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer ToAge, but Cure for Danmaku Synd's own core mechanic, deliberately absorbing enemy bullet patterns behind a barrier and reflecting them back as an attack, carries that same founding idea into a body-horror medical setting.",
       ja: "Ikarugaは、TREASUREによる2001年の縦スクロールシューティングで、2014年にSteam配信された。自機の極性を切り替えることで、同色の敵弾へあえて突っ込んで吸収でき、被弾するはずだった一撃を強烈な連鎖ボーナスの反撃へと変える。ストア文言自身が「撃て！避けろ！そして……被弾しろ！？」というたった三語でこの発想の全体を要約しており、避けることではなく、あえて弾を受けることこそが核心のスキルになる、というシューティングの型を確立した一本だ。この系譜は、ここで結びつける開発元ToAge自身が明言した関連性ではなく、当サイト独自の批評的比較だが、あえてバリアで敵の弾幕を吸収し反撃に転じる、という弾幕病の特効薬自身の核心的な仕組みは、まさに同じ発想を、体内を舞台にした医療モチーフの世界へと引き継いでいる。",
+    },
+  },
+  // 原点 Riichi City(Formirai Co., Ltd.、2022年配信)。とららの麻雀教室 pick の系譜として新規採用。
+  //   この帰属は開発元Torara Theater自身の言明ではなく当サイト独自の批評的比較(自信度: 低〜中・
+  //   parasocial/perfect-blue/papers-please等と同型の判断だが、雰囲気の異なる作品同士の機能的な
+  //   比較である点を正直に明記する)。ストア文言自身が「初心者向けの麻雀チュートリアル」を掲げ、
+  //   本物の日本式麻雀を非日本語圏の新規層に届けることを目指す先行例として選定。ただしRiichi City
+  //   自体はACGキャラクター・ガチャ的要素を含むライブサービス型の対戦麻雀ゲームであり、とららの
+  //   麻雀教室の純粋な学習特化とはトーンが異なる点も正直に開示する。現行Steamで配信中のためsteam
+  //   URLで同定する。
+  "riichi-city": {
+    steam: "1954420",
+    blurb: {
+      en: "Riichi City is Formirai Co., Ltd.'s 2022 free-to-play competitive mahjong game, whose own store text bills it as featuring 'beginner-friendly mahjong tutorials' built to bring real Japanese riichi mahjong to a global audience that has never played it before, wrapped in anime characters, cosmetics, and ranked online matches. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer Torara Theater, and the fit is only partial: Riichi City is a live-service game with gacha-adjacent trappings, while Torara's Mahjong Classroom is a single-purpose learning tool with no service layer at all, but both share the same underlying goal, teaching a real, complex Japanese pastime to people who currently know none of its rules.",
+      ja: "Riichi Cityは、Formirai Co., Ltd.による2022年配信の基本無料対戦麻雀ゲームで、ストア文言自身が「初心者向けの麻雀チュートリアル」を掲げ、本物の日本式リーチ麻雀を、まだ一度も遊んだことのない世界中のプレイヤーに届けることを目指す一本だ——アニメ風キャラクターや装飾、ランクマッチを備えたライブサービス型で展開されている。この系譜は、ここで結びつける開発元Torara Theater自身が明言した関連性ではなく、当サイト独自の批評的比較であり、その一致は部分的にとどまる——Riichi Cityはガチャ的要素も含むライブサービスゲームである一方、とららの麻雀教室はサービス要素を一切持たない、純粋な学習専用ツールだ。それでも両者は、麻雀のルールを何も知らない人に、本物の複雑な日本の遊びを教えるという根底の目標を共有している。",
     },
   },
 } as const;
