@@ -9896,6 +9896,127 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "movie-theater-that-someone-built": {
+    published: "2026-07-28",
+    publishAt: "2026-07-28",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Adventure/Casual/Indie)がゲーム性を捉えていないため新設
+    //   "witnessed-life-horror"(ストア自身の語「追体験」に沿う——他人の人生を一本の映画として
+    //   見届けさせられる形式の心理ホラー)。
+    // lineageは新規anchorを作らず既存の"to-the-moon"を再利用する。共有しているのは「物語を最優先し、
+    //   操作の要求水準を意図的に低く保つことで、他人の人生を見届けた先の一撃を成立させる」という
+    //   設計思想で、本作のストア文言自身も「物語重視で高いプレイスキルを必要としない、エンディング
+    //   まで到達しやすいゲームデザイン」と明言している。ただしTo the Moonはホラーではないため一致は
+    //   部分的であり、心理ホラーの接ぎ木は本作固有である旨を正直に開示する(自信度: 中)。
+    // developer/publisher riinwin(自社発売・第三者パブリッシャーなし)。専任の検証エージェントが
+    //   Steam公式API・ストア検索・4Gamerの開発元/発売元データベースの独立2系統でPC全8タイトルを
+    //   相互検証し、すべてdeveloper=publisher=riinwinであること、ストアの著作権表記も「© 2025
+    //   riinwin」でパブリッシャーロゴ・提携表記が一切ないことを確認済み。
+    // 国籍は状況証拠の複合による判断だが根拠は厚い(自信度: 中〜高)——riinwinの運営者に紐づく登記済み
+    //   法人「株式会社ルカ」(東京都、資本金50万円、本業ITインフラ、非上場・親会社なし)が実在し、
+    //   その法人メールがSteamのサポート窓口として同開発元の4タイトルで使われている。加えてふりーむ！
+    //   掲載作の制作ツールがRPGツクールMZ、note.com/FC2ブログでの日本語発信、対応言語が英語と日本語
+    //   のみ(中国語簡体/繁体・韓国語なし=中華圏/韓国発の典型的な言語構成と真逆)。ファミ通・4Gamer・
+    //   電撃オンライン・gamebiz・Gamer.ne.jpが本文で「インディーゲーム開発サークル"riinwin"」と
+    //   明言しているが、地理的な拠点そのものを明言した記事本文は確認できなかった点は正直に記録する。
+    // 【透明性のため記録するグレー要素】riinwinは「ゲームクリエイターズCAMP」(集英社系が運営協力)に
+    //   クリエイタープロフィールを持つ。ただし同サイトは無料オープン登録型のポートフォリオ/コミュニ
+    //   ティサイトであり(note.comにアカウントを持つのと同等)、検証エージェントがプロフィールと作品
+    //   ページを「大賞/受賞/入選/エントリー/賞金/コンテスト/パブリッシング/提携」で走査した結果、
+    //   いずれの語も出現せず、コンテスト応募・受賞・出版契約の痕跡は発見されなかった。以前このサイトが
+    //   除外した事例(過去作で集英社と実際にコラボしていた候補)とは質が異なるため、条件(6)が問題に
+    //   している資本・契約関係には当たらないと判断した。
+    // なお誤読を防ぐための注記として、RPGツクールMZの使用はGotcha Gotcha Games(KADOKAWA系)製ツールの
+    //   ライセンス使用にすぎず資本・契約関係ではなく、ファミ通記事末尾のKADOKAWA著作権表記は
+    //   ファミ通サイト自体のものであって本作とは無関係であることも検証済み。
+    // 【AI開示を隠さず記載】ストアページのAI Generated Content Disclosure欄に、開発者の記述として
+    //   「Some Paintings」とだけある(日英同一)。劇中の絵画という単一アセットカテゴリに限定された
+    //   開示であり、複数カテゴリ全域に及ぶ「主体」利用(過去に却下した例では3Dモデル・サウンド・
+    //   テクスチャ・UIの全域開示)には当たらないと判断して採用するが、他記事にある「AI生成アセットは
+    //   なく」という定型句はこの記事では使わず、開示内容をそのまま本文と「刺さらない人」欄に書く。
+    // content_descriptors は ids=[]・notes=null・required_age=0(API実測)。ストアのユーザータグ全20件
+    //   にも性的表現関連は皆無で、Mature Contentボックスも年齢ゲートも存在しない。is_free=false・
+    //   購入可能(Add to Cartボタン実測)、アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は英語・日本語の2言語で英語にも対応済みだが、appreviews API実測で
+    //   全143件のうち日本語127件(88.8%)、簡体字中国語8件、英語わずか6件(4.2%)、韓国語2件——英語対応
+    //   済みでも西へ届いていない例として obscurity: "deep" を採用する。143件は当サイトが扱う候補の
+    //   中では比較的しっかりした母数である。
+    meta: { genre: "witnessed-life-horror", lineage: "to-the-moon", obscurity: "deep", reviewBand: "hundreds", reachState: "unreached_west", rarity: { reviews: 143, positivePct: 97, noEnglish: false } },
+    games: [
+      {
+        name_en: "?? Movie Theater",
+        name_ja: "？？がつくった映画館",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3659180/_Movie_Theater/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a story-focused psychological horror in which you re-live what happened to one high school boy. The frame is a strange movie theater where you can watch any film at all; you watched one there, and it is the story of a boy named Sota Sakurai, up until, in the store's own text, six censored characters. From that first-person seat the game promises a mental dread built out of the boy's world gradually coming apart, and a story that escalates from one teenager's ordinary days to the secret of the world and finally to a way of seeing life itself. The design is deliberately undemanding: the store text states outright that it prioritizes story and does not require high play skill, so reaching an ending is easy, with two endings plus one hidden one across roughly ninety minutes to three hours. Made and self-published by riinwin, whose eight PC titles were cross-checked across two independent sources, Steam's own API and 4Gamer's developer and publisher databases, and every one shows developer and publisher alike as riinwin, with the store's copyright line reading simply '© 2025 riinwin' and no publisher logo or partnership credit anywhere. Streaming is permitted without prior consent for individuals and companies alike, with monetization allowed through the platforms' own features. The store page does carry an AI Generated Content Disclosure, and the developer's entire statement there is two words: 'Some Paintings.' Released May 16, 2025 at ¥580, it is Very Positive at about 97 percent over 143 reviews (138 positive, 5 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no Mature Content box, no age gate, and per Steam's own content descriptors, nothing sexual. It supports English alongside Japanese, and yet only 6 of its 143 reviews are in English, 4.2 percent, against 127 in Japanese.",
+        desc_ja: "Steam自身の表記によれば、本作は一人の男子高校生に起こった出来事を追体験する、物語重視の心理的ホラーだ。枠組みは「どんな映画でも観ることができるおかしな映画館」——そこで俺はとある映画を観た、それは男子高校生・桜井聡太が※※※※※※までの物語だ、とストア文言は伏字のまま始まる。その一人称の座席から本作が約束するのは、男子高校生の世界が徐々に崩壊していく精神的恐怖であり、一人の高校生の日常から、世界の秘密、そして人生観にまで発展していく壮大な物語だ。設計は意図的に易しい。ストア文言自身が「物語重視で高いプレイスキルを必要としない、エンディングまで到達しやすいゲームデザイン」と明言しており、2つのエンディングと1つの隠しエンドを、およそ1時間30分から3時間で見届けられる。制作・自社発売はriinwin。専任の検証で、PC8タイトルすべてがSteam公式APIと4Gamerの開発元/発売元データベースという独立2系統でdeveloper=publisher=riinwinと確認され、ストアの著作権表記も「© 2025 riinwin」のみで、パブリッシャーのロゴも提携表記もどこにもない。実況・配信は個人・法人問わず許諾なしで可能、動画配信サイトの機能による収益化も認められている。なおストアページにはAI生成コンテンツの開示欄があり、開発者の記述はたった一言「Some Paintings(いくつかの絵画)」だ。発売日は2025年5月16日、価格¥580。143件のレビュー(好評138件・不評5件、Steam自身のレビューAPI実測)で好評率約97%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Mature Contentの注意書きも年齢ゲートもなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語に加えて英語にも対応しているにもかかわらず、143件のうち英語レビューはわずか6件(4.2%)、日本語は127件だ。",
+      },
+      {
+        name_en: "To the Moon",
+        name_ja: "To the Moon",
+        status: "established",
+        steam: "https://store.steampowered.com/app/206440/To_the_Moon/",
+        wikidata: "https://www.wikidata.org/wiki/Q1711379",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: To the Moon, Freebird Games' 2011 narrative adventure, which kept its mechanics deliberately minimal so that walking backwards through a dying man's memories, and finding out what he actually wanted, could land without anything getting in the way. It is a key origin of the story-first indie adventure that trusts witnessing over playing. ?? Movie Theater is not an official To the Moon work, and this lineage is a comparison drawn by this site rather than a stated influence; the fit is partial, since To the Moon is not horror at all, but the shared bet is exact, seat the player as a witness to someone else's life, keep the skill requirement low on purpose, and let the reveal carry the weight. This pick grafts psychological horror onto that frame, replacing the memory machine with a film in a theater that should not exist.",
+        desc_ja: "この味の原点——To the Moon。Freebird Gamesによる2011年のナラティブアドベンチャーで、操作の要求を意図的に最小限に保つことで、瀕死の男の記憶を逆向きに歩き、その人が本当に望んだものを見つけ出すという一点を、何にも邪魔されずに届けきった作品だ。「遊ばせる」より「見届けさせる」ことを信頼する、物語優先のインディーアドベンチャーの重要な原点である。？？がつくった映画館は公式のTo the Moon作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較だ。To the Moonはそもそもホラーではないため一致は部分的だが、賭けている一点は正確に同じである——プレイヤーを他人の人生の目撃者として座らせ、腕前の要求をあえて低く保ち、明かされるものに重さを預ける。本作はその枠組みに心理ホラーを接ぎ木し、記憶再現装置の代わりに「あるはずのない映画館で上映される一本の映画」を置いた。",
+      },
+    ],
+    en: {
+      title: "?? Movie Theater - a strange theater screens the story of one high school boy up until six censored characters, and you sit through his world coming apart. Made and self-published by riinwin for ¥580. Very Positive at about 97 percent over 143 reviews, only 6 of them in English",
+      description: "A story-focused first-person psychological horror framed as a film: in a strange theater that will screen anything, you watch the story of a high school boy named Sota Sakurai, up until six censored characters, while his ordinary world gradually comes apart. Made and self-published by riinwin, verified across two independent sources as having no publisher at any stage. Very Positive at about 97 percent over 143 reviews, with only 4.2 percent of them in English.",
+      h1a: "A theater that will screen any film at all shows you the story of one high school boy, right up to six characters the store page refuses to print, ",
+      h1flip: "and your seat is the only place from which his world comes apart",
+      h1b: ".",
+      lede: "A story-focused psychological horror made and self-published by riinwin. Per Steam's own listing you re-live what happened to one high school boy: the frame is a strange movie theater where you can watch any film at all, you watched one there, and it is the story of a boy named Sota Sakurai up until, in the store's own text, six censored characters. From that first-person seat the game promises a mental dread built out of the boy's world gradually coming apart, and a story that escalates from one teenager's ordinary days to the secret of the world and finally to a way of seeing life itself. The design is deliberately undemanding: the store text states outright that it prioritizes story and does not require high play skill, so reaching an ending is easy, with two endings plus one hidden one across roughly ninety minutes to three hours. The developer's eight PC titles were cross-checked across two independent sources, Steam's own API and 4Gamer's developer and publisher databases, and every one shows developer and publisher alike as riinwin, with the store's copyright line reading simply '© 2025 riinwin' and no publisher logo or partnership credit anywhere; the operator behind the name is also tied to a registered Tokyo company, Ruca Inc., capitalised at ¥500,000 with IT infrastructure as its stated business, unlisted and with no parent, whose address serves as the Steam support contact across several of these titles. Streaming is permitted without prior consent for individuals and companies alike, with monetization allowed through the platforms' own features. The store page does carry an AI Generated Content Disclosure, and the developer's entire statement there is two words, 'Some Paintings', a single narrow asset category rather than anything game-wide, and this pick reports it as written rather than claiming the usual absence of AI-generated assets. Released May 16, 2025 at ¥580, it is Very Positive at about 97 percent over 143 reviews (138 positive, 5 negative), a paid title, not free, fully launched and not in Early Access, with no Mature Content box, no age gate, and per Steam's own content descriptors, nothing sexual. It supports English alongside Japanese, and yet only 6 of its 143 reviews are in English, 4.2 percent, against 127 in Japanese; at 143 reviews this is a sturdier sample than most picks on this site, and the gap is correspondingly harder to explain away.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The store page will not tell you what happens to Sota Sakurai; it prints six censored characters and stops, so the entire premise is handed to you as a redaction, and the only way to read it is to sit down in the theater and let the film run.",
+        "Per the store's own text the game deliberately does not require high play skill, which means nothing mechanical is ever standing between you and the next thing you learn, and a horror game that removes your ability to fail is a horror game betting everything on what it has to say.",
+        "The described arc runs from an ordinary teenager's daily life, to the secret of the world, to a way of seeing life itself, and that escalation is the actual shape of the dread here, not the jump scares: the fear is that a small life keeps turning out to be attached to something much larger.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want story-first horror that keeps mechanics out of the way on purpose, with two endings plus a hidden one inside a ninety-minute to three-hour sitting",
+        "You want a genuinely self-published Japanese production verified across two independent sources, eight PC titles all shipped with no external publisher and a copyright line reading only the developer's own name",
+        "You want a Very Positive title (about 97 percent over 143 reviews, a sturdier sample than most picks here) that supports English and still has only 4.2 percent of its reviews in that language",
+      ],
+      bad: [
+        "You want a game with no AI involvement in its assets; the store page carries an AI disclosure whose entire text is 'Some Paintings', and this pick reports that as written rather than skipping it",
+        "You want a horror game that tests you; the store text itself says high play skill is not required, and the design is built so that reaching an ending is easy",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "？？がつくった映画館 - どんな映画でも観られるおかしな映画館が、一人の男子高校生が※※※※※※までの物語を上映する。あなたの座席は、その世界が崩れていくのを見届けるための場所だ。制作・自社発売はriinwin、価格¥580。143件のレビューで好評率約97%、英語レビューはわずか6件",
+      description: "一本の映画という枠組みで語られる、物語重視の一人称心理ホラー。どんな映画でも観られるおかしな映画館で、男子高校生・桜井聡太が※※※※※※までの物語を観る。その日常が徐々に崩壊していく。制作・自社発売はriinwinで、独立2系統の検証により一度も外部発売元を介していないことを確認済み。143件のレビューで好評率約97%、うち英語はわずか4.2%。",
+      h1a: "どんな映画でも観られる映画館が、一人の男子高校生が※※※※※※までの物語を上映する。",
+      h1flip: "あなたの座席は、その世界が崩れていくのを見届けられる唯一の場所だ",
+      h1b: "。",
+      lede: "制作・自社発売はriinwinによる、物語重視の心理的ホラー。Steam自身の表記によれば、本作は一人の男子高校生に起こった出来事を追体験する作品だ。枠組みは「どんな映画でも観ることができるおかしな映画館」——そこで俺はとある映画を観た、それは男子高校生・桜井聡太が※※※※※※までの物語だ、とストア文言は伏字のまま始まる。その一人称の座席から本作が約束するのは、男子高校生の世界が徐々に崩壊していく精神的恐怖であり、一人の高校生の日常から、世界の秘密、そして人生観にまで発展していく壮大な物語だ。設計は意図的に易しい。ストア文言自身が「物語重視で高いプレイスキルを必要としない、エンディングまで到達しやすいゲームデザイン」と明言しており、2つのエンディングと1つの隠しエンドを、およそ1時間30分から3時間で見届けられる。開発元のPC8タイトルは、Steam公式APIと4Gamerの開発元/発売元データベースという独立2系統で相互検証され、すべてdeveloper=publisher=riinwinと確認された。ストアの著作権表記も「© 2025 riinwin」のみで、パブリッシャーのロゴも提携表記もどこにもない。この名義の運営者は東京の登記済み法人「株式会社ルカ」(資本金50万円、事業はITインフラ構築、非上場・親会社なし)にも紐づいており、その法人の連絡先が同開発元の複数タイトルでSteamのサポート窓口として使われている。実況・配信は個人・法人問わず許諾なしで可能、動画配信サイトの機能による収益化も認められている。なおストアページにはAI生成コンテンツの開示欄があり、開発者の記述はたった一言「Some Paintings(いくつかの絵画)」——ゲーム全体ではなく単一の狭いアセットカテゴリに限った開示だ。この記事はそれを、他の記事にある「AI生成アセットはなし」という定型句に置き換えず、書かれているとおりに伝える。発売日は2025年5月16日、価格¥580。143件のレビュー(好評138件・不評5件)で好評率約97%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Mature Contentの注意書きも年齢ゲートもなく、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語に加えて英語にも対応しているにもかかわらず、143件のうち英語レビューはわずか6件(4.2%)、日本語は127件。143件は当サイトが扱う候補の中では比較的しっかりした母数であり、その分この落差は言い訳しにくい。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ストアページは、桜井聡太に何が起きるのかを教えてくれない。伏字を六文字だけ置いて、そこで止まる。つまり前提そのものが伏字として手渡されており、それを読む方法は、映画館の席に座ってフィルムを回させること以外にない。",
+        "ストア文言自身が「高いプレイスキルを必要としない」と明言している。ということは、次に知ることとの間に、操作上の障害が一切置かれていないということだ。失敗する能力をプレイヤーから取り上げたホラーは、語る内容そのものに全部を賭けたホラーである。",
+        "描かれる弧は、平凡な高校生の日常から、世界の秘密、そして人生観へと登っていく。この作品の恐怖の実体は、ジャンプスケアではなくこの上昇の方だ——小さな一つの人生が、どうやらもっと大きな何かに接続されているらしいと分かっていくこと。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "操作を意図的に邪魔にしない、物語優先のホラーが欲しい人——1時間半から3時間の一度きりの座席に、2つのエンディングと1つの隠しエンドが収まっている",
+        "本当に自社発売の日本のプロダクションが欲しい人——独立2系統で検証され、PC8タイトルすべてが外部発売元を介さず、著作権表記も開発者名だけ",
+        "「非常に好評」タイトル(143件で約97%、当サイトの候補としては厚めの母数)ながら、英語に対応していてなおレビューの4.2%しか英語でないものを掴みたい人",
+      ],
+      bad: [
+        "アセットにAIが一切関わっていないものが欲しい人——ストアページにはAI開示欄があり、その全文は「Some Paintings」の一言だ。この記事はそれを省かず書かれているとおりに伝えている",
+        "腕前を試してくるホラーが欲しい人——ストア文言自身が高いプレイスキルは不要と述べており、エンディングまで到達しやすいように作られている",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
