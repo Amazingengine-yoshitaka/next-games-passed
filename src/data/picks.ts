@@ -10134,6 +10134,121 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "what-lies-beyond-the-window": {
+    published: "2026-07-29",
+    publishAt: "2026-07-29",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Casual / Indie)がゲーム性を全く捉えていないため、ストア本文自身の
+    //   中心語「２つの視点を切り替えて」に沿って新設 "perspective-shift-puzzle"。
+    // lineage は新規anchor "echochrome" を作る。Steam版が存在しない原点なので steam ではなく
+    //   wikidata(Q1280809)で同定する。Wikidata実測値は developer=Japan Studio(Q334904) /
+    //   publisher=Sony Interactive Entertainment(Q18594) / リリース日 2008年3月19日 /
+    //   platform=PS3・PSP / genre=puzzle video game。日本語名「無限回廊」も同一QIDに解決する。
+    //   ただし一致は部分的である。Echochromeが「視点によって成立する“錯視の幾何”をゴール判定に
+    //   使う」のに対し、本作は投影で潰れた軸の枚数がそのままオブジェクトの重さ・接続・通行可否
+    //   という物理属性に変換される。共有しているのは「見えたとおりが正しい、を世界の規則として
+    //   採用する」という一点に限られ、開発者が影響を公言したものではない当サイト独自の批評的
+    //   比較である(自信度: 中)。
+    // developer=とぶ / publisher=とぶ で完全な自主出版。Steamのdeveloper検索を自分で叩き、
+    //   とぶ名義の登録は本編(1618220)と体験版(1690450)の2件のみ、いずれもdeveloper=publisher=とぶ
+    //   であることを個別のappdetailsで確認した。大手・海外展開代行・親会社関係はゼロ。
+    // 国籍は日本(自信度: 高)。ストア本文が日本語で書かれ、英語ストアページでもタイトルが
+    //   「窓の中の先にあるもの」のまま表示され公式英題が存在しない。作者本人のnote
+    //   (note.com/moon_peta)に「『とぶ』という名前でゲーム作っていたり『うさおいみと』という
+    //   名前で小説書いていたりします」「本職はゲームプランナーまたはディレクター」と自己記載。
+    //   unity1weekという日本語圏のゲームジャム出自でもある。
+    // 出自: unity1week出品作。作者note実測で、unityroom版の公開は2021年2月28日、結果発表で
+    //   総合3位・楽しさ部門1位。そのうえで「ステージの追加、ランキングの見やすさの向上、絵作り、
+    //   演出の強化などを予定しております」と書いてSteam版の開発を開始している。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   Mature Content Descriptionセクション無し、年齢ゲート無し。ユーザータグ全12件
+    //   (Casual / Puzzle / Puzzle Platformer / Sokoban / 2.5D / Atmospheric / Dark / Fantasy /
+    //   Indie / Female Protagonist / Story Rich / Singleplayer)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・Add to Cart実測。
+    //   アーリーアクセスではない(ストアHTMLのearly_accessヒットは全てレコメンド枠の別ゲームの
+    //   メタデータで、game_area_early_accessバナーもEarly Accessジャンルも本作には無い)。
+    // west_unreached: 英語UIは実装済み(supported_languages: Japanese, English)にもかかわらず、
+    //   appreviews API実測で全24件のうち日本語20件・英語わずか1件・繁体字中国語2件・簡体字0件・
+    //   韓国語0件。言語の壁ではなく到達の欠落なので obscurity: "deep" / reachState:
+    //   "unreached_west" を採る。西側編集記事は当方でも検索し、Kotakuの該当ページを実際に開いて
+    //   バイライン無し・公開日無し・独自コメント無し・「Games metadata is powered by IGDB.com」
+    //   表記ありの自動生成DBページであることを確認済み。日本語圏ではAUTOMATONが配信開始を
+    //   「視点が変わると、概念が切り替わる」の見出しで報じている。24件という母数の薄さは正直に開示する。
+    meta: { genre: "perspective-shift-puzzle", lineage: "echochrome", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 24, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Mado no Naka no Saki ni Aru Mono",
+        name_ja: "窓の中の先にあるもの",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1618220/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A puzzle game with one invention, stated plainly in its own store text: you switch between a view from the side and a view from above, and when the viewpoint changes, depth and height change with it. What that means in practice is not an optical trick but a rule about matter. Per the store's own examples: a stack of crates seen from the side feels heavy, so you cannot move it, but seen from above it weighs only as much as one crate, so you can. A block and a staircase that sit far apart when seen from above are not far apart when seen from the side, so you can step across onto the block. Crates you cannot climb from the side have no height difference from above, so you walk right on top of them. The axis that the projection flattens is simply gone, and the number of flattened units becomes the object's weight, its connection, its passability. The developer calls the result a sensation of the brain glitching, and that phrase is in the store copy itself. It began as an entry in unity1week, a Japanese one-week game jam: the jam build went up February 28, 2021 and placed third overall while taking first place in the enjoyment category, after which the developer announced a Steam version with more stages, a clearer ranking display, and reworked art and effects. Made by a single person, Tobu, who writes on their own blog that they make games under the name Tobu and write novels under the name Usaoi Mito, and that their day job is game planner or director. Both developer and publisher on Steam are Tobu; a direct check of Steam's developer search turns up exactly two entries under that name, this game and its demo, with no publisher anywhere in the record. Released June 21, 2021 at ¥200, it is Positive at 100 percent across 24 reviews (24 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page and Steam's content descriptors empty. The English interface exists and works. What does not exist is an English title: on the English store page the game is still called 窓の中の先にあるもの, and Steam's own canonical URL for it ends in an underscore because there was no Latin name to build a slug from. Of its 24 reviews, exactly one is in English.",
+        desc_ja: "発明は一点で、それはストア本文自身がはっきり書いている——横から見た視点と、上から見た視点。２つを切り替えると、奥行きや高さまで変わる。これが実際に何を意味するかというと、錯覚の話ではなく、物質の規則の話になる。ストア自身が挙げている例をそのまま引く。積み上げられた木箱は、横から見ると重く感じるため動かすことができない。しかし上から見ると、木箱１個分の重さしか感じないので動かせる。上から見るとブロックと階段は離れて置かれているが、横から見ると離れているようには見えないので、ブロックの上に乗ることができる。横から見ると乗れない木箱も、上から見るとブロックとの高さの差を感じないので、その上に乗れる。投影で潰れた軸は、単に無い。そして潰れた分の枚数が、そのままそのオブジェクトの重さになり、接続になり、通れるかどうかになる。作者はこれを「脳がバグる」不思議な感覚と呼んでいて、その言葉自体がストア本文に書かれている。出自は unity1week——日本語圏の1週間ゲームジャムだ。ジャム版の公開は2021年2月28日、結果発表で総合3位、楽しさ部門では1位。そのうえで作者は「ステージの追加、ランキングの見やすさの向上、絵作り、演出の強化などを予定しております」と書いてSteam版の開発を始めている。制作は個人開発者・とぶ氏ひとり。本人のnoteには「『とぶ』という名前でゲーム作っていたり『うさおいみと』という名前で小説書いていたりします」「本職はゲームプランナーまたはディレクター」と書かれている。Steam上のdeveloperもpublisherもとぶ。Steamのdeveloper検索を直接叩くと、この名義の登録は本編と体験版のちょうど2件しかなく、記録のどこにも発売元が存在しない。発売日は2021年6月21日、価格¥200。24件のレビュー(好評24件・不評0件、Steam自身のレビューAPI実測)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは空である。英語インターフェースは実装済みで、ちゃんと動く。存在しないのは英題のほうだ——英語ストアページでもこのゲームの名前は「窓の中の先にあるもの」のままで、Steamが振った正準URLはアンダースコアで終わっている。slugを作れるラテン文字の名前が無かったからだ。24件のレビューのうち、英語はちょうど1件。",
+      },
+      {
+        name_en: "Echochrome",
+        name_ja: "無限回廊 (Echochrome)",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q1280809",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Echochrome, released March 19, 2008 for PlayStation 3 and PSP, developed by Japan Studio and published by Sony Interactive Entertainment, and known in Japan as Mugen Kairou. Its premise was that the world obeys what you can see rather than what is there: rotate the scene until two disconnected walkways line up on screen, and they are connected, because the game has agreed to treat the projection as the truth. It is the origin point of the lineage in which the camera is not a way of looking at the puzzle but the instrument that decides what the puzzle is. Mado no Naka no Saki ni Aru Mono is not an official Echochrome work, and this lineage is a comparison drawn by this site rather than a stated influence. It is also a partial one: Echochrome asks the projection to rule on whether two things touch, while this game asks it to rule on how much a thing weighs and whether you can carry it. The shared move is the one underneath both, the decision to let the flattened view be the physics.",
+        desc_ja: "この味の原点——Echochrome(無限回廊)。2008年3月19日、PlayStation 3とPSP向けに発売され、開発はJapan Studio、発売はソニー・インタラクティブエンタテインメント。この作品の前提は、世界は「そこに何があるか」ではなく「何が見えているか」に従う、というものだった。画面上で分断された二本の通路が繋がって見えるまで視点を回せば、それは実際に繋がる。ゲームの側が、投影されたその像のほうを真実として扱うと合意しているからだ。カメラがパズルを眺めるための道具ではなく、パズルが何であるかを決定する装置になる——その系譜の原点である。『窓の中の先にあるもの』は公式のEchochrome作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。しかも部分的な一致だ。Echochromeが投影に問うのは「二つの物は接しているか」だが、本作が投影に問うのは「その物は何キロあるか、あなたはそれを動かせるか」である。共有しているのは両者の下に敷かれた一手——潰れた見え方のほうを、そのまま物理法則として採用するという決断だ。",
+      },
+    ],
+    en: {
+      title: "Mado no Naka no Saki ni Aru Mono - a puzzle where switching between the side view and the top-down view deletes an axis, and the number of deleted units becomes how much things weigh. Made alone by Tobu for ¥200. Positive at 100 percent over 24 reviews, with exactly one of them in English",
+      description: "A perspective-shift puzzle with one invention: switch between side view and top-down view, and depth or height stops existing. A stack of crates is too heavy to push from the side and weighs one crate from above. Grew out of the Japanese game jam unity1week, where it placed third overall and first for enjoyment. Made alone by Tobu, self-published. Positive at 100 percent over 24 reviews.",
+      h1a: "A stack of crates is too heavy to move when you look at it from the side. ",
+      h1flip: "Look at it from above and it weighs one crate, so you push it",
+      h1b: ".",
+      lede: "A puzzle game with one invention, and its own store text states it without decoration: you switch between a view from the side and a view from above, and when the viewpoint changes, depth and height change with it. What that means in practice is not an optical trick but a rule about matter. Per the store's own examples: a stack of crates seen from the side feels heavy, so you cannot move it, but seen from above it weighs only as much as one crate, so you can. A block and a staircase that sit far apart when seen from above are not far apart when seen from the side, so you step across onto the block. Crates you cannot climb from the side have no height difference from above, so you walk right on top of them. The axis the projection flattens is simply gone, and the number of flattened units becomes the object's weight, its connection, its passability. The developer calls the result a sensation of the brain glitching, and that phrase is in the store copy itself. It began as an entry in unity1week, a Japanese one-week game jam: the jam build went up February 28, 2021 and placed third overall while taking first place in the enjoyment category, after which the developer announced a Steam version with more stages, a clearer ranking display, and reworked art and effects. It is made by a single person, Tobu, who writes on their own blog that they make games under the name Tobu and write novels under the name Usaoi Mito, and that their day job is game planner or director. Both developer and publisher on Steam are Tobu; a direct check of Steam's developer search turns up exactly two entries under that name, this game and its demo, with no publisher anywhere in the record. Released June 21, 2021 at ¥200, it is Positive at 100 percent across 24 reviews (24 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page and Steam's content descriptors empty. The English interface exists and works. What does not exist is an English title: on the English store page the game is still called 窓の中の先にあるもの, and Steam's own canonical URL for it ends in an underscore because there was no Latin name to build a slug from. Of its 24 reviews, exactly one is in English. At 24 reviews the sample is thin, and this pick says so plainly rather than dressing the perfect score up as a verdict.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The moment the rule lands is not when you solve a room but when you stop asking what is in front of you and start asking which axis you want deleted; the puzzle quietly relocates from the level to the way you are willing to look at it.",
+        "Weight is the part that gets under your skin. Seeing a wall become a floor is a familiar trick, but seeing a stack you could not budge become light enough to shove, purely because you stopped counting one direction, attaches the illusion to your hands instead of your eyes.",
+        "It is a small, quiet, ¥200 game that has to be re-learned every few rooms, because each new rule the store lists, weight, distance, height, is the same principle pointed at a different property, and knowing the principle does not tell you which property this room is about.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want one clean mechanical idea taken all the way rather than a large game with a good hour in it: switch the view, delete an axis, and let the deletion change what objects physically are",
+        "You want the genuinely small kind of Japanese release: one person, self-published, exactly two entries under their name on all of Steam, ¥200, grown out of a one-week game jam it won a category in",
+        "You want something the West has demonstrably not picked up: the English interface works fine, but the game has no English title at all, and exactly one of its 24 reviews is in English",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 24 reviews at a perfect 100 percent is thin enough that a single negative would move it, and this pick says so rather than hiding it",
+        "You want length and production scale; this is a ¥200 jam-grown puzzle game by one person, and its ambitions are entirely in the rule, not in the running time or the presentation",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "窓の中の先にあるもの - 横からの視点と上からの視点を切り替えると軸が1本消え、消えた分の枚数がそのまま物の重さになるパズル。とぶ氏がひとりで制作、価格¥200。24件のレビューで好評率100%、うち英語はちょうど1件",
+      description: "発明は一点。横から見た視点と上から見た視点を切り替えると、奥行きや高さが存在しなくなる。積み上げた木箱は横から見ると重くて押せず、上から見ると木箱1個分の重さになる。出自は日本語圏のゲームジャムunity1weekで、総合3位・楽しさ部門1位。とぶ氏がひとりで制作し自主出版。24件のレビューで好評率100%。",
+      h1a: "積み上げられた木箱は、横から見ると重すぎて動かせない。",
+      h1flip: "上から見ると木箱1個分の重さになるので、押せる",
+      h1b: "。",
+      lede: "発明は一点で、それはストア本文自身が飾らずに書いている——横から見た視点と、上から見た視点。２つを切り替えると、奥行きや高さまで変わる。これが実際に何を意味するかというと、錯覚の話ではなく、物質の規則の話になる。ストア自身が挙げている例をそのまま引く。積み上げられた木箱は、横から見ると重く感じるため動かすことができない。しかし上から見ると、木箱１個分の重さしか感じないので動かせる。上から見るとブロックと階段は離れて置かれているが、横から見ると離れているようには見えないので、ブロックの上に乗ることができる。横から見ると乗れない木箱も、上から見るとブロックとの高さの差を感じないので、その上に乗れる。投影で潰れた軸は、単に無い。そして潰れた分の枚数が、そのままそのオブジェクトの重さになり、接続になり、通れるかどうかになる。作者はこれを「脳がバグる」不思議な感覚と呼んでいて、その言葉自体がストア本文に書かれている。出自は unity1week——日本語圏の1週間ゲームジャムだ。ジャム版の公開は2021年2月28日、結果発表で総合3位、楽しさ部門では1位。そのうえで作者は「ステージの追加、ランキングの見やすさの向上、絵作り、演出の強化などを予定しております」と書いてSteam版の開発を始めている。制作は個人開発者・とぶ氏ひとり。本人のnoteには「『とぶ』という名前でゲーム作っていたり『うさおいみと』という名前で小説書いていたりします」「本職はゲームプランナーまたはディレクター」と書かれている。Steam上のdeveloperもpublisherもとぶ。Steamのdeveloper検索を直接叩くと、この名義の登録は本編と体験版のちょうど2件しかなく、記録のどこにも発売元が存在しない。発売日は2021年6月21日、価格¥200。24件のレビュー(好評24件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは空である。英語インターフェースは実装済みで、ちゃんと動く。存在しないのは英題のほうだ——英語ストアページでもこのゲームの名前は「窓の中の先にあるもの」のままで、Steamが振った正準URLはアンダースコアで終わっている。slugを作れるラテン文字の名前が無かったからである。24件のレビューのうち、英語はちょうど1件。24件という母数は薄く、この記事は満点をそのまま評決のように飾らず、薄いことを薄いと書く。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "規則が腑に落ちる瞬間は、部屋を一つ解けた時ではない。「目の前に何があるか」を問うのをやめて「どの軸を消したいか」を問い始めた時だ。パズルの在り処が、ステージの側から、自分がどう見ることにするかの側へ、静かに引っ越す。",
+        "効いてくるのは重さのほうだ。壁が床になるのは見慣れた手品だが、びくともしなかった積み荷が、ただ一方向を数えるのをやめただけで押せる軽さになる——これは錯覚を目にではなく手に接続してくる。",
+        "¥200の小さく静かなゲームなのに、数部屋ごとに学び直しを要求してくる。ストアが挙げる規則——重さ、距離、高さ——は同じ原理を別の属性に向けただけのもので、原理を知っていることは「この部屋がどの属性の話なのか」を教えてはくれないからだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "大きなゲームの中の良い1時間より、機構のアイデア1個を最後まで押し切ったものが欲しい人——視点を切り替え、軸を1本消し、その消去にオブジェクトの物理的な正体そのものを書き換えさせる",
+        "本当に小さい日本の作品が欲しい人——ひとり、自主出版、Steam全体でその名義の登録がちょうど2件、価格¥200、1週間ゲームジャム出自でその部門1位",
+        "西がまだ手に取っていないと事実で言えるものが欲しい人——英語インターフェースは問題なく動くのに、英題そのものが存在せず、24件のレビューのうち英語はちょうど1件",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——24件での100%は、不評が1件付くだけでも動く薄さで、この記事はそれを隠さずそのまま書いている",
+        "ボリュームと物量が欲しい人——これはひとりが作った¥200のジャム出自パズルであり、野心のすべては規則の側にあって、プレイ時間や見た目の物量の側には無い",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -11137,6 +11252,13 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "PAC-MAN is Namco's 1980 arcade maze game, whose power pellet invented the shape of every timed role reversal that followed. For most of the maze you are prey, running from ghosts you cannot touch; swallow a pellet and for a few seconds the entire relationship inverts, the ghosts turn and flee, and you spend that window hunting them for everything it is worth, knowing precisely that it will end. On Steam the original is available inside the official PAC-MAN MUSEUM+ collection, which gathers fourteen titles from the series. It is the origin of the lineage of games built on a brief, expiring window in which the weak become overwhelming, and of the design insight that the interesting half of such a loop is the half after the window closes.",
       ja: "PAC-MAN(パックマン)は、ナムコによる1980年のアーケード迷路ゲームで、そのパワーエサこそが、以後あらゆる「時限つきの役割反転」の型を作った。迷路にいる時間の大半、プレイヤーは触れることもできないゴーストから逃げる被食者だ。だがエサを一つ飲み込めば、数秒間だけ関係が丸ごと反転する。ゴーストは向きを変えて逃げ出し、プレイヤーはその窓の間だけ、必ず終わると分かっていながら全力で狩る側にまわる。Steamでは初代が、シリーズ14作を収録した公式コレクション「PAC-MAN MUSEUM+」で入手できる。弱い側が一時的に圧倒的になる、そしてその窓が必ず閉じる——という短い時限を核に据えたゲーム群の系譜の原点であり、この種のループで本当に面白いのは窓が閉じた後の半分である、というデザイン上の洞察の原点でもある。",
+    },
+  },
+  "echochrome": {
+    wikidata: "https://www.wikidata.org/wiki/Q1280809",
+    blurb: {
+      en: "Echochrome, released March 19, 2008 for PlayStation 3 and PSP, developed by Japan Studio and published by Sony Interactive Entertainment, and known in Japan as Mugen Kairou, built its world on a single concession: what you can see outranks what is there. Rotate the scene until two disconnected walkways line up on screen and they are connected, because the game has agreed to treat the flat projection, not the geometry behind it, as the truth of the matter. Guided by the Escher-like impossible figures it borrowed its look from, it moved the camera out of the role of a lens for inspecting a puzzle and into the role of the instrument that decides what the puzzle is. It is the origin of the lineage of games in which looking is not observation but an act with physical consequences, and of the design insight that a rule the player performs with the camera is felt more directly than a rule the game merely states.",
+      ja: "Echochrome(無限回廊)は、2008年3月19日にPlayStation 3とPSP向けに発売され、開発はJapan Studio、発売はソニー・インタラクティブエンタテインメントによる作品で、たった一つの譲歩の上に世界を築いた——「見えているもの」は「そこにあるもの」に優先する。画面上で分断された二本の通路が繋がって見えるまで視点を回せば、それは実際に繋がる。ゲームの側が、背後の幾何ではなく平面に潰れた投影のほうを、この件の真実として扱うと合意しているからだ。エッシャー的な不可能図形から借りた見た目に導かれるようにして、この作品はカメラを「パズルを観察するためのレンズ」という役から引きずり出し、「パズルが何であるかを決定する装置」という役に据え直した。見ることが観察ではなく物理的な帰結を持つ行為になる——そうしたゲーム群の系譜の原点であり、プレイヤーがカメラで自ら遂行する規則は、ゲームが言葉で宣言するだけの規則よりも直接に体感される、というデザイン上の洞察の原点でもある。",
     },
   },
 } as const;
