@@ -10617,6 +10617,123 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "guild-receptionist-2": {
+    published: "2026-07-31",
+    publishAt: "2026-07-31",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Adventure / Indie / RPG / Simulation)が広すぎるため、ストア本文
+    //   自身の名乗り「受付嬢シミュレーションゲームです。」に沿って新設 "guild-reception-sim"。
+    // lineage は新規anchorを作らず既存の "recettear" を再利用する。共有しているのは形そのもの——
+    //   依頼を捌き、人を派遣し、報酬を得て、日々の支払いを乗り越える。ストア本文にも
+    //   「生活費を稼ごう」「毎日の支払いを乗り越えよう」と明記されている。
+    //   そしてこの系譜を選んだ理由はもう一つある。Recettearは「日本の同人ゲームが西へ渡った」
+    //   ことの象徴そのものであり、本作は同じ形を持ちながら英語が一文字も無いために渡れていない。
+    //   原点が「渡れる」ことの証明で、本作が「まだ渡っていない」実例、という対比が記事の核になる。
+    //   影響を公言されたものではない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=OBTcompany / publisher=同一で完全な自主出版。Steamのdeveloper検索を自分で叩き、
+    //   この名義の登録は本編(3293990)と前作(3218200)の2件のみ、両方とも
+    //   developer=publisher=OBTcompany であることを個別のappdetailsで確認した。前作は基本無料
+    //   (is_free=true)で、当方の実測では39件中35件好評=89.7%。大手・海外展開代行・親会社関係はゼロ。
+    // 検証エージェントはさらにプラットフォームを横断して名義を1つずつ潰している——iOS(日本
+    //   App Storeのみ・販売元は個人名義 KUMIKO OBATA)、Android、unityroom、PLiCy、pixivFANBOX、
+    //   公式Wixの計6経路。いずれも外部publisherの関与なし。公式サイトの自称は
+    //   「OBTcompany (One Game Developer)」で、法人登記の痕跡は検索でも出てこない。
+    // content_descriptors は ids=[5] のみをAPI実測。1/3/4は非該当。notes原文は
+    //   "1. Very mild violence (fights) and abusive language. This is in the text only and not in
+    //   the illustrations." ——暴力も暴言もテキストの中だけで絵には無い、と自己申告している。
+    //   ユーザータグ全20件にも性的表現関連は皆無。required_age=0。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・Add to Cart実測
+    //   (¥390・割引なし。検証エージェントが「15% offのインデックスが残っている」と指摘したので
+    //   当方で再取得したが、現在は定価)。game_area_early_accessバナー無しで正式リリース済み。
+    // 【条件(14) 同一機構の西側競合】ギルド運営というジャンル自体には西側先行作がある——
+    //   Our Adventurer Guild(2026000)が本作より約8.5ヶ月先行。ただし「受付嬢」という視点の
+    //   フレーミングで同型のものは全て後発で、3841040(リリース2025年10月)も3920810(リリース2026年3月)も
+    //   本作より後である。記事では「ギルド運営の発明者」とは書かず、受付という一点の視点に
+    //   限って書く。
+    // west_unreached: supported_languages は日本語のみで英語オプションが存在しない。appreviews
+    //   API実測で全58件のうち日本語55件・繁体字中国語2件・簡体字中国語1件・英語ちょうど0件・
+    //   韓国語0件。不評は1件も無い。言語の壁の典型なので obscurity: "wall" /
+    //   reachState: "lang_walled" を採る。
+    // 【編集判断として最大の争点を隠さない】本作の中核は「クエストの依頼文を読ませること」であり、
+    //   その依頼文が日本語しかない。つまり西側読者は、この作品を良くしている当のものにアクセス
+    //   できない。検証エージェントも「"読ませる設計が売りなのに読めない" と突かれる方が痛い」と
+    //   これを最大の実務リスクとして報告した。当サイトはこれを隠さず、bad欄の筆頭に置き、
+    //   記事本文でも「まだ渡っていないものの記録」として枠を切る。
+    meta: { genre: "guild-reception-sim", lineage: "recettear", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 58, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Guild Receptionist 2: Stardust Liberate",
+        name_ja: "がんばれ！受付嬢2 ～Stardust Liberate～",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3293990/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "You are the receptionist at an adventurers' guild, and the store page states the job in one line: become the guild receptionist and protect the ordinary life you care about. Quests come in. You read each one, decide whether to accept it or turn it away, and assign the guild members who fit. Quests have hidden clear conditions, and meeting them can bring a new member into the guild. Then there is the part that gives the whole thing its weight, also stated plainly on the store page: earn a living. You take the reward money from quests and get through the daily payments. Whether you accepted a quest, refused it, or failed it changes what becomes of the receptionist, and the endings branch on that record, with the store framing the choice as running yourself ragged to protect the village, obeying the king, or exposing the darkness spreading through the country. It is a sequel that inherits the first game's systems and adds two things aimed squarely at people who could not keep up: a mode where time slows down so you can read the quests properly, and a beginner mode that gives you strong members from the start. That first addition is the tell. The developer looked at their own game and concluded that the problem was people not having time to read, and fixed it by giving them more time to read. Made by OBTcompany, one person, self-published everywhere; Steam's developer search under that name returns exactly two entries, this and the free first game, both with no outside publisher, and the Japanese App Store lists the seller under a personal name rather than a company. Released December 31, 2024 at ¥390, it is Very Positive at 100 percent across 58 reviews (58 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page. Steam's content descriptors carry one line, and it is a careful one: very mild violence and abusive language, in the text only and not in the illustrations. It is in Japanese, and only Japanese. Of its 58 reviews, zero are in English.",
+        desc_ja: "あなたは冒険者ギルドの受付嬢で、ストアページは仕事を一行で言い切っている——「ギルドの受付嬢になり、大切な日常を守り抜け！」。クエストが持ち込まれる。一件ずつ読み、受けるか断るかを決め、適した人材を派遣する。クエストには隠しクリアがあり、条件を満たすと新たなギルドメンバーが仲間になることもある。そして全体に重さを与えている部分も、ストアページにそのまま書かれている——「生活費を稼ごう」。クエストで報酬を稼ぎ、毎日の支払いを乗り越えよう、と。クエストを許可したか、拒否したか、クリアできたかで受付嬢の運命が変わり、エンディングはその記録によって分岐する。ストアはその選択を「村を守るために駆け回るのか、王に従うのか、国に蔓延る闇を暴くのか」と提示している。本作は初代の雰囲気やシステムを受け継いだ続編で、ついていけなかった人に真正面から向けた新システムを二つ足している——「時間の流れが遅くなり、ゆっくりクエストを読めるシステム」と、「最初から強力なメンバーが加入する初心者モード」。前者が何よりの証拠だ。開発者は自分のゲームを見て、問題は「読む時間が足りないこと」だと結論し、読む時間を増やすことで直した。制作はOBTcompany——ひとり、どのプラットフォームでも自主出版である。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど2件、本作と無料の前作だけで、どちらにも外部の発売元が無い。日本のApp Storeの販売元表記も、法人ではなく個人名義だ。発売日は2024年12月31日、価格¥390。58件のレビュー(好評58件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタの記載は一行だけで、しかも慎重な一行だ——ごく軽微な暴力と暴言、それもテキストの中だけで、イラストには含まれない。対応言語は日本語、日本語だけである。58件のレビューのうち、英語はゼロ件だ。",
+      },
+      {
+        name_en: "Recettear: An Item Shop's Tale",
+        name_ja: "ルセッティア -アイテム屋さんのはじめ方-",
+        status: "established",
+        steam: "https://store.steampowered.com/app/70400/Recettear_An_Item_Shops_Tale/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Recettear: An Item Shop's Tale, the Japanese doujin game in which you inherit a father's debt and have to run a shop to pay it off, buying stock, haggling with customers, and hiring adventurers to go into the dungeon and bring back things you can sell. Its structure is the one this pick inherits: the fantasy world happens somewhere else, and your job is the counter, the ledger, and the payment that comes due whether or not the day went well. Guild Receptionist 2 is not an official Recettear work, and this lineage is a comparison drawn by this site rather than a stated influence. But there is a second reason it belongs here. Recettear is the standard example of a Japanese doujin game that made it out, the one that proved this kind of thing travels once someone puts it into English. This pick is the same shape with the door still shut: no English exists, and the part of the game you would most want translated is the quest text you are asked to read and judge.",
+        desc_ja: "この味の原点——ルセッティア -アイテム屋さんのはじめ方-。父の借金を相続し、返済のために店を回すことになる日本の同人ゲームだ。仕入れをし、客と値段の駆け引きをし、冒険者を雇ってダンジョンへ行かせ、売れるものを持ち帰らせる。本作が受け継いでいるのはその構造である——ファンタジー世界の出来事は、どこか別の場所で起きている。こちらの仕事はカウンターと帳簿、そしてその日がうまくいったかどうかに関係なくやってくる支払いのほうだ。『がんばれ！受付嬢2』は公式のルセッティア作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。ただし、ここに置く理由はもう一つある。ルセッティアは「日本の同人ゲームが外に出た」ことの代表例であり、この種のものは誰かが英語にしさえすれば渡っていく、と証明してみせた作品だ。本作は同じ形をしていて、扉のほうがまだ閉じている——英語版は存在せず、そしていちばん訳してほしい部分が、読んで判断することを求められるクエストの依頼文なのである。",
+      },
+    ],
+    en: {
+      title: "Guild Receptionist 2: Stardust Liberate - read each quest, accept it or turn it away, send the right people, and make the daily payments. Whether you accepted, refused or failed decides what becomes of you. Made alone by OBTcompany for ¥390. 100 percent over 58 reviews, and zero of them are in English",
+      description: "A guild receptionist simulation: read the quests, decide whether to accept or refuse, assign the members who fit, and earn enough to cover the daily payments. Quests have hidden clear conditions that recruit new members, and the endings branch on what you approved and refused. Made alone by OBTcompany, self-published. 100 percent over 58 reviews, Japanese-only.",
+      h1a: "A quest comes to the counter. You read it, and you decide whether to accept it or turn it away. ",
+      h1flip: "Either way, the rent is due tonight",
+      h1b: ".",
+      lede: "You are the receptionist at an adventurers' guild, and the store page states the job in one line: become the guild receptionist and protect the ordinary life you care about. Quests come in. You read each one, decide whether to accept it or turn it away, and assign the guild members who fit. Quests have hidden clear conditions, and meeting them can bring a new member into the guild. Then there is the part that gives the whole thing its weight, also stated plainly on the store page: earn a living. You take the reward money from quests and get through the daily payments. Whether you accepted a quest, refused it, or failed it changes what becomes of the receptionist, and the endings branch on that record, with the store framing the choice as running yourself ragged to protect the village, obeying the king, or exposing the darkness spreading through the country. It is a sequel that inherits the first game's systems and adds two things aimed squarely at people who could not keep up: a mode where time slows down so you can read the quests properly, and a beginner mode that gives you strong members from the start. That first addition is the tell. The developer looked at their own game and concluded that the problem was people not having time to read, and fixed it by giving them more time to read. Made by OBTcompany, one person, self-published everywhere; Steam's developer search under that name returns exactly two entries, this and the free first game, both with no outside publisher, and the Japanese App Store lists the seller under a personal name rather than a company. Released December 31, 2024 at ¥390, it is Very Positive at 100 percent across 58 reviews (58 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors carry one careful line: very mild violence and abusive language, in the text only and not in the illustrations. Now the part that has to be said before anything else. It is in Japanese, and only Japanese, and the thing the game is actually made of is quest text you are asked to read and judge. There is no English, no fan patch we could find, and zero of its 58 reviews are in English. This entry is a record of something you probably cannot play yet, kept because a perfect score across 58 people is worth writing down.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Accept or refuse is the whole job, and refusing is not the safe option, because the payment still comes tonight. The game does not ask whether you are brave; it asks how much risk your rent can absorb this week.",
+        "The sequel's headline new feature is a mode that slows time down so you can read the quests properly, and knowing that tells you exactly what the first game felt like: people were being asked to make judgement calls faster than they could take in what they were judging.",
+        "Because hidden clear conditions recruit new members, the roster you end up with is a record of the quests you took seriously rather than the ones you merely completed, and two players who both finished will not be holding the same guild.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You read Japanese and want the Recettear shape without the shop: the fantasy happens offscreen, your job is the counter, the roster and the payment that comes due either way",
+        "You want a genuinely one-person Japanese release: two entries on all of Steam, the first one free, the seller on the Japanese App Store listed under a personal name rather than a company, ¥390",
+        "You want a number with nothing hidden behind it: 58 reviews, 58 of them positive, zero negative, and not one of those 58 written in English",
+      ],
+      bad: [
+        "You do not read Japanese. This is the hard limit and it is worse here than usual, because the game is made of quest text you are asked to read and judge; there is no English option and no fan patch, so the very thing that makes this good is the thing you cannot reach",
+        "You want the invention to be the genre rather than the angle; guild management already existed in the West before this, and what is unusual here is standing at reception rather than running the guild",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "がんばれ！受付嬢2 ～Stardust Liberate～ - 依頼を読み、受けるか断るかを決め、適した人材を派遣し、毎日の支払いを乗り越える。許可したか拒否したかクリアできたかで、受付嬢の運命が変わる。OBTcompanyがひとりで制作、価格¥390。58件で好評率100%、英語レビューはゼロ件",
+      description: "受付嬢シミュレーション。クエストを読み、受けるか断るかを決め、適したギルドメンバーを派遣し、報酬で毎日の支払いを乗り越える。隠しクリア条件を満たすと新メンバーが仲間になり、許可と拒否の記録でエンディングが分岐する。OBTcompanyがひとりで制作し自主出版。58件のレビューで好評率100%、日本語のみ。",
+      h1a: "クエストがカウンターに来る。読んで、受けるか断るかを決める。",
+      h1flip: "どちらにしても、今夜の支払いはやってくる",
+      h1b: "。",
+      lede: "あなたは冒険者ギルドの受付嬢で、ストアページは仕事を一行で言い切っている——「ギルドの受付嬢になり、大切な日常を守り抜け！」。クエストが持ち込まれる。一件ずつ読み、受けるか断るかを決め、適した人材を派遣する。クエストには隠しクリアがあり、条件を満たすと新たなギルドメンバーが仲間になることもある。そして全体に重さを与えている部分も、ストアページにそのまま書かれている——「生活費を稼ごう」。クエストで報酬を稼ぎ、毎日の支払いを乗り越えよう、と。クエストを許可したか、拒否したか、クリアできたかで受付嬢の運命が変わり、エンディングはその記録によって分岐する。ストアはその選択を「村を守るために駆け回るのか、王に従うのか、国に蔓延る闇を暴くのか」と提示している。本作は初代の雰囲気やシステムを受け継いだ続編で、ついていけなかった人に真正面から向けた新システムを二つ足している——「時間の流れが遅くなり、ゆっくりクエストを読めるシステム」と、「最初から強力なメンバーが加入する初心者モード」。前者が何よりの証拠だ。開発者は自分のゲームを見て、問題は「読む時間が足りないこと」だと結論し、読む時間を増やすことで直した。制作はOBTcompany——ひとり、どのプラットフォームでも自主出版である。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど2件、本作と無料の前作だけで、どちらにも外部の発売元が無い。日本のApp Storeの販売元表記も、法人ではなく個人名義だ。発売日は2024年12月31日、価格¥390。58件のレビュー(好評58件・不評0件)で好評率100%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタの記載は慎重な一行だけ——ごく軽微な暴力と暴言、それもテキストの中だけで、イラストには含まれない。そして、何よりも先に言っておかなければならないことがある。対応言語は日本語、日本語だけであり、しかもこのゲームの実体は「読んで判断することを求められるクエストの依頼文」である。英語版は無く、有志パッチも見つからず、58件のレビューのうち英語はゼロ件だ。この記事は、あなたがまだ遊べないかもしれないものの記録である。それでも書き残すのは、58人が全員good を押したという事実に、書き残すだけの価値があるからだ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "受けるか断るか。仕事はそれだけで、そして断るほうが安全というわけではない。支払いは今夜やってくるからだ。このゲームが問うているのは「あなたは勇敢か」ではなく、「今週の家賃はどれだけのリスクを吸収できるか」である。",
+        "続編の目玉として足された新システムが「時間の流れが遅くなり、ゆっくりクエストを読めるシステム」だという事実は、前作がどういう体験だったかをそのまま教えてくれる——人々は、判断の対象を読み取れる速さより速く、判断を求められていた。",
+        "隠しクリア条件を満たすと新メンバーが加入するので、最終的に手元にある顔ぶれは「クリアしたクエスト」ではなく「真面目に向き合ったクエスト」の記録になる。二人のプレイヤーが同じようにクリアしても、抱えているギルドは同じにならない。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "日本語が読めて、店のないルセッティアが欲しい人——ファンタジーは画面の外で起きていて、こちらの仕事はカウンターと顔ぶれと、どのみちやってくる支払いのほうだ",
+        "本当にひとりで作られた日本の作品が欲しい人——Steam全体で2件、うち1件は無料の前作、日本のApp Storeの販売元は法人ではなく個人名義、価格¥390",
+        "裏に何も隠れていない数字が欲しい人——58件、うち好評58件、不評ゼロ。そしてその58件のうち英語で書かれたものは1件も無い",
+      ],
+      bad: [
+        "日本語が読めない人。これが越えられない線で、しかも今回はいつもより深刻だ——このゲームの実体は「読んで判断することを求められる依頼文」であり、英語オプションも有志パッチも存在しない。つまり、この作品を良くしている当のものに手が届かない",
+        "発明が「角度」ではなく「ジャンル」であってほしい人——ギルド運営そのものは本作より前から西側にあり、ここで珍しいのは運営する側ではなく受付に立っている、という視点のほうだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
