@@ -8928,6 +8928,107 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "penguin-wars": {
+    published: "2026-07-23",
+    publishAt: "2026-07-23",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「星の滅亡までの最後の1週間を、映像/音楽を軸にした探索型ノベルで自由に
+    //   過ごす」を捉える語がないため新設 "doomsday-stroll-novel"。
+    // developer/publisher しゃちクマず(自社発売・第三者パブリッシャーなし)は瞬氏・ぷらぐら氏の長年の
+    //   友人同士による2人組。専任の裏取りエージェントがGame*Sparkインタビュー本文を実読し、瞬氏
+    //   「都内でSEとして働いています」・ぷらぐら氏が関西出身である旨の発言を一次ソースで確認済み。
+    //   国籍そのものの直接明言はないが、発信がすべて日本語のみ・BOOTHでのグッズ販売・日本語圏インディー
+    //   開発者コミュニティの月例企画への参加、といった状況証拠の複合による判断(自信度: 中)。
+    // 前作『ライヒェは街灯の下で』(appid 3607020、使用済みリスト外)との関係: 同一チーム作。共通
+    //   キャラクター「ペング」が本作にも登場するが、Game*Sparkインタビューで開発者自身が「前作は好きな
+    //   ように作ったが、次は万人に受け入れられやすいゲームを作ろう」とビジュアル・キャラデザインの方向性
+    //   を変えた独立プロジェクトである旨を明言しており、単純な焼き直しではないと判断した。
+    // AI開示: Steamストアページ自身の「AI Generated Content Disclosure」欄に、一部スチル背景へのAI生成
+    //   素材の加筆修正、一部スチル構図の参考としてのAI生成素材利用、収録22曲中3曲(約14%)でクリエイター
+    //   本人の作曲後に編曲の一部をAI生成素材を元に行った旨、が開示されている(専任エージェントが原文を
+    //   2回照合し確認済み)。制作の主体はあくまで人力(スチルは加筆修正・参考利用、楽曲は本人作曲が先)と
+    //   読めるため「AI生成アセットが主体」には該当しないと判断したが、この開示自体を本文で正直に記載する
+    //   (このサイトの他記事にある「AI生成アセットはなく」という定型句はこの記事には使わない)。
+    // content_descriptors は ids=[]・notes=null(API実測・性的コンテンツなし)。is_free=false・購入可能
+    //   (Add to Cartボタン実測)、アーリーアクセスではなく正式リリース済み(発売日2026年2月20日)。
+    // west_unreached: 対応言語は日本語のみ(英語非対応)。appreviews API実測で全90件のうち英語レビューは
+    //   0件、日本語レビューは79件(87.8%)——言語の壁により西へ未到達の典型例として obscurity: "wall" を
+    //   採用する。
+    meta: { genre: "doomsday-stroll-novel", lineage: "planetarian", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 90, positivePct: 98, noEnglish: true } },
+    games: [
+      {
+        name_en: "Penguin Wars",
+        name_ja: "ペンギンウォーズ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4286410/_/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is an exploration-style adventure novel: the star is dying, and this is the last week before it ends. Where the girl at its center goes, who she talks to, and how she spends her final night are left entirely up to the player, navigated by clicking objects and movement points on screen while an immersive combination of cinematic visuals and music carries the story forward. The soundtrack runs 22 tracks (excluding sound effects and jingles), plus 3 more heard only in-game, and reaching all 4 endings takes roughly 6 to 7 hours. Made and self-published by a two-person circle, Shachikumazu, longtime friends who, per a Game*Spark interview, work respectively as a systems engineer in Tokyo and hail from the Kansai region; the two previously released a separate, differently styled omnibus adventure, Reiche wa Gaitou no Shita de, which shares one recurring character but was, per the developer's own account, deliberately redesigned toward a more broadly approachable style rather than built as a direct sequel. Steam's own AI Generated Content Disclosure section states plainly that some still-image backgrounds include AI-generated material that was added and corrected by hand, that AI-generated material was used for reference alongside free illustrations and photos in composing some stills, and that 3 of the 22 soundtrack songs, after being composed by the creator, had part of their arrangement based on AI-generated material; this pick states that disclosure as written rather than claiming the usual absence of AI-generated assets. Released February 20, 2026 at ¥600, it is Very Positive at about 97.8 percent over 90 reviews (88 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, no English option exists at all, and of its 90 reviews, 79 (87.8 percent) are in Japanese while not one is in English, a language wall in the most literal sense this site tracks.",
+        desc_ja: "Steam自身の表記によれば、本作は探索型アドベンチャーノベルだ。星が滅亡するまでの最後の1週間、少女はどんな体験をするのか——行きたいところ、話しかけたい人、最期の夜をどう過ごすかは、すべてプレイヤーの自由に委ねられている。画面上のオブジェクトや移動ポイントをクリックして自由に移動し、没入感のある映像とサウンドとともに物語が進む。サウンドトラックは効果音・ジングルを除き全22曲収録、加えて作中でのみ聴ける未収録3曲もあり、全4種のエンディング回収には約6〜7時間かかる。制作・自社発売は長年の友人同士による2人組・しゃちクマず。Game*Sparkのインタビューによれば、2人はそれぞれ都内でSEとして働く瞬氏と、関西出身のぷらぐら氏だ。前作『ライヒェは街灯の下で』(スタイルの異なるオムニバス形式のアドベンチャー)とはキャラクター「ペング」を共有しているが、開発者自身の言によれば「前作は好きなように作ったが、次は万人に受け入れられやすいゲームを作ろう」と、ビジュアルの方向性を意図的に変えた独立プロジェクトであり、単純な続編ではない。Steam自身の「AI Generated Content Disclosure」欄には、一部スチルの背景にAI生成素材を加筆修正したものが含まれること、一部スチルの構図の参考としてフリー素材に加えAI生成素材を利用したこと、収録22曲中3曲についてクリエイター自身が作曲した後に編曲の一部をAI生成素材を元に行ったこと、が明記されている——この記事はこの開示をそのまま伝え、他の記事にある「AI生成アセットはなし」という定型句は使わない。発売日は2026年2月20日、価格¥600。90件のレビュー(好評88件・不評2件、Steam自身のレビューAPI実測)で好評率約97.8%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで英語オプション自体が存在せず、90件のうち79件(87.8%)が日本語レビューである一方、英語レビューは1件もない——このサイトが扱う中でも文字通りの「言語の壁」だ。",
+      },
+      {
+        name_en: "planetarian HD",
+        name_ja: "planetarian HD",
+        status: "established",
+        steam: "https://store.steampowered.com/app/623080/planetarian_HD/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: planetarian HD, Key's 2004 visual novel, remastered and published on Steam by VisualArts in 2017, in which a lone traveler wandering a war-ravaged, dying world meets a small robot still faithfully running a planetarium long after the people it was built for are gone, and the two spend a brief, quiet stretch of time together before the story ends. Penguin Wars is not an official planetarian work, and this lineage is a comparison drawn by this site in outside critical commentary, not a stated influence from developer Shachikumazu, but it carries the same core idea into a new frame: a world with a visible end date, told through cinematic visuals and music rather than branching dialogue trees, asking what you do with whatever time is left.",
+        desc_ja: "この味の原点——planetarian HD。Keyによる2004年のビジュアルノベルで、2017年にVisualArtsがSteamでHDリマスター版を発売した。戦争で荒廃し滅びゆく世界を彷徨う一人の旅人が、作られた目的の人々がとうにいなくなった後もプラネタリウムを健気に守り続ける小さなロボットと出会い、物語の終わりが訪れるまでのわずかで静かな時間を共に過ごす。ペンギンウォーズは公式のplanetarian作品ではなく、この系譜は開発元しゃちクマず自身が明言した関連性ではなく当サイト独自の批評的比較だが、同じ核心的な発想を新しい枠組みへと引き継いでいる——分岐する選択肢のツリーではなく映像美と音楽で綴られる、終わりの見えている世界で、残された時間をどう過ごすかという問いだ。",
+      },
+    ],
+    en: {
+      title: "Penguin Wars - the last week before the star dies, told as a free-roaming exploration novel where a girl chooses where to go and who to talk to, made by a 2-person Japanese circle. Very Positive at about 97.8 percent over 90 reviews, 0 of them in English",
+      description: "An exploration-style adventure novel: the star is dying, and this is the last week before it ends. Where the girl at its center goes and who she talks to are left entirely up to the player, carried by cinematic visuals and an original soundtrack. Made and self-published by a 2-person Japanese circle, Shachikumazu. Very Positive at about 97.8 percent over 90 reviews, all in Japanese; no English reviews exist at all.",
+      h1a: "The star is dying, and this is the last week before it ends. Where you go, who you talk to, how you spend the final night, ",
+      h1flip: "all of it is yours to choose",
+      h1b: ".",
+      lede: "An exploration-style adventure novel made and self-published by a two-person circle, Shachikumazu, longtime friends who, per a Game*Spark interview, work respectively as a systems engineer in Tokyo and hail from the Kansai region. Per Steam's own listing, the star is dying, and this is the last week before it ends; where the girl at its center goes, who she talks to, and how she spends her final night are left entirely up to the player, navigated by clicking objects and movement points on screen while an immersive combination of cinematic visuals and music carries the story forward. The soundtrack runs 22 tracks, excluding sound effects and jingles, plus 3 more heard only in-game, and reaching all 4 endings takes roughly 6 to 7 hours. The two previously released a separate, differently styled omnibus adventure, Reiche wa Gaitou no Shita de, which shares one recurring character but was, per the developer's own account, deliberately redesigned toward a more broadly approachable style rather than built as a direct sequel. Steam's own AI Generated Content Disclosure section states plainly that some still-image backgrounds include AI-generated material added and corrected by hand, that AI-generated material was used for reference alongside free illustrations and photos in composing some stills, and that 3 of the 22 soundtrack songs, after being composed by the creator, had part of their arrangement based on AI-generated material; this pick states that disclosure as written rather than claiming the usual absence of AI-generated assets. Released February 20, 2026 at ¥600, it is Very Positive at about 97.8 percent over 90 reviews (88 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, and per Steam's own content descriptors, nothing sexual. It supports Japanese only, no English option exists at all, and of its 90 reviews, 79 (87.8 percent) are in Japanese while not one is in English, a language wall in the most literal sense this site tracks.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, the deadline here isn't a countdown timer or a game-over clock, it's simply true: the star is dying, this is the last week, and every place you choose to visit is time you are choosing not to spend somewhere else.",
+        "Movement is just clicking what's in front of you, objects and paths on screen, so nothing about the interface competes with the cinematic visuals and 22-track original soundtrack for your attention; the exploring itself stays quiet enough that the ending, when it comes, is what lands.",
+        "This is a two-person circle's second game, made right after a first project the developers say they built purely to please themselves, and knowing that the creator behind it works a day job as a systems engineer in Tokyo recolors a story about spending someone's very last free days exactly as they want to.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a quiet, cinematic exploration novel about spending finite time freely: where to go, who to talk to, all left up to you, with 4 endings across roughly 6 to 7 hours",
+        "You want a genuinely small, self-published Japanese circle: two friends, a Tokyo systems engineer and a Kansai-based partner, crediting themselves by name",
+        "You want a Very Positive title (about 97.8 percent over 90 reviews) that is genuinely, literally walled off from English: 0 of its reviews are in English, and it has no English language option at all",
+      ],
+      bad: [
+        "You want a game with zero AI involvement in its assets; Steam's own disclosure states some still backgrounds and 3 of 22 soundtrack tracks involved AI-generated material in a supporting role after human composition, and this pick reports that plainly rather than skipping it",
+        "You want to actually read it without Japanese; it has no English support at all, a paid title, not free, fully launched and not in Early Access, with nothing sexual per Steam's own content descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ペンギンウォーズ - 星が滅亡するまでの最後の1週間を、行きたい場所も話す相手も自由に選べる探索型ノベルとして描く。制作は2人組の同人サークル。90件のレビューで好評率約97.8%「非常に好評」、英語レビューは0件",
+      description: "探索型のアドベンチャーノベル——星が滅亡するまでの最後の1週間、行きたいところも話しかけたい人も、すべてプレイヤーの自由。没入感のある映像とオリジナルサウンドトラックで物語が進む。制作・自社発売は2人組の同人サークル・しゃちクマず。90件のレビューで好評率約97.8%「非常に好評」、すべて日本語レビューで英語レビューは1件も存在しない。",
+      h1a: "星が滅亡するまでの最後の1週間。行きたいところも、話しかけたい人も、最期の夜の過ごし方も、",
+      h1flip: "すべてあなたが選ぶ",
+      h1b: "。",
+      lede: "制作・自社発売は長年の友人同士による2人組・しゃちクマず。Game*Sparkのインタビューによれば、2人はそれぞれ都内でSEとして働く瞬氏と、関西出身のぷらぐら氏だ。Steam自身の表記によれば、星が滅亡するまでの最後の1週間、少女はどんな体験をするのか——行きたいところ、話しかけたい人、最期の夜をどう過ごすかは、すべてプレイヤーの自由に委ねられている。画面上のオブジェクトや移動ポイントをクリックして自由に移動し、没入感のある映像とサウンドとともに物語が進む。サウンドトラックは効果音・ジングルを除き全22曲収録、加えて作中でのみ聴ける未収録3曲もあり、全4種のエンディング回収には約6〜7時間かかる。2人は前作としてスタイルの異なるオムニバス形式のアドベンチャー『ライヒェは街灯の下で』も発表しており、キャラクター「ペング」を共有しているが、開発者自身の言によれば「前作は好きなように作ったが、次は万人に受け入れられやすいゲームを作ろう」と、ビジュアルの方向性を意図的に変えた独立プロジェクトであり、単純な続編ではない。Steam自身の「AI Generated Content Disclosure」欄には、一部スチルの背景にAI生成素材を加筆修正したものが含まれること、一部スチルの構図の参考としてフリー素材に加えAI生成素材を利用したこと、収録22曲中3曲についてクリエイター自身が作曲した後に編曲の一部をAI生成素材を元に行ったこと、が明記されている——この記事はこの開示をそのまま伝え、他の記事にある「AI生成アセットはなし」という定型句は使わない。発売日は2026年2月20日、価格¥600。90件のレビュー(好評88件・不評2件)で好評率約97.8%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、Steam自身のコンテンツディスクリプタ上性的な要素もない。対応言語は日本語のみで英語オプション自体が存在せず、90件のうち79件(87.8%)が日本語レビューである一方、英語レビューは1件もない——このサイトが扱う中でも文字通りの「言語の壁」だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、ここでの締め切りはカウントダウンタイマーでもゲームオーバーの時計でもなく、ただ事実として存在する——星は滅亡する、これが最後の1週間だ、そしてあなたが訪れると選んだ場所はすべて、他のどこかに使わなかった時間そのものになる。",
+        "移動は画面上のオブジェクトや経路をクリックするだけとシンプルで、操作そのものが映像美と全22曲のオリジナルサウンドトラックへの注意を奪わない。探索自体が静かなままだからこそ、訪れるエンディングがそのまま届く。",
+        "本作は、開発者自身が「好きなように作った」と語る前作のすぐ後に手がけた、2人組サークルの2作目だ。作り手の一人が都内でSEとして働きながら制作していると知ったうえで触れると、誰かの本当に最後の自由な日々をどう過ごすかという物語は、また違う色を帯びてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "限られた時間を自由に過ごす、静かで映像的な探索ノベルが欲しい人——行き先も話す相手もすべて自分で選び、約6〜7時間で4種のエンディングへ",
+        "本当に小規模で自社発売の日本の同人サークルが欲しい人——都内在住SEと関西出身の2人が、実名(ハンドルネーム)を明かして制作",
+        "「非常に好評」タイトル(90件で約97.8%)ながら、文字通り英語の壁に阻まれているものを掴みたい人——レビューのうち英語は0件、そもそも英語対応自体が存在しない",
+      ],
+      bad: [
+        "アセットに一切AIが関わっていないものが欲しい人——Steam自身の開示によれば、一部のスチル背景と22曲中3曲について、人力での作曲・作画を経た上で補助的にAI生成素材が使われており、この記事はそれを省かず正直に伝える",
+        "日本語なしで実際に読みたい人——英語対応は一切なく、無料ではない有料タイトルでアーリーアクセスではなく正式リリース済み、Steam自身のコンテンツディスクリプタ上性的な要素もない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -9856,6 +9957,18 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "Bomberman is Konami's genre-defining series about placing bombs and triggering chain-reaction blasts, available on Steam as SUPER BOMBERMAN COLLECTION, a 2026 official compilation gathering seven classic SUPER BOMBERMAN titles across their Japanese, European, and American versions, including the previously Japan-only SUPER BOMBERMAN 4 and 5. It established, decades before any roguelike deckbuilder existed, the basic idea that a single planted bomb detonating into a chain reaction could be the entire core of a game. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer TUKUCHAU-OJISAN, but Dungeon Bomber's own turn-by-turn bomb placement and chain-reaction blasts through a dungeon carry that same founding idea into a card-collecting, bomb-fusing roguelite frame.",
       ja: "Bombermanは、爆弾を設置して誘爆の連鎖を起こすという、コナミによるジャンル定義的なシリーズで、Steamでは2026年配信の公式コレクション「SUPER BOMBERMAN COLLECTION」として入手できる。日本版・欧州版・北米版を横断する往年のSUPER BOMBERMANシリーズ7作を収録し、これまで日本国内版のみだったSUPER BOMBERMAN 4・5の待望のローカライズ版も含む。ローグライク・デッキビルダーというジャンルが存在するはるか以前から、「置いた一つの爆弾が誘爆連鎖を起こす」という発想だけでゲームの核が成立する、という着想を確立した一本だ。この系譜は、ここで結びつける開発元TUKUCHAU-OJISAN自身が明言した関連性ではなく、当サイト独自の批評的比較だが、Dungeon Bomberのターン制の爆弾設置とダンジョンを貫く誘爆連鎖は、まさにこの原点の発想を、カード収集と爆弾合成のローグライトという新しい枠組みへと引き継いでいる。",
+    },
+  },
+  // 原点 planetarian(VisualArts/Key、2004年発表・Steam版は2017年配信のHD版)。ペンギンウォーズ pick の
+  //   系譜として新規採用。この帰属は開発元しゃちクマず自身の言明ではなく当サイト独自の批評的比較(自信度:
+  //   中・parasocial/perfect-blue/papers-please等と同型の判断)。荒廃した世界で残された時間を静かに
+  //   過ごす、映像/音楽で魅せる短編ノベルという型を確立した先行作として選定。現行Steamで販売中のため
+  //   steam URLで同定する。
+  "planetarian": {
+    steam: "623080",
+    blurb: {
+      en: "planetarian HD is Key's 2004 visual novel, remastered and published on Steam by VisualArts in 2017, in which a lone traveler wandering a war-ravaged, dying world meets a small robot still faithfully running a planetarium long after the people it was built for are gone, and the two spend a brief, quiet stretch of time together before the story's end. Built around cinematic presentation and music rather than branching choice, it established a template for the short, melancholic Japanese visual novel about spending whatever time is left in a world that is already ending. This lineage is a comparison drawn by this site in outside critical commentary, not a connection stated by developer Shachikumazu, but Penguin Wars' own premise, a girl's free final week before her world's end, told through immersive visuals and an original soundtrack, sits inside the same idea: what you choose to do with the time that remains.",
+      ja: "planetarian HDは、Keyによる2004年のビジュアルノベルで、2017年にVisualArtsがSteamでHDリマスター版を発売した。戦争で荒廃し滅びゆく世界を彷徨う一人の旅人が、作られた目的の人々がとうにいなくなった後もプラネタリウムを健気に守り続ける小さなロボットと出会い、物語の終わりが訪れるまでのわずかで静かな時間を共に過ごす。分岐選択ではなく映像美と音楽による演出を軸に据え、すでに終わりつつある世界で残された時間をどう過ごすかを描く、短編で叙情的な日本のビジュアルノベルという型を確立した一本だ。この系譜は、ここで結びつける開発元しゃちクマず自身が明言した関連性ではなく、当サイト独自の批評的比較だが、没入感のある映像とオリジナルサウンドトラックで綴られる「少女が星の滅亡までの最後の1週間を自由に過ごす」というペンギンウォーズ自身の前提は、まさに同じ発想の内側にある——残された時間で何を選ぶか、という問いだ。",
     },
   },
 } as const;
