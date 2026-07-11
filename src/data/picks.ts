@@ -10017,6 +10017,123 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "baku": {
+    published: "2026-07-28",
+    publishAt: "2026-07-28",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Adventure/Casual/Indie)がゲーム性を捉えていないため、ストア自身の語
+    //   「まちがい探し×ADV」に沿って新設 "spot-the-difference-adv"。
+    // lineageは新規anchorを作らず既存の"doki-doki-literature-club"を再利用する。共有しているのは
+    //   「可愛らしい表層と穏やかな遊びの手触りで迎え入れておきながら、本当の形を伏せている」という
+    //   一点で、本作のストア文言自身が「ただし、この物語には秘密があります」と明言しつつ中身を語らず、
+    //   一方でSteam自身のコンテンツディスクリプタには流血と殺人の描写が申告されている、という落差が
+    //   その証拠になっている。DDLCがメタフィクション側に振れた作品であるのに対し本作がメタかどうかは
+    //   未確認であり、一致は「可愛い表層と伏せられた真意」という軸に限られる旨を正直に開示する
+    //   (自信度: 中)。記事本文でも秘密の中身には触れない。
+    // developer=ひろめてん / publisher=ひろゆ～(監督本人の名義)で、実質的な自主流通。専任の検証
+    //   エージェントがSteam公式API・Steamのpublisher検索・4Gamerで確認し、ひろゆ～名義の刊行物は
+    //   BRELOK / PENTALOOP / BAKU と各OSTという自社タイトルのみで、外部からの受託パブリッシュも
+    //   大手との資本・契約関係も検出されなかった。
+    // 国籍は状況証拠の複合による判断(自信度: 中〜高)——Steamのサポート窓口が法人ではなく個人サイト
+    //   (hiroyuuuu.wixsite.com/profile)で、本文は自然な日本語の一人称、そこにサークル遍歴(とりえも
+    //   すたぶ→イバラユーギ×ひろゆ～プロジェクト→ひろめてん)が自己記載されている。BOOTH(pixiv系)で
+    //   2ショップ運営、pixiv FANBOX運用歴、マダミス.jpの著者ページ登録とシナリオ多数の自主販売。
+    //   ファミ通は関連作を記事本文で「ゲーム制作サークル」と明記し、4Gamerにも本作のデータ掲載がある。
+    //   ただし特定商取引法に基づく表記の住所はBOOTH側が403で取得できず、法的書面での在住確認までは
+    //   到達していない点は正直に記録する。
+    // 【1ホップ先の大手接点を透明性のため記録し、そのうえで採用と判断した理由】検証エージェントが、
+    //   本作の発売元ひろゆ～が別作『PENTALOOP』を共同制作した相手であるイバラユーギ氏について、
+    //   同氏が本作とは無関係な別案件でソニー・ミュージックエンタテインメント等と組んでいる実績を
+    //   発見した。ただし(a)イバラユーギ氏はBAKUのクレジット(監督ひろゆ～/イラストてんみやきよ/編集
+    //   めめこ/音楽鈴木ぷよ/プログラムすいぼつマン)に一切登場せず、(b)大手との接点は同氏側の別事業で
+    //   あって本作の開発元・発売元自身のものではない。これは当サイトが過去に除外した事例——開発者
+    //   本人の過去作にPLAYISMが付いていたケース、開発者本人がテレビ局系パブリッシャーの作品を
+    //   手がけていたケース——とは距離が明確に異なる(0〜1ホップ vs 2ホップ、かつ本作の制作陣に不在)。
+    //   同人サークルは人的に重なり合うのが常で、この距離まで遡って除外すると事実上どの同人作品も
+    //   通らなくなるため、条件(6)が問題にしている資本・契約関係には当たらないと判断した(自信度: 中)。
+    // content_descriptors は ids=[5]・notes="This game contains depictions of bloodshed and murder in
+    //   some scenes."(API実測)。性的コンテンツid 1/3/4は非該当で、ストアのユーザータグ全11件にも
+    //   性的表現関連は皆無。AI Generated Content Disclosure欄はストアページに存在せず非AI。
+    //   is_free=false・購入可能(Add to Cartボタン実測)、アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は日本語のみ(英語オプション自体が存在しない)。appreviews API実測で
+    //   全54件のうち日本語51件(94.4%)、英語わずか1件、簡体字中国語1件、繁体字中国語1件、韓国語0件
+    //   ——言語の壁により西へ未到達の典型例として obscurity: "wall" を採用する。54件は好評率100%
+    //   だが母数としてはまだ薄く、その点も正直に開示する。
+    meta: { genre: "spot-the-difference-adv", lineage: "doki-doki-literature-club", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 54, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "BAKU",
+        name_ja: "BAKU -バク-",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3816550/BAKU/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, you are a baku, the creature from Japanese folklore that eats dreams, and today, as on every other day, one more animal has come to you complaining that it cannot sleep. Eat the nightmare; save the troubled animals. Then the store text adds one line and stops: however, this story has a secret. The game itself is a single-player spot-the-difference: two illustrations side by side, and you find what is wrong between them. What makes it more than a quiet puzzle is that the endings branch according to how you do at that spot-the-difference, so the gentlest possible mechanic, comparing two almost-identical cute pictures, is the thing deciding what becomes of the animal in front of you. Playtime runs one to two hours, and the circle notes that they deliberately build games at a length that is easy to stream. Made by the circle Hirometen and published under the director's own handle, Hiroyu, with credits given plainly on the store page: director Hiroyu, illustration Tenmiyakiyo, editing Memeko, music Suzuki Puyo, programming Suibotsuman. A dedicated check of Steam's own API, Steam's publisher search, and 4Gamer found that everything published under the Hiroyu name is the circle's own work, BRELOK, PENTALOOP, BAKU and their soundtracks, with no external publisher and no capital or contractual tie to any large company. Released August 24, 2025 at ¥620, it is Positive at 100 percent over 54 reviews (54 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page at all. Per Steam's own content descriptors it carries one note, that the game contains depictions of bloodshed and murder in some scenes, which sits at an interesting angle next to its Cute tag and its cast of sleepless animals; there is nothing sexual, and no age gate. It supports Japanese only, with no English option whatsoever, and of its 54 reviews 51 are in Japanese against exactly one in English.",
+        desc_ja: "Steam自身の表記によれば、あなたはバクだ。夢を食べる、あの日本の伝承の生き物である。そして今日も一匹、あなたのもとに不眠を訴える動物がやってきた。悪夢を食べて、悩める動物たちを救ってあげよう——そこまで語ったところで、ストア文言は一行だけ足して黙る。「ただし、この物語には秘密があります」。ゲーム自体はシングルプレイ専用のまちがい探しで、左右に並んだイラストを見比べ、間違っているところを見つける。これを静かなパズル以上のものにしているのは、まちがい探しの結果によってエンディングが分岐するという一点だ。ほとんど同じ可愛い絵を二枚見比べるという、考えうる限り最も穏やかな操作が、目の前の動物がどうなるかを決めている。プレイ時間は1〜2時間で、サークルは「実況動画や配信等で遊びやすい時間設定のゲームを制作しています」と自ら述べている。制作はサークル「ひろめてん」、発売元は監督本人の名義「ひろゆ～」。クレジットはストアページに明記されている——監督：ひろゆ～、イラスト：てんみやきよ、編集：めめこ、音楽：鈴木ぷよ、プログラム：すいぼつマン。専任の検証でSteam公式API・Steamのpublisher検索・4Gamerを確認したところ、ひろゆ～名義で出ているのはBRELOK・PENTALOOP・BAKUと各サウンドトラックという自分たちの作品だけで、外部発売元も、大手との資本・契約関係も検出されなかった。発売日は2025年8月24日、価格¥620。54件のレビュー(好評54件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は存在しない。Steam自身のコンテンツディスクリプタには一点だけ注記があり、「一部の場面に流血と殺人の描写を含む」——「Cute」タグと、眠れない動物たちという顔ぶれの隣に、それが並んでいる。性的な要素はなく、年齢ゲートもない。対応言語は日本語のみで英語オプションは一切存在せず、54件のうち51件が日本語レビュー、英語はちょうど1件だ。",
+      },
+      {
+        name_en: "Doki Doki Literature Club!",
+        name_ja: "Doki Doki Literature Club!",
+        status: "established",
+        steam: "https://store.steampowered.com/app/698780/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Doki Doki Literature Club!, which greeted a generation of players with pastel colours and a cheerful club-room premise and then spent the rest of its running time proving that the surface had been a door, not the room. It established the modern shape of the game that is deliberately not what its own presentation says it is. BAKU is not an official Doki Doki work, and this lineage is a comparison drawn by this site rather than a stated influence; it is also a partial one, since Doki Doki turned that idea toward metafiction and whether BAKU does anything of the sort is not something we know. What they share is narrower and quite specific: a soft, cute, low-stress surface offered in good faith, an explicit promise that something is being withheld, and a content warning that does not match the pictures.",
+        desc_ja: "この味の原点——Doki Doki Literature Club!。パステルカラーと、明るい文芸部という前提で一世代のプレイヤーを迎え入れておきながら、残りの上映時間すべてを使って「その表層は部屋ではなく扉だった」と証明してみせた作品だ。自分自身の見せ方が語ることと、意図的に違うものであるゲーム、というかたちを現代に確立した。BAKUは公式のDoki Doki作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。しかも部分的な一致だ——Doki Dokiはその発想をメタフィクションの方向へ振り切ったが、BAKUがそうした類のことをするかどうかは当サイトの知るところではない。両者が共有しているのはもっと狭く、そして具体的な一点である。誠実に差し出された柔らかく可愛らしい低ストレスの表層、何かを伏せているという明示的な予告、そして絵柄と噛み合わないコンテンツ警告だ。",
+      },
+    ],
+    en: {
+      title: "BAKU - you are the dream-eating creature of Japanese folklore, and sleepless animals come to you one at a time. It plays as a gentle spot-the-difference, and how well you do at it decides their endings. Made by circle Hirometen for ¥620. Positive at 100 percent over 54 reviews, Japanese-only with exactly one English review",
+      description: "A spot-the-difference adventure: you are a baku, the dream-eating creature, and animals come to you complaining they cannot sleep. Compare two illustrations, find what is wrong, eat the nightmare. Your performance at that gentle puzzle branches the endings, and the store adds one line before stopping: this story has a secret. Made by circle Hirometen, self-published under the director's own name. Positive at 100 percent over 54 reviews, Japanese-only.",
+      h1a: "You are a baku, the creature that eats dreams, and one more sleepless animal has come to you today. ",
+      h1flip: "You will help it by finding what is different between two almost identical pictures, and how well you do decides what becomes of it",
+      h1b: ".",
+      lede: "A spot-the-difference adventure made by the circle Hirometen and published under the director's own handle, Hiroyu. Per Steam's own listing, you are a baku, the creature from Japanese folklore that eats dreams, and today, as on every other day, one more animal has come to you complaining that it cannot sleep. Eat the nightmare; save the troubled animals. Then the store text adds one line and stops: however, this story has a secret. The game itself is single-player spot-the-difference, two illustrations side by side and you find what is wrong between them, and what makes it more than a quiet puzzle is that the endings branch according to how you do at it, so the gentlest possible mechanic, comparing two almost-identical cute pictures, is the thing deciding what becomes of the animal in front of you. Playtime runs one to two hours, and the circle notes that they deliberately build games at a length that is easy to stream. Credits are given plainly on the store page: director Hiroyu, illustration Tenmiyakiyo, editing Memeko, music Suzuki Puyo, programming Suibotsuman. A dedicated check of Steam's own API, Steam's publisher search, and 4Gamer found that everything published under the Hiroyu name is the circle's own work, BRELOK, PENTALOOP, BAKU and their soundtracks, with no external publisher and no capital or contractual tie to any large company; the Steam support contact is not a corporate address but the director's own personal site, where they have written up their own circle history going back to 2020. Released August 24, 2025 at ¥620, it is Positive at 100 percent over 54 reviews (54 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure on its page at all. Per Steam's own content descriptors it carries one note, that the game contains depictions of bloodshed and murder in some scenes, which sits at an interesting angle next to its Cute tag and its cast of sleepless animals; there is nothing sexual, and no age gate. It supports Japanese only, with no English option whatsoever, and of its 54 reviews 51 are in Japanese against exactly one in English. At 54 reviews the sample is still thin, and this pick says so plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text the endings branch on your spot-the-difference performance, which quietly makes accuracy into a moral instrument: the animal in front of you is not asking you to be brave or fast, it is asking you to look carefully, and the game is prepared to hold you to that.",
+        "The store page tells you outright that the story has a secret and then declines to say anything more, so you go in already watching for the seam, and a game about finding differences has arranged for you to be searching the whole time, including in places it never marked.",
+        "Steam's own content descriptors note bloodshed and murder in some scenes, and that note is sitting directly beside the Cute tag and a queue of animals who just want to sleep; nothing in the presentation prepares you for it, which is presumably the point.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a gentle mechanic asked to carry real weight: spot-the-difference where your accuracy, not your reflexes, decides which ending an animal gets",
+        "You want a genuinely small Japanese circle, five named people, self-published under the director's own handle with no external publisher on anything they have released",
+        "You want a Positive title (100 percent over 54 reviews) that is completely walled off from English: no English option exists at all, and exactly one of its reviews is in that language",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 54 reviews with a perfect score is thin enough that a single negative would move it, and this pick says so plainly",
+        "You want the cute presentation to be the whole story; Steam's own content descriptors note bloodshed and murder in some scenes, and the store itself warns that something is being withheld",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "BAKU -バク- - あなたは夢を食べるバク。眠れない動物が一匹ずつ訪ねてくる。遊びは穏やかなまちがい探しで、その出来がその子の結末を決める。制作はサークル・ひろめてん、価格¥620。54件のレビューで好評率100%、日本語のみで英語レビューはちょうど1件",
+      description: "まちがい探し×アドベンチャー。あなたは夢を食べるバクで、眠れないと訴える動物たちがやってくる。二枚のイラストを見比べ、間違いを見つけ、悪夢を食べる。その穏やかなパズルの出来がエンディングを分岐させる。そしてストア文言は一行だけ足して黙る——この物語には秘密があります。制作はサークル・ひろめてん、監督本人の名義で自主流通。54件のレビューで好評率100%、日本語のみ。",
+      h1a: "あなたは夢を食べるバク。今日もまた、眠れない動物が一匹訪ねてくる。",
+      h1flip: "助ける方法は、ほとんど同じ二枚の絵の違いを見つけること。そしてその出来が、その子の行く末を決める",
+      h1b: "。",
+      lede: "制作はサークル「ひろめてん」、発売元は監督本人の名義「ひろゆ～」による、まちがい探しのアドベンチャー。Steam自身の表記によれば、あなたはバクだ——夢を食べる、あの日本の伝承の生き物である。そして今日も一匹、あなたのもとに不眠を訴える動物がやってきた。悪夢を食べて、悩める動物たちを救ってあげよう。そこまで語ったところで、ストア文言は一行だけ足して黙る。「ただし、この物語には秘密があります」。ゲーム自体はシングルプレイ専用のまちがい探しで、左右に並んだイラストを見比べ、間違っているところを見つける。これを静かなパズル以上のものにしているのは、まちがい探しの結果によってエンディングが分岐するという一点だ。ほとんど同じ可愛い絵を二枚見比べるという、考えうる限り最も穏やかな操作が、目の前の動物がどうなるかを決めている。プレイ時間は1〜2時間で、サークルは「実況動画や配信等で遊びやすい時間設定のゲームを制作しています」と自ら述べている。クレジットはストアページに明記されている——監督：ひろゆ～、イラスト：てんみやきよ、編集：めめこ、音楽：鈴木ぷよ、プログラム：すいぼつマン。専任の検証でSteam公式API・Steamのpublisher検索・4Gamerを確認したところ、ひろゆ～名義で出ているのはBRELOK・PENTALOOP・BAKUと各サウンドトラックという自分たちの作品だけで、外部発売元も大手との資本・契約関係も検出されなかった。Steamのサポート窓口も法人の住所ではなく監督本人の個人サイトで、そこには2020年まで遡るサークル遍歴が自分の言葉で書かれている。発売日は2025年8月24日、価格¥620。54件のレビュー(好評54件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、ストアページにAI生成コンテンツの開示欄は存在しない。Steam自身のコンテンツディスクリプタには一点だけ注記があり、「一部の場面に流血と殺人の描写を含む」——「Cute」タグと、眠れない動物たちという顔ぶれの隣に、それが並んでいる。性的な要素はなく、年齢ゲートもない。対応言語は日本語のみで英語オプションは一切存在せず、54件のうち51件が日本語レビュー、英語はちょうど1件だ。54件という母数はまだ薄く、その点も飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、エンディングはまちがい探しの出来によって分岐する。つまり「正確さ」が静かに倫理の道具にされている——目の前の動物は、勇敢さも素早さも求めていない。ただ、よく見てくれと言っている。そしてこのゲームは、その求めに対してあなたを本当に責任者として扱う用意がある。",
+        "ストアページは「この物語には秘密があります」と先に告げて、それ以上は何も言わない。だからプレイヤーは最初から継ぎ目を探しながら入っていくことになる——違いを見つけるゲームが、印を付けていない場所まで含めて、ずっと探させ続ける状態を用意しているわけだ。",
+        "Steam自身のコンテンツディスクリプタは、一部の場面に流血と殺人の描写があると注記している。その注記は「Cute」タグと、ただ眠りたいだけの動物の列のすぐ隣に置かれている。見せ方の側には、それに備えさせるものが何一つない——おそらくそれこそが狙いだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "穏やかな操作に本物の重さを背負わせたものが欲しい人——反射神経ではなく正確さが、その動物のエンディングを決めるまちがい探し",
+        "本当に小規模な日本のサークルが欲しい人——5人の名前が明記され、これまで出したすべてを監督本人の名義で自主流通してきた",
+        "「好評」タイトル(54件で100%)ながら、英語から完全に隔てられているものを掴みたい人——英語オプション自体が存在せず、英語レビューはちょうど1件",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——54件での満点は、不評が1件付くだけでも動く薄さで、この記事はそれを飾らずそのまま伝えている",
+        "可愛い見せ方がそのまま中身であってほしい人——Steam自身のコンテンツディスクリプタは一部の場面の流血と殺人を注記しており、ストア自身も何かを伏せていると予告している",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
