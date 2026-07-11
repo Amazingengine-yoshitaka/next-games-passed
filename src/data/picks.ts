@@ -9664,6 +9664,124 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "sakamoto-dangerous-barrage": {
+    published: "2026-07-27",
+    publishAt: "2026-07-27",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式タグ(Action/Casual/Indie)がゲーム性を捉えていないため新設
+    //   "time-stop-bullet-hell"(避けきれない弾幕を時間停止と瞬間移動でしのぎ、停止中にカーソルで
+    //   弾に触れてエネルギーを吸収し反撃する見下ろし型シューティング)。
+    // lineageは新規anchorを作らず既存の"superhot"を再利用する(凍った一瞬のなかで弾幕を読み、
+    //   計画してから動く、という核が直接の型として当てはまるため)。
+    // 【重要な判断の訂正を記録する】本作は以前のスカウトラウンドでも浮上したが、その時は
+    //   「開発者の別作品『ローション侍』にSexual Contentタグあり」というブランド隣接リスクを理由に
+    //   見送っていた。今回あらためて実物を確認したところ、この見送りは私の確認不足によるものだった。
+    //   (a)本作自身のcontent_descriptorsはids=[]・notes=null、ストアタグ全20件にも性的表現関連は皆無。
+    //   (b)過去作『ローション侍』についてもValveの公式分類はids=[]・notes=nullで、Mature Content
+    //   Descriptionボックスも年齢ゲートも存在しない——付いているのはユーザー投票による「Sexual
+    //   Content」タグ1件のみ。(c)そのローション侍の日本語ストア本文を実読すると、内容は「捕らえられ
+    //   身体改造の末、全身からローションが出続ける体になってしまった信長」が、そのヌメりを活かして
+    //   壁を蹴って滑り、忍者城からの脱出タイムを競うスラップスティックなタイムアタックアクションで
+    //   あり、性的な内容ではない。当該タグはタイトルの語感に対する俗な冗談タグと判断できる。
+    //   ユーザータグをValveの公式分類と同一視した最初の判断を訂正し、今回は採用する(自信度: 中〜高)。
+    // developer/publisher 烈帝国(Retsu Teikoku、自社発売・第三者パブリッシャーなし)は、代表・烈氏が
+    //   率いるゲーム制作サークル。ファミ通・AUTOMATON(日本語版)がいずれも「烈氏が代表を務めるゲーム
+    //   制作サークル・烈帝国」と報じている。開発者インタビュー(dkrevel.com)によればプログラマ1名+
+    //   プランナー1名の2人体制で、「C++にてDXライブラリを使用させてもらい作成しました」と述べている
+    //   ——DXライブラリは日本語ドキュメントのみで提供される日本製ライブラリであり、事実上日本の同人
+    //   開発者に固有の選択である。加えて題材が幕末・薩長同盟・ペリー来航という日本史の前提知識を
+    //   要するもので、公式Xも日本語運用。ただし「日本国籍/日本法人」と明記した第三者メディアの直接
+    //   文言までは取れておらず、状況証拠の積み上げによる判断である(自信度: 中〜高)。
+    // 過去作『ローション侍』(リリース日2020年6月3日、122件で好評率98.4%)とその続編、Switch版も
+    //   すべて烈帝国の自社販売で、大手・海外配信専門パブリッシャーの関与は全点確認して一件もなし。
+    // 西側での知名度: スカウトがAUTOMATON WEST・Siliconera・Kotaku・PC Gamer・Rock Paper Shotgun・
+    //   Destructoid・GameSpotをドメイン限定で確認し編集記事ゼロ。英語圏でヒットするのはIGDB由来の
+    //   自動生成DBページ・IsThereAnyDeal・gg.deals等の非編集データベースのみで、これらを実記事と
+    //   誤認しないよう個別に判定済み。日本語圏ではファミ通・AUTOMATON(2回)・Gamer.ne.jp・
+    //   もぐらゲームスが扱っており、「日本では知られているが西側は素通り」という非対称が明確。
+    // content_descriptors は ids=[]・notes=null(API実測)。Mature Content Descriptionボックスなし。
+    //   AI Generated Content Disclosure欄も存在せず非AI。is_free=false・購入可能(Add to Cartボタン
+    //   実測)、アーリーアクセスではなく正式リリース済み。
+    // west_unreached: 対応言語は英語・簡体字中国語・韓国語を含む4言語だが、appreviews API実測で
+    //   全24件のうち日本語18件(75%)、英語6件(25%)、簡体字中国語と韓国語は0件——英語比率は日本語より
+    //   明確に低く、中国語圏に偏る「隠れ中国市場ヒット」型でもない。英語対応済みでも西へ未到達の例
+    //   として obscurity: "deep" を採用する。レビュー総数24件は統計的にはまだ薄く、その点も正直に
+    //   開示する。
+    meta: { genre: "time-stop-bullet-hell", lineage: "superhot", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 24, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "Sakamoto Dangerous Barrage",
+        name_ja: "サカモト危機弾発",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2095650/Sakamoto_Dangerous_Barrage/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, Sakamoto Ryoma has brokered a meeting between the Satsuma and Choshu domains to bring down the shogunate, and then, mid-alliance, a wormhole opens and everyone present is flung into 'Fluffy Land'; your job is to find the scattered historical figures and get the alliance signed anyway. It is a top-down bullet-hell shooter in which Ryoma has the power to stop time and teleport, which, as the store text notes in passing, is not in the textbooks. When a barrage looks unavoidable, freeze it and blink somewhere safe, and while time is stopped, brushing bullets with your cursor powers up Ryoma's gun, absorbing the energy of what was about to kill you and handing it back as an attack. The supporting cast is the same joke played straight: Saigo Takamori, the Satsuma leader, can also stop time and is fairly sure the wormhole was Choshu's fault; Shibusawa Eiichi, described simply as the man who recently became the ten-thousand-yen note, was on the shogunate's side and got swept in while investigating the alliance; and Matthew Perry, who arrived in Japan on the black ships, has nothing to do with the alliance and is now busy demanding that Fluffy Land open its borders. Ryoma himself never speaks at all. Made and self-published by Retsu Teikoku, a game-making circle led by a creator going by Retsu, which Famitsu and AUTOMATON's Japanese edition both describe as exactly that; per a developer interview it is a two-person team, a programmer and a planner, working in C++ with DX Library, a Japanese-made library documented only in Japanese. Their earlier Lotion samurai, a slapstick time-attack game in which a body-modified Nobunaga oozes lotion and can only move by kicking off walls to slide, sits at 98.4 percent over 122 reviews, and every title including its Switch release has been self-published with no external publisher at any stage. Released June 18, 2025 at ¥350, it is Positive at 100 percent over 24 reviews (24 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and no Mature Content box at all, and per Steam's own content descriptors, nothing sexual. It supports English, Simplified Chinese, and Korean alongside Japanese, yet 18 of its 24 reviews are in Japanese against 6 in English and none at all in Chinese or Korean; a dedicated check of AUTOMATON WEST, Siliconera, Kotaku, PC Gamer, Rock Paper Shotgun, Destructoid, and GameSpot turned up no editorial coverage, only auto-generated database listings.",
+        desc_ja: "Steam自身の表記によれば、薩摩藩と長州藩の仲を取り持ち幕府を倒すため薩長同盟の場を設けた坂本龍馬は、その同盟の最中に突如現れたワームホールによって、その場の全員もろとも「ふわふわランド」へ転移してしまう。散り散りになった偉人たちを探し出し、それでも薩長同盟を成功させるのがあなたの仕事だ。ゲームは見下ろし型の弾幕シューティングで、坂本龍馬は時間停止と瞬間移動の力を持っている——ストア文言自身が括弧書きで「教科書には載っていない」と添えるとおりに。弾が避けきれないと思ったら時間を止めて安全な場所へ瞬間移動すればよく、時間停止中はカーソルが弾に触れると龍馬の銃がパワーアップする。今まさに自分を殺そうとしていた弾のエネルギーを吸収し、そのまま強力な攻撃として撃ち返すわけだ。脇を固める面々も同じ冗談を大真面目にやっている——薩摩藩のリーダー西郷隆盛もまた時間を止めることができ、ワームホールが現れたのは長州藩のせいだと思っている。渋沢栄一は「最近日本で一万円札になった人」と紹介され、幕府側の人間でありながら薩長同盟を調査していてワームホールに巻き込まれた。黒船で来航したマシュー・ペリーは薩長同盟には無関係で、今は「ふわふわランド」に開国を迫っている。そして龍馬本人は全然喋らない。制作・自社発売は烈帝国。代表・烈氏が率いるゲーム制作サークルで、ファミ通・AUTOMATON(日本語版)ともに同じ表現で報じている。開発者インタビューによればプログラマ1名とプランナー1名の2人体制で、「C++にてDXライブラリを使用させてもらい作成しました」という——DXライブラリは日本語ドキュメントのみで提供される日本製ライブラリだ。過去作『ローション侍』(捕らえられ身体改造の末、全身からローションが出続ける体になってしまった信長が、そのヌメりを活かして壁を蹴って滑り、忍者城からの脱出タイムを競うスラップスティックなタイムアタック)は122件で好評率98.4%、Switch版を含め全作品が外部発売元を介さない自社販売だ。発売日は2025年6月18日、価格¥350。24件のレビュー(好評24件・不評0件、Steam自身のレビューAPI実測)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなくMature Contentの注意書き自体も存在せず、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語に加えて英語・簡体字中国語・韓国語にも対応しているが、24件のうち18件が日本語レビューで、英語は6件、中国語と韓国語は0件だ。AUTOMATON WEST・Siliconera・Kotaku・PC Gamer・Rock Paper Shotgun・Destructoid・GameSpotを個別に確認したが編集記事は一件もなく、見つかるのは自動生成のデータベース掲載だけだった。",
+      },
+      {
+        name_en: "SUPERHOT",
+        name_ja: "SUPERHOT",
+        status: "established",
+        steam: "https://store.steampowered.com/app/322500/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: SUPERHOT, released in 2016 by the Superhot Team, built its whole identity on a single twist, time moves only when you move. Stand still and the world freezes; step, aim, or fire and it surges forward, turning every encounter into a puzzle you solve inside frozen moments. It defined the time-flows-with-your-motion feel. Sakamoto Dangerous Barrage is not an official SUPERHOT work, and this lineage is a comparison drawn by this site rather than a stated influence, but the core is the same bargain with the clock: a barrage you could never dodge in real time becomes readable the instant Ryoma freezes it, and the frozen moment is where you both plan your escape and collect the energy to strike back.",
+        desc_ja: "この味の原点——SUPERHOT。2016年にSuperhot Teamが放った本作は、ただ一つの捻り——「時間は、自分が動いたときだけ進む」——にすべてを賭けた。静止すれば世界は凍り、踏み出し、狙い、撃てば時間が一気に走り出す。あらゆる遭遇が、凍った一瞬のなかで解く謎になる。「時間が自分の動きと共に流れる」という手触りを確立した作品だ。サカモト危機弾発は公式のSUPERHOT作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較だが、時計と交わす取引の核は同じである——実時間ではとうてい避けきれない弾幕が、龍馬が凍らせた瞬間に読めるものへと変わり、その凍った一瞬こそが、逃げ道を組み立て、同時に撃ち返すためのエネルギーを集める場所になる。",
+      },
+    ],
+    en: {
+      title: "Sakamoto Dangerous Barrage - a top-down bullet hell where Sakamoto Ryoma, flung mid-Satcho-Alliance into 'Fluffy Land' by a wormhole, freezes time and teleports out of barrages he cannot dodge, absorbing their energy to fire back. Made by 2-person circle Retsu Teikoku. Positive at 100 percent over 24 reviews, 18 of them in Japanese",
+      description: "A top-down bullet hell with a premise straight out of a history textbook that got hit by a wormhole: Sakamoto Ryoma, mid-negotiation of the Satcho Alliance, is flung into 'Fluffy Land' and must find the scattered historical figures. He stops time and teleports out of barrages he cannot dodge, absorbing bullet energy to fire back. Made and self-published by 2-person circle Retsu Teikoku. Positive at 100 percent over 24 reviews, with no Western editorial coverage at all.",
+      h1a: "Sakamoto Ryoma is brokering the alliance that will topple the shogunate when a wormhole drops everyone into 'Fluffy Land', ",
+      h1flip: "so he stops time, teleports out of the barrage, and absorbs the bullets that were about to kill him",
+      h1b: ".",
+      lede: "A top-down bullet-hell shooter made and self-published by Retsu Teikoku, a game-making circle led by a creator going by Retsu, which Famitsu and AUTOMATON's Japanese edition both describe in exactly those terms; per a developer interview it is a two-person team, a programmer and a planner, working in C++ with DX Library, a Japanese-made library documented only in Japanese. Per Steam's own listing, Sakamoto Ryoma has brokered a meeting between the Satsuma and Choshu domains to bring down the shogunate, and then, mid-alliance, a wormhole opens and everyone present is flung into 'Fluffy Land'; your job is to find the scattered historical figures and get the alliance signed anyway. Ryoma has the power to stop time and teleport, which, as the store text notes in passing, is not in the textbooks. When a barrage looks unavoidable, freeze it and blink somewhere safe, and while time is stopped, brushing bullets with your cursor powers up Ryoma's gun, absorbing the energy of what was about to kill you and handing it back as an attack. The supporting cast is the same joke played straight: Saigo Takamori can also stop time and is fairly sure the wormhole was Choshu's fault; Shibusawa Eiichi, described simply as the man who recently became the ten-thousand-yen note, got swept in while investigating the alliance from the shogunate's side; and Matthew Perry, who arrived on the black ships, has nothing to do with any of it and is now busy demanding that Fluffy Land open its borders. Ryoma himself never speaks at all. The circle's earlier Lotion samurai, a slapstick time-attack game in which a body-modified Nobunaga oozes lotion and can only move by kicking off walls to slide, sits at 98.4 percent over 122 reviews, and every title including its Switch release has been self-published with no external publisher at any stage. Released June 18, 2025 at ¥350, it is Positive at 100 percent over 24 reviews (24 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and no Mature Content box at all, and per Steam's own content descriptors, nothing sexual. It supports English, Simplified Chinese, and Korean alongside Japanese, yet 18 of its 24 reviews are in Japanese against 6 in English and none at all in Chinese or Korean; a dedicated check of AUTOMATON WEST, Siliconera, Kotaku, PC Gamer, Rock Paper Shotgun, Destructoid, and GameSpot turned up no editorial coverage, only auto-generated database listings. With 24 reviews the sample is still thin, and this pick says so plainly.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Per Steam's own text, the freeze is not a panic button but the actual reading room: a wall of bullets that means nothing at full speed becomes a legible shape the moment Ryoma stops the clock, and only then do you get to decide where to be.",
+        "Brushing bullets with your cursor during the freeze converts them into your own firepower, so the thing you were fleeing a second ago is the thing you are now spending, and greed and survival end up pulling on exactly the same input.",
+        "The whole premise is a school textbook with a wormhole punched through it, Ryoma silent throughout, Saigo blaming Choshu for the wormhole, Perry still demanding a country open its borders, and playing it straight-faced is what makes the joke land instead of collapse.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a bullet hell where stopping time is the core verb, not a panic button: freeze, read the wall, teleport, and take the bullets with you as ammunition",
+        "You want a genuinely small Japanese circle, two people working in C++ with a Japanese-only library, self-publishing every title including their Switch release",
+        "You want a Positive title (100 percent over 24 reviews) that supports English and still has no Western editorial coverage whatsoever: 18 of its reviews are in Japanese against 6 in English",
+      ],
+      bad: [
+        "You want a large, statistically settled review base; 24 reviews is thin enough that a single negative review would move the percentage, and this pick says so plainly",
+        "You want the history played respectfully; this is a comedy that sends the Satcho Alliance through a wormhole into Fluffy Land and gives Ryoma powers the textbooks decline to mention",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "サカモト危機弾発 - 薩長同盟の最中にワームホールで「ふわふわランド」へ飛ばされた坂本龍馬が、避けきれない弾幕を時間停止と瞬間移動でしのぎ、その弾のエネルギーを吸収して撃ち返す見下ろし型シューティング。制作は2人組サークル烈帝国。24件のレビューで好評率100%、うち18件が日本語",
+      description: "見下ろし型の弾幕シューティング——教科書の一場面にワームホールが空いたような前提から始まる。薩長同盟を取り持つ最中の坂本龍馬が「ふわふわランド」へ飛ばされ、散り散りになった偉人たちを探す。避けきれない弾幕は時間停止と瞬間移動でしのぎ、弾のエネルギーを吸収して撃ち返す。制作・自社発売は2人組サークル烈帝国。24件のレビューで好評率100%、西側の編集記事は一件も存在しない。",
+      h1a: "幕府を倒すための同盟をまとめようとしていた坂本龍馬は、ワームホールで一同まとめて「ふわふわランド」へ飛ばされる。",
+      h1flip: "だから彼は時間を止め、弾幕の外へ瞬間移動し、自分を殺すはずだった弾を吸収する",
+      h1b: "。",
+      lede: "制作・自社発売は烈帝国による見下ろし型の弾幕シューティング。代表・烈氏が率いるゲーム制作サークルで、ファミ通・AUTOMATON(日本語版)ともに同じ表現で報じている。開発者インタビューによればプログラマ1名とプランナー1名の2人体制で、「C++にてDXライブラリを使用させてもらい作成しました」という——DXライブラリは日本語ドキュメントのみで提供される日本製ライブラリだ。Steam自身の表記によれば、薩摩藩と長州藩の仲を取り持ち幕府を倒すため薩長同盟の場を設けた坂本龍馬は、その同盟の最中に突如現れたワームホールによって、その場の全員もろとも「ふわふわランド」へ転移してしまう。散り散りになった偉人たちを探し出し、それでも薩長同盟を成功させるのがあなたの仕事だ。龍馬は時間停止と瞬間移動の力を持っている——ストア文言自身が括弧書きで「教科書には載っていない」と添えるとおりに。弾が避けきれないと思ったら時間を止めて安全な場所へ瞬間移動すればよく、時間停止中はカーソルが弾に触れると龍馬の銃がパワーアップする。今まさに自分を殺そうとしていた弾のエネルギーを吸収し、そのまま強力な攻撃として撃ち返すわけだ。脇を固める面々も同じ冗談を大真面目にやっている——西郷隆盛もまた時間を止めることができ、ワームホールが現れたのは長州藩のせいだと思っている。渋沢栄一は「最近日本で一万円札になった人」と紹介され、幕府側でありながら薩長同盟を調査していて巻き込まれた。黒船で来航したマシュー・ペリーは薩長同盟には無関係で、今は「ふわふわランド」に開国を迫っている。そして龍馬本人は全然喋らない。同サークルの過去作『ローション侍』(捕らえられ身体改造の末、全身からローションが出続ける体になってしまった信長が、そのヌメりを活かして壁を蹴って滑り、忍者城からの脱出タイムを競うスラップスティックなタイムアタック)は122件で好評率98.4%、Switch版を含め全作品が外部発売元を介さない自社販売だ。発売日は2025年6月18日、価格¥350。24件のレビュー(好評24件・不評0件)で好評率100%の「好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなくMature Contentの注意書き自体も存在せず、Steam自身のコンテンツディスクリプタ上性的な要素もない。日本語に加えて英語・簡体字中国語・韓国語にも対応しているが、24件のうち18件が日本語レビューで、英語は6件、中国語と韓国語は0件だ。AUTOMATON WEST・Siliconera・Kotaku・PC Gamer・Rock Paper Shotgun・Destructoid・GameSpotを個別に確認したが編集記事は一件もなく、見つかるのは自動生成のデータベース掲載だけだった。24件という母数はまだ薄く、その点も飾らずそのまま伝える。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の表記によれば、時間停止は緊急ボタンではなく、読むための部屋そのものだ。全速力では何の意味も持たない弾の壁が、龍馬が時計を止めた瞬間に読める形へと変わり、そこで初めて「どこに居るか」を選べるようになる。",
+        "停止中にカーソルで弾に触れると、それがそのまま自分の火力に変わる。一秒前まで逃げていた対象が、今は使う資源になっているわけで、欲張りと生存がまったく同じ操作を引っ張り合うことになる。",
+        "前提は、教科書にワームホールを一発空けたようなものだ。龍馬は終始しゃべらず、西郷はワームホールを長州のせいだと思っており、ペリーは相変わらずどこかの国に開国を迫っている。それを大真面目にやり切っていることが、この冗談を崩さず成立させている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "時間停止が緊急回避ではなく中心動詞になっている弾幕シューティングが欲しい人——凍らせ、壁を読み、瞬間移動し、その弾を弾薬として持っていく",
+        "本当に小規模な日本のサークルが欲しい人——2人がC++と日本語のみのライブラリで作り、Switch版を含め全作品を自社販売してきた",
+        "「好評」タイトル(24件で100%)ながら、英語に対応していてなお西側の編集記事が一件も存在しないものを掴みたい人——レビューは日本語18件に対し英語6件",
+      ],
+      bad: [
+        "統計的に安定した母数が欲しい人——24件は不評が1件付くだけでも好評率が動く薄さで、この記事はそれを飾らずそのまま伝えている",
+        "史実を真面目に扱ったものが欲しい人——本作は薩長同盟をワームホールでふわふわランドへ送り込み、龍馬に教科書が触れない能力を与えるコメディだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
