@@ -11427,6 +11427,124 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "bomb-caterpillar": {
+    published: "2026-08-03",
+    publishAt: "2026-08-03",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Action/Adventure/Indie)がゲーム性を捉えていないため新設
+    //   "blast-recoil-platformer"(全身が爆弾でできたいもむしを操作し、自らの爆発の反動でジャンプ・
+    //   ダッシュしてステージを渡る探索パズルプラットフォーマー。Steam自身のFeatures欄も
+    //   "diverse puzzle solutions that change depending on how you use bombs" と明記)。
+    // developer/publisher: Steam appdetails APIをWebFetch実測、developers=["NamaTakahashi",
+    //   "tiny cactus studio","Tsuyomi"]・publishers=["NamaTakahashi"](セルフパブリッシュ)を確認済み。
+    //   required_age=0、is_free=false、price_overview実測¥1,200(任意DLC「Öoo Original Soundtrack」
+    //   ¥800も別途確認)。release_date実測はSteam表記で"7 Aug, 2025"(coming_soon=false=正式リリース
+    //   済みでアーリーアクセスではない、2025年8月7日リリース)。content_descriptors は ids=[]・
+    //   notes=null(API実測・性的コンテンツなし)。AI Generated Content Disclosure欄はストアページに
+    //   存在せず非AI。supported_languages実測で103言語(英語含む)対応を確認済み。
+    // lineage: 新規anchor "elechead" を、同一開発者NamaTakahashi+Tsuyomiによる2021年デビュー作
+    //   ElecHead(steam appid 1456880)で作成する(lineage_anchor_key=steam_url、本人採用済みの確定
+    //   事実)。ElecHead自身のappdetailsをWebFetch実測: developers=["NamaTakahashi","Tsuyomi"]で
+    //   Tsuyomi氏がÖooと共通のサウンド担当と一致、short_descriptionが文字通り絵文字のみ
+    //   "⚡＋🤖＋🧩"でテキストレス方針が確認できた。ElecHead本編はElecの帯電した身体が触れた床/壁へ
+    //   自動で電流を流し、着脱可能な頭部を投げて離れた場所を起動する「身体パーツ設置→環境効果連鎖」の
+    //   核を持つ(AUTOMATON記事WebFetch実測)。Öooはこの核を電流から起爆に置き換えた直系のDNA継承。
+    //   既存 LINEAGE_ANCHOR に "elechead"/appid 1456880 の重複が無いことをgrep実測確認済み。
+    // ElecHeadの評価: AUTOMATON記事(WebFetch実測)によれば、Spelunky作者Derek Yu・Celeste開発者
+    //   Maddy Thorson・Downwell作者Moppin・SIE吉田修平氏・Nier生みの親ヨコオタロウ氏・VVVVVV作者
+    //   Terry Cavanagh氏本人から称賛を受けた(CavanaghはElecHeadの直接の影響元と明言され、Takahashi
+    //   氏本人が「あなたの作品VVVVVVがなければElecHeadは生まれなかった」と返信済み)。東京ゲームショウ
+    //   「Sense of Wonder Night」ベストゲームデザイン賞(正式リリース前年)、日本ゲーム大賞アマチュア
+    //   部門優秀賞も受賞済み(同記事実測)。この前作自体が既に海外著名人に届いていたという事実が、
+    //   かつて本サイトがÖoo自体を見送った理由だった(dungeon-bomber/heartreasure-stellar-journeyの
+    //   各コメントで既出)。今回は本人の採用判断により、その経緯込みで正直に扱う。
+    // west_unreached: appreviews API実測(language別)で total≈6,466(確定値の6,465とほぼ一致)、
+    //   english≈2,131(32.95%相当)、schinese=2,799(43.3%)、japanese=778(12.0%)を再確認——最大言語
+    //   セグメントは簡体字中国語で、英語は僅差の2位、日本語は3位に留まる。それでいて西側への到達が
+    //   ゼロなわけではない: AUTOMATON WEST記事(WebFetch実測)が本作を"breakout indie hit"と呼び、
+    //   D.I.C.E Awardsゲームデザイン部門ノミネート、コンソール展開向けパブリッシャーAMATA Gamesの
+    //   起用(PS5/Switch、Xbox Series X|Sは同記事執筆月の下旬に予定と報道)を報じている——ただしこれは
+    //   同記事の主題(タイトルの正式な読み方を開発者自身が決めていないという逸話。ファンの通称は
+    //   「Bomb Caterpillar」)に付随する言及であり、専用の批評レビュー記事ではない。誇張せず「西側
+    //   到達は始まっているが、レビュー母数で見た中心はなお中国語圏」という実態を obscurity: "wall"
+    //   (高評価だが壁の向こう)/ reachState: "unreached_west"(noEnglish=falseのlofi-girl/
+    //   chill-with-you-lofi-story型判断)で正直に伝える。reviewBandは持たせない: 6,465件は既存の
+    //   "hundreds"にも"around_1k"にも収まらない桁(lofi-girl/chill-with-you型の判断)。
+    meta: { genre: "blast-recoil-platformer", lineage: "elechead", obscurity: "wall", reachState: "unreached_west", rarity: { reviews: 6465, positivePct: 99, noEnglish: false } },
+    games: [
+      {
+        name_en: "Öoo",
+        name_ja: "Öoo",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2721890/oo/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, tagged with the line \"A Bomb Caterpillar's Big Adventure!,\" Öoo is a puzzle platformer starring a small caterpillar built entirely out of explosive segments: instead of walking or jumping in the ordinary sense, it advances by detonating pieces of its own body and riding the recoil of that blast into a jump or a dash, so movement and puzzle-solving are the same act. Steam's own \"Features\" list frames the result as \"a dense experience that can be enjoyed in just 2–3 hours,\" built on \"diverse puzzle solutions that change depending on how you use bombs\" to uncover hidden paths across the map, set in \"a cute yet oddly mysterious world,\" and, in the same breath, promises the game carries \"no text\" at all, so it can be \"enjoyed without language barriers.\" That wordless design is a philosophy this same core team already proved out once before: the earlier game is ElecHead, self-published by NamaTakahashi with composer Tsuyomi, whose short-circuiting robot hero had to place his own detachable, electrically charged head to trigger effects at a distance; ElecHead's own store page still carries no written short description at all, only the symbols \"⚡＋🤖＋🧩\". Öoo is credited to NamaTakahashi (生高橋), directing and self-publishing, tiny cactus studio (はちのす), and composer Tsuyomi (つよみー), continuing straight on from that earlier game. Released August 7, 2025, at ¥1,200 (with an optional ¥800 soundtrack DLC), it supports 103 languages including English and sits at \"Overwhelmingly Positive,\" 99 percent positive across roughly 6,465 reviews per Steam's own review API, the second-largest review count of any pick this site has covered, trailing only Chill with You: Lo-Fi Story's 11,726. It is a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing on file at all (ids: none, notes: none). Despite that scale, its own review-language breakdown resists the easy \"still hidden\" story this site usually tells: Simplified Chinese is the single largest reviewing language at 2,799 reviews (43.3 percent), English is second at 2,130 (32.95 percent), and Japanese trails both at 778 (12.0 percent). The West has genuinely started arriving: AUTOMATON WEST covered it under a headline that calls it a \"breakout indie hit\" in passing, even though the article's actual subject is that NamaTakahashi still refuses to settle on an official pronunciation for the title on purpose, the same tradition as Terry Cavanagh's VVVVVV, a stated influence on both this game and ElecHead, so fans have taken to just nicknaming it \"Bomb Caterpillar.\" The same piece reports a nomination in the D.I.C.E. Awards' game design category and a deal with publisher AMATA Games to bring the game to PlayStation 5 and Nintendo Switch, with an Xbox Series X|S version the outlet said was being planned for later that same month. None of that adds up to undiscovered, but the review numbers are honest about where its center of gravity currently sits: reached by the West, but still led by an audience reading it in Chinese first.",
+        desc_ja: "Steam自身の表記によれば、キャッチコピーは「爆弾いもむしの大冒険!」——Öoo(オー)は、全身が爆発する体節でできた小さないもむしを操作する探索パズルプラットフォーマーだ。ふつうに歩いたり跳んだりするのではなく、自分自身の体の一部を爆発させ、その反動に乗ってジャンプやダッシュへ変える。移動そのものがパズルの一部になる設計だ。Steam自身の「特徴」欄は、これを「2〜3時間で楽しめる濃密な体験」「爆弾の使い方次第で広がる多彩な解法」でマップの隠し道を探し出す仕組みと説明し、舞台は「可愛いけれどどこか不思議な世界」だと謳う。そして同じ欄で「言語テキストは一切なし」であることも明記し、「虫が苦手な人でも安心して楽しめる可愛さ」だとも付け加えている。このテキストレスの設計思想は、同じ制作チームがすでに一度証明済みのものだ——前作ElecHeadは、NamaTakahashi氏が作曲家つよみー氏と組んでセルフパブリッシュした一本で、そのショートサーキットしたロボット主人公は、着脱可能で帯電した自分の頭部を置くことで、離れた場所に効果を発生させて進む。ElecHead自身のストアページも文章による紹介文を一切持たず、記号だけの「⚡＋🤖＋🧩」のみだ。Öooのクレジットは、監督・セルフパブリッシュのNamaTakahashi(生高橋)、tiny cactus studio(はちのす)、作曲つよみー(Tsuyomi)——前作からそのまま続く布陣である。2025年8月7日にリリースされ、価格は¥1,200(任意のサウンドトラックDLC「Öoo Original Soundtrack」¥800も存在)。対応言語は英語を含む103言語で、Steam自身のレビューAPI実測によれば好評率99%の「圧倒的に好評」、レビュー総数は約6,465件——このサイトがこれまで扱ったpickの中でも2番目に多いレビュー数で、最多の『Chill with You : Lo-Fi Story』(11,726件)に次ぐ規模だ。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上も何一つ記載がない(ids:なし、notes:なし)。これほどの規模がありながら、レビューの言語内訳は当サイトがいつも語る「まだ見つかっていない」という単純な物語をそのまま許さない——最大の言語セグメントは簡体字中国語で2,799件(43.3%)、英語は僅差の2位で2,130件(32.95%)、日本語はさらに離れて3位の778件(12.0%)に留まる。西側への到達自体は確かに始まっている。AUTOMATON WESTは、本作を\"breakout indie hit\"(突如ヒットしたインディー作)と見出しの中でさりげなく呼びながら記事化した——ただし記事本体の主題は、NamaTakahashi氏が本作のタイトルの「公式な読み方」を、Terry Cavanagh氏の『VVVVVV』(本作と前作ElecHead両方の公言された影響元)と同じ流儀で、あえて決めていないという逸話であり、ファンはこれを単に「Bomb Caterpillar」と呼び慣わしているという。同記事はさらに、D.I.C.E Awardsゲームデザイン部門へのノミネートと、コンソール展開を担うパブリッシャーAMATA Gamesの起用——PlayStation 5・Nintendo Switch版、そして同記事執筆月の下旬に予定されていたXbox Series X|S版——も報じている。これらは「まだ誰にも見つかっていない」と呼べるほどの無名さではない。だが、レビューの実数が正直に語っているのは、西側にも確かに届き始めてはいるものの、その重心はいまなお中国語で読むプレイヤーたちに率いられている、という実態だ。",
+      },
+      {
+        name_en: "ElecHead",
+        name_ja: "ElecHead",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1456880/ElecHead/",
+        tag_en: "Same developer's earlier game",
+        tag_ja: "同じ開発者の前作",
+        desc_en: "Not a defining-mechanic ancestor from outside the studio, but the same designer's own earlier game, and the clearest DNA source for this one: ElecHead, a puzzle platformer NamaTakahashi self-published on Steam and itch.io, with sound and music by Tsuyomi, the same composer who later scored Öoo. Its hero, the short-circuiting robot Elec, constantly emits electricity, automatically passing a current through whatever he is touching, be it the floor he stands on or a wall he is pressed against, which activates platforms and moves pedestals to open a path forward; his head is also detachable, so he can throw it to charge something out of reach and then walk in to use the effect it triggers, wiring a placed piece of his own body directly into an environmental chain reaction, exactly the idea Öoo would later rebuild around a detonated bomb instead of a conducted current. Its own store page carries no written short description at all, just the symbols \"⚡＋🤖＋🧩,\" the same textless philosophy Öoo goes on to inherit. On release, it drew unusually direct praise from figures across the industry, per AUTOMATON's own coverage: Spelunky creator Derek Yu called it \"a puzzle platformer masterpiece that pushes its unique mechanic to its limits\"; Celeste's Maddy Thorson and Downwell's Moppin both singled it out; Sony's Shuhei Yoshida named it one of his games of the year; Nier creator Yoko Taro praised its clear rules and stress-free puzzle design; and VVVVVV creator Terry Cavanagh, whose own game is a named influence on both ElecHead and Öoo, called it \"short, beautifully designed and a lot of fun,\" prompting NamaTakahashi to reply directly that \"without your work VVVVVV, ElecHead would not have been born.\" It had already taken the Best Game Design Award at Tokyo Game Show's Sense of Wonder Night the year before its full commercial release, plus an excellence award in the amateur division of the Japan Game Awards. Öoo keeps that same idea, that placing one piece of your own body should ripple outward into the level around it, but swaps the conductor for a fuse.",
+        desc_ja: "ジャンル上の外部原点ではなく、同じ制作者自身による前作であり、この味の最も色濃いDNA源——ElecHead。NamaTakahashi氏がSteamとitch.ioでセルフパブリッシュしたパズルプラットフォーマーで、サウンドと音楽はつよみー氏——後にÖooも手がける同じ作曲家が担当した。ショートサーキットしたロボットの主人公・Elecは常に体から電気を発しており、触れたものへ——立っている床にも、寄りかかった壁にも——自動的に電流を通す。それによって電力で動く床や台座を起動し、パズルを解いて道を開いていく。頭部は着脱可能で、届かない場所へ投げつけて遠隔で帯電させ、その効果を使うために歩いて向かう、という構造も持つ。「自分の身体の一部を置く→環境側に効果が連鎖する」というこの核は、Öooが後に、電流の代わりに起爆へと据え替えて受け継ぐことになる、まさにその発想そのものだ。ElecHead自身のストアページも文章の紹介文を一切持たず、記号だけの「⚡＋🤖＋🧩」のみで、このテキストレスの設計思想もÖooへそのまま引き継がれている。発売時、AUTOMATON自身の報道によれば、本作は業界の各方面から異例なほど直接的な称賛を受けた——Spelunkyの作者Derek Yu氏は「その独自のメカニクスを極限まで押し進めた、パズルプラットフォーマーの傑作」と評し、Celesteのマディ・ソーソン氏、Downwellのモッピン氏もそれぞれ本作を名指しで称賛、SIEの吉田修平氏は自身のその年のベストゲームの一本に挙げた。Nierの生みの親・ヨコオタロウ氏はそのわかりやすいルールとストレスの少ないパズル設計を称賛し、ElecHeadと本作Öooの両方が公言する影響元であるVVVVVVの作者Terry Cavanagh氏本人も「短く、美しくデザインされていて、とても楽しい」と強い推薦を寄せ、NamaTakahashi氏本人が「あなたの作品VVVVVVがなければElecHeadは生まれませんでした」と直接返信している。正式な商業リリースに先立ち、東京ゲームショウ「Sense of Wonder Night」ではベストゲームデザイン賞を、日本ゲーム大賞ではアマチュア部門優秀賞をすでに受賞済みだった。Öooはこの「自分の身体の一部を置くことが、周囲の仕掛けへ波及していく」という同じ発想を受け継ぎながら、その導線を電流から導火線へと置き換えている。",
+      },
+    ],
+    en: {
+      title: "Öoo - a puzzle platformer where a caterpillar built entirely of bombs jumps and dashes on nothing but the recoil of its own explosions, with zero on-screen text. Made by ElecHead creator NamaTakahashi, tiny cactus studio, and composer Tsuyomi, self-published. Overwhelmingly Positive at 99 percent over roughly 6,465 reviews, though English still trails Simplified Chinese as the largest reviewing language",
+      description: "A textless puzzle platformer starring a caterpillar built entirely out of bombs, who jumps and dashes only by detonating pieces of itself and riding the recoil. Made and self-published by NamaTakahashi, the creator of ElecHead, together with tiny cactus studio and composer Tsuyomi. Overwhelmingly Positive at 99 percent over roughly 6,465 reviews, but its single largest audience reads it in Simplified Chinese, not English.",
+      h1a: "A caterpillar built entirely out of bombs blows itself forward, jump after jump, ",
+      h1flip: "and the game never once explains any of it in words",
+      h1b: ".",
+      lede: "Per Steam's own listing, tagged with the line \"A Bomb Caterpillar's Big Adventure!,\" Öoo is a puzzle platformer starring a small caterpillar built entirely out of explosive segments: instead of walking or jumping in the ordinary sense, it advances by detonating pieces of its own body and riding the recoil of that blast into a jump or a dash, so movement and puzzle-solving are the same act. Steam's own \"Features\" list frames the result as \"a dense experience that can be enjoyed in just 2–3 hours,\" built on \"diverse puzzle solutions that change depending on how you use bombs\" to uncover hidden paths across the map, set in \"a cute yet oddly mysterious world,\" and, in the same breath, promises the game carries \"no text\" at all, so it can be \"enjoyed without language barriers.\" That wordless design is a philosophy this same core team already proved out once before: the earlier game is ElecHead, self-published by NamaTakahashi with composer Tsuyomi, whose short-circuiting robot hero had to place his own detachable, electrically charged head to trigger effects at a distance; ElecHead's own store page still carries no written short description at all, only the symbols \"⚡＋🤖＋🧩\". Öoo is credited to NamaTakahashi (生高橋), directing and self-publishing, tiny cactus studio (はちのす), and composer Tsuyomi (つよみー), continuing straight on from that earlier game. Released August 7, 2025, at ¥1,200 (with an optional ¥800 soundtrack DLC), it supports 103 languages including English and sits at \"Overwhelmingly Positive,\" 99 percent positive across roughly 6,465 reviews per Steam's own review API, the second-largest review count of any pick this site has covered, trailing only Chill with You: Lo-Fi Story's 11,726. It is a paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing on file at all (ids: none, notes: none). Despite that scale, its own review-language breakdown resists the easy \"still hidden\" story this site usually tells: Simplified Chinese is the single largest reviewing language at 2,799 reviews (43.3 percent), English is second at 2,130 (32.95 percent), and Japanese trails both at 778 (12.0 percent). The West has genuinely started arriving: AUTOMATON WEST covered it under a headline that calls it a \"breakout indie hit\" in passing, even though the article's actual subject is that NamaTakahashi still refuses to settle on an official pronunciation for the title on purpose, the same tradition as Terry Cavanagh's VVVVVV, a stated influence on both this game and ElecHead, so fans have taken to just nicknaming it \"Bomb Caterpillar.\" The same piece reports a nomination in the D.I.C.E. Awards' game design category and a deal with publisher AMATA Games to bring the game to PlayStation 5 and Nintendo Switch, with an Xbox Series X|S version the outlet said was being planned for later that same month. None of that adds up to undiscovered, but the review numbers are honest about where its center of gravity currently sits: reached by the West, but still led by an audience reading it in Chinese first.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Steam's own feature list frames this as discovering \"creative ways to use bombs,\" and the core loop matches that framing exactly: the caterpillar advances only by detonating a piece of itself and riding the recoil, so an ordinary platforming beat, a jump, a dash, becomes a timed act of self-detonation, and the rhythm of a level becomes the rhythm of controlled self-destruction.",
+        "The same feature list promises both \"diverse puzzle solutions that change depending on how you use bombs\" and, in the same breath, \"no text\" at all; with zero on-screen instruction, working out what a given placement of a bomb actually does becomes the entire tutorial, so understanding the caterpillar's own explosive body is inseparable from understanding the rules of the game at all.",
+        "This is the same shape of idea NamaTakahashi already worked out in ElecHead, where a detachable, electrically charged head had to be placed somewhere to trigger a chain of effects at a distance. Knowing that Elec's head and this caterpillar's bombs are the same designer's two answers to the same question, what can placing a piece of your own body do to the world around it, turns every detonation here into a second draft of a trick that once earned praise from figures like Yoko Taro and Terry Cavanagh.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a puzzle platformer where movement itself, not just the puzzle-solving, comes from strategically triggering your own explosions: the recoil of self-detonation is literally how the caterpillar jumps and dashes",
+        "You want a completely wordless design carried forward from the same team's earlier ElecHead, a game praised on release by Spelunky's Derek Yu, Celeste's Maddy Thorson, Nier's Yoko Taro, and VVVVVV's Terry Cavanagh among others: no on-screen text at all, in either game",
+        "You want a genuinely Overwhelmingly Positive title (99 percent over roughly 6,465 reviews) that is honestly, not performatively, reaching outside Japan: an AUTOMATON WEST feature, a D.I.C.E. Awards game design nomination, and a console publisher deal are all real, but so is the fact that Simplified Chinese, not English, remains its single largest reviewing language",
+      ],
+      bad: [
+        "You want a long game to sink many hours into: Steam's own feature list frames this explicitly as \"a dense experience that can be enjoyed in just 2–3 hours,\" not a sprawling adventure",
+        "You can't get past playing as an insect no matter how it's drawn: Steam's own feature list has to promise the caterpillar is \"cute enough that even people who dislike bugs can enjoy it comfortably,\" which is Steam's own way of admitting the premise starts from a body some players will need convincing about",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Öoo - 全身が爆弾でできたいもむしを操作し、自らを爆破した反動だけでジャンプ・ダッシュして進む、文字を一切使わないパズルプラットフォーマー。制作は『ElecHead』のNamaTakahashi、tiny cactus studio、作曲つよみー、セルフパブリッシュ。好評率99%・約6,465件のレビューで「圧倒的に好評」だが、最大のレビュー言語はいまも英語ではなく簡体字中国語",
+      description: "全身が爆弾でできたいもむしを操作し、自分自身を爆破した反動だけでジャンプ・ダッシュして進む、文字を一切使わないパズルプラットフォーマー。制作・セルフパブリッシュは『ElecHead』の生みの親NamaTakahashiと、tiny cactus studio、作曲つよみー。好評率99%・約6,465件のレビューで「圧倒的に好評」だが、最大の読者層はいまも英語圏ではなく簡体字中国語圏。",
+      h1a: "全身が爆弾でできたいもむしは、自分自身を爆破した反動だけでステージを渡り歩く。",
+      h1flip: "その仕組みを説明する文字は、ひとつも無い",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、キャッチコピーは「爆弾いもむしの大冒険!」——Öoo(オー)は、全身が爆発する体節でできた小さないもむしを操作する探索パズルプラットフォーマーだ。ふつうに歩いたり跳んだりするのではなく、自分自身の体の一部を爆発させ、その反動に乗ってジャンプやダッシュへ変える。移動そのものがパズルの一部になる設計だ。Steam自身の「特徴」欄は、これを「2〜3時間で楽しめる濃密な体験」「爆弾の使い方次第で広がる多彩な解法」でマップの隠し道を探し出す仕組みと説明し、舞台は「可愛いけれどどこか不思議な世界」だと謳う。そして同じ欄で「言語テキストは一切なし」であることも明記し、「虫が苦手な人でも安心して楽しめる可愛さ」だとも付け加えている。このテキストレスの設計思想は、同じ制作チームがすでに一度証明済みのものだ——前作ElecHeadは、NamaTakahashi氏が作曲家つよみー氏と組んでセルフパブリッシュした一本で、そのショートサーキットしたロボット主人公は、着脱可能で帯電した自分の頭部を置くことで、離れた場所に効果を発生させて進む。ElecHead自身のストアページも文章による紹介文を一切持たず、記号だけの「⚡＋🤖＋🧩」のみだ。Öooのクレジットは、監督・セルフパブリッシュのNamaTakahashi(生高橋)、tiny cactus studio(はちのす)、作曲つよみー(Tsuyomi)——前作からそのまま続く布陣である。2025年8月7日にリリースされ、価格は¥1,200(任意のサウンドトラックDLC「Öoo Original Soundtrack」¥800も存在)。対応言語は英語を含む103言語で、Steam自身のレビューAPI実測によれば好評率99%の「圧倒的に好評」、レビュー総数は約6,465件——このサイトがこれまで扱ったpickの中でも2番目に多いレビュー数で、最多の『Chill with You : Lo-Fi Story』(11,726件)に次ぐ規模だ。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上も何一つ記載がない(ids:なし、notes:なし)。これほどの規模がありながら、レビューの言語内訳は当サイトがいつも語る「まだ見つかっていない」という単純な物語をそのまま許さない——最大の言語セグメントは簡体字中国語で2,799件(43.3%)、英語は僅差の2位で2,130件(32.95%)、日本語はさらに離れて3位の778件(12.0%)に留まる。西側への到達自体は確かに始まっている。AUTOMATON WESTは、本作を\"breakout indie hit\"(突如ヒットしたインディー作)と見出しの中でさりげなく呼びながら記事化した——ただし記事本体の主題は、NamaTakahashi氏が本作のタイトルの「公式な読み方」を、Terry Cavanagh氏の『VVVVVV』(本作と前作ElecHead両方の公言された影響元)と同じ流儀で、あえて決めていないという逸話であり、ファンはこれを単に「Bomb Caterpillar」と呼び慣わしているという。同記事はさらに、D.I.C.E Awardsゲームデザイン部門へのノミネートと、コンソール展開を担うパブリッシャーAMATA Gamesの起用——PlayStation 5・Nintendo Switch版、そして同記事執筆月の下旬に予定されていたXbox Series X|S版——も報じている。これらは「まだ誰にも見つかっていない」と呼べるほどの無名さではない。だが、レビューの実数が正直に語っているのは、西側にも確かに届き始めてはいるものの、その重心はいまなお中国語で読むプレイヤーたちに率いられている、という実態だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "Steam自身の特徴欄は、これを「爆弾の様々な使い方を探し出そう」という言葉で説明しており、核となるループもその言葉どおりだ——いもむしは自分の身体の一部を爆発させ、その反動に乗ることでしか前へ進めない。だから普通のプラットフォーマーなら何気ないはずの一跳びが、タイミングを計った自爆行為そのものへと変わり、ステージのリズムは、制御された自己破壊のリズムになる。",
+        "同じ特徴欄は「爆弾の使い方次第で広がる多彩な解法」と、同じ呼吸で「言語テキストは一切なし」も約束している。画面上に説明が一切無い以上、ある場所に置いた爆弾が実際に何をするのかを自分の手で確かめることが、そのままチュートリアルの全てになる——いもむし自身の爆発する身体を理解することと、このゲームのルールを理解することは、切り離せない。",
+        "これは、NamaTakahashi氏が前作ElecHeadですでに一度組み上げていた発想と同じ形をしている——着脱可能で帯電した頭部を、離れた場所へ置くことで効果を連鎖させる、というあの仕組みと。Elecの頭部と、このいもむしの爆弾が、「自分の身体の一部を置くことは周囲の世界に何をもたらすか」という同じ問いに対する、同じ制作者による2つ目の回答なのだと知って触れると、ここでの一つひとつの爆発が、かつてヨコオタロウ氏やTerry Cavanagh氏らの称賛を勝ち取った手品の、二度目の草稿のように見えてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "パズル部分だけでなく移動そのものが、自分の爆発を戦略的に起こすことから生まれるパズルプラットフォーマーが欲しい人——自爆の反動こそが、このいもむしの跳躍とダッシュそのものだ",
+        "同じチームの前作ElecHead——Spelunkyの作者Derek Yu氏、Celesteのマディ・ソーソン氏、Nierの生みの親ヨコオタロウ氏、VVVVVVのTerry Cavanagh氏らから発売時に称賛された一本——から受け継がれた、完全に文字を使わない設計が欲しい人。画面上のテキストは、どちらの作品にも一切無い",
+        "好評率99%・約6,465件のレビューで真に「圧倒的に好評」でありながら、誇張ではなく正直に日本の外へ届き始めている一本を掴みたい人——AUTOMATON WESTの記事、D.I.C.E Awardsゲームデザイン部門ノミネート、コンソール展開のパブリッシャー契約はどれも事実だが、それでも最大のレビュー言語がいまなお英語ではなく簡体字中国語であることも同じくらい事実だ",
+      ],
+      bad: [
+        "何十時間も費やせる長い一本が欲しい人——Steam自身の特徴欄が明記する通り、これは「2〜3時間で楽しめる濃密な体験」であり、大作アドベンチャーではない",
+        "どう描かれていても虫を操作すること自体が受け付けない人——Steam自身の特徴欄が「虫が苦手な人でも安心して楽しめる可愛さ」だとわざわざ約束していること自体、この前提に説得が必要な層がいるとSteam自身も認めているということだ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12472,6 +12590,24 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "The free original this grew from: 代筆屋ワールドワード, released free in 2024 on the Japanese free-game site novelgame.jp as a single-episode version, made by the two-person doujin circle 秘密結社マテンロウ計画 (Himitsu Kessha Matenrou Keikaku). It already carries the premise this lineage grows from: a ghostwriter who takes a client's letter request, gathers matching words and objects by exploring town, and watches the letter's crucial ending get decided by a spin of a roulette rather than by their own hand. Ghostwriter Workshop on Steam is not a new work borrowing that idea from outside; it is this same free game expanded, built together with solo programmer せきやdn's Studio Dragonet, into a five-episode commercial edition released on Steam and Nintendo Switch.",
       ja: "本作が育った、その無料版の原点——『代筆屋ワールドワード』。2024年、日本のフリーゲームサイト「novelgame.jp」で、1エピソードのみの版として無料公開された。制作は2名構成の同人サークル秘密結社マテンロウ計画。この時点ですでに、この系譜のひな型——依頼人からの手紙の注文を受け、街を歩いて言葉やアイテムを集め、その肝心な結末が自分の手ではなくルーレットの一振りで決まるのを見届ける代筆屋——を備えていた。Steam版『代筆屋ワールドワード』は、外部からこの着想を借りた新作ではない——この同じ無料ゲームを、フリーランスのプログラマーせきやdn率いるStudio Dragonetと組んで拡張し、Steam・Nintendo Switch向けの全5エピソードの商業版へと作り上げたものだ。",
+    },
+  },
+  // 原点 ElecHead(NamaTakahashi+Tsuyomiの2人が中心のデビュー作, steam appid 1456880)。
+  //   bomb-caterpillar(Öoo) pick の系譜として新規採用。lineage_anchor_key=steam_url(本人採用済みの
+  //   確定事実)。appdetails実測: developers=["NamaTakahashi","Tsuyomi"](Tsuyomi氏はÖooとも共通の
+  //   サウンド担当)、short_description="⚡＋🤖＋🧩"(文章の紹介文が無くテキストレス方針を確認)。
+  //   ElecHead本編の核は、帯電した身体が触れた床/壁へ自動で電流を流し、着脱可能な頭部を投げて離れた
+  //   場所を起動する「身体パーツ設置→環境効果連鎖」(AUTOMATON記事WebFetch実測)。同記事によれば
+  //   発売時にSpelunky作者Derek Yu・Celeste開発者Maddy Thorson・Downwell作者Moppin・SIE吉田修平氏・
+  //   Nier生みの親ヨコオタロウ氏・VVVVVV作者Terry Cavanagh氏本人(本作の公言された影響元)から直接
+  //   称賛を受けており、東京ゲームショウ「Sense of Wonder Night」ベストゲームデザイン賞(正式リリース
+  //   前年)、日本ゲーム大賞アマチュア部門優秀賞も受賞済み。既存 LINEAGE_ANCHOR に "elechead"/
+  //   appid 1456880 の重複が無いことをgrep実測確認済み。
+  "elechead": {
+    steam: "1456880",
+    blurb: {
+      en: "ElecHead is a puzzle platformer solo-directed and self-published on Steam and itch.io by Japanese creator NamaTakahashi, with sound and music by composer Tsuyomi. Its short-circuiting robot hero, Elec, constantly emits electricity, automatically passing a current through whatever he is touching, the floor beneath him or a wall he is pressed against, which activates platforms and moves pedestals to open a path; his head is also detachable, so he can throw it to charge something out of reach and then walk in to use whatever effect it triggers there, wiring a placed piece of his own body directly into an environmental chain reaction. Even its own store page carries no written short description, just the symbols \"⚡＋🤖＋🧩\". On release it drew direct praise from Spelunky creator Derek Yu, Celeste's Maddy Thorson, Downwell's Moppin, Sony's Shuhei Yoshida, Nier creator Yoko Taro, and VVVVVV creator Terry Cavanagh, a stated influence on the game, who called it \"short, beautifully designed and a lot of fun\"; it had already won the Best Game Design Award at Tokyo Game Show's Sense of Wonder Night the year before its full release, plus an excellence award in the amateur division of the Japan Game Awards. It is the origin of a lineage built on wiring one placed piece of a character's own body into an environmental chain reaction, an idea NamaTakahashi's own later game Öoo carries forward by swapping the conductor for a fuse.",
+      ja: "ElecHeadは、日本の制作者NamaTakahashi氏がひとりで手がけ、Steam・itch.ioでセルフパブリッシュしたパズルプラットフォーマーで、サウンドと音楽は作曲家つよみー氏が担当している。ショートサーキットしたロボットの主人公・Elecは常に体から電気を発しており、触れたもの——立っている床にも、寄りかかった壁にも——へ自動的に電流を通し、それによって電力で動く床や台座を起動して道を開く。頭部は着脱可能で、届かない場所へ投げて遠隔で帯電させ、その効果を使うために歩いて向かうこともできる——自分の身体の一部を置くことを、そのまま環境側の連鎖反応へ直結させる設計だ。ストアページ自身も文章の紹介文を一切持たず、記号だけの「⚡＋🤖＋🧩」のみとなっている。発売時にはSpelunkyの作者Derek Yu氏、Celesteのマディ・ソーソン氏、Downwellのモッピン氏、SIEの吉田修平氏、Nierの生みの親ヨコオタロウ氏、そして本作の公言された影響元であるVVVVVVの作者Terry Cavanagh氏本人から直接称賛を受けており、Cavanagh氏は「短く、美しくデザインされていて、とても楽しい」と評した。正式リリースの前年には東京ゲームショウ「Sense of Wonder Night」でベストゲームデザイン賞、さらに日本ゲーム大賞アマチュア部門優秀賞もすでに受賞済みだった。「キャラクター自身の身体の一部を置くことを、環境側の連鎖反応へ直結させる」という系譜の原点であり、この発想はNamaTakahashi氏自身の後の作品Öooにも、導線を電流から導火線へ置き換えるかたちで引き継がれている。",
     },
   },
 } as const;
