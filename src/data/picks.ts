@@ -11977,6 +11977,117 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "madoromi-travel": {
+    published: "2026-08-06",
+    publishAt: "2026-08-06",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(カジュアル/シミュレーション/ストラテジー)が広すぎるため、ストア本文
+    //   自身の名乗り「死に覚えローグライクシュミレーション」と中核メーターに沿って新設
+    //   "drowsiness-travel-roguelike"。ユーザータグ側も 探検 / ローグライク / マルチエンディング /
+    //   選択型進行 / 毒のあるユーモア が並ぶ。
+    // lineage は新規anchorを作らず既存の "dont-starve" を再利用する。共有しているのは
+    //   「身体のメーター一本を、他のすべてを駆動する時計に据える」という形。Don't Starveがそれを
+    //   空腹でやったのに対し、本作は眠気でやる。分かれるのは補給の中身で、Don't Starveが食料を
+    //   探させるのに対し、本作でまどろみを減らすのは「感動体験」である——観光・ランチ・遊び・
+    //   ショッピング・おみやげという旅行の中身そのものが、眠気に対する弾薬になっている。
+    //   影響を公言されたものではない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=魔女の脳 / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の4件
+    //   (本作 / HauntedManager / そのサウンドトラック / タングステンの復讐劇)すべてで
+    //   developers=publishers=魔女の脳 であることを確認した。大手・海外展開代行・親会社関係の
+    //   混入はゼロ。
+    // 【同開発者の別作を見送っている点を記録する】当サイトは同じ魔女の脳の『HauntedManager』を
+    //   候補として検討したうえで見送った。理由はその作品のユーザータグに「変態」があり、
+    //   開発者の注記にも「見方によってはセクシーなキャラクターデザイン」とあったため。
+    //   本作『まどろみトラベル』は content_descriptors.ids=[](完全に空)・notes=null で、
+    //   ユーザータグ全20件にも性的表現関連は一つも無い。作品単位で判定して採用する。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。early_access_header 無しで正式リリース済み。
+    // west_unreached: supported_languages は日本語のみ。appreviews API実測で全20件のうち
+    //   日本語19件・英語ちょうど0件・簡体字1件。言語の壁の典型なので obscurity: "wall" /
+    //   reachState: "lang_walled"。
+    // 西側編集記事はゼロ。AUTOMATON WESTのWP REST APIを"Madoromi"/"まどろみトラベル"/"Majo no Nou"の
+    //   3語で叩き、返った件はいずれも小学館・Digimon・Wizardry等の無関係記事で、common wordでの
+    //   誤ヒットであることを確認した。日本語圏ではもぐらゲームスが取り上げている。
+    // name_en は開発者自身が英語版ストアのshort_descriptionで使っている "Slumber Travel" を採る
+    //   (Steamのname欄は日本語のまま＝公式英題は無い)。
+    // 数字について: 19/20=95%は理想線ちょうどだが母数20件は薄く、プレイ時間も1〜2時間。先に開示する。
+    meta: { genre: "drowsiness-travel-roguelike", lineage: "dont-starve", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 20, positivePct: 95, noEnglish: true } },
+    games: [
+      {
+        name_en: "Slumber Travel",
+        name_ja: "まどろみトラベル",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2821020/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A girl called Konomi, who the store is careful to say is not especially a travel enthusiast, goes on a trip to the Sleeping Town, a place that only appears when the tide goes out. Your job is to stop her falling asleep on the way. That is the entire design and it is beautifully economical: the Sleeping Town is full of drowsiness, walking around in it makes you drowsy, and when the drowsiness gauge fills the run ends immediately. What makes it a game rather than a timer is what refills the other way. Drowsiness responds to being moved by something. You plan which sights to visit, you go, and sightseeing, lunch, playing, shopping and souvenirs are all ammunition against sleep, provided you respond to each event correctly, which the store hedges by adding: probably. Visiting the right places can also make you friendly with the residents or earn you items. And if you are truly sleepy, the store notes, slamming an energy drink is also an option. There are three endings, a run is one to two hours, there is a bit of hand-drawn animation, and the store closes by suggesting the residents may end up reminding you how good it feels to sleep. Made by Majo no Nou, whose four Steam entries all carry the same name as developer and publisher. Priced at ¥300, it is at 95 percent across 20 reviews (19 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It is in Japanese only, and of its 20 reviews, exactly zero are in English.",
+        desc_ja: "コノミという少女が——ストアはわざわざ「旅行好きって程でも無い」と書いている——海の干潮時にだけ姿を現す「睡眠街」へ旅行に行く。あなたの役目は、その子が旅の途中で寝落ちしないように努めることだ。設計はそれで全部で、そして見事に無駄がない。睡眠街は旅を阻む「まどろみ」でいっぱいで、歩いているだけでも眠気に襲われ、まどろみゲージがいっぱいになったら即ゲームオーバーである。これをタイマーではなくゲームにしているのは、逆向きに補給されるもののほうだ。まどろみは「感動体験」に反応して減る。どの観光地へ向かうかを計画し、実際に行き、観光・ランチ・遊び・ショッピング・おみやげが、そのまま眠気に対する弾薬になる——ただし各イベントで正しい対処をすれば、という条件つきで、そこにストアは「たぶん。」と一言添えている。訪れる場所によっては住民と仲良くなったり、アイテムを貰えたりもする。そして本当に眠い時は、とストアは書く、エナドリをキメるのもアリ。エンディングは3種、一周は1〜2時間、ちょっとした手書きアニメーションがあり、そしてストアはこう締める——旅行の中で、住民たちが眠ることの気持ちよさについて再認識させてくれるかもしれません。制作は魔女の脳。Steamに並ぶ4件すべてで開発元と発売元に同じ名前が入っている。価格は¥300。20件のレビュー(好評19件・不評1件、Steam自身のレビューAPI実測)で好評率95%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語のみで、20件のレビューのうち英語はちょうど0件だ。",
+      },
+      {
+        name_en: "Don't Starve",
+        name_ja: "Don't Starve",
+        status: "established",
+        steam: "https://store.steampowered.com/app/219740/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Don't Starve, developed and published by Klei Entertainment in 2013, which took hunger, until then one status effect among several, and promoted it to the clock that drives everything else. It is why you leave camp, why you accept a risk you would otherwise refuse, and why a day has a shape at all. Slumber Travel is not an official Klei work, and this lineage is a comparison drawn by this site rather than a stated influence. What it inherits is the structure exactly: one bodily meter, filling on its own, ending the run when it tops out. What it changes is the meter and, more interestingly, the supply. Don't Starve sends you looking for food. This one asks you to be moved by something, and turns sightseeing, lunch, shopping and souvenirs into the ammunition, so that the thing keeping the girl awake is the trip itself being worth staying awake for.",
+        desc_ja: "この味の原点——Don't Starve。Klei Entertainmentが開発・発売した2013年の作品で、それまで「いくつかある状態異常のひとつ」だった空腹を、他のすべてを駆動する時計の位置まで引き上げた。拠点を出る理由も、本来なら断るはずの危険を受け入れる理由も、そもそも一日という単位に形がある理由も、そこから来る。『まどろみトラベル』は公式のKlei作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。受け継いでいるのは構造そのものだ——身体のメーターが一本あり、放っておいても溜まり、満杯になった時点で一周が終わる。変えているのはメーターの中身と、そしてより面白いことに、補給のほうである。Don't Starveはこちらを食料探しに行かせる。こちらが求めるのは「何かに心を動かされること」で、観光・ランチ・ショッピング・おみやげを弾薬に変えてしまう。つまりこの少女を起きたままにしているのは、その旅行が起きているに値するものである、という事実そのものなのだ。",
+      },
+    ],
+    en: {
+      title: "Slumber Travel - a trip to a town that only appears at low tide, where the fail state is falling asleep. Drowsiness fills as you walk, and the only thing that pushes it back is being moved by something. Made by Majo no Nou for ¥300. 95 percent over 20 reviews, and zero of them in English",
+      description: "A death-and-retry roguelike travel sim. Konomi visits the Sleeping Town, which appears only at low tide, and the drowsiness gauge fills as she walks; when it tops out the run ends. Sightseeing, lunch, playing, shopping and souvenirs are the ammunition, because drowsiness responds to being moved by something. Three endings, one to two hours, ¥300. Japanese-only.",
+      h1a: "The town only appears when the tide goes out, and walking around in it makes you sleepy. ",
+      h1flip: "The only thing that pushes the drowsiness back is being moved by something you saw",
+      h1b: ".",
+      lede: "A girl called Konomi, who the store is careful to say is not especially a travel enthusiast, goes on a trip to the Sleeping Town, a place that only appears when the tide goes out. Your job is to stop her falling asleep on the way. That is the entire design and it is beautifully economical: the Sleeping Town is full of drowsiness, walking around in it makes you drowsy, and when the drowsiness gauge fills the run ends immediately. What makes it a game rather than a timer is what refills the other way. Drowsiness responds to being moved by something. You plan which sights to visit, you go, and sightseeing, lunch, playing, shopping and souvenirs are all ammunition against sleep, provided you respond to each event correctly, which the store hedges by adding: probably. Visiting the right places can also make you friendly with the residents or earn you items. And if you are truly sleepy, the store notes, slamming an energy drink is also an option. There are three endings, a run is one to two hours, there is a bit of hand-drawn animation, and the store closes by suggesting the residents may end up reminding you how good it feels to sleep, which is a strange and rather generous thing for a game to say about its own losing condition. Made by Majo no Nou, whose four Steam entries all carry the same name as developer and publisher. Priced at ¥300, it is at 95 percent across 20 reviews (19 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It is in Japanese only, and of its 20 reviews, exactly zero are in English. At 20 reviews and one to two hours per run, this is a small thing, and this pick would rather say so than dress it up.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Making wonder the ammunition is the whole idea. A stamina bar asks you to ration your activity; this asks you to spend the day being genuinely impressed by things, and the trip stops being a route and starts being a case you are making for staying awake.",
+        "The fail state is not death and it is not defeat. It is falling asleep, which is the softest possible way to lose and also the one you cannot argue with, and the store openly admits the residents may leave you thinking sleep looked pretty good anyway.",
+        "It is a roguelike, so the plan is remade each run, and what carries over is your sense of which sights are actually worth the walk. That is a strange kind of knowledge to accumulate, and closer to how travel really works than most travel games get.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Don't Starve structure with the supply line swapped: one meter that ends the run, and a refill that comes from being moved rather than from finding food",
+        "You want small and self-published: four Steam entries all under the same name as developer and publisher, ¥300, one to two hours a run, three endings",
+        "You want a clean record: content descriptors completely empty, no mature content section, no AI disclosure, and nothing sexual in any of its twenty user tags",
+      ],
+      bad: [
+        "You do not read Japanese; there is no English option and not one of its 20 reviews is in English",
+        "You want scale or a settled number; 20 reviews is thin and a run is one to two hours, so this is a snack rather than a meal",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "まどろみトラベル - 干潮時にだけ現れる街への旅行。負け条件は寝落ちで、歩いているだけで眠気が溜まる。まどろみを押し返す唯一の手段は「感動体験」。魔女の脳制作、価格¥300。20件で好評率95%、英語レビューは0件",
+      description: "死に覚えローグライクの旅行シム。コノミが干潮時にだけ姿を現す「睡眠街」へ赴き、歩くだけで溜まるまどろみゲージが満杯になれば即ゲームオーバー。観光・ランチ・遊び・ショッピング・おみやげが弾薬になる——まどろみは感動体験に反応して減るからだ。エンディング3種、一周1〜2時間、¥300。日本語のみ。",
+      h1a: "その街は潮が引いた時にだけ現れて、歩いているだけで眠くなる。",
+      h1flip: "まどろみを押し返す唯一の手段は、見たものに心を動かされることだ",
+      h1b: "。",
+      lede: "コノミという少女が——ストアはわざわざ「旅行好きって程でも無い」と書いている——海の干潮時にだけ姿を現す「睡眠街」へ旅行に行く。あなたの役目は、その子が旅の途中で寝落ちしないように努めることだ。設計はそれで全部で、そして見事に無駄がない。睡眠街は旅を阻む「まどろみ」でいっぱいで、歩いているだけでも眠気に襲われ、まどろみゲージがいっぱいになったら即ゲームオーバーである。これをタイマーではなくゲームにしているのは、逆向きに補給されるもののほうだ。まどろみは「感動体験」に反応して減る。どの観光地へ向かうかを計画し、実際に行き、観光・ランチ・遊び・ショッピング・おみやげが、そのまま眠気に対する弾薬になる——ただし各イベントで正しい対処をすれば、という条件つきで、そこにストアは「たぶん。」と一言添えている。訪れる場所によっては住民と仲良くなったり、アイテムを貰えたりもする。そして本当に眠い時は、とストアは書く、エナドリをキメるのもアリ。エンディングは3種、一周は1〜2時間、ちょっとした手書きアニメーションがあり、そしてストアはこう締める——旅行の中で、住民たちが眠ることの気持ちよさについて再認識させてくれるかもしれません。自分の負け条件についてゲームがこう言うのは、奇妙で、そしてずいぶん気前がいい。制作は魔女の脳。Steamに並ぶ4件すべてで開発元と発売元に同じ名前が入っている。価格は¥300。20件のレビュー(好評19件・不評1件)で好評率95%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語のみで、20件のレビューのうち英語はちょうど0件だ。20件という母数、そして一周1〜2時間という尺——これは小さなものである。飾らずにそう書いておく。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "感動を弾薬にした、というのが着想の全部だ。スタミナバーは行動の配給を求めてくる。こちらが求めてくるのは「その日を、本当に何かに感心しながら過ごすこと」で、旅行が経路であることをやめて、起きている理由の立証になる。",
+        "負け条件が死でも敗北でもなく寝落ちである、というのが効く。考えうる最も柔らかい負け方で、しかも反論のしようがない。そしてストアは、住民たちが眠ることの気持ちよさを再認識させてくるかもしれない、と自分から認めている。",
+        "ローグライクなので計画は毎回作り直しになり、持ち越せるのは「どの観光地が歩く価値に見合うか」という感覚だけだ。奇妙な種類の蓄積だが、たいていの旅行ゲームより、実際の旅の仕組みに近い。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Don't Starve の構造を、補給線だけ差し替えたものが欲しい人——一周を終わらせるメーターが一本、そしてその補給が食料探しではなく「心を動かされること」から来る",
+        "小さくて自主出版のものが欲しい人——Steamの4件すべてが開発元と発売元に同じ名前、価格¥300、一周1〜2時間、エンディング3種",
+        "記録がきれいなものが欲しい人——コンテンツディスクリプタは完全に空、大人向けコンテンツの説明欄も無し、AI開示も無し、20件のユーザータグにも性的なものは一つも無い",
+      ],
+      bad: [
+        "日本語が読めない人——英語オプションは無く、20件のレビューのうち英語は1件も無い",
+        "規模と安定した数字が欲しい人——20件は薄く、一周は1〜2時間。これは食事ではなく間食である",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
