@@ -12088,6 +12088,116 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dear-flower": {
+    published: "2026-08-06",
+    publishAt: "2026-08-06",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(アドベンチャー/カジュアル/インディー)が広すぎるため新設
+    //   "wordless-handdrawn-adventure"。ユーザータグ側も ポイント＆クリック / 手描き / 雰囲気 /
+    //   パズル / リラックス / 感動的 が並ぶ。
+    // lineage は新規anchor "machinarium"(Steam 40700)を作る。Amanita Design が開発・発売、
+    //   リリース日 2009年10月16日、レビュー20,526件。言葉を一切使わないポイント＆クリック
+    //   アドベンチャーという形の原点であり、本作の英語ストア説明文もそのまま
+    //   "hand-drawn point-and-click adventure ... without a single word of text" と名乗っている。
+    //   分かれるのは操作対象で、Machinariumが一体のロボットを動かすのに対し、本作は3人の
+    //   キャラクターを切り替え、同じ出来事を3つの視点から見せる。影響を公言されたものではない
+    //   当サイト独自の批評的比較である(自信度: 中)。
+    // developer=Popiicorn Game / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の
+    //   登録は本編(2675900)と体験版(3077810)の2件のみであることを確認した。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。連絡先も個人のGmail。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグにも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。early_access_header 無しで正式リリース済み。
+    //   ミドルウェアとして CRIWARE を使用している旨がストアに明記されているが、これは音声/動画の
+    //   再生ライブラリであり publisher でも資本関係でもない。
+    // 【この作品を選んだ核心】ストア本文が「Dear Flowerではテキストや会話がありません。」と
+    //   明記している。だから supported_languages が100言語を超えている——訳すべきものが存在しない
+    //   からである。当サイトの発掘はほぼ毎回「日本語が読めないと遊べない」という但し書きを伴うが、
+    //   この一本ではその但し書きが原理的に成立しない。言語の壁が構造的にゼロなのに、それでも
+    //   appreviews API実測で全18件のうち日本語13件・英語4件にとどまっている。壁ではなく到達の
+    //   欠落なので obscurity: "deep" / reachState: "unreached_west" を採る。
+    // 西側編集記事はゼロ。AUTOMATON WESTのWP REST APIを"Dear Flower"/"Popiicorn"で叩き、
+    //   "Popiicorn"は0件、"Dear Flower"で返った1件は「あつまれ どうぶつの森の錯視」という
+    //   無関係記事で common word の誤ヒットであることを確認した。日本語圏ではもぐらゲームスが
+    //   取り上げている。
+    // 数字について: 17/18=94.4%は当サイトの理想95%にわずかに届かず、母数18件はこれまでで最も薄い
+    //   部類。価格¥1,200と合わせて先に開示する。
+    meta: { genre: "wordless-handdrawn-adventure", lineage: "machinarium", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 18, positivePct: 94 } },
+    games: [
+      {
+        name_en: "Dear Flower",
+        name_ja: "Dear Flower",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2675900/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A hand-drawn, monochrome puzzle adventure in which you move a character through a world and solve what is in front of you, and the store page states the decision that shapes everything else in one line: there is no text and no dialogue in Dear Flower. None. The developer explains why in the next breath, and it is a designer's reason rather than a shortcut: without words the player has more room to imagine, and the feeling that comes out of that is one only a game can produce. Everything is hand-drawn, characters and backgrounds and cutscenes alike, and the store describes the cutscenes as made one frame at a time with feeling put into each. You play three characters, and the point of that is not variety but perspective: the same events seen from three positions, and watching how each one's view of it changes. There is a distinct soundtrack doing the work that dialogue usually does. Made by Popiicorn Game, whose Steam presence is exactly this game and its demo, with a personal Gmail as the contact. Priced at ¥1,200, it is at 94 percent across 18 reviews (17 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Now the number that made this worth writing up. Steam lists this game as supporting more than a hundred languages, from Japanese and English through to Cherokee, Quechua, Wolof and Luxembourgish, which sounds absurd until you remember there is nothing in it to translate. A game with no words is, technically, already in every language. And of its 18 reviews, 13 are in Japanese and 4 are in English.",
+        desc_ja: "手描き・モノクロのパズルアドベンチャーで、主人公を操作しながら目の前のものを解いていく。そして他の全てを決めている判断を、ストアページは一行で書いている——Dear Flowerではテキストや会話がありません。一切ない。開発者はその理由を続けて説明していて、それが手抜きではなく設計者の理屈になっている。言葉が無いぶんプレイヤーはより想像しやすく、そこから生まれるのはゲームならではの感情である、と。すべてが手描きだ。キャラクターも背景もカットシーンも同じで、ストアはカットシーンについて「1フレームごとに想いを込めて制作しています」と書いている。操作するのは3人のキャラクターで、その狙いは多様性ではなく視点にある——同じ出来事を3つの位置から見て、それぞれが見る景色がどのようになっていくかを体験する。会話が普段担っている仕事は、作品にマッチした独特のサウンドが引き受けている。制作は Popiicorn Game。Steam上の存在は本作と体験版だけで、連絡先は個人のGmailである。価格は¥1,200。18件のレビュー(好評17件・不評1件、Steam自身のレビューAPI実測)で好評率94%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。そして、この作品を書き上げる価値を決めた数字がある。Steamはこのゲームの対応言語を100以上として並べている。日本語や英語から始まって、チェロキー語、ケチュア語、ウォロフ語、ルクセンブルク語まで。馬鹿げて見えるが、訳すべきものが中に何も無いことを思い出せば筋が通る。言葉の無いゲームは、技術的には、既にあらゆる言語で提供されている。そして18件のレビューの内訳は、日本語13件・英語4件だ。",
+      },
+      {
+        name_en: "Machinarium",
+        name_ja: "Machinarium",
+        status: "established",
+        steam: "https://store.steampowered.com/app/40700/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Machinarium, developed and published by Amanita Design and released in 2009, the point-and-click adventure that proved a story could be told without a single written word. Its little robot never speaks, nobody in its rusting city speaks, and everything you need, motive, memory, joke and instruction, arrives as drawn images inside thought bubbles. It made wordlessness a positive form rather than an absence, and in doing so removed the one thing that usually decides which countries a game can reach. Dear Flower is not an official Amanita work, and this lineage is a comparison drawn by this site rather than a stated influence, though the store page describes itself in almost the same terms. Where they part is the number of bodies. Machinarium gives you one robot and one path through a city. This one gives you three characters and asks you to watch the same events change shape depending on whose eyes are on them.",
+        desc_ja: "この味の原点——Machinarium。Amanita Design が開発・発売し2009年にリリースされた、書かれた言葉を一語も使わずに物語を語れると証明したポイント＆クリックアドベンチャーである。小さなロボットは一言も喋らず、錆びついた街の誰も喋らない。動機も、記憶も、冗談も、操作の指示さえも、すべて吹き出しの中の絵として届く。この作品は「言葉が無いこと」を欠落ではなく積極的な形式にし、そうすることで「このゲームがどの国に届けるか」を普段決めている当のものを取り払った。『Dear Flower』は公式のAmanita作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である——もっとも、本作のストアページは自分自身をほぼ同じ言葉で説明しているのだが。分かれるのは身体の数だ。Machinariumが与えるのは一体のロボットと、街を通る一本の道である。こちらが与えるのは3人のキャラクターで、同じ出来事が誰の目に映るかによって形を変えるのを見てほしい、と言ってくる。",
+      },
+    ],
+    en: {
+      title: "Dear Flower - a hand-drawn monochrome adventure with no text and no dialogue anywhere in it. Steam lists it as supporting over a hundred languages, because there is nothing in it to translate. Made by Popiicorn Game for ¥1,200. 94 percent over 18 reviews, of which 4 are in English",
+      description: "A wordless, hand-drawn, monochrome puzzle adventure. No text and no dialogue at all, by design: the developer says the absence gives the player more room to imagine. You play three characters and see the same events from three positions. Steam lists it in over a hundred languages because there is nothing to translate. 94 percent over 18 reviews.",
+      h1a: "Steam lists this game as supporting more than a hundred languages, from Japanese to Cherokee to Wolof. ",
+      h1flip: "That is not ambition. There is simply not one word of text anywhere in it",
+      h1b: ".",
+      lede: "A hand-drawn, monochrome puzzle adventure in which you move a character through a world and solve what is in front of you, and the store page states the decision that shapes everything else in one line: there is no text and no dialogue in Dear Flower. None. The developer explains why in the next breath, and it is a designer's reason rather than a shortcut: without words the player has more room to imagine, and the feeling that comes out of that is one only a game can produce. Everything is hand-drawn, characters and backgrounds and cutscenes alike, and the store describes the cutscenes as made one frame at a time with feeling put into each. You play three characters, and the point of that is not variety but perspective: the same events seen from three positions, and watching how each one's view of it changes. There is a distinct soundtrack doing the work that dialogue usually does. Made by Popiicorn Game, whose Steam presence is exactly this game and its demo, with a personal Gmail as the contact. Priced at ¥1,200, it is at 94 percent across 18 reviews (17 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Now the number that made this worth writing up. Steam lists this game as supporting more than a hundred languages, from Japanese and English through to Cherokee, Quechua, Wolof and Luxembourgish, which sounds absurd until you remember there is nothing in it to translate. A game with no words is, technically, already in every language. Almost every find on this site comes with a warning that you will not be able to read it. This one cannot carry that warning under any circumstances, and it still has not travelled: of its 18 reviews, 13 are in Japanese and 4 are in English, and no editorial article about it exists in English at all. Two honest notes: 18 reviews is the thinnest sample written up here, and at 94 percent it sits just under the line this site usually holds.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Removing the words does not make it vague; it makes you responsible. Nothing will tell you what a character felt about what just happened, so whatever you decide they felt is what the scene now contains, and the game is content to let you carry that.",
+        "Three characters is not three difficulties, it is three positions on the same events. Learning what the second one saw changes what the first one's version meant, and none of that is explained to you because none of it can be.",
+        "Knowing the cutscenes were animated a frame at a time changes how you watch them. A game with no dialogue has to spend its entire budget of meaning on movement, and this one clearly did.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Machinarium proposition with more than one pair of eyes: no words anywhere, and three characters whose views of the same events do not match",
+        "You want to look at something made by hand: characters, backgrounds and cutscenes all hand-drawn, monochrome, animated frame by frame",
+        "You want a find with no language barrier at all for once: there is nothing to read, in any language, and Steam lists it in over a hundred of them",
+      ],
+      bad: [
+        "You want to be told things; there is no text and no dialogue anywhere, so if a story only lands for you when it is written down, this will not land",
+        "You want a settled number; 18 reviews is the thinnest sample this site has written up, and 94 percent is just under the bar it usually holds to",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Dear Flower - テキストも会話も一切ない手描きモノクロのアドベンチャー。Steamの対応言語は100以上——訳すものが中に何も無いからだ。Popiicorn Game制作、価格¥1,200。18件で好評率94%、うち英語レビューは4件",
+      description: "言葉を一切使わない手描き・モノクロのパズルアドベンチャー。テキストも会話も無く、それは設計上の判断である——言葉が無いぶんプレイヤーが想像しやすくなる、と開発者は書いている。3人のキャラクターを操作し、同じ出来事を3つの視点から見る。訳すものが無いためSteamの対応言語は100以上。18件のレビューで好評率94%。",
+      h1a: "Steamはこのゲームの対応言語を100以上として並べている。日本語からチェロキー語、ウォロフ語まで。",
+      h1flip: "野心ではない。中に一語もテキストが無いというだけだ",
+      h1b: "。",
+      lede: "手描き・モノクロのパズルアドベンチャーで、主人公を操作しながら目の前のものを解いていく。そして他の全てを決めている判断を、ストアページは一行で書いている——Dear Flowerではテキストや会話がありません。一切ない。開発者はその理由を続けて説明していて、それが手抜きではなく設計者の理屈になっている。言葉が無いぶんプレイヤーはより想像しやすく、そこから生まれるのはゲームならではの感情である、と。すべてが手描きだ。キャラクターも背景もカットシーンも同じで、ストアはカットシーンについて「1フレームごとに想いを込めて制作しています」と書いている。操作するのは3人のキャラクターで、その狙いは多様性ではなく視点にある——同じ出来事を3つの位置から見て、それぞれが見る景色がどのようになっていくかを体験する。会話が普段担っている仕事は、作品にマッチした独特のサウンドが引き受けている。制作は Popiicorn Game。Steam上の存在は本作と体験版だけで、連絡先は個人のGmailである。価格は¥1,200。18件のレビュー(好評17件・不評1件)で好評率94%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。そして、この作品を書き上げる価値を決めた数字がある。Steamはこのゲームの対応言語を100以上として並べている。日本語や英語から始まって、チェロキー語、ケチュア語、ウォロフ語、ルクセンブルク語まで。馬鹿げて見えるが、訳すべきものが中に何も無いことを思い出せば筋が通る。言葉の無いゲームは、技術的には、既にあらゆる言語で提供されている。当サイトの発掘はほとんど毎回「あなたには読めません」という警告を伴う。この一本だけは、どうやってもその警告を背負えない。それでも渡っていない——18件のレビューの内訳は日本語13件・英語4件で、英語で書かれた編集記事は一本も存在しない。飾らずに二点。18件は当サイトが書いてきた中で最も薄い母数であり、94%はいつも置いている線をわずかに下回る。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "言葉を取り除いても曖昧にはならない。責任がこちらに移るだけだ。今起きたことについてキャラクターが何を感じたかは誰も教えてくれないので、こちらが「そう感じた」と決めたものが、そのままその場面の中身になる。そしてこのゲームは、それを持たせたままにしておく。",
+        "3人というのは3つの難易度ではなく、同じ出来事に対する3つの位置である。2人目が何を見ていたかを知ると、1人目の版が何を意味していたかが変わる。そしてそれは説明されない。説明できないからだ。",
+        "カットシーンが1フレームずつ描かれていると知ってから観ると、見え方が変わる。会話の無いゲームは、意味の予算を全部「動き」に注ぎ込むしかない。この作品は、明らかにそうしている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Machinariumの提案を、一組ではない目で見たい人——どこにも言葉が無く、同じ出来事についての見え方が一致しない3人がいる",
+        "手で作られたものを眺めたい人——キャラクターも背景もカットシーンも全て手描き、モノクロ、1フレームずつ",
+        "一度くらい言語の壁がまったく無い発掘が欲しい人——読むものがそもそも無く、そしてSteamはそれを100以上の言語として並べている",
+      ],
+      bad: [
+        "説明してほしい人——テキストも会話もどこにも無いので、物語が「書かれていて初めて届く」タイプなら、これは届かない",
+        "安定した数字が欲しい人——18件は当サイトが書いてきた中で最も薄い母数で、94%はいつもの線をわずかに下回る",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13177,7 +13287,14 @@ const LINEAGE_ANCHOR = {
       en: "Final Fantasy Tactics, developed by Square for PlayStation and released in Japan in 1997, changed what turn order is for. Before it, the question of who acts next was bookkeeping the game did quietly on your behalf. Here speed decided it, the queue was visible, and rearranging your position in that queue became as much a part of tactical skill as where you stood on the map. A unit that acts twice before the enemy responds is worth more than a unit that hits harder once, and the whole discipline of the genre reorganised around that fact. It is the origin of the lineage of Japanese tactical RPGs in which the turn order is a second terrain, one you cannot see on the grid but must read just as carefully, and of the insight that letting the player manipulate the sequence turns a battle into something closer to a conversation than a slugging match.",
       ja: "ファイナルファンタジータクティクスは、スクウェアがPlayStation向けに開発し1997年に日本で発売された作品で、行動順というものが何のためにあるかを変えた。それ以前、次に誰が動くかという問いは、ゲームが黙って代わりに処理してくれる事務作業だった。ここではそれを素早さが決め、順番待ちの列は目に見えるようになり、その列の中で自分の位置を組み替えることが、盤面のどこに立つかと同じくらい戦術的技能の一部になった。敵が応じる前に二度動けるユニットは、一度強く殴るユニットより価値がある——ジャンル全体の規律が、その事実を中心に組み直された。行動順が第二の地形になる日本製タクティカルRPGの系譜の原点であり、それはグリッドの上には見えないが同じだけ注意深く読まねばならないものだ。そして、順序をプレイヤーに操作させると、戦闘が殴り合いよりも会話に近いものになる、というデザイン上の洞察の原点でもある。",
     },
-  }
+  },
+  "machinarium": {
+    steam: "40700",
+    blurb: {
+      en: "Machinarium, developed and published by Amanita Design and released in 2009, proved that a point-and-click adventure could tell a complete story without a single written word. Its small robot never speaks, nobody in the rusting city speaks, and everything the player needs, motive and memory and joke and instruction alike, arrives as drawn images inside thought bubbles. The achievement was not the restraint but the substitution: it demonstrated that pictures could carry the informational load that dialogue normally carries, and that doing so made the result more legible rather than less. It is the origin of the lineage of wordless adventure games, and of the design insight that removing language does not remove meaning but relocates it into movement, framing and drawing, where players turn out to be perfectly capable of reading it.",
+      ja: "Machinariumは、Amanita Designが開発・発売し2009年にリリースされた作品で、ポイント＆クリックアドベンチャーが書かれた言葉を一語も使わずに物語を語り切れることを証明した。小さなロボットは一言も喋らず、錆びついた街の誰も喋らない。プレイヤーが必要とするもの——動機も記憶も冗談も、そして操作の指示さえも——すべてが吹き出しの中の絵として届く。達成されたのは我慢ではなく置換のほうだ。会話が普段運んでいる情報の荷を絵が運べること、しかもそうすると結果は読みにくくなるどころか読みやすくなること、をこの作品は実証した。言葉を使わないアドベンチャーゲームの系譜の原点であり、言語を取り除いても意味は消えず、動きと構図と絵の中へ移動するだけである——そしてプレイヤーはそれを読むことが十分にできる、というデザイン上の洞察の原点でもある。",
+    },
+  },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
