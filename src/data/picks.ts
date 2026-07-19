@@ -12304,6 +12304,116 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "phantomancer": {
+    published: "2026-08-07",
+    publishAt: "2026-08-07",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "phantom-summon-deckbuilder"。デッキ構築の系譜としては王道だが、本作の核は
+    //   カードを引くデッキ戦闘に加えて「ファントム」を召喚し、上級ファントムを作るコストとして
+    //   下位ファントムを消費する二層目のシステムが乗っている点。ストア本文実測: 「カードを使って
+    //   戦おう」「ファントムを召喚しよう」の2見出しで機構を分けて説明している。
+    // lineageは新規anchorを作らず既存の"slay-the-spire"を再利用する。ローグライク・デッキ構築
+    //   というジャンルそのものを定義した原点として当サイトで繰り返し使っている型。本作固有の
+    //   召喚レイヤーは影響を公言されたものではない当サイト独自の観察である(自信度: 中)。
+    // developer=publisher=Cloudgear Games。Steamのdeveloper検索を自分で叩き、この名義は
+    //   本体(3442280)とアートブック(3813730)の2本のみで、両方ともdeveloper=publisherが
+    //   一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // 国籍について: ストアの英語ページも存在するが、日本語の「このゲームについて」本文は
+    //   「魔術協会から依頼を受けた魔法使いヒトヨは、出現した魔物を討伐する旅に出ます。」のように
+    //   一次言語として自然な日本語で書かれている(翻訳調ではない)。対応言語は英語・日本語の2つ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ11件(Roguelike Deckbuilder /
+    //   Card Game / Fantasy / Roguelike / Deckbuilding / Roguelite / Anime / Singleplayer /
+    //   Indie / Card Battler / Strategy)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済み
+    //   (発売日は2025年4月10日)で正式版として売られている。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Phantomancer"
+    //   "Cloudgear Games"とも0件。日本のインディーを扱う英語ブログgoodorevengreat.gamesの
+    //   サイト内検索も"Nothing Found"。電ファミニコゲーマー側では単発記事ではなく
+    //   Steamセールの推薦120本リストの中の1本として言及されているのみで、これは日本語媒体の
+    //   一覧掲載でありconditionの対象である西側編集記事には当たらない。
+    // west_unreached: supported_languagesは英語・日本語のみ(中華圏言語は無い)。appreviews
+    //   API実測で全105件のうち日本語97件・英語わずか3件・簡体字1件・繁体字1件・韓国語3件。
+    //   英語UIは実装済みで西側読者は遊べるが到達していないので obscurity: "deep" /
+    //   reachState: "unreached_west"を採る。
+    // 数字について: 105件で好評率92.4%(非常に好評)は当サイトの理想95%にはやや届かないが、
+    //   最低ライン88%は上回る。先に開示する。
+    meta: { genre: "phantom-summon-deckbuilder", lineage: "slay-the-spire", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 105, positivePct: 92 } },
+    games: [
+      {
+        name_en: "Phantomancer",
+        name_ja: "Phantomancer",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3442280/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page splits its pitch into two headings, and the split is the design. The first is \"fight with cards\": a roguelike deckbuilder where the mage Hitoyo, sent by the Magic Guild, draws from a deck of over 150 cards to fight monsters as she climbs. The second is \"summon phantoms\": creatures that attack for you and shield you from attacks, and here the system doubles back on itself, because phantoms already summoned can be spent as the cost to summon stronger, advanced phantoms, which then sit in a separate pouch area available regardless of what is in your hand. So the game is not one resource economy but two running in parallel, cards you draw and phantoms you both deploy and consume, and reading which of your own board pieces is worth demoting to fuel a better one is where the harder decisions live. Made by Cloudgear Games, whose only two Steam titles are this game and its companion artbook, both with developer and publisher identical. Priced at ¥1,400, it is at 92 percent across 105 reviews (97 positive, 8 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 105 reviews, 97 are in Japanese and just 3 are in English.",
+        desc_ja: "ストアページは売り文句を2つの見出しに分けていて、その分け方自体が設計になっている。1つ目は「カードを使って戦おう」——魔術協会から依頼を受けた魔法使いヒトヨが、150枚以上あるデッキからカードを引いて魔物と戦いながら進むローグライク・デッキ構築である。2つ目は「ファントムを召喚しよう」——攻撃や主人公の盾になってくれる存在で、ここでシステムが自分自身に折り返す。既に召喚済みのファントムを、より強い上級ファントムを召喚するコストとして消費できるのだ。上級ファントムはポーチという別領域に入り、手札に関わらずいつでも使える。つまりこのゲームには資源経済が1つではなく2つ並走している——引くカードと、配置しつつ消費するファントム——そして自分の盤面のどの駒を「格下げして燃料にする」価値があるかを読むところに、難しい判断が宿っている。制作はCloudgear Games。Steamに並ぶのは本作とアートブックの2本のみで、両方とも開発元と発売元が同一である。価格は¥1,400。105件のレビュー(好評97件・不評8件、Steam自身のレビューAPI実測)で好評率92%(非常に好評)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み(発売日は2025年4月10日)、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。105件の内訳は、日本語97件・英語わずか3件だ。",
+      },
+      {
+        name_en: "Slay the Spire",
+        name_ja: "Slay the Spire",
+        status: "established",
+        steam: "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "Slay the Spire is a roguelike deck-building game developed by the American indie studio Mega Crit, launched in early access in late 2017 and fully released in January 2019. By combining procedurally generated ascents of a multi-floor spire with deck-building combat in which cards are gained as run rewards, it popularized and is widely credited with defining the roguelike deckbuilder genre, inspiring later titles such as Monster Train.",
+        desc_ja: "Slay the Spireは、米国のインディースタジオMega Critが開発したローグライク・デッキ構築ゲームで、2017年末にアーリーアクセス、2019年1月に正式リリースされた。手続き生成される多層の塔の登攀と、戦闘の報酬としてカードを得て構築するデッキ戦闘を組み合わせ、「ローグライク・デッキビルダー」というジャンルを広く普及・定義したと評価され、Monster Trainなど後続作品に影響を与えた、その系譜の原点である。",
+      },
+    ],
+    en: {
+      title: "Phantomancer - a roguelike deckbuilder where summoned phantoms become fuel for stronger phantoms. Made by Cloudgear Games for ¥1,400. 92 percent over 105 reviews, mostly Japanese",
+      description: "A roguelike deckbuilder that runs two resource systems at once: cards drawn from a deck of over 150, and phantoms you summon to fight and shield you, which can themselves be spent as the cost of summoning stronger phantoms. 92 percent over 105 reviews, English supported.",
+      h1a: "You fight with a deck of over 150 cards, and you summon phantoms to help. ",
+      h1flip: "Then the game asks you to spend your own phantoms as fuel for stronger ones",
+      h1b: ".",
+      lede: "The store page splits its pitch into two headings, and the split is the design. The first is \"fight with cards\": a roguelike deckbuilder where the mage Hitoyo, sent by the Magic Guild, draws from a deck of over 150 cards to fight monsters as she climbs. The second is \"summon phantoms\": creatures that attack for you and shield you from attacks, and here the system doubles back on itself, because phantoms already summoned can be spent as the cost to summon stronger, advanced phantoms, which then sit in a separate pouch area available regardless of what is in your hand. So the game is not one resource economy but two running in parallel, cards you draw and phantoms you both deploy and consume, and reading which of your own board pieces is worth demoting to fuel a better one is where the harder decisions live. Made by Cloudgear Games, whose only two Steam titles are this game and its companion artbook, both with developer and publisher identical. Priced at ¥1,400, it is at 92 percent across 105 reviews (97 positive, 8 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 105 reviews, 97 are in Japanese and just 3 are in English, and no English-language article about this game exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The deckbuilder half plays like the genre you already know: draw, read the board, spend. It is the phantom half that changes the math, because a phantom is not a fixed asset the way a played card is; it is a thing you can still choose to spend later.",
+        "The pouch area, holding advanced phantoms outside your hand, means the upgrade path is not luck-gated the way a redraw would be. You know exactly what you are giving up when you cash in a phantom, which makes the trade legible instead of just costly.",
+        "The harder reads are never about the cards in your hand. They are about which phantom on your own side of the board has already done its job and is worth demoting into something better.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Slay the Spire's roguelike deckbuilder core with a second resource system layered on top, not a reskin of the same one loop",
+        "You want a design where upgrading is a visible trade you make with your own board, not a blind draw",
+        "You want small and self-published: Cloudgear Games' only two Steam titles are this game and its artbook, both developer and publisher identical, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 105 reviews at 92 percent is solid but short of this site's ideal 95",
+        "You want a game already found in the West; of 105 reviews only 3 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Phantomancer - 召喚したファントムが、より強いファントムの燃料になるローグライク・デッキ構築。Cloudgear Games制作、価格¥1,400。105件で好評率92%、ほぼ日本語",
+      description: "150枚以上のデッキから引くカード戦闘と、戦い盾になってくれるファントムの召喚——そのファントム自体を上級ファントムのコストとして消費できる、2つの資源系統が同時に走るローグライク・デッキ構築。105件のレビューで好評率92%、英語対応。",
+      h1a: "150枚以上のデッキで戦い、ファントムを召喚して助けてもらう。",
+      h1flip: "そのファントム自身を、より強いファントムの燃料として差し出すことを求められる",
+      h1b: "。",
+      lede: "ストアページは売り文句を2つの見出しに分けていて、その分け方自体が設計になっている。1つ目は「カードを使って戦おう」——魔術協会から依頼を受けた魔法使いヒトヨが、150枚以上あるデッキからカードを引いて魔物と戦いながら進むローグライク・デッキ構築である。2つ目は「ファントムを召喚しよう」——攻撃や主人公の盾になってくれる存在で、ここでシステムが自分自身に折り返す。既に召喚済みのファントムを、より強い上級ファントムを召喚するコストとして消費できるのだ。上級ファントムはポーチという別領域に入り、手札に関わらずいつでも使える。つまりこのゲームには資源経済が1つではなく2つ並走している——引くカードと、配置しつつ消費するファントム——そして自分の盤面のどの駒を「格下げして燃料にする」価値があるかを読むところに、難しい判断が宿っている。制作はCloudgear Games。Steamに並ぶのは本作とアートブックの2本のみで、両方とも開発元と発売元が同一である。価格は¥1,400。105件のレビュー(好評97件・不評8件)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点。105件の内訳は日本語97件・英語わずか3件で、本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "デッキ構築の半分は、見知ったジャンルの手触りのまま進む——引いて、盤面を読んで、使う。数式を変えてくるのはファントムの半分だ。ファントムは使ったカードのように固定された資産ではなく、後からでも「消費する」という選択が残り続ける駒である。",
+        "上級ファントムを手札の外のポーチに置く設計は、アップグレードの道筋を引き運に晒さない。ファントムを換金する時、自分が何を失うのかが明確に見えているので、その取引は「ただ高くつく」のではなく「読める」ものになっている。",
+        "本当に難しい判断は、手札のカードでは起きない。自分の盤面に既にいるどのファントムが、もう仕事を終えていて、もっと良いものへ格下げする価値があるか、そこにある。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Slay the Spire的なローグライク・デッキ構築の核に、同じ一本のループの焼き直しではなく、もう1層の資源システムが乗っているものが欲しい人",
+        "アップグレードが自分の盤面との目に見える取引であり、見えない引き運ではない設計が欲しい人",
+        "小さくて自主出版のものが欲しい人——Cloudgear GamesのSteamタイトルは本作とアートブックの2本のみで、両方とも開発元と発売元が同一、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——105件で好評率92%は手堅いが、当サイトの理想95には一歩届かない",
+        "既に西で見つかっているゲームが欲しい人——105件のうち英語はわずか3件で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
