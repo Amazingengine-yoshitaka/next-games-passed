@@ -12359,8 +12359,8 @@ export const picks = {
         steam: "https://store.steampowered.com/app/646570/Slay_the_Spire/",
         tag_en: "The origin",
         tag_ja: "原点",
-        desc_en: "Slay the Spire is a roguelike deck-building game developed by the American indie studio Mega Crit, launched in early access in late 2017 and fully released in January 2019. By combining procedurally generated ascents of a multi-floor spire with deck-building combat in which cards are gained as run rewards, it popularized and is widely credited with defining the roguelike deckbuilder genre, inspiring later titles such as Monster Train.",
-        desc_ja: "Slay the Spireは、米国のインディースタジオMega Critが開発したローグライク・デッキ構築ゲームで、2017年末にアーリーアクセス、2019年1月に正式リリースされた。手続き生成される多層の塔の登攀と、戦闘の報酬としてカードを得て構築するデッキ戦闘を組み合わせ、「ローグライク・デッキビルダー」というジャンルを広く普及・定義したと評価され、Monster Trainなど後続作品に影響を与えた、その系譜の原点である。",
+        desc_en: "The origin of this taste: Slay the Spire, the American indie roguelike deckbuilder that defined the loop of drawing from a deck and reading a board that changes every run. Phantomancer is not an official Slay the Spire work, but its own twist runs a second economy alongside that same core loop, phantoms you summon to fight and shield you, which can themselves be spent as the cost of summoning something stronger.",
+        desc_ja: "この味の原点——Slay the Spire。デッキから引き、ラン毎に変わる盤面を読むというループを定義した米国産インディー・ローグライク・デッキビルダー。Phantomancerは公式のSlay the Spire作品ではないが、同じ核となるループの隣にもう一つの経済を走らせる独自の捻りを持つ——召喚して戦わせ、盾にもなるファントムを、より強いファントムを召喚するコストとしても消費できるのだ。",
       },
     ],
     en: {
@@ -12410,6 +12410,111 @@ export const picks = {
       bad: [
         "安定した数字が欲しい人——105件で好評率92%は手堅いが、当サイトの理想95には一歩届かない",
         "既に西で見つかっているゲームが欲しい人——105件のうち英語はわずか3件で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
+  "goblin-gnome-horn": {
+    published: "2026-08-08",
+    publishAt: "2026-08-08",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "chore-grind-boss-duel"。ストア本文実測: 敵は魔王ただ一体のみで隣の部屋にいつでも
+    //   挑戦できる。攻略手段は「労働」ミニゲーム(薪割り・便所そうじ等6種)でドングリを稼いで強い装備を
+    //   買うか、左クリック攻撃・右クリックパリィの実力だけで倒すか。ストア文自身が「労働を頑張り強い
+    //   装備で魔王を倒すか、実力で魔王を倒すかはあなた次第です。」と明言しており、この二択の並立こそが
+    //   本作の核だと判断した。
+    // lineageは新規anchor "dark-souls" を作成。パリィ中心の高難度単体ボス戦というジャンルそのものを
+    //   定義した原点として採用。本作固有の「労働周回で装備を稼ぐ代替ルート」は影響を公言されたものでは
+    //   ない当サイト独自の観察である(自信度: 中)。ユーザータグにも実際に"Souls-like"が含まれる。
+    // developer=publisher=kawashiri_kodama,Kazuho(2名義併記の自主制作チーム)。Steamのdeveloper検索を
+    //   両名義それぞれで自分で叩き、本作含め計3本(Goblin_Gnome_Horn / Time Cat / 鬼サザエトリ)全てで
+    //   developer=publisherが一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向けコンテンツの
+    //   説明セクションが無いことも確認。ユーザータグ18件(Fantasy/Comedy/Comic Book/Action/Souls-like/
+    //   Side Scroller/2D/Combat/Anime/Singleplayer/Cartoony/Action RPG/Cute/Indie/Casual/PvE/
+    //   Hand-drawn/Multiple Endings)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで正式版として
+    //   売られている(発売日は2025年5月22日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Goblin Gnome Horn"
+    //   "kawashiri_kodama"とも0件。日本のインディーを扱う英語ブログgoodorevengreat.gamesの
+    //   サイト内検索も"Nothing Found"。
+    // west_unreached: supported_languagesは日本語・英語のみ。appreviews API実測で全162件のうち
+    //   日本語144件・英語わずか11件・簡体字0件・繁体字4件・韓国語2件。英語UIは実装済みで西側読者は
+    //   遊べるが到達していないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字について: 162件で好評率91.4%(非常に好評)は当サイトの理想95%には届かないが、
+    //   最低ライン88%は上回る。先に開示する。
+    meta: { genre: "chore-grind-boss-duel", lineage: "dark-souls", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 162, positivePct: 91 } },
+    games: [
+      {
+        name_en: "Goblin Gnome Horn",
+        name_ja: "Goblin Gnome Horn",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3675060/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page ends its pitch with a single sentence that turns out to be the whole design: whether you grind labor for strong equipment to defeat the demon lord, or defeat him through skill alone, is up to you. You play a small goblin, Nekkubi, and the demon lord is the only enemy in the game, sitting in the next room, always available, and beatable at any time. Around that one fixed fight the game builds an economy: six 'labor' minigames, wood-chopping, toilet-cleaning and the like, each simple enough to run on a single input, that pay out acorns, which buy equipment and skills from a shop, which make the fight easier. Or you can walk past the shop and go straight for the door, since combat is just left-click to attack and right-click to parry, spending acorns only to heal if you choose to carry any in. The two paths are not sequential, one is not a tutorial for the other; they are a standing choice about what kind of player you want to be for the roughly two hours it takes to see the ending, and the store commits to that framing rather than treating the grind as padding. Made by the two-person team kawashiri_kodama and Kazuho, whose only three Steam titles all carry the same two names as developer and publisher. Priced at ¥470, it is at 91 percent across 162 reviews (148 positive, 14 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 162 reviews, 144 are in Japanese and just 11 are in English.",
+        desc_ja: "ストアページは売り文句を1文で締めくくっていて、それがそのまま設計そのものになっている——「労働を頑張り強い装備で魔王を倒すか、実力で魔王を倒すかはあなた次第です」。操作するのは小さなゴブリン「ネックビ」。魔王はゲーム内で唯一の敵で、隣の部屋にいつでも挑戦でき、いつでも倒せる。その一つの固定された戦いを中心に、ゲームは経済を組み上げる——薪割りや便所そうじなど、単一の操作で完結する簡単な「労働」ミニゲームが6種類あり、その成果でドングリを得て、それで装備やスキルをショップで買い、戦いを楽にする。あるいはショップを素通りしてそのまま扉に向かってもいい。戦闘は左クリックで攻撃、右クリックでパリィをするだけで、ドングリを持ち込めば体力回復に使える程度だ。2つの道は連続していない——片方がもう片方のチュートリアルなのではなく、エンディングまでのおよそ2時間、自分がどちらのプレイヤーでありたいかを問う、並立する選択なのだ。そしてストアはその建て付けを、労働パートを水増しの穴埋めとして扱うのではなく、正面から約束している。制作は2人組のkawashiri_kodamaとKazuho。Steamに並ぶ3本すべてで、開発元と発売元にこの2名義が同じ形で入っている。価格は¥470。162件のレビュー(好評148件・不評14件、Steam自身のレビューAPI実測)で好評率91%(非常に好評)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。162件の内訳は、日本語144件・英語わずか11件だ。",
+      },
+      {
+        name_en: "Dark Souls",
+        name_ja: "Dark Souls",
+        status: "established",
+        steam: "https://store.steampowered.com/app/211420/DARK_SOULS_Prepare_to_Die_Edition/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Dark Souls, the FromSoftware action RPG that defined punishing, deliberate melee combat where reading an enemy's timing matters more than raw stats. Goblin Gnome Horn is not an official Dark Souls work, but it takes that same single-boss, parry-driven core and builds an explicit second path beside it, grinding mundane chores for gear as a legitimate, store-endorsed alternative to mastering the fight itself.",
+        desc_ja: "この味の原点——Dark Souls。敵のタイミングを読むことが素のステータスより物を言う、苛烈で慎重な近接戦闘を定義したFromSoftwareのアクションRPG。Goblin Gnome Hornは公式のDark Souls作品ではないが、同じ単体ボス・パリィ主体の核をそのまま引き継ぎつつ、その隣にもう一つの道を明示的に築いている——地味な雑用を周回して装備を稼ぐことを、戦い自体を極めることと並び立つ正当な選択肢として、ストア自身が肯定しているのだ。",
+      },
+    ],
+    en: {
+      title: "Goblin Gnome Horn - one boss, the demon lord, always available. Grind chore minigames for gear or beat him on parry skill alone, your choice. Made by kawashiri_kodama and Kazuho for ¥470. 91 percent over 162 reviews, mostly Japanese",
+      description: "A 2D action game built around a single repeatable boss fight. Six chore minigames, wood-chopping, toilet-cleaning, pay out currency for gear, or you can skip the grind and win on parry timing alone. About two hours to the ending. 91 percent over 162 reviews, English supported.",
+      h1a: "There is one boss, the demon lord, always waiting in the next room. ",
+      h1flip: "Grind chores for gear, or beat him on skill alone, the choice is explicitly yours",
+      h1b: ".",
+      lede: "The store page ends its pitch with a single sentence that turns out to be the whole design: whether you grind labor for strong equipment to defeat the demon lord, or defeat him through skill alone, is up to you. You play a small goblin, Nekkubi, and the demon lord is the only enemy in the game, sitting in the next room, always available, and beatable at any time. Around that one fixed fight the game builds an economy: six 'labor' minigames, wood-chopping, toilet-cleaning and the like, each simple enough to run on a single input, that pay out acorns, which buy equipment and skills from a shop, which make the fight easier. Or you can walk past the shop and go straight for the door, since combat is just left-click to attack and right-click to parry, spending acorns only to heal if you choose to carry any in. The two paths are not sequential, one is not a tutorial for the other; they are a standing choice about what kind of player you want to be for the roughly two hours it takes to see the ending, and the store commits to that framing rather than treating the grind as padding. Made by the two-person team kawashiri_kodama and Kazuho, whose only three Steam titles all carry the same two names as developer and publisher. Priced at ¥470, it is at 91 percent across 162 reviews (148 positive, 14 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 162 reviews, 144 are in Japanese and just 11 are in English, and no English-language article about this game exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most games that let you grind past a hard fight treat the grind as a mercy, an escape hatch you feel a little guilty using. Here the store puts both doors on equal footing, so choosing to farm acorns for an hour is not lesser play, it is one of exactly two intended ways to win.",
+        "Because the boss is the only enemy and always sitting right there, every attempt costs nothing but time. There is no run-up, no other content standing between you and the thing you actually came to test yourself against.",
+        "The chore framing does real work. Wood-chopping and toilet-cleaning are deliberately unglamorous, which makes the parry-only run feel less like optimal play and more like a kind of pride, skipping the labor because you would rather earn it with your hands.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Dark Souls' single-boss, parry-driven core distilled down to about two hours, with the padding around it made explicit rather than hidden",
+        "You want a game that treats grinding for gear and mastering the fight as two equally valid answers to the same question, not a skill path and a consolation path",
+        "You want small and self-published: kawashiri_kodama and Kazuho's only three Steam titles all carry both names as developer and publisher, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 91 percent over 162 reviews is solid but short of this site's ideal 95",
+        "You want a game already found in the West; of 162 reviews only 11 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Goblin Gnome Horn - 敵は魔王ただ一体、隣の部屋にいつでもいる。雑用ミニゲームで装備を稼ぐか、パリィの実力だけで倒すか。kawashiri_kodama/Kazuho制作、価格¥470。162件で好評率91%、ほぼ日本語",
+      description: "たった一体のボスに繰り返し挑む2Dアクション。薪割りや便所そうじなど6種の雑用ミニゲームで通貨を稼いで装備を買うか、周回を飛ばしてパリィの実力だけで挑むか。エンディングまでおよそ2時間。162件のレビューで好評率91%、英語対応。",
+      h1a: "敵は魔王ただ一体。隣の部屋にいつでも待っている。",
+      h1flip: "雑用を周回して装備を稼ぐか、実力だけで倒すか、選ぶのは明確にあなただ",
+      h1b: "。",
+      lede: "ストアページは売り文句を1文で締めくくっていて、それがそのまま設計そのものになっている——「労働を頑張り強い装備で魔王を倒すか、実力で魔王を倒すかはあなた次第です」。操作するのは小さなゴブリン「ネックビ」。魔王はゲーム内で唯一の敵で、隣の部屋にいつでも挑戦でき、いつでも倒せる。その一つの固定された戦いを中心に、ゲームは経済を組み上げる——薪割りや便所そうじなど、単一の操作で完結する簡単な「労働」ミニゲームが6種類あり、その成果でドングリを得て、それで装備やスキルをショップで買い、戦いを楽にする。あるいはショップを素通りしてそのまま扉に向かってもいい。戦闘は左クリックで攻撃、右クリックでパリィをするだけで、ドングリを持ち込めば体力回復に使える程度だ。2つの道は連続していない——片方がもう片方のチュートリアルなのではなく、エンディングまでのおよそ2時間、自分がどちらのプレイヤーでありたいかを問う、並立する選択なのだ。そしてストアはその建て付けを、労働パートを水増しの穴埋めとして扱うのではなく、正面から約束している。制作は2人組のkawashiri_kodamaとKazuho。Steamに並ぶ3本すべてで、開発元と発売元にこの2名義が同じ形で入っている。価格は¥470。162件のレビュー(好評148件・不評14件)で好評率91%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点。162件の内訳は日本語144件・英語わずか11件で、本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "強い敵を周回で押し切らせてくれるゲームの多くは、その周回を「情け」として扱う——少し後ろめたさを感じながら使う逃げ道として。ここでは違う。ストアが両方の扉を対等に置いているので、1時間かけてドングリを稼ぐことは劣った遊び方ではなく、意図された2つの正解のうちの1つになる。",
+        "ボスがただ一体で、常にすぐそこにいるからこそ、挑戦の1回1回に時間以外のコストがかからない。助走も、本当に試したいものとの間に挟まる他のコンテンツも存在しない。",
+        "「労働」という枠組みが実際の仕事をしている。薪割りや便所そうじはあえて格好悪く作られていて、だからこそパリィだけで押し通す挑戦が、単なる最適な遊び方ではなく、一種の意地——手で稼ぐより、その労働を飛ばすことを選ぶ意地——のように感じられる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Dark Soulsの単体ボス・パリィ主体の核を、およそ2時間に凝縮し、その周りの水増しを隠さず明示したものが欲しい人",
+        "装備を稼ぐことと戦いを極めることを、片方がもう片方の妥協案ではなく、同じ問いへの等しく正当な2つの答えとして扱うゲームが欲しい人",
+        "小さくて自主出版のものが欲しい人——kawashiri_kodamaとKazuhoのSteamタイトルは3本のみで、両名義が開発元と発売元に同じ形で入っており、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——162件で好評率91%は手堅いが、当サイトの理想95には一歩届かない",
+        "既に西で見つかっているゲームが欲しい人——162件のうち英語はわずか11件で、英語記事はまだどこにも存在しない",
       ],
       s3: "系譜：この味の原点",
     },
@@ -12487,6 +12592,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "dark-souls": {
+    steam: "211420",
+    blurb: {
+      en: "Dark Souls is an action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment, released for PC in 2012 as a spiritual successor to Demon's Souls. Built around punishing, deliberate melee combat against a small cast of large bosses, where reading an enemy's timing and choosing when to commit an attack matters more than raw stats, it defined the modern 'souls-like' genre and the broader lineage of games centered on a single hard-won encounter mastered through repetition.",
+      ja: "Dark Soulsは、FromSoftwareが開発しBandai Namco Entertainmentが発売したアクションRPGで、『Demon's Souls』の精神的続編として2012年にPC版が発売された。少数の巨大なボスを相手にした苛烈で慎重な近接戦闘——敵のタイミングを読み、攻撃に踏み込む瞬間を選ぶことが素のステータスより物を言う——を核に据え、現代の「ソウルライク」ジャンルと、反復によって攻略する一つの手強い戦いを中心に据えたゲーム群の系譜を定義した、その原点である。",
+    },
+  },
   "superhot": {
     steam: "322500",
     blurb: {
