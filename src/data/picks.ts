@@ -11545,6 +11545,113 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "misuzu-no-kuni": {
+    published: "2026-08-04",
+    publishAt: "2026-08-04",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(アドベンチャー/カジュアル/インディー)が広すぎるため、作品の中核である
+    //   舞台設定に沿って新設 "tengu-country-novel"。ユーザータグ側は ビジュアルノベル /
+    //   テキストベース / 伝承豊か / 歴史 / 自然 / 魔法 が並ぶ。
+    // lineage は新規anchorを作らず既存の "planetarian" を再利用する。ストア本文自身が
+    //   「みすずの国は、選択肢のない一本道のノベルゲームです。」と名乗っており、英語版の説明でも
+    //   "a kinetic visual novel with no choices or branching paths" と書いている。選択肢を持たない
+    //   ノベル＝キネティックノベルという形の原点がplanetarianであり、一致は形式そのもの。
+    //   ただし狙いは異なる。planetarianが読者を一つの結末へ連れて行くために選択肢を捨てたのに対し、
+    //   本作は「天狗の国」という架空の自治領区の内側を見せて回るために一本道を選んでいる。
+    //   影響を公言されたものではない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=StudioHommage / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の登録は
+    //   本作1本のみ(total_count=1)であることを確認した——デビュー作である。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。サポート窓口も個人サイト(hommage.main.jp)。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグ全14件にも性的表現関連は皆無。
+    // 【AI開示があるので定型句で隠さない】開示欄は存在し、日本語原文は
+    //   「一部背景にAIによる修正、生成を含んでいます。」英語版は "Some of the backgrounds contain
+    //   elements that were modified or generated with the assistance of AI."——背景という単一
+    //   カテゴリに限定された補助的開示で、基準(5)の「単一カテゴリ限定は許容」に該当する。
+    //   ただし当サイトの運用どおり、原文をそのまま記事本文に載せる。
+    // is_free=false・カートに入れるボタン実測。early_access_headerも無く正式リリース済み。
+    // west_unreached: supported_languages は日本語のみ。しかも開発者は英語版ストアの説明文の末尾に
+    //   自ら "Supported language: Japanese only." と書いている——英語で読む人に向けて、英語で、
+    //   これは読めませんと告げている。appreviews API実測で全23件のうち日本語19件・英語ちょうど0件・
+    //   簡体字4件、不評0件。言語の壁の典型なので obscurity: "wall" / reachState: "lang_walled"。
+    // 西側編集記事はゼロ。AUTOMATON WESTのWP REST APIを直接叩いて検索し0件を確認した。日本語圏では
+    //   もぐらゲームスが取り上げている。
+    // 数字について: 23件で好評率100%・不評0件は強いが母数は薄く、プレイ時間も2〜3時間。先に開示する。
+    meta: { genre: "tengu-country-novel", lineage: "planetarian", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 23, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Misuzu no Kuni",
+        name_ja: "みすずの国",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3638590/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The premise is one line of alternate administrative history and it is very good: in a Japan at the end of the twentieth century, there exists inside the country a special autonomous territory known as the Land of the Tengu. Not a hidden world, not a portal, not another dimension. A region. With a border you enter. A girl named Misuzu enters it and joins the tengu training, and what unfolds from there is a fantasy school drama with beast gods called bake, a tengu princess, and a magical faculty called jintsuriki. The store text is unusually plain about the form it takes: this is a kinetic novel with no choices and no branching paths, read forward by clicking, running two to three hours, with a recollection mode afterwards for revisiting the art and the original soundtrack. It is the first and so far only thing StudioHommage has put on Steam; a direct check of Steam's developer search under that name returns exactly one title, and the contact address is their own site rather than a company. Released April 25, 2025 at ¥500, it is at 100 percent across 23 reviews (23 positive, zero negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. Steam's content descriptors are completely empty, there is no mature content section, and none of its fourteen user tags touch anything sexual. There is an AI disclosure and this site quotes those in full rather than paraphrasing: some of the backgrounds contain elements that were modified or generated with the assistance of AI. That is the whole of it; no other category is covered. And then there is the detail that made this pick worth writing. The English-language store page carries an English description, and the developer ends it with a sentence addressed to the people reading it: supported language, Japanese only. They wrote in English, to English readers, to tell them they cannot read this. Of its 23 reviews, exactly zero are in English.",
+        desc_ja: "前提が一行の行政史改変になっていて、それが非常に良い——20世紀末の日本国内に、「天狗の国」という架空の自治領区が存在する。隠れ里ではない。異界への門でもない。地域である。国境があって、入国する。みすずという少女がそこに入国し、天狗の修行に参加していく。そこから展開するのは、化けと呼ばれる獣の神様や、天狗のお姫様、神通力と呼ばれる魔法の力が登場する、異世界学園風のドラマだ。ストア本文は、自分がどういう形式かについて異例なほど率直である——「みすずの国は、選択肢のない一本道のノベルゲームです。」クリックで読み進め、プレイ時間は2時間から3時間程度、そして読み終えたあとには回想機能があり、ゲーム内で体験したビジュアルやオリジナルサウンドトラックを視聴できる。これはStudioHommageがSteamに出した最初の、そして今のところ唯一の作品である。この名義でSteamのdeveloper検索を直接叩くと返ってくるのはちょうど1件で、連絡先も法人ではなく自身のサイトだ。発売日は2025年4月25日、価格¥500。23件のレビュー(好評23件・不評0件、Steam自身のレビューAPI実測)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steamのコンテンツディスクリプタは完全に空で、大人向けコンテンツの説明欄も存在せず、14件のユーザータグにも性的なものは一つもない。AI生成コンテンツの開示欄は存在する。当サイトはそこを言い換えず全文で引く——「一部背景にAIによる修正、生成を含んでいます。」開示の範囲はこれだけで、他のカテゴリは一切含まれていない。そして、この記事を書く価値を決めた一点がある。英語版のストアページには英語の説明文が載っていて、開発者はその末尾を、読んでいる相手に向けたこの一文で締めている——「Supported language: Japanese only.」英語で、英語の読者に向けて、これはあなたには読めません、と書いてある。23件のレビューのうち、英語はちょうど0件だ。",
+      },
+      {
+        name_en: "planetarian HD",
+        name_ja: "planetarian HD",
+        status: "established",
+        steam: "https://store.steampowered.com/app/623080/planetarian_HD/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: planetarian, the 2004 work from Key that gave the kinetic novel its name and its case for existing. It removed choices entirely, which at the time read as taking something away, and then demonstrated what you get in return: an author who knows exactly what you have seen and in what order, and can therefore aim. There is one path because there is one thing to say. Misuzu no Kuni is not an official Key work, and this lineage is a comparison drawn by this site rather than a stated influence, but the form is inherited exactly, and its store page uses the same word for itself. Where they differ is what the single path is for. planetarian removed the branches to deliver you to one ending. This one removes them to walk you through a place, an autonomous territory of tengu sitting inside a late-twentieth-century Japan, in the order its author wants you to see it.",
+        desc_ja: "この味の原点——planetarian。2004年、Keyによる作品で、キネティックノベルという言葉とその存在理由を同時に与えた。選択肢を完全に取り払い、当時それは「何かを奪う」ことのように読まれた。そのうえで、引き換えに何が手に入るかを実証してみせた——書き手が、読者が何をどの順で見たかを正確に知っている、ということ。だから狙える。道が一本しかないのは、言いたいことが一つしかないからだ。『みすずの国』は公式のKey作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。ただし形式はそのまま受け継がれていて、ストアページも自分について同じ言葉を使っている。両者が分かれるのは、その一本道が何のためにあるかだ。planetarianが分岐を取り払ったのは、読者を一つの結末へ届けるためだった。こちらが取り払っているのは、ある場所を歩いて見せるため——20世紀末の日本の内側にある天狗の自治領区を、書き手が見せたい順番で。",
+      },
+    ],
+    en: {
+      title: "Misuzu no Kuni - inside a late-20th-century Japan there is a special autonomous territory called the Land of the Tengu, and a girl enters it to train. A kinetic novel with no choices, two to three hours, ¥500. 100 percent across 23 reviews, and the developer wrote in English to say you cannot read it",
+      description: "A kinetic novel set in a Japan that contains an autonomous territory of tengu. Misuzu enters it and joins the training; beast gods, a tengu princess, and a magic called jintsuriki follow. No choices, no branches, two to three hours, with a recollection mode for the art and soundtrack afterwards. A solo debut, self-published. 100 percent across 23 reviews, Japanese-only.",
+      h1a: "In the Japan of the late twentieth century there is a special autonomous territory, and it belongs to the tengu. ",
+      h1flip: "A girl called Misuzu crosses the border into it and signs up for the training",
+      h1b: ".",
+      lede: "The premise is one line of alternate administrative history and it is very good: in a Japan at the end of the twentieth century, there exists inside the country a special autonomous territory known as the Land of the Tengu. Not a hidden world, not a portal, not another dimension. A region. With a border you enter. A girl named Misuzu enters it and joins the tengu training, and what unfolds from there is a fantasy school drama with beast gods called bake, a tengu princess, and a magical faculty called jintsuriki. The store text is unusually plain about the form it takes: this is a kinetic novel with no choices and no branching paths, read forward by clicking, running two to three hours, with a recollection mode afterwards for revisiting the art and the original soundtrack. It is the first and so far only thing StudioHommage has put on Steam; a direct check of Steam's developer search under that name returns exactly one title, and the contact address is their own site rather than a company. Released April 25, 2025 at ¥500, it is at 100 percent across 23 reviews (23 positive, zero negative), a paid title, not free, fully launched and not in Early Access. Steam's content descriptors are completely empty, there is no mature content section, and none of its fourteen user tags touch anything sexual. There is an AI disclosure and this site quotes those in full rather than paraphrasing: some of the backgrounds contain elements that were modified or generated with the assistance of AI. That is the whole of it; no other category is covered. And then there is the detail that made this pick worth writing. The English-language store page carries an English description, and the developer ends it with a sentence addressed to the people reading it: supported language, Japanese only. They wrote in English, to English readers, to tell them they cannot read this. Of its 23 reviews, exactly zero are in English. Two honest notes: 23 reviews is a thin sample even at a perfect score, and two to three hours is short. Neither is hidden here.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Making the tengu a jurisdiction rather than a legend is the move. A hidden village asks you to believe in a secret; an autonomous territory asks you to believe in paperwork, and paperwork is much harder to argue with.",
+        "There are no choices, so the only thing you bring is attention, and the author knows exactly what you have seen and in what order. A one-way novel is not a lesser novel; it is one that can aim.",
+        "The recollection mode afterwards is a quiet admission of what the game thinks it is: not a story to finish but a place whose pictures and music you might want to stand in again once you know how it ends.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You read Japanese and want the planetarian form used for somewhere rather than someone: no branches, no choices, two to three hours, spent walking through a country that does not exist",
+        "You want a first work: one title under this name on all of Steam, a personal site as the contact, ¥500",
+        "You want a clean record: content descriptors completely empty, no mature content section, no sexual tags, and zero negative reviews out of 23",
+      ],
+      bad: [
+        "You do not read Japanese. The developer says so themselves, in English, at the end of the English description; there is no version of this you can read",
+        "You object to any AI-generated asset. The disclosure here is narrow but real: some backgrounds contain elements modified or generated with AI assistance. Nothing else is covered by it",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "みすずの国 - 20世紀末の日本の中に「天狗の国」という自治領区があり、少女が入国して修行に加わる。選択肢のない一本道のノベル、2〜3時間、¥500。23件で好評率100%、そして作者は英語で「これは読めません」と書いている",
+      description: "天狗の自治領区が国内に存在する日本を舞台にしたキネティックノベル。みすずが入国し修行に参加する。化けと呼ばれる獣の神様、天狗のお姫様、神通力という魔法。選択肢も分岐もなく、2〜3時間、読了後は回想機能でビジュアルとサウンドトラックを視聴できる。個人のデビュー作・自主出版。23件のレビューで好評率100%、日本語のみ。",
+      h1a: "20世紀末の日本国内に、特別な自治領区がある。天狗の国だ。",
+      h1flip: "みすずという少女がその国境を越えて入国し、修行に申し込む",
+      h1b: "。",
+      lede: "前提が一行の行政史改変になっていて、それが非常に良い——20世紀末の日本国内に、「天狗の国」という架空の自治領区が存在する。隠れ里ではない。異界への門でもない。地域である。国境があって、入国する。みすずという少女がそこに入国し、天狗の修行に参加していく。そこから展開するのは、化けと呼ばれる獣の神様や、天狗のお姫様、神通力と呼ばれる魔法の力が登場する、異世界学園風のドラマだ。ストア本文は、自分がどういう形式かについて異例なほど率直である——「みすずの国は、選択肢のない一本道のノベルゲームです。」クリックで読み進め、プレイ時間は2時間から3時間程度、そして読み終えたあとには回想機能があり、ゲーム内で体験したビジュアルやオリジナルサウンドトラックを視聴できる。これはStudioHommageがSteamに出した最初の、そして今のところ唯一の作品である。この名義でSteamのdeveloper検索を直接叩くと返ってくるのはちょうど1件で、連絡先も法人ではなく自身のサイトだ。発売日は2025年4月25日、価格¥500。23件のレビュー(好評23件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steamのコンテンツディスクリプタは完全に空で、大人向けコンテンツの説明欄も存在せず、14件のユーザータグにも性的なものは一つもない。AI生成コンテンツの開示欄は存在する。当サイトはそこを言い換えず全文で引く——「一部背景にAIによる修正、生成を含んでいます。」開示の範囲はこれだけで、他のカテゴリは一切含まれていない。そして、この記事を書く価値を決めた一点がある。英語版のストアページには英語の説明文が載っていて、開発者はその末尾を、読んでいる相手に向けたこの一文で締めている——「Supported language: Japanese only.」英語で、英語の読者に向けて、これはあなたには読めません、と書いてある。23件のレビューのうち、英語はちょうど0件だ。飾らずに二点。23件という母数は満点であっても薄く、2〜3時間は短い。どちらもここに書いておく。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "天狗を伝説ではなく管轄区にした、というのがこの作品の一手だ。隠れ里は「秘密を信じてくれ」と要求する。自治領区は「書類を信じてくれ」と要求する。そして書類のほうが、ずっと反論しにくい。",
+        "選択肢が無いので、こちらが持ち込むものは注意力だけになる。そして書き手は、読者が何をどの順で見たかを正確に知っている。一本道のノベルは劣ったノベルではない。狙いを付けられるノベルである。",
+        "読了後に回想機能が用意されているのは、この作品が自分を何だと思っているかの静かな表明だ——終わらせるべき物語ではなく、結末を知ったあとでもう一度立っていたくなるかもしれない場所の、絵と音楽である。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "日本語が読めて、planetarianの形式が「誰か」ではなく「どこか」のために使われているものが欲しい人——分岐も選択肢も無く、2〜3時間、存在しない国を歩いて過ごす",
+        "第一作が欲しい人——Steam全体でこの名義の登録は1件、連絡先は自分のサイト、価格¥500",
+        "記録がきれいなものが欲しい人——コンテンツディスクリプタは完全に空、大人向けコンテンツの説明欄も無し、性的タグも無し、そして23件中で不評はゼロ",
+      ],
+      bad: [
+        "日本語が読めない人。作者自身が、英語の説明文の末尾に英語でそう書いている。読める形は存在しない",
+        "AI生成アセットが一切許せない人。開示は狭いが実在する——一部の背景にAIによる修正・生成が含まれている。それ以外は開示の対象外である",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
