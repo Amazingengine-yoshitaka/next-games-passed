@@ -12198,6 +12198,112 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "eye-on-the-world": {
+    published: "2026-08-07",
+    publishAt: "2026-08-07",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンルが捉えていないため、作品の枠組みに沿って新設 "cctv-hidden-object"。
+    //   ユーザータグ側は 探し物 / 探検 / ボクセル / 調査 / かわいい / 雰囲気 が並ぶ。
+    // lineage は新規anchorを作らず既存の "hidden-folks" を再利用する。一致しているのは
+    //   「密度のある一枚の風景の中から、指示されたものを目で見つける」という遊びの形。ただし
+    //   分かれる点があり、そこが本作の核心である——Hidden Folksが手描き2Dの平面であるのに対し、
+    //   本作はボクセルの3Dジオラマで、ストア本文自身が「探索をテーマにした絵本やゲームブックとは
+    //   一味違ったデジタル3Dならではの奥行きや立体感」と書いている。さらに本作では探す動機が
+    //   監視カメラである。影響を公言されたものではない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=LilyCompany / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の4作
+    //   (本作 / MAHOROBA CAT / Observation Daruma Log / La La Lunch)すべてで
+    //   developers=publishers=LilyCompany であることを確認した。大手・海外展開代行・親会社関係の
+    //   混入はゼロ。公式サイトは lily-company.net。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグ全12件にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。early_access_header 無しで正式リリース済み。
+    // 【西側媒体との距離を正直に記録する】本作そのものには西側編集記事が存在しない。ただし
+    //   AUTOMATON WEST が同じLilyCompanyの別作『MAHOROBA CAT』(3244270)を、5本の日本インディーを
+    //   紹介するまとめ記事の中で扱っている。当方でその記事のWP REST APIレスポンスを取得し、
+    //   記事内のSteam appidが 2879980 / 3820430 / 2073980 / 3244270 / 4171020 の5件で、
+    //   本作の2476760が含まれないことを実測確認した。条件(10)は作品単位の基準なので通過するが、
+    //   「この開発者は英語媒体の視野に入っている」ことは事実なので記事本文に明記する。
+    // west_unreached: supported_languages は英語・日本語・簡体字中国語・繁体字中国語。英語UIは
+    //   実装済みで西側読者は遊べる。appreviews API実測で全22件のうち日本語18件・英語4件・
+    //   中華圏0件。言語の壁ではなく到達の欠落なので obscurity: "deep" /
+    //   reachState: "unreached_west" を採る。
+    // 数字について: 22件で好評率100%(不評0件)は強いが母数は薄い。価格¥480。先に開示する。
+    meta: { genre: "cctv-hidden-object", lineage: "hidden-folks", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 22, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Eye On The World",
+        name_ja: "Eye On The World",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2476760/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store opens by congratulating you: you have been appointed the town's special observation officer. The town in question has had surveillance cameras installed everywhere in the name of public safety, and your job is to use the footage to carry out missions. Find the missing child. Locate the lost property. Track down the cats that have settled in the town. It is, mechanically, a hidden-object game, and a very pleasant one: everything is built in voxels, there is a hint system for when you stall and a zoom for when you want to look properly, and the store's list of people it is for ends with families looking for something to play together. Then there is the sentence in the middle of the description that changes the shape of the whole thing. As you work through the missions successfully, it says, you will gradually begin to sense that something is off about this town, or about the world; and when every mission is complete, you will learn what has been set up here. So the cosy competence loop and the creeping wrongness are the same loop. You are good at your job, and being good at it is what shows you the thing you were not meant to see. The store also makes a point about the form: exploration picture books and gamebooks are one thing, but the depth and solidity of digital 3D produce a different kind of discovery. Made by LilyCompany, whose four Steam titles all carry the same name as developer and publisher. Priced at ¥480, it is at 100 percent across 22 reviews (22 positive, zero negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English, Japanese and both Chinese scripts are supported. Of its 22 reviews, 18 are in Japanese and 4 are in English.",
+        desc_ja: "ストアはあなたを祝福することから始まる——おめでとうございます、あなたは町の特別観察官に任命されました！ その町は治安維持のため至る所に監視カメラが設置されていて、あなたの仕事はその映像を使って任務をこなすことだ。迷子を捜索する。落とし物を発見する。町に住み着いた猫を探す。機構としてはこれは探し物ゲームで、しかも非常に感じのいい探し物ゲームである。すべてがボクセルで作られていて、行き詰まった時のためのヒントシステムと、じっくり見たい時のためのズーム機能があり、ストアが挙げる「こんな方におすすめ」の最後は「親子で楽しめるゲームを探している」で締めくくられている。そして説明文の途中に、全体の形を変えてしまう一文がある。順調にミッションをこなしていくあなたですが、この町あるいは世界への違和感を徐々に感じはじめることになります、、、そしてすべてのミッションを達成した時にこの世界に仕掛けられた謎を知ることになるのです。つまり、心地よく上達していくループと、じわじわ滲んでくる異常さが、同じ一つのループなのだ。あなたは仕事が上手い。そして上手いことこそが、見るはずのなかったものをあなたに見せる。ストアは形式についても一言書いている——探索をテーマにした絵本やゲームブックとは一味違った、デジタル3Dならではの奥行きや立体感の中での発見は、驚きや閃き、創造性を刺激してくれる、と。制作はLilyCompany。Steamに並ぶ4作すべてで開発元と発売元に同じ名前が入っている。価格は¥480。22件のレビュー(好評22件・不評0件、Steam自身のレビューAPI実測)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語・簡体字中国語・繁体字中国語。22件のレビューの内訳は、日本語18件・英語4件だ。",
+      },
+      {
+        name_en: "Hidden Folks",
+        name_ja: "Hidden Folks",
+        status: "established",
+        steam: "https://store.steampowered.com/app/435400/Hidden_Folks/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Hidden Folks, the hand-drawn hidden-object game that took the search-and-find picture book and made the page answer back. Its scenes are dense black-and-white ink, everything in them is interactive, and poking at the world to make tents unzip and doors swing open is both how you find what you are looking for and the entire reward for looking. It established the modern form of the genre as something closer to play than to a test: a picture you are allowed to disturb. Eye On The World is not an official Hidden Folks work, and this lineage is a comparison drawn by this site rather than a stated influence. The shared move is the one underneath, a single dense scene searched by eye. Where they part is dimension and motive. Hidden Folks is a flat drawing you rummage through for the pleasure of rummaging. This one is a voxel diorama seen through a surveillance camera, and the reason you are looking is that somebody assigned you to.",
+        desc_ja: "この味の原点——Hidden Folks。手描きの探し物ゲームで、絵探しの絵本を持ってきて、そのページのほうから応答させるようにした作品である。場面はモノクロのインクで密に描かれ、その中の何もかもが触れるようになっていて、世界をつついてテントのジッパーを開けたりドアを開かせたりすることが、探しているものを見つける手段であると同時に、探すこと自体の報酬になっている。このジャンルの現代形を「試験」ではなく「遊び」に近いものとして確立した——乱してよい絵、というかたちだ。『Eye On The World』は公式のHidden Folks作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。共有しているのは下層の一手、密度のある一場面を目で探す、という形である。分かれるのは次元と動機だ。Hidden Folksは平面の絵で、引っかき回すこと自体の楽しさのために引っかき回す。こちらはボクセルのジオラマを監視カメラ越しに見ていて、そして探している理由は、誰かにそう命じられたからである。",
+      },
+    ],
+    en: {
+      title: "Eye On The World - you have been appointed the town's special observation officer, and the town is covered in cameras. Find the missing child, the lost property, the cats. The better you get at the job, the more you notice something is wrong with the world. Made by LilyCompany for ¥480. 100 percent over 22 reviews",
+      description: "A voxel-diorama hidden-object game framed as surveillance work. You are the town's observation officer, finding missing children, lost property and stray cats through the cameras, and as the missions go well you begin to sense something is off about the town. Hint system and zoom included. 100 percent over 22 reviews, English supported.",
+      h1a: "You have been appointed the town's special observation officer, and the cameras are everywhere. ",
+      h1flip: "The better you get at the job, the more you notice something is wrong here",
+      h1b: ".",
+      lede: "The store opens by congratulating you: you have been appointed the town's special observation officer. The town in question has had surveillance cameras installed everywhere in the name of public safety, and your job is to use the footage to carry out missions. Find the missing child. Locate the lost property. Track down the cats that have settled in the town. It is, mechanically, a hidden-object game, and a very pleasant one: everything is built in voxels, there is a hint system for when you stall and a zoom for when you want to look properly, and the store's list of people it is for ends with families looking for something to play together. Then there is the sentence in the middle of the description that changes the shape of the whole thing. As you work through the missions successfully, it says, you will gradually begin to sense that something is off about this town, or about the world; and when every mission is complete, you will learn what has been set up here. So the cosy competence loop and the creeping wrongness are the same loop. You are good at your job, and being good at it is what shows you the thing you were not meant to see. The store also makes a point about the form: exploration picture books and gamebooks are one thing, but the depth and solidity of digital 3D produce a different kind of discovery. Made by LilyCompany, whose four Steam titles all carry the same name as developer and publisher. Priced at ¥480, it is at 100 percent across 22 reviews (22 positive, zero negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English, Japanese and both Chinese scripts are supported, so nothing is stopping you. Two honest notes. Of its 22 reviews, 18 are in Japanese and 4 are in English, and 22 is a thin sample even at a perfect score. And while no English article about this game exists, AUTOMATON WEST has covered a different LilyCompany title, MAHOROBA CAT, in a roundup of Japanese indie games; this developer is not entirely off Western editors' radar, and this pick would rather say that than let you find out later.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The framing does something quietly clever to a genre that normally has no reason for you to be looking. In most hidden-object games the search is its own excuse; here somebody assigned it to you, which means every found object is also a report filed.",
+        "Voxels change what searching feels like. A drawing hides things behind linework; a diorama hides them behind other objects, and the zoom exists because the answer is often a matter of angle rather than attention.",
+        "The best part of the design is that the unease is delivered by success. You are not told something is wrong; you notice it, in the course of doing the job well, which is a far harder thing for a game to arrange and a far better one to experience.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Hidden Folks pleasure in three dimensions: one dense scene searched by eye, but with depth and occlusion doing the hiding instead of linework",
+        "You want cosy with a floor under it: hint system, zoom, family-friendly on the surface, and a description that promises the world is not what it appears",
+        "You want small and self-published: four Steam titles all under the same name as developer and publisher, ¥480, content descriptors completely empty, no AI disclosure",
+      ],
+      bad: [
+        "You want a settled number; 22 reviews is a thin sample even with zero negatives",
+        "You want a developer nobody in the West has looked at; AUTOMATON WEST has written up a different LilyCompany game, so the studio itself is not unknown there even though this title is",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Eye On The World - あなたは町の特別観察官に任命された。町中に監視カメラがある。迷子を、落とし物を、猫を探す。任務が順調に進むほど、この世界への違和感が募っていく。LilyCompany制作、価格¥480。22件で好評率100%",
+      description: "監視カメラを枠組みにしたボクセルジオラマの探し物ゲーム。町の観察官として迷子・落とし物・猫を映像から見つけていくが、ミッションが順調に進むほど町への違和感が募っていく。ヒントシステムとズーム機能つき。22件のレビューで好評率100%、英語対応。",
+      h1a: "あなたは町の特別観察官に任命された。カメラは至る所にある。",
+      h1flip: "仕事が上手くなるほど、ここが何かおかしいことに気づいていく",
+      h1b: "。",
+      lede: "ストアはあなたを祝福することから始まる——おめでとうございます、あなたは町の特別観察官に任命されました！ その町は治安維持のため至る所に監視カメラが設置されていて、あなたの仕事はその映像を使って任務をこなすことだ。迷子を捜索する。落とし物を発見する。町に住み着いた猫を探す。機構としてはこれは探し物ゲームで、しかも非常に感じのいい探し物ゲームである。すべてがボクセルで作られていて、行き詰まった時のためのヒントシステムと、じっくり見たい時のためのズーム機能があり、ストアが挙げる「こんな方におすすめ」の最後は「親子で楽しめるゲームを探している」で締めくくられている。そして説明文の途中に、全体の形を変えてしまう一文がある。順調にミッションをこなしていくあなたですが、この町あるいは世界への違和感を徐々に感じはじめることになります、、、そしてすべてのミッションを達成した時にこの世界に仕掛けられた謎を知ることになるのです。つまり、心地よく上達していくループと、じわじわ滲んでくる異常さが、同じ一つのループなのだ。あなたは仕事が上手い。そして上手いことこそが、見るはずのなかったものをあなたに見せる。ストアは形式についても一言書いている——探索をテーマにした絵本やゲームブックとは一味違った、デジタル3Dならではの奥行きや立体感の中での発見は、驚きや閃き、創造性を刺激してくれる、と。制作はLilyCompany。Steamに並ぶ4作すべてで開発元と発売元に同じ名前が入っている。価格は¥480。22件のレビュー(好評22件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語・簡体字中国語・繁体字中国語で、遊ぶのを止めるものは何もない。飾らずに二点。22件の内訳は日本語18件・英語4件で、22件は満点であっても薄い母数である。そして本作についての英語記事は存在しないが、AUTOMATON WESTは同じLilyCompanyの別作『MAHOROBA CAT』を、日本のインディー5本を紹介するまとめ記事の中で扱っている。この開発者は英語媒体の視野から完全に外れているわけではない。後で知るより、先に書いておく。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "この枠組みは、本来「探す理由」を持たないジャンルに対して、静かに巧いことをしている。たいていの探し物ゲームでは探すこと自体が言い訳になっているが、ここでは誰かがそれをあなたに割り当てた。つまり見つけた物の一つ一つが、同時に提出された報告でもある。",
+        "ボクセルは探す感触を変える。絵は線の中に物を隠すが、ジオラマは別の物の陰に隠す。ズーム機能があるのは、答えがしばしば注意力ではなく角度の問題だからだ。",
+        "設計で一番良いのは、不安が「成功」によって届けられることだ。何かがおかしいと告げられるのではない。仕事を上手くこなしていく過程で、自分で気づく。ゲームがそれを仕組むのははるかに難しく、体験としてははるかに良い。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Hidden Folks の快楽を三次元で欲しい人——密度のある一場面を目で探すが、隠しているのが線ではなく奥行きと遮蔽である",
+        "地の底がある心地よさが欲しい人——ヒント、ズーム、表面は親子向け、そして説明文は「この世界は見た目どおりではない」と約束している",
+        "小さくて自主出版のものが欲しい人——Steamの4作すべてが開発元と発売元に同じ名前、価格¥480、コンテンツディスクリプタは完全に空、AI開示も無し",
+      ],
+      bad: [
+        "安定した数字が欲しい人——22件は不評ゼロであっても薄い母数である",
+        "西の誰にも見られていない開発者が欲しい人——AUTOMATON WESTは同じLilyCompanyの別作を記事にしており、本作は無名でもスタジオ自体は英語圏で未知ではない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
