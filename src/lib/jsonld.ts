@@ -32,8 +32,8 @@ export function representativeName(pick, lang) {
 
 // 各ゲームの外部実体アンカー (存在する identifier だけを積む) → AI の entity 確定。
 //   Steam 版が無い established(例 Archero はモバイル専用)もあるので steam は任意。
-//   steam / wikidata / appstore / homepage / freem / itchio / unityroom を、持っているものだけ push する(捏造しない)。
-//   established は必ず 1 件以上の anchor を持つ(空配列は返らない)。
+//   steam / wikidata / appstore / homepage / freem / itchio / unityroom / novelgame_jp_url を、
+//   持っているものだけ push する(捏造しない)。established は必ず 1 件以上の anchor を持つ(空配列は返らない)。
 function gameSameAs(g) {
   const out = [];
   if (g.steam) out.push(g.steam);
@@ -43,15 +43,16 @@ function gameSameAs(g) {
   if (g.freem) out.push(g.freem);
   if (g.itchio) out.push(g.itchio);
   if (g.unityroom) out.push(g.unityroom);
+  if (g.novelgame_jp_url) out.push(g.novelgame_jp_url);
   return out;
 }
 
-// VideoGame の正準 URL: Steam があればそれ、無ければ公式(homepage)、それも無ければ ふりーむ / itch.io / unityroom
-// 配信ページへフォールバック(url 必須回避)。表示層(GameCard)も同じ思想を共有するため export(SSOT・
-// フォールバックロジックを 2 箇所に書かない)。steam も homepage も freem も itchio も unityroom も無い場合は undefined
-// (呼び出し側でリンクを描画しない分岐に使う)。
+// VideoGame の正準 URL: Steam があればそれ、無ければ公式(homepage)、それも無ければ ふりーむ / itch.io /
+// unityroom / novelgame.jp 配信ページへフォールバック(url 必須回避)。表示層(GameCard)も同じ思想を
+// 共有するため export(SSOT・フォールバックロジックを 2 箇所に書かない)。steam も homepage も freem も
+// itchio も unityroom も novelgame_jp_url も無い場合は undefined(呼び出し側でリンクを描画しない分岐に使う)。
 export function gameUrl(g) {
-  return g.steam || g.homepage || g.freem || g.itchio || g.unityroom;
+  return g.steam || g.homepage || g.freem || g.itchio || g.unityroom || g.novelgame_jp_url;
 }
 
 // プラットフォーム: Steam 版があれば "PC"、無ければモバイル専用(Archero)の事実を出す(捏造しない)。
@@ -129,9 +130,9 @@ export function pickJsonLd(slug, lang, pageUrl, homeLabel) {
 }
 
 // 原点 anchor を同定する established game を picks から逆引きする(SSOT・捏造しない)。
-//   identity.steam があれば Steam URL の app id 一致で、wikidata/freem/itchio/unityroom があれば g.wikidata /
-//   g.freem / g.itchio / g.unityroom の完全一致で探す。lineageName の逆引きと同一思想(名前ではなく実体 anchor で
-//   同定)。見つからなければ null。
+//   identity.steam があれば Steam URL の app id 一致で、wikidata/freem/itchio/unityroom/novelgame_jp_url が
+//   あれば g.wikidata / g.freem / g.itchio / g.unityroom / g.novelgame_jp_url の完全一致で探す。lineageName の
+//   逆引きと同一思想(名前ではなく実体 anchor で同定)。見つからなければ null。
 //   原点ページの sameAs / gameUrl を established 側の事実(Steam URL/公式)から再利用するために使う。
 function establishedForAnchor(anchorId) {
   const identity = lineageAnchorIdentity(anchorId);
@@ -157,6 +158,10 @@ function establishedForAnchor(anchorId) {
       }
       if (identity.unityroom) {
         if (g.unityroom === identity.unityroom) return g;
+        continue;
+      }
+      if (identity.novelgame_jp_url) {
+        if (g.novelgame_jp_url === identity.novelgame_jp_url) return g;
       }
     }
   }

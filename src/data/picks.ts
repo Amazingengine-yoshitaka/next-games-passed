@@ -11316,6 +11316,117 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "ghostwriter-workshop": {
+    published: "2026-08-03",
+    publishAt: "2026-08-03",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存ラベルに「街を探索して手紙に見合う言葉/アイテムを集め、肝心の結びの一文だけは
+    //   ルーレットで自動決定されるコメディ代筆アドベンチャー」を捉える語がないため新設
+    //   "letter-ghostwriter-adv"(既存の"letter-censor-sim"とは別メカニクス=検閲ではなく代筆・執筆)。
+    // 系譜は自己参照: 2024年に日本のフリーゲームサイト novelgame.jp で無料公開された原型
+    //   (「代筆屋ワールドワード」1エピソードのみの版)を established anchor として採用する。
+    //   novelgame.jp本体をWebFetch実測: タイトル「代筆屋ワールドワード」、ページ説明「代筆屋の店員に
+    //   なって人のラブレターや謝罪文を代わりに書いてあげよう!肝心の文章がルーレットで決まってしまう、
+    //   ハチャメチャ代筆アドベンチャー。」、プレイ時間15分、評価4.9(107件)、タグ「ティラノフェス2024
+    //   参加作品」、作者クレジット「うた」(プロフィールページ /users/profile/52820)を確認済み。
+    //   公式Steam版・Wikidata QID・freem/itchio/unityroomのいずれも持たない novelgame.jp 限定の
+    //   無料版のため、lineage_anchor_key には既存の freem/itchio/unityroom いずれでもなく
+    //   novelgame_jp_url(配信ページ URL)を新規フィールドとして採用する(freem/itchio/unityroom型と
+    //   同型判断: 単一の生きた配信ページ URL のみで同定し、href 破損なし)。
+    // developer/publisher: Steam appdetails APIをWebFetch実測、developers=["秘密結社マテンロウ計画",
+    //   "Studio Dragonet"]・publishers=["Waku Waku Games"]を確認済み。秘密結社マテンロウ計画は
+    //   novelgame.jp上で作者「うた」と紐づく2名構成の同人サークル(ドット絵・雑務担当)、Studio Dragonet
+    //   はフリーランスのプログラマーせきやdnによるひとりスタジオで、合わせて2〜3名規模。発行元
+    //   わくわくゲームズは東京都品川区西五反田拠点のマイクロインディーレーベルでChorus Worldwide傘下、
+    //   Chorus Worldwide自体も独立系インディーパブリッシャーで超大手・上場ゲーム大手の系列に非該当
+    //   (既出多数のわくわくゲームズ発行作と同一の非大手判定を踏襲)。
+    // content_descriptors は ids=[]・notes=null(API実測)。required_age=0。AI Generated Content
+    //   Disclosure欄はストアページに存在せず非AI。is_free=false・価格¥1,500(price_overview実測)。
+    //   coming_soon=falseで正式リリース済み(アーリーアクセスではない)。categories に Steam
+    //   Achievements(14件、achievements API実測)・Full controller support・Steam Cloudを確認。
+    // レビューは appreviews API実測: total_reviews=139・total_positive=132・total_negative=7
+    //   (好評率95%、review_score_desc="Very Positive")。language=englishでtotal_reviews=2
+    //   (englishのみ2件とも好評)。supported_languages(API実測)は日本語・簡体字中国語・繁体字中国語
+    //   のみで英語は無い(ストアページの英語版説明文自体はSteamの多言語マーケティング文面として存在する
+    //   が、ゲーム本編の対応言語には含まれない=購入前の紹介文だけ英語で読めて中身は読めない状態)。
+    // west_unreached: 日本のゲームメディアAutomatonが2024-08-20(無料版公開時)・2025-11-04(商業版
+    //   発売告知)の2回報じたが、いずれも日本語記事(newsjp)のみで英語版AUTOMATON Westへの掲載は
+    //   確認できず。95%好評・139件のレビュー実績にもかかわらず西側に届いていない典型例。
+    meta: { genre: "letter-ghostwriter-adv", lineage: "ghostwriter-workshop-original", obscurity: "wall", reviewBand: "hundreds", reachState: "lang_walled", rarity: { reviews: 139, positivePct: 95, noEnglish: true } },
+    games: [
+      {
+        name_en: "Ghostwriter Workshop",
+        name_ja: "代筆屋ワールドワード",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3342800/Ghostwriter_Workshop/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own store text, within the fictional republic of Wilsbury, in its capital of Ede, sits a curious little shop: \"we'll use an assortment of expressions to convey your exact thoughts and feelings...from love letters to invitations to duel, apologies to contracts--you name it, we write it!\" You take a job there, listen to what one of eleven quirky townsfolk needs written, then head out to explore the town and gather words and objects that fit the request. Per Steam's own listing, the twist is that you do not fully control the result: \"all the player can do while writing is deciding the concluding lines...via roulette,\" and because the game also has you memorizing plenty of expressions that do not actually belong, that spin routinely turns a heartfelt love letter into an insult and an apology into a fresh uproar. Built across five episodes each playable in fifteen to thirty minutes, with 14 Steam Achievements, full controller support, and Steam Cloud saves, it grew out of a free, single-episode version, credited on Steam itself as Episode 1, that started life in 2024 on the Japanese free-game site novelgame.jp as an entry in the \"TyranoFes 2024\" jam. Steam's own developer credit lists 秘密結社マテンロウ計画 (Himitsu Kessha Matenrou Keikaku), a two-person doujin circle whose leader is credited on novelgame.jp as \"うた,\" together with Studio Dragonet, the solo studio of freelance programmer せきやdn, an extremely small team by any count. Published by Waku Waku Games, a Tokyo (Nishi-Gotanda)-based micro-indie label under Chorus Worldwide, an independent publisher itself with no tie to a major holding company or listed game giant, it released November 26, 2025 at ¥1,500 and is Very Positive at 95 percent over 139 reviews (132 positive, 7 negative per Steam's own review API). A paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing on file at all (ids: none, notes: none). It supports Japanese with full voice acting, plus Simplified and Traditional Chinese, but no English at all, and of its 139 reviews, only 2, about 1.4 percent, are in English (both positive). The Japanese outlet Automaton covered it twice, once when the free version launched in August 2024 and again at the commercial release in November 2025, but both pieces ran only on its Japanese-language site; no coverage on the English-language AUTOMATON WEST could be found.",
+        desc_ja: "Steam自身のストア文言によれば、架空の共和国ウィルズベリー、その首都エデにある小さな店が舞台だ——「あなたの気持ちをぴったりの言葉で伝えます……ラブレターから果たし状、謝罪文、契約書まで、なんでもお任せください!」。プレイヤーはこの店のスタッフとなり、11人の個性的な依頼人の要望を聞き、街へ出てその依頼に見合う言葉やアイテムを探し集める。Steam自身の表記によれば、そのひねりは結果を完全には制御できない点にある——「執筆中にプレイヤーができるのは、結びの一文をルーレットで決めることだけ」。ゲームは実は関係のない言葉もたくさん覚えさせてくるため、そのルーレットの一振りが、心を込めたラブレターを暴言まみれに変え、謝罪文をさらなる大炎上に変えてしまうことが日常茶飯事だ。全5エピソード(各15〜30分でプレイ可能)、実績14種、フルコントローラー対応、Steamクラウド対応という構成で、始まりはSteam自身も「エピソード1」として明記する無料の単発版——2024年、日本のフリーゲームサイト「novelgame.jp」で「ティラノフェス2024」参加作として無料公開された版だった。Steam自身の開発者クレジットは、2名構成の同人サークル秘密結社マテンロウ計画(novelgame.jp上での代表クレジットは「うた」)と、フリーランスのプログラマーせきやdnによるひとりスタジオStudio Dragonetを並記しており、どう数えても極めて小規模な体制だ。発行は、東京都品川区西五反田を拠点とするマイクロインディーレーベル、わくわくゲームズ——その親会社Chorus Worldwide自体も独立系のインディーパブリッシャーで、超大手ホールディングや上場ゲーム大手の系列ではない。発売日は2025年11月26日、価格¥1,500。139件のレビュー(好評132件・不評7件、Steam自身のレビューAPI実測)で好評率95%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上も何一つ記載がない(ids:なし、notes:なし)。対応言語は日本語(フルボイス)に加え簡体字・繁体字中国語だが、英語には一切対応しておらず、139件のうち英語レビューはわずか2件(いずれも好評)、1.4%程度に留まる。日本のゲームメディアAutomatonは2024年8月の無料版公開時と2025年11月の商業版発売時の2回本作を報じたが、いずれも日本語サイトの記事のみで、英語版AUTOMATON WESTへの掲載は確認できなかった。",
+      },
+      {
+        name_en: "代筆屋ワールドワード (free novelgame.jp original, 2024, one episode, no official English title)",
+        name_ja: "代筆屋ワールドワード（novelgame.jp無料版）",
+        status: "established",
+        novelgame_jp_url: "https://novelgame.jp/games/show/10246",
+        tag_en: "The free original",
+        tag_ja: "無料版の原点",
+        desc_en: "The free original this grew from: released in 2024 on the Japanese free-game site novelgame.jp as an entry in the \"TyranoFes 2024\" jam, credited to \"うた\" of the two-person doujin circle 秘密結社マテンロウ計画, rated 4.9 out of 5 across 107 ratings on the site itself. Its own page description already frames the premise this lineage grows from: \"Become a ghostwriting-shop clerk and write other people's love letters and apologies for them! The crucial line always gets decided by roulette, in this madcap ghostwriting adventure.\" A single roughly fifteen-minute episode playable free in-browser, it already carries the same structure this lineage grows from. Ghostwriter Workshop on Steam is not a new work borrowing that idea from outside; per Steam's own listing, it builds on this same free release as Episode 1 and adds Episodes 2 through 5, developed together with solo programmer せきやdn's Studio Dragonet, to become a five-episode commercial edition on Steam and Nintendo Switch.",
+        desc_ja: "本作が育った、その無料版の原点——2024年、日本のフリーゲームサイト「novelgame.jp」で、「ティラノフェス2024」参加作として無料公開された。クレジットは2名構成の同人サークル秘密結社マテンロウ計画の「うた」名義で、配信サイト自身の評価は5点満点中4.9(107件)。その配信ページ本文はこの系譜のひな型をすでにこう記している——「代筆屋の店員になって人のラブレターや謝罪文を代わりに書いてあげよう!肝心の文章がルーレットで決まってしまう、ハチャメチャ代筆アドベンチャー。」ブラウザで無料プレイできる、約15分の単一エピソード版で、この時点ですでに同じ骨格を備えていた。Steam版『代筆屋ワールドワード』は、外部からこの着想を借りた新作ではない——Steam自身の表記によれば、この同じ無料版を「エピソード1」として、そこにエピソード2〜5を追加し、フリーランスのプログラマーせきやdn率いるStudio Dragonetと組んで開発した、Steam・Nintendo Switch向けの全5エピソードの商業版だ。",
+      },
+    ],
+    en: {
+      title: "Ghostwriter Workshop - a comedy adventure where you explore a fictional town gathering words for a client's letter, then watch a roulette spin decide its crucial ending, turning love letters into insults and apologies into further uproar. Made by the two-person doujin circle 秘密結社マテンロウ計画 and solo programmer せきやdn's Studio Dragonet, expanding a free 2024 novelgame.jp original, published by Waku Waku Games. Very Positive at 95 percent over 139 reviews, though only 2 are in English",
+      description: "A ghostwriting comedy adventure: explore a fictional town to gather words and objects for a client's letter, a love letter, a duel challenge, an apology, even a contract, then watch a roulette spin decide the crucial ending, often turning it into gibberish. Expanded from a free 2024 novelgame.jp original by the two-person circle 秘密結社マテンロウ計画 and solo programmer せきやdn's Studio Dragonet, published by Waku Waku Games. Very Positive at 95 percent over 139 reviews, almost entirely unread in English.",
+      h1a: "You explore the whole town for the perfect words to finish a stranger's letter, ",
+      h1flip: "and then a roulette spin decides the ending anyway",
+      h1b: ".",
+      lede: "Per Steam's own store text, within the fictional republic of Wilsbury, in its capital of Ede, sits a curious little shop: \"we'll use an assortment of expressions to convey your exact thoughts and feelings...from love letters to invitations to duel, apologies to contracts--you name it, we write it!\" You take a job there, listen to what one of eleven quirky townsfolk needs written, then head out to explore the town and gather words and objects that fit the request. Per Steam's own listing, the twist is that you do not fully control the result: \"all the player can do while writing is deciding the concluding lines...via roulette,\" and because the game also has you memorizing plenty of expressions that do not actually belong, that spin routinely turns a heartfelt love letter into an insult and an apology into a fresh uproar. Built across five episodes each playable in fifteen to thirty minutes, with 14 Steam Achievements, full controller support, and Steam Cloud saves, it grew out of a free, single-episode version, credited on Steam itself as Episode 1, that started life in 2024 on the Japanese free-game site novelgame.jp as an entry in the \"TyranoFes 2024\" jam. Steam's own developer credit lists 秘密結社マテンロウ計画 (Himitsu Kessha Matenrou Keikaku), a two-person doujin circle whose leader is credited on novelgame.jp as \"うた,\" together with Studio Dragonet, the solo studio of freelance programmer せきやdn, an extremely small team by any count. Published by Waku Waku Games, a Tokyo (Nishi-Gotanda)-based micro-indie label under Chorus Worldwide, an independent publisher itself with no tie to a major holding company or listed game giant, it released November 26, 2025 at ¥1,500 and is Very Positive at 95 percent over 139 reviews (132 positive, 7 negative per Steam's own review API). A paid title, not free, fully launched and not in Early Access, with no AI-generated assets and, per Steam's own content descriptors, nothing on file at all (ids: none, notes: none). It supports Japanese with full voice acting, plus Simplified and Traditional Chinese, but no English at all, and of its 139 reviews, only 2, about 1.4 percent, are in English (both positive). The Japanese outlet Automaton covered it twice, once when the free version launched in August 2024 and again at the commercial release in November 2025, but both pieces ran only on its Japanese-language site; no coverage on the English-language AUTOMATON WEST could be found.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The research phase is genuinely yours: you walk the town, talk to eleven different townsfolk, and decide for yourself which words actually fit a love letter versus a duel challenge, so the letter feels earned by the time you sit down to write it.",
+        "Then the game hands the one line that matters, the ending, to a roulette instead of your judgment, and because you have also been memorizing plenty of words that do not belong in the letter at all, that spin turns your careful research into a coin flip you cannot fully rig.",
+        "Because every one of the five episodes runs the same trick on a different kind of letter, from love letters to duel challenges to contracts, the comedy never lands the same way twice: whatever goes wrong is always specific to what you were actually trying to say.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want a comedy that is entirely load-bearing on its own mechanic: honest, self-directed research into what a letter needs, undercut by a roulette spin the game hands you on purpose",
+        "You want a genuinely tiny doujin/solo production: a two-person circle's free 2024 novelgame.jp jam entry, expanded with a solo freelance programmer into a five-episode commercial release under a small Tokyo micro-indie label",
+        "You want a Very Positive title (95 percent over 139 reviews) that is nearly unread in the West: no English-language support at all, and only 2 of its reviews are in English",
+      ],
+      bad: [
+        "You want to author a letter's outcome entirely yourself; by design the crucial concluding line is handed to a roulette, not something you can always steer",
+        "You want to play it without Japanese; it has no English support at all, and while Automaton covered it twice in Japan, no coverage on the English-language AUTOMATON WEST could be found",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "代筆屋ワールドワード - 架空の街を歩いて手紙に見合う言葉を集めても、肝心の結末はルーレットの一振りで決まり、ラブレターは暴言に、謝罪文はさらなる大炎上に変わってしまうコメディアドベンチャー。制作は2名同人サークル秘密結社マテンロウ計画とプログラマーせきやdnのStudio Dragonet、2024年novelgame.jp無料版からの拡張、発行はわくわくゲームズ。139件のレビューで好評率95%の「非常に好評」ながら、英語レビューはわずか2件",
+      description: "架空の街を探索して手紙に見合う言葉やアイテムを集めるコメディ代筆アドベンチャー。ラブレター、果たし状、謝罪文、契約書——どんな依頼でも、肝心の結びの一文はルーレットで決まり、しばしば怪文書に化ける。2024年のnovelgame.jp無料版を、2名同人サークル秘密結社マテンロウ計画とプログラマーせきやdnのStudio Dragonetが拡張、発行はわくわくゲームズ。139件のレビューで好評率95%の「非常に好評」、西側にはほぼ読まれていない。",
+      h1a: "見知らぬ依頼人の手紙にふさわしい言葉を、街じゅう歩いて集めても、",
+      h1flip: "結末を決めるのは結局ルーレットの一振り",
+      h1b: "。",
+      lede: "Steam自身のストア文言によれば、架空の共和国ウィルズベリー、その首都エデにある小さな店が舞台だ——「あなたの気持ちをぴったりの言葉で伝えます……ラブレターから果たし状、謝罪文、契約書まで、なんでもお任せください!」。プレイヤーはこの店のスタッフとなり、11人の個性的な依頼人の要望を聞き、街へ出てその依頼に見合う言葉やアイテムを探し集める。Steam自身の表記によれば、そのひねりは結果を完全には制御できない点にある——「執筆中にプレイヤーができるのは、結びの一文をルーレットで決めることだけ」。ゲームは実は関係のない言葉もたくさん覚えさせてくるため、そのルーレットの一振りが、心を込めたラブレターを暴言まみれに変え、謝罪文をさらなる大炎上に変えてしまうことが日常茶飯事だ。全5エピソード(各15〜30分でプレイ可能)、実績14種、フルコントローラー対応、Steamクラウド対応という構成で、始まりはSteam自身も「エピソード1」として明記する無料の単発版——2024年、日本のフリーゲームサイト「novelgame.jp」で「ティラノフェス2024」参加作として無料公開された版だった。Steam自身の開発者クレジットは、2名構成の同人サークル秘密結社マテンロウ計画(novelgame.jp上での代表クレジットは「うた」)と、フリーランスのプログラマーせきやdnによるひとりスタジオStudio Dragonetを並記しており、どう数えても極めて小規模な体制だ。発行は、東京都品川区西五反田を拠点とするマイクロインディーレーベル、わくわくゲームズ——その親会社Chorus Worldwide自体も独立系のインディーパブリッシャーで、超大手ホールディングや上場ゲーム大手の系列ではない。発売日は2025年11月26日、価格¥1,500。139件のレビュー(好評132件・不評7件、Steam自身のレビューAPI実測)で好評率95%の「非常に好評」。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成アセットはなく、Steam自身のコンテンツディスクリプタ上も何一つ記載がない(ids:なし、notes:なし)。対応言語は日本語(フルボイス)に加え簡体字・繁体字中国語だが、英語には一切対応しておらず、139件のうち英語レビューはわずか2件(いずれも好評)、1.4%程度に留まる。日本のゲームメディアAutomatonは2024年8月の無料版公開時と2025年11月の商業版発売時の2回本作を報じたが、いずれも日本語サイトの記事のみで、英語版AUTOMATON WESTへの掲載は確認できなかった。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "調べ物の部分は正真正銘プレイヤー自身の仕事だ——街を歩き、11人の依頼人・住人と話し、ラブレターと果たし状とでは本当はどの言葉がふさわしいのかを自分で選び取っていく。だから机に向かって書き始める頃には、その手紙はすでに自分で稼いだものになっている。",
+        "ところが、いちばん肝心な一文——結末——だけは自分の判断ではなくルーレットに委ねられる。しかも本編は関係のない言葉までたくさん覚えさせてくるので、その一振りは、丹念に集めた調べ物を、完全には仕込めないコイントスへと変えてしまう。",
+        "全5エピソードそれぞれが、ラブレター・果たし状・契約書と、違う種類の手紙で同じ仕掛けを繰り返すため、笑いどころは毎回違う形で起きる——何がどう狂うかは、そのときあなたが本当に伝えたかったことに固有だからだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "自分のメカニクスだけでコメディを成立させている一本が欲しい人——手紙に何が必要かを自分で調べ上げた先で、ゲーム側がわざと仕込んだルーレットの一振りに裏切られる",
+        "本当に小規模な同人・個人発プロダクションが欲しい人——2名同人サークルの2024年novelgame.jpジャム参加無料版を、フリーランスのプログラマー1名が加わって全5エピソードの商業版へ拡張、発行は東京の小規模インディーレーベル",
+        "西側にほとんど届いていない「非常に好評」タイトル(139件で95%)を掴みたい人——公式の英語対応は一切なく、レビューも英語はわずか2件",
+      ],
+      bad: [
+        "手紙の結末まで自分の手で完全に決めたい人——肝心の結びの一文はルーレットに委ねられる設計で、常に自分で誘導できるわけではない",
+        "日本語なしで遊びたい人——公式の英語対応は一切なく、Automatonが日本で2回報じてはいるものの、英語版AUTOMATON WESTへの掲載は確認できなかった",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12349,6 +12460,20 @@ const LINEAGE_ANCHOR = {
       ja: "8番出口は、KOTAKE CREATE制作、2023年11月配信の作品で、日本の地下鉄の通路をかたどったループする空間を用意し、プレイヤーにやることを一つだけ与えた——前に通ったときから何かが変わっていないかに気づくこと。異変があれば引き返す。無ければ進む。ゲームはそれで全部だ。そしてこれが成立したのは、選ばれた空間が徹底的にありふれていたからである。試されている装置はプレイヤーの反射神経でも知識でもなく、「覚えようとしていなかった通路についての記憶」のほうだ。この作品は「観察する」ことそのものを動詞にし、見ることと気づくことの間の隙間だけでゲームが建つと証明した。以後おびただしい数で続いた異変探し系の系譜の原点であり、見慣れた場所に対してできる最も不穏なことは、小さな一点だけを変えて何も言わないことだ、というデザイン上の洞察の原点でもある。",
     },
   },
+  // 原点 代筆屋ワールドワード(novelgame.jp無料版)、2024年、日本のフリーゲームサイト「novelgame.jp」で
+  //   1エピソードのみの版として無料公開された原型(制作: 2名同人サークル秘密結社マテンロウ計画)。
+  //   ジャンル上の外部原点ではなく、開発者本人による自己参照のフリー版原典(kageroh/moonpalace/5omeday/
+  //   your-letter-original型の判断)。公式Steam版・Wikidata QID・freem/itchio/unityroomのいずれも持たない
+  //   novelgame.jp限定の無料版のため、lineage_anchor_key には既存の freem/itchio/unityroom いずれでもなく
+  //   novelgame_jp_url(配信ページ URL)を新規フィールドとして採用する(単一の生きた配信ページ URL のみで
+  //   同定し、href 破損なし)。
+  "ghostwriter-workshop-original": {
+    novelgame_jp_url: "https://novelgame.jp/games/show/10246",
+    blurb: {
+      en: "The free original this grew from: 代筆屋ワールドワード, released free in 2024 on the Japanese free-game site novelgame.jp as a single-episode version, made by the two-person doujin circle 秘密結社マテンロウ計画 (Himitsu Kessha Matenrou Keikaku). It already carries the premise this lineage grows from: a ghostwriter who takes a client's letter request, gathers matching words and objects by exploring town, and watches the letter's crucial ending get decided by a spin of a roulette rather than by their own hand. Ghostwriter Workshop on Steam is not a new work borrowing that idea from outside; it is this same free game expanded, built together with solo programmer せきやdn's Studio Dragonet, into a five-episode commercial edition released on Steam and Nintendo Switch.",
+      ja: "本作が育った、その無料版の原点——『代筆屋ワールドワード』。2024年、日本のフリーゲームサイト「novelgame.jp」で、1エピソードのみの版として無料公開された。制作は2名構成の同人サークル秘密結社マテンロウ計画。この時点ですでに、この系譜のひな型——依頼人からの手紙の注文を受け、街を歩いて言葉やアイテムを集め、その肝心な結末が自分の手ではなくルーレットの一振りで決まるのを見届ける代筆屋——を備えていた。Steam版『代筆屋ワールドワード』は、外部からこの着想を借りた新作ではない——この同じ無料ゲームを、フリーランスのプログラマーせきやdn率いるStudio Dragonetと組んで拡張し、Steam・Nintendo Switch向けの全5エピソードの商業版へと作り上げたものだ。",
+    },
+  },
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
@@ -12357,7 +12482,7 @@ export type LineageId = keyof typeof LINEAGE_ANCHOR;
 // ゲーム名の二重定義を避ける(SSOT)。見つからなければ null(捏造しない)。
 //   同定は多態: anchor.steam があれば Steam URL で、anchor.wikidata があれば wikidata で逆引きする。
 export function lineageName(id: string, lang: "en" | "ja"): string | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string }>)[id];
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string; novelgame_jp_url?: string }>)[id];
   if (!anchor) return null;
   const isJa = lang === "ja";
   for (const key of Object.keys(picks)) {
@@ -12389,6 +12514,12 @@ export function lineageName(id: string, lang: "en" | "ja"): string | null {
         if (g.unityroom !== anchor.unityroom) continue;
         return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
       }
+      // novelgame.jp 同定(Steam 版/wikidata QID/freem/itchio/unityroom のいずれも無い novelgame.jp 発の原点):
+      //   g.novelgame_jp_url の完全一致で逆引き(freem/itchio/unityroom と同型判断)。
+      if (anchor.novelgame_jp_url) {
+        if (g.novelgame_jp_url !== anchor.novelgame_jp_url) continue;
+        return isJa ? (g.name_ja || g.name_en) : (g.name_en || g.name_ja);
+      }
     }
   }
   return null;
@@ -12416,18 +12547,20 @@ export function lineageBlurb(id: string, lang: "en" | "ja"): string | null {
   return lang === "ja" ? anchor.blurb.ja : anchor.blurb.en;
 }
 
-// 原点 id の外部実体識別子(steam app id / wikidata QID URL / itch.io URL / unityroom URL)を返す(計算だけ・副作用なし)。
-//   原点ページの出典リンクと JSON-LD sameAs が LINEAGE_ANCHOR を直読みせず一様に参照する入口(SSOT)。
-//   anchor 無しは null。steam / wikidata / freem / itchio / unityroom は持っているものだけを積む(捏造しない・壊れリンクを作らない)。
-export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string } | null {
-  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string }>)[id];
+// 原点 id の外部実体識別子(steam app id / wikidata QID URL / itch.io URL / unityroom URL / novelgame.jp URL)を
+//   返す(計算だけ・副作用なし)。原点ページの出典リンクと JSON-LD sameAs が LINEAGE_ANCHOR を直読みせず一様に
+//   参照する入口(SSOT)。anchor 無しは null。steam / wikidata / freem / itchio / unityroom / novelgame_jp_url は
+//   持っているものだけを積む(捏造しない・壊れリンクを作らない)。
+export function lineageAnchorIdentity(id: string): { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string; novelgame_jp_url?: string } | null {
+  const anchor = (LINEAGE_ANCHOR as Record<string, { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string; novelgame_jp_url?: string }>)[id];
   if (!anchor) return null;
-  const out: { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string } = {};
+  const out: { steam?: string; wikidata?: string; freem?: string; itchio?: string; unityroom?: string; novelgame_jp_url?: string } = {};
   if (anchor.steam) out.steam = anchor.steam;
   if (anchor.wikidata) out.wikidata = anchor.wikidata;
   if (anchor.freem) out.freem = anchor.freem;
   if (anchor.itchio) out.itchio = anchor.itchio;
   if (anchor.unityroom) out.unityroom = anchor.unityroom;
+  if (anchor.novelgame_jp_url) out.novelgame_jp_url = anchor.novelgame_jp_url;
   return out;
 }
 
