@@ -11764,6 +11764,110 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "jewel-spirits": {
+    published: "2026-08-05",
+    publishAt: "2026-08-05",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(RPG/シミュレーション/ストラテジー)が広すぎるため、本作最大の特徴に
+    //   沿って新設 "rewind-tactics-roguelite"。ユーザータグ側も ストラテジーRPG /
+    //   ターン制ストラテジー / パーティー制RPG / ローグライク / ローグライト が並ぶ。
+    // lineage は新規anchorを作らず既存の "into-the-breach" を再利用する。一致しているのは
+    //   「戦術ゲームにおいて、やり直しを物語内の仕組みとして正面から用意する」という設計。
+    //   Into the Breachは1周につき1回だけ時間を巻き戻せる装置をルールに組み込み、それによって
+    //   完全情報の詰将棋としての性格を成立させた。本作はガイドキャラクター「クロ」の能力として
+    //   同じことを行い、しかも回数制限を外している。ストア本文の見出しがそのまま
+    //   「プレイヤーフレンドリーな、無制限の『巻き戻し』」である。影響を公言されたものではない
+    //   当サイト独自の批評的比較である(自信度: 中)。
+    // developer=彩羽 / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の登録は本編
+    //   (2685480)と体験版(3772020)の2件のみであることを確認した。大手・海外展開代行・親会社関係の
+    //   混入はゼロ。サポート窓口も個人のGmail。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグにも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。early_access_header 無しで正式リリース済み。
+    // west_unreached: supported_languages は日本語のみ。appreviews API実測で全37件のうち
+    //   日本語34件・英語3件。言語の壁の典型なので obscurity: "wall" / reachState: "lang_walled"。
+    // 西側編集記事はゼロ。AUTOMATON WESTのWP REST APIを"Jewel Spirits"/"宝石精霊"/"Ayaha"の
+    //   3語で直接叩いて全て0件を確認した。日本語圏ではもぐらゲームスが取り上げている。
+    // name_en は開発者自身が英語版ストアのshort_descriptionで使っている "Jewel Spirits" を採る
+    //   (Steamのname欄は日本語のまま＝公式英題は無い)。
+    // 数字について: 35/37=94.6%は当サイトの理想95%にわずかに届かず、母数37件も薄い。価格¥1,800は
+    //   当サイトの発掘としては高い部類。いずれも先に開示する。
+    meta: { genre: "rewind-tactics-roguelite", lineage: "into-the-breach", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 37, positivePct: 94, noEnglish: true } },
+    games: [
+      {
+        name_en: "Jewel Spirits",
+        name_ja: "時巡る宝石精霊",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2685480/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A tactics roguelite where you build a party out of jewel spirits and descend a cave toward whatever has gone wrong with the Great Crystal of Time at the bottom. You start with two, Ruby and Sapphire, and pick up more as you go; each has an innate ability plus skills learned on level-up, and the point of the game is finding which combinations amplify each other, with equippable orbs and passive relics layered on top. Recruits and items are randomised every run, and there are ten tiers of higher difficulty if the base game stops biting. All of that is a competent modern roguelite. The thing that makes it worth writing about is one line in the store page, presented as a feature rather than an apology: player-friendly, unlimited rewind. Your guide character, Kuro, can return the battle to any earlier point, and there is no cap on how often. Take a move back because you misread the board, take five back because you want to see how else it could have gone, or never touch it at all. A genre whose entire emotional contract is that mistakes are permanent has had that contract voluntarily torn up here, and what is left is a tactics game that wants you to find the move you are actually satisfied with. Combat has one more wrinkle: not every recruited spirit is on the field at once, and you can swap with the bench mid-fight, which is both how you answer a bad matchup and how you extend your reach across the map. Made by Ayaha, whose entire Steam presence is this game and its demo, with a personal email as the contact. Released September 14, 2025 at ¥1,800, it is at 94 percent across 37 reviews (35 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It is in Japanese only, and of its 37 reviews, 3 are in English.",
+        desc_ja: "宝石精霊でパーティを編成し、宝石洞窟の最奥にある「時の大結晶」の異変を探りに降りていく戦術ローグライトである。始まりはルビーとサファイアの2人だけで、魔物を倒して洞窟を進むごとに新しい宝石精霊が仲間に加わる。それぞれに固有の「アビリティ」があり、レベルアップで「スキル」を覚え、ゲームの本体はどの組み合わせが互いを増幅するかを見つけることにある。そこに装備品の「オーブ」とパッシブアイテムの「宝蹟」が重なる。仲間もアイテムも毎回ランダムで、物足りなくなれば10段階の高難度モードが待っている。ここまでは、よくできた現代のローグライトである。書く価値を作っているのは、ストアページの一行だ。しかも謝罪ではなく機能として提示されている——「プレイヤーフレンドリーな、無制限の『巻き戻し』」。ガイドキャラクターの「クロ」の能力によって、戦闘を好きな時点まで戻すことができる。しかも回数に制限がない。盤面を読み違えたから一手戻すのも、他にどうなり得たかを見たくて五手戻すのも、あるいは一度も使わないのも自由だ。「失敗は取り返しがつかない」という感情上の契約でジャンル全体が成立しているところに、その契約を自分から破棄したものが置かれている。そして残るのは、「自分が本当に納得できる一手を見つけてほしい」と願っている戦術ゲームである。戦闘にはもう一つ仕掛けがあり、仲間にした宝石精霊が全員同時に場に出るわけではなく、戦闘中に控えと「交代」できる。相性の悪い相手への回答であると同時に、盤面を移動する距離を伸ばす手段でもある。制作は彩羽氏。Steam上の存在は本作と体験版だけで、連絡先は個人のメールアドレスである。発売日は2025年9月14日、価格¥1,800。37件のレビュー(好評35件・不評2件、Steam自身のレビューAPI実測)で好評率94%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語のみで、37件のうち英語は3件だ。",
+      },
+      {
+        name_en: "Into the Breach",
+        name_ja: "Into the Breach",
+        status: "established",
+        steam: "https://store.steampowered.com/app/590380/Into_the_Breach/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Into the Breach, the 2018 tactics game from Subset Games, which showed every enemy's next move before you committed to yours and thereby turned each turn into a solvable problem rather than a gamble. Crucially, it also built the undo into the fiction: your squad are time travellers, and a run grants you a reset, so taking a move back is not the player breaking the rules but the premise working as designed. Jewel Spirits is not an official Subset work, and this lineage is a comparison drawn by this site rather than a stated influence. What is inherited is that decision, to make the correction diegetic instead of shameful. Where they part is the ration. Into the Breach gives you one, and the scarcity is part of the pressure. This one gives you as many as you want, and asks a different question: with nothing at stake in being wrong, what move do you actually want to make?",
+        desc_ja: "この味の原点——Into the Breach。Subset Gamesによる2018年の戦術ゲームで、こちらが手を決める前に敵全員の次の一手を見せることで、各ターンを賭けではなく「解ける問題」に変えた。そして重要なのは、取り消しを物語の側に組み込んだことだ。プレイヤーの部隊は時間旅行者であり、一周につきリセットが与えられる。だから一手戻すことは、プレイヤーがルールを破っているのではなく、前提が設計どおりに機能しているということになる。『時巡る宝石精霊』は公式のSubset作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。受け継がれているのはその決断——訂正を、後ろめたいものではなく物語の内側のものにする、という一点だ。分かれるのは配給量である。Into the Breachが与えるのは1回で、その希少さが圧の一部になっている。こちらは望むだけ与えたうえで、別の問いを立てる——間違えても何も失わないとき、あなたは本当はどの一手を打ちたいのか？",
+      },
+    ],
+    en: {
+      title: "Jewel Spirits - a tactics roguelite where the rewind is unlimited. Your guide can return the battle to any earlier point, as often as you like, in a genre built on mistakes being permanent. Made by Ayaha for ¥1,800. 94 percent over 37 reviews, Japanese-only",
+      description: "Build a party of jewel spirits and descend toward the Great Crystal of Time. Innate abilities, learned skills, orbs and relics combine into synergies, with randomised recruits every run and ten higher difficulty tiers. The headline feature is an unlimited rewind: your guide Kuro can return the battle to any point, without a cap. Japanese-only, 94 percent over 37 reviews.",
+      h1a: "It is a roguelite, so a misread board should cost you the run. ",
+      h1flip: "Except the rewind here has no limit at all, and the store lists that as a feature",
+      h1b: ".",
+      lede: "A tactics roguelite where you build a party out of jewel spirits and descend a cave toward whatever has gone wrong with the Great Crystal of Time at the bottom. You start with two, Ruby and Sapphire, and pick up more as you go; each has an innate ability plus skills learned on level-up, and the point of the game is finding which combinations amplify each other, with equippable orbs and passive relics layered on top. Recruits and items are randomised every run, and there are ten tiers of higher difficulty if the base game stops biting. All of that is a competent modern roguelite. The thing that makes it worth writing about is one line in the store page, presented as a feature rather than an apology: player-friendly, unlimited rewind. Your guide character, Kuro, can return the battle to any earlier point, and there is no cap on how often. Take a move back because you misread the board, take five back because you want to see how else it could have gone, or never touch it at all. A genre whose entire emotional contract is that mistakes are permanent has had that contract voluntarily torn up here, and what is left is a tactics game that wants you to find the move you are actually satisfied with. Combat has one more wrinkle: not every recruited spirit is on the field at once, and you can swap with the bench mid-fight, which is both how you answer a bad matchup and how you extend your reach across the map. Made by Ayaha, whose entire Steam presence is this game and its demo, with a personal email as the contact. Released September 14, 2025 at ¥1,800, it is at 94 percent across 37 reviews (35 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Three honest notes. It is in Japanese only, and of its 37 reviews only 3 are in English. 94 percent is a little under the bar this site usually holds to, and 37 reviews is thin. And at ¥1,800 it is among the more expensive things written up here.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Removing the cost of being wrong does not remove the thinking; it relocates it. You stop asking which move is safe enough and start asking which move you would be pleased to have made, and those turn out to be different questions.",
+        "Because the rewind is diegetic, using it does not feel like cheating your own run. Kuro is doing it. The game decided in advance that you were allowed, which is a small kindness with a large effect on how freely you experiment.",
+        "The bench swap is the part that keeps it tactical. Not everyone is on the field, so a good party is not a list of strong spirits but a rotation, and the mid-fight substitution is simultaneously your counter to a bad matchup and your way of covering ground.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Into the Breach idea taken to its limit: the correction built into the fiction, but with the ration removed entirely",
+        "You want combination-hunting rather than execution: innate abilities, level-up skills, orbs and relics, all randomised per run, with ten higher difficulty tiers waiting",
+        "You want a genuinely solo Japanese release: this game and its demo are the developer's entire Steam presence, contact is a personal email, content descriptors completely empty, no AI disclosure",
+      ],
+      bad: [
+        "You do not read Japanese; there is no English option and only 3 of its 37 reviews are in that language",
+        "You want permanence. The whole appeal of roguelites for some people is that a mistake is final, and this game hands you an unlimited undo on purpose. If that sounds like it removes the point, it will",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "時巡る宝石精霊 - ローグライトなのに巻き戻しが無制限。ガイドキャラの能力で戦闘を好きな時点まで、何度でも戻せる。失敗が取り返しつかないことで成立するジャンルで、それを機能として掲げている。彩羽氏制作、価格¥1,800。37件で好評率94%、日本語のみ",
+      description: "宝石精霊でパーティを編成し「時の大結晶」の異変を探る戦術ローグライト。固有アビリティ、習得スキル、オーブ、宝蹟が組み合わさってシナジーを生み、仲間もアイテムも毎回ランダム、10段階の高難度モードつき。最大の特徴はガイドキャラ「クロ」による無制限の巻き戻し。日本語のみ、37件のレビューで好評率94%。",
+      h1a: "ローグライトなのだから、盤面を読み違えたらその周は終わるはずだ。",
+      h1flip: "ところがこのゲームの巻き戻しには回数制限が無く、しかもそれが機能として掲げられている",
+      h1b: "。",
+      lede: "宝石精霊でパーティを編成し、宝石洞窟の最奥にある「時の大結晶」の異変を探りに降りていく戦術ローグライトである。始まりはルビーとサファイアの2人だけで、魔物を倒して洞窟を進むごとに新しい宝石精霊が仲間に加わる。それぞれに固有の「アビリティ」があり、レベルアップで「スキル」を覚え、ゲームの本体はどの組み合わせが互いを増幅するかを見つけることにある。そこに装備品の「オーブ」とパッシブアイテムの「宝蹟」が重なる。仲間もアイテムも毎回ランダムで、物足りなくなれば10段階の高難度モードが待っている。ここまでは、よくできた現代のローグライトである。書く価値を作っているのは、ストアページの一行だ。しかも謝罪ではなく機能として提示されている——「プレイヤーフレンドリーな、無制限の『巻き戻し』」。ガイドキャラクターの「クロ」の能力によって、戦闘を好きな時点まで戻すことができる。しかも回数に制限がない。盤面を読み違えたから一手戻すのも、他にどうなり得たかを見たくて五手戻すのも、あるいは一度も使わないのも自由だ。「失敗は取り返しがつかない」という感情上の契約でジャンル全体が成立しているところに、その契約を自分から破棄したものが置かれている。そして残るのは、「自分が本当に納得できる一手を見つけてほしい」と願っている戦術ゲームである。戦闘にはもう一つ仕掛けがあり、仲間にした宝石精霊が全員同時に場に出るわけではなく、戦闘中に控えと「交代」できる。相性の悪い相手への回答であると同時に、盤面を移動する距離を伸ばす手段でもある。制作は彩羽氏。Steam上の存在は本作と体験版だけで、連絡先は個人のメールアドレスである。発売日は2025年9月14日、価格¥1,800。37件のレビュー(好評35件・不評2件)で好評率94%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。飾らずに三点。対応言語は日本語のみで、37件のうち英語は3件。94%は当サイトが普段置いている線をわずかに下回り、37件という母数も薄い。そして¥1,800は、ここで取り上げてきた発掘の中では高い部類である。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "間違いの代償を取り除いても、思考は無くならない。移動するだけだ。「どの手なら安全か」を問うのをやめて、「どの手を打てたら自分は嬉しいか」を問い始める。そしてこの二つは、別の問いである。",
+        "巻き戻しが物語の内側にあるので、使っても自分の周回を裏切っている感じがしない。やっているのはクロだ。ゲームの側が先に「使っていい」と決めてくれている——小さな親切だが、どれだけ自由に試せるかに大きく効く。",
+        "戦術性を保っているのは控えとの交代のほうだ。全員が同時に場に出るわけではないので、良いパーティとは強い精霊のリストではなく回転である。戦闘中の交代は、相性の悪い相手への回答であると同時に、盤面を踏破する手段でもある。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Into the Breach の発想を限界まで持っていったものが欲しい人——訂正を物語の内側に組み込んだうえで、配給量の制限だけを完全に外している",
+        "実行より組み合わせ探しが欲しい人——固有アビリティ、習得スキル、オーブ、宝蹟が毎周ランダムに配られ、10段階の高難度モードが控えている",
+        "本当にひとりの日本の作品が欲しい人——Steam上の存在は本作と体験版だけ、連絡先は個人のメール、コンテンツディスクリプタは完全に空、AI開示も無し",
+      ],
+      bad: [
+        "日本語が読めない人——英語オプションは無く、37件のうち英語レビューは3件しかない",
+        "取り返しのつかなさが欲しい人——ローグライトの魅力が「失敗が最終的であること」だと思っているなら、このゲームは意図的に無制限の取り消しを手渡してくる。それが本質を消すと感じるなら、実際そうなる",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
