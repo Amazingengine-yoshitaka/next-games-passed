@@ -11204,6 +11204,118 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "hachiban-baspis": {
+    published: "2026-08-02",
+    publishAt: "2026-08-02",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(アクション/カジュアル/インディー)が形を捉えていないため新設
+    //   "one-button-anomaly-swim"。ユーザータグは ポイント＆クリック / 2Dプラットフォーム /
+    //   横スクロール / かわいい / コメディ / パロディ / 水中 / 物理 で、実体は
+    //   「ワンクリックで泳ぐ魚が、引き返せないまま異変判定をやらされる」もの。
+    // lineage は前日に新設した "the-exit-8" を再利用する。これも推測ではなく開発者自身の
+    //   自己申告で、ストア本文に「異変が無ければ進み、異変があれば引き返す『8番ライク』と
+    //   呼ばれるルールのゲームです。」と明記されている。
+    // 【同日にもう1本の8番ライク(八重異神社)を出している点を承知のうえで採用した】
+    //   両者は8番出口の別々の関節を壊している。八重異神社は「判定」を引き返しから左右の分岐へ
+    //   変えた。本作は判定のルール自体は原典どおりに残したまま、「実行」のほうを壊している——
+    //   操作するバスピスは泳ぎが下手で一方向にしか泳げず、引き返したくても引き返すのに一苦労する。
+    //   ルールは知っている、身体が言うことを聞かない、という形であり、同じ原点から反対側の
+    //   関節を外した対になっている。テーマ重複ではなく対比として並ぶと判断した。
+    // developer=pheniki_games / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の
+    //   3作(本作 / ふぇにきのミニゲームゆにばぁ～す / Clay Puzzle)すべてを個別のappdetailsで
+    //   確認した結果、全件 developers=publishers=pheniki_games だった。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。サポート窓口も自身のサイト(pheniki-games.com)。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグ全14件にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。game_area_early_accessバナー無しで正式リリース済み。
+    //   なお開発者自身のサイトに無料のブラウザ版(pheniki-games.com/8banbaspis/)がある。Steam版は
+    //   有料で、当サイトの基準(8)は満たす(国際指定怪異123号がふりーむ！無料版を持つのと同じ形)。
+    // west_unreached: supported_languages は日本語のみ。appreviews API実測で全47件のうち
+    //   日本語41件・英語3件、そして不評は0件。言語の壁の典型なので obscurity: "wall" /
+    //   reachState: "lang_walled" を採る。
+    // 西側編集記事はゼロ。当方の英語検索2回で本作に言及するページは返らず(返ってきたのは
+    //   The Exit 8本体と、同じ古代魚を題材にした別作『Swim! Sacabambaspis』——こちらはSwitch版が
+    //   出てNintendo Life等に載っており西側到達済みだが、本作とは無関係の別ゲームである)。
+    //   日本のインディーを扱う英語ブログ goodorevengreat.games のサイト内検索にも該当なし。
+    //   日本語圏では4Gamerがストアページ公開時に記事化している。
+    // 数字について: 47件で好評率100%・不評0件は当サイトが見てきた中でも強い。ただし母数47件は
+    //   薄く、通常クリア10〜20分と短い。どちらも先に開示する。
+    meta: { genre: "one-button-anomaly-swim", lineage: "the-exit-8", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 47, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Hachiban Baspis",
+        name_ja: "ハチバンバスピス",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3005990/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The rule is the one everybody knows by now, and the store states it in two lines before anything else: if you find an anomaly, turn back; if you do not, keep going. Then it adds the third line, which is the entire game. That is, if a Baspis, who is bad at swimming, can manage it. You are playing a Sacabambaspis, the ancient armoured fish that became a meme for looking permanently startled, and this one cannot steer. It swims in one direction, and your only input is a single mouse click that makes it swim. Timing those clicks is the whole of your control, so the game hands you a rule that requires turning around and then gives you a body that is very bad at turning around. Knowing the answer and being able to act on it come apart, which is a genuinely funny thing to do to a genre where knowing the answer was the entire challenge. A normal clear runs ten to twenty minutes, full completion one to two hours, and somewhere in there is the legendary creature the game is named after. Made by pheniki_games, whose three Steam titles all carry the same name as developer and publisher, with their own website as the contact. There is a free browser version on that site; the Steam release is the paid one, at ¥240. Released July 11, 2024, it is at 100 percent across 47 reviews (47 positive, zero negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It is in Japanese only, and of its 47 reviews, 3 are in English.",
+        desc_ja: "ルールは、もう誰もが知っているあれである。ストアは何よりも先に、二行でそれを書く——異変を見つけたら引き返しましょう。異変が見つからなかったらそのまま進みましょう。そのあとに三行目が来て、そこにゲームの全部が入っている。「ただし、泳ぎが下手なバスピスにそれができれば...ですが....」。操作するのはサカバンバスピス——ずっと驚いた顔をしているように見えることでミームになった、あの古代の甲冑魚だ。そしてこの魚は舵が取れない。一方向にしか泳げず、こちらの入力はマウスのワンクリックだけ、それで泳ぐ。クリックのタイミングを見極めることが操作のすべてである。つまりこのゲームは、「引き返す」ことを要求するルールを渡しておいて、引き返すのが非常に下手な身体を与えてくる。答えが分かることと、その答えを実行できることが、切り離される。答えが分かるかどうかが挑戦のすべてだったジャンルに対して、これは本当に可笑しいことをしている。通常クリアは10〜20分、コンプリートで1〜2時間。そしてそのどこかに、タイトルになっている伝説の生物がいる。制作は pheniki_games。Steamに並ぶ3作すべてで開発元と発売元に同じ名前が入っており、連絡先も自身のサイトである。そのサイトには無料のブラウザ版があり、Steam版のほうが有料で価格は¥240。発売日は2024年7月11日。47件のレビュー(好評47件・不評0件、Steam自身のレビューAPI実測)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語のみで、47件のうち英語は3件だ。",
+      },
+      {
+        name_en: "The Exit 8",
+        name_ja: "8番出口",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2653790/",
+        tag_en: "The stated origin",
+        tag_ja: "作者が名指しした原点",
+        desc_en: "The origin of this taste, and again one the developer named themselves: The Exit 8, made by KOTAKE CREATE and released in November 2023. You walk a looping underground passageway modelled on a Japanese metro station, and the only thing you have to do is notice whether anything is different from the last time you saw it. If something is wrong, turn back. If nothing is wrong, keep going. Its whole difficulty lived in the noticing; once you knew, acting on it was free. Hachiban Baspis keeps the rule word for word and removes exactly that guarantee. The knowing is still on you, but so is the steering, and the fish you have been given cannot steer. It is the same test with the answer sheet intact and the hand shaking.",
+        desc_ja: "この味の原点——そしてこれもまた、開発者自身が名指しした原点である。8番出口。KOTAKE CREATE制作、2023年11月配信。日本の地下鉄の通路をかたどったループする空間を歩き、やるべきことは「さっき見たときと何かが違っていないか」に気づくことだけ。異変があれば引き返す。無ければ進む。この作品の難しさはすべて「気づく」ことの側にあった。気づきさえすれば、それを実行するのは無料だったのだ。『ハチバンバスピス』はルールを一字一句そのまま残して、その無料の部分だけを取り上げる。気づく責任はこちらにある。そして舵を取る責任もこちらにあり、与えられた魚は舵が取れない。答案は合っているのに手が震えている、という同じ試験である。",
+      },
+    ],
+    en: {
+      title: "Hachiban Baspis - the rule is the famous one: turn back if you see an anomaly. But you are a Sacabambaspis, a fish that can only swim one way, and turning back is the hard part. Made by pheniki_games for ¥240. 100 percent across 47 reviews with zero negatives, Japanese-only",
+      description: "An Exit 8-like where the rule is intact and your body is not. Spot the anomaly and turn back, except you are playing an ancient armoured fish that swims in one direction on a single mouse click. Knowing the answer and being able to act on it come apart. Ten to twenty minutes for a clear. 100 percent across 47 reviews, zero negatives.",
+      h1a: "Find an anomaly and turn back. That is the whole rule, and you already know it. ",
+      h1flip: "But you are a fish that can only swim one way, so turning back is the hard part",
+      h1b: ".",
+      lede: "The rule is the one everybody knows by now, and the store states it in two lines before anything else: if you find an anomaly, turn back; if you do not, keep going. Then it adds the third line, which is the entire game. That is, if a Baspis, who is bad at swimming, can manage it. You are playing a Sacabambaspis, the ancient armoured fish that became a meme for looking permanently startled, and this one cannot steer. It swims in one direction, and your only input is a single mouse click that makes it swim. Timing those clicks is the whole of your control, so the game hands you a rule that requires turning around and then gives you a body that is very bad at turning around. Knowing the answer and being able to act on it come apart, which is a genuinely funny thing to do to a genre where knowing the answer was the entire challenge. A normal clear runs ten to twenty minutes, full completion one to two hours, and somewhere in there is the legendary creature the game is named after. Made by pheniki_games, whose three Steam titles all carry the same name as developer and publisher, with their own website as the contact. There is a free browser version on that site; the Steam release is the paid one, at ¥240. Released July 11, 2024, it is at 100 percent across 47 reviews (47 positive, zero negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Two honest notes. It is in Japanese only, and of its 47 reviews only 3 are in English, though a game whose instructions fit in two lines is about as forgiving of that as a Japanese-only game gets. And 47 reviews is a thin sample even when every single one of them is positive, which this pick would rather say than let a perfect score stand unqualified.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The joke is structural, not decorative. Every other game in this genre ends the tension the moment you decide; here deciding is where the tension starts, because now you have to get this animal to comply, and it was not built for compliance.",
+        "One mouse click is the entire control scheme, which means every correction is a commitment. You cannot nudge. You can only swim, and then live with where swimming put you.",
+        "It is very short and completely without menace, and that turns out to be the right call. Take the dread out of an anomaly game and what is left is a small comedy about knowing exactly what to do and being physically unable to do it.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You have played enough Exit 8-likes to be bored of the corridor and want one that breaks a different joint: the rule is untouched, the body is the problem",
+        "You want small and self-published: three Steam titles all under the same name as developer and publisher, a personal site as the contact, ¥240",
+        "You want a number with nothing behind it: 47 reviews, 47 positive, zero negative, content descriptors completely empty, no AI disclosure",
+      ],
+      bad: [
+        "You want length; a normal clear is ten to twenty minutes and full completion is one to two hours, and that is the whole of it",
+        "You want no language barrier at all; it is Japanese-only, and while the rule itself fits in two lines, the text around it does not translate itself",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ハチバンバスピス - ルールはあの有名なやつ。異変を見つけたら引き返す。ただしあなたは一方向にしか泳げない魚で、引き返すのが一番難しい。pheniki_games制作、価格¥240。47件で好評率100%・不評ゼロ、日本語のみ",
+      description: "8番ライク。ただしルールは原典のままで、身体のほうが壊れている。異変を見つけたら引き返す——操作するのはワンクリックで一方向にしか泳げない古代魚。答えが分かることと、実行できることが切り離される。通常クリア10〜20分。47件のレビューで好評率100%、不評ゼロ。",
+      h1a: "異変を見つけたら引き返す。ルールはそれだけで、あなたはもう知っている。",
+      h1flip: "ただしあなたは一方向にしか泳げない魚なので、引き返すことが一番難しい",
+      h1b: "。",
+      lede: "ルールは、もう誰もが知っているあれである。ストアは何よりも先に、二行でそれを書く——異変を見つけたら引き返しましょう。異変が見つからなかったらそのまま進みましょう。そのあとに三行目が来て、そこにゲームの全部が入っている。「ただし、泳ぎが下手なバスピスにそれができれば...ですが....」。操作するのはサカバンバスピス——ずっと驚いた顔をしているように見えることでミームになった、あの古代の甲冑魚だ。そしてこの魚は舵が取れない。一方向にしか泳げず、こちらの入力はマウスのワンクリックだけ、それで泳ぐ。クリックのタイミングを見極めることが操作のすべてである。つまりこのゲームは、「引き返す」ことを要求するルールを渡しておいて、引き返すのが非常に下手な身体を与えてくる。答えが分かることと、その答えを実行できることが、切り離される。答えが分かるかどうかが挑戦のすべてだったジャンルに対して、これは本当に可笑しいことをしている。通常クリアは10〜20分、コンプリートで1〜2時間。そしてそのどこかに、タイトルになっている伝説の生物がいる。制作は pheniki_games。Steamに並ぶ3作すべてで開発元と発売元に同じ名前が入っており、連絡先も自身のサイトである。そのサイトには無料のブラウザ版があり、Steam版のほうが有料で価格は¥240。発売日は2024年7月11日。47件のレビュー(好評47件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。飾らずに二点。対応言語は日本語のみで、47件のうち英語は3件しかない——もっとも、遊び方が二行に収まるゲームなので、日本語オンリーの作品としては言語の壁がいちばん低い部類ではある。そして47件という母数は、その全部が好評であっても薄い。この記事は満点を無条件に立たせず、薄いと書いておく。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "笑いが装飾ではなく構造から出ている。このジャンルの他の作品では、決断した瞬間に緊張が終わる。ここでは決断したところから緊張が始まる。今度はこの生き物に言うことを聞かせなければならず、そしてこの生き物は言うことを聞くようにできていない。",
+        "操作系がマウスのワンクリックだけということは、あらゆる修正が「決め打ち」になるということだ。微調整はできない。泳ぐことしかできず、泳いだ結果たどり着いた場所を受け入れるしかない。",
+        "とても短く、脅かしてくる要素も皆無で、そしてそれが正解になっている。異変ゲームから恐怖を抜くと、あとに残るのは「何をすべきか完全に分かっているのに、身体が物理的にそれをできない」という小さな喜劇だ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "8番ライクを十分に遊んで通路に飽きた人——ルールには一切手を付けず、身体のほうを問題にした一本",
+        "小さくて自主出版のものが欲しい人——Steamの3作すべてが開発元と発売元に同じ名前、連絡先は自身のサイト、価格¥240",
+        "裏に何も無い数字が欲しい人——47件、うち好評47件、不評ゼロ。コンテンツディスクリプタは完全に空、AI開示も無し",
+      ],
+      bad: [
+        "長さが欲しい人——通常クリア10〜20分、コンプリートで1〜2時間。それで全部である",
+        "言語の壁が完全に無いものが欲しい人——日本語のみで、ルール自体は二行に収まるとはいえ、その周りの文章までは訳してくれない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
