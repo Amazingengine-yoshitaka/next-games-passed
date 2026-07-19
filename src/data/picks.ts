@@ -10980,6 +10980,121 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "nabe-with-joon": {
+    published: "2026-08-01",
+    publishAt: "2026-08-01",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(シミュレーション)が形を捉えていないため、ストア本文自身の名乗り
+    //   「言葉遊びの闇鍋シミュレーションゲーム」に沿って新設 "shiritori-hotpot-sim"。
+    //   ユーザータグ側も 言葉遊び / パズル / インタラクティブフィクション / 選択方式アドベンチャー /
+    //   かわいい / コメディ が並んでおり、実体は「しりとりで鍋の具材を決めて反応を見る」ゲーム。
+    // lineage は新規anchorを作らず既存の "nkodice" を再利用する。共有しているのは
+    //   「ひらがなを組み合わせて単語を作り、その単語に対してゲームの側が反応を返す」という、
+    //   日本語の音の上でしか成立しない形。分かれる点は狙いで、NKODICEが下ネタの一発で笑わせに
+    //   来るのに対し、本作は「相手をもてなす」方向に同じ機構を向けている。影響を公言された
+    //   ものではない当サイト独自の批評的比較である(自信度: 中)。
+    // developer=ISY(いすぃ / mizusoba) / publisher=同一で完全な自主出版。Steamのdeveloper検索を
+    //   自分で叩き、ISY名義の12作すべてを個別のappdetailsで確認した結果、全件
+    //   developers=publishers=ISY だった。大手・海外展開代行・親会社関係の混入はゼロ。
+    //   Steam外はBOOTH(mizusoba.booth.pm)での自主販売で、こちらにも発売元は無い。
+    // 国籍は日本(自信度: 高)。ストア本文・タイトル・タグがすべて日本語一次、対応言語も日本語のみ、
+    //   サポート窓口は個人ブログ(mizusoba.blog.fc2.com)と個人Gmail、AUTOMATON日本版が同作者の
+    //   別作を「東方Project二次創作」として日本語で報じている。
+    // 【東方Project 二次創作である点を明記する】ストアページに「☆本ゲームは東方Projectの
+    //   二次創作作品です。」と自己申告がある。当サイトには既に東方二次創作の前例があり
+    //   (touhou-lost-branch / 東方光耀夜)、東方Projectは上海アリス幻樂団ZUN氏個人の作品で
+    //   二次創作ガイドラインが明示的に許諾しているため、条件(6)が問題にする大手publisherや
+    //   親会社との資本関係には当たらない。ただし借り物のキャラクターで成立している作品である
+    //   ことは記事本文で先に書く。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグ全11件にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。game_area_early_accessバナー無しで正式リリース済み。
+    // west_unreached: supported_languages は日本語のみ。英語版ストアページの short_description
+    //   すら日本語のままで、英語が一文字も存在しない。appreviews API実測で全43件のうち日本語42件・
+    //   英語ちょうど0件・不評0件。言語の壁の典型なので obscurity: "wall" /
+    //   reachState: "lang_walled" を採る。
+    // 西側編集記事はゼロ。当方の英語検索で出てきたのは Novogamer / Cheats.co / gamegator /
+    //   IGDB / Twitch のカテゴリページ / StreamsCharts という自動生成DBのみで、バイライン・
+    //   公開日・独自批評の3点が揃った記事は存在しない。これらのDBが当てているローマ字表記
+    //   "Samui kara Nabe Kuitai ne Joon-chan to!!" を name_en に採る(公式英題は存在しない)。
+    // 数字について: 43件で好評率100%(不評0件)は当サイトの理想95%を超えるが、母数43件は薄い。
+    //   そこは記事本文でも隠さない。
+    meta: { genre: "shiritori-hotpot-sim", lineage: "nkodice", obscurity: "wall", reachState: "lang_walled", rarity: { reviews: 43, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Samui kara Nabe Kuitai ne Joon-chan to!!",
+        name_ja: "寒いから鍋食いたいね女苑ちゃんと！！",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3490680/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "You are sharing a hot pot with a god of poverty, and the way you choose what goes in it is shiritori. The store explains the loop in two moves. A single character appears, say MA. You add one character to complete an ingredient, say MAME, beans. Now the next ingredient has to begin with ME, because that is where your own word left off. You keep going, chaining ingredient to ingredient, trying to build a pot that satisfies Joon Yorigami and also satisfies whatever extra rule the round has imposed. The part that makes it a real puzzle rather than a vocabulary drill is stated plainly on the store page: you are allowed to put in things that are not food. You will probably be told off for it. But sometimes the only way to reach the character you need for the ingredient you actually want is to throw something inedible in first, and the game knows that, and lets you decide how much of a mess you are willing to make on the way to a good pot. It is a Touhou Project fan work, and the store says so itself with a starred line. Made by ISY, the circle of one person who goes by Isui, whose entire catalogue of twelve Steam titles is Touhou fan work and whose developer and publisher fields are identical on all twelve; a direct check of each confirms no outside company anywhere in the record, and their off-Steam sales run through their own BOOTH shop. Released February 14, 2025 at ¥700, it is at 100 percent across 43 reviews (43 positive, zero negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. There is no English of any kind. The store's own English-language page still carries a Japanese short description, Steam could not build a URL slug from the title and left an underscore, and of the 43 reviews exactly zero are in English.",
+        desc_ja: "疫病神と鍋を囲んでいて、何を入れるかの決め方がしりとりである。ストアはループを二手で説明している。まず一文字が提示される、たとえば「ま」。そこに一文字足して具材を完成させる、たとえば「まめ（豆）」。すると次の具材は「め」から始めなければならない。自分の言葉が終わった場所が、次の始まりになるからだ。そうやって具材から具材へ繋いでいき、依神女苑を満足させ、かつその回に課された追加ルールも満たす鍋を作る。これを語彙のドリルではなく本物のパズルにしているのは、ストアページがはっきり書いているこの一点だ——食べ物でないものを入れることも可能である。当然、怒られるかもしれない。だが本当に欲しい具材に必要な文字へ辿り着くには、先に食べ物でないものを放り込むしかない場面がある。ゲームの側はそれを分かっていて、良い鍋に至る道中でどれだけ滅茶苦茶にする覚悟があるかを、こちらに決めさせる。本作は東方Projectの二次創作作品で、ストアページにも星印つきの一行でそう明記されている。制作はISY——いすぃ名義の一人サークルで、Steamに並ぶ12作すべてが東方の二次創作、そして12作すべてで開発元と発売元の欄が同一である。1本ずつ確認したが、記録のどこにも外部の会社は存在せず、Steam外の販売も自身のBOOTHショップで完結している。発売日は2025年2月14日、価格¥700。43件のレビュー(好評43件・不評0件、Steam自身のレビューAPI実測)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。英語はいかなる形でも存在しない。ストアの英語版ページですら短い説明文が日本語のままで、Steamはタイトルから URL slug を作れずアンダースコアを置いており、43件のレビューのうち英語はちょうど0件だ。",
+      },
+      {
+        name_en: "NKODICE",
+        name_ja: "NKODICE(んこダイス)",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1510950/NKODICE/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: NKODICE, the dice game by the solo creator ksym released on Steam in May 2021, in which the faces come up as kana-like symbols and the combination you roll spells something out. Its contribution was to make the Japanese syllabary itself the play surface: you are not matching shapes, you are watching sounds assemble into a word, and the game's entire response is to what that word turned out to be. It reached number one on Steam's Japanese sales chart in June 2021 on word of mouth alone. Samui kara Nabe Kuitai ne Joon-chan to!! is not an official NKODICE work, and this lineage is a comparison drawn by this site rather than a stated influence. The mechanism is shared and the aim is opposite. NKODICE assembles syllables to land a crude joke and get a laugh out of you. This one assembles them to feed somebody, and the reaction it is fishing for is not a laugh but whether the person across the pot is pleased.",
+        desc_ja: "この味の原点——NKODICE(んこダイス)。個人クリエイターksymが2021年5月にSteamで配信したダイスゲームで、出目がひらがな状の記号として現れ、揃った組み合わせが何かの言葉になる。その貢献は、日本語の音そのものを遊びの盤面にしたことだ。形を揃えているのではない。音が集まって言葉になるのを見ていて、そしてゲームの反応はすべて「その言葉が何になったか」に対して返ってくる。2021年6月には口コミだけでSteamの日本売上ランキング1位に達した。『寒いから鍋食いたいね女苑ちゃんと！！』は公式のNKODICE作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。機構は共有していて、狙いは逆を向いている。NKODICEが音を集めるのは下ネタを一発決めて笑わせるためだ。こちらが音を集めるのは誰かに食べさせるためで、引き出そうとしている反応は笑いではなく、鍋の向かいにいる相手が喜んだかどうかである。",
+      },
+    ],
+    en: {
+      title: "Samui kara Nabe Kuitai ne Joon-chan to!! - you share a hot pot with a god of poverty, and shiritori decides what goes in. Sometimes the only way to reach the syllable you need is to throw something inedible in first. Made alone by ISY for ¥700. 100 percent over 43 reviews, zero of them in English",
+      description: "A wordplay hot-pot simulation. A character appears, you add one to make an ingredient, and the next ingredient must start where your word ended. Build a pot that satisfies Joon Yorigami and the round's extra rule. You may put in things that are not food, and sometimes you have to. A Touhou fan work made alone by ISY. 100 percent over 43 reviews, Japanese-only.",
+      h1a: "A hot pot with a god of poverty, and shiritori decides the ingredients. ",
+      h1flip: "Sometimes you must throw in something inedible just to reach the syllable you need",
+      h1b: ".",
+      lede: "You are sharing a hot pot with a god of poverty, and the way you choose what goes in it is shiritori. The store explains the loop in two moves. A single character appears, say MA. You add one character to complete an ingredient, say MAME, beans. Now the next ingredient has to begin with ME, because that is where your own word left off. You keep going, chaining ingredient to ingredient, trying to build a pot that satisfies Joon Yorigami and also satisfies whatever extra rule the round has imposed. The part that makes it a real puzzle rather than a vocabulary drill is stated plainly on the store page: you are allowed to put in things that are not food. You will probably be told off for it. But sometimes the only way to reach the character you need for the ingredient you actually want is to throw something inedible in first, and the game knows that, and lets you decide how much of a mess you are willing to make on the way to a good pot. Two things should be said before anything else. It is a Touhou Project fan work, and the store says so itself with a starred line, so the characters are borrowed rather than invented; this site has covered Touhou fan work before, and the franchise's creator permits derivative works explicitly, but you should know it going in. And there is no English of any kind. The store's own English-language page still carries a Japanese short description, Steam could not build a URL slug from the title and left an underscore, and of the 43 reviews exactly zero are in English. Made by ISY, the circle of one person who goes by Isui, whose entire catalogue of twelve Steam titles is Touhou fan work and whose developer and publisher fields are identical on all twelve; a direct check of each confirms no outside company anywhere in the record, and their off-Steam sales run through their own BOOTH shop. Released February 14, 2025 at ¥700, it is at 100 percent across 43 reviews (43 positive, zero negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Forty-three reviews is a thin sample for a perfect score, and this pick says so rather than letting the number stand unqualified.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The moment the design lands is when you realise the ingredient you want is unreachable, because the syllable it starts with is not the one you were left with. Every good move costs you a letter, and you are always paying for the last thing you said.",
+        "Being allowed to put in something inedible turns the pot into a ledger of your compromises. You know exactly why that one bad ingredient is in there; it was the only bridge to the thing you actually wanted to serve.",
+        "It is a hosting game underneath. The goal is not a high score but whether the person eating with you is pleased, and a technically legal pot that nobody wants to eat is still a failure of the evening.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You read Japanese and want a puzzle that is made of the language rather than translated into it: shiritori as a resource constraint, where each answer sets the next question",
+        "You want the smallest kind of Japanese doujin release: one person, twelve Touhou fan titles on Steam all self-published, off-Steam sales through their own BOOTH shop, ¥700",
+        "You want a clean record: Steam's content descriptors completely empty, no mature content section, no AI disclosure, and not one negative review out of 43",
+      ],
+      bad: [
+        "You do not read Japanese. The mechanic is Japanese syllables and there is no English anywhere, not even in the store description on the English page. There is no version of this you can play without the language",
+        "You want original characters and a settled sample; this is a Touhou Project fan work built on borrowed cast, and 43 reviews is thin even at a perfect score",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "寒いから鍋食いたいね女苑ちゃんと！！ - 疫病神と鍋を囲み、具材はしりとりで決める。欲しい文字に辿り着くために、食べ物でないものを先に放り込むしかない時がある。ISYがひとりで制作、価格¥700。43件で好評率100%、英語レビューは0件",
+      description: "言葉遊びの闇鍋シミュレーション。一文字が提示され、一文字足して具材を作り、次の具材は自分の言葉が終わった文字から始める。依神女苑とその回の追加ルールを同時に満たす鍋を作る。食べ物でないものも入れられるし、入れるしかない時もある。ISYによる東方Project二次創作。43件のレビューで好評率100%、日本語のみ。",
+      h1a: "疫病神と囲む鍋。具材はしりとりで決まる。",
+      h1flip: "欲しい文字に辿り着くために、食べ物でないものを先に放り込むしかない時がある",
+      h1b: "。",
+      lede: "疫病神と鍋を囲んでいて、何を入れるかの決め方がしりとりである。ストアはループを二手で説明している。まず一文字が提示される、たとえば「ま」。そこに一文字足して具材を完成させる、たとえば「まめ（豆）」。すると次の具材は「め」から始めなければならない。自分の言葉が終わった場所が、次の始まりになるからだ。そうやって具材から具材へ繋いでいき、依神女苑を満足させ、かつその回に課された追加ルールも満たす鍋を作る。これを語彙のドリルではなく本物のパズルにしているのは、ストアページがはっきり書いているこの一点だ——食べ物でないものを入れることも可能である。当然、怒られるかもしれない。だが本当に欲しい具材に必要な文字へ辿り着くには、先に食べ物でないものを放り込むしかない場面がある。ゲームの側はそれを分かっていて、良い鍋に至る道中でどれだけ滅茶苦茶にする覚悟があるかを、こちらに決めさせる。何よりも先に言っておくべきことが二つある。本作は東方Projectの二次創作作品で、ストアページにも星印つきの一行でそう明記されている。つまりキャラクターは考案されたものではなく借りたものだ。当サイトは過去にも東方の二次創作を扱っており、東方Projectは原作者が二次創作を明示的に許諾しているが、それを承知のうえで入るべきである。そしてもう一つ、英語はいかなる形でも存在しない。ストアの英語版ページですら短い説明文が日本語のままで、Steamはタイトルから URL slug を作れずアンダースコアを置いており、43件のレビューのうち英語はちょうど0件だ。制作はISY——いすぃ名義の一人サークルで、Steamに並ぶ12作すべてが東方の二次創作、そして12作すべてで開発元と発売元の欄が同一である。1本ずつ確認したが、記録のどこにも外部の会社は存在せず、Steam外の販売も自身のBOOTHショップで完結している。発売日は2025年2月14日、価格¥700。43件のレビュー(好評43件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。43件という母数は満点にしては薄く、この記事はその数字を無条件に立たせず、薄いと書いておく。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "設計が腑に落ちるのは、入れたい具材に手が届かないと気づいた瞬間だ。その具材が始まる文字が、こちらに残された文字ではないからである。良い一手はどれも文字を一つ消費し、そして人は常に、自分が最後に言ったことの代金を払っている。",
+        "食べ物でないものを入れられる、という許可が、鍋を「自分の妥協の帳簿」に変える。あの一つだけ変な具材がなぜそこにあるのか、こちらは正確に知っている——本当に出したかったものへ渡るための、唯一の橋だったからだ。",
+        "根っこはもてなしのゲームである。目標は高得点ではなく、一緒に食べている相手が喜んだかどうかで、規則上は成立しているが誰も食べたくない鍋は、やはりその晩の失敗なのだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "日本語が読めて、翻訳されたものではなく言語そのものでできたパズルが欲しい人——しりとりが資源制約になり、答えるたびに次の問いが決まる",
+        "いちばん小さい規模の日本の同人が欲しい人——ひとり、Steamに並ぶ12本の東方二次創作すべてが自主出版、Steam外の販売も自分のBOOTHショップ、価格¥700",
+        "記録がきれいなものが欲しい人——コンテンツディスクリプタは完全に空、大人向けコンテンツの説明欄も無し、AI開示も無し、そして43件中で不評はゼロ",
+      ],
+      bad: [
+        "日本語が読めない人。機構そのものが日本語の音でできていて、英語版ページの説明文にすら英語が無い。言語なしで遊べる形は存在しない",
+        "オリジナルのキャラクターと安定した母数が欲しい人——本作は借りたキャストの上に立つ東方Projectの二次創作で、43件は満点であっても薄い",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
