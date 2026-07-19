@@ -11652,6 +11652,118 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "gal-vs-village": {
+    published: "2026-08-04",
+    publishAt: "2026-08-04",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(Action/Indie)がゲーム性を捉えていないため新設
+    //   "gun-knife-boomer-shooter"。appdetails実測(自前WebFetch): short_description="GAL VS
+    //   VILLAGE is an GAL like old-school FPS. You play as Kessenji "Blood-sucker" Yui, ...
+    //   Move at high speed, swing your knife, blast away with the shotgun..."。ストア本文(ja)実測
+    //   でも「SHIFTキーで高速で移動でき、左クリックで片手で銃器をぶっぱなし、右クリックで肉切り
+    //   包丁をぶん回すことが出来ます。」と明記——銃と刃物の二択が常に同時に持てる設計であり、
+    //   FPS初心者向けに「もう迷わない(ハズ)ガイド機能」「ほぼほぼ死なない最低難易度」も実装。
+    // developer/publisher: appdetails実測でdevelopers=publishers=["Crush-vAdin"](自社発行)。
+    //   個人サークル(代表Bhaskara氏)であることは本人確定情報(unityroom/Wix公式サイト/YouTubeの
+    //   複数一次情報源の一致、自信度:中)。release_date実測"Mar 11, 2026"、price ¥500(JPY, discount
+    //   0%)、is_free=false。content_descriptors ids=[2,5]実測=Frequent Violence or Gore +
+    //   General Mature Content(性的descriptorなし)。AI Generated Content Disclosure欄はストア
+    //   ページに存在せず非AI。supported_languages実測="English, Japanese"(中国語・韓国語なし)。
+    // 主人公名: ストア本文(ja)実測で「血染寺・"ブラッドサッカー"・ユイ」、英語版ストア本文実測で
+    //   "Kessenji \"Blood-sucker\" Yui" と表記(読みは同一の公式ローマ字)。舞台の村名はストア本文
+    //   (ja)実測で「葉意背多(はいせた)村」とふりがな付きで明記——荒廃を意味する「廃セタ」と完全に
+    //   同音の当て字であることも本文から確認済み(捏造ではなく開発者自身の言葉遊び)。
+    // lineage: 新規anchor "cult-vs-gal" を、同一開発者Crush-vAdinの前作CULT VS GAL(steam appid
+    //   2788360, 2024)で作成する(lineage_anchor_key=steam_url、本人採用済みの確定事実)。本作
+    //   自身のストア本文(ja)実測が「前作『カルトに厳しいギャル』では業界初のマルチエンディングを
+    //   搭載していましたが、勿論今作でもエンディングはマルチに選ぶことが出来ます。」と、開発者
+    //   自身の言葉で前作を名指ししており、当サイトの外部からの批評的比較ではなく開発者自身が
+    //   明言した系譜である(自信度:高)。「業界初」は開発者自身の未検証の主張のため、事実として
+    //   採用せず引用に留める。既存 LINEAGE_ANCHOR に "cult-vs-gal"/appid 2788360 の重複が無い
+    //   ことをgrep実測確認済み。
+    // west_unreached: appreviews API実測(language別)でtotal=99(確定値と一致)、english=30
+    //   (30.3%相当、確定値と一致)、japanese=54(54.5%)、schinese=3、tchinese=1、koreana=2——
+    //   supported_languagesが英語を含むため noEnglish=false。それでいて英語レビューは全体の3割強に
+    //   とどまり、対応言語ですらない中国語・韓国語のレビューが少数存在するという実態を正直に書く。
+    //   obscurity: "deep"(レビュー僅少で西で無名) / reachState: "unreached_west"(英語対応ありでも
+    //   西へ届いていない、elechead/blast-recoil-platformer型判断)を採る。西側編集記事はゼロ、
+    //   ストアページにも公式Discord/SNS等の外部誘導リンクは一切なし(実測確認)。reviewBandは
+    //   持たせない(99件は既存の"hundreds"未満、igyou-no-machi-no-annie型判断)。
+    meta: { genre: "gun-knife-boomer-shooter", lineage: "cult-vs-gal", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 99, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "GAL VS VILLAGE",
+        name_ja: "ギャルトムラ",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4102700/GAL_VS_VILLAGE/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "GAL VS VILLAGE (ギャルトムラ) opens with a report: on a date given only as the 45th of the 23rd month of the year 2XXX, a place called Haiseta, spelled 葉意背多 but read exactly the same as the ordinary word for a village gone to ruin, is confirmed to have crossed into another world. A statement of responsibility comes from the village's guardian Kurobachi family and its own residents, and the message it carries is a single line: know us. In response, the Bureau for Managing Transcendent Beings dispatches Special Task Force Number 444, an agent whose name on the Japanese store page reads 血染寺・\"ブラッドサッカー\"・ユイ and whose own English-language store page renders it as Kessenji \"Blood-sucker\" Yui, a soldier whose entire body has been ritually altered to withstand the otherworld itself. The store's own Japanese tagline sums up her attitude in one line: わたしが、カミをころす, I am the one who kills the god. Steam's own short description calls the result an old-school FPS: SHIFT sends Yui into a burst of high-speed movement, a left click fires a gun one-handed, and a right click swings a meat cleaver, with both attacks sitting on the mouse at once rather than behind a weapon-switch menu. For players new to the genre, the same store page lists a guide function billed as \"you probably won't get lost anymore\" and a lowest difficulty billed as \"you basically won't die,\" aimed squarely at people who do not usually play FPS games. It also carries over a structure the developer credits to their own prior release, in the store page's own words: \"our previous game, Cult-Strict Gal, shipped what we're calling the industry's first multi-ending, and naturally, this one lets you choose among multiple endings too,\" an unverified claim by that same developer that we quote rather than adopt as fact. Both the ending theme and the title theme, 今生エターナル (This Life, Eternal), are credited as written and composed by the developer, with the ending track's arrangement, recording, and mix credited to Takayuki Kato, working under the name kikato of the band 色々な十字架. Released March 11, 2026, at ¥500 (about $4.99), it is a paid title, not free, and fully launched rather than Early Access. Per Steam's own review API it sits at 100 percent positive across 99 reviews (99 positive, zero negative, enough for a Very Positive rating rather than the harder-to-reach Overwhelmingly Positive tier, which needs 500-plus), and text support is limited to English and Japanese, with no Chinese or Korean localization. Even so, our own per-language pull of that same review API shows only 30 of the 99 reviews, 30.3 percent, are in English; Japanese carries 54 (54.5 percent), and the rest splits thinly across Simplified Chinese (3), Traditional Chinese (1), Korean (2), and other languages, players engaging with a game that was never localized into their language at all. Steam's content descriptors list two categories, Frequent Violence or Gore and General Mature Content, with nothing on the sexual-content descriptor and no AI-generated-content disclosure on the page. The developer and publisher of record is Crush-vAdin, a solo circle led by a developer going by Bhaskara with no parent company, whose earlier titles CULT VS GAL (2024) and HAZAMA_QUEEN are sold alongside this one in a single Steam listing, Crush-vAdin's FPS Bundle. We found no official Discord, social account, or other outreach link on the store page, and no Western press coverage of this release turned up in our own search.",
+        desc_ja: "『ギャルトムラ』(GAL VS VILLAGE)は、一つの報告から始まる——統暦2XXX年23月45日、葉意背多(はいせた)村にて異界化の兆候を確認。この村名は「葉意背多」という漢字を宛てているが、読みはそのまま「廃セタ」——荒れ果てた村、を意味する言葉と同音になっている。守人である黒撥家、および村民からの犯行声明が確認され、送られたメッセージはただ一言、「私達を知れ」。これを受け、超越存在管理局は特務部隊ナンバー444を投入する——ストアの日本語表記では「血染寺・\"ブラッドサッカー\"・ユイ」、Steam自身の英語版ストアでは Kessenji \"Blood-sucker\" Yui と表記される、全身に特殊礼拝を受けて異界に適応した兵士だ。ストア自身の日本語のキャッチコピーは、その姿勢を一行で言い切っている——「わたしが、カミをころす。」。Steamの短い紹介文はこれをオールドスクールFPSと呼ぶ——SHIFTキーで高速移動し、左クリックで片手のまま銃器を撃ち放ち、右クリックで肉切り包丁をぶん回す。この二つの攻撃は武器切り替えメニューの向こうではなく、常に両方のマウスボタンの上に同時に載っている。FPSに不慣れな層のために、同じストアページは「もう迷わない(ハズ)ガイド機能」と「ほぼほぼ死なない最低難易度」も用意していると明記する。さらに、開発者自身がストア本文でこう名指しして引き継いだ仕組みもある——「前作『カルトに厳しいギャル』では業界初のマルチエンディングを搭載していましたが、勿論今作でもエンディングはマルチに選ぶことが出来ます。」これは開発者自身の未検証の主張であり、当サイトは事実として採用せず、そのまま引用するにとどめる。エンディング曲・タイトル曲「今生エターナル」はいずれも作詞作曲が開発者本人で、エンディング曲のアレンジ・レコーディング・ミックスは、バンド「色々な十字架」で「kikato」として活動するタカユキカトー氏が担当している。発売日は2026年3月11日、価格¥500(約$4.99)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steam自身のレビューAPI実測では99件中99件が好評(不評0件)の好評率100%で、「非常に好評」——500件以上を要するさらに上の「圧倒的に好評」には届かない水準——であり、対応言語は英語・日本語のみで中国語・韓国語のローカライズはない。それでも、同じレビューAPIを言語別に当サイトが実測すると、99件のうち英語はわずか30件(30.3%)にとどまり、日本語が54件(54.5%)、残りは簡体字中国語3件・繁体字中国語1件・韓国語2件など、ローカライズされていない言語で遊んでいるプレイヤーたちに薄く分散している。Steamのコンテンツディスクリプタは「暴力またはグロテスクな表現の頻度が高い」「一般的な低俗表現」の2件で、性的表現のディスクリプタは無く、AI生成コンテンツの開示欄もストアページに存在しない。開発元・販売元は個人サークルCrush-vAdin——Bhaskara氏を名乗る開発者による親会社を持たないソロ開発で、前作『カルトに厳しいギャル』(2024)と『HAZAMA_QUEEN』は、本作とまとめて一つのSteamバンドル「Crush-vAdin's FPS Bundle」として販売されている。ストアページ上に公式Discordやソーシャルアカウントなど外部誘導リンクは見当たらず、当方の調査でも西側プレスによる報道は見つからなかった。",
+      },
+      {
+        name_en: "CULT VS GAL",
+        name_ja: "カルトに厳しいギャル-CULT VS GAL-",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2788360/CULT_VS_GAL/",
+        tag_en: "Same developer's earlier game",
+        tag_ja: "同じ開発者の前作",
+        desc_en: "Not an outside influence but the same solo developer's own earlier work: CULT VS GAL (カルトに厳しいギャル -CULT VS GAL-), developed and self-published by Crush-vAdin and released May 3, 2024. Its own store page bills it as \"ultra old-school, yet high-tempo, user-friendly,\" and gives the story in a few lines: in Imperial year 248, an empire worn down by war and collapsing security watches a religious organization called Galwoya rise up and abduct its people one by one, and after the imperial army sent against it is wiped out, the empire's last move is to transfer a single soldier, nicknamed 大獄院・スマッシャー・サキ (Hell Smasher Saki), directly into the cult. The mechanics this site tracks forward into GAL VS VILLAGE are already present here: a shotgun and an assault rifle cover the ranged half of the fight, while a right-click melee attack lets Saki decapitate cultists outright, an act the store page says briefly makes her invincible and openly recommends as a strategy, not just a last resort. It runs four episodes across sixteen-plus maps. Priced at ¥500, the same as its successor, and supporting English and Japanese text only, it sits at Very Positive on Steam's own review API, 387 of 397 reviews positive (about 97.5 percent), with the same two content descriptors GAL VS VILLAGE would later carry, Frequent Violence or Gore and General Mature Content. GAL VS VILLAGE's own store page credits it directly by name as \"our previous game,\" crediting it with what the developer calls the industry's first multi-ending, a structure the new game explicitly continues; both games' title and ending themes are also written and composed by the same developer. It is the origin of Crush-vAdin's own small lineage of gun-and-blade old-school shooters starring a gal cutting down whatever the antagonist is that week, a cult here, a haunted village next.",
+        desc_ja: "外部の原点ではなく、同じ個人開発者自身による前作——『カルトに厳しいギャル-CULT VS GAL-』。Crush-vAdinが開発・自社販売し、2024年5月3日に発売された。ストア自身が「超オールドスクールながらも、ハイテンポ＆ユーザーフレンドリー」なFPSと謳い、物語は数行で語られる——帝国暦248年、悪化した治安と終わらない戦争に疲弊した帝国で、宗教組織「ガルヲイヤ」が台頭し人々を一人また一人と攫っていく。送り込んだ帝国軍が壊滅した後、帝国が最後に打った手は、たった一人の兵士——「大獄院・スマッシャー・サキ」を、そのカルト組織へ直接送り込むことだった。本サイトが『ギャルトムラ』へ受け継がれたと見ているメカニクスは、すでにここに揃っている——ショットガンとアサルトライフルが射撃を担い、右クリックの近接攻撃でカルト教徒の首を直接刎ねられる。ストア自身の言葉によれば、首を斬るとサキは一瞬無敵になり、それは最後の手段ではなく積極的に推奨される戦略として明記されている。全4エピソード・16以上のマップで構成される。価格は続編と同じ¥500、対応言語も英語・日本語のみ。Steam自身のレビューAPI実測では397件中387件が好評(約97.5%)の「非常に好評」で、コンテンツディスクリプタも『ギャルトムラ』が後に受け継ぐのと同じ2件、「暴力またはグロテスクな表現の頻度が高い」「一般的な低俗表現」。『ギャルトムラ』のストアページ自身が本作を「前作」と名指しし、開発者いわく「業界初」だと謳うマルチエンディングの仕組みを引き継いでいると明記している——タイトル曲・エンディング曲もどちらの作品も作詞作曲は開発者本人だ。カルトであれ、化物めいた村であれ、その週の敵役をギャルが銃と刃物で切り伏せる、Crush-vAdin自身のオールドスクールシューターの系譜の原点である。",
+      },
+    ],
+    en: {
+      title: "GAL VS VILLAGE (ギャルトムラ) - a village crosses into another world and its own guardians leave one message, know us, so a special agent nicknamed Blood-sucker Yui is sent in alone with a gun in one hand and a meat cleaver in the other. Old-school FPS, ¥500. 100 percent across 99 reviews, and only 30 of them are in English",
+      description: "An old-school FPS where agent Kessenji \"Blood-sucker\" Yui infiltrates a village that has crossed into another world, dashing with Shift, firing a gun one-handed, and swinging a meat cleaver with the other. From the developer of CULT VS GAL, self-published at ¥500. 100 percent positive across 99 reviews, yet only 30.3 percent of them are in English.",
+      h1a: "A village crosses into another world, and its own guardians leave behind one message: know us. ",
+      h1flip: "So a special agent is sent in alone, a gun in one hand and a meat cleaver in the other",
+      h1b: ".",
+      lede: "GAL VS VILLAGE (ギャルトムラ) opens with a report: on a date given only as the 45th of the 23rd month of the year 2XXX, a place called Haiseta, spelled 葉意背多 but read exactly the same as the ordinary word for a village gone to ruin, is confirmed to have crossed into another world. A statement of responsibility comes from the village's guardian Kurobachi family and its own residents, and the message it carries is a single line: know us. In response, the Bureau for Managing Transcendent Beings dispatches Special Task Force Number 444, an agent whose name on the Japanese store page reads 血染寺・\"ブラッドサッカー\"・ユイ and whose own English-language store page renders it as Kessenji \"Blood-sucker\" Yui, a soldier whose entire body has been ritually altered to withstand the otherworld itself. The store's own Japanese tagline sums up her attitude in one line: わたしが、カミをころす, I am the one who kills the god. Steam's own short description calls the result an old-school FPS: SHIFT sends Yui into a burst of high-speed movement, a left click fires a gun one-handed, and a right click swings a meat cleaver, with both attacks sitting on the mouse at once rather than behind a weapon-switch menu. For players new to the genre, the same store page lists a guide function billed as \"you probably won't get lost anymore\" and a lowest difficulty billed as \"you basically won't die,\" aimed squarely at people who do not usually play FPS games. It also carries over a structure the developer credits to their own prior release, in the store page's own words: \"our previous game, Cult-Strict Gal, shipped what we're calling the industry's first multi-ending, and naturally, this one lets you choose among multiple endings too,\" an unverified claim by that same developer that we quote rather than adopt as fact. Both the ending theme and the title theme, 今生エターナル (This Life, Eternal), are credited as written and composed by the developer, with the ending track's arrangement, recording, and mix credited to Takayuki Kato, working under the name kikato of the band 色々な十字架. Released March 11, 2026, at ¥500 (about $4.99), it is a paid title, not free, and fully launched rather than Early Access. Per Steam's own review API it sits at 100 percent positive across 99 reviews (99 positive, zero negative, enough for a Very Positive rating rather than the harder-to-reach Overwhelmingly Positive tier, which needs 500-plus), and text support is limited to English and Japanese, with no Chinese or Korean localization. Even so, our own per-language pull of that same review API shows only 30 of the 99 reviews, 30.3 percent, are in English; Japanese carries 54 (54.5 percent), and the rest splits thinly across Simplified Chinese (3), Traditional Chinese (1), Korean (2), and other languages, players engaging with a game that was never localized into their language at all. Steam's content descriptors list two categories, Frequent Violence or Gore and General Mature Content, with nothing on the sexual-content descriptor and no AI-generated-content disclosure on the page. The developer and publisher of record is Crush-vAdin, a solo circle led by a developer going by Bhaskara with no parent company, whose earlier titles CULT VS GAL (2024) and HAZAMA_QUEEN are sold alongside this one in a single Steam listing, Crush-vAdin's FPS Bundle. We found no official Discord, social account, or other outreach link on the store page, and no Western press coverage of this release turned up in our own search. One honest note up front: at 99 reviews the sample is still thin even at a perfect score, and this reads far less like a title the West has rejected than one it simply has not been shown yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The right-click knife and the left-click gun never take turns: both sit live on the mouse at every moment, so the choice this old-school shooter keeps handing you is not which weapon to switch to but how close you are willing to stand before you commit to either one.",
+        "The same store page that offers a guide function so you \"probably won't get lost anymore\" and a difficulty where you \"basically won't die\" is flagged, in Steam's own words, for frequent violence or gore. The friction it strips away is about not getting stuck, not about softening what a meat cleaver does to whatever the village has turned its people into.",
+        "The developer writes both games' title and ending themes themselves, and calls back to their own prior release by name to promise the same multi-ending structure again. Two projects in, that reads less like a one-off gimmick and more like a small studio with an actual stake in how each of its stories is allowed to end.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want an unapologetic boomer shooter where the melee weapon is a real second option and not a last resort you switch to: a gun on the left click, a knife always live on the right, plus a Shift dash to close distance on your own terms",
+        "You already know this developer's CULT VS GAL and want to watch the same solo circle run its gun-and-blade formula on a fresh antagonist, a haunted village standing in for last time's cult, with the same developer again writing both the title and ending themes",
+        "You want a game the review numbers have not caught up to yet: 100 percent positive across 99 reviews, in a game with full English text, and still only 30 of those reviews are written in English so far",
+      ],
+      bad: [
+        "You need the game supported in Chinese or Korean: Steam lists text support for English and Japanese only, and the handful of Simplified Chinese, Traditional Chinese, and Korean reviews already on file come from players working outside the game's own supported languages",
+        "You want the store page to undersell what \"gore\" means here: Steam's own content descriptors flag Frequent Violence or Gore plus General Mature Content, and the short description itself promises a meat cleaver, not a euphemism, once you're inside the village",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ギャルトムラ(GAL VS VILLAGE) - 村が異界化し、村の守人自身が残したメッセージはたった一言「私達を知れ」。そこへ、片手に銃、もう片手に肉切り包丁を持った特務エージェント、通称ブラッドサッカーのユイが単身送り込まれる。オールドスクールFPS、¥500。99件で好評率100%、そのうち英語レビューはわずか30件",
+      description: "村が異界化し、そこへ特務エージェント・血染寺\"ブラッドサッカー\"ユイが単身潜入するオールドスクールFPS。SHIFTで高速移動し、左クリックで片手のまま銃を撃ち、右クリックで肉切り包丁を振るう。『カルトに厳しいギャル-CULT VS GAL-』の開発元による自社販売、価格¥500。99件のレビューで好評率100%、しかし英語レビューは30.3%にとどまる。",
+      h1a: "村が異界化し、その村自身の守人が残したメッセージはたった一言——「私達を知れ」。",
+      h1flip: "そこへ、片手に銃、もう片手に肉切り包丁を持ったエージェントが単身送り込まれる",
+      h1b: "。",
+      lede: "『ギャルトムラ』(GAL VS VILLAGE)は、一つの報告から始まる——統暦2XXX年23月45日、葉意背多(はいせた)村にて異界化の兆候を確認。この村名は「葉意背多」という漢字を宛てているが、読みはそのまま「廃セタ」——荒れ果てた村、を意味する言葉と同音になっている。守人である黒撥家、および村民からの犯行声明が確認され、送られたメッセージはただ一言、「私達を知れ」。これを受け、超越存在管理局は特務部隊ナンバー444を投入する——ストアの日本語表記では「血染寺・\"ブラッドサッカー\"・ユイ」、Steam自身の英語版ストアでは Kessenji \"Blood-sucker\" Yui と表記される、全身に特殊礼拝を受けて異界に適応した兵士だ。ストア自身の日本語のキャッチコピーは、その姿勢を一行で言い切っている——「わたしが、カミをころす。」。Steamの短い紹介文はこれをオールドスクールFPSと呼ぶ——SHIFTキーで高速移動し、左クリックで片手のまま銃器を撃ち放ち、右クリックで肉切り包丁をぶん回す。この二つの攻撃は武器切り替えメニューの向こうではなく、常に両方のマウスボタンの上に同時に載っている。FPSに不慣れな層のために、同じストアページは「もう迷わない(ハズ)ガイド機能」と「ほぼほぼ死なない最低難易度」も用意していると明記する。さらに、開発者自身がストア本文でこう名指しして引き継いだ仕組みもある——「前作『カルトに厳しいギャル』では業界初のマルチエンディングを搭載していましたが、勿論今作でもエンディングはマルチに選ぶことが出来ます。」これは開発者自身の未検証の主張であり、当サイトは事実として採用せず、そのまま引用するにとどめる。エンディング曲・タイトル曲「今生エターナル」はいずれも作詞作曲が開発者本人で、エンディング曲のアレンジ・レコーディング・ミックスは、バンド「色々な十字架」で「kikato」として活動するタカユキカトー氏が担当している。発売日は2026年3月11日、価格¥500(約$4.99)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。Steam自身のレビューAPI実測では99件中99件が好評(不評0件)の好評率100%で、「非常に好評」——500件以上を要するさらに上の「圧倒的に好評」には届かない水準——であり、対応言語は英語・日本語のみで中国語・韓国語のローカライズはない。それでも、同じレビューAPIを言語別に当サイトが実測すると、99件のうち英語はわずか30件(30.3%)にとどまり、日本語が54件(54.5%)、残りは簡体字中国語3件・繁体字中国語1件・韓国語2件など、ローカライズされていない言語で遊んでいるプレイヤーたちに薄く分散している。Steamのコンテンツディスクリプタは「暴力またはグロテスクな表現の頻度が高い」「一般的な低俗表現」の2件で、性的表現のディスクリプタは無く、AI生成コンテンツの開示欄もストアページに存在しない。開発元・販売元は個人サークルCrush-vAdin——Bhaskara氏を名乗る開発者による親会社を持たないソロ開発で、前作『カルトに厳しいギャル』(2024)と『HAZAMA_QUEEN』は、本作とまとめて一つのSteamバンドル「Crush-vAdin's FPS Bundle」として販売されている。ストアページ上に公式Discordやソーシャルアカウントなど外部誘導リンクは見当たらず、当方の調査でも西側プレスによる報道は見つからなかった。正直に先に書いておく——99件という母数は満点であっても薄く、これは西側に拒絶されたタイトルというより、まだ見せられてすらいないタイトルとして読むほうが実態に近い。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "右クリックの包丁と左クリックの銃は、順番に持ち替えるものではなく、常に両方が同時にマウスの上に載っている。だからこのオールドスクールシューターが繰り返し突き付けてくる選択は「どの武器に切り替えるか」ではなく、「どこまで距離を詰めてからどちらを選ぶか」だ。",
+        "「もう迷わない(ハズ)ガイド機能」や「ほぼほぼ死なない最低難易度」を用意する同じストアページが、Steam自身の言葉で「暴力またはグロテスクな表現の頻度が高い」ともフラグを立てている。取り除かれているのは詰みにくさであって、村人が成り果てた何かに肉切り包丁がどう作用するかを和らげているわけではない。",
+        "タイトル曲もエンディング曲も、開発者自身が作詞作曲し、しかも前作の名前をストア本文で名指しして、同じマルチエンディングの仕組みを今作でも繰り返すと約束している。2作目にしてこれは、その場限りの仕掛けというより、それぞれの物語の終わり方に開発者自身が本気で執着している証拠のように読める。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "近接武器が「持ち替える最終手段」ではなく、本当にもう一つの選択肢として常に生きているオールドスクールシューターが欲しい人——左クリックに銃、右クリックには常に包丁、そこにSHIFTダッシュで自分から距離を詰められる",
+        "この開発者の前作『カルトに厳しいギャル』を知っていて、同じ個人サークルが同じ銃×刃物の型式を、今度は前回のカルトに代わる異界化した村という新しい敵役で回すのを見たい人——タイトル曲もエンディング曲も、今回も同じ開発者本人が作詞作曲している",
+        "レビューの数字がまだ追いついていない一本を掴みたい人——英語のテキストが完備されているにもかかわらず、99件中好評率100%でありながら、英語で書かれたレビューはまだ30件しかない",
+      ],
+      bad: [
+        "中国語・韓国語でプレイしたい人——Steamの対応言語表記は英語・日本語のみで、すでに付いている簡体字中国語・繁体字中国語・韓国語のわずかなレビューは、いずれも対応外の言語で遊んでいるプレイヤーによるものだ",
+        "ストアページに「グロ」の意味を控えめに見せてほしい人——Steam自身のコンテンツディスクリプタは「暴力またはグロテスクな表現の頻度が高い」と「一般的な低俗表現」の両方にフラグを立てており、短い紹介文自体が、村に入った先で振り回すのは婉曲表現ではなく肉切り包丁だと明言している",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12715,6 +12827,24 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "ElecHead is a puzzle platformer solo-directed and self-published on Steam and itch.io by Japanese creator NamaTakahashi, with sound and music by composer Tsuyomi. Its short-circuiting robot hero, Elec, constantly emits electricity, automatically passing a current through whatever he is touching, the floor beneath him or a wall he is pressed against, which activates platforms and moves pedestals to open a path; his head is also detachable, so he can throw it to charge something out of reach and then walk in to use whatever effect it triggers there, wiring a placed piece of his own body directly into an environmental chain reaction. Even its own store page carries no written short description, just the symbols \"⚡＋🤖＋🧩\". On release it drew direct praise from Spelunky creator Derek Yu, Celeste's Maddy Thorson, Downwell's Moppin, Sony's Shuhei Yoshida, Nier creator Yoko Taro, and VVVVVV creator Terry Cavanagh, a stated influence on the game, who called it \"short, beautifully designed and a lot of fun\"; it had already won the Best Game Design Award at Tokyo Game Show's Sense of Wonder Night the year before its full release, plus an excellence award in the amateur division of the Japan Game Awards. It is the origin of a lineage built on wiring one placed piece of a character's own body into an environmental chain reaction, an idea NamaTakahashi's own later game Öoo carries forward by swapping the conductor for a fuse.",
       ja: "ElecHeadは、日本の制作者NamaTakahashi氏がひとりで手がけ、Steam・itch.ioでセルフパブリッシュしたパズルプラットフォーマーで、サウンドと音楽は作曲家つよみー氏が担当している。ショートサーキットしたロボットの主人公・Elecは常に体から電気を発しており、触れたもの——立っている床にも、寄りかかった壁にも——へ自動的に電流を通し、それによって電力で動く床や台座を起動して道を開く。頭部は着脱可能で、届かない場所へ投げて遠隔で帯電させ、その効果を使うために歩いて向かうこともできる——自分の身体の一部を置くことを、そのまま環境側の連鎖反応へ直結させる設計だ。ストアページ自身も文章の紹介文を一切持たず、記号だけの「⚡＋🤖＋🧩」のみとなっている。発売時にはSpelunkyの作者Derek Yu氏、Celesteのマディ・ソーソン氏、Downwellのモッピン氏、SIEの吉田修平氏、Nierの生みの親ヨコオタロウ氏、そして本作の公言された影響元であるVVVVVVの作者Terry Cavanagh氏本人から直接称賛を受けており、Cavanagh氏は「短く、美しくデザインされていて、とても楽しい」と評した。正式リリースの前年には東京ゲームショウ「Sense of Wonder Night」でベストゲームデザイン賞、さらに日本ゲーム大賞アマチュア部門優秀賞もすでに受賞済みだった。「キャラクター自身の身体の一部を置くことを、環境側の連鎖反応へ直結させる」という系譜の原点であり、この発想はNamaTakahashi氏自身の後の作品Öooにも、導線を電流から導火線へ置き換えるかたちで引き継がれている。",
+    },
+  },
+  // 原点 CULT VS GAL(カルトに厳しいギャル-CULT VS GAL-), Crush-vAdin(個人サークル), 2024。
+  //   gal-vs-village pick の系譜として新規採用。lineage_anchor_key=steam_url(本人採用済みの確定
+  //   事実)。appdetails/appreviews実測(自前WebFetch): developers=publishers=["Crush-vAdin"]
+  //   (自社発行)、release_date="May 3, 2024"、price ¥500、supported_languages="English, Japanese"、
+  //   content_descriptors ids=[2,5](Frequent Violence or Gore + General Mature Content、性的
+  //   descriptorなし)、appreviews total=397(387 positive/10 negative, 約97.5%, "Very Positive")。
+  //   ストア本文(ja/en直接実測)によれば、舞台は戦争で疲弊した帝国暦248年、宗教組織「ガルヲイヤ」に
+  //   人々が攫われ、送り込んだ軍が壊滅した末に、たった一人の兵士「大獄院・スマッシャー・サキ」が
+  //   単身送り込まれる。右クリックの近接攻撃でカルト教徒の首を直接刎ねられ、首を斬るとサキは一瞬
+  //   無敵になるとストア自身が明記(最後の手段ではなく戦略として推奨)。既存 LINEAGE_ANCHOR に
+  //   "cult-vs-gal"/appid 2788360 の重複が無いことをgrep実測確認済み。
+  "cult-vs-gal": {
+    steam: "2788360",
+    blurb: {
+      en: "CULT VS GAL (カルトに厳しいギャル -CULT VS GAL-) is an old-school first-person shooter developed and self-published by the solo Japanese circle Crush-vAdin, released May 3, 2024. Set in an empire of the year 248 undone by war, where a cult called Galwoya has begun abducting the population, it sends in a single soldier, nicknamed Hell Smasher Saki, alone once the army sent before her is wiped out. Its own store page bills itself as \"ultra old-school, yet high-tempo, user-friendly\": a shotgun and an assault rifle cover the ranged half of the fight, while a right-click melee attack lets Saki decapitate cultists outright, an act that briefly makes her invincible and is recommended by the store page itself as a strategy rather than a last resort, across four episodes and sixteen-plus maps. It sits at Very Positive on Steam's own review API (387 of 397 reviews positive). It is the origin of developer Crush-vAdin's own small lineage of gun-and-blade old-school shooters starring a gal cutting down whatever antagonist that week's title names, continued directly in the same developer's GAL VS VILLAGE, which names this game by name as its predecessor on its own store page.",
+      ja: "『カルトに厳しいギャル-CULT VS GAL-』は、個人サークルCrush-vAdinが開発・自社販売したオールドスクールFPSで、2024年5月3日に発売された。戦争で疲弊した帝国暦248年の世界で、宗教組織「ガルヲイヤ」が民を攫い始め、送り込んだ軍が壊滅した後、たった一人の兵士——「大獄院・スマッシャー・サキ」——が単身送り込まれる。ストア自身が「超オールドスクールながらも、ハイテンポ＆ユーザーフレンドリー」と謳う通り、ショットガンとアサルトライフルが射撃を担う一方、右クリックの近接攻撃でカルト教徒の首を直接刎ねることができ、首を斬るとサキは一瞬無敵になる——それはストア自身が最後の手段ではなく戦略として推奨する行為で、全4エピソード・16以上のマップに渡って続く。Steam自身のレビューAPI実測では397件中387件が好評の「非常に好評」。カルトであれ何であれ、その回の敵役をギャルが銃と刃物で切り伏せる、開発者Crush-vAdin自身のオールドスクールシューターの系譜の原点であり、同開発者の『ギャルトムラ』が自らのストアページで本作を前作として名指ししている、その直系の続編にあたる。",
     },
   },
 } as const;
