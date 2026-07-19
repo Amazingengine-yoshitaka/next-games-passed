@@ -11868,6 +11868,115 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dramatic-road": {
+    published: "2026-08-05",
+    publishAt: "2026-08-05",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンルが捉えていないため、ストア本文自身の宣言「剣と魔法の代わりに、
+    //   バイクと拳で戦う」に沿って新設 "bike-and-fist-srpg"。ユーザータグにも オートバイ / バイク が
+    //   ストラテジーRPG と並んで入っている。
+    // lineage は新規anchor "final-fantasy-tactics"(Wikidata Q591378)を作る。Steam版が存在しない
+    //   原点なので steam ではなく wikidata で同定する。Wikidata実測値は developer=Square(Q739552) /
+    //   publisher=Sony Interactive Entertainment(Q18594) / リリース日 1997年6月20日(日本) /
+    //   リリース日 1998年1月28日(北米) / platform=PlayStation。
+    //   一致点は「行動順そのものを戦場の資源にする」設計。本作は敵味方の行動順が入り乱れる
+    //   「同時ターン制」を採り、さらに特殊コマンド「シフトチェンジ」で味方の行動順を組み替えられる。
+    //   分かれる点は舞台で、FFTが王位継承戦争の中世ファンタジーであるのに対し、本作は現代日本・
+    //   神奈川県の高校生と社会人である。影響を公言されたものではない当サイト独自の批評的比較
+    //   である(自信度: 中)。
+    // developer=Alaska Ohdanbu / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の登録は
+    //   本編(2309730)と体験版(3026120)の2件のみであることを確認した。大手・海外展開代行・親会社
+    //   関係の混入はゼロ。連絡先も個人のGmailと自身のサイト(alaskaohdan.com)。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグにも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。early_access_header 無しで正式リリース済み。
+    //   ミドルウェアとして（株）ＣＲＩ・ミドルウェアの「CRIWARE」を使用している旨がストアに明記
+    //   されているが、これは音声/動画の再生ライブラリであり publisher でも資本関係でもない。
+    // west_unreached: supported_languages は日本語と英語。英語UIは実装済みで西側読者は遊べる。
+    //   appreviews API実測で全35件のうち日本語25件・英語7件。言語の壁ではなく到達の欠落なので
+    //   obscurity: "deep" / reachState: "unreached_west" を採る。ただし英語7件(20%)は当サイトの
+    //   発掘としては少なくない部類なので、記事本文でその数字をそのまま書く。
+    // 西側編集記事はゼロ。AUTOMATON WESTのWP REST APIを直接叩き、"Alaska Ohdanbu"で0件。
+    //   "Dramatic Road"では5件返るが、実物はEpic CEO・Level-5・Nikke等の無関係記事で、
+    //   common wordでの誤ヒットであることを確認した。日本語圏ではもぐらゲームスが取り上げている。
+    // 数字について: 34/35=97.1%は当サイトの理想95%を超えるが、母数35件は薄い。しかもリリースから
+    //   日が浅く、数字はまだ動く。先に開示する。
+    meta: { genre: "bike-and-fist-srpg", lineage: "final-fantasy-tactics", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 35, positivePct: 97 } },
+    games: [
+      {
+        name_en: "Dramatic Road : the origin of wind",
+        name_ja: "ドラマチックロード 風の発端",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2309730/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A tactical RPG set in Kanagawa Prefecture, present-day Japan, and the store page states the substitution it has made in one line: instead of swords and magic, you fight with motorcycles and fists. Everyone in it is an ordinary, life-sized student or working adult. That is the whole conceit, and it is a good one, because the SRPG form was built to move armies across a fantasy map and here it is being asked to move a handful of teenagers around a prefecture. The battle system is where the design actually lives. It uses simultaneous turns, meaning the order in which allies and enemies act is interleaved rather than cleanly divided, so you are reading a queue that is not yours and never fully will be, and the store frames the demand precisely: it asks for snap judgement and long-range strategy at the same time. On top of that sits a special command called Shift Change, which reorders your own allies' turns, and which is both the tactical escape hatch and, given the subject matter, a motorcycle joke. Characters have distinct skills and unique actions, and the story is told in three parts covering three years at Gyoun High School. Made by Alaska Ohdanbu; Steam's developer search under that name returns exactly two entries, this and its demo, with a personal email and their own site as the only contacts. Priced at ¥1,360, it is at 97 percent across 35 reviews (34 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Both Japanese and English are supported, so this is one of the ones you can actually play. Of its 35 reviews, 25 are in Japanese and 7 are in English, and no editorial article about it exists in English at all.",
+        desc_ja: "現代日本・神奈川県を舞台にしたシミュレーションRPGで、何を差し替えたのかをストアページは一行で言い切っている——剣と魔法の代わりに、バイクと拳で戦う。登場人物は全て一般的な等身大の学生・社会人である。着想はそれで全部だが、これが良い。SRPGという形式は本来、ファンタジーの地図の上で軍を動かすために作られたものだ。それがここでは、県内で数人の高校生を動かすことを求められている。設計が実際に生きているのは戦闘システムのほうだ。採用されているのは「同時ターン制」で、敵と味方の行動順がきれいに分かれず入り乱れる。つまりこちらは、自分のものではない——そして最後まで完全には自分のものにならない——順番待ちの列を読み続けることになる。ストアはその要求を正確に書いている。突発的な判断力と、長期的な戦略眼の両面が問われる、と。その上に特殊コマンド「シフトチェンジ」が乗る。味方の行動順を組み替えるもので、戦術的な非常口であると同時に、題材を考えればバイクの洒落でもある。キャラクターはそれぞれ固有のスキルとアクションを持ち、物語は「暁雲高校」を舞台にした3年間を全三部構成で描く。制作はAlaska Ohdanbu。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど2件、本編と体験版だけで、連絡先は個人のメールアドレスと自身のサイトしかない。価格は¥1,360。35件のレビュー(好評34件・不評1件、Steam自身のレビューAPI実測)で好評率97%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語と英語の両方なので、これは実際に遊べるほうの一本だ。35件の内訳は日本語25件・英語7件で、そして英語で書かれた編集記事は一本も存在しない。",
+      },
+      {
+        name_en: "Final Fantasy Tactics",
+        name_ja: "ファイナルファンタジータクティクス",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q591378",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Final Fantasy Tactics, developed by Square for PlayStation and released in Japan in 1997. Its lasting contribution to the Japanese tactical RPG was to stop treating turn order as bookkeeping and make it the battlefield's second terrain. Speed determined when you acted, the queue was visible, and a large part of skilled play was arranging to be the one who moved next rather than the one who moved hardest. Dramatic Road is not an official Square work, and this lineage is a comparison drawn by this site rather than a stated influence. What it inherits is that treatment of the queue: turns interleave between allies and enemies here rather than alternating in blocks, and a dedicated command exists purely to rearrange your own side's order. Where they part is everything above the system. Final Fantasy Tactics used it for a war of succession in a medieval kingdom. This one uses it for high schoolers in Kanagawa with motorcycles.",
+        desc_ja: "この味の原点——ファイナルファンタジータクティクス。スクウェア開発、PlayStation向けに1997年に日本で発売された。日本製タクティカルRPGに対するこの作品の永続的な貢献は、行動順を事務処理として扱うのをやめ、戦場の第二の地形にしたことだった。素早さがいつ動けるかを決め、順番待ちの列は目に見えていて、上手いプレイの相当部分が「最も強く動く者」ではなく「次に動く者」であるよう仕込むことに費やされた。『ドラマチックロード』は公式のスクウェア作品ではなく、この系譜は明言された影響ではなく当サイト独自の批評的比較である。受け継がれているのはその「列の扱い」だ。本作では味方と敵の手番がブロックごとに交代するのではなく入り乱れ、しかも自陣の順番を組み替えるためだけの専用コマンドが用意されている。分かれるのはシステムより上の全部である。ファイナルファンタジータクティクスはそれを中世王国の王位継承戦争に使った。こちらはそれを、バイクに乗った神奈川の高校生に使っている。",
+      },
+    ],
+    en: {
+      title: "Dramatic Road : the origin of wind - a tactical RPG in present-day Kanagawa where, instead of swords and magic, you fight with motorcycles and fists. Turns interleave between both sides, and a command called Shift Change reorders your own. Made by Alaska Ohdanbu for ¥1,360. 97 percent over 35 reviews",
+      description: "A simultaneous-turn SRPG set in modern Kanagawa. Ordinary students and working adults fight with motorcycles and fists instead of swords and magic. Ally and enemy turns interleave, and a special command called Shift Change lets you rearrange your own side's order. Three years at Gyoun High School told in three parts. Japanese and English supported. 97 percent over 35 reviews.",
+      h1a: "It is a tactical RPG, so you expect swords and magic. ",
+      h1flip: "Instead it is present-day Kanagawa, and you fight with motorcycles and fists",
+      h1b: ".",
+      lede: "A tactical RPG set in Kanagawa Prefecture, present-day Japan, and the store page states the substitution it has made in one line: instead of swords and magic, you fight with motorcycles and fists. Everyone in it is an ordinary, life-sized student or working adult. That is the whole conceit, and it is a good one, because the SRPG form was built to move armies across a fantasy map and here it is being asked to move a handful of teenagers around a prefecture. The battle system is where the design actually lives. It uses simultaneous turns, meaning the order in which allies and enemies act is interleaved rather than cleanly divided, so you are reading a queue that is not yours and never fully will be, and the store frames the demand precisely: it asks for snap judgement and long-range strategy at the same time. On top of that sits a special command called Shift Change, which reorders your own allies' turns, and which is both the tactical escape hatch and, given the subject matter, a motorcycle joke. Characters have distinct skills and unique actions, and the story is told in three parts covering three years at Gyoun High School. Made by Alaska Ohdanbu; Steam's developer search under that name returns exactly two entries, this and its demo, with a personal email and their own site as the only contacts. Priced at ¥1,360, it is at 97 percent across 35 reviews (34 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Both Japanese and English are supported, so this is one of the ones you can actually play. Two honest notes. Of its 35 reviews, 7 are in English, which is more Western pickup than most finds here have, and this pick would rather say that than imply nobody has touched it; what has not happened is a single editorial article in English. And it is very recent, so 35 reviews is both thin and still moving.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Interleaved turns mean you are never reading your own plan in isolation. The queue belongs to both sides at once, so every decision is made inside somebody else's schedule, and the store is right that this asks for two incompatible skills at the same time.",
+        "Shift Change is the release valve, and naming it after a gearbox is the kind of joke that tells you the developer knew exactly what they were making. It is also the only lever you have on the queue, which keeps it precious.",
+        "The setting swap does more work than a joke premise should. Fantasy tactics let you feel like a general; this puts the same machinery under a handful of teenagers in a real prefecture, and the stakes get smaller and closer at the same time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Final Fantasy Tactics treatment of turn order in a setting nobody uses it for: interleaved turns and a dedicated command for rearranging your own side",
+        "You want scale rather than scope: three parts covering three years at one high school, ordinary students and working adults, no chosen ones",
+        "You want something you can actually play: Japanese and English both supported, content descriptors completely empty, no AI disclosure, and a developer whose entire Steam presence is this game and its demo",
+      ],
+      bad: [
+        "You want a settled number; it is very recent and 35 reviews at 97 percent is thin enough to move a lot in either direction",
+        "You want something untouched by the West; 7 of its 35 reviews are in English, which is more than most picks here, and the claim being made is narrower than usual: players have found it, editors have not",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ドラマチックロード 風の発端 - 現代日本・神奈川県が舞台のSRPG。剣と魔法の代わりに、バイクと拳で戦う。敵味方の行動順が入り乱れ、「シフトチェンジ」で自陣の順番を組み替える。Alaska Ohdanbu制作、価格¥1,360。35件で好評率97%",
+      description: "現代の神奈川を舞台にした同時ターン制SRPG。等身大の学生と社会人が、剣と魔法の代わりにバイクと拳で戦う。敵味方の行動順が入り乱れ、特殊コマンド「シフトチェンジ」で自陣の順番を組み替えられる。暁雲高校の3年間を全三部構成で描く。日本語・英語対応。35件のレビューで好評率97%。",
+      h1a: "シミュレーションRPGなのだから、剣と魔法が来ると思うはずだ。",
+      h1flip: "来るのは現代の神奈川県で、戦う手段はバイクと拳である",
+      h1b: "。",
+      lede: "現代日本・神奈川県を舞台にしたシミュレーションRPGで、何を差し替えたのかをストアページは一行で言い切っている——剣と魔法の代わりに、バイクと拳で戦う。登場人物は全て一般的な等身大の学生・社会人である。着想はそれで全部だが、これが良い。SRPGという形式は本来、ファンタジーの地図の上で軍を動かすために作られたものだ。それがここでは、県内で数人の高校生を動かすことを求められている。設計が実際に生きているのは戦闘システムのほうだ。採用されているのは「同時ターン制」で、敵と味方の行動順がきれいに分かれず入り乱れる。つまりこちらは、自分のものではない——そして最後まで完全には自分のものにならない——順番待ちの列を読み続けることになる。ストアはその要求を正確に書いている。突発的な判断力と、長期的な戦略眼の両面が問われる、と。その上に特殊コマンド「シフトチェンジ」が乗る。味方の行動順を組み替えるもので、戦術的な非常口であると同時に、題材を考えればバイクの洒落でもある。キャラクターはそれぞれ固有のスキルとアクションを持ち、物語は「暁雲高校」を舞台にした3年間を全三部構成で描く。制作はAlaska Ohdanbu。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど2件、本編と体験版だけで、連絡先は個人のメールアドレスと自身のサイトしかない。価格は¥1,360。35件のレビュー(好評34件・不評1件)で好評率97%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語と英語の両方なので、これは実際に遊べるほうの一本だ。飾らずに二点。35件のうち英語は7件で、これは当サイトの他の発掘より西側に届いているほうである。誰も触れていないかのように書くより、その数字をそのまま置く。起きていないのは、英語で書かれた編集記事が一本も無い、ということのほうだ。そしてリリースから日が浅く、35件という母数は薄いうえに、まだ動く。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "行動順が入り乱れるということは、自分の計画を単独で読むことが一度もできない、ということだ。列は両陣営のものであり、あらゆる判断が他人の予定表の内側で下される。突発的な判断力と長期的な戦略眼という、噛み合わない二つを同時に要求する——ストアの書き方は正確である。",
+        "「シフトチェンジ」が逃がし弁で、それを変速機の名前で呼んでいるあたりに、作り手が自分の作っているものを正確に分かっている感じが出ている。同時に、列に対して持てる唯一のレバーでもあるので、価値が保たれている。",
+        "舞台の差し替えが、ネタ前提にしては働きすぎている。ファンタジーの戦術ゲームはこちらを将軍のような気分にさせるが、これは同じ機械を実在する県の高校生数人の下に置く。賭けているものが小さくなり、同時に近くなる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ファイナルファンタジータクティクスの行動順の扱いを、誰も使っていない舞台で見たい人——入り乱れる手番と、自陣の順番を組み替えるためだけの専用コマンド",
+        "規模ではなく縮尺が欲しい人——一つの高校の3年間を全三部で描き、登場するのは等身大の学生と社会人だけ。選ばれし者はいない",
+        "実際に遊べるものが欲しい人——日本語・英語の両対応、コンテンツディスクリプタは完全に空、AI開示も無し、開発者のSteam上の存在は本作と体験版だけ",
+      ],
+      bad: [
+        "安定した数字が欲しい人——リリースから日が浅く、35件で97%はどちらにも大きく動きうる薄さである",
+        "西に全く触られていないものが欲しい人——35件のうち7件が英語で、これは当サイトの他の発掘より多い。ここでの主張はいつもより狭い。プレイヤーは見つけている。編集者が見つけていない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12951,6 +13060,13 @@ const LINEAGE_ANCHOR = {
       ja: "『カルトに厳しいギャル-CULT VS GAL-』は、個人サークルCrush-vAdinが開発・自社販売したオールドスクールFPSで、2024年5月3日に発売された。戦争で疲弊した帝国暦248年の世界で、宗教組織「ガルヲイヤ」が民を攫い始め、送り込んだ軍が壊滅した後、たった一人の兵士——「大獄院・スマッシャー・サキ」——が単身送り込まれる。ストア自身が「超オールドスクールながらも、ハイテンポ＆ユーザーフレンドリー」と謳う通り、ショットガンとアサルトライフルが射撃を担う一方、右クリックの近接攻撃でカルト教徒の首を直接刎ねることができ、首を斬るとサキは一瞬無敵になる——それはストア自身が最後の手段ではなく戦略として推奨する行為で、全4エピソード・16以上のマップに渡って続く。Steam自身のレビューAPI実測では397件中387件が好評の「非常に好評」。カルトであれ何であれ、その回の敵役をギャルが銃と刃物で切り伏せる、開発者Crush-vAdin自身のオールドスクールシューターの系譜の原点であり、同開発者の『ギャルトムラ』が自らのストアページで本作を前作として名指ししている、その直系の続編にあたる。",
     },
   },
+  "final-fantasy-tactics": {
+    wikidata: "https://www.wikidata.org/wiki/Q591378",
+    blurb: {
+      en: "Final Fantasy Tactics, developed by Square for PlayStation and released in Japan in 1997, changed what turn order is for. Before it, the question of who acts next was bookkeeping the game did quietly on your behalf. Here speed decided it, the queue was visible, and rearranging your position in that queue became as much a part of tactical skill as where you stood on the map. A unit that acts twice before the enemy responds is worth more than a unit that hits harder once, and the whole discipline of the genre reorganised around that fact. It is the origin of the lineage of Japanese tactical RPGs in which the turn order is a second terrain, one you cannot see on the grid but must read just as carefully, and of the insight that letting the player manipulate the sequence turns a battle into something closer to a conversation than a slugging match.",
+      ja: "ファイナルファンタジータクティクスは、スクウェアがPlayStation向けに開発し1997年に日本で発売された作品で、行動順というものが何のためにあるかを変えた。それ以前、次に誰が動くかという問いは、ゲームが黙って代わりに処理してくれる事務作業だった。ここではそれを素早さが決め、順番待ちの列は目に見えるようになり、その列の中で自分の位置を組み替えることが、盤面のどこに立つかと同じくらい戦術的技能の一部になった。敵が応じる前に二度動けるユニットは、一度強く殴るユニットより価値がある——ジャンル全体の規律が、その事実を中心に組み直された。行動順が第二の地形になる日本製タクティカルRPGの系譜の原点であり、それはグリッドの上には見えないが同じだけ注意深く読まねばならないものだ。そして、順序をプレイヤーに操作させると、戦闘が殴り合いよりも会話に近いものになる、というデザイン上の洞察の原点でもある。",
+    },
+  }
 } as const;
 
 export type LineageId = keyof typeof LINEAGE_ANCHOR;
