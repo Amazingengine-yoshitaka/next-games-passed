@@ -13623,6 +13623,117 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "one-in-20000-raindrops": {
+    published: "2026-08-13",
+    publishAt: "2026-08-13",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "still-cg-kinetic-clique-drama"。ストア本文実測: 「シナリオは分岐なしの
+    //   一本道で、2時間半ほどで終わる内容となっております。キャラクターボイスはありません。
+    //   イラストは立ち絵を使わず、基本的にスチルで進行していくのが特徴です。」——立ち絵を
+    //   使わずスチルCGだけで進める、という選択を作者自身が本作の特徴として明言している点が
+    //   核だと判断した。
+    // lineageは新規anchor "narcissu" を作る。分岐無し・選択肢無しのキネティックノベルという
+    //   形式そのものを確立した原点として採用。本作固有の「立ち絵を捨ててスチルCGのみで進める」
+    //   という選択と、青春群像劇というテーマの組み合わせは、影響を公言されたものではない
+    //   当サイト独自の観察である(自信度: 中)。
+    // developer=publisher=斜塔ソンブレロ(個人同人サークル、心太名義)。Steamのdeveloper検索を
+    //   自分で叩き、この名義の登録は5件(片腕のザリガニ/本作/小坂さん。-Remaster/不香の花/
+    //   日陰の日葵)で、全てdeveloper=publisherが一致することを確認した。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。「小坂さん。-Remaster」は2018年の無料同人作品(ふりーむ！公開)の
+    //   リメイクであることをWebSearchで確認したが、原作がアダルト由来であるという事実は
+    //   見つからなかった。
+    // content_descriptors は ids=[5]をAPI実測(性的表現の1/3/4ではなく一般的な成人向け表現)。
+    //   notes本文もEN/JA両ストアページで実測し、「一部、自傷行為を扱う内容になっております。
+    //   実際に自傷行為を行う場面は含まれず、流血表現もありませんが、自傷行為を行った際の心情、
+    //   傷跡などが描写されている場面が含まれます。」とのみあり、性的表現への言及は一切無いことを
+    //   確認した。この点は記事本文で正直に開示する。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2026年6月18日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"One in 20000 raindrops"
+    //   "sombrero visual novel"とも0件。
+    // west_unreached: supported_languagesは日本語のみ。appreviews API実測で全37件のうち
+    //   日本語19件・簡体字中国語15件・英語1件・韓国語0件。簡体字中国語が多いが日本語(19)を
+    //   超えないため到達判定の閾値には触れない。有志中国語ファンパッチ経由の流入である旨が
+    //   簡体字レビュー本文で言及されていることも確認済みで、これは正式な西側ローカライズ
+    //   ではない。obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字について: 37件で好評率100%(「好評」)は当サイトが扱う候補の中では比較的しっかりした
+    //   母数である。
+    meta: { genre: "still-cg-kinetic-clique-drama", lineage: "narcissu", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 37, positivePct: 100 } },
+    games: [
+      {
+        name_en: "One in 20,000 raindrops",
+        name_ja: "二万分の一の雨粒達",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4800570/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, high schooler Satoru Kuga has isolated himself with a habitually cynical attitude, and dreads tomorrow's school trip because he's been placed in the same group as the class's central clique, the ones openly enjoying their youth. That group looks close-knit from the outside, but hidden friction runs underneath it, and he's gradually pulled into the problem. The store text names its own design choice directly: the scenario is entirely linear with no branches, runs about two and a half hours, has no character voice acting, and rather than the standing character sprites most visual novels use, it progresses almost entirely through still illustrations, a deliberate departure the store page points to as the game's own defining feature. Made and self-published by the solo doujin circle 斜塔ソンブレロ, whose five-title Steam catalogue is entirely self-developed and self-published. Priced at ¥450, it is Positive at 100 percent across 37 reviews (37 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors carry a general mature-content flag, and the developer's own note, quoted here rather than softened, says the content includes some depictions of self-harm, that it does not include scenes of the act itself or depictions of blood, but does include scenes describing the emotional state and scars that follow, and asks players to be aware this may be emotionally distressing; there is no mention of sexual content anywhere in that description. It supports Japanese only. Of its 37 reviews, 19 are in Japanese and 15 are in Simplified Chinese, a real but unofficial crossover, reviewers cite a fan-made Chinese translation patch rather than any Western localization, and just 1 review is in English.",
+        desc_ja: "Steam自身の表記によれば、日頃からの冷笑的な態度の影響で孤立した高校生活を送る久我聡は、明日からの修学旅行に辟易している。青春を謳歌しているクラスの中心グループと同じ班になってしまったからだ。しかし一見して仲良しに見える中心グループにも隠れた軋轢があるようで、次第にその問題へと巻き込まれていく。ストア文言は自らの設計判断をはっきり名指ししている——シナリオは分岐なしの一本道で、2時間半ほどで終わる内容。キャラクターボイスは無し。多くのビジュアルノベルが使う立ち絵ではなく、基本的にスチルで進行していく、という意図的な離脱を、ストアページは本作自身の特徴として挙げている。制作・自社発売はソロ同人サークル斜塔ソンブレロ。Steamに並ぶ5作品はすべて自社開発・自社発売である。価格は¥450。37件のレビュー(好評37件・不評0件、Steam自身のレビューAPI実測)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタは一般的な成人向けフラグを含み、開発者自身の注記を和らげずそのまま伝えると、一部自傷行為を扱う内容だが、実際にその行為を行う場面や流血表現は含まれず、行った際の心情や傷跡が描写される場面が含まれ、心に負担がかかる可能性への注意を求める、というもので、性的表現への言及はどこにも無い。対応言語は日本語のみ。37件の内訳は日本語19件・簡体字中国語15件——実在するが非公式なクロスオーバーで、レビュアーは西側の正式ローカライズではなく有志の中国語ファンパッチを引用している——英語はわずか1件だ。",
+      },
+      {
+        name_en: "Narcissu",
+        name_ja: "ナルキッソス",
+        status: "established",
+        steam: "https://store.steampowered.com/app/426690/Narcissu_10th_Anniversary_Anthology_Project/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of the lyrical Japanese kinetic novel: in 2005, Tomo Kataoka and the doujin circle Stage-nana released Narcissu for free, telling its story almost entirely through narration laid over still illustrations rather than animated character sprites, no branches, no choices, paced like a short film. One in 20,000 raindrops is not an official Narcissu work, but it names that same design choice, trading standing sprites for still CGs, as its own defining feature, carrying that stripped-down, film-paced form into a very different story, a youth ensemble drama about the friction hidden under a friendly-looking clique rather than a meditation on death.",
+        desc_ja: "叙情的な和製キネティックノベルの原点。2005年、片岡ともと同人サークル「ステージ☆なな」が無料で発表したナルキッソスは、アニメーションする立ち絵ではなく静止したイラストに重ねたナレーションだけで物語のほとんどを語り、分岐無し・選択肢無し、短編映画のようなペースで進む。二万分の一の雨粒達は公式のナルキッソス作品ではないが、同じ設計判断——立ち絵を捨ててスチルCGを選ぶこと——を本作自身の特徴として名指しし、その削ぎ落とされた映画的な形式を、死生観の物語ではなく、仲良さそうに見えるグループの下に隠れた軋轢を描く青春群像劇へと引き継いでいる。",
+      },
+    ],
+    en: {
+      title: "One in 20,000 raindrops - a linear, no-branch visual novel told almost entirely through still CGs instead of character sprites, about the hidden friction beneath a friendly-looking school clique. Made by solo doujin circle 斜塔ソンブレロ for ¥450. 100 percent over 37 reviews",
+      description: "A 2.5-hour linear visual novel with no branches and no voice acting, told through still illustrations rather than standing sprites. A cynical, isolated high schooler is dragged into his class's central clique on a school trip and uncovers the friction hidden beneath their friendly surface. 100 percent over 37 reviews.",
+      h1a: "A cynical, isolated high schooler is dragged into his class's central clique. ",
+      h1flip: "Beneath their friendly surface, there is hidden friction he gets pulled into",
+      h1b: ".",
+      lede: "Per Steam's own listing, high schooler Satoru Kuga has isolated himself with a habitually cynical attitude, and dreads tomorrow's school trip because he's been placed in the same group as the class's central clique, the ones openly enjoying their youth. That group looks close-knit from the outside, but hidden friction runs underneath it, and he's gradually pulled into the problem. The store text names its own design choice directly: the scenario is entirely linear with no branches, runs about two and a half hours, has no character voice acting, and rather than the standing character sprites most visual novels use, it progresses almost entirely through still illustrations, a deliberate departure the store page points to as the game's own defining feature. Made and self-published by the solo doujin circle 斜塔ソンブレロ, whose five-title Steam catalogue is entirely self-developed and self-published. Priced at ¥450, it is Positive at 100 percent across 37 reviews (37 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors carry a general mature-content flag, and the developer's own note, quoted here rather than softened, says the content includes some depictions of self-harm, that it does not include scenes of the act itself or depictions of blood, but does include scenes describing the emotional state and scars that follow, and asks players to be aware this may be emotionally distressing; there is no mention of sexual content anywhere in that description. It supports Japanese only. One honest note: of its 37 reviews, 19 are in Japanese and 15 are in Simplified Chinese, a real but unofficial crossover, reviewers cite a fan-made Chinese translation patch rather than any Western localization, and just 1 review is in English, with no genuine English-language coverage found anywhere yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Giving up standing sprites for still CGs sounds like less, but it reads as more deliberate: every image is a chosen moment rather than a default pose, so the pacing feels closer to flipping through a photo essay than watching a scene play out.",
+        "The premise, being grouped with the popular clique you've always kept your distance from, works because the story refuses to let their friendliness be simple. What starts as social discomfort turns into being handed a secret you didn't ask to carry.",
+        "At two and a half hours with no branches, the game isn't asking you to shape the outcome, it's asking you to sit with it, which suits a story about noticing what's happening under a surface you can't change from where you're standing.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Narcissu's kinetic-novel core, no branches, no choices, narration over stills instead of animated sprites, applied to a completely different story",
+        "You want a youth ensemble drama that treats a friendly-looking clique's surface as something worth quietly investigating, not just a backdrop",
+        "You want small and self-published: solo doujin circle 斜塔ソンブレロ's five-title Steam catalogue is entirely self-developed, content descriptors flag only general mature themes",
+      ],
+      bad: [
+        "You want to avoid heavy content; the developer's own content descriptor names depictions of self-harm's emotional aftermath and scars, and asks players to be aware it may be distressing",
+        "You want a game already found in the West; of 37 reviews only 1 is in English, and no genuine English-language coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "二万分の一の雨粒達 - 立ち絵ではなくスチルCGだけで進む、分岐無しの一本道ビジュアルノベル。仲良さそうなクラスの中心グループに隠れた軋轢を描く。ソロ同人サークル斜塔ソンブレロ制作、価格¥450。37件で好評率100%",
+      description: "分岐無し・ボイス無し、立ち絵ではなくスチルで進行する2時間半のビジュアルノベル。冷笑的で孤立した高校生が修学旅行でクラスの中心グループに巻き込まれ、その仲良さそうな表面の下に隠れた軋轢を知る。37件のレビューで好評率100%。",
+      h1a: "冷笑的で孤立した高校生が、クラスの中心グループに巻き込まれる。",
+      h1flip: "仲良さそうな表面の下には、彼が巻き込まれていく隠れた軋轢がある",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、日頃からの冷笑的な態度の影響で孤立した高校生活を送る久我聡は、明日からの修学旅行に辟易している。青春を謳歌しているクラスの中心グループと同じ班になってしまったからだ。しかし一見して仲良しに見える中心グループにも隠れた軋轢があるようで、次第にその問題へと巻き込まれていく。ストア文言は自らの設計判断をはっきり名指ししている——シナリオは分岐なしの一本道で、2時間半ほどで終わる内容。キャラクターボイスは無し。多くのビジュアルノベルが使う立ち絵ではなく、基本的にスチルで進行していく、という意図的な離脱を、ストアページは本作自身の特徴として挙げている。制作・自社発売はソロ同人サークル斜塔ソンブレロ。Steamに並ぶ5作品はすべて自社開発・自社発売である。価格は¥450。37件のレビュー(好評37件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタは一般的な成人向けフラグを含み、開発者自身の注記を和らげずそのまま伝えると、一部自傷行為を扱う内容だが、実際にその行為を行う場面や流血表現は含まれず、行った際の心情や傷跡が描写される場面が含まれ、心に負担がかかる可能性への注意を求める、というもので、性的表現への言及はどこにも無い。対応言語は日本語のみ。正直に一点。37件の内訳は日本語19件・簡体字中国語15件——実在するが非公式なクロスオーバーで、レビュアーは西側の正式ローカライズではなく有志の中国語ファンパッチを引用している——英語はわずか1件で、本作についての正真の英語記事はまだどこにも見つからない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "立ち絵を捨ててスチルCGを選ぶことは、少なくなったように聞こえて、むしろ意図的に感じられる。すべての画が既定のポーズではなく選ばれた瞬間になるので、場面が展開していくのを見るというより、写真集をめくっていくようなペースになる。",
+        "ずっと距離を置いてきた中心グループと同じ班にされる、という前提が効いているのは、物語がその仲良さを単純なものにしないからだ。最初は社会的な気まずさとして始まったものが、頼んでもいない秘密を託される展開に変わっていく。",
+        "2時間半、分岐無しという尺は、結末を形作らせるためではなく、それに向き合わせるためのものだ。今立っている場所からは変えられない表面の下で起きていることに気づく物語には、それがふさわしい。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "narcissuのキネティックノベルの核——分岐無し・選択肢無し、アニメーションする立ち絵ではなくスチルに重ねたナレーション——を、まったく違う物語に応用したものが欲しい人",
+        "仲良さそうに見えるグループの表面を、単なる背景ではなく静かに調べる価値のあるものとして扱う青春群像劇が欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ同人サークル斜塔ソンブレロのSteam5作品はすべて自社開発、コンテンツディスクリプタは一般的な成人向けテーマのみ",
+      ],
+      bad: [
+        "重い題材を避けたい人——開発者自身のコンテンツディスクリプタが、自傷行為の心情や傷跡の描写を明記し、心に負担がかかる可能性への注意を求めている",
+        "既に西で見つかっているゲームが欲しい人——37件のうち英語はわずか1件で、正真の英語記事はまだどこにも見つからない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
