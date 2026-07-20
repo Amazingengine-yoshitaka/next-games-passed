@@ -12843,6 +12843,114 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "last-order": {
+    published: "2026-08-10",
+    publishAt: "2026-08-10",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "offensive-wire-souls-like"。ストア本文実測: 見出し自体が「攻撃的なワイヤー
+    //   アクション」で、「ワイヤーは移動だけのアクションではありません」と明言している。
+    //   スウィングワイヤーは移動しながら通過した敵を切断する攻撃そのもの、ダイブワイヤーは
+    //   接近/離脱を兼ねる高速移動、シャックルワイヤーは小型敵や砲弾を絡め取り投げ返す防御兼
+    //   攻撃。移動・攻撃・防御の3つがワイヤー1本の周りに統合されている点が本作の核だと判断した。
+    // lineageは新規anchor "bionic-commando" を作る。グラップリングフックを移動の近道ではなく
+    //   移動そのものの語彙にした原点として採用。本作固有の「ワイヤーが攻撃・防御まで兼ねる」
+    //   という拡張は、影響を公言されたものではない当サイト独自の観察である(自信度: 中)。
+    //   ユーザータグにも実際に Souls-like が含まれ、高難度2Dアクションという点でも一致する。
+    // developer=publisher=KujiraDanceRoom。Steamのdeveloper検索を自分で叩き、この名義の登録は
+    //   本作(2132530)1件のみで、大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ16件(Action/2D Platformer/
+    //   Souls-like/Platformer/Difficult/Post-apocalyptic/Pixel Graphics/Atmospheric/Controller/
+    //   Indie/Singleplayer/2D/Sci-fi/Multiple Endings/Female Protagonist/Cute)にも性的表現
+    //   関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2024年8月15日。2023年2月にアーリーアクセスとして
+    //   始動した経緯があるが、現在のgenresとストアHTMLのバナーはどちらもEA表記が無いことを
+    //   実測確認し、正式卒業後の状態であると判断した)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Last Order
+    //   KujiraDanceRoom""KujiraDanceRoom"とも0件。日本のインディーを扱う英語ブログ
+    //   goodorevengreat.gamesのサイト内検索も"Nothing Found"。
+    // west_unreached: supported_languagesは英語・日本語。appreviews API実測で全15件のうち
+    //   日本語12件・英語3件・中華圏0件・韓国語0件。英語UIは実装済みで西側読者は遊べるが
+    //   到達していないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字の脆さ: 15件は当サイトが扱う最低ラインに近い薄さで、好評率93%であっても母数は
+    //   薄い。先に開示する。
+    meta: { genre: "offensive-wire-souls-like", lineage: "bionic-commando", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 15, positivePct: 93 } },
+    games: [
+      {
+        name_en: "Last Order",
+        name_ja: "Last Order",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2132530/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page names its own hook: 'Offensive Wire Action.' It says outright that in this game, the wire is not just a movement tool. You play Yukiwari, an abandoned thinking-machine who wakes at the far end of a sewer, in a graveyard of discarded thinking-machines, having lost her memory, setting out to reclaim a light called 'Last Order' that her heart still wants. Mechanically it's a high-difficulty 2D pixel-art action game carried by three wire tools: the Swing Wire, strung across ceilings for Bionic-Commando-style movement that also slices any enemy it passes through mid-swing, making it an attack as much as a traversal tool; the Dive Wire, an elastic launch toward scaffolds or straight into an enemy, equally useful for closing distance or pulling yourself out of danger; and the Shackle Wire, which entangles small enemies or incoming shells and lets you throw them back, doubling as both crowd control and a way to deflect ranged attacks. Growth is built around playstyle, firepower for short fights or resilience for long ones, and 'Order Chips' add situational customization on top. Made and self-published by the solo circle KujiraDanceRoom, whose only Steam listing is this game. Priced at ¥1,980, it is Positive at 93 percent across 15 reviews (14 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note up front: 15 reviews is close to this site's floor. Of those 15, 12 are in Japanese and 3 are in English.",
+        desc_ja: "ストアページは自らのフックに名前をつけている——「攻撃的なワイヤーアクション」。ワイヤーは移動だけのアクションではない、とはっきり書いている。操作するのは、棄てられた思考機械ユキワリ。下水の果て、思考機械の墓場で目を覚まし、記憶を失いながらも、それでも心が求める灯り「ラストオーダー」を取り戻すため、旅に出る。仕組みとしては、3種のワイヤーツールに支えられた高難度2Dドットアクションだ——天井にワイヤーを張ってスウィング移動するスウィングワイヤーは、通り過ぎた敵を切断するため攻撃の要も兼ねる。伸縮するワイヤーを飛ばして足場や敵へ高速移動するダイブワイヤーは、敵から離脱するのも懐に飛び込むのも自在。小型敵や砲弾を絡め取って投げ返すシャックルワイヤーは、まとめて倒す攻撃と、砲弾を受け流す守りを兼ねる。成長はプレイスタイルに沿って——短期戦なら火力、長期戦なら回復力——組み立て、状況に応じて使い分ける「オーダーチップ」がさらにカスタマイズを加える。制作・自社発売はソロサークルKujiraDanceRoom。Steamに並ぶのは本作のみである。価格は¥1,980。15件のレビュー(好評14件・不評1件、Steam自身のレビューAPI実測)で好評率93%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——15件は当サイトの最低ラインに近い薄さである。その内訳は日本語12件・英語3件だ。",
+      },
+      {
+        name_en: "Bionic Commando",
+        name_ja: "バイオニックコマンドー",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1556707/Capcom_Arcade_StadiumBIONIC_COMMANDO/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Bionic Commando, the Capcom game that made a wire the whole vocabulary of movement, a soldier with no jump who swings and reaches across every level on a mechanical arm. Last Order is not an official Bionic Commando work, but it carries that same wire-as-verb idea further than movement alone: the Swing Wire that carries you also cuts down anything it swings through, turning the traversal tool itself into the attack.",
+        desc_ja: "この味の原点——バイオニックコマンドー。ワイヤーを移動の語彙そのものにしたカプコンの作品で、ジャンプを持たない兵士が、機械の腕でレベル全体をスイングし、渡っていく。Last Orderは公式のバイオニックコマンドー作品ではないが、「ワイヤーが動詞である」という同じ発想を、移動だけでなくさらに先へ引き継いでいる——運んでくれるスウィングワイヤーそのものが、通り過ぎた敵を切り倒す。移動の道具そのものが攻撃になるのだ。",
+      },
+    ],
+    en: {
+      title: "Last Order - a high-difficulty 2D pixel-art souls-like where the wire that swings you across the level is also the attack. Made by solo circle KujiraDanceRoom for ¥1,980. 93 percent over 15 reviews, mostly Japanese",
+      description: "A 2D pixel-art souls-like action game built around three wire tools that double as combat: a Swing Wire that cuts down anything it passes through, a Dive Wire for closing distance or escape, and a Shackle Wire that catches and throws back projectiles. 93 percent over 15 reviews, English supported.",
+      h1a: "The wire that swings you across the level is also the attack. ",
+      h1flip: "An abandoned thinking-machine wakes memoryless in a graveyard of her own kind",
+      h1b: ".",
+      lede: "The store page names its own hook: 'Offensive Wire Action.' It says outright that in this game, the wire is not just a movement tool. You play Yukiwari, an abandoned thinking-machine who wakes at the far end of a sewer, in a graveyard of discarded thinking-machines, having lost her memory, setting out to reclaim a light called 'Last Order' that her heart still wants. Mechanically it's a high-difficulty 2D pixel-art action game carried by three wire tools: the Swing Wire, strung across ceilings for Bionic-Commando-style movement that also slices any enemy it passes through mid-swing, making it an attack as much as a traversal tool; the Dive Wire, an elastic launch toward scaffolds or straight into an enemy, equally useful for closing distance or pulling yourself out of danger; and the Shackle Wire, which entangles small enemies or incoming shells and lets you throw them back, doubling as both crowd control and a way to deflect ranged attacks. Growth is built around playstyle, firepower for short fights or resilience for long ones, and 'Order Chips' add situational customization on top. Made and self-published by the solo circle KujiraDanceRoom, whose only Steam listing is this game. Priced at ¥1,980, it is Positive at 93 percent across 15 reviews (14 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note up front: 15 reviews is close to this site's floor, and no English-language article about this game exists yet, on AUTOMATON WEST or elsewhere. Of those 15, 12 are in Japanese and 3 are in English.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most grapple mechanics ask you to let go of offense while you're in the air; here the Swing Wire is cutting down everything it passes through the whole time you're swinging, so momentum and damage stop being separate systems.",
+        "The Shackle Wire quietly does double duty as defense, catching incoming shells and throwing them back, which means the same three-button kit that gets you across a room is also what keeps you alive in it.",
+        "The playstyle-based growth, firepower for short fights, resilience for long ones, means the game is asking you to commit to a read of your own habits, not just a stat allocation.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Bionic Commando's wire-as-the-whole-verb movement pushed further, into a tool that attacks and defends as well as it swings",
+        "You want a high-difficulty 2D souls-like where the traversal tool and the combat tool are the same object, not two separate systems bolted together",
+        "You want small and self-published: solo circle KujiraDanceRoom's only Steam listing is this game, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 15 reviews is close to this site's floor even at a positive rating",
+        "You want a game already found in the West; of 15 reviews only 3 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Last Order - レベルを渡らせてくれるワイヤーが、そのまま攻撃になる高難度2Dドットソウルライク。ソロサークルKujiraDanceRoom制作、価格¥1,980。15件で好評率93%、ほぼ日本語",
+      description: "3種のワイヤーツールが戦闘を兼ねる2Dドットアクション。通り過ぎた敵を切断するスウィングワイヤー、接近/離脱を兼ねるダイブワイヤー、砲弾を絡め取り投げ返すシャックルワイヤー。15件のレビューで好評率93%、英語対応。",
+      h1a: "レベルを渡らせてくれるワイヤーが、そのまま攻撃になる。",
+      h1flip: "棄てられた思考機械が、自分と同じ者たちの墓場で記憶を失って目を覚ます",
+      h1b: "。",
+      lede: "ストアページは自らのフックに名前をつけている——「攻撃的なワイヤーアクション」。ワイヤーは移動だけのアクションではない、とはっきり書いている。操作するのは、棄てられた思考機械ユキワリ。下水の果て、思考機械の墓場で目を覚まし、記憶を失いながらも、それでも心が求める灯り「ラストオーダー」を取り戻すため、旅に出る。仕組みとしては、3種のワイヤーツールに支えられた高難度2Dドットアクションだ——天井にワイヤーを張ってスウィング移動するスウィングワイヤーは、通り過ぎた敵を切断するため攻撃の要も兼ねる。伸縮するワイヤーを飛ばして足場や敵へ高速移動するダイブワイヤーは、敵から離脱するのも懐に飛び込むのも自在。小型敵や砲弾を絡め取って投げ返すシャックルワイヤーは、まとめて倒す攻撃と、砲弾を受け流す守りを兼ねる。成長はプレイスタイルに沿って——短期戦なら火力、長期戦なら回復力——組み立て、状況に応じて使い分ける「オーダーチップ」がさらにカスタマイズを加える。制作・自社発売はソロサークルKujiraDanceRoom。Steamに並ぶのは本作のみである。価格は¥1,980。15件のレビュー(好評14件・不評1件)で好評率93%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——15件は当サイトの最低ラインに近い薄さで、本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。その内訳は日本語12件・英語3件だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "多くのグラップル系メカニクスは、空中にいる間は攻撃の手を離すことを求めてくる。ここではスウィングワイヤーがスイングしている間ずっと、通り過ぎるものを切り倒し続けている。だから勢いとダメージが別々のシステムであることをやめている。",
+        "シャックルワイヤーは静かに二重の仕事をしている——飛んでくる砲弾を絡め取って投げ返す守りも兼ねているので、部屋を渡るための同じ3つのワイヤーが、その部屋の中で生き延びる手段でもある。",
+        "プレイスタイルに沿った成長——短期戦なら火力、長期戦なら回復力——は、単なる数値配分ではなく、自分自身の癖をどう読むかへのコミットメントを求めてくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "バイオニックコマンドーの「ワイヤーが動詞そのもの」という移動を、さらに攻撃も防御もこなす道具へ押し進めたものが欲しい人",
+        "移動の道具と戦闘の道具が別々に取り付けられたものではなく、同じ1つの物である高難度2Dソウルライクが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロサークルKujiraDanceRoomのSteamタイトルは本作のみで、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——15件は好評であっても当サイトの最低ラインに近い",
+        "既に西で見つかっているゲームが欲しい人——15件のうち英語はわずか3件で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12916,6 +13024,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "bionic-commando": {
+    steam: "1556707",
+    blurb: {
+      en: "Bionic Commando, released by Capcom in arcades in 1987 and on the NES in 1988 (playable today through the Capcom Arcade Stadium collection), established the grappling-hook-as-primary-verb action game: a soldier with no jump button at all, who instead swings, climbs and reaches across a level on a mechanical arm. It is the origin of the lineage of games where a wire is not a traversal shortcut bolted onto ordinary platforming, but the entire vocabulary of movement itself.",
+      ja: "『バイオニックコマンドー』は、カプコンが1987年にアーケードで、1988年にファミコン向けにリリースした作品(現在はCapcom Arcade Stadiumのコレクションで遊べる)で、「グラップリングフックを主動詞とするアクションゲーム」を確立した——ジャンプボタンを一切持たず、代わりに機械の腕でスイングし、よじ登り、レベルを渡っていく兵士。ワイヤーが、普通のプラットフォーミングに後付けされた移動の近道ではなく、移動そのものの語彙全体である、というゲーム群の系譜の原点である。",
+    },
+  },
   "shogun-total-war": {
     steam: "345240",
     blurb: {
