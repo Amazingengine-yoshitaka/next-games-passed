@@ -12730,6 +12730,119 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "shemhamephorash": {
+    published: "2026-08-09",
+    publishAt: "2026-08-09",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "rabbi-golem-campaign-tactics"。ストア本文実測: 領土を攻める・守備を固める・
+    //   占領地を特殊区画に開発する・補給線を管理するターン制の戦略層と、歩兵・砲兵・騎兵・
+    //   「ラビ」術者の4種を一時停止可能なリアルタイムで指揮する戦術戦闘層が組み合わさっている。
+    //   本作固有の核は、この戦略/戦術の二層構造に「土塊人形を操る奇蹟の言語シェムハメフォラシュ」
+    //   という固有の魔法設定が乗っている点だと判断した。
+    // lineageは新規anchor "shogun-total-war" を作る。ターン制キャンペーン層とリアルタイム戦術
+    //   戦闘層を組み合わせるという設計そのものを確立した原点として採用。本作固有の1878年
+    //   アフガニスタン・グレートゲームという史実改変舞台と土塊人形術は、影響を公言されたもの
+    //   ではない当サイト独自の観察である(自信度: 中)。なお本作は日本のフリーゲーム戦略シム
+    //   「ヴァーレントゥーガ」(2009年・全年齢・作者ななあし)を素材にした派生作品であることを
+    //   WebSearchで確認した(アダルト由来ではない)。同エンジン系の派生作品は当サイトに
+    //   「ハルスベリヤ叙事詩2.5」の前例があるが、開発者は別人であり0ホップの懸念には当たらない。
+    // developer表記はSignTyche/publisherはTyche's Bookshelfで同一制作者の別名義。Steamの
+    //   developer検索を自分で叩き、この名義の登録は3件のみで、いずれも大手・海外展開代行・
+    //   親会社関係の混入がないことを確認した。
+    // content_descriptors は ids=[](空配列)をAPI実測。ストアHTMLに大人向けコンテンツの説明
+    //   セクションが無いことも確認。ユーザータグ20件(Simulation/Real-Time with Pause/Story Rich/
+    //   Strategy/Pixel Graphics/Atmospheric/Indie/Auto Battler/Turn-Based Tactics/Real Time
+    //   Tactics/Magic/Tactical/Fantasy/Singleplayer/Cute/Grand Strategy/RPG/Wargame/Strategy RPG/
+    //   Female Protagonist)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2023年3月29日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"ShemHaMephorash"
+    //   "SignTyche""Tyche's Bookshelf"いずれも0件。日本のインディーを扱う英語ブログ
+    //   goodorevengreat.gamesのサイト内検索も"Nothing Found"。WebSearchで見つかったのは
+    //   4Gamer・もぐらゲームスという日本語媒体による2021年アーリーアクセス開始時の報道のみ。
+    // west_unreached: supported_languagesは日本語・英語で英語UIは発売当初から実装されている。
+    //   appreviews API実測で全36件のうち日本語21件・英語12件・韓国語1件・その他少数。
+    //   非日本語合計(15)は日本語(21)を超えないため到達判定の閾値には触れないが、英語UIが
+    //   最初から入っている点も含め正直に開示し、obscurity: "deep" / reachState: "unreached_west"
+    //   を採る。
+    // 数字について: 36件で好評率94.4%は当サイトの理想95%にほぼ届いており、最低ライン88%も
+    //   大きく上回る。
+    meta: { genre: "rabbi-golem-campaign-tactics", lineage: "shogun-total-war", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 36, positivePct: 94 } },
+    games: [
+      {
+        name_en: "ShemHaMephorash",
+        name_ja: "ShemHaMephorash",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1481720/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a low-fantasy alternate history set during the 1878 Second Anglo-Afghan War, fought in the shadow of the Great Game between Britain and Russia, where humanity was long ago granted a divine 'language of miracles,' ShemHaMephorash, that animates figures of clay. Those who wield it are revered as 'rabbi.' The game runs on two layers: a turn-based strategic campaign where you hire soldiers, choose which territories to attack, garrison your defenses, develop captured land into special zones and manage supply lines, resolved by dropping into real-time tactical battles, pausable at will, where infantry, artillery, cavalry and rabbi spellcasters are commanded unit by unit. It is an explicit derivative built on the toolset of a Japanese freeware strategy game, Vahrentuga, released in 2009 by the creator Nanaashi, a scenario/mod-creation engine multiple unrelated hobbyist developers have built their own games on top of; this one is not that game's origin, it is one branch of it. Made by the solo circle SignTyche under the label Tyche's Bookshelf, whose only three Steam listings show no ties to any larger publisher. Priced at ¥1,150, it is at 94 percent across 36 reviews (34 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 36 reviews, 21 are in Japanese and 12 are in English, worth being upfront about since the game shipped with English from day one.",
+        desc_ja: "Steam自身の表記によれば、本作は1878年の第二次アフガン戦争、英露のグレートゲームの影で戦われた史実改変の低ファンタジーだ。人類ははるか昔、土塊の人形を動かす神からの恩寵「シェムハメフォラシュ」という奇蹟の言語を授かった。それを操る者たちは「ラビ」として讃えられる。ゲームは2層で成り立っている——兵士を雇い、攻める領土を選び、守備を固め、占領地を特殊区画へ開発し、補給線を管理するターン制の戦略キャンペーン層と、そこから移行する、いつでも一時停止できるリアルタイム戦術戦闘層で、歩兵・砲兵・騎兵・ラビの術者をユニット単位で指揮する。本作は日本のフリーゲーム戦略シム「ヴァーレントゥーガ」(作者ななあし、2009年発表)の素材を使った明確な派生作品で、同エンジンは無関係な複数のホビイスト開発者が自作のゲームを築いてきたシナリオ/mod制作ツールキットである。本作はその原点ではなく、そこから分かれた一本にすぎない。制作はソロサークルSignTyche、レーベル名はTyche's Bookshelf。Steamに並ぶのは3件のみで、いずれも大手との紐付きは見られない。価格は¥1,150。36件のレビュー(好評34件・不評2件、Steam自身のレビューAPI実測)で好評率94%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。36件の内訳は日本語21件・英語12件で、本作が発売当初から英語対応している点も含め正直に開示しておく。",
+      },
+      {
+        name_en: "Shogun: Total War",
+        name_ja: "Shogun: Total War",
+        status: "established",
+        steam: "https://store.steampowered.com/app/345240/SHOGUN_Total_War_Collection/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Shogun: Total War, the Creative Assembly game that established the turn-based campaign layer resolved by real-time tactical battles, refusing to pick between the two scales of strategy. ShemHaMephorash is not an official Total War work, but it carries that same hybrid structure into an 1878 alternate history, where the campaign map's territory management and the battlefield's unit-by-unit combat both matter, and its own addition is the rabbi, a spellcaster class fought alongside infantry, artillery and cavalry in that same real-time layer.",
+        desc_ja: "この味の原点——Shogun: Total War。ターン制のキャンペーン層をリアルタイム戦術戦闘で解決するという設計を確立した、Creative Assemblyの作品で、戦略の二つの規模のどちらか一方を選ぶことを拒んでいる。ShemHaMephorashは公式のTotal War作品ではないが、同じハイブリッド構造を1878年の史実改変世界へ引き継いでいる——キャンペーンマップでの領土管理も、戦場でのユニット単位の戦闘も、どちらも重要であり続ける。本作独自の追加要素は、歩兵・砲兵・騎兵と同じリアルタイム層で戦う術者クラス「ラビ」である。",
+      },
+    ],
+    en: {
+      title: "ShemHaMephorash - an 1878 alt-history strategy game where a turn-based campaign of territory and supply lines is resolved by real-time battles commanding infantry, artillery, cavalry and rabbi spellcasters who animate clay. Made by solo circle SignTyche for ¥1,150. 94 percent over 36 reviews",
+      description: "A low-fantasy alt-history strategy game set in the 1878 Second Anglo-Afghan War. A turn-based campaign layer of territory, supply lines and diplomacy is resolved by real-time, pausable tactical battles commanding infantry, artillery, cavalry and 'rabbi' spellcasters who animate clay figures. 94 percent over 36 reviews, English supported.",
+      h1a: "A turn-based campaign of territory and supply lines is resolved by real-time battles. ",
+      h1flip: "Infantry and cavalry fight alongside rabbi who animate clay with a divine language",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a low-fantasy alternate history set during the 1878 Second Anglo-Afghan War, fought in the shadow of the Great Game between Britain and Russia, where humanity was long ago granted a divine 'language of miracles,' ShemHaMephorash, that animates figures of clay. Those who wield it are revered as 'rabbi.' The game runs on two layers: a turn-based strategic campaign where you hire soldiers, choose which territories to attack, garrison your defenses, develop captured land into special zones and manage supply lines, resolved by dropping into real-time tactical battles, pausable at will, where infantry, artillery, cavalry and rabbi spellcasters are commanded unit by unit. It is an explicit derivative built on the toolset of a Japanese freeware strategy game, Vahrentuga, released in 2009 by the creator Nanaashi, a scenario/mod-creation engine multiple unrelated hobbyist developers have built their own games on top of; this one is not that game's origin, it is one branch of it. Made by the solo circle SignTyche under the label Tyche's Bookshelf, whose only three Steam listings show no ties to any larger publisher. Priced at ¥1,150, it is at 94 percent across 36 reviews (34 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 36 reviews, 21 are in Japanese and 12 are in English, a real minority but not a small one, worth flagging since the game shipped with English from day one; no English-language article about it exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The campaign layer makes you a logistician before it makes you a general: territory, supply lines, and which captured land is worth developing into a special zone are decided before a single unit takes the field.",
+        "Dropping into a real-time battle you can pause at will changes what 'tactics' means. You are not reacting at the speed the game demands; you are stopping the clock to read four unit types, infantry, artillery, cavalry, and the rabbi's miracle-language, and deciding what to commit.",
+        "The rabbi is the piece that makes the setting feel load-bearing rather than decorative: a spellcaster animating clay figures fights in the same real-time layer as ordinary soldiers, on the same footing, not a separate magic system bolted on top.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Total War's core promise, that campaign-scale judgment and battlefield-scale command both matter, without picking between them",
+        "You want a strategy game whose fantasy premise, a divine language that animates clay, is expressed through a playable unit type rather than just flavor text",
+        "You want small and self-published: solo circle SignTyche's only three Steam listings show no ties to any larger publisher, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a game already found in the West; of 36 reviews 12 are in English, and it shipped with English from day one, so it is not purely walled off, just not yet covered",
+        "You want an untouched-by-anyone premise; this is a branch of a freeware strategy toolkit other hobbyists have also built on, not a from-scratch original",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ShemHaMephorash - 領土と補給線のターン制キャンペーンを、歩兵・砲兵・騎兵と土塊人形を操るラビが戦うリアルタイム戦闘で解決する1878年史実改変ストラテジー。ソロサークルSignTyche制作、価格¥1,150。36件で好評率94%",
+      description: "1878年第二次アフガン戦争を舞台にした低ファンタジーの史実改変ストラテジー。領土・補給線・外交のターン制キャンペーン層を、歩兵・砲兵・騎兵と土塊人形を操る術者「ラビ」を指揮する一時停止可能なリアルタイム戦術戦闘で解決する。36件のレビューで好評率94%、英語対応。",
+      h1a: "領土と補給線のターン制キャンペーンを、リアルタイム戦闘で解決する。",
+      h1flip: "歩兵や騎兵と共に、神の言語で土塊を操るラビが戦場に立つ",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は1878年の第二次アフガン戦争、英露のグレートゲームの影で戦われた史実改変の低ファンタジーだ。人類ははるか昔、土塊の人形を動かす神からの恩寵「シェムハメフォラシュ」という奇蹟の言語を授かった。それを操る者たちは「ラビ」として讃えられる。ゲームは2層で成り立っている——兵士を雇い、攻める領土を選び、守備を固め、占領地を特殊区画へ開発し、補給線を管理するターン制の戦略キャンペーン層と、そこから移行する、いつでも一時停止できるリアルタイム戦術戦闘層で、歩兵・砲兵・騎兵・ラビの術者をユニット単位で指揮する。本作は日本のフリーゲーム戦略シム「ヴァーレントゥーガ」(作者ななあし、2009年発表)の素材を使った明確な派生作品で、同エンジンは無関係な複数のホビイスト開発者が自作のゲームを築いてきたシナリオ/mod制作ツールキットである。本作はその原点ではなく、そこから分かれた一本にすぎない。制作はソロサークルSignTyche、レーベル名はTyche's Bookshelf。Steamに並ぶのは3件のみで、いずれも大手との紐付きは見られない。価格は¥1,150。36件のレビュー(好評34件・不評2件)で好評率94%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点。36件の内訳は日本語21件・英語12件で、少数とは言えない割合だ。本作が発売当初から英語対応している点も含め開示しておく。本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "キャンペーン層は、あなたを将軍である前に兵站官にする。1体のユニットが戦場に立つ前に、領土・補給線・どの占領地を特殊区画へ開発する価値があるかが決まっている。",
+        "いつでも一時停止できるリアルタイム戦闘に飛び込むことで、「戦術」の意味が変わる。ゲームが要求する速度に反応するのではなく、時計を止めて歩兵・砲兵・騎兵・ラビの奇蹟の言語という4種を読み、何を投入するかを決める。",
+        "ラビという駒が、この世界観を「飾り」ではなく「土台」として感じさせている。土塊人形を操る術者が、普通の兵士と同じリアルタイム層で、同じ足場の上で戦う——後付けの別枠魔法システムではないのだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Total Warの核心的な約束——キャンペーン規模の判断と戦場規模の指揮の両方が重要である——を、どちらか一方を選ばずに欲しい人",
+        "「神の言語が土塊を操る」というファンタジーの前提が、単なる設定文ではなく、実際に遊べるユニット種として表現されているストラテジーが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロサークルSignTycheのSteamタイトルは3件のみで大手との紐付きは見られず、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "既に西で見つかっているゲームが欲しい人——36件のうち12件は英語で、発売当初から英語対応しており、完全に言語の壁の向こうというわけではなく、まだ発見されていないだけだ",
+        "誰にも触れられていない前提が欲しい人——本作は他のホビイストも土台にしているフリーゲームのツールキットから分かれた一本で、ゼロから作られた独自世界ではない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12803,6 +12916,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "shogun-total-war": {
+    steam: "345240",
+    blurb: {
+      en: "Shogun: Total War, developed by Creative Assembly and published by SEGA in 2000, established the modern hybrid strategy genre: a turn-based campaign layer where the player manages territory, diplomacy and armies on a map, resolved by dropping into real-time tactical battles where those same armies are commanded unit by unit on the battlefield. It is the origin of the lineage of games that refuse to pick between the two scales, campaign-level judgment and battlefield-level command, and insist a strategy game needs both.",
+      ja: "『Shogun: Total War』は、Creative Assemblyが開発しSEGAが発売した2000年の作品で、現代のハイブリッド戦略ジャンルを確立した——プレイヤーが地図上で領土・外交・軍を管理するターン制のキャンペーン層と、その同じ軍がユニット単位で指揮されるリアルタイム戦術戦闘とを組み合わせ、後者で前者を解決する。キャンペーン規模の判断と戦場規模の指揮、その両方を戦略ゲームには必要だと言い張り、二者択一を拒んだゲーム群の系譜の原点である。",
+    },
+  },
   "atelier-marie": {
     steam: "2138090",
     blurb: {
