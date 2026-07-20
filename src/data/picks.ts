@@ -13291,6 +13291,117 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "samurai-conqueror": {
+    published: "2026-08-12",
+    publishAt: "2026-08-12",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "timeline-as-territory-4x"。ストア本文実測: 「ゲームのフィールドは、古墳
+    //   時代から明治時代までの日本の歴史年表です」——地形ではなく、歴史的事件(大化の改新・
+    //   源平合戦・応仁の乱・関ヶ原の戦い・明治維新)で区切られた「年表」そのものが盤面になる。
+    //   異なる時代の英傑が同じ盤上で対決できる(聖徳太子 vs 西郷隆盛)、という点が本作固有の
+    //   核だと判断した。
+    // lineageは新規anchor "civilization-1991" を作る。文明を率いて歴史を通じ発展させ勝利を
+    //   目指す、という歴史4Xストラテジーの原点として採用。本作固有の「年表そのものが盤面で
+    //   時代を超えた対決が起きる」という設計は、影響を公言されたものではない当サイト独自の
+    //   観察である(自信度: 中)。Steam版が存在しない1991年の原点なのでwikidataで同定した。
+    // developer=publisher=Miura Production。福岡県北九州市拠点のソロインディー開発者である
+    //   ことを公式サイト(miuraproduction.com)で確認した。Steamのdeveloper検索を自分で叩き、
+    //   この名義の登録は本作と体験版の2件のみで、いずれもdeveloper=publisherが一致することを
+    //   確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ20件(Management/Turn-Based
+    //   Tactics/4X/War/Tactical/Turn-Based Strategy/2D/Historical/Combat/Military/Medieval/
+    //   Singleplayer/Turn-Based Combat/Grand Strategy/Alternate History/Wargame/Indie/
+    //   Simulation/Real-Time with Pause/Strategy)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄には「このゲームは、一部でAIによって生成された画像を
+    //   使用しています」とだけあり(日英同一)、画像という単一アセットカテゴリに限定された
+    //   開示であり、基準(5)の「単一カテゴリ限定は許容」に該当する。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2026年7月15日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Samurai Conqueror"は0件、
+    //   "Miura Production"は3件ヒットするが、開いて確認したところデス・ストランディング2・
+    //   ベルセルクの三浦建太郎氏・元任天堂社員のインタビュー記事という完全に無関係な誤ヒットで、
+    //   本作とは無関係だった。日本のインディーを扱う英語ブログgoodorevengreat.gamesのサイト内
+    //   検索も"Nothing Found"。
+    // west_unreached: supported_languagesは英語・日本語。appreviews API実測で全18件のうち
+    //   日本語16件・英語2件・中華圏0件・韓国語0件。英語UIは実装済みで西側読者は遊べるが到達
+    //   していないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字の脆さ: 18件は当サイトが扱う中でも薄い母数である。好評率100%であっても先に開示する。
+    meta: { genre: "timeline-as-territory-4x", lineage: "civilization-1991", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 18, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Samurai Conqueror",
+        name_ja: "日本史大戦",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3430910/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a history simulation set from the Kofun period to the Meiji era, and its opening line states the goal plainly: unify Japanese history. The mechanics are a simple territory-conquest game, strengthen your nation through domestic policy, seize enemy ground through war, but the board itself is the unusual part. The playing field is the Japanese history timeline, divided into eras by real historical turning points, the Taika Reform, the Genpei War, the Onin War, the Battle of Sekigahara, the Meiji Restoration, and you lead one faction on it, choosing an eminent historical figure to play as, and recruiting others as you go. Because the whole timeline is one shared board, figures from wildly different centuries can meet in it: the store text's own example is Prince Shotoku, sixth to seventh century, facing off against Saigo Takamori, nineteenth century, an 'era-crossing confrontation' the game calls its own kind of history remix. Progress runs in real time, pausable whenever you want to think. Made and self-published by the solo developer Miura Production, based in Kitakyushu, Fukuoka, whose only two Steam listings are this game and its demo. Priced at ¥1,900, it is Positive at 100 percent across 18 reviews (18 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure names a single narrow use, some AI-generated images, quoted here rather than folded into boilerplate, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note up front: 18 reviews is thin even at a perfect score. Of those 18, 16 are in Japanese and 2 are in English.",
+        desc_ja: "Steam自身の表記によれば、本作は古墳時代から明治時代までを舞台にした歴史シミュレーションで、冒頭の一文が目的をそのまま告げる——日本史を統一せよ。機構としては単純な陣取りゲームだ。内政で国力を強化し、戦争で敵の陣地を奪う。変わっているのはその盤面である。フィールドは日本の歴史年表そのもので、「大化の改新」「源平合戦」「応仁の乱」「関ヶ原の戦い」「明治維新」といった実在の歴史的事件で区切られている。プレイヤーはその上で一つの勢力を率い、日本史上の英傑から1人を選んでスタートし、道中でさらに登用していく。年表全体が一つの共有された盤面であるからこそ、まったく異なる世紀の人物同士が出会うことができる——ストア文言自身が挙げる例は、6〜7世紀の聖徳太子と19世紀の西郷隆盛の対決で、ゲームはこれを「時代を超えた対決」による独自の“歴史再編”と呼んでいる。進行はリアルタイムだが、考えたい時にはいつでも止められる。制作・自社発売はソロ開発者Miura Production。福岡県北九州市を拠点とし、Steamに並ぶのは本作と体験版の2件のみである。価格は¥1,900。18件のレビュー(好評18件・不評0件、Steam自身のレビューAPI実測)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄は画像という単一の狭い用途のみを名指ししており、他記事にある定型句に置き換えずそのまま伝える。Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——18件は満点であっても薄い母数である。その内訳は日本語16件・英語2件だ。",
+      },
+      {
+        name_en: "Civilization",
+        name_ja: "シヴィライゼーション",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q368286",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Civilization, the Sid Meier game that established the historical 4X strategy genre, leading a people through the sweep of history toward victory. Samurai Conqueror is not an official Civilization work, but it takes that same idea and makes it literal: rather than history unfolding chronologically as you play, the timeline itself is the map, divided into eras you conquer directly, letting the game's own example, Prince Shotoku against Saigo Takamori, put thirteen centuries on the same board at once.",
+        desc_ja: "この味の原点——シヴィライゼーション。文明を率いて歴史全体を通じ発展させ勝利を目指す、という歴史4Xストラテジーを確立したSid Meierの作品。日本史大戦は公式のCivilization作品ではないが、同じ発想を文字通りの形で引き継いでいる——プレイしながら歴史が時系列に展開するのではなく、年表そのものが地図であり、直接征服していく時代へと区切られている。ゲーム自身が挙げる例、聖徳太子と西郷隆盛の対決は、13世紀分の隔たりを同じ盤面に一度に載せてしまうのだ。",
+      },
+    ],
+    en: {
+      title: "Samurai Conqueror - the map is the Japanese history timeline itself, divided by real turning points, so Prince Shotoku can face Saigo Takamori thirteen centuries apart. Made by solo developer Miura Production for ¥1,900. 100 percent over 18 reviews, mostly Japanese",
+      description: "A territory-conquest history sim where the board is the Japanese history timeline, Kofun period to Meiji era, split by real historical turning points. Choose an eminent historical figure, strengthen your faction through domestic policy, and conquer eras where figures from wildly different centuries can meet. 100 percent over 18 reviews, English supported.",
+      h1a: "The map is the Japanese history timeline itself, divided by real turning points. ",
+      h1flip: "Prince Shotoku can face Saigo Takamori, thirteen centuries apart, on the same board",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a history simulation set from the Kofun period to the Meiji era, and its opening line states the goal plainly: unify Japanese history. The mechanics are a simple territory-conquest game, strengthen your nation through domestic policy, seize enemy ground through war, but the board itself is the unusual part. The playing field is the Japanese history timeline, divided into eras by real historical turning points, the Taika Reform, the Genpei War, the Onin War, the Battle of Sekigahara, the Meiji Restoration, and you lead one faction on it, choosing an eminent historical figure to play as, and recruiting others as you go. Because the whole timeline is one shared board, figures from wildly different centuries can meet in it: the store text's own example is Prince Shotoku, sixth to seventh century, facing off against Saigo Takamori, nineteenth century, an 'era-crossing confrontation' the game calls its own kind of history remix. Progress runs in real time, pausable whenever you want to think. Made and self-published by the solo developer Miura Production, based in Kitakyushu, Fukuoka, whose only two Steam listings are this game and its demo. Priced at ¥1,900, it is Positive at 100 percent across 18 reviews (18 positive, 0 negative), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure names a single narrow use, some AI-generated images, quoted here rather than folded into boilerplate, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note up front: 18 reviews is thin even at a perfect score, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere. Of those 18, 16 are in Japanese and 2 are in English.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most historical strategy games make you live through eras in order, one after another. Here the eras sit side by side on one board, which means the question is never just 'when am I' but 'which century am I fighting my way into next.'",
+        "The cross-era matchups are the whole point rather than a novelty skin. A sixth-century prince and a nineteenth-century statesman facing off only works because the map itself refuses to keep them apart, and that refusal is the design.",
+        "Pausable real-time progress means the domestic-policy layer never feels like a chore between fights; you can stop the clock exactly when a decision matters and let it run when it doesn't.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Civilization's promise of leading a people through the sweep of history taken literally, the timeline itself as the map instead of a backdrop",
+        "You want a strategy game whose central hook, era-crossing confrontations, is baked into the board itself rather than a story flourish",
+        "You want small and self-published: solo developer Miura Production's only two Steam listings are this game and its demo, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 18 reviews is thin even at a perfect score",
+        "You want a game already found in the West; of 18 reviews only 2 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "日本史大戦 - 地図は日本の歴史年表そのもの、実在の転換点で区切られ、聖徳太子と西郷隆盛が13世紀の隔たりを越えて対決する。ソロ開発者Miura Production制作、価格¥1,900。18件で好評率100%、ほぼ日本語",
+      description: "古墳時代から明治時代までの日本の歴史年表を盤面にした陣取り歴史シム。日本史上の英傑を選び、内政で勢力を強化し、まったく異なる世紀の人物同士が出会う時代を征服していく。18件のレビューで好評率100%、英語対応。",
+      h1a: "地図は日本の歴史年表そのもの、実在の転換点で区切られている。",
+      h1flip: "聖徳太子と西郷隆盛が、13世紀の隔たりを越えて同じ盤上で対決できる",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は古墳時代から明治時代までを舞台にした歴史シミュレーションで、冒頭の一文が目的をそのまま告げる——日本史を統一せよ。機構としては単純な陣取りゲームだ。内政で国力を強化し、戦争で敵の陣地を奪う。変わっているのはその盤面である。フィールドは日本の歴史年表そのもので、「大化の改新」「源平合戦」「応仁の乱」「関ヶ原の戦い」「明治維新」といった実在の歴史的事件で区切られている。プレイヤーはその上で一つの勢力を率い、日本史上の英傑から1人を選んでスタートし、道中でさらに登用していく。年表全体が一つの共有された盤面であるからこそ、まったく異なる世紀の人物同士が出会うことができる——ストア文言自身が挙げる例は、6〜7世紀の聖徳太子と19世紀の西郷隆盛の対決で、ゲームはこれを「時代を超えた対決」による独自の“歴史再編”と呼んでいる。進行はリアルタイムだが、考えたい時にはいつでも止められる。制作・自社発売はソロ開発者Miura Production。福岡県北九州市を拠点とし、Steamに並ぶのは本作と体験版の2件のみである。価格は¥1,900。18件のレビュー(好評18件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄は画像という単一の狭い用途のみを名指ししており、定型句に置き換えずそのまま伝える。Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——18件は満点であっても薄い母数で、本作についての正真の英語記事はAUTOMATON WESTを含めまだどこにも存在しない。その内訳は日本語16件・英語2件だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "多くの歴史ストラテジーは時代を順番通りに生きさせる——1つ、また1つと。ここでは時代が一枚の盤の上に並んで存在し、だから問いは「今いつか」ではなく「次にどの世紀へ攻め込むか」になる。",
+        "時代を超えた対決は、目先を変える飾りではなく設計の核そのものだ。6世紀の皇子と19世紀の政治家の対決が成立するのは、地図そのものが2人を引き離すことを拒んでいるからで、その拒絶こそが設計なのだ。",
+        "一時停止可能なリアルタイム進行のおかげで、内政層が戦いの合間の雑務に感じられることがない。判断が重要な瞬間にだけ時計を止め、そうでない時は流せる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "文明を率いて歴史全体を渡り歩くというシヴィライゼーションの約束を、文字通りの形で欲しい人——年表そのものが背景ではなく地図である",
+        "「時代を超えた対決」という中心的なフックが、物語の演出ではなく盤面そのものに組み込まれたストラテジーが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ開発者Miura ProductionのSteamタイトルは本作と体験版のみで、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——18件は満点であっても薄い母数である",
+        "既に西で見つかっているゲームが欲しい人——18件のうち英語はわずか2件で、正真の英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13364,6 +13475,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "civilization-1991": {
+    wikidata: "https://www.wikidata.org/wiki/Q368286",
+    blurb: {
+      en: "Civilization, designed by Sid Meier and released by MicroProse in 1991, established the historical 4X strategy genre: lead a civilization from antiquity forward, developing territory, culture and military across the sweep of history toward victory. It is the origin of the lineage of strategy games where the very shape of human history, not just a patch of terrain, is the thing you are conquering.",
+      ja: "『シヴィライゼーション』は、Sid Meierが設計し1991年にMicroProseが発売した作品で、歴史を舞台にした4Xストラテジーというジャンルを確立した——古代から一つの文明を率い、領土・文化・軍事を発展させながら、歴史全体を通じて勝利を目指す。ただの地形の区画ではなく、人類史の形そのものを征服の対象にする、というストラテジーゲーム群の系譜の原点である。",
+    },
+  },
   "universal-paperclips": {
     wikidata: "https://www.wikidata.org/wiki/Q43540775",
     blurb: {
