@@ -13955,6 +13955,124 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "cold-bed-on-route": {
+    published: "2026-08-15",
+    publishAt: "2026-08-15",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "weight-equation-roguelite"。ストア本文実測: トム・ゴドウィン『冷たい方程式』
+    //   への着想を開発者自身が明言し(「『霜夜ゆく』はこの『冷たい方程式』をインスパイアして
+    //   おり」)、「方程式もの」というジャンル名まで名指ししている。プレイヤーは超軽量緊急艇
+    //   に同乗する人造人間「ドギー」による超過重量を、不用品を探して投棄することで補う。
+    //   この「原作の悲劇的構造を継承しつつ、ヒロインを人間の少女から人造人間ドギーへ置き換え、
+    //   結末を『宇宙はまだ完全に冷え切っていないと証明する』方向へ書き換えている」点が本作の
+    //   核だと判断した。
+    // lineageは新規anchor "the-cold-equations" を作る。ゲームではなく1954年のSF短編小説だが、
+    //   開発者自身が明言した影響であり、当サイト独自の観察ではなく作者本人の設計意図である。
+    //   ビデオゲームではない原点なのでwikidataで同定した。
+    // developer=publisher=Old Retina Museum(個人開発者、ブリキの名義)。Steamのdeveloper検索を
+    //   自分で叩き、この名義の登録は5件(本作/次回作Crimsooon Sun/本作アートブック/Crimsooon
+    //   Sun攻略本/Crimsooon Sunデモ)で、全てdeveloper=publisherが一致することを確認した。
+    //   大手・海外展開代行・親会社関係の混入はゼロ。なお本作は2021年のiOS/Android版を土台に
+    //   した2025年のSteam移植であることをWebSearchで確認したが、原作がアダルト由来であるという
+    //   事実は見つからなかった(全年齢の同一内容)。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ19件(Interactive Fiction/
+    //   Time Management/Story Rich/Space/Adventure/Text-Based/Visual Novel/2D/Sci-fi/
+    //   Roguelite/Singleplayer/Futuristic/Choose Your Own Adventure/Cute/Casual/Inventory
+    //   Management/Choices Matter/Multiple Endings/Resource Management)にも性的表現関連は
+    //   皆無。
+    // AI Generated Content Disclosure欄には「ローカリゼーションにおいて、生成AIを使用して
+    //   下訳を作成し、その後開発者がテキストを確認し、手動で修正を行いました。」とだけあり
+    //   (日英同一)、ローカライズという単一アセットカテゴリに限定された開示であり、基準(5)の
+    //   「単一カテゴリ限定は許容」に該当する。is_free=false・カートに入れるボタンを日英両
+    //   ページで実測。genresに"Early Access"を含まず、リリース済みで正式版として売られている
+    //   (発売日は2025年6月20日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Cold Bed on Route"が
+    //   4件・"Old Retina Museum"が1件ヒットするが、開いて確認したところいずれも本作とは
+    //   無関係の誤ヒットか(Metroid Dreadのグリッチ・Silent Hill f・Elinニュースレター等)、
+    //   同開発者の別の次回作Crimsooon Sunに関する記事であり、本作自体の記事ではなかった。
+    //   日本のインディーを扱う英語ブログgoodorevengreat.gamesのサイト内検索も実質ヒット無し。
+    // west_unreached: supported_languagesは英語・日本語。appreviews API実測で全48件のうち
+    //   日本語40件・英語3件・簡体字1件・繁体字1件・韓国語3件。非日本語合計(8)は日本語(40)を
+    //   大きく下回るため到達判定の閾値には触れない。obscurity: "deep" /
+    //   reachState: "unreached_west"を採る。
+    // 数字について: 48件で好評率93.8%(「非常に好評」)は当サイトの理想95%にはやや届かないが、
+    //   最低ライン88%は上回る。
+    meta: { genre: "weight-equation-roguelite", lineage: "the-cold-equations", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 48, positivePct: 94 } },
+    games: [
+      {
+        name_en: "Cold Bed on Route",
+        name_ja: "霜夜ゆく",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3250010/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page opens with a line attributed to a character named Souya: this universe may be cold, but it is three degrees warmer than absolute zero. Per Steam's own listing, this is an equation-roguelite adventure, and the developer names its inspiration directly, Tom Godwin's 1950s SF classic The Cold Equations and the 'equation story' genre it spawned: an emergency spacecraft loaded to its exact weight limit with cargo meant to save lives, an unplanned stowaway discovered aboard, and the arithmetic that says either the stowaway is jettisoned to die in space or everyone waiting for the cargo dies instead. Cold Bed on Route follows that basic shape, set aboard a tiny, ultra-lightweight emergency boat shaped more like a plant seed than a ship, but changes who the stowaway is: not the original's frail human girl, but Doggy, an artificial human with beast ears to mark her apart from humans, flesh and bone and blood, but far stronger and smarter. Working with her, you search the ship for anything expendable and jettison it to offset her weight, described by the store text with a comic, almost embarrassed hesitation, considerably heavier than it looks, and try to prove the universe isn't entirely cold yet. Made and self-published by the solo developer Old Retina Museum, whose five-title Steam catalogue is entirely self-developed and self-published. Priced at ¥300, it is Very Positive at 94 percent across 48 reviews (45 positive, 3 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure names a single narrow use, generative AI assisted an initial localization draft that the developer then manually reviewed and corrected, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 48 reviews, 40 are in Japanese and just 3 are in English.",
+        desc_ja: "ストアページは、ソウヤという人物の台詞から始まる——この宇宙は冷たいかもしれないが、絶対零度よりは3度暖かい。Steam自身の表記によれば、本作は方程式・ローグライト・アドベンチャーゲームで、開発者自身がその着想を明言している——トム・ゴドウィンによる50年代のSF小説の金字塔『冷たい方程式』と、そこから派生した「方程式もの」というジャンル。多数の人命を賭した荷物を持ってギリギリの重量で航行する宇宙船に、予定外の密航者が見つかる。密航者を放り出さなければ宇宙船は目的地へ辿り着けず人命救助ができない、しかし放り出せば密航者は死ぬ——その算術が絶対であるという構造だ。『霜夜ゆく』はこの基本形を踏襲しながら、舞台は宇宙船というより植物の種のような形状の超小型・超軽量の最終緊急艇に置き、密航者そのものを書き換える——原作の「か弱い少女」ではなく、人間との区別のために獣の耳が生えた人造人間ドギーだ。肉と骨と血を備えているが、人間より遥かに強靭で聡明である。彼女と協力しながら、船内の不用品を探して投棄し、彼女を載せたことで生じた重量——「見た目よりいくらか、だいぶん、その、なんというか、かなり重い」とストア文言が照れ隠しのように書く重量——を補い、宇宙がまだ完全には冷え切っていないことを証明しようとする。制作・自社発売はソロ開発者Old Retina Museum。Steamに並ぶ5作品はすべて自社開発・自社発売である。価格は¥300。48件のレビュー(好評45件・不評3件、Steam自身のレビューAPI実測)で好評率94%(「非常に好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄は、ローカライズの下訳を生成AIが支援しその後開発者が手動で確認・修正した、という単一の狭い用途のみを名指ししており、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。48件の内訳は日本語40件・英語わずか3件だ。",
+      },
+      {
+        name_en: "The Cold Equations",
+        name_ja: "冷たい方程式",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q1249132",
+        tag_en: "The stated origin",
+        tag_ja: "作者が名指しした原点",
+        desc_en: "The origin of this taste: The Cold Equations, Tom Godwin's 1954 short story that established the 'equation story,' where an emergency spacecraft loaded to its exact weight limit discovers a stowaway aboard, and the arithmetic, not a villain, decides who lives. Cold Bed on Route names this as its direct inspiration rather than a comparison this site drew on its own, and it keeps the shape while replacing the original's fragile human stowaway with an artificial human stronger than the pilot, turning the same cold calculation toward a different, less fatalistic answer.",
+        desc_ja: "この味の原点——冷たい方程式。燃料が許すぎりぎりの重量まで積んだ緊急宇宙船に密航者が見つかり、悪役ではなく算術そのものが誰が生きるかを決める、「方程式もの」を確立したトム・ゴドウィンの1954年のSF短編小説。霜夜ゆくは、これを当サイト独自の比較ではなく作者自身が明言した直接の着想として名指ししており、その形を保ちながら、原作の「か弱い人間の密航者」を、パイロットより遥かに強靭な人造人間へ置き換え、同じ冷たい計算を、より宿命論的でない別の答えへと向けている。",
+      },
+    ],
+    en: {
+      title: "Cold Bed on Route - inspired directly by The Cold Equations, a weight-limited emergency ship carries an android stowaway you must offset by jettisoning cargo. Made by solo developer Old Retina Museum for ¥300. 94 percent over 48 reviews, mostly Japanese",
+      description: "An equation-roguelite adventure directly inspired by Tom Godwin's The Cold Equations. A tiny emergency ship, weight-limited to the gram, carries an unplanned android stowaway, and you must find and jettison expendable cargo to offset her weight before the arithmetic runs out. 94 percent over 48 reviews.",
+      h1a: "A weight-limited emergency ship discovers an unplanned stowaway. ",
+      h1flip: "She is not fragile, and the arithmetic still has to balance",
+      h1b: ".",
+      lede: "The store page opens with a line attributed to a character named Souya: this universe may be cold, but it is three degrees warmer than absolute zero. Per Steam's own listing, this is an equation-roguelite adventure, and the developer names its inspiration directly, Tom Godwin's 1950s SF classic The Cold Equations and the 'equation story' genre it spawned: an emergency spacecraft loaded to its exact weight limit with cargo meant to save lives, an unplanned stowaway discovered aboard, and the arithmetic that says either the stowaway is jettisoned to die in space or everyone waiting for the cargo dies instead. Cold Bed on Route follows that basic shape, set aboard a tiny, ultra-lightweight emergency boat shaped more like a plant seed than a ship, but changes who the stowaway is: not the original's frail human girl, but Doggy, an artificial human with beast ears to mark her apart from humans, flesh and bone and blood, but far stronger and smarter. Working with her, you search the ship for anything expendable and jettison it to offset her weight, described by the store text with a comic, almost embarrassed hesitation, considerably heavier than it looks, and try to prove the universe isn't entirely cold yet. Made and self-published by the solo developer Old Retina Museum, whose five-title Steam catalogue is entirely self-developed and self-published. Priced at ¥300, it is Very Positive at 94 percent across 48 reviews (45 positive, 3 negative), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure names a single narrow use, generative AI assisted an initial localization draft that the developer then manually reviewed and corrected, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 48 reviews, 40 are in Japanese and just 3 are in English, and no genuine English-language coverage of this specific game exists yet, though AUTOMATON WEST has covered the developer's other, upcoming title.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Knowing the source material's shape in advance, someone dies for the math to work, changes how you read every item you find. You're not hunting for loot, you're negotiating with a sentence that hasn't been passed yet.",
+        "Replacing a fragile human stowaway with an android stronger than the pilot doesn't remove the tension, it relocates it: the danger isn't that she'll die easily, it's that the weight she represents is real regardless of how capable she is.",
+        "The comic hesitation in how the store text describes her weight, considerably heavier than it looks, is a small tell for the whole game's approach: taking a genuinely bleak premise seriously without refusing it a sense of humor.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want The Cold Equations' premise taken seriously and then pushed somewhere the original refused to go, the same cold arithmetic aimed at a different, less fatalistic outcome",
+        "You want a roguelite where every choice is irreversible within a run and the resource you're managing is also a character you're getting to know",
+        "You want small and self-published: solo developer Old Retina Museum's five-title Steam catalogue is entirely self-developed, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 94 percent over 48 reviews is solid but short of this site's ideal 95",
+        "You want a game already found in the West; of 48 reviews only 3 are in English, and no coverage of this specific title exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "霜夜ゆく - 『冷たい方程式』を直接の着想元とする、重量制限ぎりぎりの緊急艇に人造人間の密航者が乗り込む方程式ローグライト。ソロ開発者Old Retina Museum制作、価格¥300。48件で好評率94%、ほぼ日本語",
+      description: "トム・ゴドウィン『冷たい方程式』を直接の着想元とする方程式ローグライトアドベンチャー。ぎりぎりの重量で航行する超小型緊急艇に予定外の人造人間の密航者が乗り込み、算術が尽きる前に不用品を探して投棄し重量を補わなければならない。48件のレビューで好評率94%。",
+      h1a: "重量制限ぎりぎりの緊急艇に、予定外の密航者が見つかる。",
+      h1flip: "彼女はか弱くない。それでも算術は帳尻を合わせなければならない",
+      h1b: "。",
+      lede: "ストアページは、ソウヤという人物の台詞から始まる——この宇宙は冷たいかもしれないが、絶対零度よりは3度暖かい。Steam自身の表記によれば、本作は方程式・ローグライト・アドベンチャーゲームで、開発者自身がその着想を明言している——トム・ゴドウィンによる50年代のSF小説の金字塔『冷たい方程式』と、そこから派生した「方程式もの」というジャンル。多数の人命を賭した荷物を持ってギリギリの重量で航行する宇宙船に、予定外の密航者が見つかる。密航者を放り出さなければ宇宙船は目的地へ辿り着けず人命救助ができない、しかし放り出せば密航者は死ぬ——その算術が絶対であるという構造だ。『霜夜ゆく』はこの基本形を踏襲しながら、舞台は宇宙船というより植物の種のような形状の超小型・超軽量の最終緊急艇に置き、密航者そのものを書き換える——原作の「か弱い少女」ではなく、人間との区別のために獣の耳が生えた人造人間ドギーだ。肉と骨と血を備えているが、人間より遥かに強靭で聡明である。彼女と協力しながら、船内の不用品を探して投棄し、彼女を載せたことで生じた重量——「見た目よりいくらか、だいぶん、その、なんというか、かなり重い」とストア文言が照れ隠しのように書く重量——を補い、宇宙がまだ完全には冷え切っていないことを証明しようとする。制作・自社発売はソロ開発者Old Retina Museum。Steamに並ぶ5作品はすべて自社開発・自社発売である。価格は¥300。48件のレビュー(好評45件・不評3件)で好評率94%(「非常に好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄は、ローカライズの下訳を生成AIが支援しその後開発者が手動で確認・修正した、という単一の狭い用途のみを名指ししており、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点。48件の内訳は日本語40件・英語わずか3件で、本作固有の正真の英語記事はまだ存在しないが、AUTOMATON WESTは同開発者の次回作については既に取り上げている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "原作の構造——数式を成立させるために誰かが死ぬ——をあらかじめ知っていることが、見つけるすべての品物の読み方を変える。あなたは戦利品を漁っているのではなく、まだ言い渡されていない一つの判決と交渉しているのだ。",
+        "か弱い人間の密航者を、パイロットより遥かに強靭な人造人間へ置き換えても、緊張は消えない。ただ場所が移るだけだ——危険なのは彼女が簡単に死ぬことではなく、どれだけ有能であろうと彼女が背負う重量そのものが現実である、という点にある。",
+        "彼女の重量を「見た目よりいくらか、だいぶん、その、なんというか、かなり重い」と照れ隠しのように書くストア文言のユーモアは、本作全体の姿勢を小さく物語っている——本当に暗い前提を、真面目に扱いながらも、笑いを手放さない。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "『冷たい方程式』の前提を真面目に受け止めた上で、原作が拒んだ場所へ押し進めたものが欲しい人——同じ冷たい算術を、より宿命論的でない別の結末へ向ける",
+        "1周ごとの選択が取り消せず、管理する資源そのものが親しくなっていくキャラクターでもあるローグライトが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ開発者Old Retina MuseumのSteam5作品はすべて自社開発、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——48件で好評率94%は手堅いが、当サイトの理想95には一歩届かない",
+        "既に西で見つかっているゲームが欲しい人——48件のうち英語はわずか3件で、本作固有の記事はまだ存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14028,6 +14146,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "the-cold-equations": {
+    wikidata: "https://www.wikidata.org/wiki/Q1249132",
+    blurb: {
+      en: "The Cold Equations, a 1954 short story by Tom Godwin, established the genre now called 'equation stories': an emergency spacecraft is loaded to the exact weight its fuel allows, carrying medicine to save lives, when an unauthorized stowaway is discovered aboard, and the arithmetic is absolute, the ship cannot reach its destination overweight, so the stowaway must be jettisoned to die in space or everyone the medicine was meant for dies instead. It is the origin of the lineage of stories where a cold, unappealable calculation, not a villain, is the thing the protagonist has to survive.",
+      ja: "『冷たい方程式』は、トム・ゴドウィンによる1954年のSF短編小説で、今日「方程式もの」と呼ばれるジャンルを確立した——燃料が許すぎりぎりの重量まで積んだ緊急宇宙船が、人命を救う薬を運んでいる最中に、無許可の密航者が発見される。算術は絶対で、重量超過のままでは目的地に届かない。だから密航者を宇宙に放り出して死なせるか、さもなくば薬を待つ全員が代わりに死ぬかのどちらかしかない。悪役ではなく、覆せない冷たい計算こそが主人公が生き延びねばならない相手である、という物語群の系譜の原点である。",
+    },
+  },
   "cook-serve-delicious": {
     steam: "247020",
     blurb: {
