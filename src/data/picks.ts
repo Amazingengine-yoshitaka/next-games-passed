@@ -13845,6 +13845,116 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "cook-for-me-grandpa": {
+    published: "2026-08-14",
+    publishAt: "2026-08-14",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "freeform-recipe-ai-critic"。ストア本文実測: 300種類以上の食材と100種類
+    //   以上の調理スキルを自由に組み合わせてレシピを創り、孫たちに届ける。孫は感想と点数で
+    //   応え、「ただ褒めるだけではなく、自分の好みに合わせて細かくコメントしてくれる」。
+    //   AI Generated Content Disclosure欄自体に「あなたの作ったレシピをAI（LLM）が評価し、
+    //   その感想を教えてくれます」と明記されている——自由創作した入力を、キャラクターの
+    //   人格を通してAIが自然言語で審査する、という一点が本作の核だと判断した。
+    // lineageは新規anchor "cook-serve-delicious" を作る。手順を正確にこなすことを料理ゲームの
+    //   核に据えた原点として採用。本作固有の「自由な組み合わせをAIが個性を持って審査する」
+    //   という仕組みは、影響を公言されたものではない当サイト独自の観察である(自信度: 中)。
+    // developer=publisher=Kamekichi Games(個人開発者かめきち)。Steamのdeveloper検索を自分で
+    //   叩き、この名義の登録は2件(本作と体験版)のみで、developer=publisherが一致することを
+    //   確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ19件(Adventure/Text-Based/
+    //   Visual Novel/Sandbox/2D/Cooking/Singleplayer/Cute/Indie/Family Friendly/Collectathon/
+    //   Modern/Casual/Simulation/Choices Matter/Multiple Endings/Artificial Intelligence/
+    //   Resource Management/Immersive Sim)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄には「このゲームはあなたの作ったレシピをAI（LLM）が
+    //   評価し、その感想を教えてくれます」とだけあり(日英同一)、レシピ審査というゲームプレイ
+    //   機能そのものへの利用に限定された開示であり、アセット生成(画像・音声・文章)の主体的
+    //   利用ではない。基準(5)の「単一カテゴリ限定は許容」の精神に沿うと判断した。is_free=
+    //   false・カートに入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、
+    //   リリース済みで正式版として売られている(発売日は2025年11月4日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Cook for Me Grandpa"が
+    //   1件ヒットするが、開いて確認したところDordogneのアートディレクターインタビュー記事で
+    //   完全に無関係な誤ヒットだった。"Kamekichi Games"は0件。
+    // west_unreached: supported_languagesは英語・日本語。appreviews API実測で全12件のうち
+    //   日本語10件・英語2件・中華圏0件・韓国語0件。英語UIは実装済みで西側読者は遊べるが到達
+    //   していないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字の脆さ: 12件は当サイトが扱う最低ラインに近い薄さである。好評率100%であっても
+    //   先に開示する。
+    meta: { genre: "freeform-recipe-ai-critic", lineage: "cook-serve-delicious", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 12, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Cook for Me Grandpa!",
+        name_ja: "おじいちゃん!ごはんつくって!",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3701370/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a warm novel-plus-cooking-sim about serving food to your AI grandchildren. Collect over 300 ingredients and 100 cooking skills, freely combine them into recipes, and deliver them to your grandchildren, who respond with feedback and a score, sometimes strict, sometimes gentle, just like a real family. The store text is explicit about the mechanism: an AI (LLM) evaluates the recipe you've built and tells you what it thinks. Recipes are assembled as an explicit ordered sequence of steps, technique applied to ingredient, with a Simple mode and a fussier Kodawari mode exposing finer parameters like heat and duration, and the ingredients themselves are all things available at an ordinary Japanese supermarket, so real cooking knowledge transfers in both directions. A Marathon mode throws random prompts at you, and a network mode lets two players' grandchildren judge whose dish wins, live, with requests arriving on the spot. Recipes can be published and searched worldwide through the official site, or kept private. Made and self-published by the solo developer Kamekichi Games, whose only Steam listing besides this game is its demo. Priced at ¥680 at a launch-adjacent discount, it is Positive at 100 percent across 12 reviews (12 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure is a single narrow line, an LLM evaluates the recipe you built, describing a gameplay function rather than any generated art or text asset, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 12 reviews, 10 are in Japanese and just 2 are in English.",
+        desc_ja: "Steam自身の表記によれば、本作はAIの孫に料理をふるまう、心あたたまるノベル＋料理シミュレーションゲームだ。300種類以上の食材と100種類以上の調理スキルを集め、自由に組み合わせてレシピを創り、孫たちに届ける。料理を食べた孫たちは、感想と点数で応えてくれる——ときに厳しく、ときに優しく、まるで本物の家族のように。ストア文言は仕組みを明確に述べている——このゲームはあなたの作ったレシピをAI（LLM）が評価し、その感想を教えてくれる。レシピは「手順を技法と食材の組み合わせとして順番に並べる」形で組み立てられ、シンプルモードと、火力や時間といった細かいパラメータまで扱えるこだわりモードがある。食材は日本のスーパーで手に入るものばかりで、現実の料理知識がゲームと双方向にやり取りされる。ランダムなお題に挑む「マラソンモード」や、2人のプレイヤーの孫がその場でどちらの料理が勝ちか判定してくれるネットワーク対戦モードもある。レシピは公式サイトを通じて世界中で公開・検索でき、非公開にもできる。制作・自社発売はソロ開発者Kamekichi Games。Steamに並ぶのは本作と体験版のみである。価格は¥680(発売直後の割引価格)。12件のレビュー(好評12件・不評0件、Steam自身のレビューAPI実測)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄には「あなたの作ったレシピをAI（LLM）が評価し、その感想を教えてくれる」という1行のみがあり、生成されたアートや文章アセットではなく、ゲームプレイの機能そのものを指している。Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。12件の内訳は日本語10件・英語わずか2件だ。",
+      },
+      {
+        name_en: "Cook, Serve, Delicious!",
+        name_ja: "Cook, Serve, Delicious!",
+        status: "established",
+        steam: "https://store.steampowered.com/app/247020/Cook_Serve_Delicious/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Cook, Serve, Delicious!, the Vertigo Gaming game that established the indie cooking sim as a game of exact procedure, reading an order and executing the correct sequence of steps under pressure. Cook for Me Grandpa! is not an official Cook, Serve, Delicious! work, but it carries the same idea that a dish is a procedure you have to get right forward into a very different shape: there is no order to fill and no clock, only free combination, and the judgment that matters is not a checkmark but an AI-voiced grandchild's personal, natural-language reaction to what you chose to make.",
+        desc_ja: "この味の原点——Cook, Serve, Delicious!。注文を読み、正しい手順を圧をかけながらこなす、インディー料理シムを「正確な手続き」として確立したVertigo Gamingの作品。おじいちゃん!ごはんつくって!は公式のCook, Serve, Delicious!作品ではないが、料理が正しくこなすべき手続きであるという同じ発想を、まったく違う形へ引き継いでいる——満たすべき注文も時計もなく、あるのは自由な組み合わせだけで、そこで問われる判定はチェックマークではなく、AIの声を持つ孫が、あなたが選んだ作品に対して個人的に返す自然言語の反応なのだ。",
+      },
+    ],
+    en: {
+      title: "Cook for Me Grandpa! - freely combine 300+ ingredients and 100+ techniques into a recipe, and an AI-voiced grandchild judges it with a personal, natural-language reaction. Made by solo developer Kamekichi Games for ¥680. 100 percent over 12 reviews, mostly Japanese",
+      description: "A cozy novel-plus-cooking-sim where you freely combine ingredients and techniques into a recipe, and an LLM playing your grandchildren evaluates it in natural language, sometimes strict, sometimes gentle. Real supermarket ingredients, a fussier Kodawari mode, and a live network judging mode. 100 percent over 12 reviews.",
+      h1a: "Freely combine 300-plus ingredients and 100-plus techniques into a recipe. ",
+      h1flip: "An AI-voiced grandchild judges it with a personal, natural-language reaction",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a warm novel-plus-cooking-sim about serving food to your AI grandchildren. Collect over 300 ingredients and 100 cooking skills, freely combine them into recipes, and deliver them to your grandchildren, who respond with feedback and a score, sometimes strict, sometimes gentle, just like a real family. The store text is explicit about the mechanism: an AI (LLM) evaluates the recipe you've built and tells you what it thinks. Recipes are assembled as an explicit ordered sequence of steps, technique applied to ingredient, with a Simple mode and a fussier Kodawari mode exposing finer parameters like heat and duration, and the ingredients themselves are all things available at an ordinary Japanese supermarket, so real cooking knowledge transfers in both directions. A Marathon mode throws random prompts at you, and a network mode lets two players' grandchildren judge whose dish wins, live, with requests arriving on the spot. Recipes can be published and searched worldwide through the official site, or kept private. Made and self-published by the solo developer Kamekichi Games, whose only Steam listing besides this game is its demo. Priced at ¥680 at a launch-adjacent discount, it is Positive at 100 percent across 12 reviews (12 positive, 0 negative), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure is a single narrow line, an LLM evaluates the recipe you built, describing a gameplay function rather than any generated art or text asset, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 12 reviews, 10 are in Japanese and just 2 are in English, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Being judged by a fixed rubric feels like passing a test. Being judged by an AI-voiced grandchild whose reaction changes with their own stated preferences feels like being read, which makes even a joke recipe worth trying just to see what it says.",
+        "Building a recipe as an ordered list of technique-on-ingredient steps, rather than picking a dish off a menu, turns cooking into composition. The gap between a decent recipe and a good one is legible, step by step, not hidden inside a black box.",
+        "Using real supermarket ingredients means the game's freeform sandbox and your actual kitchen knowledge feed each other, recreating a real dish here can teach you something you didn't know, and inventing a joke dish here can make you wonder if it would actually work.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Cook, Serve, Delicious's core idea, that a dish is a procedure you build correctly, freed from the clock and the fixed order sheet, replaced by open combination",
+        "You want to be judged by personality rather than a checklist, an AI-voiced grandchild whose feedback is personal and varies with what you chose to make",
+        "You want small and self-published: solo developer Kamekichi Games' only Steam listing besides this game is its demo, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 12 reviews is close to this site's floor even at a perfect score",
+        "You want a game already found in the West; of 12 reviews only 2 are in English, and no genuine English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "おじいちゃん!ごはんつくって! - 300種類以上の食材と100種類以上のスキルを自由に組み合わせてレシピを創り、AIの声を持つ孫が個人的な自然言語の反応で審査する。ソロ開発者Kamekichi Games制作、価格¥680。12件で好評率100%、ほぼ日本語",
+      description: "食材と調理スキルを自由に組み合わせてレシピを創る、心あたたまるノベル＋料理シム。AIが孫として自然言語で評価し、ときに厳しく、ときに優しく応える。実在のスーパー食材、こだわりモード、ネット対戦の判定モードも備える。12件のレビューで好評率100%。",
+      h1a: "300種類以上の食材と100種類以上のスキルを自由に組み合わせ、レシピを創る。",
+      h1flip: "AIの声を持つ孫が、個人的な自然言語の反応で審査する",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作はAIの孫に料理をふるまう、心あたたまるノベル＋料理シミュレーションゲームだ。300種類以上の食材と100種類以上の調理スキルを集め、自由に組み合わせてレシピを創り、孫たちに届ける。料理を食べた孫たちは、感想と点数で応えてくれる——ときに厳しく、ときに優しく、まるで本物の家族のように。ストア文言は仕組みを明確に述べている——このゲームはあなたの作ったレシピをAI（LLM）が評価し、その感想を教えてくれる。レシピは「手順を技法と食材の組み合わせとして順番に並べる」形で組み立てられ、シンプルモードと、火力や時間といった細かいパラメータまで扱えるこだわりモードがある。食材は日本のスーパーで手に入るものばかりで、現実の料理知識がゲームと双方向にやり取りされる。ランダムなお題に挑む「マラソンモード」や、2人のプレイヤーの孫がその場でどちらの料理が勝ちか判定してくれるネットワーク対戦モードもある。レシピは公式サイトを通じて世界中で公開・検索でき、非公開にもできる。制作・自社発売はソロ開発者Kamekichi Games。Steamに並ぶのは本作と体験版のみである。価格は¥680(発売直後の割引価格)。12件のレビュー(好評12件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄には「あなたの作ったレシピをAI（LLM）が評価し、その感想を教えてくれる」という1行のみがあり、生成されたアートや文章アセットではなく、ゲームプレイの機能そのものを指している。Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点。12件の内訳は日本語10件・英語わずか2件で、本作についての正真の英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "決まったルーブリックで採点されるのは、試験に合格するような手触りだ。AIの声を持つ孫が、自分自身の好みに応じて反応を変えてくれるのは、読まれているような手触りになる。だからふざけたレシピでさえ、何を言われるか見てみたくなる。",
+        "メニューから料理を選ぶのではなく、手順を技法と食材の組み合わせとして順番に並べてレシピを組み立てることは、料理を「作曲」に変える。まあまあのレシピと良いレシピの差は、ブラックボックスの中に隠されているのではなく、一手順ずつ見て取れる。",
+        "実在のスーパーの食材を使うことは、ゲームの自由なサンドボックスと自分の実際の料理知識を互いに養う——ここで本物の料理を再現すれば知らなかったことを学べるし、ここでふざけた料理を発明すれば本当にできるのか気になってくる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Cook, Serve, Delicious!の核心——料理は正しく組み立てる手続きである——を、時計と決まった注文から解放し、自由な組み合わせに置き換えたものが欲しい人",
+        "チェックリストではなく人格に審査されたい人——AIの声を持つ孫のフィードバックは個人的で、何を作るか選んだ内容によって変わる",
+        "小さくて自主出版のものが欲しい人——ソロ開発者Kamekichi Gamesの本作以外のSteamタイトルは体験版のみで、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——12件は満点であっても当サイトの最低ラインに近い",
+        "既に西で見つかっているゲームが欲しい人——12件のうち英語はわずか2件で、正真の英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13918,6 +14028,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "cook-serve-delicious": {
+    steam: "247020",
+    blurb: {
+      en: "Cook, Serve, Delicious!, developed and published by Vertigo Gaming Inc. in 2012, established the indie cooking sim as a game about precise, keystroke-level execution: reading an order, then correctly performing the exact sequence of prep steps it demands, with speed and accuracy as the entire measure of success. It is the origin of the lineage of cooking games where the dish itself is not decoration but a procedure you have to get right, step by step.",
+      ja: "『Cook, Serve, Delicious!』は、Vertigo Gaming Inc.が開発・発売した2012年の作品で、インディー料理シムを「正確なキー入力レベルの実行」を核とするゲームとして確立した——注文を読み、それが要求する下ごしらえの手順を正確な順序でこなす。速さと正確さだけが成功の尺度になる。料理そのものが飾りではなく、一手順ずつ正しくこなさなければならない手続きである、という料理ゲーム群の系譜の原点である。",
+    },
+  },
   "doko-demo-issyo": {
     wikidata: "https://www.wikidata.org/wiki/Q11273754",
     blurb: {
