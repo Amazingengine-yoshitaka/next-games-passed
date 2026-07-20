@@ -13402,6 +13402,118 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "glitchia": {
+    published: "2026-08-12",
+    publishAt: "2026-08-12",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "corrupt-the-game-within-horror"。ストア本文実測: 「2Dのレトロゲームが
+    //   グリッチで狂うと、それは三次元に侵食。しかし狂わせなければ、大切なものを見つけられない
+    //   ――」——目の前のレトロゲームをプレイしながら背後の怪異にも気を配り、そのレトロゲーム
+    //   自体をグリッチで壊すことが攻略になる、という二重構造が本作の核だと判断した。
+    // lineageは新規anchor "pony-island" を作る。「閉じ込められているゲームを壊すことでしか
+    //   抜け出せない」という設計を確立した原点として採用。本作固有の「背後を警戒しながら劇中
+    //   ゲームを操作する」という3D/2Dの同時進行は、影響を公言されたものではない当サイト独自の
+    //   観察である(自信度: 中)。
+    // developer=publisher=Midori Games/みどりげーむず(ソロ開発者・十湖美鳥/Midoriko名義)。
+    //   Steamのdeveloper検索を自分で叩き、この名義の登録は8件(No Ghost in Stay Home / No
+    //   Ghost in Circus Caravan / No Ghost in Sky Elevator / TheTravelGame / Cross Soul /
+    //   GLiTCHiA / Little Eternal Chronicle / GLiTCHiA Demo)で、全てdeveloper=publisherが
+    //   一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ14件(Horror/Psychedelic/
+    //   Story Rich/Adventure/Exploration/2D/Pixel Graphics/Retro/Action-Adventure/
+    //   Singleplayer/Choose Your Own Adventure/Cute/Indie/Casual)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2026年6月23日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"GLiTCHiA"は0件、
+    //   "Midori Games"は5件ヒットするが、開いて確認したところRobot Hospice(キャラクター名の
+    //   一致による誤ヒット)・ロリポップチェーンソー・Die by the Blade・The Exit 8・
+    //   忍者ウォリアーという完全に無関係な誤ヒットで、本作とは無関係だった。日本のインディーを
+    //   扱う英語ブログgoodorevengreat.gamesのサイト内検索も"Nothing Found"。
+    // west_unreached: supported_languagesは英語・イタリア語・スペイン語・繁体字中国語・
+    //   日本語・韓国語。appreviews API実測で全11件のうち日本語7件・英語3件・繁体字1件・
+    //   簡体字0件・韓国語0件。非日本語合計(4)は日本語(7)を超えないため到達判定の閾値には
+    //   触れない。obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字の脆さ: 11件は当サイトが扱う最低ラインに近い薄さである。好評率90.9%であっても
+    //   先に開示する。実際のレビュー本文を確認したところ、プレイ時間・ネタバレタグ・前作
+    //   「絶対に幽霊なんて出ないおるすばん」シリーズへの言及など、正真の日本語話者による
+    //   自然な口語表現であることを実測確認済み。
+    meta: { genre: "corrupt-the-game-within-horror", lineage: "pony-island", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 11, positivePct: 91 } },
+    games: [
+      {
+        name_en: "GLiTCHiA",
+        name_ja: "GLiTCHiA",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4165180/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a horror adventure with a two-part premise stated up front: when a 2D retro game goes mad with glitches, that madness bleeds into three dimensions. But without driving it mad, you cannot find what matters. You are at the far edge of a cloud space, a graveyard of games, playing the retro game in front of you while watching your back for whatever is closing in behind. The question the store text poses is whether you can save Aby, hero of an unfinished game abandoned to the wrong ending, and pull them out of it; various games connected by memory appear along the way. Made and self-published by the solo developer Midori Games (also credited as みどりげーむず), whose eight-title Steam catalogue includes an earlier trilogy, No Ghost in Stay Home, No Ghost in Circus Caravan and No Ghost in Sky Elevator, that reviewers of this game reference by name as the same lineage. Priced at ¥1,200, it is Positive at 91 percent across 11 reviews (10 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English, Japanese and several other languages are all supported, so nothing is stopping you. One honest note up front: 11 reviews is close to this site's floor, though reading them directly shows organic, specific Japanese-language commentary, playtime figures, spoiler tags and references to the developer's earlier series, not a thin or hollow review base. Of those 11, 7 are in Japanese and 3 are in English.",
+        desc_ja: "Steam自身の表記によれば、本作は2つの前提を最初に提示するホラーアドベンチャーだ——2Dのレトロゲームがグリッチで狂うと、それは三次元に侵食する。しかし狂わせなければ、大切なものを見つけられない。あなたはクラウド空間の最果て、ゲームたちの墓場にいて、目の前のレトロゲームをプレイしながら、背後に迫るものにも気を配る。ストア文言が投げかける問いは、作りかけて捨てられ、間違ったエンディングを迎えたゲームの主人公「アビ」を、そこから救い出せるかどうか。道中には、記憶で繋がったさまざまなゲームが現れる。制作・自社発売はソロ開発者Midori Games(みどりげーむず名義でも表記)。Steamに並ぶ8作品には、本作のレビュアーたちが同じ系譜として名指しする前作三部作(No Ghost in Stay Home / No Ghost in Circus Caravan / No Ghost in Sky Elevator)も含まれる。価格は¥1,200。11件のレビュー(好評10件・不評1件、Steam自身のレビューAPI実測)で好評率91%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語ほか複数言語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——11件は当サイトの最低ラインに近い薄さだが、直接読むと、プレイ時間・ネタバレタグ・前作シリーズへの言及など、具体的で正真の日本語コメントであり、薄っぺらいレビュー母体ではない。その内訳は日本語7件・英語3件だ。",
+      },
+      {
+        name_en: "Pony Island",
+        name_ja: "ポニー・アイランド",
+        status: "established",
+        steam: "https://store.steampowered.com/app/405640/Pony_Island/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Pony Island, the Daniel Mullins game that established the idea that a game trapping you is something you escape by breaking, not by winning it as designed. GLiTCHiA is not an official Pony Island work, but it carries that same idea forward into its own shape: the retro game you are playing in front of you is what has to be driven into glitches to progress, while a second, three-dimensional threat closes in from behind, so the corruption you are causing and the danger you are managing run on separate clocks at once.",
+        desc_ja: "この味の原点——ポニー・アイランド。自分を閉じ込めているゲームは、意図通りに攻略するのではなく壊すことで抜け出す、という発想を確立したDaniel Mullinsの作品。GLiTCHiAは公式のPony Island作品ではないが、同じ発想を独自の形へ引き継いでいる——目の前でプレイしているレトロゲームこそが、進めるためにグリッチへ狂わせなければならない対象であり、同時に背後からは三次元の脅威が迫ってくる。自分が引き起こす破壊と、対処すべき危険が、別々の時計で同時に進んでいくのだ。",
+      },
+    ],
+    en: {
+      title: "GLiTCHiA - a horror ADV where you play a retro game-within-the-game while watching your back, and driving that inner game into glitches is the only way to find what matters. Made by solo developer Midori Games for ¥1,200. 91 percent over 11 reviews, mostly Japanese",
+      description: "A horror adventure where a corrupted retro game bleeds into a 3D room space. Play the game-within-the-game while watching for what closes in behind you, and deliberately drive it into glitches to save its abandoned hero. 91 percent over 11 reviews, English supported.",
+      h1a: "A 2D retro game glitches, and the madness bleeds into three dimensions. ",
+      h1flip: "Without driving it mad, you cannot find what matters most",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a horror adventure with a two-part premise stated up front: when a 2D retro game goes mad with glitches, that madness bleeds into three dimensions. But without driving it mad, you cannot find what matters. You are at the far edge of a cloud space, a graveyard of games, playing the retro game in front of you while watching your back for whatever is closing in behind. The question the store text poses is whether you can save Aby, hero of an unfinished game abandoned to the wrong ending, and pull them out of it; various games connected by memory appear along the way. Made and self-published by the solo developer Midori Games (also credited as みどりげーむず), whose eight-title Steam catalogue includes an earlier trilogy, No Ghost in Stay Home, No Ghost in Circus Caravan and No Ghost in Sky Elevator, that reviewers of this game reference by name as the same lineage. Priced at ¥1,200, it is Positive at 91 percent across 11 reviews (10 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English, Japanese and several other languages are all supported, so nothing is stopping you. One honest note up front: 11 reviews is close to this site's floor, though reading them directly shows organic, specific Japanese-language commentary, playtime figures, spoiler tags and references to the developer's earlier series, not a thin or hollow review base, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere. Of those 11, 7 are in Japanese and 3 are in English.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most horror games with a threat-behind-you mechanic give you one thing to manage. Here you're managing two clocks at once, the retro game you're actively playing and the thing approaching in three dimensions, and neither one pauses for the other.",
+        "Being told outright that you have to make the inner game worse to get anywhere reframes what 'progress' feels like. Every glitch you deliberately cause reads as a small act of sabotage against something you're also trying to protect.",
+        "The graveyard-of-games framing turns a horror premise into something closer to grief: Aby isn't a villain to defeat, but an abandoned hero stuck in the wrong ending, and the glitching is how you go back and finish what someone else left broken.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Pony Island's core idea, a game you escape by breaking rather than winning, carried into a fresh shape",
+        "You want a horror game that asks you to split attention between two layers at once, an active game-within-the-game and a threat closing in behind you",
+        "You want small and self-published: solo developer Midori Games' eight-title Steam catalogue is entirely self-published, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 11 reviews is close to this site's floor even at a strong rating",
+        "You want a game already found in the West; of 11 reviews only 3 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "GLiTCHiA - 背後を警戒しながら劇中のレトロゲームを操作し、そのゲームをグリッチで狂わせることでしか大切なものを見つけられないホラーADV。ソロ開発者Midori Games制作、価格¥1,200。11件で好評率91%、ほぼ日本語",
+      description: "劇中のレトロゲームが3D空間に侵食するホラーアドベンチャー。目の前のゲームをプレイしながら背後の脅威にも気を配り、意図的にグリッチを起こして見捨てられた主人公を救う。11件のレビューで好評率91%、英語対応。",
+      h1a: "2Dのレトロゲームがグリッチで狂うと、その狂気が三次元に侵食する。",
+      h1flip: "狂わせなければ、大切なものを見つけられない",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は2つの前提を最初に提示するホラーアドベンチャーだ——2Dのレトロゲームがグリッチで狂うと、それは三次元に侵食する。しかし狂わせなければ、大切なものを見つけられない。あなたはクラウド空間の最果て、ゲームたちの墓場にいて、目の前のレトロゲームをプレイしながら、背後に迫るものにも気を配る。ストア文言が投げかける問いは、作りかけて捨てられ、間違ったエンディングを迎えたゲームの主人公「アビ」を、そこから救い出せるかどうか。道中には、記憶で繋がったさまざまなゲームが現れる。制作・自社発売はソロ開発者Midori Games(みどりげーむず名義でも表記)。Steamに並ぶ8作品には、本作のレビュアーたちが同じ系譜として名指しする前作三部作(No Ghost in Stay Home / No Ghost in Circus Caravan / No Ghost in Sky Elevator)も含まれる。価格は¥1,200。11件のレビュー(好評10件・不評1件)で好評率91%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語ほか複数言語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——11件は当サイトの最低ラインに近い薄さだが、直接読むと、プレイ時間・ネタバレタグ・前作シリーズへの言及など、具体的で正真の日本語コメントであり、薄っぺらいレビュー母体ではない。本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。その内訳は日本語7件・英語3件だ。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "背後の脅威を管理させるホラーゲームの多くは、管理対象を1つに絞る。ここでは2つの時計が同時に進む——能動的にプレイしているレトロゲームと、三次元で迫ってくるもの——どちらも相手のために止まってくれない。",
+        "「進むには劇中ゲームを悪化させなければならない」と正面から告げられることが、「進行」の手触りを組み替える。意図的に起こすグリッチの一つひとつが、同時に守ろうともしているものへの小さな破壊行為として響く。",
+        "「ゲームたちの墓場」という枠組みが、ホラーの前提を悲哀に近いものへと変える。アビは倒すべき敵ではなく、間違ったエンディングに取り残された見捨てられた主人公であり、グリッチを起こすことは、誰かが壊したまま置き去りにしたものを、戻ってやり遂げる行為なのだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ポニー・アイランドの核心——ゲームを攻略するのではなく壊すことで脱出する——が、新しい形へ引き継がれたものが欲しい人",
+        "能動的にプレイする劇中ゲームと、背後から迫る脅威という2つの層に同時に注意を割かせるホラーが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ開発者Midori GamesのSteam8作品はすべて自社発売で、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——11件は好評であっても当サイトの最低ラインに近い",
+        "既に西で見つかっているゲームが欲しい人——11件のうち英語はわずか3件で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13475,6 +13587,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "pony-island": {
+    steam: "405640",
+    blurb: {
+      en: "Pony Island, developed and published by Daniel Mullins Games in 2016, established the idea of a game-within-a-game that traps you until you break it: what looks like a cheap arcade cabinet is secretly a prison built by a devil, and progress means deliberately hacking, corrupting and glitching the fake game's own code rather than playing it as intended. It is the origin of the lineage of horror games where the thing you are trapped inside is a broken piece of software, and getting free means making it more broken, not less.",
+      ja: "『ポニー・アイランド』は、Daniel Mullins Gamesが開発・発売した2016年の作品で、「自分を閉じ込めているゲームを、壊すことでしか抜け出せない」という着想を確立した——安っぽいアーケード筐体に見えるものは、実は悪魔が作った牢獄であり、攻略とは、その偽のゲームを意図通りに遊ぶことではなく、意図的にハッキングし、破壊し、グリッチさせることである。閉じ込められている場所そのものが壊れたソフトウェアであり、自由になるにはそれをより壊さねばならない、というホラーゲーム群の系譜の原点である。",
+    },
+  },
   "civilization-1991": {
     wikidata: "https://www.wikidata.org/wiki/Q368286",
     blurb: {
