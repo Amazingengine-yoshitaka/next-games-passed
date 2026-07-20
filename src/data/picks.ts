@@ -12951,6 +12951,119 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "liblade": {
+    published: "2026-08-10",
+    publishAt: "2026-08-10",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "twin-stick-flick-slash"。ストア本文実測: 冒頭に「※注意※プレイには2本の
+    //   アナログスティックを持つコントローラーが必須です。」と明記され、キーボード&マウスでの
+    //   斬撃入力自体が存在しない。「スティックを弾いて、さあ、斬れ！」「スティックを回して敵を
+    //   刻め！」「上手く弾いて敵の攻撃を跳ね返せ！」の3文が機構を要約している——右スティックを
+    //   弾く方向と速度そのものが画面を覆う斬撃になり、回せば複数の敵を薙ぎ払え、タイミングよく
+    //   弾けば敵弾を跳ね返す防御にもなる。この「スティックの動き=斬撃の身振り」が本作の核だと
+    //   判断した。
+    // lineageは新規anchor "metal-gear-rising" を作る。実際にSteamの英語レビュー欄で複数の
+    //   プレイヤーが本作を「Metal Gear Rising: Revengeanceのブレードモードを丸ごと1本の
+    //   ゲームにした」と評していることをこちらで確認した(プレイヤー側の自発的な比較であり、
+    //   開発者が公言した影響ではない)。スティックの動きを狙いではなく斬る身振りとして読む、
+    //   という一致点を採用した(自信度: 中)。
+    // developer=publisher=Eh(個人開発者)。Steamのdeveloper検索を自分で叩き、この名義の登録は
+    //   本作(1736300)1件のみで、大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ19件(RPG/Platformer/Hack and
+    //   Slash/Fantasy/Arcade/Action/Adventure/Side Scroller/Exploration/Sci-fi/Combat/
+    //   Difficult/Singleplayer/3D/Action RPG/Spectacle fighter/2.5D/2D Platformer/Linear/
+    //   Controller)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2021年11月6日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"LIBLADE"1件ヒットするが、
+    //   開いて確認したところ2021年12月のSteamウィンターセール値引きタイトルを列挙しただけの
+    //   記事内リンクで、本作固有の記事・論評ではない(条件(10)の対象である編集記事には
+    //   当たらない、自動生成同然の一覧掲載)。Metacriticのページにも批評家レビューは1件も
+    //   無いことを確認した。日本のインディーを扱う英語ブログgoodorevengreat.gamesの
+    //   サイト内検索も"Nothing Found"。
+    // west_unreached: supported_languagesは英語・日本語。appreviews API実測で全120件のうち
+    //   日本語71件・英語39件・簡体字3件・繁体字0件・韓国語0件。非日本語合計(42)は日本語(71)を
+    //   超えないため到達判定の閾値には触れないが、英語レビューが39件と一定数あることも含め
+    //   正直に開示し、obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字について: 120件で好評率93.3%(非常に好評)は当サイトの理想95%にはやや届かないが、
+    //   最低ライン88%は上回る。
+    meta: { genre: "twin-stick-flick-slash", lineage: "metal-gear-rising", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 120, positivePct: 93 } },
+    games: [
+      {
+        name_en: "LIBLADE",
+        name_ja: "LIBLADE",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1736300/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page opens with a warning before anything else: a controller with two analog sticks is required to play. There is no keyboard-and-mouse slash input at all. What follows is the whole pitch in three lines: flick the stick and cut; rotate the stick and carve through enemies; flick it well and bounce their attacks back. The right stick isn't pointing a weapon, it's the slash itself, screen-covering and directional, and turning it into a full circle sweeps through a crowd rather than one target. Progression comes from exploring linear stages, defeating enemies to grow a skill tree, and unlocking new slash techniques. Made and self-published by the solo developer Eh, whose only Steam listing is this game. Priced at ¥718, it is Very Positive at 93 percent across 120 reviews (112 positive, 8 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you, apart from needing that second stick. Of its 120 reviews, 71 are in Japanese and 39 are in English, a real minority but not a small one, worth disclosing plainly; the game has one AUTOMATON WEST mention, in a 2021 Steam Winter Sale roundup that lists it among dozens of discounted titles with only a link and price, not a dedicated feature, and Metacritic shows no critic reviews at all.",
+        desc_ja: "ストアページは何よりも先に、注意書きから始まる——プレイには2本のアナログスティックを持つコントローラーが必須。キーボード&マウスでの斬撃入力自体が存在しない。続く売り文句は3行に要約される——スティックを弾いて、さあ、斬れ。スティックを回して敵を刻め。上手く弾いて敵の攻撃を跳ね返せ。右スティックは武器の狙いをつけるものではなく、斬撃そのものであり、画面を覆うほど大きく、方向を持つ。それを一周させれば、1体だけでなく群れごと薙ぎ払える。進行はエリア探索と敵の撃破でスキルツリーを育て、新たな斬撃技を覚えていく形だ。制作・自社発売はソロ開発者Eh。Steamに並ぶのは本作のみである。価格は¥718。120件のレビュー(好評112件・不評8件、Steam自身のレビューAPI実測)で好評率93%(非常に好評)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、2本目のスティックさえあれば遊ぶのを止めるものは何もない。120件の内訳は日本語71件・英語39件で、少数とは言えない割合であり正直に開示しておく。AUTOMATON WESTには1件だけ言及があるが、2021年のSteamウィンターセールの値引きタイトルを何十本も列挙した記事内のリンクで、本作固有の特集記事ではない。Metacriticには批評家レビューが1件も存在しない。",
+      },
+      {
+        name_en: "Metal Gear Rising: Revengeance",
+        name_ja: "METAL GEAR RISING: REVENGEANCE",
+        status: "established",
+        steam: "https://store.steampowered.com/app/235460/METAL_GEAR_RISING_REVENGEANCE/",
+        tag_en: "The critical echo",
+        tag_ja: "批評的な木霊",
+        desc_en: "The origin of this taste: Metal Gear Rising: Revengeance, the PlatinumGames game that established Blade Mode, a slowed-time state where the stick draws the actual line of a cut rather than just pointing a weapon. LIBLADE is not an official Metal Gear Rising work, and this lineage is a comparison this site draws from what its own English-language Steam reviewers independently say, several describing it as Blade Mode turned into an entire game; the shared idea is a stick's motion read as a cutting gesture, stretched here across every fight rather than one mode within a larger one.",
+        desc_ja: "この味の原点——METAL GEAR RISING: REVENGEANCE。時間が遅くなった状態で、スティックが狙いではなく切断そのものの軌跡を描く「ブレードモード」を確立した、PlatinumGamesの作品。LIBLADEは公式のMetal Gear Rising作品ではなく、この系譜は当サイトが本作の英語レビュー欄自体から引いた比較である——複数のプレイヤーが自発的に「ブレードモードを丸ごと1本のゲームにしたようなもの」と評している。共有しているのは、スティックの動きを「斬る身振り」として読む、という発想であり、それをここでは1つのモードではなく、すべての戦いへと引き伸ばしている。",
+      },
+    ],
+    en: {
+      title: "LIBLADE - flick the right stick and the slash covers the screen, rotate it and carve through a crowd, time it right and bounce enemy attacks back. Made by solo developer Eh for ¥718. 93 percent over 120 reviews",
+      description: "A twin-stick action game where the right stick isn't an aim, it's the slash itself: flick it for a screen-covering cut, rotate it to carve through multiple enemies, time it well to deflect attacks. Requires a controller with two analog sticks. 93 percent over 120 reviews, English supported.",
+      h1a: "Flick the right stick and the slash covers the screen. ",
+      h1flip: "Rotate it and carve through a crowd, time it right and bounce attacks back",
+      h1b: ".",
+      lede: "The store page opens with a warning before anything else: a controller with two analog sticks is required to play. There is no keyboard-and-mouse slash input at all. What follows is the whole pitch in three lines: flick the stick and cut; rotate the stick and carve through enemies; flick it well and bounce their attacks back. The right stick isn't pointing a weapon, it's the slash itself, screen-covering and directional, and turning it into a full circle sweeps through a crowd rather than one target. Progression comes from exploring linear stages, defeating enemies to grow a skill tree, and unlocking new slash techniques. Made and self-published by the solo developer Eh, whose only Steam listing is this game. Priced at ¥718, it is Very Positive at 93 percent across 120 reviews (112 positive, 8 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you, apart from needing that second stick. One honest note: of its 120 reviews, 71 are in Japanese and 39 are in English, a real minority but not a small one. The game has exactly one AUTOMATON WEST mention, buried in a 2021 Steam Winter Sale roundup listing dozens of discounted titles with only a link and price, not a dedicated feature, and Metacritic shows no critic reviews at all.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most action games treat a stick as a pointer, aim here, move there. This one treats the flick itself as the weapon, so the physical gesture of snapping the stick in a direction is what determines the cut, not a button press that happens to be aimed correctly.",
+        "Rotating the stick to sweep through a crowd changes what 'reading the room' means mid-fight: the shape you trace with your thumb is the shape the slash takes, so crowd control is a drawing problem as much as a combat one.",
+        "Turning that same flick into a deflect, timed against an incoming attack, means offense and defense are the same physical motion at different moments, not two separate systems you switch between.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Metal Gear Rising's Blade Mode, the idea that a stick's motion is a cutting gesture, stretched across an entire game instead of one mode within a larger one",
+        "You own a controller with two full analog sticks and want a game built entirely around what that specific hardware can do, not adapted from keyboard and mouse",
+        "You want small and self-published: solo developer Eh's only Steam listing is this game, content descriptors completely empty",
+      ],
+      bad: [
+        "You want to play with keyboard and mouse; the store page states up front that a twin-stick controller is required",
+        "You want a game already found in the West; of 120 reviews 39 are in English, and the only AUTOMATON WEST mention is a buried sale-roundup link, not a feature",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "LIBLADE - 右スティックを弾けば斬撃が画面を覆い、回せば群れを薙ぎ払い、タイミングよく弾けば敵の攻撃を跳ね返す。ソロ開発者Eh制作、価格¥718。120件で好評率93%",
+      description: "右スティックが狙いではなく斬撃そのものになるツインスティックアクション。弾けば画面を覆う斬撃、回せば複数の敵を薙ぎ払い、タイミングよく弾けば攻撃を跳ね返す。2本のアナログスティックを持つコントローラーが必須。120件のレビューで好評率93%、英語対応。",
+      h1a: "右スティックを弾けば、斬撃が画面を覆う。",
+      h1flip: "回せば群れを薙ぎ払い、タイミングよく弾けば攻撃を跳ね返す",
+      h1b: "。",
+      lede: "ストアページは何よりも先に、注意書きから始まる——プレイには2本のアナログスティックを持つコントローラーが必須。キーボード&マウスでの斬撃入力自体が存在しない。続く売り文句は3行に要約される——スティックを弾いて、さあ、斬れ。スティックを回して敵を刻め。上手く弾いて敵の攻撃を跳ね返せ。右スティックは武器の狙いをつけるものではなく、斬撃そのものであり、画面を覆うほど大きく、方向を持つ。それを一周させれば、1体だけでなく群れごと薙ぎ払える。進行はエリア探索と敵の撃破でスキルツリーを育て、新たな斬撃技を覚えていく形だ。制作・自社発売はソロ開発者Eh。Steamに並ぶのは本作のみである。価格は¥718。120件のレビュー(好評112件・不評8件)で好評率93%(非常に好評)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、2本目のスティックさえあれば遊ぶのを止めるものは何もない。正直に一点。120件の内訳は日本語71件・英語39件で、少数とは言えない割合だ。AUTOMATON WESTにはちょうど1件だけ言及があるが、2021年のSteamウィンターセールの値引きタイトルを何十本も列挙した記事内のリンクにすぎず、本作固有の特集ではない。Metacriticには批評家レビューが1件も存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "多くのアクションゲームはスティックを「狙い」として扱う——ここで狙い、あちらへ移動する。本作は弾く動作そのものを武器として扱う。方向へスティックを弾く物理的な身振りそのものが斬撃を決めるのであって、たまたま正しく狙えたボタン入力ではない。",
+        "スティックを回して群れを薙ぎ払うことは、戦闘中の「場を読む」の意味を変える。親指で描く軌跡の形が、そのまま斬撃の形になる。群れの制御は、戦闘の問題であると同時に、描画の問題でもある。",
+        "同じ弾く動作を、迫る攻撃に合わせて跳ね返しにも使えることは、攻撃と防御が別のシステムを切り替えるのではなく、異なる瞬間の同じ物理的動作であることを意味する。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "METAL GEAR RISING: REVENGEANCEのブレードモード——スティックの動きが斬る身振りである、という発想——が、1つのモードではなくゲーム全体に引き伸ばされたものが欲しい人",
+        "2本のフルアナログスティックを持つコントローラーを所有し、キーボード&マウスからの移植ではなく、その特定のハードウェアだけを前提に組まれたゲームが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ開発者EhのSteamタイトルは本作のみで、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "キーボード&マウスで遊びたい人——ストアページが冒頭でツインスティックコントローラー必須と明言している",
+        "既に西で見つかっているゲームが欲しい人——120件のうち39件は英語で、AUTOMATON WESTの唯一の言及もセール一覧に埋もれたリンクにすぎず特集ではない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13024,6 +13137,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "metal-gear-rising": {
+    steam: "235460",
+    blurb: {
+      en: "Metal Gear Rising: Revengeance, developed by PlatinumGames and published by KONAMI in 2013, established Blade Mode: a slowed-time state where the analog stick no longer just points a weapon but draws the actual line of a cut, freeform and directional, letting the player decide exactly how an enemy or object gets sliced rather than just when. It is the origin of the lineage of action games where a stick's motion is read as a cutting gesture, not merely an aim.",
+      ja: "『METAL GEAR RISING: REVENGEANCE』は、PlatinumGamesが開発しKONAMIが発売した2013年の作品で、「ブレードモード」を確立した——時間が遅くなった状態で、アナログスティックは武器の狙いをつけるだけのものではなく、切断そのものの軌跡を自由な方向に描く道具になる。敵やオブジェクトがどう切られるかを、いつ切るかだけでなく、プレイヤー自身が正確に決められる。スティックの動きが「狙い」ではなく「斬る身振り」として読まれるアクションゲーム群の系譜の原点である。",
+    },
+  },
   "bionic-commando": {
     steam: "1556707",
     blurb: {
