@@ -12519,6 +12519,114 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "little-hearts": {
+    published: "2026-08-08",
+    publishAt: "2026-08-08",
+    kind: "find",
+    leadIndex: 0,
+    // genre は既存の汎用 "srpg" を再利用(新設不要)。Steam公式genresも RPG/Simulation/Strategy、
+    //   ユーザータグにも Turn-Based Tactics / Strategy RPG / Tactical RPG / JRPG が並ぶ。
+    // lineageは新規anchor "tactics-ogre" を作る。ストア本文実測: 17人のキャラクターがそれぞれ
+    //   専用武器を持ち、「クラスチェンジ」という大幅なパワーアップの方向性選択で個性が分かれる、
+    //   という育成の核が、タクティクスオウガが確立した「クラス制」(固定された英雄ではなくクラスに
+    //   属し、転向によって育成方針を選び取る)と一致すると判断した。Final Fantasy Tacticsは
+    //   このサイトの既存anchorが行動順操作という別の一致点に紐付け済みのため、本作の一致点
+    //   (クラス制そのもの)にはより先行するタクティクスオウガを新規anchorとして立てた。
+    //   影響を公言されたものではない当サイト独自の比較である(自信度: 中)。
+    // developer=publisher=ゆーぎり。Steamのdeveloper検索を自分で叩き、この名義の登録は
+    //   本編(1616520)・サウンドトラック(2238150)・体験版(1652240)の3件のみで、全てdeveloper=
+    //   publisherが一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ19件(RPG/Turn-Based Tactics/
+    //   War/Fantasy/Tactical/Strategy RPG/Turn-Based Strategy/Tactical RPG/2D/Pixel Graphics/
+    //   Retro/Anime/Medieval/Singleplayer/Turn-Based Combat/JRPG/Simulation/1990's/Strategy)
+    //   にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2022年12月2日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Little Hearts strategy"
+    //   "Yuugiri game"とも該当なし(ヒットしたのはKoei Tecmo記事・ぷよぷよ記事という無関係な
+    //   誤ヒットのみ)。日本のインディーを扱う英語ブログgoodorevengreat.gamesのサイト内検索も
+    //   "Nothing Found"。
+    // west_unreached: supported_languagesは日本語・英語のみ。appreviews API実測で全76件のうち
+    //   日本語70件・英語わずか3件・簡体字1件・繁体字2件・韓国語0件。英語UIは実装済みで西側読者は
+    //   遊べるが到達していないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字について: 76件で好評率92.1%(非常に好評)は当サイトの理想95%にはやや届かないが、
+    //   最低ライン88%は上回る。先に開示する。
+    meta: { genre: "srpg", lineage: "tactics-ogre", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 76, positivePct: 92 } },
+    games: [
+      {
+        name_en: "Little Hearts",
+        name_ja: "Little Hearts",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/1616520/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a turn-based tactical RPG set in a world of swords and sorcery, where three nations hold an uneasy peace until the smallest of them, the Lieav Empire, wins a lightning revolution and then, denied the scale of aid it demanded from its neighbors, declares war on the Kingdom of Feal and takes its capital in what should have been a reckless gamble. The story proper begins where that opening ends: Alma, the fallen kingdom's princess, fleeing with a handful of soldiers, meets Klaus, a young mercenary. The store text is explicit about the tone it wants: a story and drama of people fighting for their own convictions rather than good against evil. Mechanically, the roster of 17 characters each carries a unique weapon and a set of skills earned through growth, and the game's stated centerpiece is 'Class Change,' a major power-up whose direction you choose, branching each character's identity rather than assigning it. The system is pitched as simple and welcoming for beginners, with a Hard mode the store calls a genuinely tough SRPG, and after the story is cleared an extra mode strips out luck entirely so you can re-conquer every stage on pure decision-making. Made and self-published by the solo developer Yuugiri, whose only three Steam listings are this game, its soundtrack, and its demo. Priced at ¥1,500, it is at 92 percent across 76 reviews (70 positive, 6 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 76 reviews, 70 are in Japanese and just 3 are in English.",
+        desc_ja: "Steam自身の表記によれば、本作は剣と魔法の世界を舞台にしたターン制タクティカルRPGだ。3つの国が不安定な均衡を保つなか、最も小さな国であるリーヴ帝国が電撃的な革命を成し遂げ、隣国に求めた支援の規模を拒まれると、フェール王国に宣戦布告し、無謀とも思える賭けでその首都を陥落させる。物語本編は、その導入が終わったところから始まる——陥落した王国の姫アルマが、わずかな兵と共に逃げ延び、傭兵団の青年クラウスと出会う。ストア文言はその狙いを隠さない——勧善懲悪ではなく、信念の下に戦うものたちの物語とドラマだ、と。仕組みとしては、17人のキャラクターがそれぞれ専用の武器と、成長によって得るスキルを持ち、ゲームが掲げる目玉は「クラスチェンジ」——方向性を自分で選ぶ大幅なパワーアップで、キャラクターの個性を割り当てるのではなく分岐させる。システムは初心者にも優しいシンプルさを掲げつつ、ハードモードはストア自身が「しっかり手強いSRPG」と呼ぶ難度を持ち、本編クリア後には運要素を完全に排除して全ステージを純粋な判断力だけで再攻略できる追加モードが用意されている。制作・自社発売はソロ開発者のゆーぎり。Steamに並ぶのは本作とサウンドトラック、体験版の3件のみである。価格は¥1,500。76件のレビュー(好評70件・不評6件、Steam自身のレビューAPI実測)で好評率92%(非常に好評)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。76件の内訳は、日本語70件・英語わずか3件だ。",
+      },
+      {
+        name_en: "Tactics Ogre: Let Us Cling Together",
+        name_ja: "タクティクスオウガ",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1451090/Tactics_Ogre_Reborn/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Tactics Ogre, the Quest-developed tactical RPG that established the class system, where a character's build is a class chosen and later changed rather than a fixed identity. Little Hearts is not an official Tactics Ogre work, but its 'Class Change' centerpiece, a major, self-chosen power-up that branches each of its 17 characters, carries that same core idea, that growth in a tactical RPG is a path you pick, not a fact you're handed.",
+        desc_ja: "この味の原点——タクティクスオウガ。キャラクターの育成方針が固定された属性ではなく、選び、後に転向できるクラスであるという「クラス制」を確立したQuest開発のタクティカルRPG。Little Heartsは公式のタクティクスオウガ作品ではないが、17人それぞれを分岐させる大幅かつ自己選択のパワーアップである「クラスチェンジ」という目玉は、まさに同じ核心的な発想を引き継いでいる——タクティカルRPGにおける成長とは、割り当てられる事実ではなく、選び取る道なのだ。",
+      },
+    ],
+    en: {
+      title: "Little Hearts - a turn-based tactical RPG where a fallen princess and a young mercenary fight for their own convictions, not good against evil. 17 characters, each branched by a self-chosen Class Change. Made by solo developer Yuugiri for ¥1,500. 92 percent over 76 reviews, mostly Japanese",
+      description: "A turn-based tactical RPG in a world of swords and sorcery, where a princess fleeing a fallen kingdom meets a young mercenary. 17 characters each carry a unique weapon and branch through a self-chosen 'Class Change' power-up. Hard mode and a luck-free post-game replay included. 92 percent over 76 reviews, English supported.",
+      h1a: "A fallen princess and a young mercenary fight for their own convictions, not good against evil. ",
+      h1flip: "Each of the 17 characters branches through a power-up you choose yourself",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a turn-based tactical RPG set in a world of swords and sorcery, where three nations hold an uneasy peace until the smallest of them, the Lieav Empire, wins a lightning revolution and then, denied the scale of aid it demanded from its neighbors, declares war on the Kingdom of Feal and takes its capital in what should have been a reckless gamble. The story proper begins where that opening ends: Alma, the fallen kingdom's princess, fleeing with a handful of soldiers, meets Klaus, a young mercenary. The store text is explicit about the tone it wants: a story and drama of people fighting for their own convictions rather than good against evil. Mechanically, the roster of 17 characters each carries a unique weapon and a set of skills earned through growth, and the game's stated centerpiece is 'Class Change,' a major power-up whose direction you choose, branching each character's identity rather than assigning it. The system is pitched as simple and welcoming for beginners, with a Hard mode the store calls a genuinely tough SRPG, and after the story is cleared an extra mode strips out luck entirely so you can re-conquer every stage on pure decision-making. Made and self-published by the solo developer Yuugiri, whose only three Steam listings are this game, its soundtrack, and its demo. Priced at ¥1,500, it is at 92 percent across 76 reviews (70 positive, 6 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 76 reviews, 70 are in Japanese and just 3 are in English, and no English-language article about this game exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "The pitch is explicit and it matters: nobody in this war is simply right. Watching a small, desperate nation's demand for aid curdle into a war of conquest, and then following the story from the losing side, sets up stakes that a good-versus-evil framing would flatten.",
+        "'Class Change' is not a stat squeeze, it's an identity choice. Because it branches who a character becomes rather than just how hard they hit, deciding when and which way to change a unit feels closer to casting than to optimizing.",
+        "The post-game mode, luck stripped entirely so every stage becomes a pure test of decision-making, is a quiet vote of confidence: the designer is willing to let you re-fight the whole game with nothing left to blame but your own reads.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Tactics Ogre's class-as-chosen-path core, where growth branches a character's identity rather than just their numbers",
+        "You want a war story that refuses to hand you a villain, told through a princess and a mercenary on the losing side of it",
+        "You want small and self-published: solo developer Yuugiri's only three Steam listings are this game, its soundtrack, and its demo, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 76 reviews at 92 percent is solid but short of this site's ideal 95",
+        "You want a game already found in the West; of 76 reviews only 3 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Little Hearts - 陥落した王国の姫と若き傭兵が、勧善懲悪ではなく信念のために戦うターン制タクティカルRPG。17人が自ら選ぶクラスチェンジで分岐する。ソロ開発者ゆーぎり制作、価格¥1,500。76件で好評率92%、ほぼ日本語",
+      description: "剣と魔法の世界を舞台にしたターン制タクティカルRPG。陥落した王国の姫が若き傭兵と出会う。17人のキャラクターがそれぞれ専用武器を持ち、自ら選ぶ「クラスチェンジ」で分岐していく。ハードモードと運要素排除のクリア後モードあり。76件のレビューで好評率92%、英語対応。",
+      h1a: "陥落した王国の姫と若き傭兵が、勧善懲悪ではなく信念のために戦う。",
+      h1flip: "17人それぞれが、自分で選ぶパワーアップによって分岐していく",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は剣と魔法の世界を舞台にしたターン制タクティカルRPGだ。3つの国が不安定な均衡を保つなか、最も小さな国であるリーヴ帝国が電撃的な革命を成し遂げ、隣国に求めた支援の規模を拒まれると、フェール王国に宣戦布告し、無謀とも思える賭けでその首都を陥落させる。物語本編は、その導入が終わったところから始まる——陥落した王国の姫アルマが、わずかな兵と共に逃げ延び、傭兵団の青年クラウスと出会う。ストア文言はその狙いを隠さない——勧善懲悪ではなく、信念の下に戦うものたちの物語とドラマだ、と。仕組みとしては、17人のキャラクターがそれぞれ専用の武器と、成長によって得るスキルを持ち、ゲームが掲げる目玉は「クラスチェンジ」——方向性を自分で選ぶ大幅なパワーアップで、キャラクターの個性を割り当てるのではなく分岐させる。システムは初心者にも優しいシンプルさを掲げつつ、ハードモードはストア自身が「しっかり手強いSRPG」と呼ぶ難度を持ち、本編クリア後には運要素を完全に排除して全ステージを純粋な判断力だけで再攻略できる追加モードが用意されている。制作・自社発売はソロ開発者のゆーぎり。Steamに並ぶのは本作とサウンドトラック、体験版の3件のみである。価格は¥1,500。76件のレビュー(好評70件・不評6件)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語で、遊ぶのを止めるものは何もない。正直に一点。76件の内訳は日本語70件・英語わずか3件で、本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "この物語の姿勢は明確で、それが効いている——この戦争には単純な正義がいない。小さく追い詰められた国の支援要請が、征服の戦争へと歪んでいく様を、負ける側の視点から追う構造は、勧善懲悪の枠組みでは作れない重みを持っている。",
+        "「クラスチェンジ」は数値の底上げではなく、アイデンティティの選択だ。単に強く殴れるようになるだけでなく、その人物が何者になるかを分岐させるからこそ、いつ、どちらへ転向させるかを決める瞬間は、最適化というより配役に近い手触りになる。",
+        "運要素を完全に排除するクリア後モードは、静かな自信の表明だ。設計者は、プレイヤーが全編を再び戦い、責められるものが自分の読み以外に何も残らない状態を、進んで用意している。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "タクティクスオウガ的な「クラスは選び取る道」という核——成長が数値だけでなくキャラクターの個性そのものを分岐させる——が欲しい人",
+        "悪役を用意してくれない戦争の物語が欲しい人——負ける側にいる姫と傭兵の視点から語られる",
+        "小さくて自主出版のものが欲しい人——ソロ開発者ゆーぎりのSteamタイトルは本作とサウンドトラック、体験版の3件のみで、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——76件で好評率92%は手堅いが、当サイトの理想95には一歩届かない",
+        "既に西で見つかっているゲームが欲しい人——76件のうち英語はわずか3件で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12592,6 +12700,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "tactics-ogre": {
+    steam: "1451090",
+    blurb: {
+      en: "Tactics Ogre: Let Us Cling Together, developed by Quest and released for the Super Famicom in 1995, established the modern grid tactical RPG's class system: units are not fixed heroes but occupy a class, gaining skills through it and able to switch into a different one later, carrying some of what they learned forward. That single design choice, that a character's build is a path chosen rather than a fact assigned at creation, became one of the genre's defining conventions and shaped the tactical RPGs that followed it, including Square's own Final Fantasy Tactics two years later. It remains available today through Square Enix's 2022 remaster, Tactics Ogre: Reborn.",
+      ja: "『タクティクスオウガ』は、Questが開発し1995年にスーパーファミコン向けに発売された作品で、現代のグリッド式タクティカルRPGにおける「クラス制」を確立した。ユニットは固定された英雄ではなく、あるクラスに属し、それを通じてスキルを得て、後に別のクラスへ転向し、学んだものの一部を持ち越すことができる。キャラクターの育成方針が、作成時に割り当てられた事実ではなく選び取る道である、というこの一つの設計判断は、ジャンルを定義する慣習の一つとなり、2年後のスクウェア自身の『ファイナルファンタジータクティクス』を含む後続のタクティカルRPGを形作った。現在はスクウェア・エニックスによる2022年のリメイク『タクティクスオウガ リボーン』を通じて遊ぶことができる。",
+    },
+  },
   "dark-souls": {
     steam: "211420",
     blurb: {
