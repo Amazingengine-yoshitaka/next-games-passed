@@ -13064,6 +13064,119 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "derby-heroines": {
+    published: "2026-08-11",
+    publishAt: "2026-08-11",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "bet-then-race-derby"。ストア本文実測: 単勝・複勝・ワイド・馬連・馬単・
+    //   三連複・三連単の7券種にながし/ボックス/フォーメーションを備えた「本格馬券システム」を
+    //   自ら明言し、「賭けはすべてゲーム内通貨。リアルマネーは一切使いません」とも明記している。
+    //   核心は「パドックで出走馬を選び、オッズを読んで馬券を買ったら――走るのはあなた自身」
+    //   という一文に集約される——賭ける対象と操作する対象が同一人物である点が本作固有の設計だと
+    //   判断した。なお本作のキャラクターは「陸上少女」と呼ばれ、馬そのものへの擬人化ではなく
+    //   競馬の形式を借りた徒競走という立て付けである点も確認した。
+    // lineageは新規anchor "super-mario-kart" を作る。ダッシュゲージ・コース上のオーブで発動する
+    //   スキル・1レース1回の必殺技・スリップストリームという実測された機構が、アイテムと
+    //   ドラフトで決まるアーケードレーサーの語彙そのものだと判断した。本作固有のJRA形式の
+    //   本格馬券システムは、影響を公言されたものではない当サイト独自の観察である(自信度: 中)。
+    //   Steam版が存在しない原点なのでwikidataで同定した。
+    // developer表記はSHINISE GAMES/MFC STUDIO(同一制作陣の二重名義)、publisherはSHINISE GAMES。
+    //   Steamのdeveloper検索を自分で叩き、この名義の登録は5件(本作/Platform 6 ONLINE/
+    //   5番線おじさん救出編/Escape from Track 7/Train Plus Japan Drive)で、全てdeveloper=
+    //   publisherが一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ19件(Memes/Anime/Combat
+    //   Racing/Atmospheric/Singleplayer/Action Roguelike/Cartoon/Cute/Indie/Score Attack/
+    //   3D Platformer/Collectathon/Modern/Horses/Racing/Sports/Female Protagonist/Runner/
+    //   Immersive Sim/Animals)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄には「We use AI for our sounds.」とだけあり(日英同一)、
+    //   音声という単一アセットカテゴリに限定された開示であり、基準(5)の「単一カテゴリ限定は
+    //   許容」に該当する。is_free=false・カートに入れるボタンを日英両ページで実測。genresに
+    //   "Early Access"を含まず、リリース済みで正式版として売られている(発売日は2026年8月5日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Derby Heroines"が1件
+    //   ヒットするが、開いて確認したところ元アイドルマスターディレクターの美少女ノベルゲームに
+    //   関する完全に無関係な記事で、単語一致による誤ヒットだった。"SHINISE GAMES"は0件。
+    //   日本のインディーを扱う英語ブログgoodorevengreat.gamesのサイト内検索も"Nothing Found"。
+    // west_unreached: supported_languagesは日本語・英語・繁体字中国語・フランス語(フル音声)。
+    //   appreviews API実測で全16件のうち日本語16件、英語・中華圏・韓国語は0件——英語UIは
+    //   実装済みで西側読者は遊べるが、レビューは1件も届いていない。obscurity: "deep" /
+    //   reachState: "unreached_west"を採る。
+    // 数字の脆さ: 16件で好評率100%(「好評」)は当サイトが扱う中でも薄い母数である。先に開示する。
+    meta: { genre: "bet-then-race-derby", lineage: "super-mario-kart", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 16, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Derby Heroines: Run, Bet, Win!",
+        name_ja: "ダービーヒロイン！〜駆けて、賭けて、勝て！〜",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4940330/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page opens with its own summary: run, bet, win. This is a betting-times-action-racing game that transplants the whole grammar of horse racing onto a race of track girls. Choose your runner in the paddock, read the odds, buy your ticket, and then you are the one who runs; bet on yourself and cash it in with your own legs. Racing plays as arcade action: a dash gauge, skills triggered by orbs on the course, one signature move per race, drafting and photo finishes. The betting system is not simplified. All seven real Japanese horse-racing ticket types are here, win, place, quinella-place, quinella, exacta, trio and trifecta, plus wheel, box and formation combinations, with odds generated per-race so favorites and long shots behave believably. There's a WIN5-style jackpot called Pinzudo 5, correctly calling five straight winners for a carryover payout. Every wager uses in-game currency only; no real money gambling. You gacha-recruit over a hundred track girls (many with odd, horse-inspired names) and grow them with race XP, choosing runners by distance aptitude, running style and skill. Made and self-published under the SHINISE GAMES label by the two-person team behind MFC STUDIO, whose only five Steam listings are all developer-equals-publisher. Priced at ¥1,900, it is Positive at 100 percent across 16 reviews (16 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure is a single narrow line, 'We use AI for our sounds,' quoted here rather than replaced with a boilerplate 'no AI assets' claim, and Steam's content descriptors are completely empty. Japanese, English, Traditional Chinese and French are all supported with full voice, so nothing is stopping you. Every one of its 16 reviews is in Japanese; not one is in English, Chinese, or Korean.",
+        desc_ja: "ストアページは冒頭で自ら要約している——駆けて、賭けて、勝て。本作は競馬の“文法”をまるごと陸上少女のレースに持ち込んだ、ベッティング×アクションレースゲームだ。パドックで出走馬を選び、オッズを読んで馬券を買ったら――走るのはあなた自身。自分に賭けて、自分の脚で回収する。レースはアーケードアクションとして遊ぶ——ダッシュゲージ、コース上のオーブで発動するスキル、1レース1回の必殺技、スリップストリーム、フォトフィニッシュの接戦。馬券システムは簡略化されていない。単勝・複勝・ワイド・馬連・馬単・三連複・三連単の実在する7券種に、ながし/ボックス/フォーメーションが揃い、オッズはレースごとのシミュレーションで算出され、人気と実力が噛み合った「読める」オッズになる。R7〜R11の1着を5連続で当てるWIN5型の高額馬券「ピンズド5」はキャリーオーバーを搭載する。賭けはすべてゲーム内通貨で、リアルマネーは一切使わない。ガチャで100人を超える陸上少女(競走馬風のヘンな名前多数)が仲間になり、レースで得たXPで育成し、距離適性・脚質・スキルを見て出走馬を選ぶ。制作・自社発売はレーベル名SHINISE GAMES、実体はMFC STUDIOの2人組。Steamに並ぶのは5件のみで、全て開発元と発売元が同一である。価格は¥1,900。16件のレビュー(好評16件・不評0件、Steam自身のレビューAPI実測)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄には「We use AI for our sounds.」という1行のみがあり、他記事にある「AI生成アセットはなし」という定型句に置き換えず、そのまま伝える。Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語・繁体字中国語・フランス語でいずれもフル音声対応、遊ぶのを止めるものは何もない。16件のレビューはすべて日本語で、英語・中国語・韓国語は1件も存在しない。",
+      },
+      {
+        name_en: "Super Mario Kart",
+        name_ja: "スーパーマリオカート",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q1061560",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Super Mario Kart, the Nintendo game that established the arcade racer's vocabulary of items, special moves and drafting, where the track is only half the contest. Derby Heroines is not an official Mario Kart work, but its dash gauge, orb-triggered skills and once-per-race special move carry that same core forward into a race of track girls, with its own addition layered on top: a full, real-world horse-racing betting system determining what you're actually racing for before you ever hit the track.",
+        desc_ja: "この味の原点——スーパーマリオカート。アイテム・必殺技・スリップストリームというアーケードレーサーの語彙を確立した任天堂の作品で、トラックそのものは勝負の半分でしかない。ダービーヒロインは公式のマリオカート作品ではないが、ダッシュゲージ・オーブで発動するスキル・1レース1回の必殺技という同じ核をそのまま陸上少女のレースへ引き継ぎつつ、独自の要素を重ねている——本物の競馬の馬券システムが、トラックに立つ前から何のために走るのかを決めているのだ。",
+      },
+    ],
+    en: {
+      title: "Derby Heroines: Run, Bet, Win! - the full grammar of real horse-racing betting, all seven ticket types plus a WIN5-style jackpot, and you race the runner you bet on yourself. Made by SHINISE GAMES for ¥1,900. 100 percent over 16 reviews, entirely Japanese",
+      description: "A betting-times-arcade-racing game where you read the odds, buy a real horse-racing-style ticket, then personally race the track girl you bet on. Dash gauges, orb skills, drafting and a WIN5-style jackpot called Pinzudo 5. 100 percent over 16 reviews, English supported.",
+      h1a: "Read the odds, buy the ticket, choose your runner in the paddock. ",
+      h1flip: "Then you are the one who races, and cashes in on your own legs",
+      h1b: ".",
+      lede: "The store page opens with its own summary: run, bet, win. This is a betting-times-action-racing game that transplants the whole grammar of horse racing onto a race of track girls. Choose your runner in the paddock, read the odds, buy your ticket, and then you are the one who runs; bet on yourself and cash it in with your own legs. Racing plays as arcade action: a dash gauge, skills triggered by orbs on the course, one signature move per race, drafting and photo finishes. The betting system is not simplified. All seven real Japanese horse-racing ticket types are here, win, place, quinella-place, quinella, exacta, trio and trifecta, plus wheel, box and formation combinations, with odds generated per-race so favorites and long shots behave believably. There's a WIN5-style jackpot called Pinzudo 5, correctly calling five straight winners for a carryover payout. Every wager uses in-game currency only; no real money gambling. You gacha-recruit over a hundred track girls (many with odd, horse-inspired names) and grow them with race XP, choosing runners by distance aptitude, running style and skill. Made and self-published under the SHINISE GAMES label by the two-person team behind MFC STUDIO, whose only five Steam listings are all developer-equals-publisher. Priced at ¥1,900, it is Positive at 100 percent across 16 reviews (16 positive, 0 negative), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure is a single narrow line, 'We use AI for our sounds,' quoted here rather than replaced with boilerplate, and Steam's content descriptors are completely empty. Japanese, English, Traditional Chinese and French are all supported with full voice, so nothing is stopping you. One honest note: every one of its 16 reviews is in Japanese; not one is in English, Chinese, or Korean, and no genuine English-language coverage exists, the only AUTOMATON WEST search hit for this game's name turned out to be an unrelated article matched purely on a keyword.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most games that let you bet keep the bet abstract, a number that goes up or down while you watch. Here the bet is a promise to yourself: you handicapped the field, and now you have to be the one who's right.",
+        "Reading real odds before a race you're about to run yourself changes what confidence means. Picking the favorite is a safer bet and a harder race to stand out in; picking a long shot pays more and asks you to actually prove the odds wrong with your own dash gauge.",
+        "Pinzudo 5's five-race carryover jackpot turns a single session into a small campaign. Four correct calls and one miss doesn't just cost a ticket, it resets a story you'd been building race by race.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Mario Kart's arcade racing vocabulary, items, drafting, a signature move, married to a betting layer that actually has teeth",
+        "You want a real horse-racing betting system, all seven ticket types plus wheel/box/formation combinations, not a simplified win-or-lose stand-in",
+        "You want small and self-published: the two-person team behind SHINISE GAMES and MFC STUDIO's only five Steam listings are all developer-equals-publisher, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 16 reviews is thin even at a perfect score",
+        "You want a game already found in the West; every single review is in Japanese, and no genuine English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ダービーヒロイン！〜駆けて、賭けて、勝て！〜 - 単勝から三連単まで実在7券種とWIN5型の高額馬券「ピンズド5」を備え、自分が賭けた出走馬を自分自身で走らせる。SHINISE GAMES制作、価格¥1,900。16件で好評率100%、全件日本語",
+      description: "オッズを読み、本格的な馬券を買い、自分が賭けた陸上少女を自分自身で走らせるベッティング×アーケードレースゲーム。ダッシュゲージ、オーブスキル、スリップストリーム、WIN5型の高額馬券「ピンズド5」。16件のレビューで好評率100%、英語対応。",
+      h1a: "オッズを読み、馬券を買い、パドックで出走馬を選ぶ。",
+      h1flip: "そして走るのはあなた自身、自分の脚で回収する",
+      h1b: "。",
+      lede: "ストアページは冒頭で自ら要約している——駆けて、賭けて、勝て。本作は競馬の“文法”をまるごと陸上少女のレースに持ち込んだ、ベッティング×アクションレースゲームだ。パドックで出走馬を選び、オッズを読んで馬券を買ったら――走るのはあなた自身。自分に賭けて、自分の脚で回収する。レースはアーケードアクションとして遊ぶ——ダッシュゲージ、コース上のオーブで発動するスキル、1レース1回の必殺技、スリップストリーム、フォトフィニッシュの接戦。馬券システムは簡略化されていない。単勝・複勝・ワイド・馬連・馬単・三連複・三連単の実在する7券種に、ながし/ボックス/フォーメーションが揃い、オッズはレースごとのシミュレーションで算出され、人気と実力が噛み合った「読める」オッズになる。R7〜R11の1着を5連続で当てるWIN5型の高額馬券「ピンズド5」はキャリーオーバーを搭載する。賭けはすべてゲーム内通貨で、リアルマネーは一切使わない。ガチャで100人を超える陸上少女(競走馬風のヘンな名前多数)が仲間になり、レースで得たXPで育成し、距離適性・脚質・スキルを見て出走馬を選ぶ。制作・自社発売はレーベル名SHINISE GAMES、実体はMFC STUDIOの2人組。Steamに並ぶのは5件のみで、全て開発元と発売元が同一である。価格は¥1,900。16件のレビュー(好評16件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄には「We use AI for our sounds.」という1行のみがあり、定型句に置き換えずそのまま伝える。Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語・繁体字中国語・フランス語でいずれもフル音声対応、遊ぶのを止めるものは何もない。正直に一点。16件のレビューはすべて日本語で、英語・中国語・韓国語は1件も存在せず、本作についての正真の英語記事も存在しない——AUTOMATON WESTでのヒット1件はキーワードの単語一致による完全に無関係な記事だった。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "賭けさせてくれるゲームの多くは、賭けを抽象的なものにとどめる——見ているだけで上下する数字だ。ここでの賭けは自分自身への約束になる。あなたはフィールドを分析して予想を立てた。今度はその予想が正しいことを、自分で証明する番だ。",
+        "自分自身が走るレースの本物のオッズを読むことは、「自信」の意味を変える。本命を選べば安全な賭けになるが、その分レースで目立つのは難しい。穴を選べば配当は増えるが、そのオッズを自分のダッシュゲージで実際に裏切ってみせる必要がある。",
+        "ピンズド5の5連続的中・キャリーオーバーは、1回のセッションを小さなキャンペーンに変える。4回的中して1回外すことは、単に馬券を1枚失うだけでなく、レースを重ねて積み上げてきた物語をリセットすることでもある。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "マリオカート的なアーケードレースの語彙——アイテム、ドラフト、1つの必殺技——が、本物の牙を持つ賭けの層と結婚したものが欲しい人",
+        "簡略化された勝ち負けの代替物ではなく、実在7券種にながし/ボックス/フォーメーションまで揃った本格馬券システムが欲しい人",
+        "小さくて自主出版のものが欲しい人——SHINISE GAMESとMFC STUDIOの2人組のSteamタイトルは5件のみで全て開発元と発売元が同一、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——16件は満点であっても薄い母数である",
+        "既に西で見つかっているゲームが欲しい人——レビューは全件日本語で、正真の英語記事はまだ存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13137,6 +13250,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "super-mario-kart": {
+    wikidata: "https://www.wikidata.org/wiki/Q1061560",
+    blurb: {
+      en: "Super Mario Kart, developed and published by Nintendo in 1992, established the modern arcade racer's vocabulary: items and special moves picked up mid-course, drafting behind rivals for a speed boost, and races decided as much by split-second tactical choices as by raw driving skill. It is the origin of the lineage of racing games where the track is only half the contest, and what you do with a power-up is the other half.",
+      ja: "『スーパーマリオカート』は、任天堂が開発・発売した1992年の作品で、現代のアーケードレーサーの語彙を確立した——コース上で拾うアイテムと必殺技、ライバルの後ろについて加速するスリップストリーム、そして純粋な運転技術と同じくらい一瞬の戦術的判断がレースを決める。トラックそのものは勝負の半分でしかなく、拾ったアイテムをどう使うかがもう半分である、というレースゲーム群の系譜の原点である。",
+    },
+  },
   "metal-gear-rising": {
     steam: "235460",
     blurb: {
