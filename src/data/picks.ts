@@ -13734,6 +13734,117 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "suika-solo-drinking": {
+    published: "2026-08-14",
+    publishAt: "2026-08-14",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "teach-a-word-oni-chat"。ストア本文実測: プレイヤーは鬼の伊吹萃香に言葉を
+    //   教える。人物でも食べ物でも自由で、真面目でもふざけたものでもよい。教えた言葉は会話中に
+    //   登場し、突飛な酔っ払いのような会話や、偶然マッチする会話を生む。この「教えた言葉が
+    //   後で予測不能に返ってくる」という一点が本作の核だと判断した。
+    // lineageは新規anchor "doko-demo-issyo" を作る。プレイヤー自身の実測レビューが本作を
+    //   「どこでもいっしょ萃香ちゃんバージョン」と評しており(実測確認済み)、その比較を
+    //   当サイトも採用した。Steam版が存在しない1999年の原点なのでwikidataで同定した。
+    // developer=publisher=ISY(個人同人サークル、いすぃ名義)。Steamのdeveloper検索を自分で
+    //   叩き、この名義の登録は12件で、全て東方Project二次創作の小品(萃香/レミリア/雛/さとり
+    //   等の各キャラクター1本ずつ)、developer=publisherが一致することを確認した。大手・海外
+    //   展開代行・親会社関係の混入はゼロ。【同一開発者の重複を隠さない】当サイトは既に同じISY
+    //   の『寒いから鍋食いたいね女苑ちゃんと！！』(appid 3490680 / slug: nabe-with-joon)を
+    //   掲載しており、これが2本目になる。同一開発者の重複は既存運用にも前例があり、失格事由
+    //   ではないが、記事本文で同じ作り手であることを明示する。なお本作は東方Projectの二次創作
+    //   であり(ストア本文に明記)、原作者ZUN氏の二次創作ガイドラインに沿った商業利用であって
+    //   大手発売元との資本・契約関係ではないことを確認した。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ13件(Relaxing/Comedy/Word
+    //   Game/Visual Novel/Atmospheric/Singleplayer/Dialogue Heavy/Choose Your Own Adventure/
+    //   Cute/2.5D/2D Platformer/Simulation/Choices Matter/Immersive Sim)にも性的表現関連は
+    //   皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2026年1月30日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Suika Ibuki drinking"
+    //   "mizusoba"とも0件。
+    // west_unreached: supported_languagesは日本語のみ。appreviews API実測で全15件のうち
+    //   日本語11件・簡体字中国語3件・英語1件・韓国語0件。非日本語合計(4)は日本語(11)を超え
+    //   ないため到達判定の閾値には触れない。obscurity: "deep" / reachState: "unreached_west"
+    //   を採る。
+    // 数字の脆さ: 15件は当サイトが扱う最低ラインに近い薄さである。好評率100%であっても
+    //   先に開示する。
+    meta: { genre: "teach-a-word-oni-chat", lineage: "doko-demo-issyo", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 15, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Sashinomi Suika-chan",
+        name_ja: "サシ飲み萃香ちゃん",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4322150/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a word-play simulation about trading idle small talk with the oni Suika Ibuki at a bar, teaching her words, hearing rumors, filling out the shop's menu and treating her to food. This is stated up front as a Touhou Project derivative work. Mechanically, you teach Suika words, people, food, anything, serious or joking, and those words later surface unprompted inside her conversation, producing results ranging from nonsense drunk talk to coincidences that land uncannily well; teaching food-related words expands the bar's menu, which you can then buy her. Made and self-published by the solo doujin creator ISY, whose twelve-title Steam catalogue is entirely small, single-character Touhou derivative works, including one this site has covered before, 寒いから鍋食いたいね女苑ちゃんと！！ (Nabe with Joon), a fact disclosed here rather than left unmentioned. Priced at ¥700, it is Positive at 100 percent across 15 reviews (15 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It supports Japanese only. Of its 15 reviews, 11 are in Japanese and just 1 is in English; Japanese players themselves compare it to Doko Demo Issyo, the PocketStation classic built around teaching a character vocabulary that comes back unpredictably.",
+        desc_ja: "Steam自身の表記によれば、本作は鬼の伊吹萃香と飲み屋で他愛もない会話を交わし、言葉を教えたり、噂話を聞いたり、店のメニューを充実させたり、奢ってあげたりする言葉遊びのシミュレーションゲームだ。東方Projectの二次創作作品であることが冒頭で明記されている。仕組みとしては、萃香に言葉を教える——人物でも食べ物でも自由で、真面目でもふざけたものでもよい——と、教えた言葉が後の会話に予告なく登場し、突飛な酔っ払いのような会話や、偶然にもマッチするような会話を生む。食材に関する言葉を教えれば店のメニューが増え、そのメニューを奢ることもできる。制作・自社発売はソロ同人クリエイターのISY。Steamに並ぶ12作品はすべて東方Projectの二次創作による1キャラクター1本の小品で、その中には当サイトが既に取り上げた『寒いから鍋食いたいね女苑ちゃんと！！』も含まれる——隠さずここに記す。価格は¥700。15件のレビュー(好評15件・不評0件、Steam自身のレビューAPI実測)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語のみ。15件の内訳は日本語11件・英語わずか1件で、日本のプレイヤー自身が本作を、キャラクターに言葉を教え込むと予測不能な形で返ってくる、というPocketStationの名作『どこでもいっしょ』になぞらえている。",
+      },
+      {
+        name_en: "Doko Demo Issyo",
+        name_ja: "どこでもいっしょ",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q11273754",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Doko Demo Issyo, the Sony PocketStation game that established the taught-vocabulary companion, where a small character parrots back whatever words you fed it, unprompted, inside conversations you never wrote. Sashinomi Suika-chan is not an official Doko Demo Issyo work, and this lineage is a comparison Japanese players themselves make in their own reviews of the game, not a stated influence; the shared idea is carried forward into a Touhou-derivative bar chat, where an oni's drunken small talk is built entirely out of whatever you personally chose to teach her.",
+        desc_ja: "この味の原点——どこでもいっしょ。教えた言葉をキャラクターが後になって、頼んでもいないのに、書かれていない会話の中で勝手に使い出す、という「言葉を教えるコンパニオン」を確立したソニーのポケットステーション作品。サシ飲み萃香ちゃんは公式のどこでもいっしょ作品ではなく、この系譜は日本のプレイヤー自身が本作のレビューの中で挙げている比較であり、明言された影響ではない。共有している発想は、東方Projectの二次創作である酒場チャットへと引き継がれている——鬼の酔っ払い会話は、自分が個人的に教え込んだ言葉だけで組み立てられているのだ。",
+      },
+    ],
+    en: {
+      title: "Sashinomi Suika-chan - teach the oni Suika Ibuki any word you want, and it resurfaces unprompted in her drunken small talk. Made by solo doujin creator ISY for ¥700. 100 percent over 15 reviews, entirely Japanese except one review",
+      description: "A word-play sim where you teach the Touhou oni Suika Ibuki vocabulary at a bar, and the words you fed her surface later, unprompted, inside her small talk. Feed her food words to expand the menu, then treat her to it. 100 percent over 15 reviews.",
+      h1a: "Teach the oni Suika Ibuki any word you want, at a bar, over drinks. ",
+      h1flip: "Later, unprompted, it resurfaces inside her drunken small talk",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a word-play simulation about trading idle small talk with the oni Suika Ibuki at a bar, teaching her words, hearing rumors, filling out the shop's menu and treating her to food. This is stated up front as a Touhou Project derivative work. Mechanically, you teach Suika words, people, food, anything, serious or joking, and those words later surface unprompted inside her conversation, producing results ranging from nonsense drunk talk to coincidences that land uncannily well; teaching food-related words expands the bar's menu, which you can then buy her. Made and self-published by the solo doujin creator ISY, whose twelve-title Steam catalogue is entirely small, single-character Touhou derivative works, including one this site has covered before, 寒いから鍋食いたいね女苑ちゃんと！！ (Nabe with Joon), a fact disclosed here rather than left unmentioned. Priced at ¥700, it is Positive at 100 percent across 15 reviews (15 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. It supports Japanese only. One honest note: of its 15 reviews, 11 are in Japanese and just 1 is in English, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere. Japanese players themselves compare it to Doko Demo Issyo, the PocketStation classic built around teaching a character vocabulary that comes back unpredictably.",
+      s1: "First, the one feeling",
+      feeling: [
+        "There is no writer behind what Suika says back to you, only your own past choices, which means the funniest or most fitting lines in the game are ones you accidentally set up yourself weeks of conversation earlier.",
+        "Because you can teach anything, serious or joking, the game becomes a slow-motion prank on your future self: you feed it something absurd on a whim, and the payoff arrives unannounced, in the middle of an otherwise ordinary drink.",
+        "Turning taught words into menu items you can then buy her closes a small loop, teaching isn't just conversational seasoning, it has a material, immediate use inside the same scene.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Doko Demo Issyo's taught-vocabulary-companion core, an AI-free 1999 PocketStation trick, applied fresh to a Touhou bar chat",
+        "You want a low-stakes, relaxing conversation sim where the entertainment is built entirely from what you personally chose to feed it",
+        "You want small and self-published: solo doujin creator ISY's twelve-title Steam catalogue is entirely single-character Touhou derivative works, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 15 reviews is close to this site's floor even at a perfect score",
+        "You want a game already found in the West; of 15 reviews only 1 is in English, and it supports Japanese only",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "サシ飲み萃香ちゃん - 鬼の伊吹萃香にどんな言葉でも教えられ、後で予告なく彼女の酔っ払い会話に登場する。ソロ同人クリエイターISY制作、価格¥700。15件で好評率100%、英語1件を除き全て日本語",
+      description: "飲み屋で東方の鬼・伊吹萃香に言葉を教える言葉遊びシム。教えた言葉は後の会話に予告なく登場する。食材の言葉を教えればメニューが増え、それを奢ることもできる。15件のレビューで好評率100%。",
+      h1a: "鬼の伊吹萃香に、飲み屋でどんな言葉でも教えられる。",
+      h1flip: "後になって、予告なく、彼女の酔っ払い会話の中にそれが登場する",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は鬼の伊吹萃香と飲み屋で他愛もない会話を交わし、言葉を教えたり、噂話を聞いたり、店のメニューを充実させたり、奢ってあげたりする言葉遊びのシミュレーションゲームだ。東方Projectの二次創作作品であることが冒頭で明記されている。仕組みとしては、萃香に言葉を教える——人物でも食べ物でも自由で、真面目でもふざけたものでもよい——と、教えた言葉が後の会話に予告なく登場し、突飛な酔っ払いのような会話や、偶然にもマッチするような会話を生む。食材に関する言葉を教えれば店のメニューが増え、そのメニューを奢ることもできる。制作・自社発売はソロ同人クリエイターのISY。Steamに並ぶ12作品はすべて東方Projectの二次創作による1キャラクター1本の小品で、その中には当サイトが既に取り上げた『寒いから鍋食いたいね女苑ちゃんと！！』も含まれる——隠さずここに記す。価格は¥700。15件のレビュー(好評15件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語のみ。正直に一点。15件の内訳は日本語11件・英語わずか1件で、本作についての正真の英語記事はAUTOMATON WESTを含めまだどこにも存在しない。日本のプレイヤー自身が本作を、キャラクターに言葉を教え込むと予測不能な形で返ってくる、というPocketStationの名作『どこでもいっしょ』になぞらえている。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "萃香が返す言葉の裏には書き手がいない。あるのは自分自身の過去の選択だけだ。だからこのゲームで一番面白い、あるいは一番噛み合った台詞は、何週間も前の自分が知らずに仕込んだものだったりする。",
+        "真面目でもふざけたものでも何でも教えられるからこそ、このゲームは未来の自分に仕掛けたスローモーションのいたずらになる。ふと思いついた突飛な言葉を教えると、その報いは予告なく、何気ない一杯の最中にやってくる。",
+        "教えた言葉がメニューに変わり、それを奢れるようになる、という小さな循環——教えることは会話の彩りだけでなく、同じ場面の中で即座に使い道を持つのだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "どこでもいっしょの「言葉を教えるコンパニオン」の核——AI無しの1999年ポケットステーションの仕掛け——を、東方の酒場チャットへ新鮮に応用したものが欲しい人",
+        "娯楽のすべてが自分が個人的に教え込んだものだけから組み立てられる、低ストレスでリラックスした会話シムが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ同人クリエイターISYのSteam12作品はすべて東方Projectの二次創作による1キャラクター1本の小品で、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——15件は満点であっても当サイトの最低ラインに近い",
+        "既に西で見つかっているゲームが欲しい人——15件のうち英語はわずか1件で、対応言語は日本語のみ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13807,6 +13918,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "doko-demo-issyo": {
+    wikidata: "https://www.wikidata.org/wiki/Q11273754",
+    blurb: {
+      en: "Doko Demo Issyo, released by Sony Computer Entertainment for the PocketStation in 1999, established the taught-vocabulary companion: you feed a small character words and phrases with no fixed script, and it parrots them back later, unprompted, inside conversations you never wrote, producing results that range from nonsensical to eerily well-timed. It is the origin of the lineage of games where the entertainment is not authored dialogue but the unpredictable echo of what you personally chose to teach.",
+      ja: "『どこでもいっしょ』は、ソニー・コンピュータエンタテインメントがポケットステーション向けに1999年に発売した作品で、「言葉を教えるコンパニオン」を確立した——決まった台本のない小さなキャラクターに言葉やフレーズを教え込むと、後になって、頼んでもいないのに、自分が書いていない会話の中でそれを勝手に使い出す。結果は支離滅裂なこともあれば、不気味なほどタイミングよく噛み合うこともある。娯楽の中心が作者の書いた台詞ではなく、自分が教えた言葉が予測不能な形で返ってくることそのものにある、というゲーム群の系譜の原点である。",
+    },
+  },
   "danganronpa": {
     steam: "413410",
     blurb: {
