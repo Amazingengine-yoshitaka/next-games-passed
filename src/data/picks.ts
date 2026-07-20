@@ -13514,6 +13514,115 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "trick-x-trick": {
+    published: "2026-08-13",
+    publishAt: "2026-08-13",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "realtime-debate-death-game"。ストア本文実測: 「リアルタイム議論パートでは
+    //   ――議論は自動進行/会話の中に潜む嘘や矛盾を見抜き/集めた証拠品を突きつけて論破せよ」と
+    //   3行で機構を要約している。間違った人物を指名すれば処刑される、という失敗の重さと、
+    //   12人全員が固有の超能力を持つという設定が重なる点が本作の核だと判断した。
+    // lineageは新規anchor "danganronpa" を作る。会話が待ってくれないリアルタイム議論と証拠品
+    //   による論破という設計を確立した原点として採用。日本のプレイヤー自身が本作を「ダンガン
+    //   ロンパ系」と呼んでレビューしており(実測確認済み)、Famitsu記事も同様の文脈で紹介して
+    //   いる。本作固有の「超能力」という第二の謎の層は、影響を公言されたものではない当サイト
+    //   独自の観察である(自信度: 中)。
+    // developer=publisher=Akizuki Yume(個人開発者)。Steamのdeveloper検索を自分で叩き、
+    //   この名義の登録は本作1件のみで、大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[5]をAPI実測(性的表現の1/3/4ではなく一般的な成人向け表現)。
+    //   notes本文もEN/JA両ストアページで実測し、「デスゲームを題材にしたミステリーVN。流血・
+    //   刺傷・鈍器による傷・遺体・自殺描写を含み、物語の一部として提示される」旨のみで、性的
+    //   表現への言及は一切無いことを確認した。ダンガンロンパと同程度の暴力描写であり、この
+    //   点は記事本文で正直に開示する。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2026年8月15日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Trick x Trick visual
+    //   novel"が5件ヒットするが、開いて確認したところ須田剛一氏インタビュー・DMM Games・
+    //   「5 Japanese indie visual novel games」記事(2025年12月13日付、本作の発売より前で
+    //   「trick」は一般英単語としての一致)・週刊少年オーダー・ニトロプラスという完全に無関係な
+    //   誤ヒットだった。"Akizuki Yume"は0件。goodorevengreat.gamesのサイト内検索も無関係な
+    //   記事タイトルのみで実質的なヒット無し。
+    // west_unreached: supported_languagesは日本語のみ。appreviews API実測で全13件が日本語で、
+    //   英語・中華圏・韓国語は1件も存在しない。obscurity: "deep" / reachState: "unreached_west"
+    //   を採る。
+    // 数字の脆さ: 13件は当サイトが扱う最低ラインに近い薄さである。好評率92.3%であっても
+    //   先に開示する。
+    meta: { genre: "realtime-debate-death-game", lineage: "danganronpa", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 13, positivePct: 92 } },
+    games: [
+      {
+        name_en: "Trick × Trick",
+        name_ja: "Trick × Trick",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4322230/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, twelve high schoolers, including the protagonist, wake up in a mysterious building with one rule handed to them: find the mastermind. Name the wrong person, and that person is executed. The only way out is to expose the mastermind or assassinate them. But it doesn't end there, because everyone who wakes up in this building has a supernatural power of their own. As incidents keep occurring, the player investigates and reasons toward a culprit, then faces the discussion that follows. In the real-time discussion part, the store text lays out three rules: the discussion auto-progresses, you have to spot the lies and contradictions hidden in the conversation, and you refute them by presenting the evidence you've gathered. Who is the mastermind, why were twelve people locked in here, and what are these powers, the store text asks, only those who see through to the truth survive; solve the two 'tricks,' mystery and superpower, at once. Made and self-published by the solo developer Akizuki Yume, whose only Steam listing is this game. Priced at ¥1,200 at a launch discount, it is Positive at 92 percent across 13 reviews (12 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors carry a general mature-content flag, and the developer's own note, quoted here rather than softened, says this is a mystery visual novel centered on a death game, containing depictions of violence including blood, stabbing, blunt-force injuries, corpses and scenes depicting suicide, presented as part of the narrative; there is no mention of sexual content anywhere in that description. It supports Japanese only, and every one of its 13 reviews is in Japanese; not one is in English.",
+        desc_ja: "Steam自身の表記によれば、主人公を含む12人の高校生が謎の建物で目を覚まし、突きつけられたルールはただ一つ——黒幕を見つけ出せ。間違った人物を指名すれば、その人物は処刑される。脱出するには、黒幕を暴くか、暗殺するしかない。しかしそれだけでは終わらない。この建物で目覚めた彼らには、それぞれ超能力が宿っていた。次々と発生する不可解な事件を、プレイヤーは調査と推理で追い、犯人捜しのための議論を迎える。リアルタイム議論パートでは、ストア文言が3つのルールを示す——議論は自動進行し、会話の中に潜む嘘や矛盾を見抜き、集めた証拠品を突きつけて論破せよ。黒幕は誰なのか、なぜ12人は閉じ込められたのか、超能力とは何なのか——ストア文言は問いかける。生き残るのは、真実を見抜いた者だけ。ミステリーと超能力、二つの「トリック」を解き明かせ。制作・自社発売はソロ開発者Akizuki Yume。Steamに並ぶのは本作のみである。価格はセール価格で¥1,200。13件のレビュー(好評12件・不評1件、Steam自身のレビューAPI実測)で好評率92%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタは一般的な成人向けフラグを含み、開発者自身の注記を和らげずそのまま伝えると、デスゲームを題材にしたミステリービジュアルノベルであり、流血・刺傷・鈍器による傷・遺体・自殺の描写を物語の一部として含む、というもので、性的表現への言及はどこにも無い。対応言語は日本語のみで、13件のレビューはすべて日本語、英語は1件も存在しない。",
+      },
+      {
+        name_en: "Danganronpa: Trigger Happy Havoc",
+        name_ja: "ダンガンロンパ 希望の学園と絶望の高校生",
+        status: "established",
+        steam: "https://store.steampowered.com/app/413410/Danganronpa_Trigger_Happy_Havoc/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Danganronpa, the Spike Chunsoft game that established the real-time debate, where dialogue keeps moving whether you're ready or not and you interrupt a lie with the exact evidence that disproves it. Trick × Trick is not an official Danganronpa work, and this lineage is a comparison this site draws from what its own Japanese players say, several reviewing it explicitly as a Danganronpa-style mystery ADV; the shared idea carries forward with its own layer added, twelve characters each holding a supernatural power that complicates what 'evidence' even means.",
+        desc_ja: "この味の原点——ダンガンロンパ。準備ができていようがいまいが会話が進み続け、その嘘を覆す正確な証拠品で割り込む、リアルタイム議論を確立したスパイク・チュンソフトの作品。Trick × Trickは公式のダンガンロンパ作品ではなく、この系譜は当サイトが本作の日本語プレイヤー自身の言葉から引いた比較である——複数のレビュアーが自発的に「ダンガンロンパ系」のミステリーADVと評している。共有している発想は、独自の層を重ねて引き継がれている——12人それぞれが固有の超能力を持ち、「証拠」の意味そのものを複雑にしているのだ。",
+      },
+    ],
+    en: {
+      title: "Trick × Trick - twelve high schoolers with supernatural powers, locked in, and naming the wrong mastermind gets them executed. Real-time debate, no pause. Made by solo developer Akizuki Yume for ¥1,200. 92 percent over 13 reviews, entirely Japanese",
+      description: "A mystery visual novel where twelve trapped high schoolers each hold a supernatural power, and a real-time discussion phase forces you to catch lies as they scroll past and refute them with evidence before the conversation moves on. Naming the wrong person gets them executed. 92 percent over 13 reviews.",
+      h1a: "Twelve high schoolers with supernatural powers wake up locked in together. ",
+      h1flip: "Name the wrong mastermind, and that person is executed",
+      h1b: ".",
+      lede: "Per Steam's own listing, twelve high schoolers, including the protagonist, wake up in a mysterious building with one rule handed to them: find the mastermind. Name the wrong person, and that person is executed. The only way out is to expose the mastermind or assassinate them. But it doesn't end there, because everyone who wakes up in this building has a supernatural power of their own. As incidents keep occurring, the player investigates and reasons toward a culprit, then faces the discussion that follows. In the real-time discussion part, the store text lays out three rules: the discussion auto-progresses, you have to spot the lies and contradictions hidden in the conversation, and you refute them by presenting the evidence you've gathered. Who is the mastermind, why were twelve people locked in here, and what are these powers, the store text asks, only those who see through to the truth survive; solve the two 'tricks,' mystery and superpower, at once. Made and self-published by the solo developer Akizuki Yume, whose only Steam listing is this game. Priced at ¥1,200 at a launch discount, it is Positive at 92 percent across 13 reviews (12 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors carry a general mature-content flag, and the developer's own note, quoted here rather than softened, says this is a mystery visual novel centered on a death game, containing depictions of violence including blood, stabbing, blunt-force injuries, corpses and scenes depicting suicide, presented as part of the narrative; there is no mention of sexual content anywhere in that description. It supports Japanese only. One honest note: every one of its 13 reviews is in Japanese, not one is in English, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most mystery games let you pause and think. Here the discussion refuses to wait, so the tension isn't just 'did I figure out who's lying,' it's 'did I catch it in time,' and those are different kinds of pressure entirely.",
+        "Knowing the wrong accusation gets someone executed, not just a failed prompt, changes how carefully you weigh a guess before committing to it. The cost of being wrong is a character, not a retry.",
+        "Layering twelve distinct supernatural powers onto the cast means 'evidence' isn't only physical objects; it's also knowing what someone's power can and can't actually do, which turns character-knowledge itself into an investigative tool.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Danganronpa's real-time, no-pause evidence-refutation debate, where a lie has to be caught the instant it passes, not solved on your own clock",
+        "You want the stakes of a wrong accusation to be a person, not a quiz penalty, with a full narrative and 200,000-plus characters of script behind it",
+        "You want small and self-published: solo developer Akizuki Yume's only Steam listing is this game, produced with a public 2,829-entry voice-cast audition",
+      ],
+      bad: [
+        "You want to avoid violent content; the developer's own content descriptor names blood, stabbing, blunt-force injuries, corpses and suicide depiction as part of the narrative",
+        "You want a game already found in the West; every one of its 13 reviews is in Japanese, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Trick × Trick - 超能力を持つ12人の高校生が閉じ込められ、間違った黒幕を指名すればその人物が処刑される。一時停止できないリアルタイム議論。ソロ開発者Akizuki Yume制作、価格¥1,200。13件で好評率92%、全件日本語",
+      description: "超能力を持つ12人の高校生が閉じ込められるミステリービジュアルノベル。リアルタイム議論パートでは、会話が流れる中で嘘を見抜き、会話が進む前に証拠品で論破しなければならない。間違った人物を指名すればその人物は処刑される。13件のレビューで好評率92%。",
+      h1a: "超能力を持つ12人の高校生が、閉じ込められて目を覚ます。",
+      h1flip: "間違った黒幕を指名すれば、その人物は処刑される",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、主人公を含む12人の高校生が謎の建物で目を覚まし、突きつけられたルールはただ一つ——黒幕を見つけ出せ。間違った人物を指名すれば、その人物は処刑される。脱出するには、黒幕を暴くか、暗殺するしかない。しかしそれだけでは終わらない。この建物で目覚めた彼らには、それぞれ超能力が宿っていた。次々と発生する不可解な事件を、プレイヤーは調査と推理で追い、犯人捜しのための議論を迎える。リアルタイム議論パートでは、ストア文言が3つのルールを示す——議論は自動進行し、会話の中に潜む嘘や矛盾を見抜き、集めた証拠品を突きつけて論破せよ。黒幕は誰なのか、なぜ12人は閉じ込められたのか、超能力とは何なのか——ストア文言は問いかける。生き残るのは、真実を見抜いた者だけ。ミステリーと超能力、二つの「トリック」を解き明かせ。制作・自社発売はソロ開発者Akizuki Yume。Steamに並ぶのは本作のみである。価格はセール価格で¥1,200。13件のレビュー(好評12件・不評1件)で好評率92%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタは一般的な成人向けフラグを含み、開発者自身の注記を和らげずそのまま伝えると、デスゲームを題材にしたミステリービジュアルノベルであり、流血・刺傷・鈍器による傷・遺体・自殺の描写を物語の一部として含む、というもので、性的表現への言及はどこにも無い。対応言語は日本語のみ。正直に一点。13件のレビューはすべて日本語で、英語は1件も存在せず、本作についての正真の英語記事もAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "多くのミステリーゲームは一時停止して考えさせてくれる。ここでは議論が待ってくれない。だから緊張感は「誰が嘘をついているか見抜けたか」だけでなく「間に合ったか」にもなる——まったく別種の圧力だ。",
+        "間違った指名が単なる失敗プロンプトではなく処刑につながると分かっていることが、推測を確定させる前にどれだけ慎重に吟味するかを変える。間違えた代償はキャラクター1人であって、やり直しではない。",
+        "12人それぞれ固有の超能力を重ねる設計は、「証拠」を物理的な物品だけに留めない。誰かの能力が何をできて何をできないか知っていること自体も、調査の道具になるのだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ダンガンロンパ的な、一時停止できないリアルタイムの証拠反論議論——嘘は流れた瞬間に見抜かなければならず、自分のペースで解けるものではない——が欲しい人",
+        "間違った指名の代償がクイズのペナルティではなく1人の人間であり、20万字を超える本格的な物語を背負っているものが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ開発者Akizuki YumeのSteamタイトルは本作のみで、2,829件応募の公開声優オーディションを経て制作された",
+      ],
+      bad: [
+        "暴力描写を避けたい人——開発者自身のコンテンツディスクリプタが、流血・刺傷・鈍器による傷・遺体・自殺の描写を物語の一部として含むと明記している",
+        "既に西で見つかっているゲームが欲しい人——13件のレビューはすべて日本語で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13587,6 +13696,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "danganronpa": {
+    steam: "413410",
+    blurb: {
+      en: "Danganronpa: Trigger Happy Havoc, developed by Spike Chunsoft and released in Japan in 2010 (Steam release 2016), established the real-time evidence-refutation courtroom debate: a cast trapped together, one murder among them, and a discussion phase where dialogue keeps moving whether you're ready or not, forcing the player to catch a lie the instant it passes and interrupt it with the one piece of evidence that proves it false. It is the origin of the lineage of mystery games where accusing the wrong person is not a quiz you fail but a sentence someone else pays for.",
+      ja: "『ダンガンロンパ 希望の学園と絶望の高校生』は、スパイク・チュンソフトが開発し2010年に日本で発売された作品(Steam版は2016年)で、「リアルタイムで証拠を突きつけて論破する議論」を確立した——閉じ込められた一同、その中で起きた一つの殺人、そして準備ができていようがいまいが会話が進み続ける議論パートで、プレイヤーは嘘が流れた瞬間にそれを見抜き、それを覆す唯一の証拠品で割り込まなければならない。間違った人物を指名することが、失敗するクイズではなく、別の誰かが代わりに支払う刑罰である、というミステリーゲーム群の系譜の原点である。",
+    },
+  },
   "pony-island": {
     steam: "405640",
     blurb: {
