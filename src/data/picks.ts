@@ -14073,6 +14073,115 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dandelion-planet": {
+    published: "2026-08-15",
+    publishAt: "2026-08-15",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "memory-collect-alien-slow-life"。ストア本文実測: 「ピピセラ星」という
+    //   惑星で、個性豊かな宇宙の人達と30日間を過ごすSFスローライフ系ノベルアドベンチャー。
+    //   買い物・バイト・交流・旅行、いろんな行動で思い出を増やし、集めた思い出でエンディングが
+    //   変化する(現在9種)。「※恋愛ゲームではありません。」と自ら明記している点も含め、
+    //   固定期間の中で行動を割り振り、その積み重ねが結末を決める、という一点が本作の核だと
+    //   判断した。
+    // lineageは新規anchor "princess-maker" を作る。固定期間内の行動の積み重ねが結末を決める、
+    //   という育成シミュレーションの原点として採用。本作固有の「育てる対象ではなく自分自身が
+    //   主人公で、恋愛ではなく思い出収集が軸」という点は、影響を公言されたものではない当サイト
+    //   独自の観察である(自信度: 中)。
+    // developer=publisher=Mareffy(個人開発者)。Steamのdeveloper検索を自分で叩き、この名義の
+    //   登録は4件(本作/体験版/前作The Light of Summer/同アートブック)で、全てdeveloper=
+    //   publisherが一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ20件(Life Sim/Tutorial/
+    //   Space Sim/Fantasy/Comedy/Story Rich/Space/Adventure/Visual Novel/Exploration/2D/
+    //   Sci-fi/Anime/Atmospheric/Singleplayer/Choose Your Own Adventure/Cute/Indie/
+    //   Simulation/Multiple Endings)にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンを日英両ページで実測。genresに"Early Access"を含まず、リリース済みで
+    //   正式版として売られている(発売日は2025年7月26日。2023年12月にアーリーアクセスとして
+    //   始動した経緯があるが、現在のgenresとストアHTMLのバナーはどちらもEA表記が無いことを
+    //   実測確認し、正式卒業後の状態であると判断した)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Dandelion Planet visual
+    //   novel""Mareffy"とも0件。
+    // west_unreached: supported_languagesは日本語・英語。appreviews API実測で全13件が日本語で、
+    //   英語・中華圏・韓国語は1件も存在しない。英語UIは実装済みで西側読者は遊べるが到達して
+    //   いないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字の脆さ: 13件は当サイトが扱う最低ラインに近い薄さである。好評率100%であっても
+    //   先に開示する。
+    meta: { genre: "memory-collect-alien-slow-life", lineage: "princess-maker", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 13, positivePct: 100 } },
+    games: [
+      {
+        name_en: "Dandelion Planet",
+        name_ja: "たんぽぽプラネット",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2672030/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is an SF slow-life novel adventure about spending 30 days on the planet Pipisera among a cast of distinctly individual alien beings. Each day you allocate to shopping, part-time work, socializing, or travel, and these varied actions accumulate as memories; the store text is explicit that which memories you've collected changes which ending you see, currently nine of them, and just as explicitly states this is not a romance game. One playthrough runs about ninety minutes. Made and self-published by the solo developer Mareffy, whose four-title Steam catalogue is entirely self-developed and self-published. Priced at ¥1,500, it is Positive at 100 percent across 13 reviews (13 positive, 0 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note up front: 13 reviews is close to this site's floor. Every one of them is in Japanese; not one is in English, Chinese, or Korean.",
+        desc_ja: "Steam自身の表記によれば、本作は「ピピセラ星」という惑星で、個性豊かな宇宙の人達と30日間を過ごすSFスローライフ系ノベルアドベンチャーだ。買い物・バイト・交流・旅行——さまざまな行動で「思い出」を増やしていく。ストア文言は明確に述べている——集めた思い出で見れるエンディングが変化し、現在9種類ある、と。そして同じくらい明確に、恋愛ゲームではないと明記している。1周のプレイ時間はおよそ1時間半。制作・自社発売はソロ開発者Mareffy。Steamに並ぶ4作品はすべて自社開発・自社発売である。価格は¥1,500。13件のレビュー(好評13件・不評0件、Steam自身のレビューAPI実測)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——13件は当サイトの最低ラインに近い薄さである。その全件が日本語で、英語・中国語・韓国語は1件も存在しない。",
+      },
+      {
+        name_en: "Princess Maker",
+        name_ja: "プリンセスメーカー",
+        status: "established",
+        steam: "https://store.steampowered.com/app/583040/Princess_Maker_Refine/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Princess Maker, the game that established the raising-sim genre, where a fixed span of time and a handful of categorized actions accumulate into one of many possible outcomes, no single choice deciding the whole. Dandelion Planet is not an official Princess Maker work, but it carries that same core structure into a very different shape: you are not raising a daughter across years, you are the traveler yourself across thirty days, and what accumulates is not stats to be optimized but memories, deliberately kept apart from romance, that decide which of nine endings you land on.",
+        desc_ja: "この味の原点——プリンセスメーカー。決まった期間といくつかに分類された行動の積み重ねが、単一の選択ではなく数ある結末のうちの一つを決める、育成シミュレーションを確立した作品。たんぽぽプラネットは公式のプリンセスメーカー作品ではないが、同じ核となる構造をまったく違う形へ引き継いでいる——何年もかけて娘を育てるのではなく、旅人自身として30日間を過ごし、積み重なるのは最適化すべきステータスではなく、恋愛からは意図的に切り離された「思い出」であり、それが9つのエンディングのどこへ辿り着くかを決めるのだ。",
+      },
+    ],
+    en: {
+      title: "Dandelion Planet - spend 30 days on an alien world, allocating each day to shopping, work, socializing or travel; the memories you accumulate, not a single choice, decide which of 9 endings you reach. Made by solo developer Mareffy for ¥1,500. 100 percent over 13 reviews, entirely Japanese",
+      description: "A 30-day SF slow-life visual novel on the alien planet Pipisera. Each day goes to shopping, part-time work, socializing or travel, accumulating as memories that determine which of 9 endings you land on. Explicitly not a romance game. 100 percent over 13 reviews.",
+      h1a: "Spend 30 days on an alien world, allocating each day to a handful of small actions. ",
+      h1flip: "The memories you accumulate, not any single choice, decide which of 9 endings you reach",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is an SF slow-life novel adventure about spending 30 days on the planet Pipisera among a cast of distinctly individual alien beings. Each day you allocate to shopping, part-time work, socializing, or travel, and these varied actions accumulate as memories; the store text is explicit that which memories you've collected changes which ending you see, currently nine of them, and just as explicitly states this is not a romance game. One playthrough runs about ninety minutes. Made and self-published by the solo developer Mareffy, whose four-title Steam catalogue is entirely self-developed and self-published. Priced at ¥1,500, it is Positive at 100 percent across 13 reviews (13 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note up front: 13 reviews is close to this site's floor, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere. Every one of them is in Japanese; not one is in English, Chinese, or Korean.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Being told outright that this isn't a romance game while every action still feeds into which of nine endings you see reframes what the relationships in the cast are for; they're not routes to win, they're just part of how thirty days adds up.",
+        "Splitting your time across shopping, work, socializing and travel, with no single action weighted as the 'right' one, means the memories you end up with feel like a record of what you actually chose to spend a month on, not a strategy you optimized toward.",
+        "Nine endings from the same thirty days is a real invitation to notice what a different allocation would have produced, less a puzzle to solve than a life you'd live slightly differently the second time.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Princess Maker's core idea, that an accumulated span of time rather than any single choice decides the outcome, applied to a fixed thirty days instead of years",
+        "You want a slow-life sim that explicitly isn't about romance, where socializing is one memory-generating action among several rather than the whole point",
+        "You want small and self-published: solo developer Mareffy's four-title Steam catalogue is entirely self-developed, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 13 reviews is close to this site's floor even at a perfect score",
+        "You want a game already found in the West; every single review is in Japanese, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "たんぽぽプラネット - 異星で30日間を過ごし、買い物・バイト・交流・旅行に日々を割り振る。単一の選択ではなく積み重なった思い出が9つのエンディングのどれに辿り着くかを決める。ソロ開発者Mareffy制作、価格¥1,500。13件で好評率100%、全件日本語",
+      description: "異星ピピセラ星を舞台にした30日間のSFスローライフノベル。買い物・バイト・交流・旅行に日々を割り振り、積み重なった思い出が9つのエンディングのどれに辿り着くかを決める。恋愛ゲームではないと自ら明記している。13件のレビューで好評率100%。",
+      h1a: "異星で30日間を過ごし、日々をいくつかの小さな行動に割り振る。",
+      h1flip: "積み重なった思い出が、単一の選択ではなく、9つのエンディングのどれに辿り着くかを決める",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は「ピピセラ星」という惑星で、個性豊かな宇宙の人達と30日間を過ごすSFスローライフ系ノベルアドベンチャーだ。買い物・バイト・交流・旅行——さまざまな行動で「思い出」を増やしていく。ストア文言は明確に述べている——集めた思い出で見れるエンディングが変化し、現在9種類ある、と。そして同じくらい明確に、恋愛ゲームではないと明記している。1周のプレイ時間はおよそ1時間半。制作・自社発売はソロ開発者Mareffy。Steamに並ぶ4作品はすべて自社開発・自社発売である。価格は¥1,500。13件のレビュー(好評13件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語で、遊ぶのを止めるものは何もない。正直に一点先に開示する——13件は当サイトの最低ラインに近い薄さで、本作についての正真の英語記事はAUTOMATON WESTを含めまだどこにも存在しない。その全件が日本語で、英語・中国語・韓国語は1件も存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "恋愛ゲームではないと正面から告げられながら、それでもすべての行動が9つのエンディングのどれを見るかに繋がっていることは、登場する人物たちとの関係の意味を組み替える——彼らは攻略すべきルートではなく、30日間が積み上がっていく過程の一部にすぎない。",
+        "買い物・バイト・交流・旅行に時間を割り振り、どれか一つを「正解」として重み付けしないことは、最終的に手にする思い出が、最適化した戦略ではなく、実際に1ヶ月を何に費やしたかの記録のように感じられることを意味する。",
+        "同じ30日間から9通りのエンディングが生まれることは、別の割り振りをしていたら何が生まれていたかに気づかせる、本物の誘いになる——解くべきパズルというより、2周目には少し違う生き方をしてみたくなる人生だ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "プリンセスメーカーの核心——単一の選択ではなく積み重なった期間そのものが結末を決める——を、何年もではなく固定された30日間に応用したものが欲しい人",
+        "恋愛が明確に主題ではなく、交流がいくつかある思い出生成の行動の一つにすぎない、スローライフシムが欲しい人",
+        "小さくて自主出版のものが欲しい人——ソロ開発者MareffyのSteam4作品はすべて自社開発、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——13件は満点であっても当サイトの最低ラインに近い",
+        "既に西で見つかっているゲームが欲しい人——レビューは全件日本語で、英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
