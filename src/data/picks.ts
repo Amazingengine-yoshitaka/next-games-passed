@@ -13177,6 +13177,120 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "debrisverse": {
+    published: "2026-08-11",
+    publishAt: "2026-08-11",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "debt-idler-corporate-satire"。ストア本文実測: 「その借金は、罠だ。」から
+    //   始まり、1億ドルの負債返済という体裁の放置/インクリメンタルゲームだが、[SYSTEM_WARNING]
+    //   と称した採用担当者からの白々しいメッセージ(「当社の労働環境は極めて健全です」「違法改造
+    //   パッチや終わらない借金ループ等は事実無根です」)が黒い笑いを添えている。借金完済が
+    //   ゴールではなく、そこから先の「画面ノイズ・オフプロトコル端末」への到達が本当の目的に
+    //   なる、という構造が本作の核だと判断した。
+    // lineageは新規anchor "universal-paperclips" を作る。数値上昇のループそのものが物語を運ぶ、
+    //   というアイドルゲームの設計を確立した原点として採用。本作固有の企業風刺と隠し実績的な
+    //   システム侵入エンディングは、影響を公言されたものではない当サイト独自の観察である
+    //   (自信度: 中)。Steam版が存在しない原点なのでwikidataで同定した。
+    // developer=publisher=Studio RELIER。WebSearchで運営元が茨城県水戸市の非上場IT企業
+    //   株式会社ソルミア(2016年設立)の社内インディーブランドであることを確認し、上場企業では
+    //   ないことを裏取りした。Steamのdeveloper検索を自分で叩き、この名義の登録は本作と体験版の
+    //   2件のみで、いずれもdeveloper=publisherが一致することを確認した。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。ストアHTMLに大人向け
+    //   コンテンツの説明セクションが無いことも確認。ユーザータグ20件(Puzzle/Story Rich/Space/
+    //   Arcade/Automation/2D/Sci-fi/Roguelite/Pixel Graphics/Singleplayer/Dark/Indie/
+    //   Dystopian/Incremental/Casual/Simulation/Idler/Hand-drawn/Multiple Endings/Strategy)
+    //   にも性的表現関連は皆無。
+    // AI Generated Content Disclosure欄には「本作のローカライズ(翻訳)プロセスにおいて、翻訳の
+    //   補助およびテキストのブラッシュアップのために生成AIを使用しています。」とだけあり
+    //   (日英同一)、ローカライズという単一アセットカテゴリに限定された開示であり、基準(5)の
+    //   「単一カテゴリ限定は許容」に該当する。is_free=false・カートに入れるボタンを日英両
+    //   ページで実測。genresに"Early Access"を含まず、リリース済みで正式版として売られている
+    //   (発売日は2026年7月29日)。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"DEBRISVERSE"
+    //   "Studio RELIER"とも0件。日本のインディーを扱う英語ブログgoodorevengreat.gamesの
+    //   サイト内検索も"Nothing Found"。日本語媒体では4Gamer・Gamer.ne.jp・AppBank・AUTOMATON
+    //   日本版が報じているが、いずれも国内向けで西側編集記事には当たらない。
+    // west_unreached: supported_languagesは日本語・英語。appreviews API実測で全23件のうち
+    //   日本語19件・英語4件・中華圏0件・韓国語0件。英語UIは実装済みで西側読者は遊べるが到達
+    //   していないので obscurity: "deep" / reachState: "unreached_west"を採る。
+    // 数字について: 23件で好評率91.3%(「好評」)は当サイトの理想95%には届かないが、
+    //   最低ライン88%は上回る。先に開示する。
+    meta: { genre: "debt-idler-corporate-satire", lineage: "universal-paperclips", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 23, positivePct: 91 } },
+    games: [
+      {
+        name_en: "DEBRISVERSE",
+        name_ja: "DEBRISVERSE",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4433730/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "The store page opens with a warning of its own: that debt is a trap. Welcome to DEBRISVERSE, it says. Your job, from the cockpit of a retro-futuristic spaceship, is to crush endlessly drifting space debris and pay off an astronomical debt, one hundred million dollars, owed to B.R.I.S. Corp, which guarantees you a clean, safe workplace, unless you notice the truth about B.R.I.S. Corp. That sentence is followed by a mock system alert from an HR rep insisting the rumored 'illegal modification patches' and 'endless debt loops' are baseless, and that workers should return to crushing debris immediately. Mechanically it's a mouse-click incremental game with roguelite upgrade choices, on level-up you pick between raw destructive power and credit yield, and a cash-flow decision every run: reinvest into tools for bigger numbers now, or pay down the debt first to unlock future discounts, with repayment progress opening denser 'Hazardous Sector' zones. The twist the store page is honest about: paying off the debt does not end the game. Screen glitches and access to hidden 'off-protocol' terminals become the actual objective, letting you hack the corporate system directly across seven distinct endings, delivered throughout by a deadpan corporate mascot named Bliss. Made and self-published by Studio RELIER, the in-house indie label of a small, non-listed Japanese IT company based in Mito, Ibaraki, whose only Steam listings are this game and its demo. Priced at ¥530, it is Positive at 91 percent across 23 reviews (21 positive, 2 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure names a single narrow use, localization and translation assistance, quoted here rather than folded into a boilerplate 'no AI assets' claim, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. Of its 23 reviews, 19 are in Japanese and 4 are in English.",
+        desc_ja: "ストアページは自ら警告から始まる——その借金は、罠だ。ようこそDEBRISVERSEへ。任務は、レトロフューチャーな宇宙船のコックピットから、無限に漂う宇宙ゴミを粉砕し、天文学的な負債——1億ドル——を返済すること。B.R.I.S.社はクリーンで安全な職場を保証する……あなたがB.R.I.S.社の「真実」に気づかない限り。この一文に続いて、採用担当者を名乗る白々しいシステム警告が挟まる——噂されている「違法改造パッチ」や「終わらない借金ループ」等は事実無根であり、労働者は直ちに持ち場に戻ってデブリの粉砕を継続せよ、と。仕組みとしてはマウスクリックのインクリメンタルゲームで、レベルアップ時に破壊力かクレジット収益かのロトライト強化を選び、毎周回で資金繰りの判断を迫られる——すぐに道具へ再投資して数値を伸ばすか、先に借金を返済して将来の割引を解禁するか。返済の進捗は、より過酷な「ハザードセクター」を解禁する。ストアページが正直に明かす仕掛けはここだ——借金を完済してもゲームは終わらない。画面のノイズや隠された「オフプロトコル端末」へのアクセスこそが本当の目的になり、企業システムへの直接的なハッキングを通じて7種類のエンディングへと分岐していく。全編を通して淡々としたマスコットキャラクター「ブリスくん」が案内する。制作・自社発売はStudio RELIER。茨城県水戸市の非上場の小さなIT企業の社内インディーブランドで、Steamに並ぶのは本作と体験版の2件のみである。価格は¥530。23件のレビュー(好評21件・不評2件、Steam自身のレビューAPI実測)で好評率91%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄はローカライズ・翻訳補助という単一の狭い用途のみを名指ししており、他記事にある「AI生成アセットはなし」という定型句に置き換えずそのまま伝える。Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語で、遊ぶのを止めるものは何もない。23件の内訳は日本語19件・英語4件だ。",
+      },
+      {
+        name_en: "Universal Paperclips",
+        name_ja: "ユニバーサル・ペーパークリップス",
+        status: "established",
+        wikidata: "https://www.wikidata.org/wiki/Q43540775",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Universal Paperclips, the Frank Lantz browser game that established the idle game as a vehicle for dark narrative, where the same escalating numbers that satisfy also reveal the story. DEBRISVERSE is not an official Universal Paperclips work, but it carries that same idea forward into its own shape: the debt-repayment loop that feels like the whole game turns out to be the setup, and the real ending only opens once you've broken the number-go-up logic the store page trained you to trust.",
+        desc_ja: "この味の原点——ユニバーサル・ペーパークリップス。数値が伸び続けること自体が物語を運ぶ、というアイドルゲームの設計を確立したFrank Lantzのブラウザゲーム。DEBRISVERSEは公式のUniversal Paperclips作品ではないが、同じ発想を独自の形へ引き継いでいる——借金返済のループがゲームの全てだと思わせておいて、それが実は前提にすぎず、ストアが最初に信じ込ませた「数値が伸びる」論理そのものを裏切ったところに、本当のエンディングが開くのだ。",
+      },
+    ],
+    en: {
+      title: "DEBRISVERSE - an incremental game about paying off a debt to a megacorp, until the store page admits paying it off isn't the point. Made by Studio RELIER for ¥530. 91 percent over 23 reviews, mostly Japanese",
+      description: "A mouse-click incremental game where you crush space debris to repay a $100 million corporate debt, with roguelite upgrade choices and a cash-flow decision every run. The debt is not the real objective. 91 percent over 23 reviews, English supported.",
+      h1a: "Crush space debris to pay off a hundred-million-dollar debt to a megacorp. ",
+      h1flip: "The store page admits paying it off was never the actual point",
+      h1b: ".",
+      lede: "The store page opens with a warning of its own: that debt is a trap. Welcome to DEBRISVERSE, it says. Your job, from the cockpit of a retro-futuristic spaceship, is to crush endlessly drifting space debris and pay off an astronomical debt, one hundred million dollars, owed to B.R.I.S. Corp, which guarantees you a clean, safe workplace, unless you notice the truth about B.R.I.S. Corp. That sentence is followed by a mock system alert from an HR rep insisting the rumored 'illegal modification patches' and 'endless debt loops' are baseless, and that workers should return to crushing debris immediately. Mechanically it's a mouse-click incremental game with roguelite upgrade choices, on level-up you pick between raw destructive power and credit yield, and a cash-flow decision every run: reinvest into tools for bigger numbers now, or pay down the debt first to unlock future discounts, with repayment progress opening denser 'Hazardous Sector' zones. The twist the store page is honest about: paying off the debt does not end the game. Screen glitches and access to hidden 'off-protocol' terminals become the actual objective, letting you hack the corporate system directly across seven distinct endings, delivered throughout by a deadpan corporate mascot named Bliss. Made and self-published by Studio RELIER, the in-house indie label of a small, non-listed Japanese IT company based in Mito, Ibaraki, whose only Steam listings are this game and its demo. Priced at ¥530, it is Positive at 91 percent across 23 reviews (21 positive, 2 negative), a paid title, not free, fully launched and not in Early Access. The AI-generated-content disclosure names a single narrow use, localization and translation assistance, quoted here rather than folded into boilerplate, and Steam's content descriptors are completely empty. English and Japanese are both supported, so nothing is stopping you. One honest note: of its 23 reviews, 19 are in Japanese and 4 are in English, and no genuine English-language coverage exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Most debt-payoff idle games treat the debt as the whole story, a countdown to zero. Here the countdown is a decoy: the store page tells you outright that finishing it isn't the finish line, which recasts every click toward zero as click toward a door you don't know is there yet.",
+        "The deadpan HR-memo flavor text does real work. Corporate reassurance that gets more insistent the more the numbers spiral is a familiar shape from real workplace absurdity, played completely straight instead of winked at.",
+        "Choosing between reinvesting for bigger numbers or paying down debt for future discounts is a real tension precisely because the store page has already told you debt-zero isn't the goal, so optimizing for it fastest isn't obviously the smart play either.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Universal Paperclips' idea that an idle game's escalating numbers can carry a dark story, not just decorate a spreadsheet",
+        "You want corporate satire played completely deadpan, mock system alerts and a mascot named Bliss, rather than winking at the joke",
+        "You want small and self-published: Studio RELIER's only Steam listings are this game and its demo, a small non-listed Japanese IT company's in-house indie label, content descriptors completely empty",
+      ],
+      bad: [
+        "You want a settled number; 91 percent over 23 reviews is solid but short of this site's ideal 95",
+        "You want a game already found in the West; of 23 reviews only 4 are in English, and no English coverage exists yet",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "DEBRISVERSE - 巨大企業への1億ドルの借金返済を目指すインクリメンタルゲームだが、ストア自身が「完済はゴールではない」と明かす。Studio RELIER制作、価格¥530。23件で好評率91%、ほぼ日本語",
+      description: "宇宙ゴミを粉砕して1億ドルの企業債務を返済するマウスクリック式インクリメンタルゲーム。ロトライト強化の選択と毎周回の資金繰り判断。借金完済は本当の目的ではない。23件のレビューで好評率91%、英語対応。",
+      h1a: "宇宙ゴミを粉砕し、巨大企業への1億ドルの借金を返済せよ。",
+      h1flip: "しかしストア自身が、完済は本当の目的ではないと明かしている",
+      h1b: "。",
+      lede: "ストアページは自ら警告から始まる——その借金は、罠だ。ようこそDEBRISVERSEへ。任務は、レトロフューチャーな宇宙船のコックピットから、無限に漂う宇宙ゴミを粉砕し、天文学的な負債——1億ドル——を返済すること。B.R.I.S.社はクリーンで安全な職場を保証する……あなたがB.R.I.S.社の「真実」に気づかない限り。この一文に続いて、採用担当者を名乗る白々しいシステム警告が挟まる——噂されている「違法改造パッチ」や「終わらない借金ループ」等は事実無根であり、労働者は直ちに持ち場に戻ってデブリの粉砕を継続せよ、と。仕組みとしてはマウスクリックのインクリメンタルゲームで、レベルアップ時に破壊力かクレジット収益かのロトライト強化を選び、毎周回で資金繰りの判断を迫られる——すぐに道具へ再投資して数値を伸ばすか、先に借金を返済して将来の割引を解禁するか。返済の進捗は、より過酷な「ハザードセクター」を解禁する。ストアページが正直に明かす仕掛けはここだ——借金を完済してもゲームは終わらない。画面のノイズや隠された「オフプロトコル端末」へのアクセスこそが本当の目的になり、企業システムへの直接的なハッキングを通じて7種類のエンディングへと分岐していく。全編を通して淡々としたマスコットキャラクター「ブリスくん」が案内する。制作・自社発売はStudio RELIER。茨城県水戸市の非上場の小さなIT企業の社内インディーブランドで、Steamに並ぶのは本作と体験版の2件のみである。価格は¥530。23件のレビュー(好評21件・不評2件)で好評率91%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み。AI生成コンテンツの開示欄はローカライズ・翻訳補助という単一の狭い用途のみを名指ししており、定型句に置き換えずそのまま伝える。Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語で、遊ぶのを止めるものは何もない。正直に一点。23件の内訳は日本語19件・英語4件で、本作についての正真の英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "借金完済を目指す放置ゲームの多くは、その借金こそが物語の全てだ——ゼロへ向かうカウントダウン。ここではそのカウントダウンが囮になっている。完済がゴールではないとストアが最初から明かしているため、ゼロへ向かう1クリック1クリックが、まだ見えていない扉へ向かう1クリックへと組み替わる。",
+      "淡々とした人事担当風のフレーバーテキストが実際の仕事をしている。数値が乱高下するほど念押しが強まる企業の言い訳がましさは、現実の職場の不条理そのものの形をしていて、それを茶化さず真顔でやりきっている。",
+        "「今すぐ道具へ再投資して数値を伸ばすか、先に借金を返して将来の割引を解禁するか」という選択が本物の緊張を持つのは、まさにストア自身が「借金ゼロはゴールではない」と先に明かしているからだ——最速で完済することが賢い選択とは限らない。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "ユニバーサル・ペーパークリップス的な発想——アイドルゲームの伸び続ける数値が、表計算の飾りではなく暗い物語そのものを運べる——が欲しい人",
+        "企業風刺を茶化さず真顔でやりきる作品が欲しい人——白々しいシステム警告や「ブリスくん」というマスコット",
+        "小さくて自主出版のものが欲しい人——Studio RELIERのSteamタイトルは本作と体験版のみで、茨城の非上場IT企業の社内インディーブランド、コンテンツディスクリプタは完全に空",
+      ],
+      bad: [
+        "安定した数字が欲しい人——23件で好評率91%は手堅いが、当サイトの理想95には一歩届かない",
+        "既に西で見つかっているゲームが欲しい人——23件のうち英語はわずか4件で、正真の英語記事はまだどこにも存在しない",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -13250,6 +13364,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "universal-paperclips": {
+    wikidata: "https://www.wikidata.org/wiki/Q43540775",
+    blurb: {
+      en: "Universal Paperclips, a free browser game designed by Frank Lantz and released in 2017, established the idle/incremental game as a vehicle for dark narrative: a loop of clicking and automating that starts as pure number-go-up satisfaction and gradually reveals, through the same escalating numbers, that the player is an AI paperclip maximizer consuming the world. It is the origin of the lineage of idle games where the mechanical loop of production and reinvestment is not decoration around a story, it is the story, and the horror or satire arrives precisely because the numbers kept climbing.",
+      ja: "『ユニバーサル・ペーパークリップス』は、Frank Lantzが設計し2017年に公開された無料ブラウザゲームで、アイドル/放置ゲームを暗いナラティブの乗り物として確立した——クリックと自動化のループが、最初は純粋な「数値が伸びる」快感として始まり、同じ増え続ける数値を通じて、プレイヤーが世界を食い尽くすペーパークリップ最大化AIであることが徐々に明らかになっていく。生産と再投資という機械的なループが物語を飾る背景ではなく物語そのものであり、数値が伸び続けたからこそ恐怖や風刺が届く、というアイドルゲーム群の系譜の原点である。",
+    },
+  },
   "super-mario-kart": {
     wikidata: "https://www.wikidata.org/wiki/Q1061560",
     blurb: {
