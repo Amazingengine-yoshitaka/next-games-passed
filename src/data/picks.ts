@@ -14182,6 +14182,119 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "forever-time": {
+    published: "2026-08-16",
+    publishAt: "2026-08-16",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "live-action-backdrop-kinetic-novel"。ストアのJA本文実測: 「実写の風景写真や
+    //   動画が背景を彩る新感覚シネマティックノベルゲーム」「特に選択肢のないノベルゲーム」。
+    //   実際のユーザーレビューでも「実写背景+イラストによる描写に違和感がなく、むしろ馴染んで
+    //   いる」「風景写真と動画、それにBGMの使い方のセンスが良く、普段プレイしているゲームでは
+    //   なかなか見ない新鮮な体験ができました」「cinema 8割 novel 2割」という一致した証言が多数
+    //   あり、選択肢のないキネティックノベルの型に、イラストではなく実写の風景写真・動画を
+    //   背景として使う、という一点が本作の核だと判断した。
+    // lineageは新規anchor "428"(428: Shibuya Scramble)を作る。Steam公式の Game Features に
+    //   "Real Actors and Locations"として「still photography and live action footage」を明記
+    //   している、実写素材をノベル形式のゲームの視覚表現として使う手法の代表的な原点として
+    //   採用。本作は428のような実写「役者」の撮影ではなく、風景写真・動画のみを背景として
+    //   使う個人制作の小品であり、規模もキャストも別物である——この対比は影響を公言された
+    //   ものではない当サイト独自の観察である(自信度: 中)。
+    // developer=publisher="Forever Time"(サークル/個人名義)。Steamのdeveloper検索を自分で
+    //   叩き、この名義の登録は本作自身とそのサントラの2件のみで、developer=publisherが完全に
+    //   一致することを確認した。大手・海外展開代行・親会社関係の混入はゼロ。JA本文で
+    //   「処女作にしてSteamで公開まで7年」と明言されており、個人・小規模の自主制作作品である
+    //   ことも裏付けられる。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。AI Generated Content
+    //   Disclosure欄はストアページに存在しない。is_free=false・カートに入れるボタンをJAページ
+    //   で実測。genresに"Early Access"/"早期アクセス"を含まず、2025年5月5日発売の正式リリース
+    //   済み作品。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Forever Time"は0件。加えて
+    //   広い一般WebSearchでも西側メディアのレビュー・特集記事は見つからなかった。
+    // west_unreached: supported_languagesは日本語・簡体字中国語・繁体字中国語で、英語UIは
+    //   一切実装されていない(noEnglish: true)。appreviews API実測で全20件のレビューのうち
+    //   日本語16件・簡体字中国語4件・繁体字中国語0件・英語0件・韓国語0件で、非日本語(4件)は
+    //   日本語(16件)を大きく下回るため西未浸透の基準を満たす。実際に日本語レビュー10件の本文を
+    //   読み、「作者の想いがぎゅっと詰まった」「自主制作のゲームを創るという喜びにあふれた
+    //   作品」等、開発者への言及や思い入れの深い口語表現が並び、有機的な日本の読者エンゲージ
+    //   メントであることを確認した。
+    // 数字の脆さ: 20件は当サイトが扱う最低ラインに近い薄さである。好評率100%であっても
+    //   先に開示する。また英語UIが一切無いため、西側読者は日本語のまま遊ぶか機械翻訳に頼る
+    //   必要がある点も正直に開示する。
+    meta: { genre: "live-action-backdrop-kinetic-novel", lineage: "428", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 20, positivePct: 100, noEnglish: true } },
+    games: [
+      {
+        name_en: "Forever Time",
+        name_ja: "Forever Time",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3278330/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a 'cinematic novel game' whose backgrounds are colored not by illustration but by real landscape photographs and video footage, a technique the store text calls a 'new kind of feeling.' A jobless young man who loves movies, Yuto Habu, runs into Nazuna Fukamachi, a photography-school student carrying a camera, by chance on a bridge with a nice view, and agrees to help shoot her graduation project; the store text is explicit that this is 'a novel game with no particular choices,' built to be watched more than played, running about an hour. The Japanese description states plainly that this is the solo creator's debut work, seven years in the making before it reached Steam. Both developer and publisher are credited simply as 'Forever Time,' and Steam's own developer search turns up only this title and its soundtrack, nothing else. Priced at ¥1,000, it is Positive at 100 percent across 20 reviews (20 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. One honest note up front: there is no English interface at all, only Japanese, Simplified Chinese, and Traditional Chinese, so Western readers will need to read it in Japanese or lean on machine translation. Every one of its 20 reviews is written in Japanese or Simplified Chinese, and reading through them turns up native, colloquial praise for the photography-and-video backdrop and open admiration for the creator's personal, self-funded effort, not the language of a game any Western outlet has covered yet.",
+        desc_ja: "Steam自身の表記によれば、本作は背景をイラストではなく実写の風景写真や動画で彩る「新感覚シネマティックノベルゲーム」だ。映画好きで無職の青年・羽生ユウトが、景色の良い橋の上でカメラを持った写真専門学校生・深町なずなと偶然出会い、彼女の卒業制作の撮影を手伝うことになる——ストア文言は「特に選択肢のないノベルゲーム」だと明確に述べており、遊ぶというより「観る」体験として作られ、プレイ時間はおよそ1時間。JA本文には「処女作にしてSteamで公開まで7年」とはっきり書かれており、ソロクリエイターのデビュー作であることが明かされている。開発・発売はともに「Forever Time」名義で、Steamの開発者検索でもこの名義に紐づくのは本作自身とそのサントラの2件のみ。価格は¥1,000。20件のレビュー(好評20件・不評0件)で好評率100%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。正直に一点先に開示する——英語UIは一切実装されておらず、対応言語は日本語・簡体字中国語・繁体字中国語のみ。西側の読者は日本語のまま読むか、機械翻訳に頼る必要がある。20件のレビューはすべて日本語か簡体字中国語で書かれており、その本文には実写の風景写真・動画による背景表現への口語的な賞賛や、制作者個人の自主制作への素直な敬意が並んでいる——まだどの西側メディアも取り上げていない作品の言葉だ。",
+      },
+      {
+        name_en: "428: Shibuya Scramble",
+        name_ja: "428 〜封鎖された渋谷で〜",
+        status: "established",
+        steam: "https://store.steampowered.com/app/648580/428_Shibuya_Scramble/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: 428: Shibuya Scramble, whose own Steam listing names 'Real Actors and Locations' as a headline feature, using a mix of still photography and live action footage in place of drawn art to tell its branching sound-novel story across the streets of Shibuya. It is not the invention of the technique in isolation (Chunsoft had already built its earlier Sound Novel Machi around the same idea a decade before), but it is the version that reached the Steam West and stands as the best-known demonstration that a Japanese novel-style adventure game can be built out of photographed reality instead of illustration. Forever Time is not connected to 428 in any official way, and its scale could not be more different, a solo landscape-photo backdrop for one couple's story instead of a full cast of actors moving through five parallel plots. But the core idea it shares with 428, telling a Japanese novel-form story through the camera's own images rather than an artist's drawn ones, is the same root.",
+        desc_ja: "この味の原点——428: Shibuya Scramble。Steam自身のストアページが「Real Actors and Locations」を目玉機能として明記し、渋谷の街を舞台にした分岐型サウンドノベルを、描かれた絵ではなく実写の写真と映像を組み合わせて語る。この手法自体の発明ではない(チュンソフトは10年前に前作「街」で既に同じ発想を築いていた)が、Steamの西側に届いたバージョンとして、日本語のノベル形式アドベンチャーが描いた絵ではなく撮影された現実そのものから組み立てられることを示した、最もよく知られた実例である。Forever Timeは428と公式な繋がりを一切持たず、規模もまったく違う——ひとつのカップルの物語を彩るソロクリエイターの風景写真の背景と、5つの並行する筋書きを動く役者たちのフルキャストとでは比べようもない。だが428と共有する核——描かれた絵ではなくカメラそのものの映像で、日本語のノベル形式の物語を語る——という一点は、同じ根から生えている。",
+      },
+    ],
+    en: {
+      title: "Forever Time - a solo creator's seven-year-debut cinematic novel where real landscape photos and video color the backdrop instead of illustration. No choices, about an hour long, ¥1,000. 100 percent over 20 reviews, no English UI at all",
+      description: "A cinematic novel game whose backgrounds are real landscape photographs and video instead of illustration. A jobless movie-lover meets a photography student by chance and helps shoot her graduation project, in a linear, hour-long story with no choices. 100 percent over 20 reviews, entirely Japanese and Chinese.",
+      h1a: "A solo creator's seven-year-debut novel game where the backdrop is not illustration but real landscape photos and video. ",
+      h1flip: "There are no choices; it's built to be watched more than played",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a 'cinematic novel game' whose backgrounds are colored not by illustration but by real landscape photographs and video footage, a technique the store text calls a 'new kind of feeling.' A jobless young man who loves movies, Yuto Habu, runs into Nazuna Fukamachi, a photography-school student carrying a camera, by chance on a bridge with a nice view, and agrees to help shoot her graduation project; the store text is explicit that this is 'a novel game with no particular choices,' built to be watched more than played, running about an hour. The Japanese description states plainly that this is the solo creator's debut work, seven years in the making before it reached Steam. Both developer and publisher are credited simply as 'Forever Time,' and Steam's own developer search turns up only this title and its soundtrack, nothing else. Priced at ¥1,000, it is Positive at 100 percent across 20 reviews (20 positive, 0 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. One honest note up front: there is no English interface at all, only Japanese, Simplified Chinese, and Traditional Chinese, so Western readers will need to read it in Japanese or lean on machine translation. Every one of its 20 reviews is written in Japanese or Simplified Chinese, and no English-language coverage exists yet, on AUTOMATON WEST or elsewhere.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Reading actual footage of a real bridge, a real street, a real ramen shop where the developer's own post-clear travel log points you afterward, instead of an artist's drawing of them, collapses the usual distance between a fictional setting and a place you could actually go stand in.",
+        "Being told outright there are no choices to make removes any temptation to optimize the conversation, so the hour plays like watching a short film someone spent seven years finishing rather than a game asking you to perform the right response.",
+        "A story this small, one bridge, one camera, one graduation project, carried by real photography instead of character art, makes the ordinary scenery of an unremarkable town feel worth pointing a lens at, which is the whole point Nazuna is chasing in the story itself.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the '428' idea of a Japanese novel-form story built from real photography and footage instead of drawn art, scaled down to a solo creator's landscape-and-video backdrop",
+        "You want a pure kinetic novel, no choices, no route to optimize, an hour built to be watched rather than played",
+        "You want the debut work of a true solo circle: seven years in the making, developer and publisher both just 'Forever Time,' nothing else in the catalogue but its own soundtrack",
+      ],
+      bad: [
+        "You need English text; there is no English UI at all, only Japanese and Chinese, so you're reading it raw or through machine translation",
+        "You want a settled number; 20 reviews is close to this site's floor even at a perfect score",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Forever Time - ソロクリエイターが7年かけてSteamに届けたシネマティックノベル。背景はイラストではなく実写の風景写真と動画。選択肢なし、プレイ時間約1時間、価格¥1,000。20件で好評率100%、英語UIは一切なし",
+      description: "背景をイラストではなく実写の風景写真・動画で描くシネマティックノベルゲーム。無職の映画好きな青年が写真専門学校生と偶然出会い、卒業制作の撮影を手伝う。選択肢のない約1時間の一本道の物語。20件のレビューで好評率100%、全件日本語・中国語。",
+      h1a: "ソロクリエイターが7年かけて届けたノベルゲーム。背景はイラストではなく実写の風景写真と動画。",
+      h1flip: "選択肢は存在しない。遊ぶというより「観る」ために作られている",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は背景をイラストではなく実写の風景写真や動画で彩る「新感覚シネマティックノベルゲーム」だ。映画好きで無職の青年・羽生ユウトが、景色の良い橋の上でカメラを持った写真専門学校生・深町なずなと偶然出会い、彼女の卒業制作の撮影を手伝うことになる——ストア文言は「特に選択肢のないノベルゲーム」だと明確に述べており、遊ぶというより「観る」体験として作られ、プレイ時間はおよそ1時間。JA本文には「処女作にしてSteamで公開まで7年」とはっきり書かれており、ソロクリエイターのデビュー作であることが明かされている。開発・発売はともに「Forever Time」名義で、Steamの開発者検索でもこの名義に紐づくのは本作自身とそのサントラの2件のみ。価格は¥1,000。20件のレビュー(好評20件・不評0件)で好評率100%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。正直に一点先に開示する——英語UIは一切実装されておらず、対応言語は日本語・簡体字中国語・繁体字中国語のみ。西側の読者は日本語のまま読むか、機械翻訳に頼る必要がある。20件のレビューはすべて日本語か簡体字中国語で書かれており、本作についての英語記事はAUTOMATON WESTを含めまだどこにも存在しない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "実際の橋、実際の通り、クリア後特典で制作者自身の旅ログが案内する実在のラーメン店——それらが絵ではなく実写の映像として映ることは、架空の舞台と自分が実際に立てる場所との、いつもの距離感を崩す。",
+        "選択肢が存在しないと正面から告げられることで、会話を最適化しようという誘惑そのものが取り除かれ、1時間という時間は「正しい応答」を求められるゲームではなく、7年かけて完成させた短編映画を観るような感覚で流れていく。",
+        "ひとつの橋、ひとつのカメラ、ひとつの卒業制作という小さな物語を、キャラクターアートではなく実写の写真で運ぶことは、何でもない街のありふれた風景にレンズを向ける価値を感じさせる——それはまさに、物語の中でなずな自身が追いかけているものと同じだ。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "「428」の——描かれた絵ではなく実写の写真・映像で日本語のノベル形式の物語を語る——という発想を、ソロクリエイターの風景写真+動画の背景へ縮小したものが欲しい人",
+        "選択肢のない、最適化するルートの存在しない純粋なキネティックノベルが欲しい人——遊ぶというより「観る」ために作られた約1時間",
+        "本物のソロサークルのデビュー作が欲しい人——7年をかけて制作、開発・発売はともに「Forever Time」名義のみ、カタログにはサントラ以外何もない",
+      ],
+      bad: [
+        "英語テキストが必要な人——英語UIは一切なく、対応は日本語・中国語のみで、生の日本語か機械翻訳で読むことになる",
+        "安定した数字が欲しい人——20件は満点であっても当サイトの最低ラインに近い",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14255,6 +14368,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "428": {
+    steam: "648580",
+    blurb: {
+      en: "428: Shibuya Scramble, released in Japan in 2008 and brought to Steam in 2018 by Spike Chunsoft, names 'Real Actors and Locations' as a headline feature on its own store listing: a branching sound-novel story told across the streets of Shibuya using a mix of still photography and live action footage in place of drawn art. It is the best-known demonstration that a Japanese novel-form adventure game can be built out of photographed reality instead of illustration, and is the origin of the lineage of games that tell their story through the camera's own images rather than an artist's drawn ones.",
+      ja: "『428 〜封鎖された渋谷で〜』は2008年に日本で発売され、2018年にSpike Chunsoftによって Steam へ届けられた作品で、ストア自身が「Real Actors and Locations」を目玉機能として明記している——渋谷の街を舞台にした分岐型サウンドノベルを、描かれた絵ではなく実写の写真と映像を組み合わせて語る。日本語のノベル形式アドベンチャーが、描かれた絵ではなく撮影された現実そのものから組み立てられることを示した、最もよく知られた実例であり、カメラそのものの映像で物語を語る、というゲーム群の系譜の原点である。",
+    },
+  },
   "the-cold-equations": {
     wikidata: "https://www.wikidata.org/wiki/Q1249132",
     blurb: {
