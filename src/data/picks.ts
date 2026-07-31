@@ -14295,6 +14295,123 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "cursed-lullaby": {
+    published: "2026-08-16",
+    publishAt: "2026-08-16",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "flashlight-clue-hunt-horror"。ストア本文実測: 「一人称視点の探索型ホラー
+    //   アドベンチャー」「マウスを使ってライトを操作し気になるポイントを調査して情報やアイテムを
+    //   集め、家屋からの脱出を目指します」——マウス操作のライトを頼りに一人称視点で家屋を探索し、
+    //   ポイント&クリックで手がかりを集める、という一点が本作の核だと判断した。全て記憶を失った
+    //   主人公が呪われた家屋に目覚める導入も含む。
+    // lineageは新規anchor "death-mark"(Spirit Hunter: Death Mark、日本版タイトルは「死印」)を
+    //   作る。記憶を奪われた主人公が呪われた館に辿り着き、周囲を調べて手がかりを集めることで
+    //   生き延びる、という「Search and Survive」をSteam公式Key Featuresに掲げる同ジャンルの
+    //   代表的な原点として採用。実際にSteamユーザーレビューの一件が本作を評して「都市伝説解体
+    //   センターとか死印系すきなら楽しめると思う」と、この系譜を独立に指摘している(本文引用)。
+    //   本作は死印のようなコマンド選択式の会話コンビネーション判定は持たず、より簡素な一人称
+    //   ポイント&クリック探索に絞った点が対比になる——影響を公言されたものではない当サイト独自
+    //   の観察である(自信度: 中。ただし系譜自体はレビュー本文が独立に裏付けている)。
+    // developer=publisher=BogeymanGames(個人/小規模開発者)。Steamのdeveloper検索を自分で
+    //   叩き、この名義の登録は本作1件のみであることを確認した。4Gamer記事および実際のユーザー
+    //   レビュー本文でも「BogeymanGamesの処女作」と明言されており、大手・海外展開代行・親会社
+    //   関係の混入はゼロ。
+    // content_descriptors は ids=[5]・notes="This work contains scenes of blood and gore."を
+    //   API実測(原文引用)。性的表現ではなく流血・グロテスク表現のみであり、当サイトの基準
+    //   (id 1/3/4は即除外、id 5単独は本文を読んだ上で判断)に照らして許容と判断した。AI
+    //   Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに
+    //   入れるボタンをJAページで実測。genresに"Early Access"/"早期アクセス"を含まず、2025年
+    //   6月12日発売の正式リリース済み作品。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"呪いの穢れ唄"は0件
+    //   (日本語版AUTOMATONの記事は存在するが、これは西側=AUTOMATON WESTではなく国内向け
+    //   AUTOMATON本体の記事であり、当サイトの除外基準の対象外)。加えて広い一般WebSearchでも
+    //   4Gamer・電ファミニコゲーマー・TERROR WEB・個人ブログ等、日本語メディアのみがヒットし、
+    //   英語圏メディアの記事・レビューは一件も見つからなかった。
+    // west_unreached: supported_languagesは日本語のみで、英語UIは一切実装されていない
+    //   (noEnglish: true)。appreviews API実測で全45件のレビューのうち日本語40件・簡体字
+    //   中国語1件・繁体字中国語1件・韓国語1件・英語0件で、非日本語(3件)は日本語(40件)を
+    //   大きく下回るため西未浸透の基準を満たす。実際に日本語レビュー8件の本文を読み、
+    //   「都市伝説解体センター」「死印系」といった国内ホラーADVジャンルへの言及、続編への
+    //   期待、プレイ時間の実測一致など、有機的な日本の読者エンゲージメントであることを確認
+    //   した。
+    // 数字の脆さ: 45件は当サイトが扱う候補の中では比較的厚いが、好評率は95.6%(43/45)で
+    //   満点ではない点も先に開示する。英語UIが一切無いため、西側読者は日本語のまま遊ぶか
+    //   機械翻訳に頼る必要がある点も正直に開示する。
+    meta: { genre: "flashlight-clue-hunt-horror", lineage: "death-mark", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 45, positivePct: 96, noEnglish: true } },
+    games: [
+      {
+        name_en: "Curse-Stained Lullaby: Ryoya Narumi's Record of Strange Return",
+        name_ja: "呪いの穢れ唄　鳴海龍也の回奇録",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3383120/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a first-person exploration horror adventure: Ryoya Narumi, who has lost every memory, wakes in an unfamiliar house where strange phenomena keep occurring and an eerie singing voice drifts from somewhere inside, and using the mouse to aim a light, you investigate points of interest around the house to gather information and items on the way to escaping it, working alongside a mysterious girl companion. A run takes roughly 30 to 60 minutes. Developer and publisher are both credited simply as BogeymanGames, and this is confirmed as the studio's debut work by both Japanese press coverage and its own players; Steam's own developer search turns up only this one title, nothing else. Priced at $6.99, it is Positive at 95.6 percent across 45 reviews (43 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors list only 'This work contains scenes of blood and gore,' quoted verbatim, no sexual content of any kind. One honest note up front: there is no English interface at all, only Japanese, so Western readers will need to read it in Japanese or lean on machine translation. Of its 45 reviews, 40 are in Japanese and only 3 total are non-Japanese (1 each in Simplified Chinese, Traditional Chinese, and Korean); zero are in English, and reading through the Japanese reviews turns up native players comparing it by name to other Japanese horror-ADV series and asking for a sequel, not the language of a game any Western outlet has covered.",
+        desc_ja: "Steam自身の表記によれば、本作は一人称視点の探索型ホラーアドベンチャーだ。全ての記憶を失った鳴海龍也は、怪奇現象が次々と発生する見知らぬ家屋で目を覚まし、家の中からは不気味な唄声が聞こえてくる。マウスでライトを操作し、家屋の中の気になるポイントを調査して情報やアイテムを集めながら、謎の少女と共に脱出を目指す。プレイ時間はおよそ30分から60分。開発・発売はともに「BogeymanGames」名義で、日本語メディアの記事および実際のプレイヤーのレビュー本文からも、これがスタジオの処女作であることが確認できる——Steamの開発者検索でもこの名義に紐づくのは本作1件のみ。価格は$6.99。45件のレビュー(好評43件・不評2件)で好評率95.6%(「好評」)。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタは「流血およびグロテスクな表現が含まれます」(原文引用)の1点のみで、性的な要素は一切ない。正直に一点先に開示する——英語UIは一切実装されておらず、対応言語は日本語のみ。西側の読者は日本語のまま読むか、機械翻訳に頼る必要がある。45件のレビューのうち40件が日本語で、非日本語は簡体字中国語・繁体字中国語・韓国語が各1件の計3件のみ、英語は0件。日本語レビューを読むと、他の日本語ホラーADVシリーズを名指しで比較したり続編を期待したりする、生粋のプレイヤーの言葉が並んでいる——まだどの西側メディアも取り上げていない作品の言葉だ。",
+      },
+      {
+        name_en: "Spirit Hunter: Death Mark",
+        name_ja: "死印",
+        status: "established",
+        steam: "https://store.steampowered.com/app/980830/Spirit_Hunter_Death_Mark/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Spirit Hunter: Death Mark, developed by EXPERIENCE, whose own Steam listing names 'Search and Survive' as a headline feature, a protagonist stripped of memory who arrives at a mansion rumored to protect the marked and must search their surroundings for clues to survive the spirits hunting them. One Steam reviewer of Curse-Stained Lullaby independently drew this exact line, naming the Death Mark family of games as the comparison point without being prompted. Curse-Stained Lullaby keeps the amnesiac protagonist and the point-and-click clue-gathering at the center of a haunted space, but strips out Death Mark's turn-based command menus and multi-character-route survival puzzles in favor of a single unbroken 30-to-60-minute first-person exploration, no combat, no branching cast, just a light in the dark and a house that won't stay quiet.",
+        desc_ja: "この味の原点——死印(Spirit Hunter: Death Mark)。開発元EXPERIENCEのSteam自身のストアページが「Search and Survive」を目玉機能として明記している——記憶を奪われた主人公が、印を持つ者を守ると噂される館に辿り着き、迫りくる怨霊から生き延びるために周囲を調べて手がかりを集めていく。「呪いの穢れ唄」のSteamレビューの一件は、促されるでもなく独立にこの一線を引き、死印シリーズを比較対象として名指ししている。「呪いの穢れ唄」は記憶喪失の主人公と、呪われた空間での手がかり集めのポイント&クリックという核を受け継ぎながら、死印のコマンド選択式のターン制やマルチキャラクタールートの生存パズルを取り払い、戦闘も分岐する仲間キャストも持たない、30分から60分の一本道の一人称探索——暗闇の中の一筋の光と、静まらない家屋だけへと絞り込んでいる。",
+      },
+    ],
+    en: {
+      title: "Curse-Stained Lullaby - a first-person flashlight investigation horror ADV where an amnesiac wakes in a house full of strange phenomena and an eerie singing voice. 30-60 minutes, $6.99. 95.6 percent over 45 reviews, no English UI at all",
+      description: "A first-person exploration horror adventure. An amnesiac protagonist wakes in a house plagued by strange phenomena and an eerie singing voice, using a mouse-aimed light to gather clues toward escape alongside a mysterious girl. 30-60 minutes long. 95.6 percent over 45 reviews, almost entirely Japanese.",
+      h1a: "An amnesiac wakes in a house full of strange phenomena and an eerie singing voice, aiming a light with the mouse to gather clues. ",
+      h1flip: "One Steam reviewer named the exact lineage this belongs to, unprompted, before we ever did",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a first-person exploration horror adventure: Ryoya Narumi, who has lost every memory, wakes in an unfamiliar house where strange phenomena keep occurring and an eerie singing voice drifts from somewhere inside, and using the mouse to aim a light, you investigate points of interest around the house to gather information and items on the way to escaping it, working alongside a mysterious girl companion. A run takes roughly 30 to 60 minutes. Developer and publisher are both credited simply as BogeymanGames, and this is confirmed as the studio's debut work by both Japanese press coverage and its own players; Steam's own developer search turns up only this one title, nothing else. Priced at $6.99, it is Positive at 95.6 percent across 45 reviews (43 positive, 2 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure. Steam's content descriptors list only 'This work contains scenes of blood and gore,' quoted verbatim, no sexual content of any kind. One honest note up front: there is no English interface at all, only Japanese, so Western readers will need to read it in Japanese or lean on machine translation. Of its 45 reviews, 40 are in Japanese and only 3 total are non-Japanese; zero are in English, and no Western outlet, AUTOMATON WEST included, has covered it yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Losing your memory at the exact moment the game begins means every clue you pick up teaches you and the character at the same rate, so the light in your hand is doing double duty, illuminating the room and reconstructing who you are.",
+        "A run this short, 30 to 60 minutes with no combat and no branching cast, keeps the tension pointed entirely at the next unexamined corner rather than at a resource meter or a wrong-choice fail state, so the dread stays clean.",
+        "A companion who stays with you the whole way rather than a cast you choose between turns the eerie singing into something you're both listening for, not a threat you're facing alone, which is a quieter kind of unsettling than most flashlight horror goes for.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Death Mark's 'Search and Survive' idea, an amnesiac gathering clues in a haunted space, without the turn-based command menus and multi-route survival puzzles",
+        "You want a short, clean horror ADV built entirely around a mouse-aimed light and point-and-click investigation, no combat",
+        "You want a true debut work: BogeymanGames' Steam catalogue is this one title and nothing else, confirmed by both Japanese press and its own players",
+      ],
+      bad: [
+        "You need English text; there is no English UI at all, only Japanese, so you're reading it raw or through machine translation",
+        "You want a perfect score; 95.6 percent across 45 reviews is strong but not spotless, and 2 of the 45 are negative",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "呪いの穢れ唄　鳴海龍也の回奇録 - 記憶を失った主人公が怪奇現象と不気味な唄声に満ちた家屋で目覚める、一人称ライト探索ホラーADV。プレイ時間30～60分、価格$6.99。45件で好評率95.6%、英語UIは一切なし",
+      description: "一人称視点の探索型ホラーアドベンチャー。記憶を失った主人公が怪奇現象と不気味な唄声に満ちた家屋で目覚め、謎の少女と共にマウス操作のライトで手がかりを集めながら脱出を目指す。プレイ時間30～60分。45件のレビューで好評率95.6%、ほぼ全件日本語。",
+      h1a: "記憶を失った主人公が、怪奇現象と不気味な唄声に満ちた家屋で目覚め、マウスでライトを操作して手がかりを集めていく。",
+      h1flip: "本作の系譜を、当サイトより先に、あるSteamレビュアーが自ら言い当てていた",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は一人称視点の探索型ホラーアドベンチャーだ。全ての記憶を失った鳴海龍也は、怪奇現象が次々と発生する見知らぬ家屋で目を覚まし、家の中からは不気味な唄声が聞こえてくる。マウスでライトを操作し、家屋の中の気になるポイントを調査して情報やアイテムを集めながら、謎の少女と共に脱出を目指す。プレイ時間はおよそ30分から60分。開発・発売はともに「BogeymanGames」名義で、日本語メディアの記事および実際のプレイヤーのレビュー本文からも、これがスタジオの処女作であることが確認できる——Steamの開発者検索でもこの名義に紐づくのは本作1件のみ。価格は$6.99。45件のレビュー(好評43件・不評2件)で好評率95.6%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無い。Steamのコンテンツディスクリプタは「流血およびグロテスクな表現が含まれます」(原文引用)の1点のみで、性的な要素は一切ない。正直に一点先に開示する——英語UIは一切実装されておらず、対応言語は日本語のみ。西側の読者は日本語のまま読むか、機械翻訳に頼る必要がある。45件のレビューのうち40件が日本語で、非日本語は3件のみ、英語は0件。AUTOMATON WESTを含め、まだどの西側メディアも取り上げていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "ゲームが始まった瞬間に記憶を失っていることは、拾う手がかりの一つひとつがプレイヤーとキャラクターに同じ速度で教えてくれることを意味し、手にした光は部屋を照らすと同時に、自分が誰なのかを再構築する役割も二重に担っている。",
+        "戦闘もなく分岐する仲間キャストもない30分から60分という短さは、緊張感をリソースメーターや誤った選択の失敗判定ではなく、次の未調査の角へと丸ごと向けさせる——だから恐怖は濁らない。",
+        "最初から最後まで隣にいる相棒は、選び分ける複数キャストではなく、不気味な唄声を「一緒に聞く」相手へと変える——それはひとりで対峙する脅威よりも静かな種類の不穏さで、多くのライト探索ホラーが狙う恐怖とは違う。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "死印の「Search and Survive」——記憶を失った主人公が呪われた空間で手がかりを集める——という発想を、ターン制のコマンド選択やマルチルートの生存パズル抜きで欲しい人",
+        "マウス操作のライトとポイント&クリック探索だけで組み立てられた、戦闘のない短く清潔なホラーADVが欲しい人",
+        "本物のデビュー作が欲しい人——BogeymanGamesのSteamカタログはこの1本のみで、日本語メディアと実プレイヤー両方がそれを裏付けている",
+      ],
+      bad: [
+        "英語テキストが必要な人——英語UIは一切なく、対応は日本語のみで、生の日本語か機械翻訳で読むことになる",
+        "満点の評価が欲しい人——45件で好評率95.6%は高水準だが完璧ではなく、2件の不評レビューがある",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14368,6 +14485,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "death-mark": {
+    steam: "980830",
+    blurb: {
+      en: "Spirit Hunter: Death Mark, developed by EXPERIENCE and released in Japan in 2016 (as 死印, Shiin) before reaching the Steam West in 2019, names 'Search and Survive' as a headline feature on its own store listing: a protagonist stripped of their memory arrives at a mansion rumored to protect those who bear a deadly curse mark, and must search their surroundings for clues to solve each spirit's riddle and survive. It is the origin of the lineage of games that pair an amnesiac protagonist with clue-gathering investigation as the mechanism for surviving a haunted space.",
+      ja: "『死印』(Spirit Hunter: Death Mark)は、EXPERIENCEが開発し2016年に日本で発売され、2019年にSteamの西側へ届いた作品で、ストア自身が「Search and Survive」を目玉機能として明記している——記憶を奪われた主人公が、死の呪印を持つ者を守ると噂される館に辿り着き、周囲を調べて手がかりを集め、それぞれの怨霊の謎を解いて生き延びていく。記憶を失った主人公と、手がかり集めの探索を、呪われた空間を生き延びる仕組みとして組み合わせた、というゲーム群の系譜の原点である。",
+    },
+  },
   "428": {
     steam: "648580",
     blurb: {
