@@ -14864,6 +14864,127 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "ichima-san": {
+    published: "2026-08-19",
+    publishAt: "2026-08-19",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "doll-freeze-stealth-adv"。ストアJA本文実測: 「このゲームは、人間の体を
+    //   奪われ市松人形になってしまったあなたが人間の体を取り返す為に日本家屋を探索する
+    //   アクションアドベンチャーゲームです」「生きた人間に見つかってはならず、見つかりそうに
+    //   なったら人形のフリをする必要があります」「人間への直接的な抵抗はできませんが、手に
+    //   入れたアイテムでポルターガイストを発生させることで人間を気絶させたり、誘導することが
+    //   できます」——市松人形になった主人公が、人形として擬態して隠れ、直接対決せず環境干渉
+    //   (ポルターガイスト)で切り抜ける、というステルス探索が本作の核だと判断した。
+    // lineageは新規anchor扱いはせず既存の"moon"(moon: Remix RPG Adventure)を再利用する。
+    //   Steam自身のJA本文が「市松人形は元々、女の子が可愛がって遊ぶ玩具でした。それがいつしか
+    //   怖い存在として認識されるようになり、今となっては怖いモチーフとしての扱いが当たり前に
+    //   なってしまっています。原点回帰として、市松人形の可愛さにスポットを当てたゲームが
+    //   1つくらいあってもいいのではないかという考えを元に、このゲームが制作されました」と
+    //   明記している——これはmoon自身のストア文言「RPGの英雄が動物を虐殺して回ることを
+    //   おかしいと感じたことはないか。この作品はRPGを新しい視点から見つめ直す」という、ジャンル
+    //   の既定路線(怖いモチーフ/暴力)を意図的に転覆させる姿勢と構造的に同じ発想である。本作は
+    //   moonの影響を公言したものではなく、当サイト独自の系譜づけである(自信度: 中。ただし
+    //   「ジャンルが当然視してきた恐怖/暴力を、開発者自身の言葉で明確に拒み、温かさへ転じる」
+    //   という一点は、両作のストア文言そのものから独立に裏付けられる)。
+    // developer=publisher=sewohayami(個人開発者)。Steamのdeveloper検索を自分で叩き、この
+    //   名義の登録は6件(本作/100animalease[publisher: woof Inc.]/MOTTAINAI GHOST[publisher:
+    //   woof Inc.]/SEKISAI puzzle action[+体験版、self-published]/Beat Tokyo with
+    //   Jimotoism[publisher: 株式会社カナメクト])と確認した。woof Inc.のpublisher検索は2件
+    //   のみで小規模、カナメクトも大手パブリッシャーblocklistに該当せず、大手・海外展開代行
+    //   との混入は確認できなかった。ただし単一タイトルの純粋なソロデビュー作ではなく、複数
+    //   タイトルを持つ開発者である点は正直に開示する。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。AI Generated Content
+    //   Disclosure欄・大人向けコンテンツの説明欄ともにJA本文全体を実際に読んで確認したが
+    //   ストアページに存在しない。is_free=false・カートに入れるボタンをJAページで実測。
+    //   genresに"Early Access"/"早期アクセス"を含まず、2024年8月8日発売の正式リリース済み
+    //   作品。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Ichima-san"は0件。
+    //   一般WebSearchでは4Gamerに「Nintendo Switch版Ichima-sanまとめページ」があり、実際に
+    //   開いて確認したところニュース記事2件(Switch版発売告知・予約開始告知の短報のみ、
+    //   特集0件・レビュー0件)で編集レビューではないことを確認した。
+    // 【正直な開示: 埋もれ度はやや弱い】本作はSwitch版が別途リリースされており(2024年11月
+    //   21日リリース、「わくわくゲームズ」経由、既存pickのBrebemanと同じ大手ではない一般
+    //   インディーレーベル)、京都BitSummit Driftの公式選出作でもある。西側の英語レビューが
+    //   薄い点(西未浸透)は数値上変わらず正確だが、国内では相応の露出・展開実績がある開発者
+    //   である点は先に開示する。
+    // west_unreached: supported_languagesは英語・日本語。appreviews API実測で全70件の
+    //   レビューのうち日本語52件・英語15件・繁体字中国語2件・韓国語1件・簡体字中国語0件で、
+    //   非日本語(18件)は日本語(52件)を大きく下回るため西未浸透の基準を満たす。
+    meta: { genre: "doll-freeze-stealth-adv", lineage: "moon", obscurity: "wall", reachState: "unreached_west", rarity: { reviews: 70, positivePct: 100, noEnglish: false } },
+    games: [
+      {
+        name_en: "Ichima-san",
+        name_ja: "Ichima-san",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/2416190/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a stealth action-adventure where you've had your human body stolen and been turned into an Ichimatsu doll, exploring a traditional Japanese house to get it back: you must not be seen by the living, freezing into a doll's stillness when someone draws near, and while you cannot fight back directly, items you find can trigger poltergeist phenomena to stun or lure people away instead. The developer's own store text states the game exists because Ichimatsu dolls, originally toys girls loved, have come to be typecast as a scary motif, and this is meant as a return to their actual cuteness. Developer and publisher are both credited simply as sewohayami; Steam's own developer search turns up 6 titles under this name, small self-published and small-publisher work throughout, not a single-title solo debut but nothing tied to a large or Western-facing publisher either. Released August 8, 2024, it is Very Positive at 100 percent across 70 reviews (70 positive, 0 negative), a paid title at $10.99, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. One honest note: a Nintendo Switch port exists (through Waku Waku Games, a general indie label rather than a large publisher), and the game was an official selection at Kyoto's BitSummit Drift, so this one has a bit more real-world exposure than most finds here, even though its Western reach on Steam specifically stays thin: of 70 reviews, 52 are in Japanese against 18 combined across every other language, and no Western outlet, AUTOMATON WEST included, has covered it, only two brief news blurbs on 4Gamer announcing the Switch release.",
+        desc_ja: "Steam自身の表記によれば、本作は人間の体を奪われ市松人形になってしまった主人公が、体を取り返すために日本家屋を探索するステルスアクションアドベンチャーだ。生きた人間に見つかってはならず、見つかりそうになったら人形のフリをして動きを止める必要がある。人間への直接的な抵抗はできないが、手に入れたアイテムでポルターガイストを発生させ、人間を気絶させたり誘導したりすることはできる。開発者自身のストア文言によれば、市松人形は元々女の子が可愛がって遊ぶ玩具だったのに、いつしか怖い存在として認識されるようになってしまった——本作はその可愛さへの原点回帰として作られたという。開発・発売はともに「sewohayami」名義で、Steamの開発者検索でもこの名義には6作品が紐づく——単独タイトルの純粋なソロデビュー作ではなく、小規模な自社/小規模パブリッシャーでの発売が続く開発者だが、大手・西側展開代行との混入は確認できなかった。2024年8月8日発売。70件のレビュー(好評70件・不評0件)で好評率100%。無料ではない有料タイトル($10.99)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。正直に一点開示する——Switch版が別途リリースされており(わくわくゲームズ経由、大手ではない一般インディーレーベル)、京都のBitSummit Driftの公式選出作でもある。当サイトの他の発掘作に比べると現実の露出はやや厚めだが、Steam上の西側到達自体は薄いままだ——70件のうち52件が日本語で、それ以外の全言語を合わせても18件にとどまり、AUTOMATON WESTを含めまだどの西側メディアも取り上げていない。ヒットするのは4GamerのSwitch版発売・予約開始を告知する短い記事2件のみだ。",
+      },
+      {
+        name_en: "moon: Remix RPG Adventure",
+        name_ja: "moon",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1714580/moon/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: moon, whose own Steam listing says it plainly, 'Don't be a hero,' the 1997 anti-RPG that looked at the genre's own default violence and asked why heroes get to slaughter every animal they meet, choosing instead to let the player level up by saving the souls of the creatures a traditional hero would have killed. Ichima-san is not a spiritual sequel to moon and never claims to be, but the developer's own words about it, that Ichimatsu dolls were once loved toys before becoming typecast as something scary, and that this game exists to return them to their real cuteness, is the same move in a different genre: both games look directly at what their genre has decided is frightening or violent by default, and deliberately refuse it.",
+        desc_ja: "この味の原点——moon。Steam自身のストアページが「Don't be a hero(英雄になるな)」とそのまま謳う、1997年発売のアンチRPG。ジャンルが当然視してきた暴力そのものに目を向け、勇者が出会う動物を皆殺しにしていくことのおかしさを問い、代わりに、伝統的な勇者なら殺していたはずの生き物たちの魂を救うことでレベルアップする、という発想へ切り替えた。Ichima-sanはmoonの精神的続編ではなく、そう名乗ってもいない。だが開発者自身の言葉——市松人形は元々愛される玩具だったのに、いつしか怖いものとして固定化されてしまった、本作はその本当の可愛さへ立ち返るために作られた——は、別のジャンルで同じ動きをしている。両作とも、ジャンルが当然のように「怖い」「暴力的」と決めつけてきたものを正面から見つめ、意図的に拒んでいるのだ。",
+      },
+    ],
+    en: {
+      title: "Ichima-san - a cursed Ichimatsu doll sneaks through a haunted house, avoiding humans instead of fighting them, in a stealth adventure built to reclaim the doll's real cuteness. $10.99. 100 percent over 70 reviews, no Western coverage yet",
+      description: "A stealth action-adventure where you play a human turned into a traditional Japanese doll, exploring a house while avoiding detection and using poltergeist items instead of fighting back. The developer made it to reclaim the doll's real cuteness from its horror-movie reputation. 100 percent over 70 reviews, Japanese reviews (52) far outnumbering every other language combined (18).",
+      h1a: "Turned into a traditional Japanese doll, you sneak through a house avoiding the humans who live there. ",
+      h1flip: "Fighting back isn't an option, only freezing, hiding, and poltergeist tricks",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a stealth action-adventure where you've had your human body stolen and been turned into an Ichimatsu doll, exploring a traditional Japanese house to get it back: you must not be seen by the living, freezing into a doll's stillness when someone draws near, and while you cannot fight back directly, items you find can trigger poltergeist phenomena to stun or lure people away instead. The developer's own store text states the game exists because Ichimatsu dolls, originally toys girls loved, have come to be typecast as a scary motif, and this is meant as a return to their actual cuteness. Developer and publisher are both credited simply as sewohayami, whose Steam catalogue runs to 6 small self-published or small-publisher titles. Released August 8, 2024, it is Very Positive at 100 percent across 70 reviews, a paid title at $10.99, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. One honest note: a Nintendo Switch port exists and the game was an official BitSummit Drift selection, so this one carries a bit more real-world exposure than most finds here, even though its reach on Steam specifically stays thin, 52 of 70 reviews in Japanese against 18 combined elsewhere, and no Western outlet, AUTOMATON WEST included, has covered it.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Freezing mid-step the instant a human's line of sight swings toward you turns ordinary hallway navigation into a held breath, and the stillness itself becomes the whole performance of being a doll rather than a person.",
+        "Not being able to fight back at all, only distract or lure with poltergeist tricks, keeps every encounter feeling like negotiation with a space rather than a threat to overcome, which matches a doll's actual powerlessness instead of smuggling in secret combat competence.",
+        "Knowing the entire game exists to argue that Ichimatsu dolls were always meant to be adorable, not frightening, recolors every 'scary' beat as something gentler underneath, so the haunted-house atmosphere never quite curdles into real dread.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want moon's move, refusing a genre's default violence or fear and replacing it with something warmer, run through a haunted-house stealth game instead of an RPG",
+        "You want a real hide-and-freeze stealth loop with no direct combat, where poltergeist items do all your offense",
+        "You want a gem with almost no Western coverage yet, even with a Switch port and a BitSummit selection already behind it: 100 percent over 70 reviews, Japanese reviews outnumbering everything else combined",
+      ],
+      bad: [
+        "You want a pure hidden-gem story with zero real-world exposure; this developer already has a Switch port and a BitSummit Drift official selection behind them",
+        "You want combat with teeth; there is none here by design, only avoidance and misdirection",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Ichima-san - 呪われた市松人形が人間を避けながら日本家屋に潜む、人形の本当の可愛さを取り戻すためのステルスアドベンチャー。価格$10.99。70件で好評率100%、西側報道はまだなし",
+      description: "人間から市松人形に変えられた主人公が、見つからないよう隠れながら日本家屋を探索し、ポルターガイストで対抗するステルスアクションアドベンチャー。人形の「怖い」イメージを本来の可愛さへ取り戻すために作られた。70件のレビューで好評率100%、日本語(52件)がそれ以外の全言語合計(18件)を大きく上回る。",
+      h1a: "市松人形に変えられた主人公が、住人に見つからないよう日本家屋に潜む。",
+      h1flip: "戦うことはできない、あるのは擬態と隠れとポルターガイストだけ",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は人間の体を奪われ市松人形になってしまった主人公が、体を取り返すために日本家屋を探索するステルスアクションアドベンチャーだ。生きた人間に見つかってはならず、見つかりそうになったら人形のフリをして動きを止める必要がある。人間への直接的な抵抗はできないが、手に入れたアイテムでポルターガイストを発生させ、人間を気絶させたり誘導したりすることはできる。開発者自身のストア文言によれば、市松人形は元々女の子が可愛がって遊ぶ玩具だったのに、いつしか怖い存在として認識されるようになってしまった——本作はその可愛さへの原点回帰として作られたという。開発・発売はともに「sewohayami」名義で、Steamカタログには小規模な自社/小規模パブリッシャーでの発売作が6本並ぶ。2024年8月8日発売。70件のレビュー(好評70件・不評0件)で好評率100%。無料ではない有料タイトル($10.99)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。正直に一点開示する——Switch版が別途リリースされており(わくわくゲームズ経由、大手ではない一般インディーレーベル)、京都のBitSummit Driftの公式選出作でもある。当サイトの他の発掘作に比べると現実の露出はやや厚めだが、Steam上の西側到達自体は薄いままだ——70件のうち52件が日本語で、それ以外の全言語を合わせても18件にとどまり、AUTOMATON WESTを含めまだどの西側メディアも取り上げていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "人間の視線がこちらへ向いた瞬間、動きを止めて人形になりきる——その静止そのものが「人形であること」の全演技になり、何でもない廊下の移動が息を止める時間に変わる。",
+        "直接戦うことが一切できず、ポルターガイストで気を逸らしたり誘導したりするしかないことは、あらゆる遭遇を「乗り越えるべき脅威」ではなく「空間との交渉」として感じさせる——それは人形本来の無力さと一致していて、隠れた戦闘力をこっそり持ち込んだりしない。",
+        "このゲーム全体が「市松人形は本来かわいいものだったのだ」と主張するために作られていると知ることは、あらゆる『怖い』瞬間の下地を塗り替える——だから幽霊屋敷の雰囲気が、本物の恐怖へと澱むことは決してない。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "moonの動き——ジャンルの既定の暴力や恐怖を拒み、より温かい何かへ置き換える——を、RPGではなく幽霊屋敷ステルスゲームで欲しい人",
+        "直接戦闘の無い、隠れて動きを止める本物のステルスループが欲しい人——攻めはすべてポルターガイストアイテムが担う",
+        "Switch版もBitSummit選出も既にありながら西側報道はまだほとんどない原石が欲しい人——70件で好評率100%、日本語レビューがそれ以外の全言語合計を上回る",
+      ],
+      bad: [
+        "露出ゼロの純粋な埋もれた原石を求める人——本作の開発者は既にSwitch版とBitSummit Drift公式選出という実績を持っている",
+        "歯応えのある戦闘が欲しい人——本作には意図的に戦闘が存在せず、あるのは回避と誘導だけ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
