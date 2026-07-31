@@ -14523,6 +14523,127 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "brebeman": {
+    published: "2026-08-17",
+    publishAt: "2026-08-17",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "breakbeat-splice-action"。ストアJA本文実測: 「"ブレビマン"はブレイクビーツを
+    //   愛するスーパーヒーロー"ブレビマン"を操作する3DSTG&音楽ゲームです」「ブレビマンが操る
+    //   2枚のディスクは攻防一体の道具。ある時は投げつける事で相手を切り刻む刃となり...」。
+    //   もぐらゲームスの紹介記事本文も実読し「ディスクを引き戻すことで流れていたドラムの
+    //   フレーズも一旦途切れ、攻撃を繰り返す度にドラムのフレーズの細切れが自然と発生する」
+    //   「ドラムサウンドのつぎはぎというのはブレイクビーツの手法そのものであり、すなわち
+    //   『ブレビマン』をプレイすることはブレイクビーツなのである」と明確に述べている——
+    //   ディスクを投げて敵にドラムフレーズを聴かせ、引き戻すことでフレーズを断ち切る、その
+    //   攻撃と回収の反復自体がブレイクビーツの「切り刻んで繋ぎ直す」手法そのものになる、と
+    //   いう一点が本作の核だと判断した。実際のユーザーレビューでも「何か操作するたびに
+    //   パーカッションが鳴る」「操作するだけでブレイクビーツのパーカッションっぽくなる」と
+    //   複数人が独立に同じ体験を証言している。
+    // lineageは新規anchor "rez"(Rez Infinite)を作る。Steam公式ストアが「amazing beats」と
+    //   称する通り、プレイヤーの攻撃(ショット)そのものが音楽のレイヤーとして重なっていく、
+    //   という「操作即作曲」の手法を広く知らしめた代表的原点として採用。本作はRezの影響を
+    //   公言したものではなく、当サイト独自の系譜づけである(自信度: 中。ただし「プレイヤーの
+    //   攻撃行動そのものが音楽を生成・変形させる」という構造上の核は共通している)。
+    // developer=MetaFormingPro、publisher=Waku Waku Games。Steamのdeveloper検索を自分で
+    //   叩き、MetaFormingPro名義の登録は本作・サントラ・体験版・過去作Cubis(2023年、自社
+    //   発売)の4件で、developer自身は完全にクリーン。publisherのWaku Waku Games自体は
+    //   日本の小規模インディー作品を多数扱うレーベル(publisher検索で92件、うち複数は当
+    //   サイトで既に発掘済みのタイトルを含む)であり、西側展開を主導する大手パブリッシャーの
+    //   類ではないため即除外基準には該当しないと判断した。unity1week(日本のゲームジャム)
+    //   参加作を拡張した経緯もJA本文・もぐらゲームス記事で確認済み。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。AI Generated Content
+    //   Disclosure欄はJA本文全体を実際に読んで確認したがストアページに存在しない(regexに
+    //   頼らず目視確認)。is_free=false・カートに入れるボタンをJAページで実測。genresに
+    //   "Early Access"/"早期アクセス"を含まず、2026年2月12日発売の正式リリース済み作品。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"BrebeMan"は0件。加えて
+    //   COGconnected・finalweapon.net・goodorevengreat.games・indietsushin.netを個別に
+    //   検索したがいずれも0件。一般WebSearchで「87%批評家評価」という言及が見つかったため
+    //   OpenCriticを直接確認したが該当ページ無し(404)、Kotakuのゲームページも実際に開いて
+    //   確認したところIGDB由来の自動生成データベースページで編集記事は存在しないことを
+    //   確認した。ヒットしたのはSteambase・gg.deals・steam-games.org・PlayPile・
+    //   newgamedropといったデータベース集約サイトのみで、いずれも編集記事・レビューでは
+    //   ない。
+    // west_unreached: supported_languagesは英語・日本語・簡体字中国語・繁体字中国語。
+    //   appreviews API実測で全114件のレビューのうち日本語64件・英語32件・簡体字中国語5件・
+    //   繁体字中国語1件・韓国語3件で、非日本語(41件)は日本語(64件)を下回るため西未浸透の
+    //   基準を満たすが、英語32件は他の当サイト候補と比べるとやや厚めである点も正直に開示
+    //   する。実際に日本語レビュー8件の本文を読み、ステージ名(S14/S15)への具体的言及や
+    //   サントラ参加陣への言及等、有機的な日本の読者エンゲージメントであることを確認した。
+    meta: { genre: "breakbeat-splice-action", lineage: "rez", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 114, positivePct: 100 } },
+    games: [
+      {
+        name_en: "BrebeMan",
+        name_ja: "ブレビマン",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3349980/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a '3D shooter and music game' starring BrebeMan, a superhero by day and a breakbeat-obsessed DJ underneath, who wields two records as both blade and shield against the roaming spirits called Soundgeists. Per Mogura Games' own coverage, throwing a disc lets its drum phrase play out against an enemy, and pulling it back cuts that phrase short, so the act of attacking and recalling becomes, quite literally, the cut-and-splice technique that defines breakbeats; several Japanese Steam reviewers independently describe the same thing, that just moving the character makes percussion fire on its own. It started life inside the Japanese game jam community unity1week before being expanded into a full release. Developer MetaFormingPro's own Steam catalogue is otherwise just this game's soundtrack, its demo, and one earlier self-published title from 2023; publisher Waku Waku Games is a Japanese label that handles a wide range of small independent releases rather than a Western-facing publisher. Released February 12, 2026, it is Very Positive at 100 percent across 114 reviews (all 114 positive, 0 negative), a paid title at $9.99, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, alongside Simplified and Traditional Chinese. One honest note: of the 114 reviews, 64 are in Japanese against 32 in English, a somewhat thicker English share than most of this site's picks, though English still trails Japanese by a clear margin, and no Western outlet, AUTOMATON WEST included, has written about it yet, the '87% critic rating' floating around some database sites traces to no actual review anywhere we could find.",
+        desc_ja: "Steam自身の表記によれば、本作は表の顔はスーパーヒーロー、裏の顔はブレイクビーツを愛するDJ「ブレビマン」を操作する「3DSTG&音楽ゲーム」だ。彼は2枚のレコードを刃にも盾にもして、彷徨う怨霊「サウンドガイスト」に挑む。もぐらゲームス自身の紹介記事によれば、ディスクを投げるとドラムのフレーズが敵に向けて鳴り響き、引き戻すことでそのフレーズが途切れる——つまり攻撃と回収という行為そのものが、ブレイクビーツを定義する「切り刻んで繋ぎ直す」技法になる。実際に複数の日本語Steamレビュアーが独立に、キャラクターを動かすだけでパーカッションが自然と鳴る、と同じ体験を証言している。日本のゲームジャムコミュニティ「unity1week」参加作として始まり、それを拡張して正式リリースされた経緯を持つ。開発者MetaFormingProのSteamカタログは、本作以外はサントラ・体験版・2023年の自社発売の過去作1本のみ。発売元Waku Waku Gamesは、幅広い日本の小規模インディー作品を扱うレーベルであり、西側展開を主導する大手パブリッシャーではない。2026年2月12日発売。114件のレビュー(好評114件・不評0件)で好評率100%の「非常に好評」。無料ではない有料タイトル($9.99)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語に加え簡体字・繁体字中国語。正直に一点開示する——114件のうち日本語64件に対し英語32件と、当サイトの他の候補と比べるとやや厚めの英語比率だが、それでも英語は日本語に明確に及ばず、AUTOMATON WESTを含めまだどの西側メディアも本作を取り上げていない。一部データベースサイトに見られる「批評家評価87%」という表記も、辿ってみると実在する批評記事はどこにも見つからなかった。",
+      },
+      {
+        name_en: "Rez Infinite",
+        name_ja: "Rez Infinite",
+        status: "established",
+        steam: "https://store.steampowered.com/app/636450/Rez_Infinite/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Rez, whose own Steam listing promises 'mind-melting visuals and amazing beats,' the game that popularized the idea of a shooter where every shot a player fires doesn't just play a sound effect but layers into the music itself, so that combat and composition become the same act. BrebeMan is not a spiritual sequel to Rez and never claims to be, and its trick runs in the opposite direction from Rez's own: where Rez builds a track UP as you fire, note by note, BrebeMan's discs play a drum phrase OUT toward an enemy and then cut it short the moment you recall them, so the breakbeat you hear is assembled from interruption rather than accumulation. Both share the same root, though: an action game where the player's own combat inputs are the instrument, not a soundtrack playing over them.",
+        desc_ja: "この味の原点——Rez。Steam自身のストアページが「amazing beats(驚くほど気持ちいいビート)」を謳う通り、プレイヤーが撃つショット一発一発が単なる効果音ではなく音楽そのものへ積み重なっていく——戦闘と作曲が同じ行為になる、という発想を広く知らしめた作品だ。ブレビマンはRezの精神的続編ではなく、そう名乗ってもいない。仕掛けの向きもRezとは逆——Rezが撃つたびに1音ずつ楽曲を「積み上げていく」のに対し、ブレビマンのディスクは敵へ向けてドラムのフレーズを「鳴らし切り」、引き戻した瞬間にそれを断ち切る。つまり聴こえてくるブレイクビーツは、積み上げではなく「中断」から組み立てられている。それでも両者は同じ根を共有している——プレイヤー自身の戦闘入力が楽器そのものであり、上から流れるBGMではない、という一点だ。",
+      },
+    ],
+    en: {
+      title: "BrebeMan - throw and recall two discs as a breakbeat-DJ superhero; every attack plays a drum phrase, every recall cuts it short, so combat itself becomes the breakbeat. $9.99. 100 percent over 114 reviews, started as a Japanese game jam entry",
+      description: "A 3D shooter and music game where a breakbeat-DJ superhero throws discs that play drum phrases at enemies and cuts them short on recall, so attacking and recalling becomes the cut-and-splice technique that defines breakbeats. Started life in the Japanese jam community unity1week. 100 percent over 114 reviews, English trailing Japanese by a clear margin.",
+      h1a: "Throw a disc and it plays a drum phrase at the enemy; recall it and the phrase cuts short. ",
+      h1flip: "Attack and recall themselves become the cut-and-splice technique that defines breakbeats",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a '3D shooter and music game' starring BrebeMan, a superhero by day and a breakbeat-obsessed DJ underneath, who wields two records as both blade and shield against the roaming spirits called Soundgeists. Per Mogura Games' own coverage, throwing a disc lets its drum phrase play out against an enemy, and pulling it back cuts that phrase short, so the act of attacking and recalling becomes, quite literally, the cut-and-splice technique that defines breakbeats; several Japanese Steam reviewers independently describe the same thing, that just moving the character makes percussion fire on its own. It started life inside the Japanese game jam community unity1week before being expanded into a full release. Developer MetaFormingPro's own Steam catalogue is otherwise just this game's soundtrack, its demo, and one earlier self-published title from 2023; publisher Waku Waku Games is a Japanese label that handles a wide range of small independent releases rather than a Western-facing publisher. Released February 12, 2026, it is Very Positive at 100 percent across 114 reviews (all 114 positive, 0 negative), a paid title at $9.99, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. English and Japanese are both supported, alongside Simplified and Traditional Chinese. One honest note: of the 114 reviews, 64 are in Japanese against 32 in English, a somewhat thicker English share than most of this site's picks, though English still trails Japanese by a clear margin, and no Western outlet, AUTOMATON WEST included, has written about it yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Discovering that just moving BrebeMan around already fires off little bursts of percussion, before you've even thrown anything, means the game is generating rhythm from your presence alone, and every subsequent throw and recall layers onto a beat that was already quietly running.",
+        "Throwing a disc to let its phrase ring out and then yanking it back mid-note is a genuinely unusual rhythm to learn, because the 'right' moment to cut a phrase short is a musical decision as much as a combat one, and getting that timing to feel good is its own small mastery.",
+        "A boss fight that's going well starts to sound like a DJ set building toward a drop, and a boss fight that's going badly still sounds pretty great, which is its own strange comfort in the middle of getting hit.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Rez's idea, that your own combat inputs are the instrument and not a soundtrack playing over you, run through breakbeats and disc-throwing instead of Rez's rail-shooter note-layering",
+        "You want a real solo/small-team story: started as a unity1week jam entry, developer MetaFormingPro's Steam catalogue is otherwise just this game's soundtrack, demo, and one 2023 title",
+        "You want vintage vaporwave collage visuals and genuine drum'n'bass-rooted club music variety, not just a beat-matched sound effect layer",
+      ],
+      bad: [
+        "You want the numbers to be airtight; 32 of 114 reviews are already in English, a thicker share than most picks here, even though Japanese still leads clearly",
+        "You want precise, forgiving defensive timing; several reviewers flag the side-step's parry window and hold-move tempo as feeling inconsistent stage to stage",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "ブレビマン - ブレイクビーツDJのスーパーヒーローが2枚のディスクを投げて引き戻す。攻撃はドラムフレーズを鳴らし、回収はそれを断ち切る——攻撃と回収そのものがブレイクビーツになる。価格$9.99。114件で好評率100%、日本のゲームジャム発",
+      description: "ブレイクビーツDJのスーパーヒーローが敵にディスクを投げてドラムフレーズを鳴らし、引き戻して断ち切る3DSTG&音楽ゲーム。攻撃と回収そのものが、ブレイクビーツを定義する切り刻んで繋ぎ直す技法になる。日本のゲームジャムコミュニティ「unity1week」発。114件で好評率100%、英語は日本語に明確に及ばない。",
+      h1a: "ディスクを投げると敵に向けてドラムフレーズが鳴る。引き戻すとそのフレーズが断ち切られる。",
+      h1flip: "攻撃と回収そのものが、ブレイクビーツを定義する切り刻んで繋ぎ直す技法になる",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は表の顔はスーパーヒーロー、裏の顔はブレイクビーツを愛するDJ「ブレビマン」を操作する「3DSTG&音楽ゲーム」だ。彼は2枚のレコードを刃にも盾にもして、彷徨う怨霊「サウンドガイスト」に挑む。もぐらゲームス自身の紹介記事によれば、ディスクを投げるとドラムのフレーズが敵に向けて鳴り響き、引き戻すことでそのフレーズが途切れる——つまり攻撃と回収という行為そのものが、ブレイクビーツを定義する「切り刻んで繋ぎ直す」技法になる。実際に複数の日本語Steamレビュアーが独立に、キャラクターを動かすだけでパーカッションが自然と鳴る、と同じ体験を証言している。日本のゲームジャムコミュニティ「unity1week」参加作として始まり、それを拡張して正式リリースされた経緯を持つ。開発者MetaFormingProのSteamカタログは、本作以外はサントラ・体験版・2023年の自社発売の過去作1本のみ。発売元Waku Waku Gamesは、幅広い日本の小規模インディー作品を扱うレーベルであり、西側展開を主導する大手パブリッシャーではない。2026年2月12日発売。114件のレビュー(好評114件・不評0件)で好評率100%の「非常に好評」。無料ではない有料タイトル($9.99)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は英語・日本語に加え簡体字・繁体字中国語。正直に一点開示する——114件のうち日本語64件に対し英語32件と、当サイトの他の候補と比べるとやや厚めの英語比率だが、それでも英語は日本語に明確に及ばず、AUTOMATON WESTを含めまだどの西側メディアも本作を取り上げていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "何かを投げる前から、ブレビマンを動かすだけで小さなパーカッションが鳴っていることに気づく——ゲームはプレイヤーの存在そのものからリズムを生成しており、その後の投擲と回収のすべてが、既に静かに流れていたビートの上に積み重なっていく。",
+        "ディスクを投げてフレーズを鳴らし切り、音の途中で引き戻す——これは学ぶ価値のある本当に珍しいリズム感覚だ。フレーズを「どこで断ち切るのが正解か」は戦闘の判断であると同時に音楽的な判断でもあり、そのタイミングを気持ちよく決められるようになること自体が小さな習熟になる。",
+        "うまくいっているボス戦は、ドロップへ向かって盛り上がっていくDJセットのように聴こえ始め、うまくいっていないボス戦でも、被弾の最中になお心地よく響く——それ自体が奇妙な慰めになる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Rezの発想——プレイヤー自身の戦闘入力が楽器そのものであり、上から流れるBGMではない——を、Rezのレールシューティング的な音の積み上げではなく、ブレイクビーツとディスク投擲で欲しい人",
+        "本物のソロ/小規模チームの物語が欲しい人——unity1weekのジャム作品として始まり、開発者MetaFormingProのSteamカタログは本作以外はサントラ・体験版・2023年の過去作1本のみ",
+        "ヴィンテージ・ヴェイパーウェイヴなコラージュビジュアルと、単なるビート同期の効果音ではない、ドラムンベースを軸にした本物のクラブミュージックの幅が欲しい人",
+      ],
+      bad: [
+        "数字が完全にクリーンであってほしい人——114件中32件が既に英語で、当サイトの他の候補と比べるとやや厚めの比率だ(それでも日本語が明確に上回る)",
+        "正確で寛容な防御タイミングが欲しい人——複数のレビュアーが、横移動の切り返し猶予や長押し移動のテンポがステージごとに安定しないと指摘している",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14596,6 +14717,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "rez": {
+    steam: "636450",
+    blurb: {
+      en: "Rez, released in Japan in 2001 and directed by Tetsuya Mizuguchi, whose Steam re-release Rez Infinite promises 'mind-melting visuals and amazing beats,' popularized the idea of a rail shooter where every shot the player fires layers a note into the evolving soundtrack, so that combat and composition happen as the same act. It is the origin of the lineage of games where the player's own inputs are the instrument, not a soundtrack playing over them.",
+      ja: "『Rez』は、水口哲也がディレクションし2001年に日本で発売された作品で、Steam再販版『Rez Infinite』は自ら「amazing beats(驚くほど気持ちいいビート)」を謳っている。プレイヤーが撃つショット一発一発が、展開していくサウンドトラックへ1音ずつ重なっていく——戦闘と作曲が同じ行為として起きる、というレールシューティングの発想を広く知らしめた。プレイヤー自身の入力が楽器そのものであり、上から流れるBGMではない、というゲーム群の系譜の原点である。",
+    },
+  },
   "balatro": {
     steam: "2379780",
     blurb: {
