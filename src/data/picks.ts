@@ -14644,6 +14644,113 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "playing-house": {
+    published: "2026-08-18",
+    kind: "find",
+    leadIndex: 0,
+    // 系譜: 探索起点はopen幹「かまいたちの夜」(文章主導・分岐選択式のサウンドノベル)だが、本作は
+    //   分岐選択式のテキストノベルではなく、一人称視点でミッションをこなすうちに日常の場(公園)が
+    //   不穏に変質していくツクール系ホラーADV。かまいたちの夜幹の既存finds(全てgenre:
+    //   "visual-novel"の分岐テキストノベル)とは実際の味が異なるため、そこに寄せず、実際の味が近い
+    //   Ibを新規anchorとして採用する(捏造しない)。Ibは日常の場(美術館)に取り残され、探索を通じて
+    //   異常が明らかになっていく、ツクール製和製ホラーADVの代表原点(Steam版appid 1901370、2022年
+    //   PLAYISMリメイクでOverwhelmingly Positive)。
+    // reachState は意図的に持たせない: 英語テキスト対応済み(English/French/German/Spanish/Russian/
+    //   Simplified Chinese/Japanese/Korean/Portuguese-Brazil)なので"lang_walled"は実態とずれる
+    //   (decollate-decoration型precedent)。noEnglish: falseのため"unreached_west"もstampの意味と
+    //   ずれる(実到達は英語レビュー201件中14件=7.0%と僅少だが、対応自体はある)。obscurity: "wall"
+    //   のみを立て、rarityの数値で正直に語らせる。
+    // commit前の独立再検証(親Claude): auditorが「4〜6時間」「突然の侵入者」の出典不明を指摘した
+    //   ため、Steam JAストアの実本文を自分で取得して裏取りした。「全てのエンディングを回収する
+    //   場合、プレイ時間はおよそ4~6時間ほどだと思われます」「突如現れる邪魔ものとの対峙」を原文
+    //   確認——両記述とも実在・正確、捏造ではない。
+    // レビュー言語内訳を自分でappreviews APIから再取得したところ、writer/scoutの「西(英語)が
+    //   少ないので日本で非常に好評」という組み立てに事実誤認があると判明した。実測値は
+    //   ja36/en14/schinese90/tchinese6/koreana51で、日本語レビューは簡体字中国語(90件)・
+    //   韓国語(51件)より少ない第3位グループ。本作は日本開発ではあるが、実際に見つけて遊んで
+    //   いるのは中国・韓国のプレイヤーが主体で、日本国内での定着はむしろ薄い。「日本で
+    //   非常に好評」という当初案の表現は正直さの原則に反するため、実測の言語内訳を正直に
+    //   書く形へ本文を修正した(英語圏=西がまだ見つけていない、という一点は英語14件/201件で
+    //   変わらず正確)。
+    // AI Generated Content Disclosure: JAストア本文に「日本語以外(英語/簡体字中国語/ロシア語/
+    //   スペイン語/ポルトガル語/ドイツ語/フランス語/韓国語)の翻訳はChatGPTによるローカライズを
+    //   利用」と明記されている(原文確認済み)。翻訳ローカライズのみの単一の狭いカテゴリで、
+    //   アセット生成(背景/キャラクター画像等)ではないため当サイト基準で許容と判断。英語文面が
+    //   機械翻訳由来で不自然になりうる点は読者への参考情報として付記する。
+    meta: { genre: "horror-adventure", lineage: "ib", obscurity: "wall", reviewBand: "hundreds", rarity: { reviews: 201, positivePct: 93, noEnglish: false } },
+    games: [
+      {
+        name_en: "Playing House",
+        name_ja: "おままごと",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3560990/Playing_House/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A first-person indie horror where a father named Haruma follows a 'Playing House Guidebook' with his daughter Naori at the park on a day off: a wedding-themed mission, a pet-themed mission, small errands, and mini-games, until unusual things begin to happen and sudden intruders confront you. There are two endings, and collecting them runs roughly four to six hours. Made solo by the Japanese creator UtubaraLemon (鬱薔薇檸檬) and self-published with no third-party publisher, released September 25, 2025. Very Positive at 201 reviews and 93 percent (187 positive, 14 negative), with text support in English, French, German, Spanish, Russian, Simplified Chinese, Japanese, Korean, and Portuguese-Brazil (the non-Japanese text is ChatGPT-localized, by the developer's own disclosure, so some phrasing outside Japanese may read a little unnatural). One honest surprise in the numbers: the review language breakdown skews toward Simplified Chinese (90) and Korean (51), well ahead of Japanese (36) itself, with English trailing everyone at just 14. A Japan-made game that China and Korea found first, still sitting almost entirely unnoticed by English-speaking readers. Steam's own content descriptors state the work is fiction with no connection to real people or events, that it depicts death including suicide alongside sudden frightening scenes (jump scares), and that it contains no depiction of sexual exploitation of minors.",
+        desc_ja: "父ハルマが娘なおりと休日に公園を訪れ、『おままごとハンドブック』に沿って、結婚式ミッション、ペットミッション、お使いやミニゲームをこなしていく一人称インディーホラー。やがて異様なことが起こり始め、突然の侵入者と対峙することもある。エンディングは2種類、全回収には約4〜6時間。日本の個人開発者・鬱薔薇檸檬(UtubaraLemon)による一本で、第三者パブリッシャーを介さない自社配信、発売日は2025年9月25日。201レビュー93%(好評187・不評14)で非常に好評。テキスト対応は英語・フランス語・ドイツ語・スペイン語・ロシア語・簡体字中国語・日本語・韓国語・ポルトガル語(ブラジル)に及ぶが、開発者自身の開示によれば日本語以外の翻訳はChatGPTによるローカライズのため、一部表現が不自然になる場合がある。数字には正直な意外性がある——レビューの言語内訳は簡体字中国語(90件)・韓国語(51件)が日本語(36件)自体を上回り、英語は最も少ない14件にとどまる。日本発でありながら、中国と韓国が先に見つけたゲームであり、英語圏の読者にはまだほとんど気づかれていない。Steam自身のコンテンツ注記は、本作がフィクションであり実在の人物・出来事とは無関係であること、自殺を含む死の描写や突発的な驚愕演出(ジャンプスケア)を含むこと、そして未成年への性的搾取を示唆する描写は一切ないことを明記している。",
+      },
+      {
+        name_en: "Ib",
+        name_ja: "Ib",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1901370/Ib/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Ib, created by the solo Japanese developer kouri, began life as a free RPG Maker 2000 game in Japan in 2012 and is available today through the 2022 commercial remake published by PLAYISM (Overwhelmingly Positive on Steam). A young girl named Ib visits an art gallery with her parents, only to realize she has been left alone as the museum itself begins to change around her, an ordinary family outing that quietly turns into a surreal nightmare she must explore, solve, and evade her way through, with no combat at all. Playing House keeps that same shape, a father and daughter's ordinary day of pretend play at a park, but tips it into first person and lets the unusual things start there instead.",
+        desc_ja: "この味の原点——『Ib』。個人開発者kouriによる作品で、2012年に無料のRPGツクール2000作品として日本で発表され、2022年にPLAYISMが発売した商業リメイク版(Steamで圧倒的に好評)で現在も遊べる。少女Ibは両親と美術館を訪れるが、気づけば一人取り残され、館そのものが姿を変えていく——ごく普通の家族の外出が、いつの間にか超現実的な悪夢へと変質し、戦闘は一切なく探索し謎を解いて時に逃げてやり過ごすしかない。おままごとも同じ骨格を保つ——父と娘の、公園でのただのおままごとの一日。それを一人称視点へ落とし込み、異様なことが始まる場所へと変えている。",
+      },
+    ],
+    en: {
+      title: "Playing House - a buried Japanese solo horror where a father's park games with his daughter curdle into dread",
+      description: "A first-person indie horror where a father follows a 'Pretend Play Handbook' with his daughter at the park, until unusual things begin to happen. Very Positive at 93 percent over 201 reviews, most of them Simplified Chinese and Korean rather than Japanese, and only 14 in English. A solo Japanese creator's self-published work the English-speaking West has barely touched.",
+      h1a: "An ordinary day of pretend play ",
+      h1flip: "curdles into dread",
+      h1b: ".",
+      lede: "A father named Haruma brings his daughter Naori to the park on a day off. Following 'The Pretend Play Handbook,' you carry out one wholesome mission after another, a pretend wedding, a pretend pet, small errands, until the missions themselves start going wrong. Made solo by the Japanese creator UtubaraLemon (鬱薔薇檸檬) and self-published, it sits at 93 percent Very Positive over 201 reviews. One honest surprise: the review language breakdown is led by Simplified Chinese (90) and Korean (51), ahead of Japanese itself (36), with English trailing everyone at just 14. A Japan-made game China and Korea found first, still barely touched by the English-speaking West.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Each mission starts painfully wholesome, a wedding for stuffed animals, a pretend pet to feed, so ordinary it almost bores you.",
+        "Then one small detail refuses to behave the way the handbook says it should, and you cannot tell yet if that is a bug in the game or a wrongness inside the fiction.",
+        "By the time the jump scare lands, you realize the handbook was never teaching you how to play, it was teaching you how to survive.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You love quiet-dread horror where the scare hides inside something deliberately mundane, not a haunted house from the start",
+        "You want a short, self-contained indie horror ADV from a solo Japanese creator, not a big-studio franchise",
+        "You want a gem barely touched by the West, Very Positive at 93 percent over 201 reviews with only 14 of them in English",
+      ],
+      bad: [
+        "You want a long campaign; this is a compact holiday-sized horror mission set, not a 20-hour game",
+        "You are sensitive to themes of death and suicide depicted in fiction; the store itself flags these content descriptors",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "おままごと - 父と娘の公園ごっこ遊びが不穏に変質する、日本の個人開発ホラーの埋もれた一本",
+      description: "父ハルマが娘なおりと公園で『おままごとハンドブック』のミッションをこなす一人称ホラー。異様なことが起こり始める。201件93%で非常に好評だが、レビューの大半は簡体字中国語・韓国語で、日本語は36件・英語はわずか14件にとどまる。個人開発・自社配信で、英語圏はまだほとんど見つけていない。",
+      h1a: "ただのおままごとが、",
+      h1flip: "不穏に変質していく",
+      h1b: "。",
+      lede: "休日、父ハルマは娘なおりと公園を訪れる。『おままごとハンドブック』に従い、結婚式ごっこ、ペットごっこ、お使いと、健全なミッションを一つずつこなしていく——やがてミッションそのものがおかしくなり始めるまでは。日本の個人開発者・鬱薔薇檸檬(UtubaraLemon)による一本で、自社配信。201レビュー93%で非常に好評。正直な意外性がひとつある——レビューの言語内訳は簡体字中国語(90件)・韓国語(51件)が日本語自体(36件)を上回り、英語は最も少ない14件にとどまる。日本発でありながら中国と韓国が先に見つけたゲームであり、英語圏の読者にはまだほとんど気づかれていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "最初のミッションは痛いほど健全だ——ぬいぐるみの結婚式、ペットごっこの餌やり。退屈なほど普通。",
+        "だがある小さな挙動だけが、ハンドブック通りに振る舞わない。それがゲームの不具合なのか、物語の中の異常なのか、最初は判別できない。",
+        "ジャンプスケアが来る頃には気づく——ハンドブックは遊び方を教えていたのではなく、生き延び方を教えていたのだと。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "最初から幽霊屋敷ではなく、あえて日常的な出来事の内側に恐怖が潜む「静かな不穏さ」型ホラーが好きな人",
+        "大手スタジオのシリーズ物ではなく、個人開発の短く完結したホラーADVを掘りたい人",
+        "201レビュー93%で非常に好評なのに英語レビューわずか14件、西がまだほとんど見つけていない原石に触りたい人",
+      ],
+      bad: [
+        "長編を求める人(本作は休日サイズのコンパクトなホラーミッション集で、20時間級のボリュームはない)",
+        "死や自殺を示唆する題材に敏感な人(ストア自身がこれらのコンテンツ注記を明示している)",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14906,6 +15013,17 @@ const LINEAGE_ANCHOR = {
     },
   },
   "recettear": { steam: "70400" },
+  // 原点 Ib(イヴ)、kouri、2012年に無料RPGツクール2000作品として発表(2022年PLAYISMがSteam商業
+  //   リメイクを発売、appid 1901370)。日常の場(美術館)に取り残され、探索を通じて異常が明らかに
+  //   なっていく、ツクール製和製ホラーADVの代表原点。Steam版あり→ steamで同定(established側と
+  //   /app/1901370/ で完全一致・href破損回避)。
+  "ib": {
+    steam: "1901370",
+    blurb: {
+      en: "Ib, created by the solo Japanese developer kouri, began life as a free RPG Maker 2000 game in Japan in 2012 and is available today through the 2022 commercial remake published by PLAYISM. A young girl named Ib visits an art gallery with her parents, only to realize she has been left alone as the museum itself begins to change around her: no combat at all, only exploring, examining objects, and evading enemies to survive, as an ordinary family outing quietly turns into a surreal nightmare. It is the origin of the lineage of Japanese solo-developed horror adventures where an everyday outing at an ordinary place curdles into wrongness, and survival means reading the space and its rules, not fighting.",
+      ja: "『Ib』は、個人開発者kouriによる作品で、2012年に無料のRPGツクール2000作品として日本で発表され、2022年にPLAYISMが発売した商業リメイク版(appid 1901370)で現在も遊べる。少女Ibは両親と美術館を訪れるが、気づけば一人取り残され、館そのものが姿を変えていく——戦闘は一切なく、探索し、物を調べ、敵から逃げて生き延びるしかない。ごく普通の家族の外出が、いつの間にか超現実的な悪夢へと変質していく。ごく普通の場所での外出が不穏なものへと変質していく、という、日本の個人開発ホラーアドベンチャー群の系譜の原点である。",
+    },
+  },
   "twilight-syndrome": { wikidata: "https://www.wikidata.org/wiki/Q7662337" },
   "yume-nikki": { steam: "650700" },
   "fire-emblem-thracia-776": {
