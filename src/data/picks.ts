@@ -14751,6 +14751,119 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "dig-night": {
+    published: "2026-08-18",
+    publishAt: "2026-08-18",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "ghost-cleanup-anti-rpg"。ストアJA本文実測: 「肉体分裂病…通称『ゴースト化』が
+    //   はびこる社会。ゴースト化は最早日常となり、ゴーストは清掃員が掃除するのが当たり前と
+    //   なっていた。主人公のリカルドは、ゴースト清掃のバイトに就き街にはびこるゴーストの肉を
+    //   退治し日銭を得る」——勇者の冒険ではなく「バイト」として日常の中でゴーストと向き合い、
+    //   謎解きとゴーストの精神世界の探索を通じて物語が深まる、というRPGツクールVXace製の
+    //   ダークコメディRPG。実際のユーザーレビューでも「OMORIやLISAに近い雰囲気やシステムだけど
+    //   全然違う」「くたびれた大人のおじさんという雰囲気」「戦闘が難しい？探索しましょう」と
+    //   一致した証言があり、伝統的なJRPGの英雄譚を、くたびれた中年男の日雇いバイトへ置き換える
+    //   一点が本作の核だと判断した。
+    // lineageは新規anchor "moon"(moon: Remix RPG Adventure)を作る。Steam公式が「Don't be a
+    //   hero...you level up by loving, not fighting」と明記する通り、伝統的JRPGの英雄的な
+    //   モンスター討伐を逆転させ、動物たちの魂を救うことで成長する、という「アンチRPG」の
+    //   代表的原点として採用。本作はmoonの影響を公言したものではなく、当サイト独自の系譜づけ
+    //   である(自信度: 中。ただし「討伐の対象そのものの内面・過去に向き合う」という構造上の
+    //   核は共通している——本作ではゴーストを退治した後も精神世界を探索しその過去を知ることで
+    //   物語が深まる、という一点)。
+    // developer=publisher=INUSHIT(個人開発者)。Steamのdeveloper検索を自分で叩き、この名義の
+    //   登録は本作1件のみであることを確認した。大手・海外展開代行・親会社関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。AI Generated Content
+    //   Disclosure欄はJA本文全体を実際に読んで確認したがストアページに存在しない。is_free=
+    //   false・カートに入れるボタンをJAページで実測。genresに"Early Access"/"早期アクセス"を
+    //   含まず、2024年12月19日発売の正式リリース済み作品。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"Dig Night"は0件。加えて
+    //   一般WebSearchでも西側メディアのレビュー・特集記事は見つからず、ヒットはSteamストア
+    //   自身・開発者本人のXポスト・itch.io体験版ページ・SteamDB系アグリゲータのみ。Metacritic
+    //   ページも実際に開いて確認したが「Critic reviews are not available yet」の空プレース
+    //   ホルダーで、批評記事は実在しないことを確認した。
+    // west_unreached: supported_languagesは日本語・英語・簡体字中国語。appreviews API実測で
+    //   全110件のレビューのうち日本語68件・英語17件・簡体字中国語12件・繁体字中国語2件・
+    //   韓国語9件で、非日本語(40件)は日本語(68件)を下回るため西未浸透の基準を満たす。実際に
+    //   日本語レビュー8件の本文を読み、プレイ時間(5〜17時間)が公称値と一致することや、
+    //   映画館・ゲームセンター等の作中要素への具体的言及、続編なしでも「一年に一度思い出して
+    //   遊びたくなる」といった愛着表現など、有機的な日本の読者エンゲージメントであることを
+    //   確認した。
+    meta: { genre: "ghost-cleanup-anti-rpg", lineage: "moon", obscurity: "wall", reachState: "unreached_west", rarity: { reviews: 110, positivePct: 99, noEnglish: false } },
+    games: [
+      {
+        name_en: "Dig Night",
+        name_ja: "Dig Night",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3201240/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a dark comedy RPG made in RPG Maker VXAce: in a society where a body-splitting disease nicknamed 'Ghosting' has become an everyday occurrence, Ricardo, a washed-up temp worker, takes a part-time job as a ghost cleaner, scraping ghost flesh off the streets for daily pay, solving puzzles and diving into each ghost's inner world to uncover its past along the way. Steam reviewers independently describe it as sharing a mood and system with OMORI and LISA while being 'completely different,' and repeatedly note the specific, lived-in detail of Ricardo's world, a run-down cigarette-smoking, movie-theater-visiting, arcade-haunting middle-aged man rather than a hero. Developer and publisher are both credited simply as INUSHIT, and Steam's own developer search turns up only this one title, nothing else. Released December 19, 2024, it is Very Positive at 99 percent across 110 reviews (109 positive, 1 negative), a paid title at $3.99, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Japanese, English, and Simplified Chinese are all supported, so nothing is stopping you. Of those 110 reviews, 68 are in Japanese against just 40 combined across every other language, and no Western outlet, AUTOMATON WEST included, has written about it yet; the only hits online are the developer's own social posts and aggregator listings.",
+        desc_ja: "Steam自身の表記によれば、本作はRPGツクールVXaceで制作されたダークコメディRPGだ。肉体分裂病、通称「ゴースト化」がはびこる社会で、うだつの上がらない臨時雇いの男・リカルドが「ゴースト清掃」のバイトに就き、街にはびこるゴーストの肉を掃除して日銭を得ながら、謎を解き、それぞれのゴーストの精神世界に潜ってその過去を知っていく。Steamレビュアーは独立に「OMORIやLISAに近い雰囲気やシステムだけど全然違う」と評しており、また、髪はボサボサでトイレに落ちたシケモクを躊躇なく吸える、というリカルドの生々しい生活感——英雄ではなくくたびれた中年男であること——への具体的な言及が繰り返し見られる。開発・発売はともに「INUSHIT」名義で、Steamの開発者検索でもこの名義に紐づくのは本作1件のみ。2024年12月19日発売。110件のレビュー(好評109件・不評1件)で好評率99%の「非常に好評」。無料ではない有料タイトル($3.99)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語・簡体字中国語で、遊ぶのを止めるものは何もない。110件のうち68件が日本語で、それ以外の全言語を合わせても40件にとどまり、AUTOMATON WESTを含めまだどの西側メディアも本作を取り上げていない——見つかるのは開発者本人のSNS投稿とアグリゲータ掲載のみだ。",
+      },
+      {
+        name_en: "moon: Remix RPG Adventure",
+        name_ja: "moon",
+        status: "established",
+        steam: "https://store.steampowered.com/app/1714580/moon/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: moon, whose own Steam listing says it plainly, 'Don't be a hero,' the 1997 anti-RPG where a boy falls into a world its own mighty hero is busy slaughtering for experience, and where you, instead, level up by saving the souls of the animals that hero kills and gathering the love left behind. It established the idea that a JRPG's real substance could live in refusing the genre's own violence, in paying attention to the lives a traditional hero would just mow through. Dig Night is not a spiritual sequel to moon and never claims to be, but it inherits that same refusal in a different key: Ricardo doesn't slay the ghosts he cleans up and walk away, he descends into each one's inner world to learn who they were, turning a job that sounds like extermination into something closer to moon's own soul-saving.",
+        desc_ja: "この味の原点——moon。Steam自身のストアページが「Don't be a hero(英雄になるな)」とそのまま謳う、1997年発売のアンチRPG。少年が迷い込んだ世界では、屈強な勇者が経験値稼ぎのために動物たちを殺し回っており、プレイヤーはその勇者が殺した動物たちの魂を救い、残された愛を集めることでレベルアップしていく。JRPGというジャンル自身の暴力性を拒むこと、伝統的な勇者ならなぎ倒すだけの命に目を向けること——そこにこそJRPGの本質は宿りうる、という発想を確立した作品だ。Dig Nightはmoonの精神的続編ではなく、そう名乗ってもいない。だが同じ拒絶を別の形で受け継いでいる——リカルドはゴーストを掃除して立ち去るのではなく、一体一体の精神世界に潜り、彼らが何者だったのかを知ろうとする。駆除に聞こえる仕事を、moon自身の魂を救う行為に近いものへと変えているのだ。",
+      },
+    ],
+    en: {
+      title: "Dig Night - a dark comedy RPG about a washed-up temp worker who takes a 'ghost cleaner' day job, exploring each ghost's inner world instead of just defeating it. $3.99. 99 percent over 110 reviews, no Western coverage yet",
+      description: "A dark comedy RPG made in RPG Maker VXAce, where a run-down temp worker takes a part-time job as a ghost cleaner and dives into each ghost's inner world to uncover its past instead of just fighting it. 99 percent over 110 reviews, Japanese reviews (68) outnumbering every other language combined (40).",
+      h1a: "A washed-up temp worker takes a day job cleaning ghosts off the streets. ",
+      h1flip: "Instead of just defeating each one, he descends into its inner world to learn who it was",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a dark comedy RPG made in RPG Maker VXAce: in a society where a body-splitting disease nicknamed 'Ghosting' has become an everyday occurrence, Ricardo, a washed-up temp worker, takes a part-time job as a ghost cleaner, scraping ghost flesh off the streets for daily pay, solving puzzles and diving into each ghost's inner world to uncover its past along the way. Steam reviewers independently describe it as sharing a mood and system with OMORI and LISA while being 'completely different,' and repeatedly note the specific, lived-in detail of Ricardo's world, a run-down cigarette-smoking, movie-theater-visiting, arcade-haunting middle-aged man rather than a hero. Developer and publisher are both credited simply as INUSHIT, and Steam's own developer search turns up only this one title, nothing else. Released December 19, 2024, it is Very Positive at 99 percent across 110 reviews (109 positive, 1 negative), a paid title at $3.99, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Japanese, English, and Simplified Chinese are all supported, so nothing is stopping you. Of those 110 reviews, 68 are in Japanese against just 40 combined across every other language, and no Western outlet, AUTOMATON WEST included, has written about it yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Being handed a mundane cleaning job instead of a quest reframes every ghost you meet as a coworker's problem to solve rather than an enemy to grind through, so the game's dread sits in the backstory you're about to uncover, not in the fight itself.",
+        "Ricardo's specific, unglamorous habits, smoking to save, sleeping to heal, ducking into the movie theater between shifts, make the world feel inhabited rather than staged, so the surreal parts of the psyche-diving land harder against that mundane baseline.",
+        "Finishing a ghost's story and only then realizing what its 'flesh' actually meant turns the job itself inside out, retroactively making every earlier cleanup feel less like tidying and more like something you'll want to sit with.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want moon's idea, that a JRPG's substance lives in refusing to just mow down what a traditional hero would, run through a mundane day job instead of a fantasy quest",
+        "You want the specific, lived-in tone reviewers compare to OMORI and LISA while insisting it's its own thing, retro RPG Maker pixel art carrying a genuinely adult, tired protagonist",
+        "You want a true solo debut: INUSHIT's Steam catalogue is this one title and nothing else, and no Western outlet has covered it yet",
+      ],
+      bad: [
+        "You want real-time or high-difficulty combat; reviewers describe the battle system itself as a straightforward, unremarkable command RPG, not the point of the game",
+        "You want a long campaign; most reviewers clear it in 5 to 17 hours depending on how much of the mundane side content (the movie theater, the arcade) you chase",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "Dig Night - うだつの上がらない臨時雇いの男が『ゴースト清掃』のバイトに就き、退治するだけでなく一体一体の精神世界に潜っていくダークコメディRPG。価格$3.99。110件で好評率99%、西側報道はまだなし",
+      description: "RPGツクールVXace製のダークコメディRPG。くたびれた臨時雇いの男がゴースト清掃のバイトに就き、退治するだけでなく一体一体の精神世界に潜ってその過去を知っていく。110件のレビューで好評率99%、日本語(68件)がそれ以外の全言語合計(40件)を上回る。",
+      h1a: "うだつの上がらない臨時雇いの男が、街にはびこるゴーストを清掃するバイトに就く。",
+      h1flip: "退治するだけでなく、一体一体の精神世界に潜ってその正体を知っていく",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作はRPGツクールVXaceで制作されたダークコメディRPGだ。肉体分裂病、通称「ゴースト化」がはびこる社会で、うだつの上がらない臨時雇いの男・リカルドが「ゴースト清掃」のバイトに就き、街にはびこるゴーストの肉を掃除して日銭を得ながら、謎を解き、それぞれのゴーストの精神世界に潜ってその過去を知っていく。Steamレビュアーは独立に「OMORIやLISAに近い雰囲気やシステムだけど全然違う」と評しており、また、髪はボサボサでトイレに落ちたシケモクを躊躇なく吸える、というリカルドの生々しい生活感——英雄ではなくくたびれた中年男であること——への具体的な言及が繰り返し見られる。開発・発売はともに「INUSHIT」名義で、Steamの開発者検索でもこの名義に紐づくのは本作1件のみ。2024年12月19日発売。110件のレビュー(好評109件・不評1件)で好評率99%。無料ではない有料タイトル($3.99)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。対応言語は日本語・英語・簡体字中国語で、遊ぶのを止めるものは何もない。110件のうち68件が日本語で、それ以外の全言語を合わせても40件にとどまり、AUTOMATON WESTを含めまだどの西側メディアも取り上げていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "冒険ではなく地味な清掃バイトを与えられることは、出会うゴースト一体一体を「倒すべき敵」ではなく「解決すべき同僚の問題」として捉え直させる——だから本作の不穏さは戦闘そのものではなく、これから知ることになる背景の方に宿る。",
+        "セーブはタバコを吸って、回復は眠って、シフトの合間に映画館へふらりと立ち寄る——リカルドの飾らない生活習慣の具体性が、世界を「作られた舞台」ではなく「そこに住んでいる場所」に感じさせる。だからこそ精神世界に潜る場面のシュールさが、この日常の基準線に対してより強く効いてくる。",
+        "あるゴーストの物語を終えて、初めてその『肉』が本当は何だったのかに気づく瞬間は、仕事そのものをひっくり返す——それまでの清掃が、片付けというより、しばらく心に留めておきたい何かへと遡って変わっていく。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "moonの発想——JRPGの本質は伝統的な勇者ならなぎ倒すだけの命を拒むことに宿る——を、ファンタジーの冒険ではなく地味な日雇いバイトで欲しい人",
+        "レビュアーがOMORIやLISAに例えながらも「全然違う」と念を押す、その独特の生活感——レトロなツクールのドット絵が、本物の大人びた・くたびれた主人公を運ぶ——が欲しい人",
+        "本物のソロデビュー作が欲しい人——INUSHITのSteamカタログはこの1本のみで、まだどの西側メディアも取り上げていない",
+      ],
+      bad: [
+        "リアルタイムや高難易度の戦闘を求める人——レビュアーは戦闘システム自体を、特に目新しさのない正統派コマンドRPGだと評しており、そこが本作の主眼ではない",
+        "長編を求める人——寄り道要素(映画館・ゲームセンター)をどこまで追うかにもよるが、多くのレビュアーは5〜17時間でクリアしている",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14824,6 +14937,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "moon": {
+    steam: "1714580",
+    blurb: {
+      en: "moon: Remix RPG Adventure, released in Japan in 1997 by Love-de-Lic and remastered by its original creators as an Onion Games release, names itself 'the anti-RPG' on its own Steam listing: a boy falls into a world where a mighty hero is slaughtering animals for experience, and instead of fighting alongside that hero, the player levels up by saving the souls of the animals he kills and gathering the love left behind. It is the origin of the lineage of Japanese RPGs that find their real substance in refusing the genre's own default violence, in paying attention to the lives a traditional hero would simply mow through.",
+      ja: "『moon: Remix RPG Adventure』は、1997年に日本でラブデリックが発売し、後にオリジナルスタッフ自身の手でOnion Gamesからリマスターされた作品で、Steam自身のストアページで「アンチRPG」を自称している——迷い込んだ少年の前で屈強な勇者が経験値稼ぎのために動物たちを殺し回っており、プレイヤーはその勇者と共に戦うのではなく、殺された動物たちの魂を救い、残された愛を集めることでレベルアップしていく。ジャンルが当然視してきた暴力そのものを拒み、伝統的な勇者ならなぎ倒すだけの命に目を向けることにこそ本質が宿る、という和製RPG群の系譜の原点である。",
+    },
+  },
   "rez": {
     steam: "636450",
     blurb: {
