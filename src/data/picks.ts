@@ -14412,6 +14412,117 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "megako-punch": {
+    published: "2026-08-17",
+    publishAt: "2026-08-17",
+    kind: "find",
+    leadIndex: 0,
+    // genre は新設 "twenty-one-bust-deckbuilder"。ストアJA本文実測: 「『ブラックジャック』の
+    //   ように、めくったカードのコストの合計が21を超えるとバースト！...逆に、コストの合計を
+    //   ちょうど21にすれば『必殺技カード』が手札に加わる！」——山札から1枚ずつカードを
+    //   めくり、合計コストがちょうど21になれば必殺技カードを獲得、超えればバーストしてその
+    //   ターン一切行動できなくなる、というブラックジャックの勝敗ルールをそのままデッキ構築
+    //   ローグライトの核に据えている点が本作の核だと判断した。
+    // lineageは新規anchor "balatro"(Balatro)を作る。古典的なカードゲーム(Balatroはポーカー、
+    //   本作はブラックジャック)の役・勝敗判定そのものをデッキ構築ローグライトのコンボ機構に
+    //   据え、シナジーで大逆転コンボを組ませる、という現在進行系の潮流の代表的原点として採用。
+    //   本作はBalatroの影響を公言したものではなく、当サイト独自の系譜づけである(自信度: 中。
+    //   ただし「古典カードゲームの役判定をローグライトのコア機構に転用する」という構造上の
+    //   類似は、ストア本文が自ら「『ブラックジャック』のように」と明言している点で裏付けられて
+    //   いる)。
+    // developer=publisher=物部モノ子(個人開発者)。Steamのdeveloper検索を自分で叩き、この
+    //   名義の登録は本作とその体験版の2件のみであることを確認した。大手・海外展開代行・親会社
+    //   関係の混入はゼロ。
+    // content_descriptors は ids=[](空配列)・notes=null をAPI実測。AI Generated Content
+    //   Disclosure欄はJA本文を実際に読んで確認したがストアページに存在しない(regexに頼らず
+    //   本文全体を目視確認済み——GEARS STORY検証時に正規表現の見落としを経験したため、この
+    //   一手間を徹底した)。is_free=false・カートに入れるボタンをJAページで実測。genresに
+    //   "Early Access"/"早期アクセス"を含まず、2026年8月10日発売の正式リリース済み作品。
+    // 【西側編集記事の不在を実測する】AUTOMATON WESTのWP REST検索で"MEGAKO"は0件。加えて
+    //   goodorevengreat.games・indietsushin.net(いずれも過去の検証ラウンドで実際の日本製
+    //   インディーゲーム記事がヒットした実績のある西側サイト)を個別に検索したが0件。一般
+    //   WebSearchのヒットはSteamストア自身・SteamDBパッチノート・非公式ゲームDB・海賊版配布
+    //   サイトのみで、編集記事・レビューは一件も見つからなかった。
+    // west_unreached: supported_languagesは日本語・英語。appreviews API実測で全31件の
+    //   レビューのうち日本語23件・英語5件・簡体字中国語0件・繁体字中国語0件・韓国語0件で、
+    //   非日本語(5件)は日本語(23件)を大きく下回るため西未浸透の基準を満たす。
+    // 数字の脆さ: 2026年8月10日発売、本記事執筆時点でリリースから1週間程度と非常に新しい
+    //   作品であり、31件というレビュー総数は当サイトが扱う候補の中でも少なめで、日々増加中
+    //   である点を先に開示する。好評率100%は現時点のスナップショットである。
+    meta: { genre: "twenty-one-bust-deckbuilder", lineage: "balatro", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 31, positivePct: 100 } },
+    games: [
+      {
+        name_en: "MEGAKO☆PUNCH!",
+        name_ja: "必殺！メガ子パンチ！",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/4574890/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "Per Steam's own listing, this is a 'Blackjack-inspired deckbuilding roguelite': you flip cards from your deck one at a time, and just like Blackjack, if the total cost of the cards you've flipped exceeds 21, you Bust and lose the entire turn, but hit exactly 21 and an Ultimate Skill Card joins your hand. An energy resource lets you return flipped cards to your hand to hold for later, so the whole turn becomes a bet against your own deck: keep flipping toward 21, or lock in what you have. Items drop from defeated enemies that unlock different Ultimate Skill Card builds, a chain-attack-focused 'Drill Deck' or a big-hand 'Missile Deck' among them. A run takes about 20 minutes, the base game is one story stage plus three high-difficulty stages built to be cleared and done, and finishing it all unlocks a Sandbox Mode for chasing even harder difficulty. Developer and publisher are both credited simply as Monoko Mononobe, and Steam's own developer search turns up only this title and its demo, nothing else. Released August 10, 2026, barely a week before this piece went up, it is Positive at 100 percent across 31 reviews (31 positive, 0 negative), a paid title at $3.39, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. One honest note up front: this is a brand-new release, and 31 reviews is on the thin side even by this site's standards, growing by the day. Of those 31, 23 are in Japanese and only 5 are in English; zero are in Simplified Chinese, Traditional Chinese, or Korean, and no Western outlet, AUTOMATON WEST included, has written about it yet.",
+        desc_ja: "Steam自身の表記によれば、本作は「ブラックジャックを元にしたデッキ構築ローグライト」だ。山札から1枚ずつカードをめくっていき、「ブラックジャック」のように、めくったカードのコストの合計が21を超えるとバーストしてそのターン一切行動できなくなる。逆に合計をちょうど21にすれば「必殺技カード」が手札に加わる。エネルギーを消費すればめくったカードを手札に戻して保留できるため、ターン全体が自分のデッキそのものへの賭けになる——21を狙ってめくり続けるか、今の手で確定させるか。倒した敵からは「アイテム」がドロップし、連続攻撃に特化した「ドリルデッキ」や大量の手札を要する「ミサイルデッキ」など、異なる必殺技カードの構築を解放していく。1ランは約20分、本編はストーリー1ステージと高難易度3ステージの遊び切り構成で、全編クリア後にはさらなる高難易度を目指せるサンドボックスモードも解放される。開発・発売はともに「物部モノ子」名義で、Steamの開発者検索でもこの名義に紐づくのは本作とその体験版の2件のみ。2026年8月10日発売——本稿執筆のわずか1週間ほど前だ。31件のレビュー(好評31件・不評0件)で好評率100%。無料ではない有料タイトル($3.39)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。正直に一点先に開示する——発売したばかりの新作で、31件は当サイトの基準でも薄めであり、日々増加中である。31件のうち23件が日本語、英語は5件のみ。簡体字中国語・繁体字中国語・韓国語は0件で、AUTOMATON WESTを含めまだどの西側メディアも取り上げていない。",
+      },
+      {
+        name_en: "Balatro",
+        name_ja: "Balatro",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2379780/Balatro/",
+        tag_en: "The origin",
+        tag_ja: "原点",
+        desc_en: "The origin of this taste: Balatro, LocalThunk's poker roguelike, which took a classic card game's own win condition, a made poker hand, and rebuilt it as the combo engine of a deckbuilding roguelite, stacking Jokers and modifiers until a single hand chips away a boss blind in one outrageous swing. It did not invent the idea of reskinning a familiar card game's scoring rule as a run-based combo system, but it is the version that made the West fall for it wholesale. MEGAKO☆PUNCH! runs the same trick with a different classic game entirely: instead of poker hands scored for value, it borrows Blackjack's own bust condition, flip toward 21 without going over, and turns hitting the number exactly into the trigger for an Ultimate Skill Card instead of a poker payout. Where Balatro's combos come from Jokers modifying hand values across an entire round, MEGAKO☆PUNCH!'s come from an energy-gated choice on every single card flip: push toward 21 again, or lock in what you're holding.",
+        desc_ja: "この味の原点——Balatro(LocalThunk制作)。古典的なカードゲーム自身の勝利条件——役の成立するポーカーハンド——をそのままデッキ構築ローグライトのコンボ機構として作り直し、Jokerと修飾効果を積み上げて、たった1ハンドでボスの体力を吹き飛ばす大逆転を生み出す。馴染み深いカードゲームの得点ルールをラン制のコンボシステムへ作り替える、という発想自体の発明ではないが、それを西側にまるごと惚れ込ませたバージョンである。「必殺！メガ子パンチ！」はまったく別の古典ゲームで同じ手品を演じている——役の価値で得点するポーカーではなく、ブラックジャック自身のバースト条件を借り、21を超えずに近づけていき、ちょうど当てることをポーカーの得点ではなく必殺技カードの発動条件へと変える。Balatroのコンボが1ラウンド全体にわたるJokerの手札修飾から生まれるのに対し、「必殺！メガ子パンチ！」のコンボは1枚1枚のカードめくりごとのエネルギー制約付きの選択——もう1枚21に近づけるか、今の手で確定させるか——から生まれる。",
+      },
+    ],
+    en: {
+      title: "MEGAKO☆PUNCH! - a Blackjack-inspired deckbuilding roguelite where flipping cards toward exactly 21 triggers Ultimate Skill Cards, and busting past it loses your whole turn. 20-minute runs, $3.39. 100 percent over 31 reviews, released one week ago",
+      description: "A deckbuilding roguelite built on Blackjack's own bust rule: flip cards toward exactly 21 to trigger Ultimate Skill Cards, go over and lose the turn. 20-minute runs, one story stage plus three high-difficulty stages, then a Sandbox Mode. 100 percent over 31 reviews, almost entirely Japanese, released one week ago.",
+      h1a: "Flip cards from your deck toward exactly 21, just like Blackjack. ",
+      h1flip: "Bust past it and lose the whole turn; hit it exactly and an Ultimate Skill Card joins your hand",
+      h1b: ".",
+      lede: "Per Steam's own listing, this is a 'Blackjack-inspired deckbuilding roguelite': you flip cards from your deck one at a time, and just like Blackjack, if the total cost of the cards you've flipped exceeds 21, you Bust and lose the entire turn, but hit exactly 21 and an Ultimate Skill Card joins your hand. An energy resource lets you return flipped cards to your hand to hold for later, so the whole turn becomes a bet against your own deck: keep flipping toward 21, or lock in what you have. Items drop from defeated enemies that unlock different Ultimate Skill Card builds, a chain-attack-focused 'Drill Deck' or a big-hand 'Missile Deck' among them. A run takes about 20 minutes, the base game is one story stage plus three high-difficulty stages built to be cleared and done, and finishing it all unlocks a Sandbox Mode for chasing even harder difficulty. Developer and publisher are both credited simply as Monoko Mononobe, and Steam's own developer search turns up only this title and its demo, nothing else. Released August 10, 2026, barely a week before this piece went up, it is Positive at 100 percent across 31 reviews (31 positive, 0 negative), a paid title at $3.39, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. One honest note up front: this is a brand-new release, and 31 reviews is on the thin side even by this site's standards, growing by the day. Of those 31, 23 are in Japanese and only 5 are in English, and no Western outlet, AUTOMATON WEST included, has written about it yet.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Every single card flip is its own tiny gamble against a number you already know, 21, so the tension of a whole Blackjack hand gets compressed and repeated dozens of times inside one turn instead of resolving once and being over.",
+        "Spending energy to hold a flipped card for later turns the bust threshold from a wall you avoid into a resource you manage, so the decision stops being 'stop before you bust' and becomes 'which almost-bust am I willing to bank.'",
+        "Landing exactly 21 for an Ultimate Skill Card, rather than just clearing the danger zone safely, rewards the version of the gamble that Blackjack itself never pays extra for, and that one twist is what turns a card game's math into a combo engine.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want Balatro's idea, a classic card game's own scoring rule rebuilt as a roguelite combo engine, run through Blackjack's bust condition instead of poker hands",
+        "You want short, dense runs: about 20 minutes each, one story stage plus three hard stages, then a Sandbox Mode once you've cleared everything",
+        "You want to be early: released one week before this piece, solo-developed, Steam's own developer search shows only this title and its demo",
+      ],
+      bad: [
+        "You want a settled number; 31 reviews barely a week after launch is thin even by this site's standards, and it's still climbing",
+        "You want combos that build across a whole round like Balatro's Jokers; this one resets its central bet, push toward 21 or lock in, on every single card",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "必殺！メガ子パンチ！ - ブラックジャックの21ちょうどで必殺技カード発動、超えればバーストのデッキ構築ローグライト。1ラン約20分、価格$3.39。31件で好評率100%、発売から1週間",
+      description: "ブラックジャックのバーストルールをそのまま核に据えたデッキ構築ローグライト。カードをめくって合計コストをちょうど21にすれば必殺技カード発動、超えればそのターン行動不能。1ランおよそ20分、ストーリー1ステージ+高難易度3ステージ、その後サンドボックスモード。31件で好評率100%、ほぼ全件日本語、発売から1週間。",
+      h1a: "ブラックジャックのように、山札からカードを1枚ずつめくり合計をちょうど21に近づけていく。",
+      h1flip: "超えればそのターン一切行動できなくなり、ちょうど当てれば必殺技カードが手札に加わる",
+      h1b: "。",
+      lede: "Steam自身の表記によれば、本作は「ブラックジャックを元にしたデッキ構築ローグライト」だ。山札から1枚ずつカードをめくっていき、「ブラックジャック」のように、めくったカードのコストの合計が21を超えるとバーストしてそのターン一切行動できなくなる。逆に合計をちょうど21にすれば「必殺技カード」が手札に加わる。エネルギーを消費すればめくったカードを手札に戻して保留できるため、ターン全体が自分のデッキそのものへの賭けになる——21を狙ってめくり続けるか、今の手で確定させるか。倒した敵からは「アイテム」がドロップし、連続攻撃に特化した「ドリルデッキ」や大量の手札を要する「ミサイルデッキ」など、異なる必殺技カードの構築を解放していく。1ランは約20分、本編はストーリー1ステージと高難易度3ステージの遊び切り構成で、全編クリア後にはさらなる高難易度を目指せるサンドボックスモードも解放される。開発・発売はともに「物部モノ子」名義で、Steamの開発者検索でもこの名義に紐づくのは本作とその体験版の2件のみ。2026年8月10日発売——本稿執筆のわずか1週間ほど前だ。31件のレビュー(好評31件・不評0件)で好評率100%。無料ではない有料タイトル($3.39)で、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。正直に一点先に開示する——発売したばかりの新作で、31件は当サイトの基準でも薄めであり、日々増加中である。31件のうち23件が日本語、英語は5件のみで、AUTOMATON WESTを含めまだどの西側メディアも取り上げていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "カードを1枚めくるたびに、21という既に分かっている数字への小さな賭けが発生する——ブラックジャックの1ハンド分の緊張感が、1ターンの中で何十回も圧縮・反復されることになる。",
+        "エネルギーを払ってめくったカードを保留できることは、バーストという壁を「避けるもの」から「管理する資源」へと変える——「バーストする前に止める」ではなく「どのギリギリを銀行に預けるか」という判断になる。",
+        "危険地帯を安全にクリアするだけでなく、ちょうど21を当てることそのものに必殺技カードという報酬が付くのは、ブラックジャック自身が決して余分に払わない種類の賭けへの報酬であり、その一捻りこそが、カードゲームの算術をコンボエンジンへと変えている。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "Balatroの発想——古典的なカードゲーム自身の得点ルールをローグライトのコンボエンジンとして作り替える——を、ポーカーの役ではなくブラックジャックのバースト条件で欲しい人",
+        "短く濃いランが欲しい人——1ランおよそ20分、ストーリー1ステージ+高難易度3ステージ、クリア後はサンドボックスモード",
+        "早いうちに見つけたい人——本稿の1週間前に発売、ソロ開発、Steamの開発者検索でもこの名義に紐づくのは本作と体験版のみ",
+      ],
+      bad: [
+        "安定した数字が欲しい人——発売1週間で31件はこのサイトの基準でも薄く、今も増え続けている",
+        "Balatroのように1ラウンド全体で積み上がるコンボが欲しい人——本作の中心的な賭けは1枚ごとにリセットされる、21に近づけるか確定させるかの選択だ",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -14485,6 +14596,13 @@ export function steamStoreUrl(appId: string | null): string | null {
 //             の個別ページを生やす(originAnchorIds で抽出)。原点名は持たせない(lineageName で逆引き=
 //             二重定義を避ける)。blurb 無しの anchor は従来通り名前の逆引きのみに使う(後方互換)。
 const LINEAGE_ANCHOR = {
+  "balatro": {
+    steam: "2379780",
+    blurb: {
+      en: "Balatro, released in 2024 and developed by the solo creator LocalThunk, took a classic card game's own win condition, a made poker hand, and rebuilt it as the combo engine of a deckbuilding roguelike: stack Jokers and modifiers across a round until a single scored hand chips away a boss blind in one outrageous swing. It is the origin of the lineage of games that reskin a familiar card game's own scoring or win rule as the core mechanic of a run-based combo system.",
+      ja: "『Balatro』は、ソロクリエイターLocalThunkが開発し2024年に発売された作品で、古典的なカードゲーム自身の勝利条件——役の成立するポーカーハンド——をそのままデッキ構築ローグライクのコンボ機構として作り直した。1ラウンドを通じてJokerと修飾効果を積み上げ、たった1ハンドの得点でボスの体力を吹き飛ばす大逆転を生み出す。馴染み深いカードゲーム自身の得点・勝利ルールを、ラン制のコンボシステムの核として再構築する、というゲーム群の系譜の原点である。",
+    },
+  },
   "death-mark": {
     steam: "980830",
     blurb: {
