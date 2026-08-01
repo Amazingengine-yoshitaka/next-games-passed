@@ -11095,6 +11095,115 @@ export const picks = {
       s3: "系譜：この味の原点",
     },
   },
+  "yaei-jinja": {
+    published: "2026-08-02",
+    publishAt: "2026-08-02",
+    kind: "find",
+    leadIndex: 0,
+    // genre はSteam公式ジャンル(アクション/アドベンチャー/カジュアル/インディー/シミュレーション)が
+    //   広すぎるため新設 "anomaly-branch-walk"。ユーザータグ側は ウォーキングシミュレーター /
+    //   探し物 / 没入シミュレーション / 信仰 / 自然 が並び、実体は「異変の有無で道を選び続ける」歩き。
+    // lineage は新規anchor "the-exit-8"(Steam 2653790)を作る。これは推測ではなく開発者自身の
+    //   自己申告で、ストア本文に「このゲームは8番出口などにインスパイアされた8番出口ライクな
+    //   ゲームです。」と明記されている。当サイトの系譜は通常「独自の批評的比較」だが、本作に
+    //   限っては作者が影響元を名指ししている珍しいケースなので、記事でもそう書く。
+    //   ただし機構は同じではない。8番出口が「異変があれば引き返す」一本道のループなのに対し、
+    //   本作は「異変が起きたら左の道へ、異変が起きなければ右の道へ」という分岐であり、しかも
+    //   一人ではなく巫女服の少女を連れて歩く。判定の結果が引き返しではなく前進の方向になる。
+    // developer=Kikka / publisher=同一。Steamのdeveloper検索を自分で叩き、この名義の登録は
+    //   本作1本のみ(total_count=1)であることを確認した——デビュー作である。大手・海外展開代行・
+    //   親会社関係の混入はゼロ。サポート窓口も個人のGmailひとつ。
+    // content_descriptors は ids=[](完全に空)・notes=null をAPI実測。required_age=0、ストアHTMLに
+    //   大人向けコンテンツの説明セクションそのものが無い。ユーザータグ全15件にも性的表現関連は皆無。
+    //   開発者自身も「ホラー要素は殆どないです。ホラーが苦手な方でも安心してプレイできるかと
+    //   思います。」と書いている。
+    // AI Generated Content Disclosure欄はストアページに存在しない。is_free=false・カートに入れる
+    //   ボタン実測。game_area_early_accessバナー無しで正式リリース済み。
+    // 【この作品を選んだ核心】対応言語は英語・フランス語・イタリア語・ドイツ語・ポルトガル語・
+    //   簡体字中国語・繁体字中国語・日本語・韓国語の9言語。個人のデビュー作としては異例の
+    //   多言語対応である。それでいて appreviews API実測で全29件のうち日本語24件・英語ちょうど0件。
+    //   言語の壁で止まっているのではなく、扉を開けたのに誰も入ってこなかった型なので
+    //   obscurity: "deep" / reachState: "unreached_west" を採る。当サイトが繰り返し書いてきた
+    //   「日本語が読めないから遊べない」という但し書きが、この一本には要らない。
+    // 西側編集記事はゼロ。当方の英語検索で本作に言及するページは一件も返らず(返ってきたのは
+    //   全てThe Exit 8本体の記事)、日本のインディーを扱う英語ブログ goodorevengreat.games の
+    //   サイト内検索にも該当なしを確認した。
+    // 数字について: 28/29=96.6%は当サイトの理想95%を超えるが、母数29件は薄い。プレイ時間が
+    //   15分〜90分と短い点とあわせて先に開示する。
+    meta: { genre: "anomaly-branch-walk", lineage: "the-exit-8", obscurity: "deep", reachState: "unreached_west", rarity: { reviews: 29, positivePct: 96 } },
+    games: [
+      {
+        name_en: "YaeiJinja",
+        name_ja: "八重異神社",
+        status: "hidden",
+        steam: "https://store.steampowered.com/app/3843370/",
+        tag_en: "Buried gem",
+        tag_ja: "埋もれた名作",
+        desc_en: "A girl in shrine-maiden clothes cannot reach the shrine at the top of the mountain, because something in the air has gone wrong, and your job is to walk her up there. The rule is one line long and the whole game runs on it: if an anomaly has appeared, take the left path; if nothing is wrong, take the right. That is a real departure from the form it comes from, and the developer names that form themselves on the store page, writing plainly that this is a game in the style of The Exit 8 and inspired by it. In The Exit 8 the judgement sends you backwards, and being wrong means doing the corridor again. Here the judgement is a fork, so being wrong sends you somewhere, and you are not alone while you decide, because the girl is walking with you and you can talk to her. There is a small, very good detail attached to that: the store notes that if you keep pestering her with the same conversation over and over she may not appreciate it. Difficulty comes in normal and hard, a run is fifteen to ninety minutes, and clearing it unlocks something that puts your name on a leaderboard. The developer also says outright that there is almost no horror in it and that people who dislike being scared should be fine. Made by Kikka, and Steam's developer search under that name returns exactly one title, so this is the only game they have. Released August 7, 2025 at ¥376, it is at 96 percent across 29 reviews (28 positive, 1 negative per Steam's own review API), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Now the part worth stopping on. It supports nine languages: English, French, Italian, German, Portuguese, Simplified and Traditional Chinese, Japanese and Korean. A solo developer's first game, translated into nine languages. And of its 29 reviews, exactly zero are in English.",
+        desc_ja: "巫女服の少女が、山頂の神社にたどり着けなくなっている。悪い妖気のせいだ。あなたの仕事は、その子を上まで連れていくことである。ルールは一行で、ゲーム全体がその上に乗っている——異変が起きたら左の道へ、異変が起きなければ右の道へ。これは元になった形からの、はっきりした離れ方だ。そしてその形の名前は、開発者自身がストアページで名指ししている。「このゲームは8番出口などにインスパイアされた8番出口ライクなゲームです。」と、そのまま書いてある。8番出口では判定が後ろ向きに働く。間違えれば、あの通路をもう一度歩くことになる。こちらでは判定が分かれ道になっているので、間違えれば「どこかへ」行ってしまう。しかも判断している間、こちらは一人ではない。少女が隣を歩いていて、話しかけることができる。それに付いている小さな、そして非常に良いディテールがある——ストアはこう注記している。「ただし一度に何度もしつこい会話は嫌われるかも？」難度は普通と難しいの二つ、一周は15分〜90分、クリアすると開放される要素があってランキングに名前を刻める。開発者は「ホラー要素は殆どないです。ホラーが苦手な方でも安心してプレイできるかと思います。」ともはっきり書いている。制作はKikka氏。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど1件で、つまりこの人が持っているゲームはこれ一本だけだ。発売日は2025年8月7日、価格¥376。29件のレビュー(好評28件・不評1件、Steam自身のレビューAPI実測)で好評率96%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。そしてここが立ち止まる価値のある部分だ。対応言語は9つある——英語、フランス語、イタリア語、ドイツ語、ポルトガル語、簡体字中国語、繁体字中国語、日本語、韓国語。個人開発者の第一作が、9言語に翻訳されている。それでいて29件のレビューのうち、英語はちょうど0件だ。",
+      },
+      {
+        name_en: "The Exit 8",
+        name_ja: "8番出口",
+        status: "established",
+        steam: "https://store.steampowered.com/app/2653790/",
+        tag_en: "The stated origin",
+        tag_ja: "作者が名指しした原点",
+        desc_en: "The origin of this taste, and unusually for this site, one the developer named themselves: The Exit 8, made by KOTAKE CREATE and released in November 2023. You walk a looping underground passageway modelled on a Japanese metro station, and the only thing you have to do is notice whether anything is different from the last time you saw it. If something is wrong, turn back. If nothing is wrong, keep going. It turned observation itself into the verb of a game, and it did so with a space so ordinary that the player's own memory becomes the instrument being tested. The genre it started is now crowded, and most of what followed copies the corridor. YaeiJinja keeps the judgement and throws the corridor away: the same question, but answered with a fork in a mountain path rather than a turn, and answered while walking someone else up it.",
+        desc_ja: "この味の原点——そして当サイトでは珍しく、開発者自身が名指しした原点である。8番出口。KOTAKE CREATE制作、2023年11月配信。日本の地下鉄の通路をかたどったループする空間を歩き、やるべきことは「さっき見たときと何かが違っていないか」に気づくことだけ。異変があれば引き返す。無ければ進む。この作品は「観察する」という行為そのものをゲームの動詞にした。しかもそれを、どこにでもある空間で行ったことで、試されている装置がプレイヤー自身の記憶になった。ここから始まったジャンルは今や過密で、後に続いたものの多くはあの通路を複製している。『八重異神社』は判定のほうを残して、通路のほうを捨てた——同じ問いを、引き返しではなく山道の分かれ道で答えさせ、しかもその間ずっと、誰かを上まで連れて歩かせる。",
+      },
+    ],
+    en: {
+      title: "YaeiJinja - walk a shrine maiden up the mountain. If an anomaly has appeared take the left path, if nothing is wrong take the right. A solo developer's first game, translated into nine languages, ¥376. 96 percent over 29 reviews, and zero of them in English",
+      description: "An Exit 8-like where the judgement is a fork instead of a turn: spot whether an anomaly has appeared, then take the left path or the right, walking a shrine maiden up the mountain as you go. You can talk to her, though pestering her is not appreciated. Fifteen to ninety minutes. A solo debut translated into nine languages. 96 percent over 29 reviews.",
+      h1a: "If an anomaly has appeared, take the left path. If nothing is wrong, take the right. ",
+      h1flip: "Either way you are walking her up the mountain, and she is watching how you decide",
+      h1b: ".",
+      lede: "A girl in shrine-maiden clothes cannot reach the shrine at the top of the mountain, because something in the air has gone wrong, and your job is to walk her up there. The rule is one line long and the whole game runs on it: if an anomaly has appeared, take the left path; if nothing is wrong, take the right. That is a real departure from the form it comes from, and the developer names that form themselves on the store page, writing plainly that this is a game in the style of The Exit 8 and inspired by it. In The Exit 8 the judgement sends you backwards, and being wrong means doing the corridor again. Here the judgement is a fork, so being wrong sends you somewhere, and you are not alone while you decide, because the girl is walking with you and you can talk to her. There is a small, very good detail attached to that: the store notes that if you keep pestering her with the same conversation over and over she may not appreciate it. Difficulty comes in normal and hard, a run is fifteen to ninety minutes, and clearing it unlocks something that puts your name on a leaderboard. The developer also says outright that there is almost no horror in it and that people who dislike being scared should be fine, which is a strange and rather generous thing to promise in a genre built on dread. Made by Kikka, and Steam's developer search under that name returns exactly one title, so this is the only game they have. Released August 7, 2025 at ¥376, it is at 96 percent across 29 reviews (28 positive, 1 negative), a paid title, not free, fully launched and not in Early Access, with no AI-generated-content disclosure and Steam's content descriptors completely empty. Now the part worth stopping on, and the reason this pick exists. It supports nine languages: English, French, Italian, German, Portuguese, Simplified and Traditional Chinese, Japanese and Korean. A solo developer's first game, translated into nine languages. And of its 29 reviews, exactly zero are in English. Most finds on this site come with a warning that you cannot read them. This one has no such warning, and still nobody came. At 29 reviews the sample is thin and this pick says so, but the door on this one is not locked.",
+      s1: "First, the one feeling",
+      feeling: [
+        "Turning the judgement into a fork changes what being wrong costs. A corridor forgives you by making you repeat it; a path does not give the ground back. You commit with your feet, and the mountain keeps going either way.",
+        "She is the difference. Watching for anomalies alone is a test of memory, but doing it while someone walks beside you turns every hesitation into something witnessed, and the store's note that pestering her is not appreciated means the game has an opinion about how you pass the time between decisions.",
+        "The developer promising there is almost no horror is doing something quietly interesting to a genre that runs on dread. What is left when you take the fear out of an anomaly game is the attention itself, and it turns out that still works.",
+      ],
+      s2: "Who this is for (and who it is not)",
+      good: [
+        "You want the Exit 8 question without the Exit 8 corridor: same judgement, answered with a fork on a mountain path, and answered while escorting somebody up it",
+        "You want a first game by one person: exactly one title under their name on all of Steam, a personal email as the only contact, ¥376",
+        "You want something you can actually play: nine languages including English, content descriptors completely empty, no AI disclosure, and the developer saying plainly it is barely a horror game",
+      ],
+      bad: [
+        "You want the dread; the developer promises there is almost none, so if the anomaly genre appeals to you specifically because it frightens you, this is the wrong one",
+        "You want length and a settled number; a run is fifteen to ninety minutes and 29 reviews is a thin sample even at 96 percent",
+      ],
+      s3: "The roots of this taste",
+    },
+    ja: {
+      title: "八重異神社 - 巫女服の少女を山頂の神社まで連れていく。異変が起きたら左の道へ、起きなければ右の道へ。個人のデビュー作が9言語に翻訳されて¥376。29件で好評率96%、うち英語レビューは0件",
+      description: "8番出口ライク。ただし判定が引き返しではなく分かれ道になっている——異変の有無を見極めて左か右かを選び、巫女服の少女を山頂の神社まで連れて歩く。話しかけられるが、しつこいと嫌われる。一周15分〜90分。個人のデビュー作で9言語対応。29件のレビューで好評率96%。",
+      h1a: "異変が起きたら左の道へ。起きなければ右の道へ。",
+      h1flip: "どちらにしても、あなたはその子を山頂まで連れて歩いている。そして彼女は、あなたの決め方を見ている",
+      h1b: "。",
+      lede: "巫女服の少女が、山頂の神社にたどり着けなくなっている。悪い妖気のせいだ。あなたの仕事は、その子を上まで連れていくことである。ルールは一行で、ゲーム全体がその上に乗っている——異変が起きたら左の道へ、異変が起きなければ右の道へ。これは元になった形からの、はっきりした離れ方だ。そしてその形の名前は、開発者自身がストアページで名指ししている。「このゲームは8番出口などにインスパイアされた8番出口ライクなゲームです。」と、そのまま書いてある。8番出口では判定が後ろ向きに働く。間違えれば、あの通路をもう一度歩くことになる。こちらでは判定が分かれ道になっているので、間違えれば「どこかへ」行ってしまう。しかも判断している間、こちらは一人ではない。少女が隣を歩いていて、話しかけることができる。それに付いている小さな、そして非常に良いディテールがある——ストアはこう注記している。「ただし一度に何度もしつこい会話は嫌われるかも？」難度は普通と難しいの二つ、一周は15分〜90分、クリアすると開放される要素があってランキングに名前を刻める。開発者は「ホラー要素は殆どないです。ホラーが苦手な方でも安心してプレイできるかと思います。」ともはっきり書いている。恐怖で成り立っているジャンルで、これはずいぶん奇妙で、そして気前のいい約束だ。制作はKikka氏。この名義でSteamのdeveloper検索を叩くと返ってくるのはちょうど1件で、つまりこの人が持っているゲームはこれ一本だけである。発売日は2025年8月7日、価格¥376。29件のレビュー(好評28件・不評1件)で好評率96%。無料ではない有料タイトルで、アーリーアクセスではなく正式リリース済み、AI生成コンテンツの開示欄は無く、Steamのコンテンツディスクリプタは完全に空である。そしてここが立ち止まる価値のある部分であり、この記事が存在する理由でもある。対応言語は9つある——英語、フランス語、イタリア語、ドイツ語、ポルトガル語、簡体字中国語、繁体字中国語、日本語、韓国語。個人開発者の第一作が、9言語に翻訳されている。それでいて29件のレビューのうち、英語はちょうど0件だ。当サイトの発掘はたいてい「あなたには読めません」という但し書きを伴う。この一本にその但し書きは要らない。それでも、誰も来なかった。29件という母数は薄く、そこは書いておく。ただしこの扉に鍵はかかっていない。",
+      s1: "まず、その一点の感覚",
+      feeling: [
+        "判定を分かれ道にしたことで、間違いの代償が変わる。通路は「もう一度歩かせる」ことで許してくれるが、道は地面を返してくれない。足で決めることになり、山はどちらにせよ続いていく。",
+        "違いを作っているのは彼女だ。一人で異変を探すのは記憶の試験だが、隣を誰かが歩いている状態でそれをやると、あらゆる逡巡が「見られているもの」に変わる。そして「しつこいと嫌われるかも」という注記は、判断と判断の間の時間をどう過ごすかについて、このゲームが意見を持っているということである。",
+        "「ホラー要素は殆どない」と作者が約束しているのは、恐怖で回っているジャンルに対して静かに面白いことをしている。異変ゲームから怖さを抜いたあとに残るのは注意力そのもので、そしてそれだけでもちゃんと成立する、と分かる。",
+      ],
+      s2: "こういう人に刺さる",
+      good: [
+        "8番出口の問いを、8番出口の通路なしで欲しい人——同じ判定を、引き返しではなく山道の分かれ道で答え、しかもその間ずっと誰かを送り届けている",
+        "ひとりの第一作が欲しい人——Steam全体でその名義の登録はちょうど1件、連絡先は個人のメールアドレスひとつ、価格¥376",
+        "実際に遊べるものが欲しい人——英語を含む9言語対応、コンテンツディスクリプタは完全に空、AI開示も無し、そして作者自身が「ほとんどホラーではない」と明言している",
+      ],
+      bad: [
+        "怖さが欲しい人——作者が「殆どない」と約束しているので、異変ジャンルに惹かれる理由が「怖いから」なら、これは違う一本である",
+        "長さと安定した母数が欲しい人——一周は15分〜90分で、29件は96%であっても薄い",
+      ],
+      s3: "系譜：この味の原点",
+    },
+  },
 };
 
 // 【未来の投稿を予約 (client-side reveal)】各 pick は publishAt(公開予定日時)を持てる。
@@ -12119,6 +12228,13 @@ const LINEAGE_ANCHOR = {
     blurb: {
       en: "The Lost Vikings, released April 29, 1993 by the studio that would become Blizzard Entertainment and published by Interplay, handed one player three bodies at the same time and refused to let any of them be spare. Erik runs and jumps, Baleog fights, Olaf carries the shield, and a level is only finished when all three are standing at the exit, so every room has to be solved three times over in the same breath. What makes it an origin rather than a gimmick is the pressure that arrangement creates: your attention is divisible and their safety is not, and the moment you are absorbed in getting one of them past an obstacle is exactly the moment the other two are unattended. It is the origin of the lineage of games in which the player is not a protagonist but a person answerable for several protagonists at once, and of the insight that a party you must personally keep alive is a fundamentally different feeling from a party that fights for you.",
       ja: "The Lost Vikings(バイキングの大迷惑)は、1993年4月29日、後にBlizzard Entertainmentとなるスタジオが開発しInterplayが発売した作品で、1人のプレイヤーに3つの身体を同時に持たせ、そのどれ一つも予備として扱わせなかった。エリックは走って跳び、バレオグは戦い、オーラフは盾を担ぐ。そしてステージは3人全員が出口に立って初めて終わる。つまりどの部屋も、同じ一息のうちに3回解かなければならない。これを小手先ではなく原点にしているのは、その配置が生む圧のほうだ——こちらの注意力は分割できるが、彼らの安全は分割できない。1人を障害物の向こうへ通すことに没頭している瞬間とは、残り2人が放置されている瞬間そのものである。プレイヤーが主人公なのではなく、複数の主人公に対して同時に責任を負う人間になる——そうしたゲーム群の系譜の原点であり、「自分が生かしておかねばならない仲間」は「自分のために戦ってくれる仲間」とは根本的に別の感触だ、という洞察の原点でもある。",
+    },
+  },
+  "the-exit-8": {
+    steam: "2653790",
+    blurb: {
+      en: "The Exit 8, made by KOTAKE CREATE and released in November 2023, took a looping underground passageway modelled on a Japanese metro station and gave the player exactly one thing to do: notice whether anything has changed since the last time through. If something is wrong, turn back. If nothing is wrong, keep walking. That is the entire game, and it worked because the space chosen was so aggressively ordinary that the instrument being tested is not the player's reflexes or knowledge but their memory of a corridor they were not trying to memorise. It made observation itself into a verb, and it proved that a game can be built out of the gap between looking and seeing. It is the origin of the anomaly-spotting lineage that followed it in enormous numbers, and of the design insight that the most unsettling thing you can do to a familiar place is change one small thing about it and say nothing.",
+      ja: "8番出口は、KOTAKE CREATE制作、2023年11月配信の作品で、日本の地下鉄の通路をかたどったループする空間を用意し、プレイヤーにやることを一つだけ与えた——前に通ったときから何かが変わっていないかに気づくこと。異変があれば引き返す。無ければ進む。ゲームはそれで全部だ。そしてこれが成立したのは、選ばれた空間が徹底的にありふれていたからである。試されている装置はプレイヤーの反射神経でも知識でもなく、「覚えようとしていなかった通路についての記憶」のほうだ。この作品は「観察する」ことそのものを動詞にし、見ることと気づくことの間の隙間だけでゲームが建つと証明した。以後おびただしい数で続いた異変探し系の系譜の原点であり、見慣れた場所に対してできる最も不穏なことは、小さな一点だけを変えて何も言わないことだ、というデザイン上の洞察の原点でもある。",
     },
   },
 } as const;
